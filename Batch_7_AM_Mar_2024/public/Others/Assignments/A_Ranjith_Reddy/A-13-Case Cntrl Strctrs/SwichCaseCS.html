@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+<body>
+    <script>
+    var n = prompt("Type in the preferred number");
+        n = parseInt(n);
+        var logic = prompt("Choose one of the methods from the following: Lucky Number, Palindrome Number, Reverse or Total Numbers");
+        logic = logic.toLowerCase();
+
+            // Lucky Number
+                switch(logic){
+                case 'lucky number':
+                var rem;
+                var a = 0;
+                while(n > 0) {
+                    rem = n % 10;
+                    a = a + rem;
+                    n = n / 10;
+                    n = parseInt(n);
+                    if (n == 0 && a > 10) {
+                        console.log(a + " " + "Total Numbers")
+                        n = a;
+                        a = 0;
+                    }
+                }
+                console.log(a + " " + "The Lucky Number");
+                break;
+
+            // WAP to findout a Palindrome Number
+            case 'palindrome number':
+                var rev = 0;
+                var sub = n;
+                while(sub>0){
+                    var rem = sub % 10;
+                    rev = rev * 10 + rem;
+                    sub = sub / 10;
+                    sub= parseInt(sub);
+                }
+                console.log(rev);
+                if(n == rev){
+                    console.log(n + "The Palindrome Number");
+                }
+                else{
+                    console.log(n + "Not a Palindrome Number");
+                }
+                break;
+
+            // WAP to find out reverse of given numbers 
+            case 'reverse':
+                 var rev = 0;
+                while(n > 0){
+                    var rem = n % 10;
+                    rev = rev * 10 + rem;
+                    n = n / 10;
+                    n= parseInt(n);
+                }
+
+                console.log(rev);
+                break;
+
+            // WAP to find out Total number of digits in a given number
+                case 'totalnumbers':
+                var d = 0;
+                while(n > 0){
+                    var rem = n % 10;
+                    n = n / 10;
+                    sum = sum + rem;
+                    n = parseInt(n);
+                    if(rem >= 0){
+                        d++;
+                    }
+                }
+                console.log("The Total Numbers of Digits In a Given Number Is :" + 'd');
+                break;
+            
+            default:
+                console.log("Make sure to check it again");
+        }
+    </script>
+</body>
+</html>

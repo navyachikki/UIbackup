@@ -1,0 +1,58 @@
+.leftBlock,
+.rightBlock{
+    float:left;
+}
+
+header,footer{
+    text-align: center;
+    color:#dc143c;
+}
+
+
+header , footer{
+    background-color: #f0f0f0;
+    margin:20px;
+    padding:20px;
+    border:2px solid black;
+}
+
+
+
+table {
+    width: 50%;
+    position: absolute;
+    left: 405px;
+    /* bottom: 199px; */
+}
+li{
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    background-color:#b8860b ;
+}
+ul{
+    margin: 2px;
+    padding: 5px;
+}
+input[type=button] {
+    margin: 10px;
+    background-color: green;
+}
+
+.rbtn {
+    background-color: red !important;
+}
+.SBtn{
+    background-color: cyan !important;
+}
+footer {
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    position: fixed;
+    width: 94%;
+    bottom: 0;
+    left: 0;
+}
+

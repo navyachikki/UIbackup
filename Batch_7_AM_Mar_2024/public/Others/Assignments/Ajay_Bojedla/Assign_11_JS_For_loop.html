@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body>
+    <script>
+       var program = prompt(
+            "Enter Program number"+
+            "\n(1) Program to find the sum of values between 1 to 20"+
+            "\n(2) Program to display values from 90 to 21"+
+            "\n(3) Program to get all the even numbers between 1 to 100"+
+            "\n(4) Program to get all the odd numbers between 99 to 9"+
+            "\n(5) Program to show the values between user given range"+
+            "\n(6) Program to check whether given number is prime or not"+
+            "\n(7) Program to get all prime numbers between user given range"+
+            "\n(8) Program to find the sum of all the even numbers between 1 to 1000"
+        )
+
+        if(program == "1") {
+            let sum = 0;
+            for(var i=1; i<=20; i++) {
+                sum  = sum + i;
+            }
+            alert("sum of values between 1 to 20 is: "+ sum)
+        } else if(program == "2") {
+            for(var i=90; i>20; i--) {
+                console.log(i)
+            }
+            alert("Please check console for output")
+        } else if (program == "3") {
+            for(var i=1; i<=100; i++) {
+                if(i%2 == 0) {
+                    console.log(i)
+                }
+            }
+            alert("Please check console for output")
+        } else if (program == "4") {
+            for(var i=99; i>=9; i--) {
+                if(i%2 != 0) {
+                    console.log(i)
+                }
+            }
+            alert("Please check console for output")
+        } else if (program == "5") {
+            var startNumber = parseInt(prompt("Enter Start Number"))
+            var endNumber = parseInt(prompt("Enter End Number"))
+            if(startNumber < endNumber) {
+                for(var i=startNumber; i<=endNumber; i++) {
+                    console.log(i)
+                }
+            } else {
+                for(var i=startNumber; i>=endNumber; i--) {
+                    console.log(i)
+                }
+            }
+            alert("Please check console for output")
+        } else if (program == "6") {
+            var isPrime = true;
+            var number = prompt("Enter the number to check if it is prime or not")
+            if (number == 0 || number == 1) {
+                isPrime = false;
+            } else {
+                for(var i = 2; i<number; i++) {
+                    if(number%i == 0) {
+                        isPrime = false;
+                        break
+                    } 
+                }
+            }
+
+            if(isPrime) {
+                alert (number+" is a Prime Number")
+            } else {
+                alert (number+" is not a Prime Number")
+            }
+        } else if (program == "7") {
+            var startNumber = parseInt(prompt("Enter Start Number"))
+            var endNumber = parseInt(prompt("Enter End Number")) 
+            if(startNumber < endNumber) {
+                for(var j=startNumber; j<=endNumber; j++) {
+                    var isPrime = true;
+                    if (j == 0 || j == 1) {
+                        isPrime = false;
+                    } else {
+                        for(var i = 2; i<j; i++) {
+                            if(j%i == 0) {
+                                isPrime = false;
+                                break
+                            } 
+                        }
+                    }
+
+                    if(isPrime) {
+                        console.log(j)
+                    }
+                }
+            } else {
+                for(var j=startNumber; j>=endNumber; j--) {
+                    var isPrime = true;
+                    if (j == 0 || j == 1) {
+                        isPrime = false;
+                    } else {
+                        for(var i = 2; i<j; i++) {
+                            if(j%i == 0) {
+                                isPrime = false;
+                                break
+                            } 
+                        }
+                    }
+                    if(isPrime) {
+                        console.log(j)
+                    }
+                }
+            }
+            alert("Please check console for output")
+        } else if (program == "8") {
+            let sum = 0;
+            for (var i=1; i<=1000; i++) {
+                if (i%2 == 0) {
+                    sum = sum + i;
+                }
+            }
+            alert ("Sum of all the even numbers between 1 to 1000 is: "+sum)
+        } else {
+            alert("Inavlid program number.")
+        }
+    </script>
+</body>
+</html>

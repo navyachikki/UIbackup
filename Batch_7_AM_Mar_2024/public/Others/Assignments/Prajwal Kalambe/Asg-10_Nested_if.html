@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested if question</title>
+</head>
+<body>
+    <SCRIPT>
+        var name= prompt("Enter the name :");
+        var gender=prompt("Enter the Gender :");
+        var salary=prompt("Enter the salary :");
+        var tax;
+        var finalSalary;
+        if(gender=="male"){
+            if(salary>=200000){
+                tax=(0.15*salary)
+                finalSalary=salary-tax;
+                console.log("My name is "+name+" and my gender is "+gender);
+                console.log("My salary is "+salary+" and tax by 15% is "+tax);
+                console.log("My final salary is :$"+finalSalary);
+            }
+            else if(salary>=100000 && salary<200000){
+                tax=(0.10*salary);
+                finalSalary=salary-tax;
+                console.log("My name is "+name+" and my gender is "+gender);
+                console.log("My salary is "+salary+" and tax by 10% is "+tax);
+                console.log("My final salary is :$"+finalSalary);
+            }
+            else if(salary>=50000 && salary<100000){
+                tax=(0.05*salary);
+                finalSalary=salary-tax;
+                console.log("My name is "+name+" and my gender is "+gender);
+                console.log("My salary is "+salary+" and tax by 5% is "+tax);
+                console.log("My final salary is :$"+finalSalary);
+            }
+            else {
+                tax=0;
+                finalSalary=salary-tax;
+                console.log("My name is "+name+" and my gender is "+gender);
+                console.log("My salary is "+salary+" and tax by 0% is "+tax);
+                console.log("My final salary is :$"+finalSalary);
+            }
+
+        }
+        else{
+            if(salary>=200000){
+                tax=(0.10*salary)
+                finalSalary=salary-tax;
+                console.log("My name is "+name+" and my gender is "+gender);
+                console.log("My salary is "+salary+" and tax by 10% is "+tax);
+                console.log("My final salary is :$"+finalSalary);
+            }
+            else if(salary>=100000 && salary<200000){
+                tax=(0.05*salary)
+                finalSalary=salary-tax;
+                console.log("My name is "+name+" and my gender is "+gender);
+                console.log("My salary is "+salary+" and tax by 5% is "+tax);
+                console.log("My final salary is :$"+finalSalary);
+            }
+            else {
+                tax=0;
+                finalSalary=salary-tax;
+                console.log("My name is "+name+" and my gender is "+gender);
+                console.log("My salary is "+salary+" and tax by 0% is "+tax);
+                console.log("My final salary is :$"+finalSalary);
+            }
+        }
+    </SCRIPT>
+    
+</body>
+</html>

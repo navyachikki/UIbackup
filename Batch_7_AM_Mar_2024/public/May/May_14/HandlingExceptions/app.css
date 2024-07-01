@@ -1,0 +1,27 @@
+.title {
+    text-align: center;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.thnksBlock {
+    width: 400px;
+    border: 1px solid;
+    background-color: yellowgreen;
+    color: green;
+    margin: 20px;
+    padding: 50px;
+    position: absolute;
+    left: 25%;
+    top: 40%;
+    display: none;
+}
+
+.taskContainer {
+    border: 1px solid;
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+    margin: 50px auto;
+}

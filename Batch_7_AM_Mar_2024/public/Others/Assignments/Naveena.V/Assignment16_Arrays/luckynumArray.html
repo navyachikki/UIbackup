@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <script>
+            var l = [];
+            l = prompt("enter the length of array")
+            for (var i=0;i<l;i++) {
+                var n = prompt("Enter number to check")
+                n = parseInt(n);
+                var sum = 0
+                var rem;
+                while(n>0) {
+                    rem = n % 10;
+                    sum = sum+ rem;
+                    n = n/10;
+                    n=parseInt(n)
+                    if (n==0 && sum>9) {
+                    n = sum;
+                    sum = 0;
+                }
+                }
+                
+                console.log(sum + " lucky number")
+                
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=[],b=[],h = 1, m, s = 0,j = 0;
+        range = prompt("Enter the length of the array :");
+        for(var i=0; i <= range-1 ; i++){
+            a[i] = prompt("Enter the number :");
+            a[i] = parseInt(a[i]);
+        }
+        for(var i = 0 ; i <= range-1 ; i++ ){
+            h = a[i];
+            m = 0;
+            while(h != 0){
+                s = h % 10;
+                m = m  + s;
+                h = h / 10 ;
+                h = parseInt(h);
+                if(m >= 10 && h == 0){
+                    h = m;
+                    m = 0;
+                }
+            }
+            b[j] = m;
+            j++;
+            }
+        console.log("The numbers in the array are :"+a);
+        console.log("The lucky numbers are "+b);
+    </script>
+</body>
+</html>

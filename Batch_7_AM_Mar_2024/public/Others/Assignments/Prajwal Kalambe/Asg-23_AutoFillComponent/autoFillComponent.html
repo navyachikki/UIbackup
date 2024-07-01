@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="autoFillComponent.css">
+    
+</head>
+<body>
+    <div class="outer">
+        <h2>AUTOFILL-COMPONENT</h2>
+        <div class="field" ><label for="">Name:</label><input id="name" type="text" /></div>
+        <div class="field" ><label for="">Age:</label><input type="number" id="age" /></div>
+        <div class="field" >
+          Gender: <input type="radio" value="Male" id="gender" name="gender"/>Male <input type="radio" id="gender" value="Female" name="gender"/>Female
+        </div>
+        
+        <div class="search" >
+        <form autocomplete="off">
+            <div>Books:<br>
+                <input type="text" id="input" placeholder="Search a Book name here....">
+            </div>
+            <ul class="list"></ul>
+        </form>
+    </div>
+        
+        
+    <button onclick="submitData()">Submit</button>
+            
+    <div class="outputSlip" style="display: none;">
+        <h2>BOOK SLIP</h2>
+        <div class="Out">Name of Owner :-<span id="outname"></span></div>
+        <div class="Out">Age :-<span id="outage"></span></div>
+        <div class="Out">Gender :-<span id="outgender"></span></div>
+        <div class="Out">Name of Book:-<span id="outbook"></span></div>
+
+    </div>  
+
+
+      <script src="autoFillComponent.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+.ratingContainer div{
+    background-image: url(ratingstarsimg.JPG);
+    height: 18px;
+    width:20px;
+    float: left;
+}
+.fullStar{
+    background-position: 0px 0px;
+}
+.halfStar{
+    background-position: 40px 0px;
+}
+.disableStar{
+    background-position: 80px 0px;
+}
+.ratingContainer{
+    height: 30px;
+}

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     body{
+     background-color: rgb(30,40,50);
+    }
+    
+    .header{
+        height: 70px;
+        background-color: rgb(40,50,60);
+    }
+    .content{
+        color: yellow;
+    }
+    .content1, .content2, .content3, .content4, .content5{
+       float: right;
+       color: white;
+       position: absolute;
+       display: inline;
+    } 
+    .content1{
+        left: 200px;
+    }
+    .content2{
+        left: 300px;
+    }
+    .content3{
+        left: 400px;
+    }
+    .content4{
+        left: 500px;
+    }
+    .content5{
+        left: 600px;
+    }
+    .button1{
+        display: inline;
+        border: 1px solid white;
+        height: 30px;
+        width: 120px;
+        float: right;
+        position: absolute;
+        left:800px ;
+        background-color: white;
+
+    }
+    .button2{
+        display: inline;
+        border: 1px solid blue;
+        height: 30px ;
+        width:60px ;
+        float: right;
+        position: absolute;
+        left: 980px;
+        background-color: blue;
+    }
+    .button3{
+        display: inline;
+        border: 1px solid yellow;
+        height: 30px;
+        width: 70px;
+        position: absolute;
+        float: right;
+        left: 1100px;
+        background-color: yellow;
+    }
+    .span{
+        color: black;
+    }
+    .span1{
+        color: white;
+    }
+    .span2{
+        color: black;
+    }
+    .block1{
+        display: inline;
+        border: 1px solid ;
+        height: 330px;
+        width:1170px ;
+        position: absolute;
+        left:70PX ;
+        top: 18%;
+
+    }
+    .dis{
+        position: absolute;
+        left: 60%;
+        bottom: 60%;
+        color: blue;
+    }
+    .dis1{
+        position: absolute;
+        left: 60%;
+        bottom: 52%;
+        color: white;
+    }
+    .dis2{
+        position: absolute;
+        left: 60%;
+        bottom: 46%;
+        color: white;
+    }
+    img{
+        position: absolute;
+        right: -3%;
+        top: -3%;
+    }
+    .block2{
+        border: 1px solid;
+        height:200px;
+        width:500px ;
+        position: absolute;
+        left: 130px;
+        top: 460px;
+    }
+    .img2{
+        position: absolute;
+        left: -16%;
+        top: -20%;
+    }
+    .kurta{
+        position: absolute;
+        color: blueviolet;
+        top: -20%;
+    }
+    .kurta1{
+        position: absolute;
+        color:white;
+        left: -5%;
+    }
+    .block3{
+        border: 1px solid;
+        height:200px;
+        width:500px ;
+        position: absolute;
+        left: 650px;
+        top: 460px;
+    }
+   
+    .img3{
+        position: absolute;
+        left: -1%;
+        top: -25%;
+    }
+    .jean{
+        position: absolute;
+        left: 60%;
+        top: -10%;
+        color: black;
+    }
+    .jean1{
+        position: absolute;
+        left: 55%;
+        top: 3%;
+        color: white;
+    }
+    .block4{
+        border: 1px solid;
+        height:300px;
+        width:750px ;
+        position: absolute;
+        left: 70px;
+        top: 680px;
+    }
+    .img4{
+        position: absolute;
+        left: -4%;
+    }
+    .child{
+        position: absolute;
+        left: 70%;
+        color: blueviolet;
+    }
+    .child1{
+        position: absolute;
+        left: 101%;
+        color:green;
+        bottom: 50%;
+    }
+    .child2{
+        position: absolute;
+        left: 101%;
+        color:green;
+        bottom: 35% ;
+    }
+    .block5{
+        border: 1px solid;
+        height:300px;
+        width:330px ;
+        position: absolute;
+        left: 930px;
+        top: 680px;
+    }
+    .img5{
+        position: absolute;
+        left: -0.05%;
+        top: -0.5%;
+    }
+    .men{
+        color: skyblue;
+        position: absolute;
+        left: 60%;
+    }
+    .middlehead{
+        border: 1px solid;
+        height:120px;
+        width:1280px;
+        position: absolute;
+        top: 1050px;
+        background-color: silver;
+    }
+    .shop{
+        position: absolute;
+        color: brown;
+        left: 15%;
+    }
+    .shop1{
+        position: absolute;
+        color:blue;
+        left: 28%;
+        top: -5%;
+    }
+    .shop2{
+        position: absolute;
+        color: brown;
+        left: 50%;
+    }
+    .smallblock1{
+        border: 1px solid;
+        height:200px;
+        width:200px ;
+        position: absolute;
+        left: 60px;
+        top: 1200px;
+    }
+    .cos{
+        position: absolute;
+        color: skyblue;
+        bottom: -75%;
+    }
+    .smallblock2{
+        border: 1px solid;
+        height:200px;
+        width:200px ;
+        position: absolute;
+        left: 310px;
+        top: 1200px;
+    }
+    .sblock2{
+        position: absolute;
+        left: -18%;
+    }
+    .access{
+        position: absolute;
+        color: yellowgreen;
+        bottom: -75%;
+
+    }
+    
+    .smallblock3{
+        border: 1px solid;
+        height:200px;
+        width:200px ;
+        position: absolute;
+        left: 820px;
+        top: 1200px;
+    }
+    .jewe{
+        position: absolute;
+        color: lightcyan; 
+    }
+    .smallblock4{
+        border: 1px solid;
+        height:200px;
+        width:200px ;
+        position: absolute;
+        left: 1080px;
+        top: 1200px;
+    }
+    .sblock4{
+        position: absolute;
+        bottom: -70%;
+        color: aquamarine;
+    }
+</style>
+<body>
+    <form>
+    <div class="container">
+        <div class="header">
+            <h3 class="content">E-Shopping
+                <br>web app
+            <div class="content1">Home</div>
+            <div class="content2">Features</div>
+            <div class="content3">Pricing</div>
+            <div class="content4">FAQs</div>
+            <div class="content5">About</div>
+            <div class="button1">
+                <div class="span">search...</div>
+            </div>
+            <div class="button2">
+                <a class="span1" href="loginpage.html">Login</a>
+            </div>
+            <div class="button3">
+                <a class="span2"  href="singuppage.html">sign-up</a>
+            </div>
+
+        <div class="block1">
+            <img src="c:\Users\Nikky Peddinti'$\Desktop\power bi\block1image.JPG">
+            <h1 class="dis">* GET 10% *</h1>
+            <h2 class="dis1">OFFER</h2>
+            <h3 class="dis2">ON EACH PRODUCT</h3>
+        </div>
+        <div class="block2">
+            <a href="womenspage.html"><img class="img2"  src="c:\Users\Nikky Peddinti'$\Desktop\power bi\template\block2_1img.JPG"></a>
+            <h2 class="kurta">KURTA SET</h2>
+            <h3 class="kurta1">dupta,top and bottom</h3>
+
+        </div>
+        <div class="block3">
+            <img class="img3" src="c:\Users\Nikky Peddinti'$\Desktop\power bi\template\block3img.JPG">
+            <h2 class="jean"> Jeans</h2>
+            <h3 class="jean1">Top and bottom wear</h3>
+        </div>
+        <div class="block4">
+            <a href="childpage.html"><img class="img4"  src="c:\Users\Nikky Peddinti'$\Desktop\power bi\template\block5img.JPG"></a> 
+            <h2 class="child">Children Wear</h2>
+            <h2 class="child1">15% OFFER</h2>
+            <h3 class="child2">FOR Children</h3>
+        </div>
+        <div class="block5">
+           <a href="menspage.html"><img class="img5" src="c:\Users\Nikky Peddinti'$\Desktop\power bi\template\block4img.JPG"></a> 
+            <h2 class="men">Mens wear</h2>
+        </div>
+        <div class="middlehead">
+            <h2 class="shop">SHOP NOW</h2>
+            <h1 class="shop1">GET 15% OFF</h1>
+            <h2 class="shop2">ON EACH PRODUCT</h2>
+        </div>
+        <div class="smallblock1">
+            <img src="c:\Users\Nikky Peddinti'$\Desktop\power bi\template\block6img.JPG">
+            <h3 class="cos">COSEMATICS</h3>
+        </div>
+        <div class="smallblock2">
+            <img class="sblock2"  src="c:\Users\Nikky Peddinti'$\Desktop\power bi\template\block6_1img.JPG">
+            <h2 class="access">ACCESSOIES</h2>
+        </div>
+        <div class="smallblock3">
+            <img src="c:\Users\Nikky Peddinti'$\Desktop\power bi\template\block6_2img.JPG">
+            <h3 class="jewe">JEWELLERY</h3>
+        </div>
+        <div class="smallblock4">
+            <img src="c:\Users\Nikky Peddinti'$\Desktop\power bi\template\block6_4img.JPG">
+            <h3 class="sblock4">Mobiles and Laptops</h3>
+        </div>
+    </form>
+        
+</body>
+<script>
+
+</script>
+</html>

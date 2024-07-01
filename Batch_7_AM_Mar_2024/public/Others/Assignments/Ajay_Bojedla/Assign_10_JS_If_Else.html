@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else</title>
+</head>
+<body>
+    <script>
+        var empSalary, empGender, empTaxAmount, taxPercentage;
+        empSalary = prompt("Enter Employee Salary")
+        empGender = prompt("Enter Employee Gender. male(or)female")
+
+        if(empGender == "male") {
+            if(empSalary > 200000) {
+                taxPercentage = 15;  
+            } else if(empSalary > 100000) {
+                taxPercentage = 10;
+            } else if(empSalary > 50000) {
+                taxPercentage = 5;
+            } else {
+                taxPercentage = "No Tax"
+            }
+        } else {
+            if(empSalary > 200000) {
+                taxPercentage = 10;  
+            } else if(empSalary > 100000) {
+                taxPercentage = 5;
+            } else {
+                taxPercentage = "No Tax"
+            }
+        }
+
+        if(typeof(taxPercentage) == "number") {
+            empTaxAmount = (empSalary * taxPercentage) / 100;
+            alert("Tax Amount: "+empTaxAmount)
+        } else {
+            alert(taxPercentage)
+        }    
+    </script>
+</body>
+</html>

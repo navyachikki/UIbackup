@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+      // palindrome or not
+      
+       var name="ofo";
+       var nam=" ";
+      var temp;
+      temp=name;
+       for(var i=temp.length-1;i>=0;i--){
+        var ch= temp.charAt(i);
+        nam=ch+nam;
+       }
+       if(temp.charAt(i)==nam.charAt(i)){
+         console.log("palindrome");
+       }
+       else{
+         console.log("not palindrome");
+       }
+
+      //  vowels count
+
+       var name="Aravind";
+      var result= name.toLowerCase();
+       console.log(result);
+        var vcount=0;
+       for(var i=0;i<result.length;i++){
+        var ch=result.charAt(i);
+        if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+              vcount++;
+        }
+       }
+       console.log(vcount);
+
+  //  display  empdetails
+
+       var empdetails={
+        name:'Aravind',
+        age:23,
+        gender:'male',
+        designation:'ase',
+        role:'trainee',
+        arr:[2,4,5]
+       };
+       for(var temp in empdetails){
+        console.log(empdetails[temp]);
+       }
+
+      //  dymaic emp inputs
+
+var emp1={};
+    emp1.name=prompt("enter name");
+    emp1.age=prompt("enter age");
+    emp1.workingdays=[];
+for(var i=0;i<5;i++){
+    emp1.workingdays[i]=prompt("enter days"+i);
+}
+console.log(emp1.workingdays);
+console.log(emp1.name);
+
+// Display emp totaldays,avgdays.
+
+var emp2={
+   empdetails(){
+    emp2.name=prompt("enter name");
+    emp2.age=prompt("enter age");
+    emp2.workingdayscount=[];
+for(var i=0;i<5;i++){
+    emp2.workingdayscount[i]=parseInt(prompt("enter days"+i));
+}
+emp2.empavgcount();
+  },
+   empavgcount(){
+    emp2.total=0;
+ for(i=0;i<5;i++){
+emp2.total=emp2.total+emp2.workingdayscount[i];
+ }
+ emp2.avg=emp2.total/5;
+ 
+},
+displayempdetails(){
+  emp2.empdetails();
+  console.log(emp2.name);
+  console.log(emp2.age);
+  console.log(emp2.total);
+  console.log(emp2.avg);
+}
+};
+emp2.displayempdetails()
+console.log(emp2);
+
+    </script>
+</body>
+</html>

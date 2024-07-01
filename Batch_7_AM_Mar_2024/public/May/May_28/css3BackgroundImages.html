@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating CSS3 Background images
+        </title>
+        <style>
+            .container {
+                border: 1px solid;
+                width: 600px;
+                height: 600px;
+                margin: 20px auto;
+                text-align: center;
+                font-weight: bold;
+                border-radius: 10%;
+                box-shadow: 5px 5px 10px green;
+                text-shadow: 5px 5px 5px red;
+                font-size: 30px;
+                background-repeat: no-repeat;
+                /* background-position: center; */
+                /* background-size: 100% 100%; */
+                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrv6DTdIOipbJkSCpPv8XjIY9wEKc-00yU9YpfoResPw&s'), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDlKinWbKt1lXqqXlCtbbtTb-F1Lg1OMzvlqdeS-nrkw&s");
+                background-position: left top, right bottom;
+                background-size: 200px 300px, 400px 300px;
+
+
+            }
+        </style>
+    </head>
+    <body>
+        <img src="https://cdn.pixabay.com/animation/2023/10/08/03/19/03-19-26-213_512.gif" alt="">
+        <div class="container">
+            Content
+        </div>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+   <script>
+     var value = prompt("enter what you want to do: ");
+     switch(value) {
+        case "add" :
+            var number = prompt("Enter the  number: ");
+            number = parseInt(number);
+            sum = 0;
+            value=0;
+            while(number != 0){
+                value = number % 10 ;
+                sum = sum + value ;
+                number = number / 10;
+                number = parseInt(number);
+            }
+            console.log("The sum of the digit is : "+sum );
+            break;
+        case "Luckynumber" :
+            var number = prompt("Enter the  number: ");
+            number = parseInt(number);
+            sum = 0;
+            value=0;
+            while(number != 0){
+                value = number % 10 ;
+                sum = sum + value ;
+                number = number / 10;
+                number = parseInt(number);
+                if(number == 0 && sum >= 10){
+                    number = sum;
+                    sum = 0;
+                }
+            }
+            break;
+            console.log("The Lucky number is :"+ sum);
+        case "Palinidrom" :
+            var number=prompt("Enter the number");
+            number=parseInt(number);
+            var h = number;
+            var reverse=0;
+            var n;
+            reverse = parseInt(reverse);
+            while(number >= 1){
+                n = number %10;
+                reverse = reverse*10 +n;
+                number = number/10;
+                number=parseInt(number);
+            }
+            if( h == reverse ){
+                console.log(h+" is a palinidrom number");
+            }
+            else{
+                console.log(h+" is not a palinidrom number");
+            }
+            break;
+        case "Reverse" :
+            var number=prompt("Enter the number");
+            number=parseInt(number);
+            var h = number;
+            var reverse=0;
+            var n;
+            reverse = parseInt(reverse);
+            while(number >= 1){
+                n = number %10;
+                reverse = reverse*10 +n;
+                number = number/10;
+                number=parseInt(number);
+            }
+            console.log("The reverse of "+h+" is "+ reverse)
+            break;
+     }
+   </script> 
+</body>
+</html>

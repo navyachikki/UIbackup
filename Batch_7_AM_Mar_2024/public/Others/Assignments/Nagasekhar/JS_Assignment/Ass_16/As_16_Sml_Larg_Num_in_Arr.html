@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="Array.css">
+        <style>
+        </style>
+    </head>
+    <body>
+        <h2 id="Display">Displaying the Smallest & Largest Num in the given Array</h2>
+        <span class="DisplayL"></span>
+        <span class="DisplayS"></span>
+        
+        <script>
+            
+        var arr=[];
+        var n=parseInt(prompt("Enter number of elements :"));
+       
+        for(var i=0;i<n;i++)
+        {
+            arr[i]=prompt("Enter array value : ");
+        }
+
+       
+        for(var i=0;i<arr.length-1;i++)
+        {
+            for(var j=i+1;j<arr.length;j++)
+            {
+                if(parseInt(arr[i])<parseInt(arr[j]))
+                {
+                    var temp=arr[j];
+                    arr[j]=arr[i];
+                    arr[i]=temp;
+                }
+            }
+        }
+
+        console.log("The Largest num in the given Array is : " + arr[0]);
+        document.querySelector(".DisplayL").innerText = "The Largest num in the given Array is " + arr[0];
+
+     console.log("The Smallest num in the given Array is : " + arr[n-1]);
+     document.querySelector(".DisplayS").innerText = "The Smallest num in the given Array is " + arr[n-1];
+   
+           
+    
+        </script>
+    </body>
+</html>

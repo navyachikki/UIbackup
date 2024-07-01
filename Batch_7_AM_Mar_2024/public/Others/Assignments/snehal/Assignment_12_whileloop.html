@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qusetion solved</title>
+</head>
+<body>
+    <script>
+    // Qs. 9   (find total no. of digits)
+
+    // var n = prompt("Enter the No.");
+    // n = parseInt(n);
+
+    // var i = 0;
+
+    // while(n > 0) {
+    //     var rem = n % 10;
+    //     n = Math.floor(n / 10);
+    //     if(rem >= 0, i++) {
+    //     }
+    // }
+    // console.log("No. of digits " + i);
+
+
+
+    // Qs. 10  (find lucky no. of given no.)
+
+    // var n = prompt("Enter a Number");
+    // n = parseInt(n);
+
+    // var sum = 0;
+
+    // while(n > 0) {
+    //     var rem = n % 10;
+    //     sum = sum + rem;
+    //     n = n / 10;           
+    //     n = parseInt(n);
+    //     if(n == 0 && sum > 9) {
+    //         n = sum;
+    //         sum = 0;
+    //     }
+    // }
+    // console.log("Lucky No. is " + sum);
+
+
+
+    // Qs. 11  (find reverse of a given no.)
+
+
+    // var n = prompt("Enter the Number");
+    // n = parseInt(n);
+
+    // var rev = 0;
+
+    // while(n > 0) {
+    //     var rem = n % 10;
+    //     rev = rev * 10 + rem;
+    //     n = Math.floor(n / 10);
+    // }
+    // console.log("Reverse No. is " + rev);
+
+
+    // Qs. 12  (check Palindrome No.)
+
+    var n = prompt("Enter the number");
+    n = parseInt(n);
+
+    var rev = 0;
+    var originalN = n;
+
+    while(n > 0) {
+        var rem = n % 10;
+        rev = rev * 10 + rem;
+        n = parseInt(n / 10);
+    }
+    console.log("Reverse No. " + rev);
+    
+    if(rev === originalN) {
+        console.log("Its a Palindrome No. " +originalN);
+    }else {
+        console.log("NOT a Palindrome No. " + originalN);
+    }
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

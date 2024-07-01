@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(183, 219, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  width: 1700px;
+  height: 1700px;
+  border-radius: 50%;
+  background-color: white;
+  border: 50px solid rgb(72, 40, 40);
+  position: relative;
+}
+
+.logo img {
+  position: absolute;
+  top: 40%;
+  left: 44%;
+  height: 50px;
+}
+
+.num {
+  position: absolute;
+  transform: translate(-109%, -100%);
+  font-size: 90px;
+}
+
+.hand {
+  position: absolute;
+  width: 50%;
+  background-color: black;
+  top: 50%;
+  transform-origin: 100%;
+  transform: translateX(-50%) rotate(90deg);
+  left: 25%;
+}
+
+.hour {
+  height: 20px;
+}
+
+.minute {
+  height: 10px;
+}
+
+.second {
+  height: 5px;
+  background-color: red;
+}

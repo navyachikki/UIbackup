@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .mystyles {
+                font-size: 30px;
+                background-color: blue;
+                color: yellowgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            
+        </div>
+        <script>
+            // innerTExt and innerHTML 
+            // document.querySelector("#container").innerHTML = "<b>Hello every one</b>";
+
+            /* var spanTag = document.createElement("span");
+            spanTag.innerText = "Hello every one"; */
+
+            // document.querySelector("#container").innerHTML = "<span>Hello every one</span>";
+
+            //document.querySelector("#container").append(spanTag)
+
+            var tagname = prompt("enter tagname");
+            var color = prompt("enter color name");
+            var userTag = document.createElement(tagname);
+            userTag.style.color = color;
+            userTag.style['font-size'] = color;
+            userTag.style['background-color'] = "yellow";
+            userTag.innerText = "Hello every one"; 
+            // userTag.setAttribute("class", "mystyles");
+
+            document.querySelector("#container").append(userTag);
+
+
+
+        </script>
+    </body>
+</html>

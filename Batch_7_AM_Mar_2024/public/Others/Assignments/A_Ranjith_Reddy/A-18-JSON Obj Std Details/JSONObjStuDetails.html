@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Object Student Details</title>
+</head>
+<body>
+    <script>
+            var studentDetails = {
+                'name' : 'Raj',
+                'Age' : 24,
+                'location' : 'Hyderabad',
+                'marks' : [80,85,90,95,99]
+            };
+
+            console.log(studentDetails);
+            console.log("Age of Student = " + studentDetails.Age);
+            console.log("Marks of Student = " + studentDetails.marks);
+            console.log("Marks in Subject1 = " + studentDetails.marks[2]);
+            
+            studentDetails.totalMarks = 0;
+            for (i = 0; i < studentDetails.marks.length; i++)
+            {
+                studentDetails.totalMarks = studentDetails.totalMarks + studentDetails.marks[i];
+            }
+            console.log("Total Marks = " + studentDetails.totalMarks);
+            studentDetails.marksAvg = studentDetails.totalMarks / studentDetails.marks.length;
+            console.log("Total Average = " + studentDetails.marksAvg);
+    </script>
+</body>
+</html>

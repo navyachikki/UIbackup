@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS- Functions And Parameters</title>
+        <style>
+            h1, p {
+                text-align: center;
+                margin: 5px;
+                padding: 5px;
+            }
+            p {
+                font-size: 20px;
+                margin-top: 30px;
+            }
+            span {
+                color: blue;
+                font-size: 25px;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Using JavaScript Functions With Parameters And Return</h1>
+            <p>For More Information Please See <span>Console</span> Tab In <span>Inspect Element</span> !</p>
+            <p>View Source Code For Better Understanding</p>
+        </div>
+        <script>
+            var edetails = () => {
+                var ename = prompt("Enter Employee Name");
+                var eage = prompt("Enter Employee Age");
+                var egender = prompt("Enter Employee Gender");
+                var esalary = parseInt(prompt("Enter Employee Salary"));
+                var epf = pf(esalary);
+                var ehra = hra(esalary);
+                var egross = gross(esalary, ehra);
+                edisplay(ename, eage, egender, esalary, epf, ehra, egross)
+            }
+            var pf = (esalary) => {
+                var epf = parseInt(esalary * 0.14);
+                return epf;
+            }
+            var hra = (esalary) => {
+                var ehra = esalary * 0.24;
+                return ehra;
+            }
+            var gross = (esalary, ehra) => {
+                var egross = esalary + ehra;
+                return egross;
+            }
+            var edisplay = (ename, eage, egender, esalary, epf, ehra, egross) => {
+                console.log("Employee Details");
+                console.log("Employee Name: " + ename);
+                console.log("Employee Age: " + eage);
+                console.log("Employee Gender: " + egender);
+                console.log("Employee Salary: " + esalary);
+                console.log("Employee P.F.: " + epf);
+                console.log("Employee H.R.A.: " + ehra);
+                console.log("Employee Gross Salary: " + egross);
+            }
+
+            edetails();
+        </script>
+    </body>
+</html>

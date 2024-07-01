@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otp generationt</title>
+    <style>
+        .otpBlock {
+                border: 1px solid;
+                width: 100px;
+                margin: 10px;
+                padding: 10px;
+                text-align: center;
+                font-weight: bold;
+            }
+    </style>
+</head>
+<body>
+    <div class="otpBlock">otp</div>
+    <input type="button" value="otp Request" onclick="otpGeneration()">
+    <script>
+        var otpSize= prompt("enter size");
+        var otpGeneration=()=>{
+            var otpValue=""
+            for(var i=0; i<otpSize;i++){
+                otpValue+=getRandomNumber();
+                console.log(otpValue);
+            }
+            document.querySelector(".otpBlock").innerText=otpValue;
+        }
+        var getRandomNumber=()=>{
+            return Math.round(Math.random()*9);
+        }
+    </script>
+</body>
+</html>

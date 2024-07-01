@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="app.css">
+        <script src="studentDetails.js"></script>
+    </head>
+    <body>
+        <h3>Progress card Generator</h3>
+        <ul>
+            <li>
+                <input type="text" placeholder="Student Name" id="sname" > <span class="astric">*</span>
+                <div class="nameErr error"> 
+                    Name is mandate field
+                </div>
+            </li>
+            <li>
+                <input type="text" placeholder="Student Age" id="sage"><span class="astric">*</span>
+                <div class="ageErr error"> 
+                    Age is mandate field
+                </div>
+            </li>
+            <li>
+                Gender: 
+                <input type="radio"  value="Male" name="gender" checked> Male 
+                <input type="radio"  value="Female" name="gender"> Female
+            </li>
+            <li>
+                <select  id="studentClass">
+                    <option selected>Select Student Class</option>
+                    <option value="Class I">Class I</option>
+                    <option value="Class II">Class II</option>
+                    <option value="Class III">Class III</option>
+                    <option value="Class IV">Class IV</option>
+                    <option value="Class V">Class V</option>
+                </select><span class="astric">*</span>
+            </li>
+            <li id="marksContainer">
+                <input type="text" placeholder="Sub 1" id="m1">
+                <input type="text" placeholder="Sub 2" id="m2">
+                <input type="text" placeholder="Sub 3" id="m3">
+                <input type="text" placeholder="Sub 4" id="m4">
+                <input type="text" placeholder="Sub 5" id="m5">
+                <div class="marksErr error"> 
+                    Marks of 5 sub is mandate field
+                </div>
+            </li>
+            <li>
+                <input type="button" value="Generate Progress Card" onclick="studentDetails.readStudentDetails()">
+            </li>
+        </ul>
+
+        <ul class="progressCardBlock">
+            <li class="title">
+                Progress card
+            </li>
+            <li>
+                Stduent Name is : <span id="dname"></span>
+            </li>
+            <li>
+                Stduent Age is : <span id="dage"></span>
+            </li>
+            <li>
+                Stduent Gender is : <span id="dgender"></span>
+            </li>
+            <li>
+                Stduent Total is : <span id="dtotal"></span>
+            </li>
+            <li>
+                Stduent Avg is : <span id="davg"></span>
+            </li>
+            <li>
+                Stduent Grade is : <span id="dgrade"></span>
+            </li>
+        </ul>
+    </body>
+</html>

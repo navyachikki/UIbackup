@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display all the prime number between user given range</title>
+    <style>
+        h2{
+            text-align: center;
+            color: blueviolet;
+            text-decoration: double;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>Display all the prime number between user given range</h2>
+    <script>
+        
+        var startVal=prompt("Enter Start Value : ");
+        startVal=parseInt(startVal);
+
+        var endVal=prompt("Enter End Value : ");
+        endVal=parseInt(endVal);
+
+        for(var num=startVal;num<=endVal;num++)
+        {
+            var tracker=0;
+            for(var i=2;i<num;i++)
+            {
+                var rem=num%i;
+                if(rem == 0)
+                {
+                    tracker++;
+                }
+            }
+            var result= (tracker==0) ? true : false;
+            if(result==true)
+            {
+                console.log(num+" : "+"Prime Number");
+            }
+            else 
+            {
+                console.log(num+" : "+"Not Prime Number");
+            }
+           
+        }
+      
+
+     
+  
+    </script>
+    
+</body>
+</html>

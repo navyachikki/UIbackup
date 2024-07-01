@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of array</title>
+</head>
+
+<body>
+
+    <h2>dynamicaly add the array and sum the array</h2>
+    <script>
+
+        var size = parseInt(prompt("Enter the size of array:"));
+        var arr = [];
+        for (var i = 0; i <= size; i++) {
+            arr[i] = parseInt(prompt("Enter the array:"))
+
+        }
+        var sum = 0;
+        for (let j = 0; j < arr.length; j++) {
+            sum += arr[j];
+
+        }
+          console.log("The sum of array is:"+sum);
+    </script>
+</body>
+
+</html>

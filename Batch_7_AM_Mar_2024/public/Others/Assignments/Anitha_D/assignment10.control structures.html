@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <script>
+           var ename = prompt("enter the ename");
+           var eage = prompt("enter the eage");
+           var egender = prompt("enter the egender");
+           var salary = prompt("enter the salary");
+               salary = parseInt(salary);
+           var toatalsalary = salary*12;
+           var tax = 0;
+
+           console.log("employer name is" +ename);
+           console.log("employer age is" +eage);
+           console.log("employer gender is" +egender);
+           console.log("employer salary is" +salary);
+           console.log("employer toatlsalary is" +toatalsalary);  
+           if( egender == "male"){ 
+             if( salary >=200000 ){
+                tax = (15*toatalsalary)/100;
+             } if( salary >= 100000 ){
+                tax = (10*toatalsalary)/100;
+             }if( salary >= 50000){
+                tax = (5*toatalsalary)/100; 
+             }
+            
+            }else{
+                tax = 0;
+            }
+            if( egender == "female"){
+                if( salary >= 200000){
+                    tax = (10*toatalsalary)/100;
+                }if( salary >= 100000){
+                    tax = (5*toatalsalary)/100;
+                }
+            }else{
+                tax = 0;
+            }
+             console.log("tax is"+tax);
+            
+       </script>
+</body>
+</html>

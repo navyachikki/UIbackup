@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        var employeeDetails = {
+            employeeName : '',
+            employeeAge : '',
+            employeeGender: '',
+            employeeDepartment : '',
+            employeeBasicSalary : '',
+
+            readEmployeeDetails : function() {
+                this.empName = prompt("Enter employee name");
+                this.empAge = prompt("Enter employee age");
+                this.empGender = prompt("Enter employee gender");
+                this.empDepartment = prompt("Enter employee department");
+                this.empBasicSalary = prompt("Enter employee Basic Salary");
+            },
+
+            employeePf : function() {
+                return (this.empBasicSalary * 14) / 100;
+            },
+
+            employeeHRA : function() {
+                return (this.empBasicSalary * 24) / 100;
+            },
+
+            employeeTotalSalary : function() {
+                return parseFloat(this.empBasicSalary)  + this.employeePf() + this.employeeHRA();
+            },
+
+            display : function() {
+                this.readEmployeeDetails()
+                alert(
+                    "Employee Name: "+this.empName+
+                    "\nEmployee Age: "+this.empAge+
+                    "\nEmployee Gender: "+this.empGender+
+                    "\nEmployee Department: "+this.empDepartment+
+                    "\nEmployee Basic Salary: "+this.empBasicSalary+
+                    "\nEmployee PF: "+this.employeePf()+
+                    "\nEmployee HRA: "+this.employeeHRA()+
+                    "\nEmployee Total Salary: "+this.employeeTotalSalary()
+                )
+            }
+        }
+        employeeDetails.display()
+    </script>
+</body>
+</html>

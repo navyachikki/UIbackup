@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count total digit of number</title>
+</head>
+<body>
+    <script>
+        let num = 1245;
+        let count = 0;
+        for(let i=0; i<num; i++){
+            while(num > 0){
+                let digit = num % 10;
+                count ++;
+                num = Math.floor(num/10);
+            }
+        }
+        console.log("Total count is ", count);
+    </script>
+</body>
+</html>

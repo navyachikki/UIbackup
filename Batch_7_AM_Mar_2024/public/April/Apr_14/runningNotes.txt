@@ -1,0 +1,151 @@
+Conditional CS  :
+    if 
+    if else 
+
+    Syntax:
+        if (condtion) {
+            ..
+            ...
+        } else {
+            ....
+            ....
+        }
+
+    Nested if CS 
+
+
+if age > 40 
+    do something 
+
+if gender == 'female'
+    do something
+
+    diffrence btwn =, ==, ===
+
+
+
+    avg > 90 - distiction 
+
+    else if (avg >= 60) 
+        first class
+
+    else if syntax:
+
+        if (condition) {
+            ....;
+            ....
+        } else if (condition) {
+            ...
+        }
+
+        if (condiiton) {
+            ...
+            ....
+            if (condiiton) {
+                ... 
+            }
+        }
+
+    -------------
+
+    =
+    coparision operators: ==, ===, >=, <=, !=
+    bitwise operators: &&, || 
+
+    if (age >= 21) {
+        if (gender == 'male') {
+            console.log("u can apply for job");
+        }
+    }
+
+    if (age >= 21 && gender == 'male' ) {
+         console.log("u can apply for job");
+    }
+
+    if (rank <= 100 || isManagementSeat == true) {
+        console.log("Please go for registration");
+    }  else {
+
+    }
+
+    /......
+
+    conditional Operator:
+        ? :
+
+
+    bit wise operators
+
+    -------------
+
+    Syntax:
+        variable = (single / multiple condition) ? value1 for true case : value 2 for false case; 
+
+----------------------------
+
+Assignment 10 on CS :
+
+        work with emp details cal total sal 
+
+
+        cal the total tax amount to be paid 
+
+        for a male  employee
+
+            total sal >= 200000
+                tax percent is 15% of total sal
+            
+            totalsal >= 100000
+                tax percent is 10% 
+
+            totalSal >= 50000
+                tax percent is 5%
+            else 
+                0 tax 
+
+        for a female  employee
+
+            total sal >= 200000
+                tax percent is 10%
+            
+            totalsal >= 100000
+                tax percent is 5% 
+            else
+                
+                0 Tax
+------------------------------------
+    CS 
+        Conditional CS 
+        Looping CS
+            for 
+            while 
+            do while 
+            for each 
+            for in 
+            for of
+
+        for loop CS:
+
+            for ( intialization; conditioncheck; inc/dec value) {
+                ....
+                .....
+                .......
+            }
+
+-----------------
+
+incremental and decremental operators: 
+
+    ++ and -- 
+
+    var a = 90;
+        a = a + 1;
+    -----
+
+    var a = 90;
+    a += 1;
+
+    -------
+
+    var a = 90;
+    a++;

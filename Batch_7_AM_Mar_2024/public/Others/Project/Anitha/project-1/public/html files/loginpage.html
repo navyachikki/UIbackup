@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+     background-color: rgb(30,40,50);
+    }
+    
+    .header{
+        height: 70px;
+        background-color: rgb(40,50,60);
+    }
+    .content{
+        color: yellow;
+    }
+    .content1, .content2, .content3, .content4, .content5{
+       float: right;
+       color: white;
+       position: absolute;
+       display: inline;
+    } 
+    .content1{
+        left: 200px;
+    }
+    .content2{
+        left: 300px;
+    }
+    .content3{
+        left: 400px;
+    }
+    .content4{
+        left: 500px;
+    }
+    .content5{
+        left: 600px;
+    }
+    .button1{
+        display: inline;
+        border: 1px solid white;
+        height: 30px;
+        width: 120px;
+        float: right;
+        position: absolute;
+        left:800px ;
+        background-color: white;
+
+    }
+    .button2{
+        display: inline;
+        border: 1px solid blue;
+        height: 30px ;
+        width:60px ;
+        float: right;
+        position: absolute;
+        left: 980px;
+        background-color: blue;
+    }
+    .button3{
+        display: inline;
+        border: 1px solid yellow;
+        height: 30px;
+        width: 70px;
+        position: absolute;
+        float: right;
+        left: 1100px;
+        background-color: yellow;
+    }
+    .span{
+        color: black;
+    }
+    .span1{
+        color: white;
+    }
+    .span2{
+        color: black;
+    }
+    .background{
+        width: 400px;
+        height: 500px;
+        position: absolute;
+        top: 20%;
+        left: 35%;
+        background-color: rgb(60,70,80);
+    }
+    h2{
+        text-align: center;
+        color: white;
+        position: relative;
+        top: 3%;
+    }
+    label{
+        color: #fff;
+        position: relative;
+        left: 5%;
+        font-size:25px;
+    }
+    input{ 
+        background-color: rgb(50,60,70);
+        position: relative;
+        left: 4%;
+        display: block;
+        margin: 5px;
+        padding: 5px;
+        height: 40px;
+        width: 300px;
+
+    }
+    button{
+        height: 40px;
+        width: 300px;
+        position: relative;
+        left: 10%;
+        bottom: -10%;
+        font-size: 20px;
+    }
+    .sign{
+       position: relative;
+       left: -1%;
+       color: blue;
+       bottom: -27%;
+       font-size: 25px;
+    }
+    .forgot{
+       position: relative;
+       left: 10%;
+       color: blue;
+       bottom: -20%;
+       font-size: 25px;
+    }
+   
+</style>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3 class="content">E-Shopping
+                <br>web app
+            <div class="content1">Home</div>
+            <div class="content2">Features</div>
+            <div class="content3">Pricing</div>
+            <div class="content4">FAQs</div>
+            <div class="content5">About</div>
+            <div class="button1">
+                <div class="span">search...</div>
+            </div>
+            <div class="button2">
+                <a class="span1" href="loginpage.html">Login</a>
+            </div>
+            <div class="button3">
+                <a class="span2" href="singuppage.html">sign-up</a>
+            </div>
+    <form onsubmit="return myFunction1()" action="homepage.html" method="post">     
+    <div class="background">
+        <h2>Login Here</h2>
+        <label for="Username">Username:</label>
+       
+        <input type="text" id="name" placeholder="Email id">
+        
+    
+    <label for="Password">Password:</label>
+       
+        <input type="password" id="password" placeholder="password">
+    
+    <button type="submit">Login</button>
+      
+    <a class="sign" href="singuppage.html">signup</a>
+    <a  class="forgot" href="forgotpage.html">forgot password</a>
+    </div>
+   
+<script>
+     
+    function myFunction1(){
+        var name = document.getElementById("name").value
+        var password = document.getElementById("password").value
+        if( name ==" " || name == NaN ){
+           document.getElementById("name").innerHTML = " enter the user name "
+        }
+        if( password == " "){
+            document.getElementById("password").innerHTML= " please enter the password"
+            return false;
+        }
+        if ( password < 8){
+            document.getElementById("password").innerHTML = " password must be 8 characters"
+            return false;
+        }
+        if( password > 15) {
+            document.getElementById("password").innerHTML = "password does not exist more than 15 characters"
+            return false;
+        }
+    }
+
+</script> 
+</form>   
+</body>
+</html>

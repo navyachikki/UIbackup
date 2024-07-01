@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch case</title>
+</head>
+<body>
+    <script>
+        var program = prompt(
+            "Enter Program number"+
+            "\n(1) Program to find total number of digits in a given number"+
+            "\n(2) Program to reverse a given number"+
+            "\n(3) Program to check whether the given number is palindrome or not"
+        )
+
+        switch(program) {
+            case "1": 
+                var number = parseInt(prompt("Enter Number"))
+                var count = 0;
+                while(number>0) {
+                    number = number/10;
+                    number = parseInt(number)
+                    count++
+                }
+                alert("Total number of digits are: "+count)
+                break;
+
+            case "2":
+                var number = parseInt(prompt("Enter Number"))
+                var revesedString = "";
+                while(number>0) {
+                    revesedString += (number%10).toString();
+                    number = parseInt(number/10);
+                }
+                alert("Reversed Number is: "+parseInt(revesedString))
+                break;
+
+            case "3":
+                var number = parseInt(prompt("Enter Number"))
+                var actualNumber = number;
+                var reversedNumber;
+                var revesedString = "";
+                while(number>0) {
+                    revesedString += (number%10).toString();
+                    number = parseInt(number/10);
+                }
+                reversedNumber = parseInt(revesedString)
+                if(actualNumber == reversedNumber) {
+                    alert("Palindrome")
+                } else {
+                    alert("Not a Palindrome")
+                }
+                break
+            default:
+                alert("Invalid Programm Number")
+                break;                 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+
+			var readStudentData = () => {
+				var name, age, m1, m2, m3;
+				name = prompt("enter student name");
+				age = prompt("Enter student age");
+				m1 = parseInt(prompt("enter sub 1 marks"));
+				m2 = parseInt(prompt("enter sub 2 marks"));
+				m3 = parseInt(prompt("enter sub 3 marks"));
+				var avg = getTotalAndAvg(m1, m2, m3);
+				var grade = getStudentGrade(avg);
+				displayStudentDetails(name, age, avg, grade);
+			}
+
+			var getTotalAndAvg = (m1, m2, m3) => {
+				var total = m1 + m2 + m3;
+				var avg = total / 3;
+				return avg;
+				
+			}
+
+			var getStudentGrade = (avg) => {
+				if (avg >= 40) {
+					grade = 'You are passed';
+					if (avg >= 90) {
+						grade = 'You got distinction';
+					} else if (avg >= 60) {
+						grade = 'You got first class'
+					} else {
+						grade = 'you got second class';
+					}
+				} else {
+					grade = 'You have a surprise';
+				}
+				return grade;
+			}
+
+			var  displayStudentDetails = (name, age, avg, grade)  => {
+				
+				console.log("STudent details");
+				console.log("Student name " + name);
+				console.log("Age " + age);
+				console.log("Avg " + avg);
+				console.log("Grade " + grade);
+			}
+			readStudentData();
+
+		</script>
+	</body>
+</html>

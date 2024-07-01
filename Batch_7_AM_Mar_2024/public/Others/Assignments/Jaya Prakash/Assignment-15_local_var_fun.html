@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>example</title>
+    </head>
+    <body>
+        <script>
+
+             var readEmpDetails=() =>{
+                var empname, empsal, eGender,etotalSal;
+                empname = prompt("enter employee name");
+                empsal = prompt("enter basic sal");
+                empsal = parseInt(empsal);
+                eGender = prompt("Enter Gender");
+                etotalSal = getTotalSal(empsal);
+                etotalTax= getTotalTax(etotalSal,eGender);
+                displayEmpDetails(empname, etotalSal, etotalTax);
+            }
+
+            var getTotalSal=(empsal)=> {
+                var epf, ehra, etotalSal;
+                epf = (empsal * 12 ) / 100;
+                ehra = (empsal * 24 ) / 100;
+                etotalSal = empsal + epf + ehra;
+                return etotalSal;
+            }
+
+            var getTotalTax = (etotalSal,eGender)=> {
+                var taxPercent = 0;
+                var  Tax;
+                if (eGender == 'male') {
+                    if (etotalSal >= 200000) {
+                        taxPercent = 15;
+                    } else if(etotalSal >=100000){
+                        taxPercent = 10;
+                    }
+                    else if(etotalSal >=50000){
+                        taxPercent = 5;
+                    }
+                    else{
+                        taxpercent = 0;
+                    }
+                } else {
+                    if (etotalSal >= 200000) {
+                        taxPercent = 10;
+                    }
+                    else if(etotalSal >=100000){
+                        taxPercent = 5;
+                    }
+                    else {
+                        taxPercent = 0;
+                    }
+                }
+                Tax = (etotalSal * taxPercent) / 100;
+                return Tax;
+            }
+
+            var displayEmpDetails =(empname, etotalSal, etotalTax) =>{
+                console.log("Emp Details :");
+                console.log("Emp name :"  + empname);
+                console.log("Total sal :" + etotalSal);
+                console.log("Tax to be paid :" + etotalTax);
+            }
+
+            readEmpDetails();
+        </script>
+    </body>
+</html>

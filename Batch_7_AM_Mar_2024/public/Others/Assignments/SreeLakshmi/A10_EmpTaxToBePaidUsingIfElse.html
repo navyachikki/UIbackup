@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emp Sal Details</title>
+  </head>
+  <body>
+    <script>
+      var empName = prompt("Enter Emp Name: ");
+
+      var basicSal = parseInt(prompt("Enter Basic Sal: "));
+      var pf = 0.14 * basicSal;
+      var hra = 0.24 * basicSal;
+      var totalSal = pf + hra + basicSal;
+
+      var empGender = prompt(
+        "Emp Gender - select one of the option (m/f): "
+      ).toLowerCase();
+      console.log("pf: " + pf);
+      console.log("hra: " + hra);
+      console.log("Total Sal: " + totalSal);
+      if (empGender == "m") {
+        if (totalSal >= 200000) {
+          console.log("Need to pay 15% tax: " + 0.15 * totalSal);
+        } else if (totalSal >= 100000) {
+          console.log("Need to pay 10% tax: " + 0.1 * totalSal);
+        } else if (totalSal >= 50000) {
+          console.log("Need to pay 5% tax: " + 0.05 * totalSal);
+        } else {
+          console.log("No tax on this income " + totalSal);
+        }
+      } else if (empGender == "f") {
+        if (totalSal >= 200000) {
+          console.log("Need to pay 10% tax: " + 0.1 * totalSal);
+        } else if (totalSal >= 100000) {
+          console.log("Need to pay 5% tax: " + 0.05 * totalSal);
+        } else {
+          console.log("No tax on this income " + totalSal);
+        }
+      } else {
+        console.log("Incorrect Input");
+      }
+    </script>
+  </body>
+</html>

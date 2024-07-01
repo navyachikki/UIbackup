@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Range Prime Numbers</title>
+    </head>
+    <body>
+        <script>
+            var a = prompt("Enter The Starting Range");
+            a = parseInt(a);
+            var b = prompt("Enter The Ending Range");
+            b = parseInt(b);
+
+            for(var i = a; i<=b; i++)
+            {
+                var p = 1;
+                for( var j=2; j<=i/2; j++){
+                    var n = i % j
+                    if(n == 0){
+                        p = 0;
+                        break;
+                    }
+                }
+                if(p == 1){
+                    console.log(i);
+                }
+            }
+        </script>
+</body>
+</html>

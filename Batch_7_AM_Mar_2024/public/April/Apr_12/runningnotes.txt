@@ -1,0 +1,97 @@
+ES 6
+ECMA 
+
+int a; 
+
+
+int, float ,boolean, double, long, char string etc..
+
+char a; 
+a = 'b'
+
+
+var a; 
+
+var a;
+
+    a = 10  // number 
+    a = 3.4 // number 
+    a = 'b' // string 
+    a = 'test'  // string 
+
+    a = true; // boolean 
+    a = null 
+    a = undefined 
+
+    List of datatyopes been supported in JS:
+        number , boolean, string, null, undefined, function , object . 
+
+    var a = 30; 
+    var avg = 34.5
+    var total; 
+
+    var a = 'abc@#$234234'
+
+
+---
+REPL - Read evaluate process load 
+
+-----------
+
+typeof() - Method 
+    Which takes a variable name as parameter - and returns the type/datatype of the value what it is holding
+
+    Syntax:
+        typeof(<variablename>)
+
+    eg:
+        var a = 90;
+        typeof(a); // return number 
+
+
+        statement() - method/function 
+
+        --------
+
+        var a = 90;
+
+        a = 'raj'
+
+        a = function() {}
+
+        alert = function() {
+            ....
+        }
+
+        var a = 20, age  90, name = 'Krish', isfeepaid = true;
+
+        var a ; // declaration 
+        a = 90; // initilization 
+
+        var a = 90; // both declaration and initialization at a time
+
+    ECMA - Europen computer manufacturing association 
+
+
+    a + b -> a, b are operands , + is operator 
+
+    ------------------
+
+    total sal = pf + hra + basic sal 
+
+    where pf is 14 percent of basic sal 
+    hra is 24 percent of basic sal 
+
+    -----------
+
+    finding percentage 
+
+        a = 100; 
+
+        var result = (a * 20) / 100;
+
+        % is modules operator 
+        result = a % 20
+
+        10 / 5 -> 2 
+        10 % 5 -> 0 

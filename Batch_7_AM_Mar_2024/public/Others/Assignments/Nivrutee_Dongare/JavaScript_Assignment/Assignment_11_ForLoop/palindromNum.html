@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Given Number is Palimdrom or not</title>
+</head>
+
+<body>
+    <script>
+        var num = prompt("Enter number:");
+        num = parseInt(num);
+        var ans = 0;
+        var originalNum = num;
+        while (num > 0) {
+            var rem = num % 10;
+            ans = (ans * 10) + rem;
+            num = num / 10;
+            num = parseInt(num);
+        }
+        if (ans == originalNum) {
+            console.log( originalNum + " is Palindrom");
+        } else {
+            console.log(originalNum + " is not palindrom");
+        }
+
+    </script>
+</body>
+
+</html>

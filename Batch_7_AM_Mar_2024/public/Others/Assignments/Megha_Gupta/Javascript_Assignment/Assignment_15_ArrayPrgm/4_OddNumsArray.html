@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION-4</title>
+</head>
+<body>
+    <script>
+        var length =parseInt( prompt("Enter the length of the Array :"));
+        var arr = [];
+        var count = 0;
+
+        for(var i = 0; i <= length; i++){
+            arr[i]=parseInt(prompt("Enter array elements at index "+i+" : "));
+             if(arr[i] % 2 != 0)
+            {
+                count++;
+                console.log(arr[i]);
+            }
+
+        }
+        console.log("count of odd number :"+count);
+    </script>
+</body>
+</html>

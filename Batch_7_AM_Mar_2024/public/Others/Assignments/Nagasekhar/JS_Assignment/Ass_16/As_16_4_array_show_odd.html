@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array</title>
+        <link rel="stylesheet" href="Array.css">
+
+        <style>
+            .Display {
+                position: relative;
+                display: inline-block;
+                margin: 10px auto;
+                padding: 42px;
+                color: brown;
+                left: 372px;
+                width: 250px;
+            }
+            .Display_Odd {
+                position: relative;
+                display: inline-block;
+                margin: 10px auto;
+                padding: 42px;
+                color: brown;
+                left: 35px;
+                width: 250px;
+                bottom: 20px;
+                top: 30px;
+            
+            }
+            .Display_count {
+                position: relative;
+                display: inline-block;
+                margin: 10px auto;
+                padding: 42px;
+                color: brown;
+                left: -304px;
+                width: 250px;
+                bottom: 20px;
+                top: 60px;
+            
+            }
+        </style>
+    </head>
+    <body>
+        <h2 >
+            Dynamic Reading Values From an Array & Displaying in UI
+        </h2>
+        <Span class="Display"></Span>
+        <Span class="Display_Odd"></Span>
+        <Span class="Display_count"></Span>
+
+        <script>
+            var data = [];
+            var temp = [];
+            var counter = 0
+            var n = parseInt(prompt("Enter the Length"));
+            for(var i = 0; i<=n;i++) {
+                data[i]=parseInt(prompt("Enter the Value of " + i));
+                if (data[i]%2 != 0) {
+                    counter++;
+                    console.log(data[i]);
+                    temp.push(data[i]);
+
+
+                }
+            }
+            console.log(counter);
+
+            document.querySelector(".Display").innerText = "Entered Values are  : " + data;   
+            document.querySelector(".Display_Odd").innerText = "Entered Values these are Odd : " + temp;   
+            document.querySelector(".Display_count").innerText = "Odd Number Count  : " + counter;   
+
+            
+            
+            
+        </script>
+    </body>
+</html>

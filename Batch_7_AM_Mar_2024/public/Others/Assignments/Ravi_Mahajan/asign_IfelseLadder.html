@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            console.log("start");
+
+            var eName = prompt("enter the employee name ");
+            var eAge = prompt("enter the value of age ");
+            eAge = parseInt(eAge);
+            var eGender = prompt("let us know your gender ");
+            var basicSal = parseInt(prompt("enter your basic sallery "));
+            var pf = 12/100* basicSal;
+            var hra = 25/100* basicSal;
+            var totalsal = basicSal+ hra +pf;
+            var tax=0;
+            if(eGender=="male"){
+                console.log(eGender);
+                if(totalsal>=150000){
+                    tax=tax+totalsal*0.15;
+                    console.log("you neeeed to pay  "+ tax +"this amount of tax");                    
+                }else if(totalsal>=90000){
+                    tax=tax+totalsal*0.12;
+                    console.log("you neeeed to pay  "+ tax +"this amount of tax"); 
+                }else if(totalsal>=60000){
+                    tax=tax+totalsal*0.09;
+                    console.log("you neeeed to pay  "+ tax +"this amount of tax"); 
+                }
+            }else{
+                console.log(eGender);
+                if(totalsal>=90000){
+                    tax=tax+totalsal*0.12;
+                    console.log("you neeed to pay "+tax);
+
+                }else if(totalsal>=50000){
+                    tax=tax+totalsal*0.12;
+                    console.log("you neeed to pay "+tax);
+                }
+
+            }
+            console.log("end")
+
+        </script>
+    </body>
+</html>

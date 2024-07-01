@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Employee Details
+        </title>
+        <script>
+            var Ename=prompt("Enter Employee Name:");
+            console.log(Ename);
+            var EAge=prompt("Enter Employee Age:");
+            console.log(EAge);
+            var EGender=prompt("Enter Employee Gender:");
+            console.log(EGender);
+            var EDepartment=prompt("Enter Employee Department:");
+            console.log(EDepartment);
+            var B_Salary=prompt("Enter Employee Basic Salary:");
+            B_Salary=parseInt(B_Salary)
+            console.log(B_Salary);
+            var PF=(B_Salary*14)/100
+            console.log(PF);
+            var hra=(B_Salary*24)/100
+            console.log(hra);
+            Toatl_salary=B_Salary + PF + hra;
+            console.log("Total salary is" + Toatl_salary);
+        </script>
+    </head>
+</html>

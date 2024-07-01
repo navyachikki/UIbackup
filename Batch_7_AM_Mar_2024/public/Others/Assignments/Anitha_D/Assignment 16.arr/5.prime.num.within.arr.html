@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var array = [];
+    var length = prompt("enter the length of array");
+         length = parseInt(length);
+       for( i = 0; i <= length; i++){
+           array[i] = prompt("enter all values of array");
+           array[i] = parseInt(array[i]);
+       }
+       for( j = 0; j <= array.length; j++){
+          var count = 0;
+           for( k = 2; k < array[j]; k++){
+              var rem = array[j] % k;
+           if( rem == 0){
+             count++;
+           }if( count != 0){
+               break;
+           }
+               if( count == 0){
+       console.log(array[j]);
+               }
+
+          
+        }
+       } 
+    
+      
+    </script>
+</body>
+</html>

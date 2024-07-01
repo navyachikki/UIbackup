@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    //   Q.1  Write the program to find the total no. of char whithin a given string without using any predefine function
+
+      var  str = prompt("Enter the string : ");
+      var count = 0 ;
+      for(var i =0 ; i<str.length;i++){
+          count++;
+      }
+      console.log(count);
+
+    //   Q.2    Write the program to find the total no. of words whithin a given string without using any predefine function
+
+      var str2 = prompt("Enter the string:");
+      var length_str = str2.length;
+      var space =0;
+      for(var i = 0; i<=length_str ; i++){
+          if(str2[i] == " "){
+              space = space+1;
+          }
+      }
+      console.log("Total No os Words are :"+space);
+
+    //   Q.3   Write the program to find the total no. vowels within  a given string without using any predefine function .
+
+      var str = prompt("Enter the string:");
+      // var vowels = ["a","e","i","o","u","A","E","I","O","U"];
+      var count =0 ;
+      for(var i = 0 ; i<=str.length; i++){
+          if (str[i]=='a' || str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u' || str[i]=='A' || str[i]=='E' || str[i]=='I' || str[i]=='O'  || str[i]=='U')
+          {
+              count = count+1;
+          }
+      }
+      console.log(count);
+
+      // Q.4   Write the program to reverse the  given string without using any predefine function .
+
+      var question = () => {
+        var str = prompt("Enter the string :");
+        var ans = "";
+
+        for (var a = str.length - 1; a >= 0; a--) {
+          ans = ans + str[a];
+        }
+        console.log(ans);
+      };
+    //   question();
+
+
+      // Q.5   Write the program to check a whether given string is Palindrome or not .
+
+      var question5 = () => {
+        var str = prompt("Enter the string: ");
+        var temp = str;
+        var ans = "";
+        
+        for (var a = str.length - 1; a >= 0; a--) {
+          ans = ans + str[a];
+        }
+        console.log(ans);
+        if (temp==ans){
+            console.log("Palindrome");
+        }
+        else{
+            console.log("Not Palindrome");
+        }
+      };
+
+      question5();
+    
+    </script>
+  </body>
+</html>

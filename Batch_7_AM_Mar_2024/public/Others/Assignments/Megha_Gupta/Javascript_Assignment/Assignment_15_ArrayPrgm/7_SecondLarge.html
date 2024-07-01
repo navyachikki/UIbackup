@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QUESTION-7</title>
+    </head>
+    <body>
+        <script>
+            var length = prompt("Enter the length of the Array :")
+            length = parseInt(length);
+            var arr = [];
+            for (var i = 0; i <= length; i++) {
+                arr[i] = prompt("Enter the values of the array :");
+                arr[i] = parseInt(arr[i]);
+            }
+            console.log(arr);
+            
+            for(var i=0;i<arr.length-1;i++)
+            {
+                 for(var j=i+1;j<arr.length;j++)
+                {
+                    if(arr[i]<arr[j])
+                    {
+                        var temp=arr[j];
+                         arr[j]=arr[i];
+                         arr[i]=temp;
+                    }
+                 }
+            }
+
+             console.log("Second Largest element in array is "+arr[1]);
+           
+        </script>
+    </body>
+</html>

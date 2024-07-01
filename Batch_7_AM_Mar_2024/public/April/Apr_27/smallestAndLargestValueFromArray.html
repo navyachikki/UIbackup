@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var n = [23,2, 88, 90, 1,  33, 45, 18, 91, 12];
+
+            var largestValue = n [0];
+            var smallestNo = n[0];
+
+            for (var i = 1; i < n.length; i++) {
+                if (smallestNo > n[i]) {
+                    smallestNo = n[i];
+                }
+
+                if (largestValue < n[i]) {
+                    largestValue = n[i];
+                }
+            }
+
+            console.log("The smallest is " + smallestNo);
+            console.log("The largestValue is " + largestValue);
+        </script>
+    </body>
+</html>

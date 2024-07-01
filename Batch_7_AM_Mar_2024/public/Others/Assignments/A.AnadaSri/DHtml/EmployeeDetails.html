@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employeee Pay slip Generator</title>
+    <style>
+      ul {
+        border: 1px solid;
+        width: 500px;
+        margin: 30px auto;
+      }
+      li {
+        list-style: none;
+        border: 1px solid #ccc;
+        margin: 10px;
+        padding: 10px;
+      }
+      h2 {
+        margin: auto;
+        text-align: center;
+        color: blueviolet;
+        font-weight: 600;
+      }
+      span {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Dyanmic Employee Details Demo</h2>
+    <hr />
+    <div id="container">
+      <ul>
+        <li>Employee Name: <span id="empname"></span></li>
+        <li>Employee Age: <span id="empage"></span></li>
+        <li>Employee Gender: <span id="empgender"></span></li>
+        <li>Employee Basic Salary: <span id="empbasicsalary"></span></li>
+        <li>Employee PF: <span id="emppf"></span></li>
+        <li>Employee HRA: <span id="emphra"></span></li>
+        <li>Employee Total Salary: <span id="emptotalsalary"></span></li>
+        <li>Employee Tax: <span id="emptax"></span></li>
+      </ul>
+    </div>
+
+    <script>
+      var empDetails = {
+        name: "",
+        age: "",
+        gender: "",
+        readEmpDetails() {
+          empDetails.name = prompt("Enter Name");
+          this.age = prompt("Enter Age");
+          this.gender = prompt("Enter Gender");
+          this.basicsal = parseInt(prompt("Enter Salary"));
+          this.getPfHra();
+        },
+        getPfHra() {
+          this.pf = (this.basicsal * 14) / 100;
+          this.hra = (this.basicsal * 24) / 100;
+          this.totalsalary = this.pf + this.hra + this.basicsal;
+          this.getTotalTax();
+        },
+        getTotalTax() {
+          this.tax = 0;
+          if (this.gender == "male") {
+            if (this.totalsalary > 200000) {
+              this.tax = 15;
+            } else {
+              this.tax = 5;
+            }
+          } else {
+            if (this.totalsalary > 100000) {
+              this.tax = 10;
+            } else {
+              this.tax = 2;
+            }
+          }
+        },
+        displayEmoDetails() {
+          this.readEmpDetails();
+          document.querySelector("#empname").innerText = this.name;
+          document.querySelector("#empage").innerText = this.age;
+          document.querySelector("#empgender").innerText = this.gender;
+          document.querySelector("#empbasicsalary").innerText = this.basicsal;
+          document.querySelector("#emppf").innerText = this.pf;
+          document.querySelector("#emphra").innerText = this.hra;
+          document.querySelector("#emptotalsalary").innerText =
+            this.totalsalary;
+          document.querySelector("#emptax").innerText = this.tax;
+        },
+      };
+      empDetails.displayEmoDetails();
+    </script>
+  </body>
+</html>

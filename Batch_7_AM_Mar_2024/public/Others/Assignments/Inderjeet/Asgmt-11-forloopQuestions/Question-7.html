@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Program to show Prime Number b/w User Given Range :</h2>
+    <script>
+        var track = 0;
+        var start = prompt("Enter the Starting Range : " );
+        start = parseInt(start);
+        var end = prompt("Enter the ending Range :" );
+        end = parseInt(end);
+       for(var i = start; i <= end; i++){
+                var rem = i % i;
+                if( rem == 0){
+                    track++;
+                }
+                if (track != 0){   
+                    break;  
+                }
+            }
+            if(track == 0){
+                console.log(i);
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display all the prime number within a given array</title>
+    <style>
+        h2{
+            text-align: center;
+            color: rgb(208, 19, 19);
+            text-decoration: double;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Display all the prime number within a given array</h2>
+    <script>
+
+        var arr=[2,5,6,7,8];
+        for(var j=0;j<arr.length;j++)
+        {
+    
+            var flag;
+            var num=arr[j];
+            for(var i=2;i<num;i++)
+            {
+                if(num % i == 0)
+                {
+                    flag=true;
+                    break;
+                }
+                else{
+                    flag=false;
+                }
+            }
+            
+            if(flag==true)
+            {
+                console.log(num+" Not Prime Number");            
+            }
+            else{
+                console.log(num+" Prime Number"); 
+            }
+        }
+
+      
+    </script>    
+</body>
+</html>

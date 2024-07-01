@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>
+			Demonstrating Switch Case Demo
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			var a1 = parseInt(prompt("Enter First value"));
+			var a2 = parseInt(prompt("Enter Second value"));
+
+			var userOption = prompt("Choose the option add/div/mul/sub");
+
+			userOption = userOption.toLowerCase(); // Add -> add, ADD - > add, AdD -> add
+
+			/*if (userOption == 'add') {
+				var sum = a1 + a2;
+				console.log("The sum is " + sum);
+			} else if (userOption == 'sub') {
+				var sub = a1 - a2;
+				console.log("The sub is " + sub);
+			} else if (userOption == 'mul') {
+				var mul = a1 * a2;
+				console.log("The mul is " + mul);
+			} else if (userOption == 'div') {
+				var div = a1 / a2;
+				console.log("The div is " + div);
+			} */
+
+			switch(userOption) {
+				case 'add':
+					var sum = a1 + a2;
+					console.log("The sum is " + sum);	
+					break;
+				case 'mul':
+					var mul = a1 * a2;
+					console.log("The mul is " + mul);
+					break;
+				case 'div':
+					var div = a1 / a2;
+					console.log("The div is " + div);
+					break;
+				case 'sub':
+					var sub = a1 - a2;
+					console.log("The sub is " + sub);
+					break;
+				default:
+					console.log("Wrong option choosen");
+			}
+
+			console.log("END");
+
+
+		</script>
+	</body>
+</html>

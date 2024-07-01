@@ -1,0 +1,18 @@
+CS
+	Conditional CS 
+	Looping CS 
+	Case CS
+
+
+JS Functions:
+	
+
+	function nameofthefunction() {
+		....
+		....
+		....
+	}
+
+	name();
+
+	var , break, continue;

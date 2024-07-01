@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var n = parseInt(prompt("enter the value you want"));
+            var logic = prompt("ENTER THE OPERATION('Lucky/Palindrome/Reverse/Total Digits') No Spaces")
+            logic = logic.toLowerCase();
+            
+
+            switch(logic){                
+
+                case 'lucky' :
+                    var rem ;
+                    var a = 0;
+                    while(n > 0){
+                        rem = n % 10;
+                        a = a + rem;
+                        n = n / 10;
+                        n = parseInt(n);
+                        if (n==0 && a >9){
+                            console.log(a + " " + "Is The Total Of Digits For Your Number")
+                            n = a;
+                            a = 0; 
+                        }
+                    }
+                    console.log(a + " " + "Is Your Lucky Number"); 
+                 break;
+
+                 case 'revarse' :
+                    var revarse =0;
+                    var rem;            
+                    while(n > 0){
+                        rem = n % 10 ;
+                        revarse = revarse* 10 + rem;
+                        n = n/10;
+                        n = parseInt(n);
+                    }
+                    console.log(revarse);
+                    break;
+
+                    case 'palindrome' :
+                            var sub =n
+                            var revarse =0;
+                            var rem;            
+                            while(sub > 0){
+                                rem = sub % 10 ;
+                                revarse = revarse* 10 + rem;
+                                sub = sub/10;
+                                sub = parseInt(sub);
+                            }
+                            console.log(revarse);
+                            if(n == revarse){
+                                console.log(n + "Is A Palindrome Number");
+                            }
+                            else{
+                                    console.log(n + "Is A Not Palindrome Number");
+                            }
+                            break;
+
+                    case 'total digits' :
+                        var Digits = 0;
+                        while(n > 0){
+                            var rem;
+                            rem = n % 10;
+                            n = n/10;
+                            n = parseInt(n);
+                            if (rem > 0){
+                                Digits++
+                            }                
+                        }
+                        console.log("The Total No.Of Digits In the Given Number Is :" + Digits);
+                        break;
+            
+                    default:
+                        console.log("please choose properly/check for spaces/spelling mistakes");
+
+            
+
+        }
+        /*switch(logic){
+                case 'lucky':
+                    var  rem ;
+                    var a = 0;
+                    while(n > 0){
+                        rem = n % 10;
+                        a = a + rem;
+                        n = n / 10;
+                        n = parseInt(n);
+                        if (n==0 && a >9){
+                            console.log(a + " " + "Is The Total Of Digits For Your Number")
+                            n = a;
+                            a = 0; 
+                        }
+                    }
+                    console.log(a + " " + "Is Your Lucky Number"); 
+                    break;
+
+                case 'revarse':
+                    var revarse =0;
+                    var rem;            
+                    while(n > 0){
+                        rem = n % 10 ;
+                        revarse = revarse* 10 + rem;
+                        n = n/10;
+                        n = parseInt(n);
+                    }
+                    console.log(revarse);
+                    break;
+                    default:
+                        console.log("enter the corrrect value pr check the spell mistake ");
+
+
+
+
+
+
+        }*/
+
+        </script>
+    </body>
+</html>

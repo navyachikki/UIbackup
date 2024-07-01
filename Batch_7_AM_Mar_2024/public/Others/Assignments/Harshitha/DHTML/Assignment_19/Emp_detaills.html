@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js">
+    </script>
+</head>
+<body>
+    <h2>Employee Details</h2>
+    <div class="parent">
+        <ul>
+            <li>
+                <input type="text" id="empName" placeholder="enter the name">
+                <div class="nameError">
+                    Name field is required
+                </div>
+            </li>
+            <li>
+                <input type="text" id="empAge" placeholder="Enter Age">
+            </li>
+            <li>
+                <input type="text" id="empSalary" placeholder="Enter montly Income">
+                <div class="salError"> Salary is Required</div>
+            </li>
+            <li>
+                <label for="Gender"> Select Gender</label>
+                    <div>
+                    <input type="radio" id="maleRadio" name="empGender">Male</div>
+                    <div>
+                    <input type="radio" name="empGender">Female</div>
+                
+            </li>
+            <li>
+                <select id="empDept">
+                    <option value="Select" selected>Select Department</option>
+                    <option value="HR">HR</option>
+                    <option value="IT">IT</option>
+                    <option value="operations">operations</option>
+                    <option value="Marketing">Marketing</option>
+                </select>
+            </li>
+            <li>
+                <input type="button" value="Confirm" onClick="obj.getDetails()" id="btn">
+            </li>
+        </ul>
+    </div>
+    <div class="child">
+        <h3>Employee Annual Salary</h3>
+        <ul>
+            <li>
+                Employee Name:<span id="dname"></span>
+            </li>
+            <li>
+                Employee Age:<span id="dage"></span>
+            </li>
+            <li>
+                Employee Dept:<span id="dDept"></span>
+            </li>
+            <li>
+                Employee Anual income:<span id="dtotal"></span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

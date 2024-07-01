@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dragdrop.css">
+    <script src="dragdrop.js"></script>
+</head>
+<body>
+    <div id="kids" class="display" ondrop="elementGotDropped(event)" ondragover="elementDragOver(event)" containerType="Kids"><h2>KIDS-WEAR</h2></div>
+    <div id="mens" class="display" ondrop="elementGotDropped(event)" ondragover="elementDragOver(event)" containerType="Mens"><H2>MENS-WEAR</H2></div>
+    <div id="women" class="display" ondrop="elementGotDropped(event)" ondragover="elementDragOver(event)" containerType="Women"><H2>WOMENS-WEAR</H2></div>
+
+    <div class="photos" >
+        <div id="kidsSection" class="section">
+            <h3>KIDS COLLECTIONS</h3>
+        <img ondragstart="elementDragStarted(event)" src="https://plus.unsplash.com/premium_photo-1675183713626-81e6de4552e1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8a2lkcyUyMGNsb3RoZXN8ZW58MHx8MHx8fDA%3D" alt="None" id="product1"  type="Kids">
+        <img ondragstart="elementDragStarted(event)" src="https://images.unsplash.com/photo-1522771930-78848d9293e8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGtpZHMlMjBjbG90aGVzfGVufDB8fDB8fHww" alt="" id="pd2" type="Kids">
+        <img ondragstart="elementDragStarted(event)" src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGtpZHMlMjBjbG90aGVzfGVufDB8fDB8fHww" alt="" id="pd3" type="Kids">
+        <img ondragstart="elementDragStarted(event)" src="https://images.unsplash.com/photo-1519457431-44ccd64a579b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGtpZHMlMjBjbG90aGVzfGVufDB8fDB8fHww" alt="" id="pd4" type="Kids">
+        <img ondragstart="elementDragStarted(event)" src="https://images.unsplash.com/photo-1607454317506-a7c47bb424bc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGtpZHMlMjBjbG90aGVzfGVufDB8fDB8fHww" alt="" id="pd5" type="Kids">
+    </div>
+    <div id="mensSection" class="section">
+        <h3>MENS COLLECTIONS</h3>
+        <img ondragstart="elementDragStarted(event)" src="https://images.unsplash.com/photo-1611312449412-6cefac5dc3e4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lbnMlMjBjbG90aGVzfGVufDB8fDB8fHww" alt="" id="pd6" type="Mens">
+        <img ondragstart="elementDragStarted(event)" src="https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG1lbnMlMjBjbG90aGVzfGVufDB8fDB8fHww" alt="" id="pd7" type="Mens">
+        <img ondragstart="elementDragStarted(event)" src="https://plus.unsplash.com/premium_photo-1688497831384-e40b2e5615cd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1lbnMlMjBjbG90aGVzfGVufDB8fDB8fHww" alt="" id="pd8" type="Mens">
+        <img ondragstart="elementDragStarted(event)" src="https://plus.unsplash.com/premium_photo-1690366911138-bd50985e0379?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fG1lbnMlMjBjbG90aGVzfGVufDB8fDB8fHww" alt="" id="pd9" type="Mens">
+        <img ondragstart="elementDragStarted(event)" src="https://images.unsplash.com/photo-1520975954732-35dd22299614?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fG1lbnMlMjBjbG90aGVzfGVufDB8fDB8fHww" alt="" id="pd10" type="Mens">
+
+
+    </div>
+    <div id="womenSection" class="section">
+        <h3>WOMENS COLLECTIONS</h3>
+        <img ondragstart="elementDragStarted(event)" src="https://images.unsplash.com/photo-1604947051230-fc2bc6f6c5c9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdvbWVucyUyMGNsb3RoZXN8ZW58MHx8MHx8fDA%3D" alt="" id="pd11" type="Women">
+        <img ondragstart="elementDragStarted(event)" src="https://images.unsplash.com/photo-1554568218-0f1715e72254?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHdvbWVucyUyMGNsb3RoZXN8ZW58MHx8MHx8fDA%3D" alt="" id="pd12" type="Women">
+        <img ondragstart="elementDragStarted(event)" src="https://plus.unsplash.com/premium_photo-1693242804621-4f8d163abf97?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fHdvbWVucyUyMGNsb3RoZXN8ZW58MHx8MHx8fDA%3D" alt="" id="pd13" type="Women">
+        <img ondragstart="elementDragStarted(event)" src="https://images.unsplash.com/photo-1563178406-4cdc2923acbc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fHdvbWVucyUyMGNsb3RoZXN8ZW58MHx8MHx8fDA%3D" alt="" id="pd14" type="Women">
+        <img ondragstart="elementDragStarted(event)" src="https://images.unsplash.com/photo-1592595293637-8557fa6d3c64?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fHdvbWVucyUyMGNsb3RoZXN8ZW58MHx8MHx8fDA%3D" alt="" id="pd15" type="Women">
+    </div>
+    </div>
+</body>
+</html>

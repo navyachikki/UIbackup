@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        .block{
+           background-color: aliceblue; ;
+           border: 2px solid;
+           text-align: center;;
+           margin: 10px;
+        }
+    </style>
+    <body>
+        <div class="block">
+            Go to the console tab you will find the solluation of this 
+        </div>
+        <script>
+            var Ename ,Eage ,EGender ,EbasicSallary;
+            Ename = "Ravi";
+            Eage = 25;
+            EGender = "male";
+            EbasicSallary = 60000;
+            var pf, hra, totalsalary  ;
+            pf = EbasicSallary*12/100;
+            hra = EbasicSallary*25/100;
+            totalsalary = EbasicSallary+ pf+ hra;
+            console.log("enmployee name is "+Ename);
+            console.log("empl age is " + Eage);
+            console.log("empl gender is " + EGender);
+            console.log("empl basic sallary is " + EbasicSallary);
+            console.log("empl total sallary  is " + totalsalary);
+            if(totalsalary >= 80000){
+                console.log("your sallary is good ");                
+            }else{
+                console.log("your sallary is not as per market standerd ")
+            }
+
+
+        </script>
+        
+    </body>
+</html>

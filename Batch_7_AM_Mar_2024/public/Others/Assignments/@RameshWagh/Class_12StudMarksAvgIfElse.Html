@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marks Avg Calculate With Pass And Fail</title>
+    </head>
+    <body>
+        <h3>Marks Avg Calculate With Pass And Fail</h3>     
+        <script>
+            var stdName = prompt("Enter Student Name : ");
+            var stdAge = prompt("Enter Student Age");
+            var M1 = prompt("Enter Marks in Maths");
+            M1 = parseInt(M1);
+            var M2 = prompt("Enter Marks in Economics");
+            M2 = parseInt(M2);
+            var M3 = prompt("Enter Marks in Data Science");
+            M3 = parseInt(M3);
+            console.log("Student Name : " + stdName);
+            console.log("Student Age : " + stdAge);
+            console.log("Marks in Maths : " + M1);
+            console.log("Marks in Economics : " + M2);
+            console.log("Marks in Data Science : " + M3);
+            console.log(stdName + " Got Total Marks : " + (M1+M2+M3));
+            console.log(stdName + " Got Total Average : " + ((M1+M2+M3)/3));
+            if (((M1+M2+M3)/3) >= 40)
+            {
+                console.log("PASS");
+            }
+            else
+            {
+                console.log("FAIL");
+            }
+
+            // status = (((M1+M2+M3)/3) >= 40) ? "PASS" : "False" ;       Example iif
+        </script>   
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<script>
+    var size = prompt("Enter the size od the Array :")
+    size = parseInt(size);
+    var arr = [];
+    for(var i = 0; i <= size; i++){
+        arr[i] = prompt("Enter the values till size :");
+        arr[i] = parseInt(arr[i]);
+    }
+    var count = 0;
+    for ( var j = 0; j <= arr.length; j++){
+        if(arr[j] % 2 != 0){
+            count ++;
+            console.log(arr[j]);
+        }
+    }
+    console.log(count);
+</script>

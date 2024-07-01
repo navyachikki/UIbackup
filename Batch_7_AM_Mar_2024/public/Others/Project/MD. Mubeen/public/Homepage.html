@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project 1</title>
+        <link rel="stylesheet" href="./CSS/hompage.css">
+        <link rel="stylesheet" href="./CSS/productStyles.css">
+        <link rel="stylesheet" href="./Local Libraries/StarRatingLib/starStylesheet.css">
+        <script src="./Local Libraries/axios.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="./JS/products.js"></script>
+        <script src="./Local Libraries/StarRatingLib/starScript.js"></script>
+        <!-- <script src="./JS/test.js"></script> -->
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    The Street Shop
+                </div>
+                <div id="srch">
+                    <img src="./Images/search.svg" alt="" id="searchicon">
+                    <input type="search" name="srch" id="searchbar" placeholder="Search for Products, Brands and More!">
+                </div>
+                <span class="links">
+                    <a href="./Index.html" id="hme">Home</a>
+                    <a href="">Products</a>
+                    <a href="./pages/SignInPage.html" id="break">Sign In</a>
+                </span>
+            </nav>
+        </header>
+        <!-- Products -->
+        <product class="container">
+            <ul class="ProductDetailsContainer"></ul>
+        </product>
+        <!-- Footer Bar -->
+        <footer>
+            <div class="footer">&copy; Copyright Mubeen 2024</div>
+        </footer>
+    </body>
+</html>

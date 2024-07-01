@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            img {
+                width: 200px;
+                height: 180px;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <h3>
+            product details:
+        </h3>
+        <ul>
+            <li>
+                Product name: <span id="pname"></span>
+            </li>
+            <li>
+                <img src="" id="pimage">
+            </li>
+        </ul>
+        <SCript>
+            var dataAPI = 'https://fakestoreapi.com/products/1';
+
+            /* fetch(dataAPI) // api for the get request
+                .then(response => response.json())
+                .then((data) => {
+                    console.log(data)
+                    document.querySelector("#pname").innerText = data.title;
+                    document.querySelector("#pimage").setAttribute("src", data.image
+)
+                }).catch((error) => {
+                    console.log("error while hitting url");
+                }) */ 
+
+            // jquery 
+
+            /* $.ajax({
+                url: 'https://fakestoreapi.com/products/1',
+                method: 'GET',
+                dataType: 'JSON',
+                success: (response) => {
+                    console.log(response);
+                }
+            }) */ 
+
+            // AXIOS 
+            axios({
+                method: 'get',
+                url: 'https://fakestoreapi.com/products/1'
+            })
+                .then(function (response) {
+                   console.log(response);
+                });
+        </SCript>
+    </body>
+</html>

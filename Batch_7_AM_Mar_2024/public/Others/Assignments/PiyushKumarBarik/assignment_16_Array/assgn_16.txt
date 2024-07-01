@@ -1,0 +1,10 @@
+1. write a program to read dynamic values into the array and display them.
+2. to find out sum of values inside the given array.
+3. to find out only the even numbers within the array.
+4. to find out odd numbers count within the array.
+5. to find out all the prime numbers within the array.
+6. to find out the smallest and largest value from the given array.
+7. to find out second largest value from given array.
+8. to find out all palindrome numbers within given array.
+9. to find the lucky number of all the values within given array.
+10. to sort given array to ascending and descending order.

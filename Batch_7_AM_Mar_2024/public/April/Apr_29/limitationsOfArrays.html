@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var studentDetails = [
+                "raj", 
+                20, 
+                'Male', 
+                [20, 50, 90], 
+                0, 0, 
+                ''
+            ];
+
+            for (var i = 0 ; i < studentDetails[3].length; i++) {
+                studentDetails[4] += studentDetails[3][i];
+            }
+
+            studentDetails[5] = studentDetails[4] / studentDetails[3].length;
+
+            if (studentDetails[5] >= 40) {
+                studentDetails[6] = 'U passed';
+            } else {
+                studentDetails[6] = 'U have a surprise';
+            }
+
+            console.log(studentDetails);
+
+            console.log("Name is " + studentDetails[1]);
+            console.log("Age is " + studentDetails[2]);
+            console.log("Gender is " + studentDetails[3]);
+            console.log("Total is " + studentDetails[4]);
+            console.log("Avg is " + studentDetails[5]);
+            console.log("Grade is " + studentDetails[6]);
+
+
+
+        </script>
+    </body>
+</html>

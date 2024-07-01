@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=[];
+        var range = prompt("Eter the length of the array:");
+        range= parseInt(range);
+        for(var i = 0; i < range; i++){
+            a[i] = prompt("Enter the value:");
+            a[i] = parseInt(a[i]);
+        }
+        console.log("The values inthe array are:"+ a);
+        for(i=0 ; i < range ;i++){
+            for(var j = i+1; j < range; j++){
+                if(a[i]<a[j]){
+                    var temp;
+                    temp = a[j] ;
+                    a[j] = a[i];
+                    a[i] = temp;
+                }
+            }
+        }
+        console.log(a);
+        console.log("The 2nd largest number is :"+a[1]);
+    </script>
+</body>
+</html>

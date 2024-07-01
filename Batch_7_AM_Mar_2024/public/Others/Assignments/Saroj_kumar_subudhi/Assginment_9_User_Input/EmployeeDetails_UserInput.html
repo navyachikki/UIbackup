@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assginment_9</title>
+</head>
+
+<body>
+    <h3 style="text-align: center;">Employe &nbsp;Details&nbsp; Take&nbsp; the&nbsp; input&nbsp; From &nbsp; User</h3>
+    <script>
+        var EmployeeID, EmployeeName, Gender, Department, BasicSalery, pf, hra, Totasal;
+        EmployeeID = prompt("Emplyee_Id");
+        EmployeeName = prompt("EmployeeName");
+        Gender = prompt("Gender");
+        Department = prompt("Department");
+        BasicSalery = prompt("BasicSalery");
+        BasicSalery=parseInt(BasicSalery);
+        pf = (14 * BasicSalery) / 100;
+        hra = (24 * BasicSalery) / 100;
+        Totasal = hra + pf + BasicSalery;
+        console.log("Employe ID" + EmployeeID);
+        console.log("Employee Name" + EmployeeName);
+        console.log("Gender" + Gender);
+        console.log("Department" + Department);
+        console.log("Basic salery" + BasicSalery);
+        console.log("PF" + pf);
+        console.log("hra" + hra)
+        console.log("Total Salery" + Totasal)
+    </script>
+</body>
+
+</html>

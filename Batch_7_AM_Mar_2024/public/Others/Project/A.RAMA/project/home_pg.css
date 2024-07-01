@@ -1,0 +1,82 @@
+*{
+    background-color: rgb(77, 91, 91);
+}
+.header,.loginpart,.footer{
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: darkblue;
+    font-size: 30px;
+    background-color: rgb(232, 227, 221);
+    border-radius: 5px;
+}
+.loginpart{
+    height: 350px;
+    margin-top: 10px;
+   background-image: url(project_imgs/smbg.webp);
+   background-position: -313px -243px;
+    
+}
+.footer{
+    height: 80px;
+    margin-top: 10px;
+}
+.ram{
+    width: 400px;
+    height: 230px;
+    text-align: center;
+    background-color: wheat;
+    border-radius: 3px;
+    padding-top: 30px;
+    margin: 40px auto;
+    color: rgb(31, 24, 24);
+    font-size: 20px;
+}
+.loginpart span {
+    background-color: wheat;
+}
+span>input{
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    color: rgb(15, 106, 186);
+    border-radius: 5px;
+    border: 1px solid;                 
+    background-color: wheat;
+}
+h3{
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(128, 126, 124);
+    margin-left: 560px;
+    margin-right: 560px;
+}
+button{
+    width: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: blueviolet;
+    color: rgb(145, 214, 145);
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    border: none;
+}
+.ram h6{
+   font-size: small;
+    position: relative;
+    float: inline-start;
+    background-color: wheat;
+    text-align: center;
+    padding: 10px;
+    padding-left: 40px;
+}
+.footer p{
+    background-color:  rgb(232, 227, 221);
+    color: rgb(212, 134, 33);
+}

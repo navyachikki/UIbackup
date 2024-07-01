@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee's Taxes</title>
+</head>
+<body>
+
+    <script>
+
+        var employee_name,employee_age,employee_gender,basic_salary,total_salary,pf,hra,tax;
+
+        employee_name=prompt("Enter Employee Name: ");
+        employee_age=prompt("Enter age:");
+        employee_gender=prompt("Enter Gender: ");
+        basic_salary=prompt("Enter Basic salary" );
+
+        basic_salary=parseFloat(basic_salary);
+        pf=(14/100)*basic_salary;
+        hra=(24/100)*basic_salary;
+        total_salary=basic_salary+pf+hra;
+
+        console.log("Employee name: "+employee_name);
+        console.log("Age: "+employee_age);
+        console.log("Gender: "+employee_gender);
+        console.log("Basic salary: "+basic_salary);
+        console.log("pf: "+pf);
+        console.log("hra: "+hra);
+        console.log("Total Salary: "+total_salary);
+
+        if(employee_gender=="male"){
+
+                if(total_salary>=200000){
+                    tax=(15/100)*total_salary;
+                    console.log("TAX TO BE PAID: "+tax);
+                }else if(total_salary>=100000){
+                    tax=(10/100)*total_salary;
+                    console.log("TAX TO BE PAID: "+tax);
+                }else if(total_salary==50000){
+                    tax=(5/100)*total_salary;
+                    console.log("TAX TO BE PAID: "+tax);
+                
+                }else{
+                    tax=0;
+                    console.log("TAX TO BE PAID: "+tax);
+                }
+        }
+        else{
+            if(total_salary>200000){
+                tax=(10/100)*total_salary;
+                console.log("TAX TO BE PAID: "+tax);
+
+            }
+            else if(total_salary>=100000){
+                tax=(5/100)*total_salary;
+                console.log("TAX TO BE PAID: "+tax);
+            }
+            else{
+
+                tax=0;
+                console.log("TAX TO BE PAID: "+tax);
+            }
+        }
+
+       
+
+    </script> 
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION-5</title>
+</head>
+<body>
+    <script>
+        var length = parseInt(prompt("Enter the length of the Array :"));
+        var arr = [];
+        for(var i = 0; i <= length; i++){
+            arr[i] = prompt("Enter the values till length :");
+            arr[i] = parseInt(arr[i]);
+        }
+        console.log(arr);
+        
+        for ( var j = 0; j < arr.length; j++){
+            var count = 0;
+            for(var k = 2; k < arr[j]; k++){
+                var rem = arr[j] % k;
+                if (rem == 0){
+                    count ++;
+                }
+                if (count != 0){
+                    break;
+                } 
+            }
+            if (count == 0) {
+                console.log(arr[j]);
+            }
+        }
+    </script>
+</body>
+</html>

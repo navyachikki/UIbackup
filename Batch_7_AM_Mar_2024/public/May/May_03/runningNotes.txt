@@ -1,0 +1,14 @@
+Event handling:
+    Event  - An action performed on a page 
+        eg: click, focus, blur, mouseleftclick, right click, double click, etc....
+
+
+    Event handling : we could invoke a corresponding job for a particular action 
+        1. Static event handling:
+            Through predefined html event attributes
+                eg:
+                    onclick, onfoucs, onchange,onmouseover, onblur, onchange, etc.
+
+        2. Dynamic event handling 
+
+            Through "addEventListener()" method.

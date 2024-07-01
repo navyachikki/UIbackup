@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QUESTION-8</title>
+    </head>
+    <body>
+        <script>
+            var length = prompt("Enter the length of the Array :")
+            length = parseInt(length);
+            var arr = [];
+            for (var i = 0; i <= length; i++) {
+                arr[i] = prompt("Enter the values for the array :");
+                arr[i] = parseInt(arr[i]);
+            }
+        
+            for (var j = 0; j <= arr.length; j++) {
+                var temp;
+                var rev = 0;
+                var a;
+                var temp = arr[j];
+                while (temp > 0) {
+                    a = temp % 10;
+                    rev = (rev * 10) + a;
+                    temp =parseInt(temp / 10);
+                    
+                }
+                if (arr[j] == rev) {
+                    console.log(arr[j] +" is a palindrome number");
+                }
+                else{
+                    console.log(arr[j] +" is not a palindrome number");
+                }
+            }
+        </script>   
+    </body>
+</html>

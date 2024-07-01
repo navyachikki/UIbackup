@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascending and Discending</title>
+</head>
+<body>
+    <script>
+        // Write a program to sort given array to ascending and descending orders
+
+        var arr=[];
+        var length = parseInt(prompt("Enter Number of Elements"));
+       
+            for(var i = 0; i <= length; i++)
+             {
+                arr[i] = prompt("Enter the values of the array");
+                arr[i] = parseInt(arr[i]);
+             }
+    
+            for(var i = 0; i < arr.length; i++){
+            for(var j = i + 1; j<arr.length; j++){
+                if(arr[i] > arr[j]){
+                    temp = arr[i];
+                    arr[i] = arr[j]
+                    arr[j] = temp;
+                }
+            }
+            }
+        console.log("Array in Ascending Order " + arr);
+
+            for(var i = 0; i < arr.length; i++){
+            for(var j = i + 1; j < arr.length; j++){
+                if(arr[i] < arr[j]){
+                    temp = arr[i];
+                    arr[i] = arr[j]
+                    arr[j] = temp;
+                }
+            }
+            }
+        console.log("Array in Descending Order " + arr);
+    </script>
+</body>
+</html>

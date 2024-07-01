@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd Numbers Within An Array</title>
+</head>
+<body>
+    <script>
+        // Write a program to find out the odd numbers count within the given array
+
+        var length = parseInt(prompt("Enter the length of an Array"));
+        var arr = [];
+        var count = 0;
+
+        for(var i = 0; i <= length; i++){
+            arr[i] = parseInt(prompt("Enter array elements at index "+i+" "));
+             if(arr[i] % 2 != 0)
+            {
+                count++;
+                console.log(arr[i]);
+            }
+        }
+        console.log("Count of the Odd Numbers " + count);
+    </script>
+</body>
+</html>

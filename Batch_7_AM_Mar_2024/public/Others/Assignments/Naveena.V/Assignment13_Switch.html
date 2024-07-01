@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>
+            SWITCH CASE
+        </title>
+    </head>
+    <body>
+        <script>
+            var num = prompt("Enter a number");
+            num = parseInt(num)
+            var user_Option = prompt("choose luck/palindrome/reverse")
+            switch(user_Option) {
+                case 'lucknumber':
+                var sum = 0;
+                var rem;
+                while (num>0) {
+                rem = num % 10;
+                num = num / 10;
+                sum = rem +sum;
+                num = parseInt(num)
+                if (num==0 && sum>9) {
+                    num = sum;
+                    sum = 0;
+                }
+                }
+                console.log("lucky number is "+sum)
+                case 'palindrome':num
+                var temp = num
+                var rev = 0;
+                while(num>0) {
+                    var rem = num % 10;
+                    rev = (rev*10)+ rem;
+                    num = num/10;
+                    num=parseInt(num)
+                    
+                }
+                if(rev == temp)
+                {
+                    console.log("it is palindrome")
+                }
+                else
+                {
+                    console.log("it is not polindrome number")
+                }
+                case 'reverse':
+                    var rev = 0
+                    while (num>0) {
+                        var rem = num % 10;
+                        rev = (rev*10) + rem
+                        num = num/ 10;
+                        num =parseInt(num)
+                    }
+                    console.log(rev)
+                default:
+                    console.log("Wrong choice")
+            }
+        </script>
+    </body>
+</html>

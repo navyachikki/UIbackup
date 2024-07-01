@@ -1,0 +1,30 @@
+.productContainer{
+    text-align: center;
+}
+#productDetailsul{
+    list-style: none;
+    width:900px;
+    padding:10px;
+}
+ul{
+    float: left;
+    margin:20px
+}
+ul>li{
+    padding:5px;
+    margin:5px;
+    text-decoration:underline 1px solid orange;   
+}
+img{
+    height:150px;
+    width:150px;
+}
+.actualprice{
+    text-decoration:line-through;
+    color:red;
+    font-size:medium
+}
+.discountprice{
+    color:green;
+    font-size: larger;
+}

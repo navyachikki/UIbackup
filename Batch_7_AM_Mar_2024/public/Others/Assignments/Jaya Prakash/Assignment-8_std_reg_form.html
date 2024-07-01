@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Assignment-8</title>
+    <style>
+        .head{
+            text-align: center;
+            background-color:lightcyan  ;
+            border: 2px solid;
+            width: 957px;
+            height: 15px;
+            padding: 10px 0px 10px 0px;
+            position: absolute;
+            left: 300px;
+            }        
+        .foot{
+            text-align: center;
+            background-color: lightcyan;
+            width: 957px;
+            height: 15px;
+            border: 2px solid;
+            padding: 10px 0px 10px 0px;
+            position: absolute;
+            left: 300px;
+            top: 786px;
+            }
+        .block1{
+            border: 2px solid;
+            position: absolute;
+            left: 300px;
+            height: 720px;
+            width: 957px;
+            margin: 10px 0px;
+            padding: 0px;
+            top: 45px;
+            list-style: none;
+            background-color:lightcyan;
+            }
+        .block2{
+            border: 2px solid;
+            width: 800px;
+            margin: 25px 0px 10px 58px;
+            height: 200px;
+            background-color:  #A7BEAE;
+            }
+        .block3{
+            border: 1px solid;
+            background-color: #E7E8D1;
+            height: 32px;
+            width: 137px;
+            text-align: center;
+            padding-top: 12px;
+            }
+        .order{
+            list-style: none ;
+            }
+        .pdetails{
+            position:absolute;
+            left: 82px;
+            top: 9px;
+            }
+        .fname{
+            position: absolute;
+            top: 70px;
+            left: 187px;
+            width: 130px;
+        }
+        .h{
+            position: absolute;
+            top:70px;
+        }
+        .Lname{
+            position: absolute;
+            top: 110px;
+            left: 187px;
+            width: 130px;            
+        }
+        .p{
+            position: absolute;
+            top:110px;           
+        }
+        .Age{
+            position: absolute;
+            top: 150px;
+            left: 187px;
+            width: 130px; 
+        }
+        .q{
+            position: absolute;
+            top:150px;                      
+        }
+        .gender{
+            position: absolute;
+            top:190px;
+            cursor: pointer;
+        }
+        .address{
+            position:absolute;
+            right:130px;
+            top:40px;
+        }
+        .add{
+            width:147px;
+            height:70px;
+        }
+        .coun{
+            position:absolute;
+            top: 143px;
+            right: 205px;
+        }
+        .edu{
+            position:absolute;
+            top: 235px;
+            left: 81px;
+        }
+        .qua{
+            position: absolute;
+            left: 100px;
+            top: 310px;
+        }
+        .lan{
+            position:absolute;
+            left:100px;
+            top:360px;
+        }
+        .corop{
+            position:absolute;
+            left:100px;
+            top:410px;
+        }
+        .abt{
+            position:absolute;
+            left: 81px;
+            top: 464px;
+        }
+        .words{
+            position: absolute;
+            left: 100px;
+            Top:504px;
+        }
+        .reg{
+            height: 21px;
+            border: 2px solid;
+            width: 84px;
+            background-color: burlywood;
+            position: absolute;
+            right: 78px;
+            top: 693px;
+        }
+        .curse{
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="head">
+        <u><b>Sudent Registration Form</b></u>
+    </div>
+    <ul class="block1">
+        <li>
+            <Ul class="block2">
+                <li class="pdetails block3 order">
+                   <u><b>Personal Details</b></u>
+                </li>
+                <li class="order">
+                    <span class="h">First Name :</span> 
+                    <input  type="text" maxlentgth="15"  class="fname" title="Enter your first name">
+                </li>
+                <li class="order">
+                    <span class="p">Last Name :</span>
+                    <input type=" text" maxlength="15" class="Lname" title="Enter Your Last name">
+                </li>
+                <li class="oder">
+                    <span class="q">Age :</span>
+                    <input type=" text" maxlength="3" class="Age" title="Enter Your Age" >
+                </li>
+                <li class="order gender">
+                    <span class="gen">Gender :</span>
+                    <input type="radio" name="gender" class="curse">Male
+                    <input type="radio" name="gender" class="curse">Female
+                </li>
+                <li class="order address">
+                    Address : 
+                    <textarea name="Address" id="" cols="30" rows="10" class="add" title="Enter your Address"></textarea>
+                </li>
+                <li class="order coun">
+                    Country : 
+                    <select name="country" id="" class="curse">
+                        <option value="">India</option>
+                        <option value="">USA</option>
+                        <option value="">Europe</option>
+                        <option value="">Africa</option>
+                        <option value="" selected >Australia</option>
+                        <option value="">France</option>
+                        <option value="">China</option>
+                    </select>
+                </li>
+            </Ul> 
+        </li>
+        <li>
+            <ul class="block2">
+                <li class="block3 order edu">
+                    <u><b>Education Details</b></u>
+                </li>
+                <li class="order qua">
+                    Qualification :
+                    <select name="" id="" class="curse">
+                        <option value="">Btech</option>
+                        <option value="">Mtech</option>
+                        <option value="">Degree</option>
+                    </select>
+                </li>
+                <li class="order lan">
+                    Languages : 
+                    <input type="checkbox"class="curse">English
+                    <input type="checkbox"class="curse">Telugu
+                    <input type="checkbox"class="curse">Hindi
+                    <input type="checkbox"class="curse">Tamil
+                </li>
+                <li class="order corop ">
+                    Courseopted : 
+                    <input type="radio" name="course" class="curse">MCA
+                    <input type="radio" name="course"class="curse">MBA
+                    <input type="radio" name="course" class="curse" >MSC
+                    <input type="radio" name="course" class="curse">Btecch
+                    <input type="radio" name="course" class="curse">10thclass
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="block2">
+                <li class="order block3 abt"><u><b>About Yourself</b></u></li>
+                <li class="order words">
+                    Few words about yourself : 
+                    <textarea name="" id="" cols="30" rows="10" title="few lines about yourself "></textarea>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <input type="button" value="Registor" class="reg curse" title="Registor now">
+        </li>
+    </ul>
+    <div class="foot" ><u><b>@Copyrights2024</b></u></div>
+</body>
+</html>

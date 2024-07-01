@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Registration_form</title>
+    <style>
+        *{
+            font-style: oblique;
+            font-weight: 100;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .heading,.foot{
+            border: 2px solid;
+            width: 100%;
+            height: 30px;
+            text-align: center;
+            padding: 5px;
+            margin: 10px;
+            background-color:bisque;
+
+        }
+        .body{
+            border: 2px solid;
+            width: 100%;
+            height: 800px;
+            padding: 5px;
+
+        }
+        .part{
+            border: 2px solid;
+            width: 90%;
+            height: 23%;
+            padding: 17px;
+            margin: 30px;
+            background-color: beige;
+            
+        }
+        .infohead{
+            border: 2px solid;
+            height: 55px;
+            width: 190px;
+            margin: -44px -10px 2px 33px;
+            background-color: rgb(63, 197, 63);
+            text-align: center; 
+            font-size: larger;
+            
+        }
+        span{
+            align-items: center;
+            margin-top: 5px;
+        }
+        .box1{
+            position: absolute;
+            top: 180px;
+            left: 150px;
+            
+        }
+        .box2{
+            position: absolute;
+            top:250px;
+            left:150px;
+            
+        }
+        .box3{
+            position: absolute;
+            top: 150px;
+            right:150px;
+            
+        }
+        .box4{
+            position: absolute;
+            top: 266px;
+            right: 299px;
+        }
+        .block1{
+            position: absolute;
+            top: 80%;
+            left: 140px;
+        }
+        .block2{
+            position: absolute;
+            top: 80%;
+            right: 140px;
+        }
+        .block3{
+            position: absolute;
+            top: 130%;
+            left: 120px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="heading">Student Registration Form</div>
+    <div class="body">
+        <div class="part part1">
+            <div class="infohead"><span>Personal Details</span></div>
+            <form action="">
+                <div class="box1"> 
+                    <label for="name">First Name :
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="box2">
+                    <label for="name">Last Name :
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="box3">
+                    <label for="Addr">Address :
+                        <textarea name="addr" id="" cols="30" rows="5"></textarea>
+                    </label>
+                </div>
+                <div class="box4">
+                <label for="" >Country :
+                    <select name="country" id="countries">
+                        <option value="">India</option>
+                        <option value="">USA</option>
+                        <option value="">Pakistan</option>
+                        <option value="">Russia</option>
+                        <option value="">Bangladesh</option>
+                        <option value="">Srilanka</option>
+                    </select>
+                    </label>
+                </div>
+            </form>
+        </div>
+        <div class="part part2">
+            <div class="infohead">Educational Details</div>
+            <div class="block1">
+                <label for="">Educational Qualification :
+                    <select name="Field" id="country">
+                        <option value="">BTech</option>
+                        <option value="">MTech</option>
+                        <option value="">BCom</option>
+                        <option value="">BCA</option>
+                        <option value="">BA</option>
+                        <option value="">MSC</option>
+                    </select>
+                </label>
+            </div>
+            <div class="block2">
+                <label for="course">Course Opted :
+                    <input type="radio" name="course">MSC
+                    <input type="radio" name="course">BSC
+                    <input type="radio" name="course">MD
+                    <input type="radio" name="course">MTech
+                </label>
+            </div>
+        </div>
+        <div class="part part3">
+            <div class="infohead">About Yourself</div>
+            <div class="block3">
+                <label for="">Language Known :
+                    <input type="checkbox">Hindi
+                    <input type="checkbox">English
+                    <input type="checkbox">Marathi
+                    <input type="checkbox">Tamil
+                    <input type="checkbox">Urdu
+                </label>
+            </div>
+            </div>
+    </div>
+    <div class="foot">Copyright@2024</div>
+    
+</body>
+</html>

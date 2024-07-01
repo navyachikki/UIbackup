@@ -1,0 +1,36 @@
+.display{
+    width: 30%;
+    height: 350px;
+    border: 2px solid;
+    margin: 10px;
+    display: inline-block;
+    
+}
+h2{
+    text-align: center;
+    color: brown;
+}
+.photos{
+    width: 95%;
+    height: 600px;
+    border: 2px solid;
+    margin: 10px;
+}
+img{
+    width: 100px;
+    height: 100px;
+    display: inline;
+    margin: 5px;
+    padding: 5px;
+}
+.section{
+    width: 90%;
+    height: 150px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid grey;
+}
+h3{
+    margin: 0;
+    padding: 0;
+}

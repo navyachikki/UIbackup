@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="../css/login.css" rel="stylesheet">
+</head>
+<body onload="show()">
+    <div class="container">
+        <div class="Login-info">
+            <h1>Welcome back ! Login to shop</h1>
+            <div>
+                <input type="text" id="uname" placeholder="Enter Name">
+                <div class="nameErr">Name is requried field</div> 
+            </div>
+            
+            <div>
+                <input type="password" id="passInput" placeholder="Enter Password">
+                <div class="passErr">Password is requried field</div> 
+            </div>
+            
+            <div><label><h2>Enter Security Code</h2></label></div>
+            <div id="cap"></div>
+            <input id="captchacode" type="text" placeholder="Enter captcha">
+            <button id="refreshCaptcha" onclick="refresh()">refresh</button>
+            
+            <div class="horizontal-align">
+                <div>
+                    <button type="button" id="btn" onclick="submit()">Login</button> 
+                </div>
+                <a href="forgotPass.html">Forgot Password</a> 
+            </div>
+        
+        
+        </div>
+    </div>
+    <script src="../JavaScript/Loginpg.js"></script>
+    <script src="../JavaScript/captcha.js"></script>
+    <!-- <script src="../JavaScript/createAcc.js"></script>  -->
+</body>
+</html>

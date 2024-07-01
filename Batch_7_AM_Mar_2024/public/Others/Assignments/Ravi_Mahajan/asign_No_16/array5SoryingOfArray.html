@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var length = parseInt(prompt("enter the length of an array"));
+        var arr = [];
+        for(var i =0; i<length; i++){
+            arr[i] = parseInt(prompt(" eneter the value for an array"));
+
+        }
+        console.log("Before sorting of an array is"+arr);
+        arr.sort();
+        console.log("after sorting of an aray is "+ arr);
+        console.log("smallest no in an  array is " + arr[0]);
+        console.log("largest no in an array is "+ arr[length-1]);
+        
+    </script>
+</body>
+</html>

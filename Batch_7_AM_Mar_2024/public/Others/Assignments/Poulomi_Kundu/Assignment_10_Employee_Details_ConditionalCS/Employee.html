@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+<body>
+    <script>
+        var name = prompt("Enter Employee Name: ");
+        var gender = prompt("Enter Gender (M/F): ");
+        var sal = parseInt(prompt("Enter Basic Salary: "))
+
+        var totalSal = (14*sal)/100 + (24*sal)/100 + sal;
+
+        console.log("Employee Name is: " + name);
+        console.log("Employee Gender is: " + gender);
+        console.log("Employee Salary is: " + sal);
+        console.log("Employee Total Salary is: " + totalSal);
+
+        if (gender == "M") {
+            if (totalSal >= 200000) {
+                var tax = 15 * totalSal / 100;
+                console.log("Tax is: " + tax);
+            } else if (totalSal >= 100000) {
+                var tax = 10 * totalSal / 100;
+                console.log("Tax is: " + tax);
+            } else if (totalSal >= 50000) {
+                var tax = 5 * totalSal / 100;
+                console.log("Tax is: " + tax);
+            } else {
+                var tax = 0;
+                console.log("Tax is: " + tax);
+            }
+        } else {
+            if (totalSal >= 200000) {
+                var tax = 10 * totalSal / 100;
+                console.log("Tax is: " + tax);
+            } else if (totalSal >= 100000) {
+                var tax = 5 * totalSal / 100;
+                console.log("Tax is: " + tax);
+            } else {
+                var tax = 0;
+                console.log("Tax is: " + tax);
+            }
+        }
+    </script>
+</body>
+</html>

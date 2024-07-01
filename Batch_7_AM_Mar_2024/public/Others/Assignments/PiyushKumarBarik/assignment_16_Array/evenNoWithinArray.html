@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show EVEN NUMBERS only in an Array</title>
+  </head>
+  <body>
+    <script>
+      var arr = [];
+      var arr2 = [];
+      arrayLength = prompt("Enter length");
+      arrayLength = parseInt(arrayLength);
+      for (var i = 0; i < arrayLength; i++) {
+        arr[i] = prompt("Enter values");
+        arr[i] = parseInt(arr[i]);
+        if (arr[i] % 2 == 0) {
+          arr2[arr2.length] = arr[i];                   //LOGIC- INSERT EVEN NUMBERS INTO THE ARR2 INDEX WISE
+        }
+      }
+      console.log(arr2);
+    </script>
+  </body>
+</html>

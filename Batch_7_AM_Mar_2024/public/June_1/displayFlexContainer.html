@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Flex box/containers
+        </title>
+        <style>
+            .container {
+                border: 1px solid;
+                height: 600px;
+                margin: 20px;
+                background-color: aquamarine;
+                display: flex;
+                /*flex-direction: row-reverse; /*row, column, row-reverse, column-reverse
+                flex-wrap: wrap;  */
+                /* flex-flow: row-reverse wrap; */
+                justify-content: center;
+                flex-direction: row;
+                /*align-items: center; /* Vert*/
+                align-content: center;
+            }
+            .container div {
+                border: 1px solid;
+                padding: 10px;
+                background-color: blue;
+                color: #fff;
+                height: 100px;
+                margin: 10px;
+                width: 100px;
+                height: inherit;
+            }
+            #Block_3 {
+                flex-grow: 2;
+            }
+            #block_4 {
+                flex-shrink: 2;
+                flex-basis: 150px;
+
+                flex: 2 0 150px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div style="order: 2;">Meena</div>
+            <div style="order: 4;">Raj</div>
+            <div style="order: 1;" id="Block_3">Teena</div>
+            <div style="order: 3;" id="block_4">Krish</div>
+            <div style="order: 2;">Meena</div>
+            <div style="order: 4;">Raj</div>
+            
+        </div>
+        
+    </body>
+</html>

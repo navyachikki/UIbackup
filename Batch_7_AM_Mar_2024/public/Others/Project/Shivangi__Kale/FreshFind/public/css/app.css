@@ -1,0 +1,19 @@
+header {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+main {
+    min-height: 700px;  
+}
+footer{
+    padding: 20px;
+    background-color: #F2F3F4;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+

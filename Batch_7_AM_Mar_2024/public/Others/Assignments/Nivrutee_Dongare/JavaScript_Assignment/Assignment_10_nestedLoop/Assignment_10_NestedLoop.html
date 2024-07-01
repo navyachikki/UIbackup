@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statement And Loops</title>
+</head>
+
+<body>
+    <script>
+        var ename, age, pf, hra, basicSalary, total, gender, tax;
+
+        ename = prompt("Enter Your name :");
+
+        age = prompt("Enter Your age :");
+        age = parseInt(age);
+
+        gender = prompt("Enter Your Gender :");
+
+        pf = prompt("Enter PF :");
+        pf = parseInt(pf);
+
+        hra = prompt("Enter HRA :");
+        hra = parseInt(hra);
+
+        basicSalary = prompt("Enter Salary :");
+        basicSalary = parseInt(basicSalary);
+
+        totalSal = pf + hra + basicSalary;
+
+
+        if (gender === "Male") {
+            if (totalSal >= 200000) {
+                tax = totalSal * 0.15
+            }
+            else if (totalSal >= 100000) {
+                tax = totalSal * 0.10
+            }
+            else if (totalSal >= 50000) {
+                tax = totalSal * 0.05
+            }
+            else {
+                tax = 0;
+            }
+        }
+        else if (gender === "Female") {
+            if (totalSal >= 200000) {
+                tax = totalSal * 0.10
+            }
+            else if (totalSal >= 100000) {
+                tax = totalSal * 0.05
+            }
+            else {
+                tax = 0;
+            }
+        }
+        else {
+            console.log("Invalid Data");
+        }
+
+        console.log("Name: " + ename);
+        console.log("Age:" + age);
+        console.log("PF: " + pf);
+        console.log("HRA: " + hra);
+        console.log("Basic Salary: " + basicSalary);
+        console.log("Total Salary is " + totalSal);
+        console.log("Your Tax is : ", tax);
+    </script>
+</body>
+
+</html>

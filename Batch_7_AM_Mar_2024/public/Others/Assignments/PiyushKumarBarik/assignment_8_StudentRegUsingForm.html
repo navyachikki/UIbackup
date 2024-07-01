@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STUDENT REGISTRATION FORM USING INPUT TAGS</title>
+    <style>
+      .header,
+      .mainContainer,
+      .footer {
+        border: 2px solid black;
+        width: 1480px;
+        height: 40px;
+        margin: 5px 10px;
+      }
+      .header {
+        text-align: center;
+        font-weight: bold;
+        font-size: large;
+        padding-top: 20px;
+        background-color: burlywood;
+      }
+      .mainContainer {
+        height: 530px;
+      }
+
+      .box1,
+      .box2,
+      .box3 {
+        border: 2px solid black;
+        width: 1400px;
+        height: 150px;
+        margin: 22px auto;
+        position: relative;
+      }
+
+      .personalDetails,
+      .educationDetails,
+      .aboutYourself {
+        border: 1px solid black;
+        background-color: rgb(135, 191, 51);
+        width: 211px;
+        height: 30px;
+        position: absolute;
+        left: 20px;
+        top: -17px;
+        text-align: center;
+        padding-top: 2px;
+      }
+      .name {
+        position: absolute;
+        left: 21px;
+        top: 25px;
+      }
+
+      .firstname {
+        position: absolute;
+        left: 21px;
+        top: 68px;
+      }
+      .address {
+        position: absolute;
+        right: 40px;
+        top: 7px;
+      }
+      .countryOptions {
+        position: absolute;
+        right: 112px;
+        top: 101px;
+      }
+      .qualificationOptions {
+        position: absolute;
+        left: 21px;
+        top: 31px;
+      }
+      .languageOptions {
+        position: absolute;
+        left: 21px;
+        top: 70px;
+      }
+      .courseOpted {
+        position: absolute;
+        right: 40px;
+        top: 57px;
+      }
+      .about {
+        position: absolute;
+        left: 23px;
+        top: 23px;
+      }
+      .footer {
+        text-align: center;
+        font-weight: bold;
+        font-size: large;
+        padding-top: 4px;
+      }
+      /* **IMPORTANT** USE DISPLAY AND WIDTH TO ALIGN LABELS ON VERTICALLY STRAIGHT LINE */
+      label {
+        display: inline-block;
+        width: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">Student Registration Page</div>
+    <div class="mainContainer">
+      <div class="box1">
+        <div class="personalDetails">Personal Details</div>
+        <div class="name">
+          <label id="addressid" for="name">Name:</label>
+          <input type="text" name="name" />
+        </div>
+        <div class="firstname">
+          <label for="first-name">First name:</label>
+          <input type="text" name="first-name" />
+        </div>
+        <div class="address">
+          <label for="addressbox">Address:</label>
+          <textarea name="addressbox" cols="20" rows="4"></textarea>
+        </div>
+        <div class="countryOptions">
+          <label for="country">Country:</label>
+          <select name="country">
+            <option value="India" selected>India</option>
+            <option value="Australia">Australia</option>
+            <option value="China">China</option>
+            <option value="USA">USA</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="box2">
+        <div class="educationDetails">Education Details</div>
+        <div class="qualificationOptions">
+          <label for="qualification">Qualification:</label>
+          <select name="qualification">
+            <option value="BTech" selected>BTech</option>
+            <option value="BSc">BSc</option>
+            <option value="Diploma">Diploma</option>
+          </select>
+        </div>
+        <div class="languageOptions">
+          <label for="languages">Languages Known:</label>
+          <input type="checkbox" name="languages" />English
+          <input type="checkbox" name="languages" />Hindi
+          <input type="checkbox" name="languages" />Telugu
+        </div>
+        <div class="courseOpted">
+          <label for="course">Course Opted:</label>
+          <input type="radio" name="course" autocomplete="off" />Java
+          <input type="radio" name="course" autocomplete="off" />C#
+          <input type="radio" name="course" autocomplete="off" />Python
+          <input type="radio" name="course" autocomplete="off" />Javascript
+        </div>
+      </div>
+
+      <div class="box3">
+        <div class="aboutYourself">About Yourself</div>
+        <div class="about">
+          <label for="about">Few Words About Your Career:</label>
+          <textarea name="about" id="" cols="35" rows="7"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="footer">@Copyrights 2023</div>
+  </body>
+</html>

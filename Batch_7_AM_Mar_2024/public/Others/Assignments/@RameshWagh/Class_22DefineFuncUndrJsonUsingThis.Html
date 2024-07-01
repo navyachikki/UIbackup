@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JSON Object Example</title>
+    </head>
+    <body>
+        <script>
+            var studentDtl = {
+                getData () {
+                    this.name = prompt("Enter Student Name : ");
+                    this.Age = prompt("Enter Student Age : ");
+                    this.location = prompt("Enter Student Location : ");
+                    this.marks = [];
+                    for (i = 0; i < 5; i++)
+                    {
+                        this.marks[i] = parseInt(prompt("Enter Student marks in Subject : " + (i+1)));
+                    }
+                    this.CalMarksAvg();
+                },
+                CalMarksAvg () {
+                    for (i = 0; i < this.marks.length; i++)
+                    {
+                        this.totalMarks = this.totalMarks + this.marks[i];
+                    }
+                    console.log("Total Marks = " + this.totalMarks);
+                    this.marksAvg = this.totalMarks / this.marks.length;
+                    console.log("Total Average = " + this.marksAvg);
+                    studentDtl.dispData();
+                }
+            };
+            studentDtl.dispData  = () => {
+                console.log(studentDtl);
+                //Table Data Show
+                console.table(studentDtl);
+                console.table([studentDtl],['name','Age']);
+                console.log("Age Of Name = " + studentDtl.name);
+                console.log("Age Of Student = " + studentDtl.Age);
+                console.log("Age Of Location = " + studentDtl.location);
+                console.log("Marks Of Student = " + studentDtl.marks);
+                console.log("Marks in Subject1 = " + studentDtl.marks[0]);
+            }
+
+            studentDtl.totalMarks = 0;
+            studentDtl.getData();
+        </script>  
+    </body>
+</html>

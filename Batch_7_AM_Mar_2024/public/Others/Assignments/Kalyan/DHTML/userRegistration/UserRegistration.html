@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserRegistrstion</title>
+    <link rel="stylesheet" href="userRegistration.css">
+    <script src="userRegistration.js"></script>
+</head>
+<body>
+    <ul>
+        <div class="header">User Registration</div>
+        <li>
+            <input type="text" placeholder="Enter Your Name" id="name"  onkeypress = "return validateSpace(event)" maxlength="10"></input>
+            <div class="nameError idError">user name requried</div>
+        </li>
+        <li>
+            <input type="password" placeholder="Enter Your password" id="pwd" maxlength="8"   onkeyup = "validatePass(event)" onkeypress="validateChange(event)" onkeypress=" return validatePassSpace(event)" ></input>
+           <input type="checkbox"  id="showPass" onchange="showPass(event)">show password</input>
+        </li>
+        <li>
+            <input type="password" placeholder="Re-enter your password" id="rePwd" maxlength="8"></input>
+            <div class="passError">Password must be same</div>
+        </li>
+        <li>
+            <input type="mail" placeholder="Enter Your mail" id="mail"></input>
+            <div class="mailError">user mail requried</div>
+        </li>
+        <li>
+            <input type="button" value="register" onClick="register()">
+        </li>
+    </ul>
+     <h1 class="registrationSucessful">User Registration Sucessfully</h1>
+     <ol id="passRequriements">
+        
+        <li class="pwdLength">
+            Max length of 8 chars
+        </li>
+        <li class="pwdChar">
+            must include one special char @#$^&
+        </li>
+        <li class="pwdUppercase">
+            First char must be Uppercase
+        </li>
+        <li class="pwdNum">
+            must include one number
+        </li>
+        <li class="pwdSpace">
+            No spaces
+        </li>
+     </ol>
+</body>
+</html>

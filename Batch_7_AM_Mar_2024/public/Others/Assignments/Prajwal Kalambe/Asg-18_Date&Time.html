@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+</head>
+<body>
+    <script>
+            var days=['Sunday','Monday','tuesday','Wednesday','thursday','Friday','Saturday'];
+
+            var months=['January','February','march','April','May','June','July','August','September','October','November','December'];
+
+            var currdt=new Date();
+            console.log(currdt);
+            var format1=currdt.getDate()+"/"+currdt.getDay()+"/"+currdt.getFullYear();
+            console.log(format1);
+            
+            // Monday, Apr 29th 2024
+            var format2=days[currdt.getDay()]+", "+months[currdt.getMonth()]+" "+currdt.getDate()+"th "+currdt.getFullYear();
+            console.log(format2);
+
+            // April, 29th Monday, 2024
+            var format3=months[currdt.getMonth()]+" "+currdt.getDate()+"th "+days[currdt.getDay()]+", "+currdt.getFullYear();
+            console.log(format3);
+            // Apr/29/2024
+            var format4=months[currdt.getMonth()]+"/"+currdt.getDate()+"/"+currdt.getFullYear();
+            console.log(format4);
+
+
+            // Monday April 2024, 7:2:5
+            var format5=days[currdt.getDay()]+" "+months[currdt.getMonth()]+" "+currdt.getFullYear()+", "+currdt.getHours()+":"+currdt.getMinutes()+":"+currdt.getSeconds();
+            console.log(format5);
+            
+            // console.log(currdt.getDate());
+            // console.log(currdt.getDay());
+            // console.log(currdt.getFullYear());
+            // console.log(currdt.getHours());
+            // console.log(currdt.getMilliseconds());
+            // console.log(currdt.getMonth());
+            // console.log(currdt.getUTCDate());
+            
+
+    </script>
+    
+</body>
+</html>

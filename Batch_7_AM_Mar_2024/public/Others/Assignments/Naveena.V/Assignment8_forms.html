@@ -1,0 +1,156 @@
+<html>
+	<head>
+		<title>
+			FORMS
+		</title>
+		<style>		
+			.heading {
+				width: auto;
+				height: auto;
+				border: 1px solid;
+				text-align: center;
+				font-weight: bold;
+				font-size: 20px;
+				padding: 10px;
+				margin-bottom: 20px;
+				border-radius: 30px;
+				background-color:rgb(183, 183, 183)
+	
+			}
+			.container {
+				border: 2px solid;
+				padding: 10px;
+
+			}
+			.subheading  {
+				width: 200px;
+				height: auto;
+				padding: 5px;
+				border: 1px solid;
+				text-align: center;
+				font-weight: lighter;
+				font-size: 15px;
+				border-radius: 30px;
+				background-color: rgb(183, 183, 183);
+			}
+			.b1 {
+				border: 2px solid;
+				padding: 10px;
+				margin: 10px;
+
+			}
+			li {
+					padding: 10px;
+
+			}
+			label {
+				padding-left: 10px;
+			
+			}
+			.foot {
+				text-align: center;
+				margin: 30px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="heading">
+			STUDENT REGISTRATION FORM
+		</div>
+		<div class="container">
+			<div class="b1">
+				<h1 class="subheading">
+					PERSONAL DETAILS
+				</h1>
+				<ol>
+					<li>
+						<label for="username">First Name :</label>
+						<input type="text" name="username">
+						<label for="username">Middel Name :</label>
+						<input type="text" name="username">
+						<label for="username">Last Name :</label>
+						<input type="text" name="username">
+					</li>
+					<li>
+						<label for="name">Father Name :</label>
+						<input type="text" name="username">
+					</li>
+					<li>
+						<label for="name">Mother Name :</label>
+						<input type="text" name="name">
+					</li>
+					<li>
+						<label for="DOB">Date Of Birth :</label>
+						<input type="date" name="DOB">
+					</li>
+					<li>
+						<label for="gender">Gender :</label>
+						<input type="radio" name="gender" value="Male">Male
+						<input type="radio" name="gender" value="Female">Female
+					</li>
+					<li>E-Mail :
+						<input type="email">
+					</li>
+					<li>Mobile :
+						<input type="number">
+					</li>
+				</ol>
+			</div>
+			<div class="b1">
+				<h1 class="subheading">
+					Education Details
+				</h1>
+				<ol>
+					<li>
+						Qualification :
+						<select>
+							<option value="SSC">SSC</option>
+							<option value="Diploma">Diploma</option>
+							<option value="Degree">Degree</option>
+							<option value="B.TECH">B.TECH</option>
+						</select>
+						Marks Obatained :
+						<input type="text">
+					</li>
+					<li>Branch :
+						<select>
+							<option value="1">CSE</option>
+							<option value="2">CIVIL</option>
+							<option value="3">EEE</option>
+							<option value="4">ECE</option>
+						</select>
+					</li>
+					<li>Previous Institute :
+						<input type="text">
+					</li>
+					<li><lable>Address:</lable><br>
+						<textarea cols="30" rows="5"></textarea>
+						
+					</li>
+				</ol>
+			</div>
+			<div class="b1">
+				<h1 class="subheading">
+					About Yourself
+				</h1>
+				<ol>
+					<li>
+						<label>Languages Known :</label>
+						<input type="radio">English
+						<input type="radio">Telugu
+						<input type="radio">Hindi>
+					</li>
+					<li>
+						<label>Permenent Address</label><br>
+						<textarea cols="30" rows="5"></textarea>
+					</li>
+				</ol>
+			</div>
+			<div class="foot">
+				<button>REGISTER</button>
+				<input type="submit">
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array</title>
+        <style>
+            h2 {
+                color:purple;
+                width:700px;
+                text-align: center;
+                margin:10px auto;
+                border:1px solid #ccc;
+            }
+            .Display {
+                position: relative;
+                display: inline-block;
+                margin: 10px auto;
+                padding: 42px;
+                color: brown;
+                left: 372px;
+                width: 250px;
+            }
+            .Display_Even {
+                position: relative;
+                display: inline-block;
+                margin: 10px auto;
+                padding: 42px;
+                color: brown;
+                left: 38px;
+                width: 250px;
+                bottom: 20px;
+                top: 30px; 
+            
+            }
+        </style>
+    </head>
+    <body>
+        <h2 >
+            Dynamic Reading Values From an Array & Displaying in UI
+        </h2>
+        <Span class="Display"></Span>
+        <Span class="Display_Even"></Span>
+        <script>
+            var data = [];
+            var temp = [];
+            var conter = 0
+            var n = parseInt(prompt("Enter the Length"));
+            for(var i = 0; i<=n;i++) {
+                data[i]=parseInt(prompt("Enter the Value of " + i));
+                if (data[i]%2 == 0) {
+                    console.log(data[i]);
+                    temp.push(data[i]);
+
+                }
+            }
+            console.log(data);
+
+            document.querySelector(".Display").innerText = "Entered Values are  : " + data;   
+            document.querySelector(".Display_Even").innerText = "Entered Values these are Even : " + temp;   
+            
+            
+            
+        </script>
+    </body>
+</html>

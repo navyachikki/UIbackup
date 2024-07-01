@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            class ProductDetails {
+                constructor() {
+                    
+                }
+            }
+
+
+            var p1 = {
+                name: 'Laptop',
+                price: 2000,
+                discountPercent: 5,
+                manu: 'Sony',
+                getDiscountPrice() {
+                    this.discountPrice = this.price - (this.price * this.discountPercent) / 100;
+                },
+                displayProductDetails() {
+                    this.getDiscountPrice();
+                    console.log("Product Details");
+                    console.log("Name " + this.name);
+                    console.log("Actual Price " + this.price);
+                    console.log("Price after discount " + this.discountPrice);
+                    console.log("Manufacturer " + this.manu);
+
+                }
+            };
+            p1.displayProductDetails();
+        </script>
+    </body>
+</html>

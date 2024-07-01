@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+<body>
+    <script>
+        var empName, empAge, empGender, empDepartment, empBasicSalary, empPf, empHra, empTotalSalary;
+
+        empName = prompt("Enter employee name");
+        empAge = prompt("Enter employee age");
+        empGender = prompt("Enter employee gender");
+        empDepartment = prompt("Enter employee department");
+        empBasicSalary = prompt("Enter employee Basic Salary");
+
+        empPf = (empBasicSalary * 14) / 100;
+        empHra = (empBasicSalary * 24) / 100;
+        empTotalSalary = parseFloat(empBasicSalary)  + empPf + empHra;
+
+        alert(
+            "Employee Name: "+empName+
+            "\nEmployee Age: "+empAge+
+            "\nEmployee Gender: "+empGender+
+            "\nEmployee Department: "+empDepartment+
+            "\nEmployee Basic Salary: "+empBasicSalary+
+            "\nEmployee PF: "+empPf+
+            "\nEmployee HRA: "+empHra+
+            "\nEmployee Total Salary: "+empTotalSalary
+        )
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control statement Demo</title>
+</head>
+<body>
+    <h2>Lucky Number Demo</h2>
+    <script>
+    var n = prompt("Enter a Number");
+    n = parseInt(n);
+    var sum = 0;
+    var rem;
+    while(n > 0){
+    rem = n % 10;
+    sum = sum + rem;
+    n = n / 10;
+    n = parseInt(n);
+    
+    if(n == 0 && sum > 9){
+      n = sum;
+      sum = 0;
+    }
+    }
+    console.log("Sum of Lucky number " + sum);
+    </script>
+</body>
+</html>

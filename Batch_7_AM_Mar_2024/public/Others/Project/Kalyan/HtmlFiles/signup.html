@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signUp</title>
+    <link rel="stylesheet" href="../cssFiles/signup.css">
+    
+</head>
+<body>
+    <div class="amazon_header">
+        <img class="amazon-logo"src="../Project/images/amazonlogo.png"></img>
+        <P class="anantapur">delivering to anantapur</P>
+        <p class="update">update Location</p>
+        <input class="search_bar" type="input" placeholder="Search Amazon.in">
+        <select id="dropdown">
+            <option value="En">English</option>
+            <option value="Hi">Hindi</option>           
+            <option value="Te">Telugu</option>      
+        </select>
+        <button class="account" onclick="login()">Sign Up</button>
+        <button class="cart">cart</button>
+    </div>
+<div class="signupContainer">
+   
+    <div class="signupChanges" >
+        <ul class="">
+           <li>
+               <label for="userName1">User Name:</label>
+               <input type="text" placeholder="Enter user name" id="signupuserName" name="userName1">
+           </li>
+           <li>
+               <label for="password1">Password:</label>
+               <input type="password" placeholder="Enter Password" id="signuppassword" name="password1">
+           
+            </li>
+           <li>
+               <label for="password2" id="checker">Confirm<br>Password:</br></label>
+               <input type="password" placeholder="Enter Password" id="signupconfirmpassword" name="password2">
+         
+               <input type="checkbox" id="checked" name="check"></input>
+           </li>
+           <li>
+            <label for="number">mobile number:</label>
+            <input type="number" placeholder="Enter number" id="Number" name="number">
+        
+           </li>
+           <li>
+            <label for="email">Enter mail:</label>
+            <input type="mail" placeholder="Enter mail" id="email" name="email">
+        
+           </li>
+           <li>
+              <button id="submitButn">Submit</button>
+           </li>
+         </ul>
+
+    </div>
+</div>
+</body>
+</html>

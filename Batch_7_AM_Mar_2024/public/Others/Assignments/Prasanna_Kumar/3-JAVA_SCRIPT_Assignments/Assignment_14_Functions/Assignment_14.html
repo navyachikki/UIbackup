@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment_Using_Function</title>
+    </head>
+    <body>
+        <h3>DISPLAYING EMPLOYEE DETAILS USING FUNCTION</h3>
+        <script>
+            var name, age, gender, salary, pf, hra, total, tax;
+            function getEmpDetails(){
+                name = prompt("ENTER YOUR NAME :");
+                age = parseInt(prompt("ENTER YOUR AGE :"));
+                gender = prompt("ENNETR MALE/FEMALE");
+                gender.toLowerCase();
+                salary = parseInt(prompt("ENTER YOUR SALARY"));
+
+                calculations();
+            }
+            function calculations(){
+                pf = (14/100)*salary;
+                hra = (24/100)*salary;
+                total = salary+pf+hra;
+
+                displayDetails();
+            }
+            function displayDetails(){
+                console.log("YOUR DETAILS ARE AS FOLLOWS :");
+                console.log("NAME :" + name);
+                console.log("AGE :"+ age);
+                console.log("GENDER :"+ gender);
+                console.log("BASIC SALARY :"+ salary);
+                console.log("PF :"+ pf);
+                console.log("HRA :"+hra);
+                console.log("TOTALSALARY WITH BENIFITS :"+ total);
+
+                taxamount();
+            }
+            function taxamount(){
+                var Tax;
+                if(gender=='male')
+                {
+                    console.log(gender);
+                    if(total>=200000)
+                    {
+                    console.log("Tax is = " + total*0.15);
+                    }
+                    else if(total>=100000)
+                    {
+                        console.log("Tax is = " + total*0.1);
+                    }
+                    else if(total>=50000)
+                    {
+                        console.log("Tax is = " + total*0.05);
+                    }
+                    else
+                    {
+                        console.log("there is no tax")
+                    }
+                }
+                else if(gender=='female')
+                {
+                    console.log(gender);
+                    if(total>=200000)
+                    {
+                    console.log("Tax is = " + total*0.1);
+                    }
+                    else if(total>=100000)
+                    {
+                        console.log("Tax is = " + total*0.05);
+                    }
+                    else
+                    {
+                        console.log("there is no tax")
+                    }
+                }
+                else
+                {
+                    console.log("Please Enter Your Gender Properly");
+                }
+
+                retirement();
+            }
+            function retirement(){
+                if(age < 62)
+                {
+                    var n = 62 - age;
+                    console.log("YOU HAVE" + " " + n + " " + "YEARS OF SERVICE");
+                }
+                else if(age == 62)
+                {
+                    console.log("YOU WILL BE RETIRING THIS YEAR, CONGRATULATIONS AND THANK YOU FOR YOUR SERVICE");
+                }
+                else if(age > 62)
+                {
+                    n = age - 62;
+                    console.log("YOU HAVE ALREDY RETIRED FOR" + " " + n + " " + "YEARS THANK YOU FOR THE SERVICE");
+                }
+                else
+                {
+                    console.log("PLEASE ENTER THE AGE PROPRELY");
+                }
+            }
+
+            getEmpDetails();
+
+        </script>
+    </body>
+</html>

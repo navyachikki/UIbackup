@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        li{
+            list-style: none;
+            padding: 10px;
+            background-color:  lightgray ;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        form{
+            background-color: ghostwhite;
+            width: 1000px;
+            margin: auto;
+        }
+        h2{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            color: darkslategrey;
+        }
+        .submit{
+            background-color: chartreuse;
+        }
+        .recet{
+            background-color:darkorange;
+        }
+
+    </style>
+</head>
+<body>
+    <form method="post">
+        <div>
+        <h2> student Registration page</h2>
+    </div>
+    <ul>
+        <fieldset>
+            <legend> PERSNOL DETAILS</legend>
+        <li>
+    <label for="username"> user name</label>
+</li>
+   <li>
+    <input type="text" placeholder="username" nsme="userName">
+</li>
+<li>
+    <lable for="mail" > E-MAIL ID</lable> 
+    </li>
+    <li> <input type="text" placeholder="Enter mail"  name="mail"  required ></li>
+    
+    <li>
+    <lable for="password" > assword</lable> 
+    </li>
+    <li> <input type="password" placeholder="Enter password"  name="password"  required ></li>
+    <li>
+        <lable for="number">contact no.</lable>
+        </li>
+        <li>
+        <input type="number"  name="number" placeholder="Enter">
+    </li>
+    <li>
+        <label for="gender"> gender</label>
+        
+    </li>
+    <li> 
+        <input type="radio" name="gender" value="male" >male
+        <input type="radio" name="gender" value=" female" > female
+        <input type="radio" name="gender" value="other" >other
+    </li>
+</fieldset>
+<FIeldset>
+    <legend> education-details</legend>
+    <li> 
+       <label for="ug"> qualification</label>
+       <select>
+             <option value="b.tech">b.tech</option>
+             <option value="degree">degree</option>
+             
+       </select>
+       <lable for="year"> year of pass</lable>
+       <input type="month" name="year" placeholder="pass year">
+    </li>
+    <li>
+        <label  for="cource"> spcializations</label>
+        <select>
+            <option value="ui fullstack">ui fullstack</option>
+            <option value="java" name="cource"> java</option>
+            <option value="python" name="cource"></option>
+            <option value=".net" name="cource"> .net</option>
+            <option value="testing tools" name="cource"> testing tools</option>
+            
+      </select>
+
+
+    </li>
+    <li>
+        <label for="lang"> laguages known</label>
+        <input type="checkbox" name="lang" value="telugu"> telug
+        <input type="checkbox" name="lang" value="english"> english
+        <input type="checkbox" name="lang" value="hindhi"> telugu
+        
+    </li>
+
+
+</FIeldset>
+<fieldset>
+    <legend> adress</legend>
+<li>
+    <label for="address"> peminant address</label>
+    <textarea rows="3" cols="30" ></textarea>
+    <label for="address"> preset address</label>
+    <textarea rows="3" cols="30" ></textarea>
+</li>
+</fieldset>
+<fieldset>
+    <legend> about your-sef</legend>
+    <li>
+        <label for="about"> about your-sef</label>
+        <textarea rows="4" cols="30" ></textarea>
+
+    </li>
+</fieldset>
+<li> 
+    <input type="submit" class="submit"> 
+    <input type="reset"  class="recet"> 
+
+</li>
+</ul>
+
+
+
+</ul>
+</body>
+</html>

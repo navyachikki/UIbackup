@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+<body>
+    <script>
+
+        var employee_name,employee_age,employee_gender,dept,basic_salary,pf,total_salary;
+
+        employee_name=prompt("Enter employee Name: ");
+        employee_age=prompt("Enter employee age: ");
+        employee_gender=prompt("Enter employee gender: ");
+        dept=prompt("Enter Employee Dept: ");
+        basic_salary=prompt("Basic Salary: ");
+
+        basic_salary=parseFloat(basic_salary);
+        pf=parseFloat(pf);
+        pf=(12/100)*basic_salary
+        total_salary=parseFloat(total_salary);
+        total_salary=basic_salary+pf;
+        
+        console.log("Employee Details entered by User");
+        console.log("Name: "+employee_name);
+        console.log("Age: "+employee_age);
+        console.log("Gender: "+employee_gender);
+        console.log("Basic sal: "+basic_salary);
+        console.log("pf: "+pf);
+        console.log("Total Salary: "+total_salary);
+
+
+    </script>
+    
+</body>
+</html>

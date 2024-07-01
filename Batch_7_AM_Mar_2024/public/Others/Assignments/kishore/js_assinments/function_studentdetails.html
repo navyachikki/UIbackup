@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    var name, age, gender, m1, m2, m3, total, avg, grade;
+    function readstudentdeta() {
+        name = prompt( "enter student name");
+        age = prompt( "enter student age");
+        gender = prompt( "enter student gender");
+        m1 = prompt( "enter sub1 marks");
+        m2 = prompt( "enter sub2 marks");
+        m3 = prompt( "enter sub3 marks");
+        gettotalandavg();
+
+
+    }
+    function gettotalandavg() {
+        total = m1 + m2 + m3;
+        avg = total / 3;
+        getstudentgrade();
+    }
+    function getstudentgrade() {
+        if (avg >=40){
+                  grade = ' you are passed';
+        
+            if(avg >=90){
+                 grade = 'you are distaction';
+            }   
+        
+        else if(avg >=60) {
+            grade = 'you are first class';
+        }
+    }
+        else {  grade ='ypu are second class';
+    }
+      
+    }
+    function displaystudentdetails() {
+        readstudentdeta();
+        console.log("student details");
+        console.log("student name" + name);
+        console.log(" age" + age);
+        console.log(" gender" + gender);
+        console.log("total" + total);
+        console.log("avg" + avg);
+        console.log("grade" + grade);
+    }
+    displaystudentdetails();
+  </script>   
+</body>
+</html>

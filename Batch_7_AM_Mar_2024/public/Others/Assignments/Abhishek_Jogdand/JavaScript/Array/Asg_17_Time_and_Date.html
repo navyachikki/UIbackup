@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var dayNames = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "thursday",
+        "Friday",
+        "Saturday",
+      ];
+
+      var crntDate = new Date();
+    //   var dayIndex = crntDate.getDay();
+    //   console.log(dayNames[dayIndex]);
+
+    //   console.log(crntDate);
+
+     
+
+      var monthNames = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+
+      var monthIndex = crntDate.getMonth();
+      var monthName = monthNames[monthIndex];
+    //   console.log(monthName);
+
+
+
+      // 1] April 29th, 2024
+      var myFormat3 =
+        monthName + " " + crntDate.getDate() + "th"+", "+ crntDate.getFullYear();
+      console.log(myFormat3);
+
+
+
+      // 2] Monday, Apr 29th 2024
+
+      var monthNames_new = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sept",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+      var monthIndex = crntDate.getMonth();
+      var monthName_new = monthNames_new[monthIndex];
+    //   console.log(monthName_new);
+
+      var dayNames = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "thursday",
+        "Friday",
+        "Saturday",
+      ];
+
+      var crntDate = new Date();
+      var dayIndex = crntDate.getDay();
+    //   console.log(dayNames[dayIndex]);
+
+
+      var myFormat4 =
+        dayNames[dayIndex] +
+        ", " +
+        monthName_new +
+        " " +
+        crntDate.getDate() +
+        "th " +
+        crntDate.getFullYear();
+      console.log(myFormat4);
+
+
+
+      // 3] April, 29th Monday, 2024
+
+      var myFormat5 =
+        monthName +
+        ", " +
+        crntDate.getDate() +
+        "th " +
+        " " +
+        dayNames[dayIndex] +
+        ", " +
+        crntDate.getFullYear();
+      console.log(myFormat5);
+
+
+
+
+
+
+      //4]  Apr/29/2024
+
+      var monthNames_new = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sept",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+      var monthIndex = crntDate.getMonth();
+      var monthName_new = monthNames_new[monthIndex];
+
+      var myFormat6 =
+        monthName_new +
+        "/" +
+        crntDate.getDate() +"/"+crntDate.getFullYear()
+        crntDate.getFullYear();
+      console.log(myFormat6);
+
+
+
+      // 5] Monday April 2024, 7:2:5
+
+      var dayNames = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "thursday",
+        "Friday",
+        "Saturday",
+      ];
+
+      var crntDate = new Date();
+      var dayIndex = crntDate.getDay();
+
+      var monthNames_new = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+      var monthIndex = crntDate.getMonth();
+      var monthName_new = monthNames_new[monthIndex];
+
+
+      var myFormat7 =
+        dayNames[dayIndex] +" "+
+        monthName_new +" "+ crntDate.getFullYear();
+      console.log(myFormat7);
+
+    </script>
+  </body>
+</html>

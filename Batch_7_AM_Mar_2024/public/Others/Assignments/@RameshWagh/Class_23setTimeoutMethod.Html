@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout Method</title>
+</head>
+<body>
+    <script>
+        /*
+        console.log("Process Stared");
+        setTimeout ( () => {
+            console.log("Process is Going On, Done, Complited, Thanks For Waiting..");
+        } , 5000);
+        console.log("Process End");
+        */
+
+
+        //Example to Stop Timer
+        
+        console.log("Process Stared");
+
+        var timer = setTimeout ( () => {
+            console.log("Process is Going On, Done, Complited, Thanks For Waiting..");
+        } , 5000);
+
+        var UserResponse = prompt("You Wont To Stop the Process Y/N");
+        if (UserResponse == "Y" || UserResponse == "y")
+        {
+            console.log("Process Stoped as Per User Demand");
+            clearTimeout(timer);
+        }
+
+        console.log("Process End");
+
+    </script>
+</body>
+</html>

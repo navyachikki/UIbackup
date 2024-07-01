@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emp details</title>
+</head>
+<body>
+    <h3>Emp Details Dynamically Reading</h3>
+    <script>
+        var empName = prompt("Enter Emp Name ");
+        var empAge = prompt("Enter Emp Age ");
+        var empGender = prompt("Enter Emp Gender ");
+        var empDepartment = prompt("Enter Emp Department ");
+
+        var empSalary = prompt("Enter Emp Salary ");
+        empSalary = parseInt(empSalary);
+
+        var prf = (14*empSalary)/100;
+        var hra = (24*empSalary)/100;
+        var totalSalary = prf + hra + empSalary;
+
+        console.log("EMPLOYEE DETAILS");
+        console.log("Name = " + empName);
+        console.log("Age = " + empAge);
+        console.log("Gender = " + empGender);
+        console.log("Department = " + empDepartment);
+
+        console.log("BasicSalary = " + empSalary);
+
+        console.log("Profit = " + prf);
+        
+        console.log("HRA = " + hra);
+
+        console.log("TotalSalary = " + totalSalary);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+
+h3 {
+    border: 2px solid;
+    margin: 10px 200px;
+    text-align: center;
+    padding: 10px;
+}
+.form_container {
+    position: relative;
+    border: 2px solid;
+    margin: 40px 200px;
+    height: 250px;
+    padding-top: 40px;
+}
+.fields_block {
+    margin: 25px 40px;
+    display: inline-block;
+}
+.field_lable {
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+}
+.field_lable>label {
+    font-weight: bold;
+}
+.input_field{
+    display: inline-block;
+    margin: 0px 10px ;
+}
+.dropdown_field{
+    margin: 0px 10px ;
+}
+select{
+    width: 200px;
+}

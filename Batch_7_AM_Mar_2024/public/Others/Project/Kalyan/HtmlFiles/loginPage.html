@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="../cssFiles/login.css">
+</head>
+<body>
+<div class="loginContainer">
+    <div class="amazon_header">
+        <img class="amazon-logo"src="../Project/images/amazonlogo.png"></img>
+        <P class="anantapur">delivering to anantapur</P>
+        <p class="update">update Location</p>
+        <input class="search_bar" type="input" placeholder="Search Amazon.in">
+        <select id="dropdown">
+            <option value="En">English</option>
+            <option value="Hi">Hindi</option>           
+            <option value="Te">Telugu</option>      
+        </select>
+        <button class="returns">Login</button>
+        <button class="cart">cart</button>
+    </div>
+    <div class="changes" >
+     <ul class="login">
+        <!-- <img src="file:///C:/Users/Lenovo/Desktop/studies/uiAssignments/public/JavaScriptAssignments/Project/png-transparent-customer-login-avatar-head-portrait-client-user-thumbnail.png"> -->
+        <li>
+            <label for="userName">User Name:</label>
+            <input type="text" placeholder="Enter user name" id="userName" name="userName">
+        </li>
+        <li>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Enter Password" id="password" name="password">
+        
+        </li>
+        <li>
+            <div id="space">$5Sd#
+            </div>
+            <a id="generate" onclick="generate()">
+                <img class="refreshImg" src="../images/refreshimg.png">
+            </a>
+        </li>
+        <li class="captcha">
+            <label for="captcha">Enter captcha:</label>
+            <input type="text" placeholder="Enter captcha" id="captcha" name="captcha">
+         
+        </li>
+        <li>
+            <button id="butn" onclick="mainLogin()">
+                Login
+            </button>
+        </li>
+
+        <li>
+            <a href="../HtmlFiles/signup.html" target="_blank">Sign Up</a>
+        </li>
+        <li>
+            <a href="../HtmlFiles/forgotpage.html"target="_blank">Forget Password</a>
+        </li>
+     </ul>
+  </div>
+</div>
+<script src="../javaScriptFiles/captcha.js"></script>
+ <script >
+</script>
+</body>
+</html>

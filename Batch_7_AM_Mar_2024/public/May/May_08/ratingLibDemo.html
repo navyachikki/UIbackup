@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="starRatingLib/starRating.css">
+        <script src="starRatingLib/rating.js"></script>
+    </head>
+    <body>
+       <br> Rating: <br><br>
+        <div id="container"></div>
+        <div class="sample"></div>
+        <div id="test"></div>
+
+        <script>
+            loadStarRatings("#container", 3.5);
+
+            loadStarRatings(".sample", 1.5);
+
+            loadStarRatings("#test", 5.5);
+        </script>
+    </body>
+</html>

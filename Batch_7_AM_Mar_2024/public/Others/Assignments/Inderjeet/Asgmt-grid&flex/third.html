@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #box{
+            /* width: 490px;
+            height: 300px; */
+            background-color: aquamarine;
+            padding: 10px;
+        }
+        #container {
+            display: grid;
+            gap: 10px 20px;
+            border: 2px solid;
+            height: 600px;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 100px auto 100px;
+        }
+        .first{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .second{
+            grid-column: 2/4;
+        }
+        .fourth{
+            grid-column: 2/4;
+        }
+        .five{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box" class="first" style="background-color: yellow;">1</div>
+        <div id="box" class="second" style="background-color: red">2</div>
+        <div id="box" class="third">3</div>
+        <div id="box" class="fourth" style="background-color:blueviolet;">4</div>
+        <div id="box" class="five">5</div>
+        
+
+    </div>
+</body>
+</html>

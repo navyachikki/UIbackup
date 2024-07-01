@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://unpkg.com/konva@9.3.9/konva.min.js"></script>
+        <script src="captchaGeneator.js"></script>
+        
+        <style>
+            canvas {
+                border: 1px solid;
+                margin: 20px auto;
+                /* padding: 20px; */
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>
+            Demonstrating canvas tag
+        </h3>
+        <canvas id="mycanvas">
+
+        </canvas>
+        <div id="capthcaContainer">
+            <img src="" alt="" id="mycaptchaiamge">
+        </div>
+
+        <script>
+            var sources = {
+                lion: '',
+            };
+
+            var ctx = document.querySelector("#mycanvas").getContext("2d");
+
+            ctx.moveTo(0, 30);
+            ctx.lineTo(2000, 1900);
+            ctx.stroke();
+            ctx.shadowBlur = 5;
+            ctx.shadowColor = "green";
+            ctx.fillStyle = "red";
+
+            // ctx.moveTo(120, 130);
+            // ctx.lineTo(100, 2000);
+            // ctx.stroke();
+
+            // ctx.beginPath();
+            // ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+            // ctx.stroke();
+
+            ctx.font = "30px Arial";
+            // ctx.fillText("Hello World", 10, 50);
+            var captchaText =  generateCapthcaText();
+            ctx.fillText(captchaText[0], 10, 50);
+            ctx.fillText(captchaText[1], 30, 60);
+            ctx.fillText(captchaText[2], 60, 55);
+            ctx.fillText(captchaText[3], 80, 45);
+            ctx.fillText(captchaText[4], 100, 60);
+            
+
+            var canvasImageUrl =   document.querySelector("#mycanvas").toDataURL();
+            console.log(canvasImageUrl);
+            sources.lion = canvasImageUrl;
+            document.querySelector("#mycaptchaiamge").setAttribute("src", canvasImageUrl);
+
+
+
+            function loadImages(sources, callback) {
+                var images = {};
+                var loadedImages = 0;
+                var numImages = 0;
+                for (var src in sources) {
+                    numImages++;
+                }
+                for (var src in sources) {
+                    images[src] = new Image();
+                    images[src].onload = function () {
+                        if (++loadedImages >= numImages) {
+                            callback(images);
+                        }
+                    };
+                    images[src].src = sources[src];
+                }
+            }
+
+
+            function buildStage(images) {
+                var stage = new Konva.Stage({
+                    container: 'capthcaContainer',
+                    width: window.innerWidth,
+                    height: window.innerHeight,
+                });
+
+                var layer = new Konva.Layer();
+
+                var lion = new Konva.Image({
+                image: images.lion,
+                x: 80,
+                y: 30,
+                blurRadius: 2,
+                draggable: true,
+                });
+
+                lion.cache();
+                lion.filters([Konva.Filters.Blur]);
+                layer.add(lion);
+                stage.add(layer);
+                var slider = document.getElementById('slider');
+                slider.oninput = function () {
+                lion.blurRadius(slider.value);
+                };
+            }
+
+            loadImages(sources, buildStage);
+        </script>
+    </body>
+</html>

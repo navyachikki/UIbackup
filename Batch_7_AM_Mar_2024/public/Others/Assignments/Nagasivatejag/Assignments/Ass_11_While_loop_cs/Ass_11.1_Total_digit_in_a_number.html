@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total digit</title>
+</head>
+<body>
+    <h3> Find Out The Total Digit In A Number </h3>
+    <script>
+        var num = prompt("Enter a value ");
+            num = parseInt(num);
+        
+        var sum = 0;
+
+        while (num != 0) {
+
+             sum = sum + 1;
+             num = num / 10;
+             num = parseInt(num);
+
+        }
+
+        console.log("Total digit of given number = " + sum);
+    </script>
+    
+</body>
+</html>

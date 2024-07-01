@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JSON Object Example</title>
+    </head>
+    <body>
+        <script>
+            var studentDtl = {
+                getData () {
+                    studentDtl.name = prompt("Enter Student Name : ");
+                    studentDtl.Age = prompt("Enter Student Age : ");
+                    studentDtl.location = prompt("Enter Student Location : ");
+                    studentDtl.marks = [];
+                    for (i = 0; i < 5; i++)
+                    {
+                        studentDtl.marks[i] = parseInt(prompt("Enter Student marks in Subject : " + (i+1)));
+                    }
+                    studentDtl.CalMarksAvg();
+                },
+                CalMarksAvg () {
+                    for (i = 0; i < studentDtl.marks.length; i++)
+                    {
+                        studentDtl.totalMarks = studentDtl.totalMarks + studentDtl.marks[i];
+                    }
+                    console.log("Total Marks = " + studentDtl.totalMarks);
+                    studentDtl.marksAvg = studentDtl.totalMarks / studentDtl.marks.length;
+                    console.log("Total Average = " + studentDtl.marksAvg);
+                    studentDtl.dispData();
+                },
+                dispData () {
+                    console.log(studentDtl);
+                    console.log("Age Of Name = " + studentDtl.name);
+                    console.log("Age Of Student = " + studentDtl.Age);
+                    console.log("Age Of Location = " + studentDtl.location);
+                    console.log("Marks Of Student = " + studentDtl.marks);
+                    console.log("Marks in Subject1 = " + studentDtl.marks[0]);
+                }
+            };
+
+            studentDtl.totalMarks = 0;
+            studentDtl.getData();
+        </script>  
+    </body>
+</html>

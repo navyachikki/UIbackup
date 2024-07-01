@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Details Form</title>
+    <style>
+      h3,
+      footer {
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid black;
+        background-color: #1b263b;
+        font-weight: bold;
+        color: white;
+        text-decoration: underline;
+      }
+
+      .container {
+        border: 1px solid black;
+        margin: 5px;
+        padding: 5px;
+        background-color: #ced4da;
+        position: relative;
+      }
+
+      span {
+        padding: 8px;
+        margin: 8px;
+        border: 1px solid black;
+        position: absolute;
+        border-radius: 10px;
+        background-color: #c77dff;
+      }
+      .block1,
+      .block2,
+      .block3 {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+      }
+      input {
+        padding: 10px;
+      }
+      form {
+        font-weight: bold;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .t1 {
+        top: -12px;
+      }
+      .t2 {
+        top: 398px;
+      }
+      .t3 {
+        top: 558px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Student Details Form</h3>
+    <form action="" method="get">
+      <div class="container">
+        <div class="block1">
+          <span class="t1">Personal Details</span>
+          <div class="minblock">
+            <ul>
+              <lable for="fanme"> First Name :</lable>
+              <input
+                type="text"
+                name="fname"
+                placeholder="First Name"
+                required
+              />
+              <br />
+              <lable for="lname">Last Name :</lable>
+              <input
+                type="text"
+                name="lname"
+                placeholder="Last Name"
+                required
+              /><br />
+              <lable for="age">Age:</lable>
+              <input
+                type="number"
+                name="age"
+                placeholder="Age"
+                required
+              /><br />
+              <label for="gender">Gender :</label>
+              Male<input type="radio" name="gender" />
+              Female<input type="radio" name="gender" /><br />
+
+              <label for="birthdate">DOB :</label>
+              <input type="date" name="birthdate" /><br />
+
+              <label for="phoneNo">Mobile No :</label>
+              <input type="number" name="phoneNo" placeholder="Mobile No" />
+              <br />
+
+              <label for="email">Email Id :</label>
+              <input type="email" name="email" placeholder="Email Id" /><br />
+
+              <lable for="country"> Country :</lable>
+              <select>
+                <option>India</option>
+                <option>China</option>
+                <option>Germany</option>
+                <option>Canada</option>
+                <option>France</option>
+                <option>Spain</option>
+                <option>Italy</option>
+                <option>Portugal</option></select
+              ><br />
+
+              <label for="address">Address:</label>
+              <textarea
+                rows="4"
+                cols="60"
+                placeholder="Enter Address"
+              ></textarea>
+            </ul>
+          </div>
+        </div>
+
+        <div class="block2">
+          <span class="t2">Eduction Details</span>
+          <div class="miniblock2"></div>
+          <ul>
+            <lable for="qualificaton">Qualification :</lable>
+            <select>
+              <option>B.TECH</option>
+              <option>BCA</option>
+              <option>M.TECH</option>
+              <option>MCA</option></select
+            ><br />
+            <label for="clgname">College Name:</label>
+            <input
+              type="text"
+              name="clgname"
+              placeholder="College Name"
+            /><br />
+
+            <label for="lang">Language :</label>
+            <input type="checkbox" />English
+            <input type="checkbox" />Hindi
+            <input type="checkbox" />Telugu
+            <input type="checkbox" />Spanish
+            <br />
+
+            <label for="lang">Course Opted :</label>
+            <input type="radio" name="radio" />Fullstack Developer
+            <input type="radio" name="radio" />Fontend Developer
+            <input type="radio" name="radio" />Backend Develpoer
+          </ul>
+        </div>
+
+        <div class="block3">
+          <span class="t3">Feedback</span>
+          <div class="miniblock3">
+            <ul>
+              <label for="File">Put Your CV</label>
+              <input type="file" /><br />
+
+              <lable for="urself">About Yourself :</lable>
+              <textarea
+                name="urself"
+                cols="50"
+                rows="4"
+                placeholder="About Yourself"
+              ></textarea>
+              <br />
+              <input type="button" value="submit" class="button" />
+            </ul>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <footer>@copyrights2024</footer>
+  </body>
+</html>

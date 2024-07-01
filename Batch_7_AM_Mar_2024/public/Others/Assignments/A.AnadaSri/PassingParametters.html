@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functional Demo</title>
+  </head>
+  <body>
+    <h2>Passing the Paremeters Demo</h2>
+    <script>
+      var readValues = () => {
+        var a, b;
+        a = parseInt(prompt("Enter First value"));
+        b = parseInt(prompt("Enter Second Value"));
+        console.log("A vale iss:", a);
+        console.log("B vale iss:", b);
+        doSum(a, b); // Actual Parameters  -> Calling Function
+      };
+
+      var doSum = (n, m) => { // Formal Parameteres  -> Called function
+        var result = n + m;
+        console.log("Sum of result:", result);
+      };
+
+      readValues();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+#productContainer{
+  
+    padding:10px;
+    margin:10px;
+    text-decoration: underline;
+    text-align: center;
+}
+ul{
+    border:1px solid;
+    list-style: none;
+    width:200px;
+}
+li{
+    border-bottom: 1px solid orange;
+    margin:5px;
+    padding:5px
+    
+}

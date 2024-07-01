@@ -1,0 +1,26 @@
+HTML 5 and CSS3
+    1. localStorage and sessionStorage Obj 
+    .setItem("key", value)
+    .getItem(key)
+    .removeItem("key");
+    .removeAll()
+
+
+    JSON.stringify(<objuect>) - > converts object to json string 
+
+    JSON.parse(<string obj>) -> converts string object to object.
+
+    sessionStorage
+    ---------------
+
+    Semantic Tags:
+        header
+        footer
+        main 
+        section 
+        article
+        navbar
+        menu 
+        figure
+        aside
+        etc..

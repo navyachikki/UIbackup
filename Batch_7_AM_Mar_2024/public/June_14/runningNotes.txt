@@ -1,0 +1,38 @@
+Mongo db :
+    JSON 
+    BSON 
+
+create table stduentdetails (sname varchar(100), integer age, ,.. . . .);
+
+sname     age    gender    panno    passportno
+Raj       20       Male      ABC    123Bt34
+Raj       20       Male      ABC    null
+Raj       20       Male      ABC    123Bt34
+Raj       20       Male      ABC    null
+
+
+    select * from student details where (sname = raj, age = 20)
+
+
+var studentdetails = [
+    {
+        sname: 
+        age 
+        gender
+        panno 
+        passportno 
+    },
+    {
+        sname: 
+        age 
+        gender
+        panno 
+    }
+]
+
+100 students
+
+----------
+
+NO SQL language
+    commands 

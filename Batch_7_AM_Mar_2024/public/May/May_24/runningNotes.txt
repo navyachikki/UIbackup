@@ -1,0 +1,24 @@
+geolocation 
+
+Drag and drop new events 
+
+
+    ondragstrat 
+    ondragover 
+    ondrop 
+
+    
+
+Localstorage session storage obj 
+sematic tags 
+new input elemnts
+doctype 
+navigator 
+geolocation
+audio
+video
+appcache 
+canvas 
+SVG 
+drag and drop events 
+Webworkers 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+<body>
+    <script>
+            var name, age, basicsalary, pf, totalsalary, hra;
+
+            function getEmpDetails(){
+                name = prompt("Enter the Employee Name");
+                age = parseInt(prompt("Enter the Employee Age"));
+                dep = "UI Designer& UI Developer";
+                salary = parseInt(prompt("Enter the Empolyee Salary"));
+                pf = parseInt(prompt("Enter the Employee PF"));
+                hra = parseInt(prompt("Enter the Employee HRA"));
+                }
+
+            function getPf() {
+                getEmpDetails()
+                pf = (salary * pf)/100;
+                hra = (salary * hra)/100;
+                }
+
+            function getTotalSalary(){
+                getPf()
+                total = salary + pf + hra;
+                }
+                
+            function getDisplayDetails(){
+                getTotalSalary();
+                console.log("Employee Name:" + name);
+                console.log("Employee Age:" + age);
+                console.log("Employee Basic Salary:" + salary);
+                console.log("Employee PF : " + pf);
+                console.log("Employee HRA : " + hra);
+                console.log("Employee Total Salary:" + total);
+                }
+                getDisplayDetails();
+    </script>
+</body>
+</html>

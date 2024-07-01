@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Given number is Palindrome or not</title>
+</head>
+
+<body>
+  <script>
+    let arr = [121, 234, 454];
+    for (let i = 0; i < arr.length; i++) {
+      let num = arr[i];
+      let reverse = 0;
+      let originalNum = num;
+      while (num > 0) {
+        let digit = num % 10;
+        reverse = reverse * 10 + digit;
+        num = Math.floor(num / 10);
+      }
+      if (originalNum === reverse) {
+        console.log("Is palindrome", originalNum);
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Promises </title>
+    </head>
+    <body>
+        <script>
+
+
+            // fetch("url").then(() => {
+
+            // }).catch(() => {
+                
+            // })
+
+            var mypromise = new Promise((resolve, reject) => {
+                var age = 10;
+                if (age >= 21) {
+                    resolve();
+                } else {
+                    reject();
+                }
+            });
+
+
+            mypromise.then(() => {
+                console.log("Its a valid age")
+            }).catch(() => {
+                console.log("Its a Invalid age")
+            })
+
+            /*mypromise.then(() => {
+
+            }, () => {
+
+            }) */
+        </script>
+    </body>
+</html>

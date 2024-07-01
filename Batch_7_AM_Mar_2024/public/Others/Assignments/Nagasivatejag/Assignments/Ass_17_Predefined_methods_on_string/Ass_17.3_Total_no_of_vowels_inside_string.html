@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vowels</title>
+</head>
+<body>
+    <h3> Findout Total No Of Vowels Inside A String </h3>
+    <script>
+
+        var word = "welcome to ui fullstack class";
+        var vowels = "a, e, i, o, u";
+        var temp = 0;
+
+        for(var i = 0; i < word.length; i++) {
+
+            if (vowels.includes(word[i])) {
+
+                console.log(word[i]);
+                
+                temp++;
+
+            }
+        }
+
+        console.log("Total no of vowels include spaces given word = " + temp);
+    </script>
+</body>
+</html>

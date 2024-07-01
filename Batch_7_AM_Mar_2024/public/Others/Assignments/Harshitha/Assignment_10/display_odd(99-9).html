@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display all odd numbers betn 99 to 9</title>
+</head>
+<body>
+    <script>
+        var startRange = prompt("enter the first vales")
+        startRange=parseInt(startRange);
+        var endRange = prompt("enter the last value")
+        endRange=parseInt(endRange);
+
+        for(i=startRange;i>=endRange;i--){
+            if(i%2!==0){
+                console.log("odd number",i)
+            }
+            
+        }
+    </script>
+</body>
+</html>

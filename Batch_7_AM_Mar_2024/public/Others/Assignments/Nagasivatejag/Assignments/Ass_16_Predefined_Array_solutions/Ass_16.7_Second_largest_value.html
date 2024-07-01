@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value</title>
+</head>
+<body>
+    <h3> Second Largest value from given array </h3>
+
+    <script>
+
+        sec = [2, 86, 65, 78, 2, 8];
+
+        for (var i = 0; i < sec.length; i++) {
+
+            for(var j = 0; j < sec.length-1; j++){
+
+                if (sec[j] > sec[j+1]) {
+
+                    var count = sec[j];
+                     sec[j] = sec[j+1];
+                     sec[j+1] = count;
+
+                }
+            }
+        }
+
+        console.log(sec);
+        console.log("The second largest value = " + sec[sec.length-2]);
+
+    </script>
+</body>
+</html>

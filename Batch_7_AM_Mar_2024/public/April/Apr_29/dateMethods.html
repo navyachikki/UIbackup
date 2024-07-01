@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=\, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div>
+            Date: 
+            <span></span>
+        </div>
+        <script>
+
+            var dayNames = [ "Sun", "Mon", "Tue", "Wed"];
+
+
+            var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "June"]
+
+            var crntDate = new Date();
+            var dayIndex = crntDate.getDay();
+
+            console.log(dayNames[dayIndex]);
+            console.log(crntDate);
+            console.log(crntDate.getDay())
+
+
+            console.log(crntDate.getFullYear());
+            console.log(crntDate.getDate());
+            console.log(crntDate.getMonth());
+            console.log(crntDate.getDay());
+
+            // dd/mm/year
+
+            var myFormat1 =  crntDate.getDate() + '/' + (crntDate.getMonth() + 1) + '/' + crntDate.getFullYear();
+            console.log(myFormat1);
+
+            //mm-dd-year
+            var myFormat2 =  (crntDate.getMonth() + 1) + '-' + (crntDate.getDate()) + '-' + crntDate.getFullYear();
+            console.log(myFormat2);
+
+            
+            var monthIndex = crntDate.getMonth();
+            var monthName = monthNames[monthIndex]
+            console.log(monthName);
+
+            // April 29th, 2024
+            var myFormat3 = monthName + ' ' + crntDate.getDate() + 'th ' + crntDate.getFullYear() ;
+            console.log(myFormat3);
+
+            // Monday, Apr 29th 2024
+
+
+            // April, 29th Monday, 2024
+
+            // Apr/29/2024
+
+            // Monday April 2024, 7:2:5
+
+            console.log(crntDate.getMinutes());
+            console.log(crntDate.getHours());
+            console.log(crntDate.getSeconds());
+
+
+
+            var myDob = new Date("Apr 14 2022");
+            console.log(myDob);
+
+
+            setInterval(() => {
+                document.querySelector("span").innerText = new Date();
+                
+            }, 1000);
+
+            console.log(myDob-crntDate)
+
+
+            console.log(myDob.getDay());
+
+            console.log(crntDate.getTime());
+
+
+
+            const date = new Date(64482693026);
+            console.log(date);
+        </script>
+    </body>
+</html>

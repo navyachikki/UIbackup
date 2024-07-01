@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a Program to Find the Num of Digits in a number</title>
+    <style>
+        .Descr{
+            border:1px solid purple;
+            width:380px;
+            font-weight: bolder;
+            color:greenyellow;
+            margin:10px auto;
+            font-style: italic;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="Descr">
+        Write a Program to Find the Num of Digits in a number
+    </div>
+    <script>
+        var UsrVal = parseInt(prompt("Enter a Value"));
+        console.log(typeof(UsrVal));
+        var counter = 0;
+        while(UsrVal > 0) {
+            //var rem = UsrVal % 10 ;
+            UsrVal = UsrVal/10;
+            UsrVal = parseInt(UsrVal);
+            counter++
+        }
+        console.log("Total number of digits in a given Number : " + counter);
+    </script>   
+</body>
+
+</html>

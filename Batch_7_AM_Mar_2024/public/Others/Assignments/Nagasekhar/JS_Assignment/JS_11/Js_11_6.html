@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Given Range</title>
+    <style>
+        .Head {
+        width:350px;
+        border:1px solid yellowgreen;
+        margin:5px Auto;
+        font-family: 'Times New Roman';
+        font-weight: bold;
+        }
+     </style>
+
+    
+</head>
+<body>
+    <div class="Head">
+        write a program to check whether user given number is prime number or not.  
+    </div>
+    <script>
+        var Num = prompt("Enter The number you wish to start");
+        Num = parseInt(Num);
+        console.log(typeof(Num));
+        count = 0;
+
+        for(var i=2;i<Num;i++) {
+            if(Num%i == 0) {
+                count = count + 1;
+            }
+            if(count != 0) {
+                break;
+            }
+        }
+        if (count == 0) {
+            console.log("Given Num is " + Num + " is a Primary Number");
+        }
+        else {
+            console.log("Given Num is " + Num + " is  Not a Primary Number"); 
+        }
+
+        
+            
+        
+    </script>
+</body>
+</html>

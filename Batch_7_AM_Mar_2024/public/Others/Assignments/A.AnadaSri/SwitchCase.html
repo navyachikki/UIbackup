@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functional Demo</title>
+  </head>
+  <body>
+    <h2>Switch Case Demo</h2>
+    <script>
+      var a, b, optional, result;
+      a = parseInt(prompt("Enter a First Value"));
+      b = parseInt(prompt("Enter Second value"));
+      optional = prompt("Enter value add/sub/mul/div");
+      console.log("First a value:", a);
+      console.log("Second b value:", b);
+      // if(optional == 'add'){
+      //   result = a + b;
+      //   console.log("Additional value:" + result);
+      // } else if(optional == 'sub'){
+      //   result = a - b;
+      //   console.log("Subtrction value:" + result);
+      // } else if(optional == 'mul'){
+      //   result = a * b;
+      //   console.log("Multipulication value:" + result);
+      // } else if(optional == 'div'){
+      //   result = a / b;
+      //   console.log("Division value:" + result);
+      // }
+      // else{
+      //   console.log("Your enter Worng option");
+      // }
+      switch (optional) {
+        case "add":
+          result = a + b;
+          console.log("Additional value:" + result);
+          break;
+        case "sub":
+          result = a - b;
+          console.log("Subtrction value:" + result);
+          break;
+          case "mul":
+          result = a * b;
+          console.log("Multipulication value:" + result);
+          break;
+          case "div":
+          result = a / b;
+          console.log("Divsion value:" + result);
+          break;
+          default:
+          console.log("Your enter Worng option");
+      }
+    </script>
+  </body>
+</html>

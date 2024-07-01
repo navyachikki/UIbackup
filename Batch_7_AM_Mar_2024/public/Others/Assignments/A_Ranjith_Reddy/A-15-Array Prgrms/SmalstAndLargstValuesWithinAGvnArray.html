@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smallest and Largest Values</title>
+</head>
+<body>
+    <script>
+        //  Write a program to find out the smallest and largest values within the given array
+
+        var arr = [];
+        var n = parseInt(prompt("Enter the Number of Elements"));
+       
+        for(var i = 0; i < n; i++)
+        {
+            arr[i] = prompt("Enter the Array Value");
+            var minVal = arr[0];
+            var maxVal = arr[0];
+            
+            if(arr[i] < minVal)
+            {
+                minVal = arr[i];
+            }
+            if(arr[i] > maxVal)
+            {
+                maxVal = arr[i];
+            }            
+        }
+        console.log("Mininum Value in array : " + minVal);
+        console.log("Maximum Value in array : " + maxVal);
+    </script>
+</body>
+</html>

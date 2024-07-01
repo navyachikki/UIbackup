@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a Program to Display the number in a reverse order</title>
+    <style>
+        .Descr{
+            border:1px solid purple;
+            width:380px;
+            font-weight: bolder;
+            color:greenyellow;
+            margin:10px auto;
+            font-style: italic;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="Descr">
+        Write a Program to Display the number in a reverse order
+    </div>
+    <script>
+        var UsrVal = parseInt(prompt("Enter a Value")); 
+        console.log(typeof(UsrVal)); 
+        var result = "";
+        while(UsrVal > 0) {
+             rem = UsrVal % 10 ;
+           result = result + rem ;
+            UsrVal = UsrVal/10;
+            UsrVal = parseInt(UsrVal);
+          
+        }
+        console.log(result); //NS@201
+       
+    </script>   
+</body>
+
+</html>

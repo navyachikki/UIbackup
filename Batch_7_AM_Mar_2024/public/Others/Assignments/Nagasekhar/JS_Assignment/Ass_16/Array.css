@@ -1,0 +1,30 @@
+h2 {
+    color:rgb(193, 219, 20);
+    width:700px;
+    text-align: center;
+    margin:10px auto;
+    border:1px solid #ccc;
+}
+.DisplayL {
+color:  #ea560c;
+margin: 10px auto;
+padding: 10px auto;
+display: inline-block;
+border: 1px solid purple;
+position: absolute;
+left: 429px;
+top: 106px;
+font-size: 20px;
+}
+.DisplayS {
+display: inline-block;
+top: 54px;
+left: 428px;
+color:  #ea560c;
+margin: 10px auto;
+position: absolute;
+padding: 10px auto;
+display: inline-block;
+border: 1px solid purple;
+font-size: 20px;
+}

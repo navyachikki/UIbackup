@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        #form{
+            background-color: white;
+            color: black;
+            width: 500px;
+            height: 700px;
+            border: 2px solid black;
+            margin-left: 0spx;
+        }
+        h1{
+            text-align: center;
+            text-shadow: 2px 2px 2px red;
+            text-transform: uppercase;
+        }
+       body{
+        background-color: aquamarine;
+        align-items: center;
+        justify-content: center;
+       }
+       .form-control{
+             font-size: 20px;
+             margin-left: 20px;
+             margin-top: 30px;
+       }
+       button {
+            background-color: #777;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 30%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+       button{
+        margin-left: 250px;
+        margin-top: 20px;
+       }
+       button:hover{
+        background-color: green;
+       }
+       .form-control>input{
+        height: 30px
+       }
+      #name{
+        width: 300px;
+        margin-left: 0px;
+      }
+      #email{
+        width: 300px;
+        margin-left: 0px;
+      }
+      #age{
+        margin-left: 0px;
+      }
+      input{
+        display: block;
+      }
+      .form-control>select{
+        display: block;
+      }
+      #html{
+        display: inline;
+      }
+      #css{
+          display: inline;
+      }
+      #checkbox{
+        display: inline;
+      }
+      #comment{
+        display: block;
+      }
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <div class="form-control">
+             <label for="name" id="label-name">Name</label>
+             <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-control">
+           <label for="email" id="label-mail">Email address</label>
+           <input type="text" id="email" placeholder="Enter your name">
+        </div>
+        <div class="form-control">
+            <label for="age" id="label-age">Age</label>
+            <input type="number" id="age" min="18" max="60" placeholder="18">
+        </div>
+        <div class="form-control">
+            <label for="desc" id="label-desc">Which option best describes you?</label>
+            <select  id="label-select">
+                <option>Student</option>
+                <option>Working professional</option>
+                <option>Intern</option>
+                <option>Unemployed Engineer</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label id="label-recomend">Would you recommend MyForm to a friend?</label>
+            <br>
+            <input type="radio" id="html" name="fav_language" value="HTML"><span>Yes</span>
+            <input type="radio" id="css" name="fav_language" value="CSS"><span>No</span>
+        </div>
+        <div class="form-control">
+            <Label id="label-skill">Language Known</Label><br>
+            <input type="checkbox" id="checkbox">C++
+            <input type="checkbox" id="checkbox">Java
+            <input type="checkbox" id="checkbox">HTML
+        </div>
+        <div class="form-control">
+              Any Suggestions are appriciated:
+              <textarea name="comment" id="comment"
+              placeholder="Enter your comment here">
+              </textarea>
+        </div>
+        <button type="submit" value="submit">Submit</button>
+    </form>
+</body>
+</html>

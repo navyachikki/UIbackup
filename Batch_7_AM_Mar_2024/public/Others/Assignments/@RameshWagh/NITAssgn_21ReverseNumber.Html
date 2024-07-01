@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reverse Of Given Number</title>
+    </head>
+    <body>
+        <script>
+            var Entrnum = prompt("Enter Number To Make Reverse : ");
+            var numchk = parseInt(Entrnum);
+            var tot ="";
+            while(numchk > 0)
+            {
+                tot = tot + (numchk % 10);
+                numchk = parseInt(numchk / 10);
+            }
+            console.log(tot);
+        </script>
+    </body>
+</html>

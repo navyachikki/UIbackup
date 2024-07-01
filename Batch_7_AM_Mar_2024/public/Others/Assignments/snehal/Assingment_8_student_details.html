@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Create a Form</title>
+    <style>
+        .header {
+            border: 1px solid;
+            text-align: center;
+            padding: 10px;
+            background-color: lavender;
+            color: seashell;
+            font-weight: bold;
+        }
+
+        .mainContainer {
+            border: 1px solid;
+            margin: auto;
+            height: 650px;
+        }
+
+        .container {
+            border: 1px solid;
+            height: 230px;
+            margin: 5px;
+
+        }
+
+        .personalDetails {
+            font-weight: bold;
+            padding-left: 20px;
+            color: saddlebrown;
+        }
+
+        .details, .detail {
+            color:rgb(22, 19, 19);
+        }
+
+        li {
+            margin: 17px;
+        }
+
+        .container2 {
+            border: 1px solid;
+            height: 190px;
+            margin: 5px;
+        }
+
+        .educational {
+            font-weight: bold;
+            padding-left: 20px;;
+            color:saddlebrown;
+        }
+
+        .container3 {
+            border: 1px solid;
+            height: 205px;
+            margin: 5px;
+        }
+
+        .aboutYourself {
+            font-weight: bold;
+            padding-left: 20px;;
+            color:saddlebrown;
+        }
+        
+
+        #aboutMe {
+            display: block;
+        }
+
+
+        .button {
+            text-align: center;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="header">Registration Form</div>
+    <div class="mainContainer">
+        <div class="container">
+            <div class="personalDetails">Personal Details
+                <div class="details">
+                    <ul>
+                        <li>
+                            <label for= "Name">Name:</label>
+                            <input type="text" maxlength="35" name="Name"> 
+                        </li>
+                        <li>
+                            <label for="father">Father's Name:</label>
+                            <input type="text" maxlength="30" name="father">
+                        </li>
+                        <li>
+                            <label for="mother">Mother's Name:</label>
+                            <input type="text" maxlength="30" name="mother">
+                        </li>
+                        <li>
+                            <label> Gender:</label>
+                            <input type="radio" name="gender" value="female">Female 
+                            <input type="radio" name="gender" value="male">Male
+                        </li>
+                        <li>
+                            <label>eMail:</label>
+                            <input type="text" maxlength="30" name="E-Mail">
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+        </div>
+        <div class="container2">
+            <div class="educational">Educational Details
+                <div class="detail">
+                    <ul>
+                        <li>
+                            <label for="institute">Institute Name:</label>
+                            <input type="text" maxlength="30" name="institute">
+                        </li>
+                        <li>
+                            Branch: 
+                            <select name="" id="">
+                                <option value="cs">CSE</option>
+                                <option value="ece">ECE</option>
+                                <option value="it">IT</option>
+                                <option value="bt">BT</option>
+                            </select>
+                        </li>
+                        <li>
+                            Skill: 
+                            <select name="" id="">
+                                <option value="java">Java</option>
+                                <option value="c++">C++</option>
+                                <option value="mern">MERN Stack</option>
+                                <option value="ui">UI Full Stack</option>
+                            </select>
+                        </li>
+                        <li>
+                            Language Known: 
+                            <input type="checkbox">English
+                            <input type="checkbox">Hindi
+                            <input type="checkbox">Tamil
+                            <input type="checkbox">Marathi
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="aboutYourself">About Yourself
+                <div class="detail">
+                    <ul>
+                        <li>
+                            <label id="aboutMe">About Me: </label>
+                            <textarea name="" id="" cols="30" rows="5" maxlength="200"></textarea>
+                        </li>
+                    </ul>
+                    <div class="button">
+                        <input type="button" value="SUBMIT" style="background-color: lavenderblush;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

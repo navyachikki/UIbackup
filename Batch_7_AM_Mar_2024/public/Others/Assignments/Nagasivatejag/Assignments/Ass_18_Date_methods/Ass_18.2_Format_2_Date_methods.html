@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method</title>
+</head>
+<body>
+    <h3> Date Method Format 2 - April, 29th Monday, 2024 </h3>
+    <script>
+
+        var today = new Date ();
+
+        console.log(today);
+
+        var dayNames = ["sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturady"];
+        var monthNames = ["January", "Febuary", "March", "April", "May", "june", "July", "August", "September", "October", "November", "December"];
+
+        var todayDate = new Date("29 April 2024");
+
+        var dayIndex = todayDate.getDay();
+        var   dayName = dayNames[dayIndex];
+
+        var monthIndex = todayDate.getMonth();
+        var  monthName = monthNames[monthIndex];
+
+        var format2 = monthName + ', ' + todayDate.getDate() + 'th  ' + dayName + ', ' + todayDate.getFullYear();
+
+            console.log(format2);
+
+    </script>
+</body>
+</html>

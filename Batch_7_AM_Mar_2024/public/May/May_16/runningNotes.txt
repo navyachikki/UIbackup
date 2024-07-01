@@ -1,0 +1,33 @@
+Classes and Objects:
+
+
+    OOPS 
+        1. Object
+        2. Classes 
+        3. Inheritance
+        4. Polymorphsim - Not supported in JS
+        5. Data Abstraction
+        6. Data Encapsulation
+
+    Inheritance: 
+
+        class SchoolDetails() {
+            . 
+            ...
+        }
+
+        class StudentDetils() {
+            constructor() {
+                this.name = '...'
+                this.age = ,, ;
+                this.schoolname = ''';
+                this.schoolLoc = ...
+            }
+            displayStudentDetails() {
+
+            }
+            dispalySchoolDetails() {
+
+            }
+        }
+    

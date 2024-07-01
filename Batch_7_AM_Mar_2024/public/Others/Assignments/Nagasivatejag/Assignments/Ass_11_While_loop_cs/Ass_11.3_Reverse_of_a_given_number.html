@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+</head>
+<body>
+    <h3>Reverse of a given number</h3>
+
+    <script>
+        var value = prompt("Enter a number");
+            value = parseInt(value);
+        var rev = 0;
+        var rem;
+
+        while (value > 0) {
+            rem = value % 10;
+            rev = (rev * 10) + rem;
+            value = value / 10;
+            value = parseInt(value);
+
+        }
+        console.log("The revrese of a given number = " + rev);
+
+    </script>
+
+</body>
+</html>

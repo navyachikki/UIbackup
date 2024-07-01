@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pcg.css">
+    <script src="pcg.js"></script>
+</head>
+<body>
+    
+    <h1>Progress Card Generator </h1>
+
+                          <!-- Taking Input  -->
+    <ul>
+        <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+        </li>
+        <li>
+            <label for="age">Age:</label>
+            <input type="text" id="age">
+        </li>
+        <li>
+            <label for="gender">Gender:</label>
+            <input type="radio" checked name = "gender" value="male">Male</input>
+            <input type="radio" name = "gender" value="Female">Female</input>
+        </li>
+
+        <li>
+            <label for="class">Class: </label>
+            <select  title="Class" name="class" id="division">Class:
+                <option value="Class-I">I - Class</option>
+                <option value="Class-I">II - Class</option>
+                <option value="Class-I">III - Class</option>
+                <option value="Class-I">IV - Class</option>
+                <option value="Class-I">V - Class</option>
+            </select>
+        </li>
+
+        <li>
+            <label for="submarks">Subject Marks:</label>
+            <input type="text" id="subject1" size="10px" placeholder="Subject-1">
+            <input type="text" id="subject2" size="10px" placeholder="Subject-2">
+            <input type="text" id="subject3" size="10px" placeholder="Subject-3">
+        </li>
+        
+        <li>
+            <button id="btn" onclick="viewReport()">Report Card</button>
+        </li>
+    </ul>
+
+                               <!-- Show Report Card  -->
+
+
+        <ul id="output" style="display: none;">
+        
+            <li>
+                <div>Name of Candidate:<span id="outname"></span>
+                </div>
+            </li>
+            <li>
+                <div>Age of Candidate:<span id="outage"></span>
+                </div>
+            </li>
+            <li>
+                <div>Gender of Candidate:<span id="outgender"></span>
+                </div>
+            </li>
+            <li>
+                <div>Class of Candidate:<span id="outdivision"></span>
+                </div>
+            </li>
+            <li>
+                <div>Average Marks of Candidate:<span id="outmark"></span>
+                </div>
+            </li>
+            <li>
+                <div>Grade of Candidate:<span id="outgrade"></span>
+                </div>
+            </li>
+        
+        </ul>
+        
+</body>
+</html>

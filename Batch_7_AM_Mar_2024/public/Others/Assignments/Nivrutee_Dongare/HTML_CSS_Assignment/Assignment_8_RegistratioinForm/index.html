@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .nav {
+            width: auto;
+            border: 2px solid black;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .footer {
+            width: auto;
+            border: 2px solid black;
+            text-align: center;
+            height: 30px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .main {
+            width: auto;
+            border: 2px solid black;
+            text-align: center;
+            height: auto;
+            margin: 10px;
+            position: relative;
+        }
+
+        .box {
+            height: 320px;
+            width: auto;
+            border: 1px solid black;
+            margin: 30px;
+        }
+
+        .first {
+            width: 80px;
+            border: 2px solid black;
+            background-color: aquamarine;
+            position: absolute;
+            top: 11px;
+            left: 55px;
+        }
+
+        .second {
+            width: 80px;
+            border: 2px solid black;
+            background-color: aquamarine;
+            position: absolute;
+            top: 362px;
+            left: 55px;
+        }
+
+        .third {
+            width: 80px;
+            border: 2px solid black;
+            background-color: aquamarine;
+            position: absolute;
+            bottom: 331px;
+            left: 55px;
+        }
+        .intro li {
+            margin-left: 10px;
+            list-style: none;
+        }
+        
+        .intro{
+            float: left;
+        }
+        input{
+            padding: 7px;
+            margin-left: 20px;
+        }
+        td{
+            padding: 5px;
+            margin-left: 10px;
+        }
+         li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <h2>Student Registration Page</h2>
+    </div>
+    <div class="main">
+        <div class="box">
+            <div class="first">Personal Details</div>
+            <div class="intro">
+                <table>
+                    <ul>
+                        <li>
+                            <tr>
+                                <td>First Name:</td>
+                                <td><input type="text" placeholder="Enter name"></td>
+                            </tr>
+                        </li>
+                        <li>
+                            <tr>
+                                <td>Last Name:</td>
+                                <td><input type="text" placeholder="Enter last name"></td>
+                            </tr>
+                        </li>
+                        <li>
+                            <tr>
+                                <td>Age:</td>
+                                <td><input type="number" placeholder="Enter age"></td>
+                            </tr>
+                        </li>
+                        <li>
+                            <tr>
+                                <td>Country:</td>
+                                <td>
+                                    <select>
+                                        <option>India</option>
+                                        <option>China</option>
+                                        <option>Germany</option>
+                                        <option>Canada</option>
+                                        <option>France</option>
+                                        <option>Spain</option>
+                                        <option>Italy</option>
+                                        <option>Portugal</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </li>
+                        <li>
+                            <tr>
+                                <td>Address:</td>
+                                <td><input type="text" placeholder="Enter your address"></td>
+                            </tr>
+                        </li>
+                    </ul>
+                </table>
+            </div>
+            <div class="intro2">
+                <table>
+                    <ul>
+                        <li>
+                            <tr>
+                                <td>DOB:</td>
+                            <td><input type="date"></td>
+                            </tr>
+                        </li>
+                        <li>
+                           <tr>
+                            <td>Mobile No:</td>
+                            <td><input type="number" placeholder="mobile number"></td>
+                           </tr>
+                        </li>
+                        <li>
+                           <tr>
+                            <td>Gender:</td>
+                            <td><input type="radio" name="" id="">Male</td>
+                            <td><input type="radio" name="" id="">Female</td>
+                           </tr>
+                        </li>
+                        <li>
+                            <tr>
+                                <td>Email-id:</td>
+                            <td><input type="email" placeholder=" enter email"></td>
+                            </tr>
+                        </li>
+                       
+                    </ul>
+                </table>
+            </div>
+        </div>
+        <div class="box">
+            <div class="second">Education Details</div>
+            <table>
+                <ul>
+                    <li>
+                        <tr>
+                            <td>Qualification:</td>
+                            <td><select>
+                              <option value="">B.Tech</option>
+                              <option value="">Bsc</option>
+                              <option value="">BE</option>
+                              <option value="">BA</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td>Language:</td>
+                            <td>
+                                <input type="checkbox">English
+                                <input type="checkbox">Marathi
+                                <input type="checkbox">Hindi
+                                <input type="checkbox">Kanada
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Courese:</td>
+                            <td>
+                                <div><input type="radio">UI FullStack with React</div>
+                                <div><input type="radio">FullStack java Developer</div>
+                                <div><input type="radio">.Net Developer</div>
+                            </td>
+                        </tr>
+                    </li>
+                </ul>
+            </table>
+        </div>
+        <div class="box">
+            <div class="third">About Yourself</div>
+            <table>
+                <tr>
+                    <td>Write Something Yourself</td>
+                    <td><textarea name="" id="" cols="70" rows="10"></textarea></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Created By Nivrutee Dongare</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var epf, spp, totalsalary;
+        var bsalary=prompt('enter bsalary');
+        var gender=prompt('enter gender');
+        bsalary=parseInt(bsalary);
+        epf=(bsalary*10)/100;
+        spp=(bsalary*15)/100;
+        totalsalary=bsalary+epf+spp;
+        if(gender=="male"){
+            if(totalsalary>=200000){
+                tax=(15*totalsalary)/100;
+                totalsalary=totalsalary-tax;
+            }
+            else if(totalsalary>=100000){
+                tax=(10*totalsalary)/100;
+                totalsalary=totalsalary-tax;
+            }
+            else if(totalsalary>=50000){
+                tax=(5*totalsalary)/100;
+                totalsalary=totalsalary-tax;
+            }
+            else{
+                tax=0;
+            }          
+        }
+        console.log("total salary"+totalsalary+"genderis"+gender);
+    </script>
+</body>
+</html>

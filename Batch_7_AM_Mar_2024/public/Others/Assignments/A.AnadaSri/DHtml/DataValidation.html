@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        width: 500px;
+        border: 2px solid;
+        margin: 10px auto;
+        padding: 20px;
+      }
+      li {
+        border: 1px solid #6235f5;
+        margin: 10px;
+        padding: 10px;
+        list-style: none;
+        font-weight: 600;
+      }
+      input {
+        border: 1px solid gray;
+        padding: 10px 20px;
+        margin-left: 20px;
+      }
+      .button {
+        background-color: cornflowerblue;
+        color: aliceblue;
+        padding: 10px 30px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Data Validation HtMLS Demo</h2>
+    <ul>
+      <li>
+        Enter first value
+        <input
+          type="text"
+          id="fval"
+          maxlength="3"
+          onKeyPress="return validateData(event)"
+        />
+      </li>
+      <li>
+        Enter Second value
+        <input
+          type="text"
+          id="sval"
+          maxlength="3"
+          onKeyPress="return validateData(event)"
+        />
+      </li>
+      <li>
+        <div>The sum is: <span></span></div>
+      </li>
+      <li style="margin: 0 auto; text-align: center">
+        <input
+          class="button"
+          type="button"
+          value="Do Sum"
+          onclick="userdata.doSum(event);"
+        />
+      </li>
+    </ul>
+
+    <script>
+      var userdata = {
+        doSum(event) {
+          console.log(event);
+          this.first = document.querySelector("#fval").value;
+          this.second = document.querySelector("#sval").value;
+          this.first = parseInt(this.first);
+          this.second = parseInt(this.second);
+          this.result = this.first + this.second;
+          document.querySelector("span").innerText = this.result;
+        },
+      };
+
+      var validateData = (event) => {
+        console.log("Event is fired");
+        console.log(event);
+        console.log("Event keycode", event.keyCode);
+        if (event.keyCode >= 48 && event.keyCode <= 57) {
+          return true;
+        } else {
+          return false;
+        }
+      };
+    </script>
+  </body>
+</html>

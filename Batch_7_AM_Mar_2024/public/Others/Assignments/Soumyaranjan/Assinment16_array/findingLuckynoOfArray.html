@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding lucky number</title>
+</head>
+
+<body>
+    <script>
+
+        var data = [22, 98, 56, 998, 4456, 223, 67, 86, 45, 67];
+
+        for (var i = 0; i < data.length; i++) {
+
+            var n = data[i];
+            var luckyno = 0;
+
+            while (n != 0) {
+                rem = n % 10;
+                n = parseInt(n / 10);
+                luckyno += rem;
+
+                if (n == 0 && luckyno > 9) {
+                    n = luckyno;
+                    luckyno = 0;
+
+                }
+            }
+            console.log("Lucky number:" + luckyno);
+            
+        }
+
+       
+
+    </script>
+</body>
+
+</html>

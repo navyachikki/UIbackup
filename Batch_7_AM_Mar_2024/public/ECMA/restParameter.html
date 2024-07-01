@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var addValues = (a, b, ...temp) => {
+                console.log(temp);
+                var result = 0; 
+                result = a + b;
+
+                for (var i = 0 ; i < temp.length; i++) {
+                    result += temp[i];
+                }
+
+                console.log("the sum is " + result);
+            }
+
+            addValues(20, 30);
+            addValues(20, 30, 40);
+            addValues(20, 30, 40, 50);
+            addValues(20, 30, 40, 50, 30, 45, 67, 89, 90, 100);
+        </script>
+    </body>
+</html>

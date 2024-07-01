@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Fruit Select</title>
+    <style>
+        
+        img{
+            position: absolute;
+            left:310px;
+            top:70px;
+            width:900px;
+            height:600px;
+            border: 1px solid green;
+        }
+        
+
+        input{
+           
+            background-image: url("arrowImg.png");
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            position: absolute;
+            left: 30px;
+            top: 280px;
+            font-size: large;
+            border: none;
+            width:227px;
+            height:240px;
+        }
+    </style>
+</head>
+<body>
+    
+    <img id="fruitImage" src="" alt="Random Nature Image">
+    <input type="button" value="Click" id="clickid" onclick="check()">
+    <script>
+        const fruitImages = [
+        "nature1.png",
+        "nature8.png",
+        "nature3.png",
+        "nature4.png",
+        "nature5.png",
+        "nature6.png"
+      ];
+  
+      
+      var chooseRandomFruitImage = () => { 
+      
+        const randomIndex = Math.floor(Math.random() * fruitImages.length);
+        return fruitImages[randomIndex];
+      }
+  
+      
+      
+      var check =()=>{
+            const imgElement = document.querySelector("#fruitImage"); 
+            const randomFruitImage = chooseRandomFruitImage();
+            imgElement.src = randomFruitImage;
+
+      }
+     
+      
+
+    </script>
+</body>
+</html>

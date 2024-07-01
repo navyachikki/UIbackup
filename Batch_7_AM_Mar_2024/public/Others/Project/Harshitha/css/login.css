@@ -1,0 +1,111 @@
+body{
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    max-width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:50px;
+    margin:50px;
+}
+
+.container{
+    /* border:1px solid; */
+    padding:10px;
+    margin:10px;
+    height:700px;
+    text-align: center;
+    
+}
+h1{
+    color:purple;
+    font-size: 25px;
+    font-weight: bold;
+}
+.Login-info{
+    margin-top: 50px;
+    padding:20px;
+    margin:20px;
+    /* border:1px solid; */
+    /* background-image: linear-gradient(to right, red , yellow); */
+}
+#btn{
+    padding:10px;
+    margin-top:10px;
+    background-color: brown;
+    color:whitesmoke;
+    border-radius: 5px;
+    /* margin-right: 70px; */
+}
+input{
+    width: 200px;
+    /* max-width: 600px; */
+    background-color: width;
+    padding:10px;
+    margin:20px;
+    border-radius: 5px;
+}
+#createLogin{
+        padding:10px;
+        margin-top:10px;
+        background-color: brown;
+        color:whitesmoke;
+        border-radius: 5px;
+        margin-right: 30px;
+}
+.nameErr{
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+.passErr{
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 100px;
+}
+#refreshCaptcha{
+    width:60px;
+    height:35px;
+    border-radius: 2px;
+    background-color: darkblue;
+    color:white;
+
+}
+#captchacode{
+    width: 150px;
+    margin-left: 17px;
+    margin-right: 69px;
+}
+#code{
+    width: 150px;
+    border:2px solid black;
+    text-align: center;
+    
+}
+#cap{
+    
+        width: 150px;
+        padding:10px;
+        margin:20px;
+        border-radius: 5px;
+        border: 1px solid black;
+        background-color: whitesmoke;
+    
+}
+.horizontal-align {
+    display: flex;
+    align-items: center;
+}
+.horizontal-align > div,
+.horizontal-align > a {
+    margin-right: 10px;
+    /* justify-content: center; */
+}
+h2{
+    text-align: center;
+    color: red;
+}

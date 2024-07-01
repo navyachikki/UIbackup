@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        var name = prompt("Enter the Name");
+        var age = prompt("Enter Age");
+        age = parseInt(age);
+        var depart = prompt("Enter Department");
+        var basicsalary = prompt("Enter Annual Salary");
+        basicsalary = parseFloat(basicsalary);
+        var gender = prompt("Enter Gender");
+
+        var pf = (basicsalary * 10/100);
+        pf = parseFloat(pf);
+        var hra = (basicsalary * 15/100);
+        hra = parseFloat(hra);
+        var totalsalary = basicsalary + pf + hra;
+        totalsalary = parseFloat(totalsalary);
+
+        console.log("Name " + name);
+        console.log("Age " + age);
+        console.log("Department " + depart);
+        console.log("Basic Salary " + basicsalary);
+        console.log("Gender " + gender);
+        console.log("PF amount " + pf);
+        console.log("HRA amount " + hra);
+        console.log("Total Salary " + totalsalary);
+
+        if (gender == 'male') {
+            console.log(gender);
+            if (totalsalary > 200000) {
+                tax = totalsalary * 0.15;
+                console.log("You need to pay " + tax);
+            }
+            else if (totalsalary > 100000) {
+                tax = totalsalary * 0.10;
+                console.log("You Have to pay " + tax);
+            }
+            else if (totalsalary > 50000) {
+                tax = totalsalary * 0.05;
+                console.log("You need to pay " + tax);
+            }
+            else {
+                console.log("You don't need to pay the tax");
+            }} 
+            else { // for female block
+              console.log(gender);
+            if (totalsalary > 200000 && totalsalary < 300000) {
+                    tax = totalsalary * 0.10;
+                    console.log("You need to pay " + tax);
+                } 
+            else if(totalsalary > 100000 && totalsalary < 200000) {
+                    tax = totalsalary * 0.05;
+                    console.log("You need to pay " + tax);
+                } 
+            else {
+                    console.log("You don't need to pay the tax");
+                }}
+    </script>
+        
+</body>
+</html>

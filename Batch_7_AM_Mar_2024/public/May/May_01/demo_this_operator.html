@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // this always indicates the current object reference
+            // this operator 
+            var userData = {
+                a1: 90,
+                a2: 99,
+                result: 0,
+                findSum() {
+                    this.result = this.a1 + userData.a2;
+                    this.displayData();
+                }                
+            };
+            userData.total = 99;
+
+            userData.displayData = () => {
+                console.log("the sum is " + this.result);
+            }
+
+            var empData = {
+                name: 'raj',
+                displayinfo() {
+                    console.log("nam eis " + this.name);
+                }
+            }
+
+            userData.findSum();
+        </script>
+    </body>
+</html>

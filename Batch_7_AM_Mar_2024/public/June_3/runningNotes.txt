@@ -1,0 +1,13 @@
+Media queries :
+    
+    screen - All 
+    print 
+    handheld
+    tv
+    etc.
+
+
+min-height
+max-height
+min-width
+max-width 

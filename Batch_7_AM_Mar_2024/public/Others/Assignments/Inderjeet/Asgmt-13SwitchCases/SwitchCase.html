@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var question = prompt("What type of Problem do you solve");
+        switch (question) {
+            case 'palindrome':
+                var temp;
+                var rev = 0;
+                var r;
+                var num = prompt("Enter a Number to check palindrome or Not :");
+                num = parseInt(num);
+                var temp = num;
+                while (temp > 0) {
+                    r = temp % 10;
+                    rev = (rev * 10) + r;
+                    temp = temp / 10;
+                    temp = parseInt(temp);
+                }
+                if (num == rev) {
+                    console.log("This number is palindrome");
+                }
+                else {
+                    console.log("Not a Palindrome Number")
+                }
+                break;
+            case 'luckynumber':
+                var n = parseInt(prompt("Give me a Number :"));
+                var sum = 0;
+                var rem;
+                while (n > 0) {
+                    rem = n % 10;
+                    sum = sum + rem;
+                    n = parseInt(n / 10);
+                    if (n == 0 && sum > 9) {
+                        n = sum;
+                        sum = 0;
+                    }
+                }
+                console.log("your Lucky Number is : " + sum);
+                break;
+            case 'totaldigit':
+                var cnt = 0;
+                var inp = prompt("Enter a number :");
+                inp = parseInt(inp);
+                while (inp != 0) {
+                    cnt = cnt + 1;
+                    inp = inp / 10;
+                    inp = parseInt(inp);
+                }
+                console.log("Number of DIgit is : " + cnt);
+                break;
+            case 'reverse':
+                var temp;
+                var rev = 0;
+                var rem;
+                var num = prompt("Enter a Number to check palindrome or Not :");
+                num = parseInt(num);
+                var temp = num;
+                while (temp > 0) {
+                    rem = temp % 10;
+                    rev = (rev * 10) + rem;
+                    temp = temp / 10;
+                    temp = parseInt(temp);
+                }
+                console.log(rev);
+                break;
+            default:
+                console.log("you have Not Choosen anything")    
+        }
+    </script>
+</body>
+
+</html>

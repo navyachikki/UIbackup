@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var userDtails = {
+                name: 'Raj',
+                age: 20,
+                gender: 'Male'
+            };
+
+
+            for(var temp in userDtails) {
+                console.log(temp);
+                console.log(userDtails[temp]);
+            }
+            // foreach
+            // for, while, do while, for in
+
+            var data = [34, 545, 66, 77, 88];
+
+            // for (var i = 0 ; i < data.length; i++) {
+            //     console.log("index is " + i);
+            //     console.log("value is " + data[i]);
+            // }
+
+            data.forEach((value, index) => {
+                console.log(value);
+                console.log(index);
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Dyanic HtMLS Demo</h2>
+    <div id="container"></div>
+
+        <script>
+
+          var tagname = prompt("Enter Tag Name");
+          var color = prompt("Enter color");
+          var bgcolor = prompt("Enter Background color");
+          var usingtag = document.createElement(tagname);
+          usingtag.innerText = "Hello Srikanth";
+          usingtag.style.color = color;
+          usingtag.style.backgroundColor = bgcolor;
+          usingtag.style['font-size'] = "30px";
+          usingtag.style["font-weight"] = "bold";
+          usingtag.style["padding"] ="10px";
+          document.getElementById("container").append(usingtag);
+          // document.querySelector("#container").append(usingtag);
+        </script>
+  </body>
+</html>

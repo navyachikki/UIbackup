@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prime Numbers 1-100</title>
+    </head>
+    <body>
+        <script>
+            debugger
+            for(var i=1;i<=100;i++)
+            {
+                var p = 1;
+                for( var j=2;j <= i/2;j++){
+                    var n = i % j
+                    if(n == 0){
+                        p = 0;
+                        break;
+                    }
+                }
+                if(p == 1){
+                    console.log(i);
+                }
+            }
+        </script>
+</body>
+</html>

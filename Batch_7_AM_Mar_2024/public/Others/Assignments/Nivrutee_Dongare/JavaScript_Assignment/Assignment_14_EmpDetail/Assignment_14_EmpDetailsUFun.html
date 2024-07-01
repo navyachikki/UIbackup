@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Detail using Function</title>
+</head>
+
+<body>
+    <script>
+        let name, gender, salary, pf, hra, finalsalry;
+
+        function enterDetails() {
+            name = prompt("Enter your name");
+            gender = prompt("Enter your gender");
+            salary = parseInt(prompt("Enter your salary"));
+            calculatSalary();
+        }
+
+        function calculatSalary() {
+            pf = 0.14 * salary;
+            hra = 0.25 * salary;
+            finalsalry = pf + hra + salary;
+            displayEmpDetail()
+        }
+
+        function displayEmpDetail() {
+            console.log("The name of employee is " + name);
+            console.log("The gender of employee is " + gender);
+            console.log("Total salary of employee is " + finalsalry);
+        }
+
+        enterDetails();
+    </script>
+</body>
+
+</html>

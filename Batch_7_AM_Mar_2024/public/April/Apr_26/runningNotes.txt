@@ -1,0 +1,52 @@
+
+FunctionsWithParameters:
+    1. When we want to share/transfer data (private/local) from Called function  to the calling function 
+    2. While passing parameters we can pass any no. of parameters, with ',' seperator
+
+
+Function with returning values:
+    1. When we want to share/transfer data(private) from the calling function to the called function, we go for returning values.
+    2. through "return" keyword we return data from a function.
+    3. Using return we can only return one single value.
+    4. If we need to return multiple values, we should go for arrays or objects.
+
+    ------------------
+
+
+
+Assignment 15 - Employee details to be solved using functions - without global data.
+
+------------------------------------
+
+Javascript Predefined functions:
+    alert, prompt(), parseint, typeof, clg. etc...
+
+    Predefined String methods:
+        Paused
+--------------------------------
+
+Arrays:
+    DS which is capable of holding multiple values under single varaible.
+
+    var m1 = 20;
+    var m2 = 33;
+    var m3 = 80;
+
+    var marks = 20, 33, 80
+
+    var marks = [20, 33, 80] //arrays with 3 valus
+
+    var a = [];
+     a = [3, 5, 6, 55, 77, 8, 3.5, "test", true]
+
+
+    2ways of declaring arrays:
+
+        var vriablename = new Array();
+
+        (or)
+        var variablename = [];
+
+Memory Structure of Array:
+
+

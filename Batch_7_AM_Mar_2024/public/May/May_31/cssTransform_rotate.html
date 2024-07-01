@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating CSS3 transform - rotate
+        </title>
+        <style>
+            .container {
+                border: 1px solid;
+                margin: 200px auto;
+                padding: 20px;
+                width: 300px;
+                background-color: yellowgreen;
+                text-align: center;
+                /* transform: rotate(5deg); */ rotate(), rotateX(), rotateY(), rotate3d()
+                
+            }
+            /* @keyframes clock {
+                1% {
+                    transform: rotate(2deg);
+                }
+                25% {
+                    transform: rotate(50deg);
+                }
+                50% {
+                    transform: rotate(200deg);
+                }
+            } */
+        </style>
+    </head>
+    <body>
+        <div class="container">Block</div>
+
+        <script>
+            var value = 0;
+            var x = 0;
+            var y = 5, z = 10;
+            setInterval(() => {
+                x++; y++;
+                z++;
+                value += 5;
+                degValue = value + 'deg';
+                console.log(degValue);
+                console.log(`rotate(${degValue})`);
+                document.querySelector(".container").style.transform = `rotate3d(${x}, ${y}, ${z}, ${degValue})`;
+                if (value == 360) {
+                    value = 0;
+                }
+            }, 100);
+        </script>
+
+    </body>
+</html>

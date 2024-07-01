@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Detail without global variable</title>
+</head>
+
+<body>
+    <script>
+        function enterDetail() {
+            let empName = prompt("Enter the name:");
+            let empGender = prompt("Enter the gender:");
+            let empSalary = parseInt(prompt("Enter basic salary:"));
+            calcSalary(empSalary, empName, empGender);
+        }
+
+        function calcSalary(salary, name, gender) {
+            let pf = 0.14 * salary;
+            let hra = 0.25 * salary;
+            let finalSalary = pf + hra + salary;
+            displayDetail(finalSalary, name, gender);
+        }
+
+        function displayDetail(finalSalary, name, gender) {
+            console.log("Employee Name: " + name);
+            console.log("Gender: " + gender);
+            console.log("Final Salary: " + finalSalary);
+        }
+
+        enterDetail();
+
+    </script>
+</body>
+
+</html>

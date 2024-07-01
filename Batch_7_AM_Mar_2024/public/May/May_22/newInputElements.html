@@ -1,0 +1,97 @@
+<!DOCTYPE html >
+<html lang="en" manifest="sample.appcache">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="abc.css">
+        <title>
+            Demonstrating new input elements
+        </title>
+        <style>
+            ul {
+                border: 1px solid;
+                margin: 10px auto;
+                padding: 20px;
+            }
+            li {
+                list-style: none;
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        
+<i class="bi bi-camera-reels"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-reels" viewBox="0 0 16 16">
+            <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0M1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0"/>
+            <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm6 8.73V7.27l-3.5 1.555v4.35zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1"/>
+            <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6M7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+          </svg>
+       
+        <!-- 
+            input, text, password, dropdown, button, checkbox radio button, textarea
+         -->
+         <!-- 
+            number, rangebar, progress, seach, color, file, .... 
+          -->
+          <ul>
+            <li>
+                USer Name: <input type="text">
+            </li>
+            <li>
+                Age: <input type="number" min="10" max="15">
+            </li>
+            <li>
+                Price Range: <input step ="1000" id="priceFilter" type="range" min="1000" max="20000" onchange="getPriceValue()">
+                <span></span>
+            </li>
+            <li>
+                Color: <input type="color">
+            </li>
+            <li>
+                Upload resume: <input type="file">
+            </li>
+            <li>
+                <input type="button" value="Search">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane-engines-fill" viewBox="0 0 16 16">
+                        <path d="M8 0c-.787 0-1.292.592-1.572 1.151A4.35 4.35 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0"/>
+                      </svg>
+                      
+                    Search
+                </button>
+            </li>
+            <li>
+                DOB: 
+                <input type="date">
+                <input type="datetime-local">
+                <input type="time">
+            </li>
+            <li>
+                phone: <input type="tel">
+            </li>
+            <li>
+                <progress id="file" value="70" max="100"> 32% </progress>
+            </li>
+            <li>
+                SEarch: <input type="search">
+            </li>
+          </ul>
+
+          <script>
+                var getPriceValue = () => {
+                    var priceValue = document.querySelector("#priceFilter").value;
+                    console.log(priceValue);
+                    document.querySelector("span").innerText = priceValue;
+                }
+                document.querySelector("#priceFilter").addEventListener("input", (event) => {
+                    // value.textContent = event.target.value;
+                    var priceValue = document.querySelector("#priceFilter").value;
+                    console.log(priceValue);
+                    document.querySelector("span").innerText = priceValue;
+                });
+          </script>
+    </body>
+</html>

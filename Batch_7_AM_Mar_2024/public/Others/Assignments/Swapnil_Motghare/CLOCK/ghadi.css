@@ -1,0 +1,166 @@
+.Clock
+{
+    border: 10px solid rgb(3, 3, 3);
+    height: 400px;
+    width: 400px;
+    border-radius: 232px;
+      margin-left: 165px;
+      background-color:rgb(136, 236, 218);
+}
+
+.middlepoint
+{    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 27px;
+    margin: 0px auto;
+    top: 195px;
+    left: 375px;
+   
+}
+
+.hourHand
+{
+     position: absolute;
+    height: 105px;
+    width: 6px;
+    background-color: rgb(255, 234, 5);
+    border-radius: 27px;
+    margin: 0px auto;
+    top: 102px;
+    left: 384px;
+
+}
+
+.secHand
+{
+
+     position: absolute;
+    height: 153px;
+    width: 2px;
+    background-color: red;
+    border-radius: 27px;
+    margin: 0px auto;
+        top: 54px;
+    left: 384px;
+
+}
+
+.minuteHand
+{
+     position: absolute;
+    height: 133px;
+    width: 4px;
+    background-color: rgb(11, 44, 234);
+    border-radius: 27px;
+    margin: 0px auto;
+           top: 74px;
+    left: 383.1px;
+
+}
+
+.hour12
+{
+        top: 20px;
+    left: 369px;
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+.hour11
+{
+    font-weight: bolder;
+    font-size: 26px;
+      top: 51px;
+    left: 275px;
+}
+
+.hour10
+{
+    font-weight: bolder;
+    font-size: 26px;
+      top: 114px;
+    left: 215px;
+}
+
+.hour9{
+   
+       top: 191px;
+    left: 192px;
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+.hour8
+{
+    font-weight: bolder;
+    font-size: 26px;
+      top: 277px;
+    left: 210px;
+}
+
+.hour7
+{
+    font-weight: bolder;
+    font-size: 26px;
+  top: 354px;
+    left: 271px;
+}
+
+.hour6{
+   
+    font-weight: bolder;
+    font-size: 26px;
+        top: 387px;
+    left: 381px;
+}
+
+.hour5
+{
+    font-weight: bolder;
+    font-size: 26px;
+       top: 358px;
+    left: 472px;
+}
+
+.hour4
+{
+    font-weight: bolder;
+    font-size: 26px;
+    top: 285px;
+    left: 540px;
+}
+
+.hour3{
+   
+        top: 187px;
+    left: 559px;
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+.hour2{
+    
+    top: 107px;
+    left: 527px;
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+.hour1{
+   
+     top: 47px;
+    left: 463px;
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+.Hour,.Minute,.Second {
+    
+    transform-origin: bottom;
+}
+
+.hour{
+    position: absolute !important;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Dispalay the empdetails using funcation ,PLease go thorugh console tab </h3>
+        <script>
+            var empName ,empAge, empGender, empBasicSal , pf, hra,empTotalSal,tax;
+            var getEmpDetails = () => {
+                empName = prompt(" enter the emp name. ");
+                empName = empName.toLowerCase();                
+                empAge = parseInt(prompt(" enter the age of the emp . "));
+                empGender = prompt(" enter the emp gender if the emp. ");
+                empGender= empGender.toLowerCase();
+                
+                empBasicSal = parseInt(prompt(" enter the basic sal of emp. "));               
+                calculations();
+
+            }
+            var calculations = ()  =>{
+                pf = (empBasicSal * 12)/100;
+                hra = (empBasicSal * 24) /100;
+                empTotalSal = empBasicSal + pf + hra;
+                displayDetails();
+            }
+            var displayDetails = () =>{
+                console.log("YOUR DETAILS ARE ");
+                console.log("Employee name is "+ empName);                
+                console.log("Employee age is " + empAge);
+                console.log("Employee gender is  "+ empGender);
+                console.log("Employee basic sallary is  " + empBasicSal);
+                console.log("Emp get pf " + pf);
+                console.log("Emp get Hra is  " + hra);
+                console.log("So finally Emp get total sal is  " + empTotalSal);
+                taxamount();
+            }
+            var taxamount = ()=>{
+                var Tax;
+                if(empGender=='male')
+                {
+                    console.log(empGender);
+                    if(empTotalSal>=200000)
+                    {
+                    console.log("Tax is = " + empTotalSal*0.15);
+                    }
+                    else if(empTotalSal>=100000)
+                    {
+                        console.log("Tax is = " + empTotalSal*0.1);
+                    }
+                    else if(empTotalSal>=50000)
+                    {
+                        console.log("Tax is = " + empTotalSal*0.05);
+                    }
+                    else
+                    {
+                        console.log("there is no tax")
+                    }
+                }
+                else if(empGender=='female')
+                {
+                    console.log(empGender);
+                    if(empTotalSal>=200000)
+                    {
+                    console.log("Tax is = " + empTotalSal*0.1);
+                    }
+                    else if(empTotalSal>=100000)
+                    {
+                        console.log("Tax is = " + empTotalSal*0.05);
+                    }
+                    else
+                    {
+                        console.log("there is no tax")
+                    }
+                }
+                else
+                {
+                    console.log("Please Enter Your Gender Properly");
+                }
+            } 
+            getEmpDetails();
+
+
+        </script>
+    </body>
+</html>

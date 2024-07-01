@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var arr = [];
+    //   arrayLength = prompt("Enter length");
+    //   for (var i = 0; i < arrayLength; i++) {
+    //     arr[i] = prompt("Enter values");
+    //   }
+
+      var str = "";
+      arrayLength = prompt("Enter length");
+      arrayLength = parseInt(arrayLength);
+      for (var i = 0; i < arrayLength; i++) {
+          arr[i] = parseInt(prompt("Enter values"));
+          var num1 = arr[i];
+        while (arr[i] > 0) {
+        var rem = arr[i] % 10;
+        arr[i] = parseInt(arr[i] / 10);
+        str = str.concat(rem);
+      }
+      }
+      // var reverse = 0;
+      
+      // console.log(num);
+      // console.log(num1);
+      str = parseInt(str);
+      if (num1 == str) {
+        console.log(str);
+      }
+
+    //   console.log(arr);
+    </script>
+  </body>
+</html>

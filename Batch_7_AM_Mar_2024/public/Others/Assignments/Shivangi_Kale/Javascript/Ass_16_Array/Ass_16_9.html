@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Lucky number in an array </title>
+    <style>
+        h2{
+            text-align: center;
+            color: rgb(208, 19, 19);
+            text-decoration: double;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Find Lucky number in an array </h2>
+
+    <script>
+
+        var arr=[12,347,797,890,234];
+        console.log("Lucky number ");
+        for(var i=0;i<arr.length;i++)
+        {
+            var num=arr[i];
+            var sum=0;
+                while(num>0)
+                {
+                    var rem=num%10;
+                    sum=sum+rem;
+                    num=num/10;
+                    num=parseInt(num);
+
+                    if(num==0 && sum>9)
+                    {
+                        num=sum;
+                        sum=0;
+                    }
+                }
+            console.log(arr[i]+" --- "+sum);
+
+        }
+    </script>
+    
+</body>
+</html>

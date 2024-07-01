@@ -1,0 +1,103 @@
+.modal{
+    font-family: 'Times New Roman', Times, serif;
+}
+.modal-body ul
+{
+    	margin: 10px;
+        padding: 10px;
+        
+}
+
+.modal-body ul li
+{
+    	margin: 5px;
+        padding: 10px;
+        list-style: none;
+       
+}
+.modal-header {
+    background-image: url(../img/login1.png);
+    height: 150px;
+}
+.modal-footer {
+    border-bottom:20px solid #0dcaf0;
+    height: 150px;
+}
+.modal-title {
+    font-family: "Lucida Handwriting";
+    margin-bottom: 101px;
+    color: darkcyan;
+    font-size:25px !important;
+}
+.refresh {
+    position: absolute;
+    left: 123px;
+    top: 299px;
+    font-size: 18px;
+    color: darkcyan;
+
+}
+/* Forgot pwsd refresh icon */
+/* .refreshForgotPwsd
+{ 
+    position: absolute;
+    left: 123px;
+    top: 187px;
+    font-size: 18px;
+    color: darkcyan;
+} */
+#capthcaText {
+    text-align: left;
+    color: green;
+}
+#passLogin{
+    position: absolute;
+    left: 410px;
+    top: 123px;
+}
+
+/* 
+
+.captchaContainer img {
+    height: 50px;
+    margin-left: 35px;
+}
+.container-fluid{
+    background-color:white;
+    font-size: large;
+    height: 60px;
+
+}
+.container-fluid li{
+   font-family: 'Times New Roman', Times, serif;  
+   
+}
+header{
+    background-color:#F7F9F9 ;
+
+}
+
+.modal-body{
+    background-image: url(../img/back7.jpg);
+    margin-bottom: 0px !important ;
+}
+.modal-body ul li{
+    list-style: none;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.modal-content{
+    background-color: #F7F9F9 ;
+}
+.modal-header, .modal-footer {
+    background-size: cover;
+}
+.modal-header {
+    background-image: url(../img/login1.png);
+    height: 150px;
+}
+.modal-footer {
+    background-image: url(../img/loginFooter.png);
+    height: 100px;
+} */

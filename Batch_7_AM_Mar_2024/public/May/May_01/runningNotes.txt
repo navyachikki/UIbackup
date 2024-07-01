@@ -1,0 +1,39 @@
+setTimeout && setInterval Methods
+
+    Syntax:
+
+        setTimeout(<method to be invoked>, delaytime in mseconds);
+
+        setTimeout(() => {
+            ... code to be executed
+        }, 5000);
+
+        var sample = () => {
+            ... 
+            ... 
+            
+            return [ 34, 56];
+        }
+
+        () => {
+
+        }
+
+        Syntax:
+
+        clearInterval(<reference of interval method>)
+
+        clearTimeout(<reference of timeout method>)
+
+------------------
+
+ADV js:
+
+    Class 
+    OOPS 
+    Closures
+    Exception handling
+
+DHTML 
+
+ECMA latest/6:

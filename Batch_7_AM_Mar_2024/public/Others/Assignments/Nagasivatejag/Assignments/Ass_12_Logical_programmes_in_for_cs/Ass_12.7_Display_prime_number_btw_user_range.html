@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Prime numbers </title>
+</head>
+<body>
+    <h3> Check Prime number or not for user given range </h3>
+    <script>
+        startPoint = prompt("Enter a start number");
+        startPoint = parseInt(startPoint);
+
+        endPoint = prompt("Enter a end number");
+        endPoint = parseInt(endPoint);
+
+        var n, g;
+
+        for (var g = startPoint; g <= endPoint; g++) {
+
+            var n = g;
+            var count = 0;
+
+        for (var i = 2 ; i < n; i++) {
+
+           var rem = n % i;
+
+            if (rem == 0) {
+
+                count++;
+                break;
+            }
+        }
+
+        if (count > 0) {
+
+            console.log("It is not a prime number " + n);
+
+        } else {
+
+            console.log("It is a prime number" + n);
+
+        }
+
+     }
+
+    </script>
+</body>
+</html>

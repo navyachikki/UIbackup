@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuckyNUm</title>
+    <script>
+        var n = parseInt(prompt("Enter a Number"));
+        var res;
+        var rem = 0;
+        while(n > 0) {
+            res = n % 10;
+            rem = rem + res ;
+            n = n/10;
+            n = parseInt(n);
+            if( n == 0 && rem > 9) {
+                n = rem ;
+                rem = 0 ;
+            }
+        }
+        console.log("The lucky Number is : " + rem );
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

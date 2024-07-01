@@ -1,0 +1,87 @@
+<dispDetails!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="emp.css">
+    <script src="emp.js"></script>
+</head>
+
+<body>
+    <h1>
+        EMPLOYEE SALARY DETAILS
+    </h1>
+
+    <ul>
+
+        <li>
+            <input type="text" name="" id="eName" placeholder="Enter Employee Name">
+            <div class="nameErr error">
+                please enter name
+            </div>
+        </li>
+
+        <li>
+            <input type="text" name="" id="eAge" placeholder="Enter Employee Age">
+            <div class="ageErr error">
+                please enter Age
+            </div>
+        </li>
+
+        <li>
+            <input type="text" name="" id="eSal" placeholder="Enter   Salary"><div class="salErr error">
+                please enter Salary
+            </div>
+
+        </li>
+
+        <li>
+            Gender: <input type="radio" name="gender" value="Male" id="eGender" checked>Male
+            <input type="radio" name="gender" value="FeMale" id="">FeMale
+        </li>
+
+        <li>
+            <select name="" id="eBranch">
+                <option value="" selected>select branch</option>
+                <option value="IT">IT</option>
+                <option value="FINANCE">FINANCE</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Electronics">Electronics</option>
+            </select>
+        </li>
+
+        <li>
+            <input type="button" value="GET SLIP" id="eSlip" onclick="empDetails.empInfo()" id="btn">
+        </li>
+
+    </ul>
+
+    <ul id="dispDetails">
+
+        <li>
+            Employee Name : <span id="dname"> </span>
+        </li>
+
+        <li>
+            Employee Age : <span id="dage"> </span>
+        </li>
+
+        <li>
+            Employee  total Salary : <span id="dsal"> </span>
+        </li>
+
+        <li>
+            Gender : <span id="dgender"> </span>
+        </li>
+
+        <li>
+            Branch : <span id="dbranch"> </span>
+        </li>
+    </ul>
+
+
+</body>
+
+</html>

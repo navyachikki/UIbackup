@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/signup.css">
+    <script src="../js/signup.js"></script>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="title-text">
+            <div class="title-register">Register</div>
+        </div>
+        <div class="form-container">
+            <div class="form-inner">
+                <form action="#" class="register">
+                    <div class="field">
+                        <input type="email" placeholder="Email address" onkeypress="return validateSpace(event)"
+                            required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="field">
+                        <input type="password" id="pwd" placeholder="Password" onkeyup="validatePwd(event)" onkeypress="return validatePwdSpace(event);" required>
+                        <i class='bx bxs-lock'></i>
+                    </div>
+                    <div class="field">
+                        <input type="password" id="pwdConfirm" placeholder="Re-enter Password" onkeypress="return validatePwdSpace(event);" required>
+                        <i class='bx bxs-lock'></i>
+                    </div>
+                    <div class="field">
+                        <input type="submit" value="Signup" onclick="registerUser()">
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <ol class="passCriteria">
+        <li class="pwdLength">Min length of password is 8</li>
+        <li class="pwdUpperCase">Password should only start with uppercase</li>
+        <li class="specialSymbol">
+            Password should have min and max one special character
+        </li>
+        <li class="pwdNumeric">should have one numeric</li>
+        <li class="noSpacePwd">should not contain space</li>
+    </ol>
+</body>
+
+</html>

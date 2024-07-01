@@ -1,0 +1,17 @@
+ul{
+    border:2px solid;
+    margin:20px;
+    width:600px;
+    padding:20px;
+    list-style-type: none;
+    margin:auto;
+    margin-bottom: 20px;
+}
+li{
+    border:1px solid;
+    margin:10px;
+    padding : 10px;
+}
+li > input[id=sub]{
+ padding:10px;
+}

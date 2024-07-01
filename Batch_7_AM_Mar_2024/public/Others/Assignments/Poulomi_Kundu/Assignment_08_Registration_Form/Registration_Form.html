@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+
+        body{
+            background-color: #FFEBB2;
+            color: #47165c;;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .header, .footer{
+            border-radius: 10px;
+            font-weight: 600;
+            color: #47165c;
+            font-size: 28px;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            background-color: #E59BE9;
+        }
+
+        .division{
+            border: 1px dashed #8644A2;
+            border-radius: 40px;
+            background-color: #FFEBB2;
+            margin: 50px;
+            padding: 30px;
+            position: relative;
+        }
+
+        .heading{
+            background-color: #743490;
+            color: #FFEBB2;
+            border-radius: 20px;
+            font-size: 25px;
+            padding: 15px;
+            position: absolute;
+            top: -31px;
+            left: 35px;
+        }
+
+        .container{
+            border: 1px solid #E59BE9;
+            border-radius: 10px;
+            margin: 10px;
+            padding-bottom: 50px;
+            position: relative;
+            background-color: #E59BE9;
+        }
+
+        ul{
+            list-style:  none;
+        }
+
+        li{
+            margin: 15px;
+        }
+
+        label{
+            margin-left: 20px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        input, select, option, textarea{
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: 1px groove #743490;
+        }
+
+        button{
+            position: absolute;
+            right: 90px;
+            bottom: 30px;
+            font-size: 16px;
+            padding: 10px;
+            border: 2px solid #743490;
+            border-radius: 10px;
+            background-color: #FFEBB2;
+            color: #47165c;
+        }
+
+        button:hover{
+            border: 2px dashed #FFEBB2;
+            background-color: #743490;
+            color: #FFEBB2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">Student Registration Form</div>
+    <div class="container">
+        <form action="" >
+            <div class="division">
+                <div class="heading">Personal Information</div>
+                <ul>
+                    <li>
+                        <label for="fname">First Name: </label>
+                        <input type="text" name="name" id="fname" placeholder="Enter your First Name"/>
+                        <label for="fname">Middle Name: </label>
+                        <input type="text" name="name" id="mname" placeholder="Enter your Second Name"/>
+                        <label for="fname">Last Name: </label>
+                        <input type="text" name="name" id="lname" placeholder="Enter your Last Name"/>
+                    </li>
+                    <li>
+                        <label for="fathername">Father's Name: </label>
+                        <input type="text" name="name" id="fathername" placeholder="Enter your Father's Name"/>
+                        <label for="mothername">Mother's Name: </label>
+                        <input type="text" name="name" id="mothername" placeholder="Enter your Mother's Name"/>
+                    </li>
+                    <li>
+                        <label for="address">Address: </label>
+                        <input type="text" name="name" id="address"  placeholder="Enter your Address"/>
+                        <label for="country">Country: </label>
+                        <select name="name" id="country">
+                            <option value="india" selected>India</option>
+                            <option value="usa">USA</option>
+                            <option value="canada">Canada</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="gender">Gender: </label>
+                        <input type="radio" name="name" id="gender"/> Male
+                        <input type="radio" name="name" id="gender" /> Female
+                        <input type="radio" name="name" id="gender" /> Prefer not to say
+                    </li>
+                    <li>
+                        <label for="mobileno">Mobile No: </label>
+                        <input type="number" name="name" id="mobileno" placeholder="Enter Mobile No">
+                        <label for="emailid">Email ID: </label>
+                        <input type="email" name="name" id="emailid" placeholder="Enter Email Id"/>
+                    </li>
+                </ul>
+            </div>
+            <div class="division">
+                <div class="heading">Educational Details</div>
+                <ul>
+                    <li>
+                        <label for="qualification">Qualification: </label>
+                        <select name="name" id="qualification">
+                            <option value="doctorate" selected >Doctorate Degree (PhD/MD)</option>
+                            <option value="master">Masters Degree</option>
+                            <option value="bachelor">Bachelors Degree</option>
+                            <option value="hs">Higher Secondary</option>
+                            <option value="sec" selected>Intermediate</option>
+                        </select>
+                        <label for="college">College Name: </label>
+                        <input type="text" name="name" id="college" placeholder="Name of the College"/>
+                    </li>
+                    <li>
+                        <label for="medium">Medium of Study: </label>
+                        <input type="radio" name="name" id="medium"/>English
+                        <input type="radio" name="name" id="medium"/>Hindi
+                        <input type="radio" name="name" id="medium"/>Bengali
+                    </li>
+                    <li><label for="marks">Marks Obtainted (in CGPA): </label>
+                        <input type="text" name="name" id="marks"/>
+                    </li>
+                    <li>
+                        <label for="passyear">Passing Year: </label>
+                        <select name="name" id="passyear">
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="division">
+                <div class="heading">About Yourself</div>
+                <ul>
+                    <li>
+                        <label for="languages">Languages Known: </label>
+                        <input type="radio" name="name" id="languages"/>English
+                        <input type="radio" name="name" id="languages"/>Hindi
+                        <input type="radio" name="name" id="languages"/>Bengali
+                    </li>
+                    <li>
+                        <label for="about">Write about Yourself: </label>
+                        <textarea rows="4" cols="60" name="name" id="about" placeholder="Write in your own words"></textarea>
+                    </li>
+                </ul>
+            </div>
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+    <div class="footer">Registration @copyrights 2024</div>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Q.1  Read the Arrays Values From User Input
+
+      var Function1 = () => {
+        var size = parseInt(prompt("Enter the size of Array:"));
+        var array = console.log("Enter the values of array");
+        var arr = [];
+        for (var i = 0; i < size; i++) {
+          arr[i] = prompt();
+        }
+        for (var i = 0; i < size; i++) {
+          console.log(arr[i]);
+        }
+        console.log(arr);
+      };
+
+      // Function1()
+
+      // Q.2  Sum of Array Elements
+
+      var Function2 = () => {
+        var size = parseInt(prompt("Enter the size of Array:"));
+        var array = console.log("Enter the values of array");
+        var arr = [];
+        var sum = 0;
+        for (var i = 0; i < size; i++) {
+          arr[i] = parseInt(prompt());
+          sum = sum + arr[i];
+        }
+        for (var i = 0; i < size; i++) {
+          console.log(arr[i]);
+        }
+        console.log(arr);
+        console.log("Sum is : " + sum);
+      };
+
+      // Function2()
+
+      // Q.3  Display Even Numbers within the array
+
+      var Function3 = () => {
+        var size = parseInt(prompt("Enter the size of Array:"));
+        var array = console.log("Enter the values of array");
+        var arr = [];
+        for (var i = 0; i < size; i++) {
+          arr[i] = parseInt(prompt());
+        }
+        for (var i = 0; i < size; i++) {
+          if (arr[i] % 2 == 0) {
+            console.log(arr[i]);
+          }
+        }
+        console.log(arr);
+      };
+
+      // Function3()
+
+      // Q.4  Display Odd Numbers count within the array
+
+      var Function4 = () => {
+        var size = parseInt(prompt("Enter the size of Array:"));
+        var array = console.log("Enter the values of array");
+        var arr = [];
+        var count = 0;
+        for (var i = 0; i < size; i++) {
+          arr[i] = parseInt(prompt());
+          if (arr[i] % 2 != 0) {
+            count++;
+          }
+        }
+        console.log(arr);
+        console.log("Total Odd No. are : " + count);
+      };
+      // Function4()
+
+      // Q.4  Display Odd Numbers count within the array
+
+      var Function4 = () => {
+        var size = parseInt(prompt("Enter the size of Array:"));
+        var array = console.log("Enter the values of array");
+        var arr = [];
+        var count = 0;
+        for (var i = 0; i < size; i++) {
+          arr[i] = parseInt(prompt());
+          if (arr[i] % 2 != 0) {
+            count++;
+          }
+        }
+        console.log(arr);
+        console.log("Total Odd No. are : " + count);
+      };
+      // Function4()
+
+      // Q.5  Display all the prime number within a given array
+
+      var Function5 = () => {
+        var size = parseInt(prompt("Enter the size of Array:"));
+        var arr = [];
+
+        for (var i = 0; i < size; i++) {
+          var flag = false;
+          arr[i] = parseInt(prompt());
+
+          var temp = arr[i];
+          for (var j = 2; j < temp; j++) {
+            if (temp % j == 0) {
+              flag = true;
+              break;
+            }
+          }
+          if (flag == false) {
+            console.log(temp);
+          }
+        }
+      };
+      //   Function5();
+
+      //   Q.6  Display smallest and Largest Value in Array :
+
+      var Function6 = () => {
+        var arr = [];
+        var size = parseInt(prompt("Enter the size of Array:"));
+        for (var i = 0; i < size; i++) {
+          arr[i] = parseInt(prompt());
+          var minVal = arr[0];
+          var maxVal = arr[0];
+
+          if (arr[i] < minVal) {
+            minVal = arr[i];
+          } else if (arr[i] > maxVal) {
+            maxVal = arr[i];
+          }
+        }
+        console.log("Maximum Value in array : " + maxVal);
+        console.log("Minimum value in array :" + minVal);
+      };
+
+    //   Function6();
+
+
+
+      //   Q.7  Display Second Largest Element  in Array :
+
+      var Function7 = () => {
+        var arr = [];
+        var largest = second= -1;
+        var size = parseInt(prompt("Enter the size of Array:"));
+        for (var i = 0; i < size; i++) {
+            arr[i] = parseInt(prompt());
+            if(arr[i]>largest){
+                largest = arr[i];
+            }
+        }
+        for(var i =0 ; i<size; i++){
+            if(arr[i]>second && arr[i]!=largest){
+                second = arr[i];
+            }
+        }
+        console.log("the second largest element is "+second);
+        console.log(arr);
+    }
+    //   Function7();
+
+
+      
+      //   Q.8  Display Palindrome number within an range :
+
+      var Function8 = () => {
+        let palindrome=(i)=>{
+        let temp=parseInt(i);
+        let num=parseInt(i);
+        let number=0;
+        while(num!=0){
+            rem=parseInt(num%10);
+            num=parseInt(num/10);
+            number=number*10+rem;
+        }
+        if(temp==number){
+            return true;
+        }
+        return false;
+
+    }
+    let start=parseInt(prompt("enter the the start range:"));
+    let end=parseInt(prompt("enter the the end range:"));
+    for(let i=start;i<end;i++){
+        if(palindrome(i)){
+            console.log(i+" is a palindrome number.");
+        }
+    }
+    }
+      Function8();
+
+
+
+      // 9) Find the lucky number of the each element of array.
+      let question9=()=>{
+    let arr=[123,533,643,998,54,764,865]
+    let number=0,rem;
+    let temp;
+    let sumInt=(i)=>{
+        number=0;
+        while(i!=0){
+        rem=parseInt(i%10);
+        i=parseInt(i/10);
+        number=number+rem;
+        }
+        return number;
+    }
+    for(let i=0;i<arr.length;i++){
+        temp=sumInt(arr[i]);
+        
+        while(temp>9){
+            temp=sumInt(temp);
+        }
+        
+        console.log("The lucky number of "+arr[i]+ " will be :"+temp);
+        
+    }
+}
+
+
+
+
+// 10) Arrange the array in ascending and descending order.
+let question10=()=>{
+    let arr=[10,2,5,21,12,42,11,10,1];
+    console.log("Original array is: "+arr);
+    let temp;
+    for(let i=0;i<arr.length;i++){
+        for(let j=i+1;j<arr.length;j++){
+            if(arr[i]>arr[j]){
+                temp=arr[i];
+                arr[i]=arr[j]
+                arr[j]=temp;
+            }
+        }
+    }
+    console.log("Array in ascending order :"+arr);
+    for(let i=0;i<arr.length;i++){
+        for(let j=i+1;j<arr.length;j++){
+            if(arr[i]<arr[j]){
+                temp=arr[i];
+                arr[i]=arr[j]
+                arr[j]=temp;
+            }
+        }
+    }
+    console.log("Array in descending order :"+arr);
+
+}
+
+// Call the function which question you have to run .
+question9();
+
+
+
+    </script>
+  </body>
+</html>

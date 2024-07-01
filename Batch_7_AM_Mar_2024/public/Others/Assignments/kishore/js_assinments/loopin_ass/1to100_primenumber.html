@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        sum = 0;
+        for (var a = 1; a<= 100; a++){
+            counter=0;
+
+            for(var i = 2; i< 100; i++){
+
+                var rem = a % i;
+                if(rem == 0){
+                    counter++;
+                    break;
+                }
+            }
+            if (counter == 0) {
+                sum = sum+a;
+                    console.log("Its a prime " + a);
+                } else {
+                    console.log("its not prime " + a);
+                }
+
+        }
+    </script>
+</body>
+</html>

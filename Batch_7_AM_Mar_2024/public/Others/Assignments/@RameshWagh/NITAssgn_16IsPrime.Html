@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entered Number is Prime Or Not</title>
+</head>
+<body>
+    <script>
+        var conter = 0;
+        var ChkNum = prompt("Enter Number to check Prime Or Not : ");
+
+        for(i = 2; i < ChkNum; i++)
+        {
+
+            if (ChkNum % i == 0)
+            {
+                conter = conter + 1;
+            }
+        }
+        if (conter > 0)
+            {console.log(ChkNum + " Is Not Prime Number");}
+        else
+            {console.log(ChkNum + " Is Prime Number");}
+
+    </script>
+</body>
+</html>

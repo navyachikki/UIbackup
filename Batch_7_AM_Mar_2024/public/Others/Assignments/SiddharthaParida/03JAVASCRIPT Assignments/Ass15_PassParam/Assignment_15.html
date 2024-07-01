@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment-15</title>
+    </head>
+    <body>
+        <script>
+            var getDetails = () =>{
+                var name = prompt("Enter Employee name :");
+                var Age = prompt("Enter Employee Age :");
+                var Gender = prompt("Enter Employeee Gender :")
+                var Dept = prompt("Enter employee Department :");
+                var salary = parseInt(prompt("Enter your salary :"));
+                var pf = (salary*14)/100;
+                var hra = (salary*24)/100;
+                var amount = total(salary,pf,hra);
+                showDetails(name,Age,Gender,Dept,amount);
+            }
+            var total = (salary,pf,hra) => {
+                var totalsal = salary + hra + pf;
+                return totalsal;
+            }
+            var showDetails = (name,Age,Gender,Dept,amount) => {
+                console.log("Employee Name :" + name);
+                console.log("Employee Age :" + Age);
+                console.log("Employee Gender :" + Gender);
+                console.log("Employee Department :" + Dept);
+                console.log("Employee total Salary :" + amount);
+            }
+            getDetails();
+        </script>
+    </body>
+</html>

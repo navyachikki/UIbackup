@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Formation</title>
+    <style>
+      
+        .head{
+            width: auto;
+            height: 40px;
+            margin: 5px;
+            text-align: center;
+            border: 3px solid;
+            padding: 5px;
+            background-color: burlywood;
+
+        }
+        .body{
+            width: auto;
+            height: 600px;
+            border: 3px solid;
+            padding: 5px;
+            text-align: center;
+            justify-content: center;
+            background-color: rgb(217, 212, 196);
+
+        }
+        .footer{
+            width: auto;
+            margin: 5px;
+            text-align: center;
+            height: 40px;
+            border: 3px solid;
+            padding: 4px;
+            background-color: burlywood;
+
+        }
+        table,head,thead,td,th,tr,tbody{
+            margin: 5px;
+            padding:5px;
+            border:2px solid black;
+            text-align: center;
+        }
+        th{
+            background-color: rgb(185, 138, 78);
+        }
+        td{
+            background-color: rgb(208, 198, 187);
+        }
+        table{
+            margin: 0 auto;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="head"><h2>Student Details</h2></div>
+    <div class="body">
+        <table cellspacing="2px" collspan="2px">
+            <thead>
+                <th>S.no</th>
+                <th>Student Name</th>
+                <th>Age</th>
+                <th>Student-Photo</th>
+                <th>Class</th>
+                <th>Stream</th>
+                <th>Location</th>
+                <th>Progress-Card</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Jinika</td>
+                    <td>22</td>
+                    <td><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="NO PHOTO" height="100px" width="80px"></td>
+                    <td>4yr</td>
+                    <td>Engineering</td>
+                    <td>Nagpur</td>
+                    <td>
+                        <table>
+                            <thead>
+                                <th>Subj</th>
+                                <th>Max.Marks</th>
+                                <th>Obt.Marks</th>
+                                <th>Status</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>85</td>
+                                    <td>100</td>
+                                    <td>PASS</td>
+                                </tr>
+                                <tr>
+                                    <td>English</td>
+                                    <td>80</td>
+                                    <td>100</td>
+                                    <td>PASS</td>
+                                </tr>
+                                <tr>
+                                    <td>Hindi</td>
+                                    <td>75</td>
+                                    <td>100</td>
+                                    <td>PASS</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Arohi</td>
+                    <td>23</td>
+                    <td><img src="https://images.unsplash.com/photo-1635620201965-38f8ae7dd9df?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="NO PHOTO" height="100px" width="80px"></td>
+                    <td>2yr</td>
+                    <td>MBA</td>
+                    <td>Mumbai</td>
+                    <td>
+                        <table>
+                            <thead>
+                                <th>Subj</th>
+                                <th>Max.Marks</th>
+                                <th>Obt.Marks</th>
+                                <th>Status</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tech</td>
+                                    <td>78</td>
+                                    <td>100</td>
+                                    <td>PASS</td>
+                                </tr>
+                                <tr>
+                                    <td>Boilogy</td>
+                                    <td>82</td>
+                                    <td>100</td>
+                                    <td>PASS</td>
+                                </tr>
+                                <tr>
+                                    <td>Zoology</td>
+                                    <td>75</td>
+                                    <td>100</td>
+                                    <td>PASS</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Anabella</td>
+                    <td>29</td>
+                    <td><img src="https://images.unsplash.com/photo-1633377933507-99573cb8c5c5?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="NO PHOTO" height="100px" width="80px"></td>
+                    <td>4yr</td>
+                    <td>BSC</td>
+                    <td>Kashmir</td>
+                    <td>
+                        <table>
+                            <thead>
+                                <th>Subj</th>
+                                <th>Max.Marks</th>
+                                <th>Obt.Marks</th>
+                                <th>Status</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Artho</td>
+                                    <td>33</td>
+                                    <td>100</td>
+                                    <td>FAIL</td>
+                                </tr>
+                                <tr>
+                                    <td>Neuro</td>
+                                    <td>80</td>
+                                    <td>100</td>
+                                    <td>PASS</td>
+                                </tr>
+                                <tr>
+                                    <td>Physco</td>
+                                    <td>89</td>
+                                    <td>100</td>
+                                    <td>PASS</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+
+
+
+    </div>
+    <div class="footer"><h3>Student Details @copyright 2024</h3></div>
+   
+</body>
+</html>

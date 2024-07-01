@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="Array.css">
+    </head>
+    <body>
+        <h2>Given String is Palindrome or not</h2>
+        <span class="DisplayL"></span>
+        <span class="DisplayS"></span>
+            <script>
+                var arr = prompt("Enter the String Name");
+                var tempStr = arr.toLowerCase();
+                console.log(tempStr);
+                var counter = 0;
+                var temp = [];
+                for(var i=0;tempStr[i]!=undefined;i++) {
+                temp.push(tempStr[i])
+                    counter++;
+                } 
+                console.log(temp);
+                var frwdStr = temp.join("");
+                console.log(frwdStr);
+                //document.querySelector(".DisplayS").innerHTML = "Forward String : " + frwdStr;
+
+                counter = 0;
+                var rev = [];
+                for(var h=tempStr.length-1;tempStr[h]!=undefined;h--) {
+                    counter++
+                    rev.push(tempStr[h]) ; 
+                    //console.log(arr[h]);  
+                }
+                console.log(rev);
+                var revStr = rev.join("");
+                console.log(revStr);
+                //document.querySelector(".DisplayL").innerHTML = "Reverse String :" + revStr;
+                if(frwdStr == revStr) {
+                    console.log("Given String is " + tempStr + " Is a palindrome");
+                    document.querySelector(".DisplayS").innerHTML = "Given String is <b> "+ tempStr + "</b> Is a palindrome"
+
+                }
+                else {
+                    console.log("Given String is " + tempStr + "Is Not a palindrome");
+                    document.querySelector(".DisplayL").innerHTML = "Given String is <b>" + tempStr + "</b> Is Not a palindrome"
+                }
+            </script>
+    </body>
+
+<html/>

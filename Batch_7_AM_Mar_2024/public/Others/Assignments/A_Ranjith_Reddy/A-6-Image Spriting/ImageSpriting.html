@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://localhost:52330/cssOverflowProperty.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Spriting</title>
+        <style>
+            h3 {
+                text-align: center;
+                border: 2px solid;
+                margin: 10px;
+                padding: 10px;
+                background-color: bisque;
+            }
+    
+            .mainBlock>li {
+                list-style: none;
+                border: 2px solid;
+                background-color: mediumaquamarine;
+                height: 150px;
+                margin: 10px;
+                padding: 10px;
+            }
+    
+            ul {
+                margin: 0;
+                padding: 0;
+            }
+    
+            .imgblock,
+            .detailsBlock {
+                float: left;
+            }
+    
+            .imgblock {
+                width: 130px;
+                height: 130px;
+                background-image: url(Combined_Spriting_Image.png);
+            }
+    
+            .detailsBlock {
+                width: 400px;
+            }
+            img {
+                width: 20px;
+                height: 20px;
+            }
+    
+            .detailsBlock li {
+                margin: 10px;
+                list-style: none;
+            }
+    
+            .emp1 {
+                background-position: 161px -20px;
+            }
+    
+            .emp2 {
+                background-position: -838px -182px;
+            }
+    
+            .emp3 {
+                background-position: -234px -1px;
+            }
+    
+            .emp4 {
+                background-position: -39px -6px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h3> Employee Details</h3>
+        <ul class="mainBlock">
+            
+            <li>
+                <div class="imgblock emp1">
+    
+                </div>
+                <div class="detailsBlock">
+                    <ul>
+                        <li>Name: Veena</li>
+                        <li>Age: 25</li>
+                        <li>Department: IT</li>
+                        <li>Location: Hyderabad</li>
+                    </ul>
+                </div>
+            </li>
+            
+            <li>
+                <div class="imgblock emp2">
+    
+                </div>
+                <div class="detailsBlock">
+                    <ul>
+                        <li>Name:Raju</li>
+                        <li>Age: 24</li>
+                        <li>Department: IT</li>
+                        <li>Location: Mysore</li>
+                    </ul>
+                </div>
+            </li>
+            
+            <li>
+                <div class="imgblock emp3">
+    
+                </div>
+                <div class="detailsBlock">
+                    <ul>
+                        <li>Name: Rajesh</li>
+                        <li>Age: 26</li>
+                        <li>Department: IT</li>
+                        <li>Location: Kochi</li>
+                    </ul>
+                </div>
+            </li>
+            
+            <li>
+                <div class="imgblock emp4">
+    
+                </div>
+                <div class="detailsBlock">
+                    <ul>
+                        <li>Name: Meena</li>
+                        <li>Age: 23</li>
+                        <li>Department: IT</li>
+                        <li>Location: Trichy</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    
+</body></html>

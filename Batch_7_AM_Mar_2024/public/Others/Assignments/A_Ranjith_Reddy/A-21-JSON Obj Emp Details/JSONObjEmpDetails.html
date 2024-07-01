@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+<body>
+    <script>
+        var getDetails = () => {
+        var Ename = prompt("Enter the Employee name : ");
+        var Age = prompt("Enter The Employee Age : ");
+        var Gender = prompt("Enter the Employeee Gender : ");
+        var Dpt = prompt("Enter employee Department : ");
+        var salary = parseInt(prompt("ENter the salary : "));
+        var pf = (salary*14)/100;
+        var hra = (salary*24)/100;
+        var amount = total(salary,pf,hra);
+        showDetails(Ename,Age,Gender,Dpt,amount);
+    }
+    var total = (salary,pf,hra) => {
+        var totalsal = salary + hra + pf;
+        return totalsal;
+    }
+    var showDetails = (Ename, Age, Gender, Dpt, Amount) => {
+        console.log("Employee Name : " + Ename);
+        console.log("Employee Age : " + Age);
+        console.log("Employee Gender : " + Gender);
+        console.log("Employee Department : " + Dpt);
+        console.log("Employee total Salary : " + Amount);
+    }
+    getDetails();
+    </script>
+</body>
+</html>

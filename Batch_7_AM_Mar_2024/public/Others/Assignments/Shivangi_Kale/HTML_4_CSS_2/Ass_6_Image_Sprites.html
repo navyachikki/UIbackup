@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Sprites</title>
+</head>
+<style>
+    .header 
+    {
+        text-align: center;
+        border: 1px solid;
+        padding: 5px;
+        margin: 20px;
+        background-color: cornflowerblue;
+    }
+    .footer 
+    {
+        text-align: center;
+        border: 1px solid;
+        padding: 5px;
+        margin: 20px;
+        background-color: cornflowerblue;
+    }
+    .container 
+    {
+        border: 1px solid;
+        height: 500px;
+        margin: 20px; 
+    }
+    .block1 
+    {
+        height: 500px;
+        width:330px;
+        border:1px solid;
+        float:left;
+        
+    }
+    .block2 
+    {
+        height: 500px;
+        width:1125px;
+        border:1px solid; 
+        float:right;   
+        overflow: auto;
+    }
+    .ïmgblock
+    {
+        width:300px; 
+        height:200px;
+        float: left;
+        background-image: url(img/combineAll.png);
+        border: 1px solid;
+    }
+    .st0{
+        background-position: 768px -6px;
+        border:2px solid darkblue;
+    }
+    
+    .st1 {
+        background-position:-402px -3px;
+        border:2px solid darkblue;
+
+    }
+    .st2 {
+        background-position:-14px -265px;
+        border:2px solid darkblue;
+    }
+    .st3 {
+        background-position: -384px -262px;
+        border:2px solid darkblue;
+    }
+    .st4 {
+        background-position:397px -4px;
+        border:2px solid darkblue;
+    }
+    
+    .underblock 
+    {
+        height: 200px;
+        width:1100px;
+        border:1px solid; 
+        margin: 5px;
+        float: left;
+    }
+    
+    ul
+    { 
+        float: left;
+        font-size: medium;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    li 
+    {
+        padding: 10px;
+    }
+
+    a:link 
+    {
+        color: blue;
+    }
+      
+      /* visited link */
+      a:visited 
+      {
+        color: green;
+      }
+
+</style>
+<body bgcolor="#F5EEF8">
+    <div class="header">
+      <h3>Student Details</h3>
+    </div>
+    <div class="container">
+        <div class="block1">
+
+            <ol>
+                <li><a href="#student1">Dr Neha Joshi</a></li>  
+                <li><a href="#student2">Dr Mansi Kale</a></li>  
+                <li><a href="#student3">Dr Tanvi Kulkarni</a></li>  
+                <li><a href="#student4">Dr Meena Despande</a></li>  
+                <li><a href="#student5">Dr Swati Tappe</a></li>                
+            </ol>
+        </div>
+        <div class="block2">
+                    <div class="underblock">
+                        <div class="ïmgblock st0">                   
+                        <!-- <img src="img/combineAll.png"> -->
+                        </div>
+                        <ul>
+                            <li id="student1">Name : Dr Neha Joshi</li>
+                            <li>Location : Hyderabad</li>
+                            <li>Age : 33</li>           
+                        </ul>
+                    </div>
+
+                        <div class="underblock">
+                            <div class="ïmgblock st1">                
+                            <!-- <img src="img/combineAll.png"> -->
+                            </div>  
+                            <ul>
+                                <li id="student2">Name : Dr Mansi Kale</li>
+                                <li>Location : Nagpur</li>
+                                <li>Age : 29</li>           
+                            </ul>
+                        </div>
+
+                        <div class="underblock">
+                            <div class="ïmgblock st2">                
+                                <!-- <img src="img/combineAll.png"> -->
+                                </div>  
+                            <ul>
+                                <li id="student3">Name :Dr Tanvi Kulkarni</li>
+                                <li>Location : Indore</li>
+                                <li>Age : 28</li>           
+                            </ul>
+                        </div>
+
+                        <div class="underblock">
+                            <div class="ïmgblock st3">                
+                                <!-- <img src="img/combineAll.png"> -->
+                                </div>  
+                            <ul>
+                                <li id="student4">Name : Dr Meena Despande</li>
+                                <li>Location : Mumbai</li>
+                                <li>Age : 30</li>           
+                            </ul>
+                        </div>
+
+                        <div class="underblock">
+                            <div class="ïmgblock st4">                
+                                <!-- <img src="img/combineAll.png"> -->
+                                </div>  
+                            <ul>
+                                <li id="student5">Name :Dr Swati Tappe</li>
+                                <li>Location : Pune</li>
+                                <li>Age : 33</li>           
+                            </ul>
+                        </div>
+
+        </div>
+        </div>
+
+
+    <div class="footer">
+      <h3>@copyright 2024</h3>
+    </div>
+    
+</body>
+</html>

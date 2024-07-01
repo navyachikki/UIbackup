@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION-6</title>
+</head>
+<body>
+    <script>
+        var length = prompt("Enter the length of the Array :")
+        length = parseInt(length);
+        var arr = [];
+        for (var i = 0; i <= length; i++) {
+            arr[i] = prompt("Enter the values of array :");
+            arr[i] = parseInt(arr[i]);
+        }
+        console.log("before sorting array :" + arr)
+        arr.sort();
+        var n = arr.length;
+        console.log("After sorting the array :" + arr)
+        console.log("Smallest Number in array is :" + arr[0])
+        console.log("Largest Number is :" +arr[n-1])
+       
+    </script>
+</body>
+</html>

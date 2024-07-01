@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration_Form</title>
+    <style>
+        .header{
+            text-align: center;
+            border: 2px solid;
+            border-radius: 10px 10px;
+            width: 400px;
+            margin: 5px auto;
+            padding: 5px;
+            font-weight: bold;
+            font-size: large;
+            background-color: darksalmon;
+            text-decoration: underline;
+        }
+        .container{
+            border: 2px solid;
+            margin: 10px;
+            padding: 10px;
+            overflow-y: scroll;
+            position: relative;
+        }
+        .personalDetails,
+        .EducationDetails,
+        .aboutYourself{
+            border: 1px solid;
+            height: 280px;
+            margin: 2px;
+            background-color: burlywood;
+        }
+        
+        .heading{
+            border: .8px solid;
+            border-radius: 10px;
+            width: 190px;
+            margin: 2px;
+            padding: 10px;
+            background-color: azure;
+        }
+        
+        
+        label{
+            display: inline-block;
+            font-weight: bold;
+            width: 150px;
+        }
+        li{
+            margin: 10px;
+            list-style-type: none;
+
+          
+        }
+        
+        .button{
+            position: relative;
+            left: 45%;
+        }
+        .footer{
+            text-align: center;
+            border: 2px solid;
+            border-radius: 10px 10px;
+            margin: 5px auto;
+            padding: 5px;
+            background-color: teal;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">STUDENT REGISTRATION FORM</div>
+        <div class="container">
+            <div class="personalDetails">
+                <div class="heading pDetail">PERSONAL-DETAILS</div>
+                <div>
+                    <ul>
+                        <li>
+                            <label for="Name">First Name:</label>
+                            <input type="text" maxlength="10" name="Name" required>
+                        </li>
+                        <li> 
+                            <label for="Name">Last Name:</label>
+                            <input type="text" maxlength="10" name="Name">
+                        </li>
+                        <li>
+                            <label for="F-Name">Father's Name:</label>
+                            <input type="text" maxlength="20" name="F-Name" required>
+                        </li>
+                        <li>
+                            <label for="M-Name">Mother's Name:</label>
+                            <input type="text" maxlength="20" name="M-Name" required>
+                        </li>
+                        <li>
+                            <label for="DOB">Date of Birth:</label>
+                            <input type="date" required>
+                        </li>
+                        <li>
+                            <label> Gender:</label>
+                            <input type="radio" name="gender" value="male" required>Male 
+                            <input type="radio" name="gender" value="female">Female
+                        </li>
+                        <li>
+                            <label>E-Mail:</label>
+                            <input type="text" name="E-Mail" required>
+                            &nbsp; &nbsp;
+                            <label>Mobile:</label>
+                            <input type="text" maxlength="10">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="EducationDetails">
+                <div class="heading eDetails">EDUCATIONAL-DETAILS</div>
+                <div>
+                    <ul>
+                        <li>
+                            <label for="quali">Qualification:</label>
+                            <select name="quals" id="">
+                                <option value="">select</option>
+                                <option value="intr">INTER</option>
+                                <option value="cbse">12-CBSE</option>
+                                <option value="diplo">DIPLOMA</option>
+                            </select>
+                            &nbsp; &nbsp; &nbsp;
+                            <label for="marks">Marks Obtained:</label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label for="course">Course Opted:</label>
+                            <select name="course" id="">
+                                <option value=""></option>
+                                <option value="engg">B.TECH</option>
+                                <option value="deg">DEGREE</option>
+                                <option value="mba">MBA</option>
+                                <option value="ba">ARTS</option>
+                            </select>
+                            &nbsp; &nbsp; &nbsp;
+                            <label for="branch">Branch Opted:</label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label for="insti">Previous Institute:</label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label for="addr" >Address:</label>
+                            <textarea cols="20" rows="3" maxlength="100"></textarea>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="aboutYourself">
+                <div class="heading about">ABOUT-YOURSELF</div>
+                <div>
+                    <ul>
+                        <li>
+                            <label for="lang">Languages Known:</label>
+                            <input type="checkbox" name="lng_eng" id="">English
+                            <input type="checkbox" name="lng_hin" id="">Hindi
+                            
+                        </li>
+                        <li >
+                            <label for="addr">Premanent Address:</label>
+                            <textarea name="" id="" cols="30" rows="5" maxlength="100"></textarea>
+                        </li>
+                    </ul>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register">
+                    <input type="submit" value="Reset">
+                </div>
+            </div>
+         </div>
+         <div class="footer"> @Copyrights 2024</div>
+</body>
+</html>

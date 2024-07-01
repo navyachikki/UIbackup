@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Registration Form</title>
+        <link rel="stylesheet" href="UserRegCss.css">
+        <script src="UserRegjs.js"></script>
+
+    </head>
+    <body>
+        <div class = "title"> Wel Come To Online User Registration form </div>
+        <ul>
+            <li>
+                <label for="userName">User Name:</label>
+                <input placeholder="User Name" type = "text" id = "userName" maxlength="10" onkeypress = "return validateSpace(event)">
+                <div class="error IdError">
+                    User Name is Mandatery
+                </div>
+            </li>
+            <li>
+                <label for="userAge">User Age:</label>
+                <input placeholder = "User Age" type = "text" id = "userAge" maxlength="2" onKeyPress="return validateNumber(event)">
+                <div class = "error ageCompValidation">
+                    User Age is Mandatery And Age Should be Greater Then Or Equale to 21 
+                </div>
+            </li>
+            <li>
+                <label for="cOption">Country Name:</label>
+                <select id="cOption" name="Country">
+
+                </select>
+            </li>
+            <li>
+                <label for="sOption">State Name:</label>
+                <select id="sOption" name="State" disabled>
+
+                </select>
+            </li>
+            <li>
+                <label for="dOption">District Name:</label>
+                <select id="dOption" name="District" disabled>
+
+                </select>
+            </li>
+            <li>
+                <input type = "button" value = "Register" onclick = "registerUser()">
+            </li>
+
+        </ul>
+        <script src="UserRegjs.js"></script>
+    </body>
+</html>

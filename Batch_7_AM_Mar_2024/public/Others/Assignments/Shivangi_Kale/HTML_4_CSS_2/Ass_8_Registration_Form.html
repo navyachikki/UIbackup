@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ass 8</title>
+    <style>
+        .header,.footer 
+        {
+            text-align: center;
+            text-decoration: underline;
+            border:1px solid;
+            padding: 10px;
+            margin:5px 0px;
+            font-size: medium;
+            font-weight: bold;
+            background-color:#4B0150;
+            color: azure;
+        }
+        .container 
+        {
+            border: 1px solid;
+            height:980px;
+            padding: 5px;
+            margin:5px 0px;
+            background-color: #F5F5F5;
+        }
+        .block 
+        {
+            border:1px solid;
+            width:1420px;
+            height:250px;
+            padding: 20px;
+            margin:25px;       
+        }
+        
+        span
+        {
+            border :2px solid;
+            padding: 13px;
+            position: absolute;
+            background-image: url(img/back6.png);
+            margin-bottom: 10px;
+        }
+        .sp1 
+        {
+            top:64px;
+            left: 69px;
+        }
+        .sp2 
+        {
+            top:380px;
+        }
+        .sp3 
+        {
+            top:700px;
+        }
+        li 
+        {
+            list-style-type: none;
+            
+        }
+        input {
+            padding: 10px;
+            } 
+        label 
+        {
+            font-weight: bold;
+        } 
+        .p1 
+        {
+            float: left;
+        }
+        .button input
+        {
+            padding: 15Spx;
+            background-color: rgb(26, 26, 36);
+            width: 140px;
+            color: aliceblue;
+            border-radius: 35px;
+            font-size: medium;
+            font-weight: bold;
+            font-style: normal;
+            font-family: 'Times New Roman', Times, serif;
+        }
+       
+        .button input:hover
+        {
+           background-color: green;
+        }
+        input:hover{
+                 border-color: #161116;
+            } 
+        
+        
+       
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+   
+    <div class="header">
+        Student Registration Page
+    </div>
+
+    <!-- MIddle Container -->
+    <form action="http://test.com/data/info/userdetails" method="get">
+    <div class="container">
+                <div class="block block1">
+                    <span class="sp1">Personal Details</span>
+                    <!-- Start class P1 -->
+                    <div class="p1">
+                    <table>
+                    <ul>
+                        <li>
+                          <tr> 
+                            <td><label for="fname">First Name</label></td>
+                            <td><input type="text" name="fname" placeholder="First Name" required></td>
+                          <tr>
+                        </li>
+
+                        <li>
+                            <tr> 
+                              <td><label for="lname">Last Name</label></td>
+                              <td><input type="text" name="lname" placeholder="Last Name" required></td>
+                            <tr>
+                        </li>
+
+                        <li>
+                            <tr> 
+                              <td><label for="age">Age</label></td>
+                              <td><input type="number" name="age" placeholder="Age" required></td>
+                            <tr>
+                        </li>
+
+                        <li>
+                            <tr> 
+                              <td><label for="coutry">Country</label></td>
+                              <td>
+                                <select>
+                                <option>India</option>
+                                <option>China</option>
+                                <option>Germany</option>
+                                <option>Canada</option>
+                                <option>France</option>
+                                <option>Spain</option>
+                                <option>Italy</option>
+                                <option>Portugal</option>  
+                              </select>
+                             </td>
+                            <tr>
+                        </li>
+
+                        <li>
+                            <tr> 
+                              <td><label for="address">Address</label></td>
+                              <td>
+                                <textarea rows="4" cols="60" placeholder="Enter Address here..."></textarea>
+                             </td>
+                            <tr>
+                        </li>
+                    </ul>
+                    </table>
+                    </div>
+                    <!-- End class P1 -->
+                    <div class="p2">
+                         <table>
+                            <ul>
+                                <li>
+                                    <tr>
+                                        <td> <label for="birthdate">DOB</label></td>                                           
+                                        <td><input type="date" name="birthdate"></td>
+                                    </tr>
+                                </li>
+                                <li>
+                                    <tr>
+                                        <td> <label for="phoneNo">Mobile No</label></td>                                           
+                                        <td><input type="number" name="phoneNo" placeholder="Mobile No"> </td>
+                                    </tr>
+                                </li>
+
+                                <li>
+                                    <tr>
+                                        <td> <label for="gender">Gender</label></td>                                           
+                                        <td>Male<input type="radio" name="gender">
+                                            Female<input type="radio" name="gender"> </td>
+                                    </tr>
+                                </li>
+                                <li>
+                                    <tr>
+                                        <td> <label for="email">Email Id</label></td>                                           
+                                        <td><input type="email" name="email" placeholder="Email Id"></td>
+                                    </tr>
+                                </li>
+                            </ul>                            
+                         </table>
+                    </div>
+                </div>
+           
+        
+                <div class="block block2">
+                    <span class="sp2">Education Details</span>
+                    <table>
+                        <ul>
+                            <li>
+                              <tr> 
+                                <td><label for="qualification">Qualification</label></td>
+                                <td><select>
+                                    <option>B.E</option>
+                                    <option>M.E</option>
+                                    <option>BCA</option>
+                                    <option>MCA</option>
+                                  </select></td>
+                              <tr>
+                            </li>
+    
+                            <li>
+                                <tr> 
+                                  <td><label for="lang">Language</label></td>
+                                  <td><input type="checkbox">English
+                                    <input type="checkbox">Hindi
+                                    <input type="checkbox">Telugu
+                                    <input type="checkbox">Marathi</td>
+                                <tr>
+                            </li>
+
+                            <li>
+                                <tr>
+                                    <td> <label for="lang">Course Opted</label></td>
+                                    <td><div><input type="radio" name="radio">UI FullStack Developer </div>
+                                       <div><input type="radio" name="radio">Backend Developer </div>
+                                       <div><input type="radio" name="radio">Salesforce Developer </div>  
+                                    </td>
+                                </tr>
+                            </li>
+                        </ul>
+                    </table>    
+
+                </div>
+            
+                <div class="block block3">
+                    <span class="sp3">About Yourself</span>
+                    <table>
+                        <tr>
+                            <td>Few words about your career</td>
+                            <td>
+                                <textarea rows="12" cols="140">
+                                    
+                                </textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                          
+                          <td class="button"><input type="submit" value="Save Details"></td>
+                        </tr>
+                    </table>
+                    
+                </div>        
+    </div>
+    </form>
+    
+     <!-- Footer -->
+    <div class="footer">
+        @Copyrights@Shivangi2024
+    </div>
+
+
+    
+</body>
+</html>

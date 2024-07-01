@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Passing Parameters from a function
+        </title>
+    </head>
+    <body>
+        <script>
+            
+            var readValues = () => { // calling function
+                var a1, a2;
+                a1 = prompt("Enter value for a1");
+                a1 = parseInt(a1); // 20
+
+                a2 = prompt("Enter value for a1");
+                a2 = parseInt(a2); // 30
+
+
+
+                doSum(a1, a2); // doSum(20, 30). // Actual parameters
+            }
+
+            var doSum = (p1, p2) => { // called function, p1 = 20, p2 = 30, formal parameters
+                var result;
+                result = p1 + p2;
+                console.log("The sum is " + result);
+            }
+            readValues();
+
+
+        </script>
+    </body>
+</html>

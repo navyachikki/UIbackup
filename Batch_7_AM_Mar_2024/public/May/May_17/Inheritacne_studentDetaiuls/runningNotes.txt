@@ -1,0 +1,46 @@
+Multilevel inheritance:
+
+    Class A {
+        ... 
+    }
+    Class B extends A {
+        ....
+    }
+
+    Class C extends B {
+        ...
+    }
+
+    --------------------
+
+OOPs:
+    Object
+    Class 
+    Inheritance
+    Data abstraction
+    data encapsulation
+    Polymorphsm - Not supported in js 
+
+    ------------
+
+    ADv js 
+        json, json with methods and prop 
+        Exception handling 
+        Closures 
+        Class 
+        OOPS 
+    ECMA 
+--------------------
+
+ECMA6 | ES 6 | ECMA 13
+
+    ECMA - 
+        Arrow functions 
+        promises 
+        Rest parameters
+        function params with defualt values 
+        rest operator 
+        shortcuts 
+        string interpolisation
+        ** operator 
+        etc... 

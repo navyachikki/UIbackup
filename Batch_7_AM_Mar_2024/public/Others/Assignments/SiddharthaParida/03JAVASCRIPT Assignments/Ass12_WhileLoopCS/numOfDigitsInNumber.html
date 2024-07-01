@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>no.of digits in a number</title>
+    </head>
+    <body>
+        <h2 style="text-align: center;">CHECK THE NUMBER OF DIGITS IN YOUR NUMBER IN THE CONSOLE TAB</h2>
+        <script>
+            var n = prompt("Enter the Number To Be Calculated");
+            n = parseInt(n);
+            var d = 0;
+            while(n >0){
+                var rem = n % 10;
+                n = n / 10;
+                n = parseInt(n);
+                if(rem>=0){
+                    d++;
+                }
+            }
+
+            console.log("The Total No.Of Digits Inthe Given Number Is :" +d);
+        </script>
+    </body>
+</html>

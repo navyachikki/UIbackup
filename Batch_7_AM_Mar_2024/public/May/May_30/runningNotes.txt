@@ -1,0 +1,13 @@
+Multi Threading
+
+Multi Tasking 
+
+Multi programming 
+
+b1 - 5s 
+
+b2 - 10s 
+
+b3 - 15 
+
+Webworkers 

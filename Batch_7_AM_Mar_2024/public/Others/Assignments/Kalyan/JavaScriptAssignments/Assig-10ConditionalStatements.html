@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional Statements</title>
+</head>
+<body>
+</body>
+<script>
+
+    var EmployeName=prompt("Enter your name ");
+    var EmployeAge=prompt("Enter your age");
+    var EmployeSalary=parseInt(prompt("Enter your salary"));
+    var EmployeGender=prompt("Enter your Gender");
+    var tax;
+        
+        if(EmployeGender==="male"){
+            if(EmployeSalary>=200000){
+                tax=EmployeSalary*15/100;
+                tax=parseInt(tax);
+                console.log("Hi "+EmployeName+" your tax amount is "+tax);
+            }
+        else if(EmployeSalary>=100000){
+                tax=EmployeSalary*10/100;
+                tax=parseInt(tax);
+                console.log("Hi "+EmployeName+" your tax amount is "+tax);
+            }
+        else if(EmployeSalary>=50000){
+                tax=EmployeSalary*5/100;
+                tax=parseInt(tax);
+                console.log("Hi, "+EmployeName+" your tax amount is "+tax);
+            }
+            else{
+                console.log("Hi, "+EmployeName+" your tax amount is 0");
+            }
+        }
+
+
+
+
+        else{
+            if(EmployeSalary>=200000){
+                tax=EmployeSalary*10/100;
+                tax=parseInt(tax);
+                console.log("Hi, "+EmployeName+" your tax amount is "+tax);
+            }
+            else if(EmployeSalary>=100000){
+                tax=EmployeSalary*5/100;
+                tax=parseInt(tax);
+                console.log("Hi, "+EmployeName+" your tax amount is "+tax);
+            }
+            
+            else{
+                console.log("Hi, "+EmployeName+" your tax amount is 0");
+            }
+        }
+</script>
+</html>
+           
+           

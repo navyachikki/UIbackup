@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Registration Form</title>
+        <style>
+            .PDetails
+            {
+                border: 1px solid;
+                width: 80%;
+                margin: 10px auto;
+                height: 330px;
+            }
+
+            .PDtl1
+            {
+                width: 30%;
+                float: left;
+            }
+            li
+            {
+                border: 1px solid;
+                margin: 5px;
+                padding: 5px;
+                list-style: none;
+            }
+            label
+            {
+                width: 150px;
+                display: inline-block;
+            }
+            #StdAdd
+            {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h3 style="text-align: center; color: blue; border: 1px solid black; padding: 2px; width: 10px auto; margin: 10px auto;">Student Registration Form</h3>
+        <ul class = "PDetails">
+            <h3 style="border: 1px solid black; padding: 2px; margin: 10px; width: 150px;">Personal Details</h4>
+            <ul class = "PDtl1">
+                <li>
+                    <label for="FName">First Name :</label>
+                    <input type="text" name = "FName" maxlength="20" required>
+                </li>
+                <li>
+                    <label for="LName">Last Name :</label>
+                    <input type="text" name = "LName" maxlength="20" required>
+                </li>
+                <li>
+                    <label for="SAge">Student Age :</label>
+                    <input type="number" name = "SAge" maxlength="2" required>
+                </li>
+                <li>
+                    <label for="CntryName">Country Name :</label>
+                    <select name="CntryName" id="">
+                        <option value="Ind">India</option>
+                        <option value="US">USA</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="CHN" selected>Chaina </option>
+                        <option value="PAK">PAKISTAN</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="SAdd" id="StdAdd">Student Address :</label>
+                    <textarea name="SAdd" cols="40" rows="5" maxlength="1000"></textarea>
+                </li>
+            </ul>
+
+            <ul class = "PDtl1">
+                <li>
+                    <label for="SBirthDt">Date Of Birth :</label>
+                    <input type="date" name = "SBirthDt" >
+                </li>
+                <li>
+                    <label for="SMobno">Mobile No :</label>
+                    <input type="number" name = "SMobno" maxlength="10">
+                </li>
+                <li>
+                    <label for="SGender">Gender :</label>
+                    <input type="radio" name="SGender"> Male
+                    <input type="radio" name="SGender"> Female
+                </li>
+                <li>
+                    <label for="SEmail">Email Address :</label>
+                    <input type="email" name = "SEmail" >
+                </li>
+            </ul>
+
+
+        </ul>
+    </body>
+</html>

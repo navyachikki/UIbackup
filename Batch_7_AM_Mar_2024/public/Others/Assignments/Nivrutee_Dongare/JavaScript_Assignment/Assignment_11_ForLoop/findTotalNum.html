@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find total number of Digit in given number</title>
+</head>
+<body>
+    <script>
+       var total = 0;
+       var n = 12390;
+       while(n > 0){
+        var rem = n % 10;
+        total = total + 1
+        n = n / 10;
+        n = parseInt(n);
+       }
+       console.log("Total digit in number is " + total);
+    </script>
+</body>
+</html>

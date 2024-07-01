@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Number of Words</title>
+</head>
+<body>
+    <script>
+        // Write a program to find out total number of words within a given string
+
+                 
+            var a = ("Words in a string are seperated by space");
+            var count = 1;
+            for(var i = 0; a[i]!= undefined; i++) {
+                
+                if(a[i] == " ") {
+                    count ++;
+                }
+            }
+            console.log("Number of words within a given string are " + count);
+            
+        /*            
+            var str = ("The sun rises in the east");
+            var splitStr=str.split(' ');
+            console.log(str);
+            console.log("Number of words within a given string are : "+splitStr.length);
+        */
+
+    </script>
+</body>
+</html>

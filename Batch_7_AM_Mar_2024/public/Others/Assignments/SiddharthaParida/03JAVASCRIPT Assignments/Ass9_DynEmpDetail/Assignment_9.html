@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment-9</title>
+    </head>
+    <body>
+        <h3 style="text-align: center;">THIS IS TO SHOW EMPLOYEE DETAILS DYNAMICALLY</h3>
+        <div>
+            please open the console tab to check the information ==>
+        </div>
+        <script>
+            var empName = prompt("Enter Employee Name");
+            var empAge = prompt("Enter Employee Age");
+            var empGender = prompt("Enter Employee Gender");
+            var empDept = prompt("Enter Department");
+            var empSalary = prompt("Enter Employee Salary");
+            empSalary = parseInt(empSalary);
+            var Pf = (14/100)*empSalary;
+            var Hra = (24/100)*empSalary;
+            var Total = empSalary + Pf + Hra;
+            console.log("Employee details " );
+            console.log("Employee Name = " + empName);
+            console.log("Employee Age = " + empAge);
+            console.log("Employee Dept = " + empDept);
+            console.log("Employee Salary = " + empSalary);
+            console.log("Employee pf = " + Pf);
+            console.log("Employee hra = " + Hra);        
+            console.log("Employee totalsalary = " + Total);
+        </script>
+    </body>
+</html>

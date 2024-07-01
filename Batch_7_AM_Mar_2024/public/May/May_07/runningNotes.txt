@@ -1,0 +1,14 @@
+Math.random() -> returns random value btwn 0 and 1
+
+Math.floor() - > convert decimal to number
+
+Match.round() -> Will round off the decimal to whole number.
+
+Max value btwn 0 to given range -> Math.random() *  max value 
+Max value btwn min to given max range -> Math.random() *  (max - min)  + min
+
+RAndom alphabet generator 
+
+97 - 122 - Lowecase char
+
+65 - 90 - Uppecase char

@@ -1,0 +1,49 @@
+.header{
+    font-size:30px;
+    color:rgb(255, 208, 0);
+    text-align: center;
+    font-weight:bold;
+}
+ul{
+    border:2px solid;
+    padding:10px;
+    margin:10px;
+    list-style: none;
+    width:500px;
+   margin:auto;
+    background-color: rgb(15, 164, 233);
+}
+ul>li{
+    border:1px solid;
+    padding:10px;
+    margin:10px;
+    background-color: rgb(125, 83, 180);
+}
+.registrationSucessful{
+    font-size:20px;
+    color:green;
+    text-align: center;
+    display:none;
+}
+.nameError,
+.mailError{
+    color:red;
+    display: none;
+}
+ol{
+    display: none;
+    border:1px solid;
+    width :300px;
+    position:absolute;
+    right:60px;
+    top:80px;
+}
+ol>li{
+    color:red;
+    margin:5px
+    
+}
+.passError{
+    color:red;
+    display: none;
+}

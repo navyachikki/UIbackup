@@ -1,0 +1,87 @@
+Lucky number:
+	Algorithm:
+
+		n = 345
+		var sum = 0;
+		var rem = n % 10 -> 345 % 10 -> 5
+		sum = sum + rem;
+		n = n /10 -> 345 / 10 - > 34
+
+
+		rem = n % 10 -> 34 % 10 -> 4
+		sum = sum + rem;
+		n = n / 10- > 34 /10 -> 3
+
+		rem = n % 10 -> 3 % 10 -> 3
+		sum = sum + rem;
+		n = n / 10 -> 3 / 10 -> 0.3 -> 0
+
+		sum -> 12
+
+----------------------
+..
+
+do while - will execute the set of instructions atleast for once, irrelevant of whether the given condition is true/false.
+
+while (condition) {
+	....
+	....
+}
+..
+
+do while Loop CS:	
+		...
+		do {
+			...
+			....
+			....
+		} while (condition);
+
+---------------
+	student is playing a Game:
+		1. come and play the game
+		2. check the score
+		3. if th score is > 100 points
+			give a chance for player to play the game again
+
+
+
+		var totalPoints = 0;
+		do {
+			come and play
+			The game
+			get totalPoints Value
+		} while (totalPoints > 100)
+
+		enter ATM center
+		put the card	
+		do {
+			show the menu
+			select the one option
+			ask for pin
+		} while (pin is valid)
+
+
+------------
+
+for, while, dowhile,   for in , for of , for each
+
+
+Case CS:
+	switch case.
+
+
+	Syntax:
+
+		switch (uservariable) :
+			case 'option1':
+				...
+				break;
+			case 'option 2':
+				...
+				break;
+			case 'option 3':
+				....
+
+			default:
+				....

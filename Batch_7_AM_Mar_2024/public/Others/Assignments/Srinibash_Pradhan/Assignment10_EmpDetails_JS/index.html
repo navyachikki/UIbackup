@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment10</title>
+  </head>
+  <body>
+    <h3>Employee Details</h3>
+    <script>
+      var ename, eage, eid, ebs, pf, hra, depart, Total, egender;
+
+      ename = prompt("Enter the Employee name: ");
+      eid = prompt("Enter the Id of the Employee: ");
+      eage = prompt("Enter the age: ");
+      egender = prompt("Enter the Gender: ");
+      depart = prompt("Enter the Department: ");
+      ebs = prompt("Enter the basic salary: ");
+      ebs = parseInt(ebs);
+
+      pf = (14 * ebs) / 100;
+      hra = (24 * ebs) / 100;
+
+      Total = ebs + pf + hra;
+
+      console.log("Employee Name " + ename);
+      console.log("Employee ID " + eid);
+      console.log("Employee Age " + eage);
+      console.log("Employee Gender " + egender);
+      console.log("Department " + depart);
+      console.log("Basic Salary " + ebs);
+      console.log("PF " + pf);
+      console.log("HRA " + hra);
+      console.log("Total Salary = " + Total);
+
+      if (egender == "male") {
+        if (Total >= 200000) {
+          console.log("Tax is = " + Total * 0.15);
+        } else if (Total >= 100000) {
+          console.log("Tax is = " + Total * 0.1);
+        } else if (Total >= 50000) {
+          console.log("Tax is = " + Total * 0.05);
+        } else {
+          console.log("there is no tax");
+        }
+      } else if (egender == "female") {
+        if (Total >= 200000) {
+          console.log("Tax is = " + Total * 0.1);
+        } else if (Total >= 100000) {
+          console.log("Tax is = " + Total * 0.05);
+        } else {
+          console.log("there is no tax");
+        }
+      }
+    </script>
+  </body>
+</html>

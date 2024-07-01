@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var msg = "Hello every one";
+            console.log(msg);
+            console.log(msg[2]);
+            console.log(msg.length);
+
+            console.log(msg.charAt(2));
+            console.log(msg.charCodeAt(2));
+            console.log(msg.includes("every")); // returns true/false
+            console.log(msg.substr(2, 5));// start at 2nd index and find 5 char from there
+            console.log(msg.substring(2, 5)); // starts at 2nd position, ends at 5th position
+            console.log(msg.slice(2, 5));
+
+            
+
+            var m1 = "Hello ";
+            var m2 = "TEST";
+            console.log(m1.concat(m2));
+            console.log(msg.indexOf("every"));
+            console.log(msg.replace("every", "test"));
+            console.log(msg.replace(' ', '@@'));
+            console.log(msg.replace(/ /g, '@@'));
+
+            console.log(msg.toLowerCase());
+            console.log(msg.toUpperCase());
+            
+            console.log(msg.split(''));
+
+        </script>
+    </body>
+</html>!

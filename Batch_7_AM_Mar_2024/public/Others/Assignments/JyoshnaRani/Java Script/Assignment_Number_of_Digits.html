@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Number of digits</title>
+</head>
+<body>
+    <script>
+
+        
+        var number;
+        number= prompt("Enter a Number");
+        number=parseInt(number);
+        var counter=0;
+        while(number>0){
+
+            var remainder=number%10;
+            counter++;
+            number=number/10;
+            number=parseInt(number);
+
+        }
+        console.log("no of digits: "+counter);
+    </script>
+    
+</body>
+</html>

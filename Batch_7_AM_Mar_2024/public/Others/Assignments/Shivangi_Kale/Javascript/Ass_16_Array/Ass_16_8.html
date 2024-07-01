@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Palindrome number within an array</title>
+    <style>
+        h2{
+            text-align: center;
+            color: rgb(208, 19, 19);
+            text-decoration: double;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+    </style>
+</head>
+<body bgcolor="lightyellow">
+    <h2>Display Palindrome number within an array</h2>
+    <script>
+      
+    var checkPalindrome = (arr) =>
+    {
+      
+        for(var i=0;i<arr.length;i++)
+        {  
+                var num=arr[i];
+                var original=num;
+                var appendrem='';
+                while(num!=0)
+                {
+                    var rem=num%10;
+                    appendrem=appendrem+rem;
+                    num=num/10;
+                    num=parseInt(num);
+                }
+                if(appendrem==original)
+                {
+                    console.log(appendrem+" is Palindrome number");
+                }
+                else{
+                    console.log(appendrem+" is not Palindrome number");
+                }
+        }
+    }
+
+    var arr=[121,123,111,222,321];  
+    checkPalindrome(arr);
+
+
+      
+    </script>
+    
+</body>
+</html>

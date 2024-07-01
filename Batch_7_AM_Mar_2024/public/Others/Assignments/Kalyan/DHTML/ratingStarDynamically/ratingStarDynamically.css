@@ -1,0 +1,28 @@
+.productContainer{
+    border:1px solid;
+    text-align: center;
+}
+#productDetailsul{
+    list-style: none;
+    border:1px solid ;
+    width:200px;
+    padding:10px;
+}
+ul>li{
+    padding:5px;
+    margin:5px;
+    text-decoration:underline 1px solid orange;
+    
+}
+img{
+    height:80px;
+    width:120px;
+}
+.actualprice{
+    color:red;
+    font-size:medium
+}
+.discountprice{
+    color:green;
+    font-size: larger;
+}

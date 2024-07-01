@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Largest Value</title>
+</head>
+<body>
+    <script>
+        // Write a program to find out the second largest value from the given array
+
+            var length = prompt("Enter the length of an Array")
+            length = parseInt(length);
+            var arr = [];
+            for (var i = 0; i <= length; i++) {
+                arr[i] = prompt("Enter the values of an array");
+                arr[i] = parseInt(arr[i]);
+            }
+            console.log(arr);
+            
+            for(var i = 0; i < arr.length-1; i++)
+            {
+                 for(var j = i+1; j < arr.length; j++)
+                {
+                    if(arr[i]<arr[j])
+                    {
+                        var temp = arr[j];
+                         arr[j] = arr[i];
+                         arr[i] = temp;
+                    }
+                 }
+            }
+             console.log("Second Largest Element in An Array is " + arr[1]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employeee Pay slip Generator</title>
+    <style>
+      ul {
+        border: 1px solid;
+        width: 500px;
+        margin: 30px auto;
+      }
+      li {
+        list-style: none;
+        border: 1px solid #ccc;
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Employee Details</h3>
+    <ul>
+      <li>
+        Employee name :
+        <span id="empname"></span>
+      </li>
+      <li>Gender: <span id="empgender"></span></li>
+      <li>PF : <span id="empPf"></span></li>
+      <li>HRA : <span id="emphra"></span></li>
+      <li>TotalSal : <span id="empTotalSal"></span></li>
+      <li>TAx : <span id="empTax"></span></li>
+    </ul>
+    <script>
+      var empDetails = {
+        name: "",
+        gender: "",
+        readEmployeeDetails() {
+          empDetails.name = prompt("enter employee name");
+          this.gender = prompt("enter employee gender");
+          this.basicSal = parseInt(prompt("enter basic sal"));
+          empDetails.getPFAndHra();
+        },
+
+        getPFAndHra() {
+          this.pf = (this.basicSal * 12) / 100;
+          this.hra = (this.basicSal * 24) / 100;
+          this.totalSal = this.pf + this.basicSal + this.hra;
+          this.getTotalTax();
+        },
+
+        getTotalTax() {
+          this.taxpercent = 0;
+          if (this.gender == "Male") {
+            if (this.totalSal >= 200000) {
+              this.taxpercent = 15;
+            }
+          } else {
+            if (this.totalSal >= 100000) {
+              this.taxpercent = 10;
+            }
+          }
+        },
+        
+        displayEmployeeDetails()
+         {
+            this.readEmployeeDetails();
+
+            document.querySelector("#empname").innerText = this.name;
+            document.querySelector("#empgender").innerText = this.gender;
+            document.querySelector("#empPf").style.color = "green";
+            document.querySelector("#empPf").innerText = this.pf;
+            document.querySelector("#emphra").innerText = this.hra;
+            document.querySelector("#empTotalSal").innerText = this.totalSal;
+            document.querySelector("#empTax").innerText = this.taxpercent;
+        },
+      };
+
+      empDetails.displayEmployeeDetails();
+    </script>
+  </body>
+</html>

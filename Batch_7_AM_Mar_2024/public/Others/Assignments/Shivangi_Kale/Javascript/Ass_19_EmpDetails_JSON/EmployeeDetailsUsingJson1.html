@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details using JSON </title>
+</head>
+<body>
+    <script>
+        // data is present already
+      /* var empDetails = {
+            name : "Shivangi",
+            age: 23,
+            gender :"Female",
+            department : "IT",
+            basicSal :25000
+        };
+
+        empDetails.pf=14/100 * empDetails.basicSal ;
+        empDetails.hra = 25/100 * empDetails.basicSal;
+        empDetails.total=empDetails.basicSal + empDetails.pf + empDetails.hra;
+    
+
+        console.log("Employee Name : "+empDetails.name);
+        console.log("Age : "+empDetails.age);
+        console.log("Gender : "+empDetails.gender);
+        console.log("Department : "+empDetails.department);
+        console.log("Basic Salary : "+empDetails.basicSal);            
+        console.log("Total Salary : "+empDetails.total); 
+    
+
+        for(var temp in empDetails)
+        {
+            console.log(temp+" "+empDetails[temp]);
+        }
+        */      
+        
+      
+
+        // User define data 
+        var empdetails = {
+
+            readEmployee()
+           {
+                empdetails.name = prompt("Enter Name : ");
+                empdetails.age=prompt("Enter age : ");
+                empdetails.gender = prompt("Enter gender :");
+                empdetails.departmemt =prompt("Enter Departemt");
+                empdetails.basicSal =prompt("Enter Basic Salary");
+                empdetails.calculateTotalSal();
+           },
+
+           calculateTotalSal()
+            {
+                empdetails.pf=14/100 * empdetails.basicSal ;
+                empdetails.hra = 25/100 * empdetails.basicSal;
+                empdetails.total=parseInt(empdetails.basicSal) +parseInt(empdetails.pf) + parseInt(empdetails.hra);
+                empdetails.showEmployee();
+            },
+
+            calculateTax()
+            {
+                var empGender=empdetails.gender; //convert user given gender into lower case
+                empGender = empGender.toLowerCase();
+                var tax=0;
+                    if(empGender == 'male')
+                    {
+                        if(empdetails.total >= 250000)
+                        {
+                            tax=(20 * empdetails.basicSal)/100;
+                            console.log("You have to pay tax : "+tax);
+                        }
+                        else if(empdetails.total >= 150000)
+                        {
+                            tax=(15 * empdetails.basicSal)/100;
+                            console.log("You have to pay tax : "+tax);
+                        }
+                        else if(empdetails.total >= 10000)
+                        {
+                            tax=(5 * empdetails.basicSal)/100;
+                            console.log("You have to pay tax : "+tax);
+                        }
+                        else 
+                        {
+                            console.log("No need to pay tax...... ");
+                        }
+                    }
+                    else
+                    {
+                        if(empdetails.total >= 250000)
+                        {
+                            tax=(10 * empdetails.basicSal)/100;
+                            console.log("You have to pay tax : "+tax);
+                        }
+                        else if(empdetails.total >= 150000)
+                        {
+                            tax=(5 * empdetails.basicSal)/100;
+                            console.log("You have to pay tax : "+tax);
+                        }
+                        else 
+                        {
+                            console.log("No need to pay tax...... ");
+                        }
+ 
+                    }                  
+                          
+            },
+
+            showEmployee()
+            {
+                console.log("----------EMPLOYEE DETAILS---------");
+               
+                    console.log("Employee Name : "+empdetails.name);
+                    console.log("Age : "+empdetails.age);
+                    console.log("Gender : "+empdetails.gender);
+                    console.log("Department : "+empdetails.department);
+                    console.log("Basic Salary : "+empdetails.basicSal);            
+                    console.log("Total Salary : "+empdetails.total);
+                
+                empdetails.calculateTax();            
+            }
+
+
+
+        };
+   
+        
+       empdetails.readEmployee();
+
+    </script>
+</body>
+</html>

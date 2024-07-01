@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To find out Lucky number of a given number</title>
+    <style>
+        h2{
+            text-align: center;
+            color:rgb(121, 242, 45);
+            text-decoration: double;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>To find out Lucky number of a given number</h2>
+    <script>
+
+        var num=parseInt(prompt("Enter any number : "));
+        var sum=0;
+        while(num>0)
+        {
+            var rem=num%10;
+            sum=sum+rem;
+            num=num/10;
+            num=parseInt(num);
+
+            if(num==0 && sum>9)
+            {
+                num=sum;
+                sum=0;
+            }
+        }
+        console.log(sum);
+      
+    </script>
+    
+</body>
+</html>

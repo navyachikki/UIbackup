@@ -1,0 +1,21 @@
+ul {
+    border: 1px solid;
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+li {
+    list-style: none;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+}
+
+.themeBlock {
+    text-align: right;
+}
+
+h3 {
+    text-align: center;
+    color: green;
+}

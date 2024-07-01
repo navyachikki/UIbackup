@@ -1,0 +1,174 @@
+/* body {
+    background-image: url("../Images/bodyBackground.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+} */
+.heading {
+    text-align: center;
+    font-size: 35px;
+    margin: 25px 0;
+    font-weight: bold;
+    color: #2f568b;
+}
+p {
+    margin: 5px;
+    font-size: 16px;
+}
+#forgotpswd {
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#forgotpswd:hover {
+    text-decoration: underline;
+}
+.logoimg {
+    background-image: url("../Images/signInBackground.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    border-radius: 15px;
+    width: 50%;
+    height: 450px;
+    overflow: hidden;
+    box-shadow: 0 0 5px #6a7dc1;
+    margin: 0 auto;
+    margin-top: 120px;
+
+}
+.singInDetails {
+    text-align: center;
+    background-color: white;
+    list-style-type: none;
+    padding: 10px;
+    width: 55%;
+    margin: 0;
+    height: 450px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+}
+#userImage,
+#passwordImage {
+    width: 20px;
+    height: 20px;
+}
+.userPassword,
+.userId {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 80%;
+    height: 30px;
+    margin: 0px auto;
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    border: none;
+}
+#userId,
+#userPassword {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    margin-left: 5px;
+}
+.userId input,
+.userPassword input {
+    border: none;
+    background: transparent;
+    font-size: 18px;
+}
+#btn {
+    background-image: linear-gradient(#6473af, #4a5789);
+    width: 150px;
+    height: 45px;
+    border-radius: 150px;
+    margin-top: 30px;
+    border: 1px solid;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+.othersignin {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin: 0 5px;
+    margin-bottom: 15px;
+}
+.signup {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+.signup h1 {
+    margin-top: 150px;
+}
+.signup p {
+    font-size: 18px;
+}
+#signupbtn {
+    background-color: transparent;
+    width: 150px;
+    height: 45px;
+    border-radius: 150px;
+    margin-top: 30px;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+#signupbtn:hover {
+    box-shadow: 0 0 10px white;
+    cursor: pointer;
+    border: none;
+}
+#btn:hover,
+.singInDetails,
+.othersignin:hover,
+.userPassword:hover,
+.userId:hover {
+    box-shadow: 0 0 10px grey;
+    cursor: pointer;
+    border: none;
+}
+#userId:focus,
+#userPassword:focus {
+    outline: none;
+}
+#btn:active {
+    background-image: linear-gradient(#2a4b7a, #264166);
+}
+#signupbtn:active {
+    opacity: 0.2;
+}
+.facebook {
+    background-color: #1877F2;
+    color: white;
+}
+.google {
+    color: red;
+}
+.linkedin {
+    background-color: #0077B5;
+    color: white;
+}
+.showpassword {
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+#shwpswd {
+    margin: 10px;
+
+}

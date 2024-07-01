@@ -1,0 +1,25 @@
+<script>
+    var getDetails =  () => {
+        var name = prompt("enter the name:");
+        var age = prompt("enter the age:");
+        var gender = prompt("enter the gender:");
+        var dep = prompt("enter departmnet");
+        var salary = parseInt(prompt("enter the basic salary"));
+        var pf = (salary*14)/100;
+        var hra = (salary*24)/100;  
+        var T_salary = total(salary,pf,hra);
+        showDetails(name,age,gender,dep,T_salary);
+    }
+    var total = (salary,pf,hra) => {
+        var totalsal =salary + pf + hra;
+        return totalsal;
+    }
+    var showDetails  = (name,age,gender,dep,T_salary) => {
+        console.log("name:" +name);
+        console.log("age:" +age);
+        console.log("gender:" +gender);
+        console.log("dep:" +dep);
+        console.log("total Salary:" +T_salary);
+    }
+    getDetails();
+</script>

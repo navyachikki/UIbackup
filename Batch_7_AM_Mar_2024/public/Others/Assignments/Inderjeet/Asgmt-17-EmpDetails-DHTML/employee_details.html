@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
+</head>
+<body>
+    <h1>EMPLOYEE SALARY DETAILS</h1>
+    <div class="parent">
+        <ul>
+            <li>
+                <input type="text" id="empName" placeholder="Enter Employee Name">
+                <div class="nameErr">
+                    Name is Required
+                </div>
+            </li>
+            <li>
+                <input type="text" id="empAge" placeholder="Enter Employee Age">
+            </li>
+            <li>
+                <input type="text" id="empSalary" placeholder="Enter Salary">
+            </li>
+            <li>
+                <input type="radio" name="gender" checked>  Male <input type="radio" name="gender">  Female
+            </li>
+            <li>
+                <select id="empDpt">
+                    <option value="Select" selected>Select Department</option>
+                    <option value="HR">HR</option>
+                    <option value="IT">IT</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Marketing">Marketing</option>
+                </select>
+            </li>
+            <li>
+                <input type="button" value="Get Slip" onclick="obj.getDetails()" id="btn">
+            </li>
+        </ul>
+    </div>
+    <div class="display parent">
+        <h2>Employee Annual Salary</h2>
+          <ul>
+            <li>
+                Employee Name : <span id="dname"></span>
+            </li>
+            <li>
+                Employee Age : <span id="dage"></span>
+            </li>
+            <li>
+                Employee Department : <span id="dempdpt"></span>
+            </li>
+            <li>
+                Employee Total Salary : <span id="dtotal"></span>
+            </li>
+          </ul>
+    </div>
+</body>
+</html>

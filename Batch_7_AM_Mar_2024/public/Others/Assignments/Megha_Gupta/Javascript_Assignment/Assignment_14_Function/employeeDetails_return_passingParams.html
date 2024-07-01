@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+           var readEmpDetails = () => {
+            var empname,empBasicSal,eGender;
+                empname = prompt("enter employee name");
+                empBasicSal = prompt("enter basic sal");
+                empBasicSal = parseInt(empBasicSal);
+                eGender = prompt("Enter Gender");
+                var etotalSal = getTotalSal(empBasicSal);
+                var etotalTax = getTotalTax(eGender,etotalSal);
+                displayEmpDetails(empname,empBasicSal,eGender,etotalSal,etotalTax);
+            }
+
+            var getTotalSal = (empBasicSal) => {
+                epf = (empBasicSal * 12 ) / 100;
+                ehra = (empBasicSal * 24 ) / 100;
+                etotalSal = empBasicSal + epf + ehra;
+                return etotalSal;
+            }
+
+            var getTotalTax = (eGender,etotalSal) => {
+                var taxPercent = 0;
+                if (eGender == 'Male') {
+                    if (etotalSal >= 200000) {
+                        taxPercent = 10;
+                    } else {
+                        taxPercent = 5;
+                    }
+                } else { // Female
+                    if (etotalSal >= 200000) {
+                        taxPercent = 5;
+                    }
+                }
+                etotalTax = (etotalSal * taxPercent) / 100;
+                return etotalTax;
+            }
+
+            var displayEmpDetails = (empname,empBasicSal,eGender,etotalSal,etotalTax) => {
+               
+                console.log("Emp Details");
+                console.log("Emp name "  + empname);
+                console.log("Emp basicsal "  + empBasicSal);
+                console.log("Emp Gender "  + eGender);
+                console.log("Total sal " + etotalSal);
+                console.log("Tax to be paid " + etotalTax);
+            }
+
+            readEmpDetails();
+        </script>
+    </body>
+</html>
+
+

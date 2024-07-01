@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image</title>
+    <style>
+      h2 {
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        text-decoration: underline;
+        background-color: #0077b6;
+        color: #001524;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      .block > li {
+        list-style: none;
+        border: 1px solid;
+        height: 150px;
+        margin: 10px;
+        padding: 10ox;
+        background-color: #a2d2ff;
+      }
+      .emp {
+        width: 400px;
+        font-weight: bold;
+      }
+      .image,
+      .emp {
+        float: left;
+      }
+      .image {
+        height: 100px;
+        width: 100px;
+        background-image: url(empimg.png);
+      }
+      .emp li {
+        margin: 10px;
+        list-style: none;
+      }
+      .emp1 {
+        background-position: -43px -12px;
+      }
+      .emp2 {
+        background-position: -80px -202px;
+      }
+      .emp3 {
+        background-position: -378px -13px;
+      }
+      .emp4 {
+        background-position: -319px -198px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Employee Details</h2>
+    <ul class="block">
+      <li>
+        <div class="image emp1"></div>
+        <div class="emp">
+          <ul>
+            <li>Name:Mahira</li>
+            <li>Age:22</li>
+            <li>Department:CSE</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="image emp2"></div>
+        <div class="emp">
+          <ul>
+            <li>Name:Ramesh</li>
+            <li>Age:23</li>
+            <li>Department:Mechaical</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="image emp3"></div>
+        <div class="emp">
+          <ul>
+            <li>Name:Suresh</li>
+            <li>Age:23</li>
+            <li>Department:Civil</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="image emp4"></div>
+        <div class="emp">
+          <ul>
+            <li>Name:Sunit</li>
+            <li>Age:21</li>
+            <li>Department:CSE</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>

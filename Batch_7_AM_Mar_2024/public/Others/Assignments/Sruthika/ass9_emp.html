@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Java Script</h2>
+
+    <script>
+      var ename = prompt("Enter the Employee name");
+      var eage = prompt("Enter employee Age");
+      var basicSal = prompt("Enter Basic Salary");
+      basicSal = parseInt(basicSal);
+      var pf = (basicSal * 4) / 100;
+      var hra = (basicSal * 24) / 100;
+      var totalSal = pf + hra + basicSal;
+
+      console.log("EMPLOYEE DETAILS");
+      console.log("Name of the Employee : " + ename);
+      console.log("Age of the Employee :" + eage);
+      console.log("Basic Salary of the Employee : " + basicSal);
+      console.log("The total salary is :" + totalSal);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            h1, p {
+                text-align: center;
+                margin: 5px;
+                padding: 5px;
+            }
+            p {
+                font-size: 20px;
+                margin-top: 30px;
+            }
+            span {
+                color: blue;
+                font-size: 25px;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Given Number Is Palindrome Or Not - While Loop C.S. - JavaScript</h1>
+            <p>For More Information Please See <span>Console</span> Tab In <span>Inspect Element</span> !</p>
+            <p>View Source Code For Better Understanding</p>
+        </div>
+        <script>
+            var inp = prompt("Enter A Number");
+            var rev = 0;
+            var i = inp;
+            while (i > 0) {
+                var digit = i % 10;
+                    rev = rev * 10 + digit;
+                    i = parseInt(i / 10);
+            }
+            if (rev == inp) {
+                console.log(inp + " The Number Is Palindrome");
+                alert(inp + " The Number Is Palindrome")
+
+            } else {
+                console.log(inp + " The Number Is Not Palindrome");
+                alert(inp + " The Number Is Palindrome")
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Swapping value</title>
+    </head>
+    <body>
+        <h2>Swapping value:</h2>
+        <script>
+            //first method 
+
+         /*  let a = 90;
+           let b = 60;
+           console.log(a);
+           console.log(b);
+
+           let c;
+           c = a ;
+           a = b ;
+           b = c ;
+
+           console.log("Swapping value:"+ a);
+           console.log("Swapping value:"+ b);*/
+
+          // 2nd method Using Arithmetic Operators
+            
+         /* let a = 90;
+          let b = 60;
+          console.log(a);
+          console.log(b);
+          
+          a = a+b;
+          b = a-b;
+          a = a-b;
+
+          console.log("Swapping value is:"+a);
+          console.log("Swapping value is:"+b);*/
+
+         // 3rd method Using es6
+
+         let a = 90;
+         let b = 60;
+         console.log(a);
+         console.log(b);
+
+         [a , b] = [b , a];
+
+         console.log("Swapping value" + a);
+         console.log("Swapping value"+b);
+
+        </script>
+       
+        
+    </body>
+</html>

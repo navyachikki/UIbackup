@@ -1,0 +1,97 @@
+        
+        body{
+            background-color: #EBF5FB ;
+        }
+        
+        ul 
+        {
+            margin-left: 20px;
+            margin-top: 70px;
+            padding: 10px;
+            border: 1px solid;
+            width: 600px;
+            height: 400px;
+            background-image: url("back6.png");    
+        }
+        li
+        {
+            list-style-type: none;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid ;
+            /* background-color: #EAF2F8 ; */
+            background-color: white;
+            border-radius: 7px;
+        }
+        #buttonId
+        {
+            margin: 10px;
+            padding: 10px;
+            position:absolute;
+            left: 282px;   
+            background-color:#0E46A3;
+            ;
+            color: white;
+            font-weight: bold;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    
+        }     
+       
+        input 
+        {           
+            font-style: italic;
+            border: none;
+            padding: 4px;          
+        }
+        li:hover{
+           /* border-color:darkorange; */
+           border-color:#8696FE;
+        }
+        input:hover{
+            border:none;
+         }
+        
+        h3
+        {
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           
+        }
+        .msg {
+            text-align: center;
+            color: green;
+            font-size: 20px;
+            display: none;
+        }
+       
+        span{
+            margin-left: 10px;
+        }
+     
+       
+       .error 
+       {
+        color:red;
+        font-size: 15px;
+        display: none;
+       }
+
+       .pwdValidationList {
+        position: absolute;
+        top: 159px;
+        border: 1px solid;
+        left: 697px;
+        display: none;
+        background-color: white;
+        }
+    
+    .pwdValidationList li {
+        color: red;
+        border: none;
+    }
+
+    .validated {
+        font-weight: bold;
+        color: green !important;
+    }
+   

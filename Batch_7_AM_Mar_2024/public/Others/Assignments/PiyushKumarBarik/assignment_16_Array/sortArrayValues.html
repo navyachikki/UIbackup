@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SORT ARRAY VALUES USING SWAPPING LOGIC IN INCREASING ORDER</title>
+  </head>
+  <body>
+    <script>
+      var array = [];
+      var arrayLength = parseInt(prompt("Enter array length"));
+      for (let i = 0; i < arrayLength; i++) {
+        array[i] = parseInt(prompt("Enter values one by one"));
+      }
+      for (i = 0; i < arrayLength; i++) {
+        for (j = i + 1; j < arrayLength; j++) {
+          if (array[i] > array[j]) {
+            var temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+          }
+        }
+      }
+      console.log(array);
+    </script>
+  </body>
+</html>

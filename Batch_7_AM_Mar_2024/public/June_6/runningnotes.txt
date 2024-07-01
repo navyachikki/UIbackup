@@ -1,0 +1,31 @@
+HTML
+CSS 
+JS 
+Adv js 
+jquery 
+handlebar 
+AJAX 
+HTML5
+CSS3 
+ECMA 
+New TEch
+---------------
+
+UI Frontend - Fullstack
+
+backed + frontend 
+
+backend ->
+    webserver -> Node js 
+
+     +
+    Database -> Mongodb 
+
+-----------------------
+
+Webserver roles:
+    1. Capable of iteracting with external database servers 
+    2. It is capble of holding resources(pdf, css, js, ), which can be accessable within a network.
+    3. Capable of running webservices within it, which can be invoked by client for getting response
+
+

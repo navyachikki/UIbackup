@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee details passing parameters</title>
+</head>
+<body>
+    <script>
+        var empDetails = () => {
+            var Ename = prompt("enter name of student");
+            var Eage = prompt("enter the age of student");
+            var Egender = prompt("enter the gender ");
+            var Edept = prompt("enter the dept of student");
+            var basicSal = parseInt(prompt("enter Basic Salary"));
+
+            var pf = (basicSal * 14) / 100;
+            var hra = (basicSal * 24) / 100;
+            var amount = total(basicSal, pf, hra);
+            getDetails(Ename, Eage, Egender, Edept, amount);
+        }
+
+        var total = (basicSal, pf, hra) => {
+            var totalSal = basicSal + hra + pf;
+            return totalSal;
+        }
+
+        var getDetails = (Ename, Eage, Egender, Edept, amount) => {
+            console.log("Employee details");
+            console.log("Employee name is " + Ename);
+            console.log("Employee Age is " + Eage);
+            console.log("Employee gender is " + Egender);
+            console.log("Employee dept is " + Edept);
+            console.log("Employee basicSal is " + amount);
+        }
+        
+        empDetails();
+    </script>
+</body>
+</html>

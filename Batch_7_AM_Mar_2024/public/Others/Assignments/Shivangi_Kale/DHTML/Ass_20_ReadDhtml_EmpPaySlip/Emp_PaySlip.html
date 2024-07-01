@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Data</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="empData1.js"></script>
+</head>
+<body>
+   <ul id="u1">
+    <h3>Employee Details</h3>
+        <li>
+            <input type="text" id="nameId" placeholder="Name" onkeypress="return getEmpDetails.validateName(event);">
+            <div class="nameError error">
+                Name is mandatory !
+            </div>
+        </li>
+        <li>
+            <input type="text" id="ageId" placeholder="Age" maxlength="2" onkeypress="return getEmpDetails.validateAge(event);">
+            <div class="ageError error">
+                Age is mandatory !
+            </div>
+        </li>
+        <li>
+            Male<input type="radio" value="Male" name="gender" checked>
+            Female<input type="radio" value="Female" name="gender">
+        </li>
+        <li>
+            Department
+            <select name="departments" id="departmentId">
+                <option value="IT">IT</option>
+                <option value="Finance">Finance</option>
+                <option value="Banking">Banking</option>
+                <option value="Insurance">Insurance</option>
+              </select>
+            
+        </li>
+        <li>
+            <input type="text" id="basicSalId" placeholder="Basic Salary">
+            <div class="bsError error">
+                Basic Salary is mandatory !
+            </div>
+        </li>      
+      
+            <input type="button" id="buttonId" value="Generate PaySlip" onclick="getEmpDetails.readData()">
+       
+      
+       
+        
+   </ul>
+
+   <ul id="u2">
+    <h3>Employee PaySlip</h3>
+       
+            <li>Name <span id="nameId2"></span></li>    
+            <li>Age <span id="ageId2"></span></li>
+            <li>Gender <span id="genderId2"></span></li>       
+            <li>Department <span id="departmentId2"></span></li>       
+             <li>Basic Salary <span id="basicSalId2"></span></li>
+             <li>Total Salary <span id="totalSalId2"></span></li>
+             <li><u> <span id="taxId2"></span></u></li>          
+        
+   </ul>
+
+
+</body>
+</html>

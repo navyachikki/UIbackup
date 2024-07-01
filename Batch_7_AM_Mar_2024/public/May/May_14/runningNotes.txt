@@ -1,0 +1,43 @@
+HTML
+CSS 
+Core js 
+Dhtml 
+AJAX
+Templating 
+
+---------
+
+Adv JS 
+    exceptional handling 
+        userdefined and system defined exceptions 
+        Closures 
+
+    Exception / Error
+        Compilation -> both converting to system understandable language + error checking
+
+        Execution 
+
+ECMA6 
+
+Runtime Exceptions / Exception Handling:
+
+    try
+    catch 
+    finally
+    throw
+    throws
+
+        Syntax:
+
+            try {
+                ....
+                .... 
+                ... set of instructiosn in which there is a chance of getting erros.
+            } catch(error) {
+                ...
+                ...
+                 //set of instructions to handle exception been raised under try block.
+            } finally {
+                .... 
+                ... //optional block which for sure executes, irrelevant of whether the exception been raised or not
+            }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION-5</title>
+</head>
+<body>
+    <script>
+        var length = parseInt(prompt("Enter the length of the Array :"));
+        var arr = [];
+        for(var i = 0; i <= length; i++){
+            arr[i]=parseInt(prompt("Enter array elements at index "+i+" : "));
+        }
+       
+        for ( var j = 0; j < arr.length; j++){
+            var flag;
+            var num=arr[j];
+            for(var k=2; k<num; k++)
+            {
+                if(num % k == 0)
+                {
+                    flag=true;
+                    break;
+                }
+                else{
+                    flag=false;
+                }
+            }
+            
+            if(flag==true)
+            {
+                console.log(num+" Not Prime Number");            
+            }
+            else{
+                console.log(num+" Prime Number"); 
+            }
+        }
+    </script>
+</body>
+</html>

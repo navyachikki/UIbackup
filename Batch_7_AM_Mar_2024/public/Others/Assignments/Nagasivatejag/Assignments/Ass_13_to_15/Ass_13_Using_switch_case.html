@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch case</title>
+</head>
+<body>
+    <h3> Using Switch case </h3>
+    <script>
+
+        var option = prompt("Choose opiton sumofnumber/ luckynumber/ reverseofnumber/ palindrome");
+
+        switch (option) {
+            case 'sumofnumber' :
+                   var num = prompt("Enter a value ");
+                       num = parseInt(num);
+        
+                   var sum = 0;
+
+             while (num != 0) {
+
+                       sum = sum + 1;
+                       num = num / 10;
+                       num = parseInt(num);
+
+                  }
+
+                 console.log("Total digit of given number = " + sum);
+             break;
+
+            case 'luckynumber' :
+
+                   var n = prompt("Enter a number");
+                       n = parseInt(n);
+                   var sum = 0;
+                   var rem;
+
+             while (n > 0) {
+                       rem = n % 10;
+                       sum = sum + rem;
+                       n = n / 10;
+                       n = parseInt(n);
+
+             if (n == 0 && sum > 9) {
+                       n = sum;
+                       sum = 0;
+                   }
+                 }
+
+                 console.log("Your Lucky Number is " + sum);
+             break;
+                
+            case 'reverseofnumber' :
+
+                   var value = prompt("Enter a number");
+                       value = parseInt(value);
+                   var rev = 0;
+                   var rem;
+
+             while (value > 0) {
+                       rem = value % 10;
+                       rev = (rev * 10) + rem;
+                       value = value / 10;
+                       value = parseInt(value);
+
+                 }
+                 console.log("The revrese of a given number = " + rev);
+             break;
+
+            case 'palindrome' :
+
+                       number = prompt("Enter a number");
+                       number = parseInt(number);
+
+                   var rev = 0;
+                   var n = number;
+
+             while (n > 0) {
+                       rem = n % 10;
+                       rev = (rev * 10) + rem;
+                       n = n / 10;
+                       n = parseInt(n);
+                 }
+
+             if (rev == number) {
+
+                 console.log(number + " is a palindrome number");
+
+             } else {
+
+                 console.log(number + " is not a palindrome number");
+
+             }
+
+             break;
+
+             default :
+                 console.log("You choose wrong option");
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+Varialble Hoisting:
+
+
+    variable declartion in c, c++ etc. 
+
+        C:
+            void main() {
+                int a;
+                float b;
+                char c;
+                ..
+                ...
+                ...
+                ...
+                int total;
+            }
+
+    -----------------
+
+    var a = 90;
+    var name = 'Prasad'
+    ..
+    ..
+    ..
+    console.log("heello")
+    ..
+    var total = 90;
+    console.log("TEst")
+    var max = 100
+    var avg;
+    ...
+    typeof(a)
+    ............................
+
+    var a, name, total, max, avg;
+
+    a = 90;
+    name = 'Prasad'
+    ..
+    ..
+    ..
+    console.log("heello")
+    ..
+    total = 90;
+    console.log("TEst")
+    max = 100
+    avg;
+    ...
+    typeof(a)
+
+
+------------------------------------------------------------
+
+control Structures:
+
+    conditional CS 
+
+        if 
+        if else 
+        nested if 
+        nested if else 
+        else if 
+
+    Looping CS 
+        for 
+        while 
+        do while 
+        for in 
+        for each
+        for of 
+
+    Case CS 
+        switch case 
+
+Syntax if CS :
+
+
+    ..
+    if (<one or multiple conditions >) {
+        ... 
+        ....
+        ......
+        .......
+    }
+
+eg:
+    .. 
+    ...
+    if (a > b) {
+        ...
+        ....
+    }
+    ...
+    ....

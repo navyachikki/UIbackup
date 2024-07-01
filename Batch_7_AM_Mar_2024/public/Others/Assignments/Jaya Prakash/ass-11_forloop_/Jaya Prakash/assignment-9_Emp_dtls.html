@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var pf, hra, tsalary;
+        var empname=prompt("Enter the Employee name:");
+        var empage=prompt("Enter the Employee age:");
+        var gender=prompt("Enter the Employee gender:");
+        var department=prompt("Enter the Employee department:");
+        var bsalary=prompt("Enter the Employee basic Salary:");
+        bsalary=parseInt(bsalary);
+        pf=(bsalary*12)/100;
+        hra=(bsalary*24)/100;
+        tsalary=bsalary+pf+hra;
+        console.log("The Name of the Employee is:"+empname);
+        console.log("The age of the Employee is:"+empage);
+        console.log("The gender of the Employee is:"+gender);
+        console.log("The department of the Employee is:"+ department);
+        console.log("The bsalary of the Employee is:"+bsalary);
+        console.log("The Total Salary of the Employee is:"+ tsalary);
+    </script>
+</body>
+</html>

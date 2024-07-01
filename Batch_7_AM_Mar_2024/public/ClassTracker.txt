@@ -1,0 +1,294 @@
+                        *      Hello...Iam your Class Tracker :-)        *
+                        *     I can help you to track daily topics       *
+                        **************************************************
+
+Class 01 : (12-03-2024)
+-----------------------
+   Introduction class
+
+
+Class 02 : (13-03-2024)
+------------------------
+   Predefined Tags
+   Predefined Attributes
+
+
+Class 03 : (14-03-2024)
+------------------------
+   HTML Attributes
+   Diiferent Ways of Adding Colors using attribute
+
+
+Class 04 : (15-03-2024)
+------------------------
+   CSS Properties
+   CSS Classes
+
+
+Class 05 : (16-03-2024)
+------------------------
+   What is Repository?
+   Diifernt Types of Repositories
+
+
+Class 06 : (20-03-2024)
+------------------------
+   Debugging Tool
+   CSS Priority Order
+
+
+Class 07 : (21-03-2024)
+------------------------
+   BlockLevel & Inline Elements
+   Assignment_1
+
+
+Class 08 : (22-03-2024)
+------------------------
+   img And anchor tag
+
+
+Class 09 : (23-03-2024)
+------------------------
+   Inline & BlockLevel
+   Margin Property
+   Padding Property
+
+
+Class 10 : (25-03-2024)
+------------------------
+   CSS Box Model
+   CSS Float Property
+   Assignment_2
+
+
+Class 11 : (26-03-2024)
+------------------------
+   UL & OL Tags
+   Floating With Inline Elements
+
+
+Class 12 : (27-03-2024)
+------------------------
+   Table Tag
+   Table Using Div Tag
+   CSS Overflow Property
+   Assignment_3
+   Assignment_4
+
+
+Class 13 : (28-03-2024)
+------------------------
+   CSS Positions
+   Assignment_3 Solution
+
+
+Class 14 : (29-03-2024)
+------------------------
+   CSS Positions
+   Z - Index Value
+   Background image Property
+   Assignment_5
+
+
+Class 15 : (30-03-2024)
+------------------------
+   Deploying static content to webserver
+   Installation Of webserver
+
+
+Class 16 : (01-04-2024)
+------------------------
+   Image Spriting
+
+
+Class 17 : (02-04-2024)
+------------------------
+   CSS Display Properties
+   Pseudo Classes
+   Pseudo Elements
+   Assignment_6
+   Assignment_7
+
+
+Class 18 : (05-04-2024)
+------------------------
+   HTML Input Elements
+   
+
+Class 20 : (06-04-2024)
+------------------------
+   Form Tag
+   POST 
+   GET Communications
+   Assignment_8
+
+
+Class 21 : (10-04-2024)
+------------------------
+   Opacity Demo
+   JavaScript Demo
+
+
+Class 22 : (12-04-2024)
+------------------------
+   Datatypes in js 
+   typeofmethod 
+   console.log and alert method 
+   console tab in debugging tool 
+   Examples - student and employee details
+   Assignment_9
+
+
+Class 23 : (13-04-2024)
+-----------------------
+   Variable Hosting
+   Type Casting
+   Dynamic Type casting
+   Reading Variable Through User Input
+   Control Structures(IF Condtional)
+
+Class 24 : (14-04-2024)
+------------------------
+   Operators -
+      Condtional
+      Equality
+   For Loop C.S.
+   Assignment_10
+
+
+Class 25 : (15-04-2024)
+------------------------
+   Break Keyword
+   For Loop Assignment Solution
+   Assignment_11
+
+
+Class 26 : (16-04-2024)
+------------------------
+   While Loop C.S.
+   Assignment_12
+
+
+Class 27 : (18-04-2024)
+------------------------
+   Do While Loop C.S.
+   Switch Case
+   Assignment_13
+   
+
+Class 28 : (19-04-2024)
+------------------------
+   Post and Pre- Increment and Decrement
+   Demonstrating Functions- Reusability (definition and invoking)
+   example- Student details using functions
+   Assignment_14
+
+
+Class 29 : (24-04-2024)
+------------------------
+   Scope Of Variables
+   Types Of Scope
+   Const Keyword
+
+
+Class 30 : (25-04-2024)
+------------------------
+   Break And Continue Statements
+   Passing Parameters
+
+
+Class 31 : (26-04-2024)
+------------------------
+   Functions With Parameters
+   Functions With Parameters And Return Value
+   JavaScript Array
+   Assignment_15
+   Assignment_16
+
+
+Class 32 : (27-04-2024)
+------------------------
+
+
+Class 33 : (29-04-2024)
+------------------------
+   String Methods
+   Date Format
+   Argument Keyword
+   Assignment_17
+
+
+Class 34 : (30-04-2024)
+------------------------
+   JSON Object
+   Assignment_18
+
+
+Class 35 : (01-05-2024)
+------------------------
+   "this" Operator
+   Console.table()
+   Call Back Method
+   setTimeout and setInterval Methods
+   clearTimeout and clearInterval Methods
+
+Class 36 : (02-05-2024)
+-------------------------
+   DHTML
+   DOM structure - window & document object
+   document methods = getElementByID(), getElementByTagName(), getElementByClassName(),
+   querySelector(), createElement(), append()
+   innerText v/s innerHTML
+   setAttribute, style css in js
+   getAttribute, setAttribute, removeAttribute
+   Example- Employee details using DHTML
+
+Class 37 : (03-05-2024)
+-------------------------
+   Event Handling- Static only(onChange, onClick, onMouseover)
+   Example- 1) Sum of two values using 'onClick' and 'onKeyPress' event handler and Show Sum 
+   to the user on page
+		2) validateData(event) using ASCII keyCode
+
+Class 38 : (04-05-2024)
+-------------------------
+   Example- Student progress card generator
+   Linking external css and javascript file
+
+Class 39 : (06-05-2024)
+------------------------
+   User registration page- Password data validation   
+   
+Class 40 : (07-05-2024)
+------------------------
+   Math.random() methods
+   Random number generator between range
+   Random alphabet generator
+   OTP Generator
+   Captcha Generator
+   
+Class 41 : (08-05-2024)
+------------------------
+   Dynamic event handling - document.AddEventListener()
+   Dynamic product details
+   onload() event
+   Creating own rating library
+
+Class 42 : (09-05-2024)
+------------------------
+   Jquery- Dynamic product details using Jquery 
+   3 dynamic assignments
+
+Class 43 : (10-05-2024)
+------------------------
+   Project 1 initiation
+   AJAX- Theory and Basics- How the web works(client, webserver, database)
+   fakestoreapi, fetch then intro, $.ajax(), axios intro
+   "DOMContentLoaded"
+
+Class 44 : (11-05-2024)
+------------------------
+   Dynamic product details using own library and axios
+   CORS- policy, setup,  
+   creating template

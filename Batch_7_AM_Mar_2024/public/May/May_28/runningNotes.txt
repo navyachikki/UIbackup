@@ -1,0 +1,22 @@
+CSS3:
+    border radius 
+    shadow effects 
+    gradients 
+    backgroundimages 
+    transitions
+    transformations
+    keyframes
+    flex 
+    grid 
+    ... 
+    ...
+    ..
+    animations
+
+    Gradients :
+        linear
+        radial 
+        conic 
+
+    Multi column Content:
+        Any muli line text content can be rendered like multi column content, 

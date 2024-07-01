@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="container">
+            
+        </div>
+        <script>
+            var a = 90
+
+            var showMsg = () => {
+                console.log("Click happend");
+            }
+            var spanTag = document.createElement("span");
+            spanTag.innerText = "Click over here";
+            // spanTag.addEventListener("click", showMsg);
+            spanTag.addEventListener("click", (event) => {
+                console.log("Click happend");
+            });
+            document.querySelector("#container").append(spanTag);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="container" class="sample">Hello</div>
+        <script>
+            var className = document.querySelector("#container").getAttribute("class")
+
+            document.querySelector("#container").setAttribute("test", "sample");
+
+            document.querySelector("#container").removeAttribute("class");
+
+
+            alert(className)
+        </script>
+    </body>
+</html>

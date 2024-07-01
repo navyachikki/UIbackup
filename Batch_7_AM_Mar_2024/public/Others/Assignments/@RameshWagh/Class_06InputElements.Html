@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Input Elements</title>
+        <style>
+            h3
+            {
+                border: 1px solid;
+                height: 25px;
+                text-align: center;
+                font-weight: bold;
+                background-color: blueviolet;
+                padding: 2px;
+            }
+            ul
+            {
+                border: 1px solid;
+                width: 600px;
+                margin: 20 auto;
+            }
+            li
+            {
+                list-style: none;
+                border: 1px solid;
+                padding: 10px;
+                margin: 10px;
+            }
+            input[type=label]
+            {
+                width: 500px;
+            }
+            input[type=button]
+            {
+                background-color: blue;
+            }
+            .AbYrSlf
+            {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Student Registration Form</h3>
+        <ul>
+            <li>
+                <label for="UName">User Name :</label>
+                <input type="text" maxlength="15" name="UName">
+            </li>
+            <li>
+                <label for="APass">Account Password :</label>
+                <input type = "password" maxlength="15" name="APass">
+            </li>
+            <li>
+                <label for="CntryName">Country Name :</label>
+                <select name="CntryName" id="">
+                    <option value="Ind">India</option>
+                    <option value="US">USA</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="CHN" selected>Chaina </option>
+                    <option value="PAK">PAKISTAN</option>
+                </select>
+            </li>
+            <li>
+                <label for="Gender">Gender :</label>
+                <input type="radio" name="Gender"> Male
+                <input type="radio" name="Gender"> Female
+            </li>
+            <li>
+                <label for="Lang">Language Known :</label>
+                <input type="checkbox" name="Lang"> English
+                <input type="checkbox" name="Lang"> Hindi
+                <input type="checkbox" name="Lang"> Marathi
+                <input type="checkbox" name="Lang"> Gujrati
+            </li>
+            <li>
+                <label for="AbtYouSlf" class="AbYrSlf">About Your Self :</label>
+                <textarea name="AbtYouSlf" id="" cols="40" rows="5" maxlength="1000"></textarea>
+            </li>
+            <li>
+                <input type="button" name="Button" value="Submit Data">
+            </li>
+        </ul>
+    </body>
+</html>

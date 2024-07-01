@@ -1,0 +1,36 @@
+.outer{
+    border: 2px solid;
+    width: 500px;
+    height: 480px;
+    margin:5px ;
+    padding: 15px;
+    display: flexbox;
+    background-color: bisque;
+}
+.field{
+    border: 1px solid;
+    width: 450px;
+    height: 30px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(198, 149, 149);
+}
+table{
+    margin: 10px ;
+    border: 1px solid grey;
+    padding: 5px;
+    text-align: center;
+    display: inline;
+    position: absolute;
+    right: 20px;
+    top:100px;
+    background-color: antiquewhite;
+    
+}
+th,tr,td{
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid;
+    background-color: burlywood;
+}

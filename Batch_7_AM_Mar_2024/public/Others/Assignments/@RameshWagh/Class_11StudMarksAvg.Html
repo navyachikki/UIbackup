@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marks Avg Calculate</title>
+        <style>
+            div
+            {
+                border: 1px solid; height: 25px; width: 1100px; margin: 5px; padding: 3px; text-align: center;background-color: beige;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Student Marks Avg Calculater</h3>     
+ 
+        <div> <span id = "FLine"></span> </div>
+        <div> <span id = "SLine"></span> </div>
+        <div> <span id = "TLine"></span> </div>
+        <div> <span id = "FrLine"></span> </div>
+        <div> <span id = "FthLine"></span> </div>
+        <div> <span id = "SxLine"></span> </div>
+        <div> <span id = "SvnLine"></span> </div>
+
+        <script>
+            var stdName = prompt("Enter Student Name : ");
+            var stdAge = prompt("Enter Student Age");
+            var M1 = prompt("Enter Marks in Maths");
+            M1 = parseInt(M1);
+            var M2 = prompt("Enter Marks in Economics");
+            M2 = parseInt(M2);
+            var M3 = prompt("Enter Marks in Data Science");
+            M3 = parseInt(M3);
+
+            console.log("Student Name : " + stdName);
+            document.querySelector("#FLine").innerHTML = "Student Name : " + stdName;
+
+            console.log("Student Age : " + stdAge);
+            document.querySelector("#SLine").innerHTML = "Student Age : " + stdAge;
+
+            console.log("Marks in Maths : " + M1);
+            document.querySelector("#TLine").innerHTML = "Marks in Maths : " + M1;
+
+            console.log("Marks in Economics : " + M2);
+            document.querySelector("#FrLine").innerHTML = "Marks in Economics : " + M2;
+
+            console.log("Marks in Data Science : " + M3);
+            document.querySelector("#FthLine").innerHTML = "Marks in Data Science : " + M3;
+
+            console.log(stdName + " Got Total Marks : " + (M1+M2+M3));
+            document.querySelector("#SxLine").innerHTML = stdName + " Got Total Marks : " + (M1+M2+M3);
+
+            console.log(stdName + " Got Total Average : " + ((M1+M2+M3)/3));
+            document.querySelector("#SvnLine").innerHTML = stdName + " Got Total Average : " + ((M1+M2+M3)/3);
+
+        </script>   
+    </body>
+</html>

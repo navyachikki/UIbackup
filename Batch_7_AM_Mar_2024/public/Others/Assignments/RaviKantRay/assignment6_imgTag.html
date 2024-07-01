@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image spiriting</title>
+    <style>
+        .Header, .footer {
+            border: 2px solid;
+            text-align: center;
+            margin: 10px auto;
+            padding: 5px;
+            background-color: rgba(61, 134, 139, 0.51);
+        }
+
+        .MainBlock{
+            border: 2px solid;
+            margin: 10px auto;
+            padding: 5px;
+            background-color: aqua;
+        }
+
+        .container {
+            border: 2px solid;
+            margin: 5px auto;
+            padding: 5px;
+            height: 550px;
+            background-color: pink;
+        }
+
+        .leftBlock {
+            border: 2px solid;
+            width: 250px;
+            margin: 10px;
+            float: left;
+            height: 525px;
+            background-color: aquamarine;
+        }
+
+        .rightBlock {
+            border: 2px solid;
+            width: 1200px;
+            height: 525px;
+            margin: 5px auto;
+            padding: 5px;
+            float: left;
+            overflow: auto;
+
+        }
+
+        .leftBlock li {
+            border: 1px;
+            line-height: 40px;
+        }
+
+        a {
+            text-decoration: none;
+            color: purple;
+        }
+
+        .studentDetails {
+            border: 1px solid;
+            height: 220px;
+            margin: 5px;
+
+        }
+
+        .img {
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+            margin: 10px 10px 0px 10px;
+            background-image: url(images1/img.png);
+            float: left;
+        }
+
+        .details {
+            border: 1px;
+            float: left;
+            margin: 10px;
+            line-height: 40px;
+        }
+
+        .shally {
+            background-position: 1017px -93px;
+        }
+
+        .manvi {
+            background-position: -498px -97px;
+        }
+
+        .sonali {
+            background-position: -794px -89px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="Header">
+        Student Details
+    </div>
+    <div class="mainBlock">
+        <div class="container">
+            <div class="leftBlock">
+                <ol>
+                    <li>
+                        <a href="images1/">Shally</a>
+                    </li>
+                    <li>
+                        <a href="images1/">Manvi</a>
+                    </li>
+                    <li>
+                        <a href="images1/">Sonali</a>
+                    </li>
+                </ol>
+            </div>
+            <div class="rightBlock">
+                <div class="studentDetails" id="Shally">
+                    <div class="img shally"></div>
+                    <div class="details">
+                        <ul>
+                            <li><span>Name:</span>Shally</li>
+                            <li><span>Age:</span>22</li>
+                            <li><span>Gender:</span>Female</li>
+                            <li><span>Location:</span>Bangalore</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="studentDetails" id="Manvi">
+                    <div class="img manvi"></div>
+                    <div class="details">
+                        <ul>
+                            <li><span>Name:</span>Manvi</li>
+                            <li><span>Age:</span>23</li>
+                            <li><span>Gender:</span>Female</li>
+                            <li><span>Location:</span>Punjab</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="studentDetails" id="Sonali">
+                    <div class="img sonali"></div>
+                    <div class="details">
+                        <ul>
+                            <li><span>Name:</span>Sonali</li>
+                            <li><span>Age:</span>21</li>
+                            <li><span>Gender:</span>Female</li>
+                            <li><span>Location:</span>Bihar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">@copyRights_2024</div>
+</body>
+</html>

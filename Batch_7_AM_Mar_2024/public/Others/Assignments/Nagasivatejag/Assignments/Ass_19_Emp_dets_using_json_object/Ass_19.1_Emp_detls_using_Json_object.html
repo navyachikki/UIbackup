@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <h3> Employee details using json object </h3>
+
+    <script>
+
+       /* var empData = {  //static
+            'name' : 'ritesh',
+            'age' : 20,
+            'gender' : 'Male',
+            'department' : 'it',
+            'tsalary' : 20000
+        }; */ 
+
+        var empData = {}; //dynamically reading
+
+        empData.name = prompt("Enter name"); 
+        empData.age = prompt("Enter age");
+        empData.gender = prompt("Enter gender");
+        empData.department = prompt("Enter department"); 
+
+        empData.tsalary = parseInt(prompt("Enter salary")); 
+
+        empData.prf = (14*empData.tsalary)/100;
+        empData.hra = (24*empData.tsalary)/100;
+        empData.totalSalary = empData.prf + empData.hra + empData.tsalary;
+
+        console.log("Employee Data");
+
+         console.log("Name = " + empData.name);
+         console.log("Age = " + empData.age);
+         console.log("Gender = " + empData.gender);
+         console.log("Department = " + empData.department);
+
+         console.log("BasicSalary = " + empData.tsalary);
+
+         console.log("Profit = " + empData.prf);
+         console.log("HRA = " + empData.hra);
+
+         console.log("TotalSalary = " + empData.totalSalary);
+
+    </script>
+
+</body>
+</html>

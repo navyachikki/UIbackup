@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=[], sum = 0;
+        range = prompt("Enter the length of the array :");
+        for(var i=0; i <= range-1 ; i++){
+            a[i] = prompt("Enter the number :");
+            a[i] = parseInt(a[i]);
+        }
+        for(i = 0; i <= range-1 ; i++){
+            sum = sum + a[i];
+        }
+        console.log("The sum of the numbers in the array is :"+ sum);
+    </script>
+</body>
+</html>

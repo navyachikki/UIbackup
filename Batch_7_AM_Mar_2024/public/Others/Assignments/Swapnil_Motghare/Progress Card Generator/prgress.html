@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prgress.css">
+    <script src="prgress.js"></script>
+</head>
+
+<body>
+
+    <h1>
+        Progress Card Generator
+    </h1>
+    <ul>
+        <li>
+            <input type="text"  id="Name"  placeholder="Student Name">
+            <div class="nameErr">
+                Name is important to fill
+            </div>
+        </li>
+
+        <li>
+            <input type="text"  id="Age" placeholder="Student Age">
+            <div class="ageErr">
+                Age is important to fill
+            </div>
+        </li>
+        </li>
+
+        <li>
+            Gender :
+            <input type="radio" name="gender" value="Male" id="">Male
+            <input type="radio" name="gender" value="Female" id="">FeMale
+        </li>
+
+        <li>
+            <select  id="Class">
+                <option value="" selected> Select Class </option>
+                <option value="I"> I</option>
+                <option value="II"> II</option>
+                <option value="III"> III</option>
+                <option value="IV"> IV</option>
+                <div class="classErr">
+                    Class is important to fill
+                </div>
+            </select>
+
+        </li id="subjects">
+            <input type="text" name="Sub" id="s1" placeholder="Sub-1">
+            <input type="text" name="Sub" id="s2" placeholder="Sub-2">
+            <input type="text" name="Sub" id="s3" placeholder="Sub-3">
+            <input type="text" name="Sub" id="s4" placeholder="Sub-4">
+            
+            <div class="marksErr">
+            Subjects marks are important to fill
+            </div>
+                 
+
+        <div id="btn">
+            <input type="button" value=" Generate Progress Card" onclick="StdDetail.rdData()">
+        </div>
+    </ul>
+
+    <ul id="progressDetail">
+
+        <li id="Title">
+            Progress Card Details
+        <li>
+            Student Name is : <span class="std" id="dname"></span>
+        </li>
+
+        <li>
+            Student age is : <span class="std" id="dage"></span>
+        </li>
+
+        <li>
+            Student gender is : <span class="std" id="dgender"></span>
+        </li>
+
+        <li>
+            Student total is : <span class="std" id="dtotal"></span>
+        </li>
+
+        <li>
+            Student avg is : <span class="std" id="davg"></span>
+        </li>
+
+        <li>
+            Student grade is : <span class="std" id="dgrade"></span>
+        </li>
+
+    </ul>
+
+</body>
+
+</html>

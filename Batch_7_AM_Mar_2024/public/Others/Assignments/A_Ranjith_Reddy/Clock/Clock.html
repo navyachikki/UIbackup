@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+</head>
+<body>
+    <style>
+        .outerFrame {
+            width: 300px;
+            height: 300px;
+            border-radius: 25%;
+            margin: 20px auto;
+            margin-top: 150px;
+            position: relative;
+            align-items: center;
+        }
+        .holder {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: rgb(16, 16, 48);
+            position: relative;
+            left: 135px;
+            top: -157px;
+            align-items: center;
+        }
+        .SecNeedle{
+            border: 1px solid;
+            width: 100px;
+            position: relative;
+            top: -30%;
+            left: 45%;
+            transform: rotate(-90deg);
+            transform-origin: 0% 90%;
+        }
+        .minNeedle{
+            border: 2px solid red;
+            width: 73px;
+            position: relative;
+            top: -10%;
+            left: 45%;
+            transform: rotate(-90deg);
+            transform-origin: 0% 60%;
+            
+        }
+        .hrNeedle{
+            border: 2.5px solid rgb(228, 9, 240);
+            width: 40px;
+            position: relative;
+            top: 30%;
+            left: 45%;
+            transform: rotate(-90deg);
+            transform-origin: 0% 40%;
+        }
+        .numHold {
+            width: 274px;
+            height: 274px;
+            border: 8px solid;
+            border-radius: 25%;
+            position: relative;
+            font-variant-numeric: normal;
+        }
+        .n {
+            font-weight: bolder;
+            font-size: x-large;
+            position: relative;
+        }
+        .n1 {
+            top: 11px;
+            left: 191px;
+        }
+        .n2 {
+            top: 56px;
+            left: 223px;
+        }
+        .n3 {
+            top: 117px;
+            right: -218px;
+        }
+        .n4 {
+            top: 182px;
+            left: 183px;   
+        }
+        .n5 {
+            top: 232px;
+            left: 117px;
+        }
+        .n6 {
+            left: 36px;
+            /* bottom: 0px; */
+            top: 245px;
+        }
+        .n7 {
+            top: 230px;
+            left: -43px;
+        }
+        .n8 {
+            top: 184px;
+            left: -107px;
+        }
+        .n9 {
+            top: 121px;
+            left: -140px;
+        }
+        .n10 {
+            top: 58px;
+            left: -146px;
+        }
+        .n11 {
+            top: 14px;
+            left: -131px;
+        }
+        .n12 {                
+            top: 0px;
+            left: -98px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outerFrame">
+            <div class="numHold"></div>
+            <div class="holder">
+                <div class="hrNeedle"></div>
+                <div class="minNeedle"></div>
+                <div class="SecNeedle"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var str = '';
+        for(i = 1; i<13; i++) {
+            str += '<span class = "n'+i +' '+'n"> '+ i +' </span>';
+        }
+        // $(".numHold").innerHTML = str;
+        // console.log(str);
+        // var list = document.getElementsByClassName("numHold");
+        // list.innerText = str
+        document.querySelector(".numHold").innerHTML = str
+
+        var Time = () => {
+            var date = new Date();
+            // console.log(date);
+            var hr = date.getHours();
+            // console.log(hr);
+            var min = date.getMinutes();
+            // console.log(min);
+            var sec = date.getSeconds();
+            // console.log(sec);
+
+            /*  1hr = 30deg , 1hr = 60min = 30deg , (1min = 1min / 2deg) , (1s = 1s/120deg) 
+                1min = 6 deg , 1deg = 3600s  */
+                
+
+                var presenthourRotation = (30 * hr) - 90;
+            //  console.log(presenthourRotation);
+                var presentminuteRotation = (6 * min) - 90;
+            //  console.log(presentminuteRotation);
+                var presentsecondRotation = (6 * sec) - 90 ;
+            //  console.log(presentsecondRotation);
+
+                document.querySelector(".hrNeedle").style.transform = `rotate(${presenthourRotation}deg)` ;
+                document.querySelector(".minNeedle").style.transform = `rotate(${presentminuteRotation}deg)`;
+                document.querySelector(".SecNeedle").style.transform = `rotate(${presentsecondRotation}deg)`;
+
+            }
+
+            setInterval(Time , 1000) 
+    </script>
+</body>
+</html>

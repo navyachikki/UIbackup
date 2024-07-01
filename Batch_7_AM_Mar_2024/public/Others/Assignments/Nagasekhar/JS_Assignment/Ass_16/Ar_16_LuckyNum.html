@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="Array.css">
+    </head>
+    <body>
+        <h2>Display the LuckyNum Values</h2>
+        <script>
+            var arr = [];
+            var n = parseInt(prompt("Enter the Length"));
+            var sum = 0;
+            for(i=0;i<n;i++){
+                arr[i] = prompt("Enter the Values")
+            }
+            console.log(arr);
+            //var rem = 0;
+            for(var j=0;j<arr.length;j++)
+            {
+                var num=arr[j];
+                var sum=0;
+                    while(num>0)
+                    {
+                        var rem=num%10;
+                        sum=sum+rem;
+                        num=num/10;
+                        num=parseInt(num);
+
+                        if(num==0 && sum>9)
+                        {
+                            num=sum;
+                            sum=0;
+                        }
+                    }
+                console.log(arr[j]+" --- "+sum);
+            }
+        </script>
+    </body>
+
+</html>

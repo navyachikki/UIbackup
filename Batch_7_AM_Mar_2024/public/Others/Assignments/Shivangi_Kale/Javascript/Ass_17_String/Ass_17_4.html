@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse a given string</title>
+    <style>
+        h2{
+            text-align: center;
+            color: rgb(208, 177, 19);
+            text-decoration: double;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: lighter;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Reverse a given string</h2>
+    <script>
+        var str="Hello";
+       /* var i=0;
+        while(str[i]!=undefined)
+        {
+           console.log(str[i]); 
+           i++;
+        }*/
+        var count=0;
+        for(var i=0;str[i]!=undefined;i++)
+        {
+            console.log(str[i]);
+            count++;
+        }
+        console.log("Reverse the string : ");
+        for(var j=count-1;j>=0;j--)
+        {
+            console.log(str[j]);
+        }
+    </script>
+</body>
+</html>

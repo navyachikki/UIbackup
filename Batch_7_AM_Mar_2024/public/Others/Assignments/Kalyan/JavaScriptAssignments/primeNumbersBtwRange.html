@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime number Check upto user given range</title>
+</head>
+<body>
+    <script>
+        var startingNumber = parseInt(prompt("enter starting number"));
+        var endingNumber = parseInt(prompt("enter ending number"));
+       for ( i = 1 ; i <= endingNumber ; i++)
+       {
+                var count = 0;
+                    for ( var j =startingNumber ; j <= i ; j++){
+                        if ( i % j ===0) {
+                             count++;
+                        }
+                    }
+                    if ( count === 2){
+                         console.log( i + " is prime number");
+                    }
+
+                    else{
+                        console.log( i + " is not a prime number")
+                    }
+        }
+       
+    </script>
+    
+</body>
+</html>

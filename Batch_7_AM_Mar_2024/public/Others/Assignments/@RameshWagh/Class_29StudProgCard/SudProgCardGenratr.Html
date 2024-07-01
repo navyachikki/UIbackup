@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Progress Card Genrater</title>
+        <link rel="stylesheet" href="App.css">
+        <script src="StudentDtl.js"></script>
+    </head>
+    <body>
+        <h3>Student Progress Card Genrater</h3>
+        <ul>
+            <li>
+                <input type = "text" placeholder = "Student Name" id = "studName"> <span class = "astric">*</span>
+                <div class = "nameCompValidation error">
+                    Name is Mandatery 
+                </div>
+            </li>
+            <li>
+                <input type = "text" placeholder = "Student Age" id = "studAge" maxlength="3" onKeyPress="return validateNumber(event)"> <span class = "astric">*</span>
+                <div class = "ageCompValidation error">
+                    Age is Mandatery
+                </div>
+            </li>
+            <li>
+                Gender :
+                <input type = "radio" value = "Male" name = "gender" checked> Male
+                <input type = "radio" value = "Female" name = "gender"> Female
+            </li>
+            <li>
+                <select id = "StudClass">
+                    <option selected>Select Student Class</option>
+                    <option value="Class I"> Class I</option>
+                    <option value="Class II"> Class II</option>
+                    <option value="Class III"> Class III</option>
+                    <option value="Class IV"> Class IV</option>
+                    <option value="Class V"> Class V</option>
+                </select>
+            </li>
+            <li id = "marksLi">
+                <input type = "text" placeholder = "Subject 1" id = "m1" maxlength="3" onKeyPress="return validateNumber(event)">
+                <input type = "text" placeholder = "Subject 2" id = "m2" maxlength="3" onKeyPress="return validateNumber(event)">
+                <input type = "text" placeholder = "Subject 3" id = "m3" maxlength="3" onKeyPress="return validateNumber(event)">
+                <input type = "text" placeholder = "Subject 4" id = "m4" maxlength="3" onKeyPress="return validateNumber(event)">
+                <input type = "text" placeholder = "Subject 5" id = "m5" maxlength="3" onKeyPress="return validateNumber(event)"><span class = "astric">*</span>
+                <div class = "marksCompValidation error">
+                    All 5 Subjects Marks are Mandatery
+                </div>
+            </li> 
+            <li>
+                <input type = "button" value = "Genrate Progress Card" onclick="studentDtls.ReadstudDtls()">
+            </li>
+        </ul>    
+      
+        <ul class = "progtable">
+            <li class = "title">
+                Progress Card
+            </li>
+            <li>
+                Student Name is : <span id = "dspName"></span>
+            </li>
+            <li>
+                Student Age is : <span id = "dspAge"></span>
+            </li>
+            <li>
+                Student Gender is : <span id = "dspGender"></span>
+            </li>
+            <li>
+                Student Class is : <span id = "dspClass"></span>
+            </li>
+            <li>
+                Student Total Marks is : <span id = "dsptotalMarks"></span>
+            </li>
+            <li>
+                Student Total Avrg Marks is : <span id = "dspavg"></span>
+            </li>
+            <li>
+                Student Grade is : <span id = "dspgrade"></span>
+            </li>
+        </ul>
+        <script>
+
+        </script>
+    </body>
+</html>

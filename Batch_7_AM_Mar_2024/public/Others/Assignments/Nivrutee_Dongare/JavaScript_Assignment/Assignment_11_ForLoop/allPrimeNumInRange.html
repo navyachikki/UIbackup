@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All prime Number In given Range</title>
+</head>
+
+<body>
+
+    <script>
+        var start = parseInt(prompt("Enter the start of the range:"));
+        var end = parseInt(prompt("Enter the end of the range:"));
+
+        for (var j = start; j <= end; j++) {
+            var n = j;
+            var count = 0;
+            for (var i = 2; i < n; i++) {
+                var rem = n % i;
+                if (rem == 0) {
+                    count++;
+                    break;
+                }
+            }
+            if (count > 0) {
+                console.log(n + " is not prime");
+            }
+            else {
+                console.log( n + " is prime");
+            }
+        }
+        
+    </script>
+</body>
+
+</html>

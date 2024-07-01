@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading data from user</title>
+    <style>
+      h3{
+        text-align: center;
+      }
+
+      ul{
+        width: 500px;
+        margin: 10px auto;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 15px;
+        background-color: rgb(194, 206, 202);
+      }
+      li{
+        list-style: none;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+      }
+      h2{
+        text-align: center;
+        margin-top: 20px;
+      }
+      body{
+        background-color: aliceblue;
+      }
+     input{
+        background-color: rgb(194, 206, 202);
+        border: none;
+     }
+    </style>
+</head>
+<body>
+    <h3>In this assignment we take input from user and print their answer on page</h3>
+    <h2>Simple Calculation</h2>
+    <ul>
+        <li>
+            Enter first value:
+            <input type="text" id="fval" onkeypress="return validData(event)" maxlength="5">
+        </li>
+        <li>
+            Enter secound value:
+            <input type="text" id="sval" onkeypress="return validData(event)" maxlength="5">
+        </li>
+        <li>
+            Select Option:
+            <input type="radio" id="sum" name="Opration" onclick="userData.doSum();" value="sum">Addition
+            <input type="radio" id="sub" name="Opration" onclick="userData.doSum();" value="sub">Subtraction
+            <input type="radio" id="mul" name="Opration"  onclick="userData.doSum();" value="mul">Multiplication
+        </li>
+        <li>
+            Your ans is:
+            <span id="ans"></span>
+        </li>
+        <!-- <li>
+            <input type="button" onclick="userData.doSum();" value="Do sum">
+        </li> -->
+    </ul>
+    <script>
+
+        userData = {
+            doSum() {
+                this.a = document.querySelector("#fval").value;
+                this.a = parseInt(this.a);
+                this.b = document.querySelector("#sval").value;
+                this.b = parseInt(this.b);
+
+                if(document.querySelector("#sum").checked){
+                    this.result = this.a + this.b;
+                }
+                else if(document.querySelector("#sub").checked){
+                    this.result = this.a - this.b;
+                }
+                else if(document.querySelector("#mul").checked){
+                    this.result = this.a * this.b;
+                }
+                document.querySelector("#ans").innerText = this.result;
+                document.querySelector("#ans").style.color = "Red";
+
+            },
+            
+        }
+
+        var validData = (event) => {
+            if(event.keyCode >= 48 && event.keyCode <= 57){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

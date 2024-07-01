@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details using function without global data</title>
+    <style>
+        h2{
+            text-align: center;
+            color: rgb(208, 19, 19);
+            text-decoration: double;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Employee Details using function without global data</h2>
+    <script>
+        var readData= () =>
+        {
+            var emp_name,emp_age,gender,basicSalary;
+            emp_name = prompt("Enter Employee Name : ");
+            emp_age = prompt("Enter age of Employee : ");
+            gender = prompt("Enter gender of Employee : ");
+            basicSalary = parseInt(prompt("Enter Basic Salary : "));
+            var total=calculateEmpTSalary(basicSalary);
+            displayEmp(emp_name,emp_age,gender,total);
+
+        }
+
+        var calculateEmpTSalary = (basicSalary) =>
+        {
+            var pf,hra,total;
+            pf=14 /100 *basicSalary;
+            hra=24 / 100 * basicSalary;
+            total=pf+hra+basicSalary;
+            return total;
+        }
+         
+        var displayEmp = (emp_name,emp_age,gender,total) =>
+        {
+            console.log("Name of Employee : "+emp_name);
+            console.log("Age : "+emp_age);
+            console.log("Gender : "+gender);
+            console.log("Total Salary : "+total);
+
+        }
+        console.log("------ Employee Details -------");
+        readData();
+
+    </script>
+</body>
+</html>

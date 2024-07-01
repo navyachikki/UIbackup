@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> for checking the enterd value is palindrome or not go to the console</h3>
+    <script>
+                            var n = parseInt(prompt(" enter the value for checking the value is palindriome or not"));
+                            var sub =n
+                            var revarse =0;
+                            var rem;            
+                            while(sub > 0){
+                                rem = sub % 10 ;
+                                revarse = revarse* 10 + rem;
+                                sub = sub/10;
+                                sub = parseInt(sub);
+                            }
+                            console.log(revarse);
+                            if(n == revarse){
+                                console.log(n + " Is A Palindrome Number");
+                            }
+                            else{
+                                    console.log(n + " Is A Not Palindrome Number");
+                            }
+    </script>
+</body>
+</html>

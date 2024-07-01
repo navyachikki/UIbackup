@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functional Demo</title>
+  </head>
+  <body>
+    <h2>Functional Dispaly the Employee Data - Assignment</h2>
+    <script>
+      var name, age, dep, salary, pf, total, hra;
+      function getEmpDetails(){
+        name = prompt("Enter Name");
+        age = parseInt(prompt("Enter Age"));
+        dep = "UI Designer& UI Developer";
+        salary = parseInt(prompt("Enter salary"));
+        pf = parseInt(prompt("Enter PF"));
+        hra = parseInt(prompt("Enter HRA"));
+      }
+   
+      function getPfAndHra() {
+        getEmpDetails()
+        pf = (salary * pf)/100;
+        hra = (salary * hra)/100;
+      }
+
+      function getTotalSalary(){
+        getPfAndHra()
+        total = salary + pf + hra;
+      }
+
+     function getDisplayDetails(){
+      getTotalSalary();
+      console.log("Employee Name:" + name);
+      console.log("Employee Name:" + age);
+      console.log("Employee Age:" + dep);
+      console.log("Employee Basic salary:" + salary);
+      console.log("Employee Pf value : " + pf);
+      console.log("Employee Hra value : " + hra);
+      console.log("Employee Total salary:" + total);
+     }
+     getDisplayDetails();
+   
+    </script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+.title {
+    text-align: center;
+    margin: 10px auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: olive;
+}
+
+ul {
+    border: 1px solid;
+    width: 500px;
+    margin: 20px;
+    padding: 10px;
+    list-style: none;
+    background-color: rgb(148, 114, 72);
+}
+
+ul li {
+    border: 1px solid;
+    margin: 20px;
+    padding: 10px;
+    background-color:aliceblue;
+}
+
+.msg {
+    text-align: center;
+    color: blue;
+    font-size: 20px;
+    display: none;
+}
+
+.error {
+    color: red;
+    position: relative;
+    font-size: 11Px;
+    top: 2px;
+    display: none;
+}
+
+.PassValidDisplay {
+    position: absolute;
+    top: 150px;
+    border: 1px solid;
+    left: 550px;
+    display: none;
+}
+
+.PassValidDisplay li {
+    color: red;
+}
+
+.lenthValidation {
+    font-weight: bolder;
+    color: green !important;
+}
+
+.SplSymbolValidation {
+    font-weight: bolder;
+    color: green !important;
+}
+
+.NumberValidation {
+    font-weight: bolder;
+    color: green !important;
+}
+
+.SpaceValidation {
+    font-weight: bolder;
+    color: green !important;
+
+}
+
+.upperCaseChar {
+    font-weight: bolder;
+    color: green !important;
+}

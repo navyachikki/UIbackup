@@ -1,0 +1,187 @@
+
+.forgotContainer{
+    background-color: rgb(209, 207, 202);
+    height:100vh;
+    margin:0px;
+    padding:0px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+     
+}
+.amazon_header{
+    background-color: rgb(3, 3, 3);
+    height:60px;
+    width: 100%;
+    margin: 0px;
+   position:fixed;
+}
+
+.amazon-logo{
+    height:20px;
+    width:70px;
+    padding:11px;
+    position: absolute;
+    top:18px;
+    left:40px
+    
+}
+.anantapur{
+    color:white;
+    position: absolute;
+    top:-5px;
+    left:200px;
+}
+.search_bar{
+    position: absolute;
+    top:20px;
+    left:28%;
+    height: 25px;
+    width:400px;
+}
+#dropdown{
+    position: absolute;
+    top:25px;
+    left:60%
+}
+.update{
+    position: absolute;
+    top:20px;
+    left:200px;
+   color:white;
+   font-weight: bold;
+}
+.update:hover{
+    border: 1px solid;
+    border-color:white;
+}
+.hello{
+    position: absolute;
+    top:-2px;
+    left:71%;
+    color:white;
+}
+.account{
+    padding:5px;
+    position: absolute;
+    top:17px;
+    left:70%;
+   
+}
+.account:hover{
+    border:1px solid;
+    border-color: white;
+}
+.returns{
+    position: absolute;
+    left:70%;
+    top:12px;
+     border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    width: 150px;
+    
+}
+.returns:hover{
+    border:1px solid;
+    border-color:white;
+}
+.cart{
+    width:90px;
+    position: absolute;
+    left:85%;
+    top:10px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+ 
+}
+.cart:hover{
+    border:1px solid;
+    border-color:white;
+}
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+.search_bar{
+    border:1px solid white;
+    background-color: white;
+}
+
+
+#butn{
+    background-color: rgb(0, 162, 255);
+    color:white;
+    border:1px solid;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+     width:150px;
+    
+    
+}
+.emailPage {
+    background-color: rgba(255, 255, 255, 0.8); /* 80% opacity of white */
+    border-radius: 20px;
+    padding: 20px;
+    width: 500px;
+}
+
+.emailPage {
+    position: absolute;
+    top: 25%;
+    left: 27%; /* Adjust this as needed */
+   
+}
+
+ul.login {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding-top: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+li>input[type=text] {
+    margin-top: 30px;
+}
+
+
+input {
+    padding-left: 20px;
+    border: none;
+    border-bottom: 1px solid;
+    background-color: transparent;
+    height: 25px;
+    width: 250px;
+}
+
+
+
+
+label {
+    font-size: 16px;
+}
+

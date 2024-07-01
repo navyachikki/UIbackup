@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            border: 1px solid black;
+            width: 500px;
+            background-color: aliceblue;    
+            padding: 10px;
+            margin: 10px auto;
+
+        }
+        li{
+            border: 1px solid black;
+            background-color: ghostwhite;
+            margin: 10px;
+            list-style: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            enter first value <input type="text" id="firstval">
+        </li>
+        <li>
+            enter second value <input type="text" id="secondval">
+        </li>
+        <li>
+            <div>
+                the sum is : <span></span>
+            </div>
+        </li>
+        <li>
+            <input type="button" value="do sum" onclick="userData.doSom();">
+        </li>
+    </ul>
+    <script>
+        var userData =  {
+            a1: 0,
+            doSom() {
+
+                this.a1 = document. querySelector("#firstval").value
+                this.a1 = parseInt(this.a1);
+                this.a2 = document. querySelector("#secondval").value
+                this.a2 = parseInt(this.a2);
+
+                this.result = this.a1 + this.a2;
+
+                document.querySelector("span").innerHTML = this.result;
+
+
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+Closures:
+    Self invoked functions 
+
+----
+
+function AddValues() {
+
+}
+
+AddValues();
+
+(function(){
+    ....
+    ...
+})();
+----------
+
+function sample() {
+    var a = 90;
+
+}
+sample()
+
+-----------
+
+Steps to access closure content outside of closure 
+
+    1. give/assign a name to closure 
+    2. Return an object from the closure
+    3. What the methds and variable we would like to access from outside, has to be returned from the clousre as an object.
+
+3. OOPs concept:
+    Class 
+    Object 
+    Polimorphysm - Not supporting 
+    DAta Abstraction 
+    Data Encapsulation
+
+    Js is partially Opps language 

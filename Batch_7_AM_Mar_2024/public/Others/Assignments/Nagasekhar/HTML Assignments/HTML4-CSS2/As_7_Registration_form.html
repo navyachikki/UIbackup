@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration_Form</title>
+    <style>
+        .Main_Container {
+            width: 1100px;
+            height: 930px;
+            border:1px solid black;
+            background-color: rgb(232, 142, 179);
+            margin:10px Auto;
+        }
+        .header,.Footer{
+            border: 1px solid #92526b;
+            text-align: center;
+            text-decoration: underline;
+            margin: 2px;
+            height: 30px;
+            font-family: Times New Roman;
+            width: 1089px;
+            padding-top:5px;
+            font-size: 20px;
+            /* text-align: center; */
+            margin: 5px auto;
+
+        }
+         .Main_body{
+            border:1px solid brown;
+            width: 100%
+            height: 550px;
+            margin:5px;
+        }
+        .main_pers {
+            position: relative;
+        }
+        li {
+            list-style: none;
+            margin:10px ;
+            padding:10px;
+           
+        }
+        label { 
+            width: 130px;
+            display: inline-block;
+            margin: 1px;  
+            font-weight: bold;
+        }
+        input {
+            border-top-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            color:rgb(53, 13, 53)
+        }
+        legend {
+            border: 1px solid rgb(29, 3, 29);
+            width: 130px;
+            /* color: #0c957eeb; */
+            background-image: url(../Images/pexels-photo-2680270.webp);
+            border-top-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            height: 24px;
+            padding: 5px;
+        }
+        .Email {
+            float: right;
+            position: absolute;
+            right: 279px;
+            top: -9px;
+        }
+
+
+        .DOB {
+            float: right;
+            position: absolute;
+            right: 331px;
+            top: 36px;
+        }
+            .Country {
+                float: right;
+                position: absolute;
+                right: 351px;
+                top: 85px;
+            }
+            #Country , #qualification {
+            border-top-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            border: 1px solid;
+            /*width: 116px;*/
+            font-size: 14px;
+                    }
+                    fieldset {
+                        margin-top:10px;
+                    }
+             .Course input {
+                display: inline;
+             } 
+             .btn_submit {
+                height: 26px;
+                position: absolute;
+                width: 116px;
+                font-family: 'Times New Roman';
+                background-image: url(../Images/pexels-photo-2680270.webp);
+                left: 283px;
+                color: #1c021c;
+                font-weight: bold;
+             } 
+            
+       
+
+    </style>
+</head>
+<body>
+    <div class="Main_Container">
+        <div class="header">
+            Registration Form
+        </div>
+        <div class="Main_body">
+            <form action="sample.php" method="post">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <ul class="main_pers">
+                        <li class="fname">
+                            <label for="fname" name="fname">FirstName :</label>
+                            <input type="text" required placeholder="Enter Your FirstName">
+                        </li>
+                        <li class="lname">
+                            <label for="lname" name="lname">LastName :</label>
+                            <input type="text" required placeholder="Enter Your LastName">
+                        </li>
+                        <li class="Gender">
+                            <label for="Gender" name="Gender">Gender :</label>
+                            <input type="radio" name="Gender" value="Male">Male
+                            <input type="radio" name="Gender" value="Female">Female
+                        </li>
+                        <li class="Number">
+                            <label for="Number" name="Number">Number :</label>
+                            <input type="text" required placeholder="Enter Your Number" maxlength="10">
+                        </li>
+                        <li class="Email">
+                            <label for="Email" name="Email">Email :</label>
+                            <input type="email" required placeholder="Naga123@gmail.com" >
+                        </li>
+                        <li class="DOB">
+                            <label for="DOB" name="DOB">DOB :</label>
+                            <input type="Date" name="DOB">
+                        </li>
+                        <li class="Country">
+                            <label for="Country" name="Country">Country :</label>
+                            <select name="Country" id="Country" >
+                                <option value="Ind">India</option>
+                                <option value="Aus">Australia</option>
+                                <option value="SA">South-Africa</option>
+                                <option value="NZ">Newzeland</option>
+                                <option value="WI">Africa</option>
+                            </select>
+                            
+                        </li>
+                        
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Educational Details</legend>
+                    <ul class="Educ_Det">
+                        <li class="qual">
+                            <label for="qual" name="qual">Qualification :</label>
+                            <select name="qual" id="qualification" >
+                                <option value="BTech">B.Tech</option>
+                                <option value="BE">B.E</option>
+                                <option value="BA">B.A</option>
+                                <option value="MT">M.Tech</option>
+                                <option value="MCA">MCA</option>
+                            </select>
+                        </li>
+                        <li class="Lang">
+                            <label for="Lang" name="Lang">Language :</label>
+                            <input type="checkbox">English
+                            <input type="checkbox">Hindi
+                            <input type="checkbox">Telugu
+                            <input type="checkbox">Tamil
+                        </li>
+                        <li class="Course">
+                            <label for="Course" name="Course">Courses Opted :</label>
+                            <input type="radio">UI Full Stack Web Developement
+                            <input type="radio">Salesforce Developement
+                            <input type="radio">JAVA Developement
+
+                        </li>    
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>About YourSelf</legend>
+                    <ul class="">
+                        <li class="Abt_urself">
+                            <label for="Abt_urself" name="Abt_urself">About Youself :</label>
+                            <textarea name="Abt_urself" id="" cols="100" rows="10"></textarea>
+                        </li>
+                        <li>
+                            <input type="submit" value="Save the Details" class="btn_submit">
+                        </li>   
+                    </ul>
+
+                </fieldset>
+                
+            </form>
+        </div>
+        <div class="Footer">
+            CopyRight@2024
+        </div>
+
+    </div>
+</body>
+</html>

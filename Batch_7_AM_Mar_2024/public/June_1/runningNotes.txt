@@ -1,0 +1,58 @@
+// Looping CS
+
+    for -> 
+
+    while 
+    do while 
+    for in 
+    for of 
+    for each
+
+Syntax If:
+
+    ... 
+    ... 
+    if (condition) {
+        ...
+        .. 
+        ... 
+    }
+    ...
+    .
+-------------------
+
+Syntax for:
+
+    .. .. 
+    .. 
+    ..
+    for (  initilization  ; conditioncheck    ; inc/ decrementiation    ) {
+        ...
+        ..
+        ...
+        ... 
+        ...
+    }
+    ... 
+    ...
+-----------------
+
+startpoint = 10
+endstep = 80 
+
+for (steopcount = 10;  steopcount <= 80; steopcount = steopcount + 1) {
+    takeleftleg put on the step 
+    lift the body, take right leg put on next step 
+}
+
+
+----------
+
+increment and decrement operators 
+++ && --
+
+var a = 90; 
+a = a + 1
+a += 1 
+
+a++; 

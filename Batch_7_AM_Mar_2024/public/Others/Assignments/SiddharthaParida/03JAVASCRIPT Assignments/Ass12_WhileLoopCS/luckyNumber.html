@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lucky Number Program</title>
+    </head>
+    <body>
+        <h2 style="text-align: center;">CHECK YOUR LUCKY NUMBER IN THE CONSOLE TAB</h2>
+        <script>
+            var n = prompt("Enter Your Number:");
+            n = parseInt(n);
+            var rem;
+            var a = 0;
+            while(n > 0) {
+                rem = n % 10;
+                a = a + rem;
+                n = n / 10;
+                n = parseInt(n);
+                if (n == 0 && a > 9) {
+                    console.log(a + " " + "Is The Total Of Digits For Your Number")
+                    n = a;
+                    a = 0;
+                }
+            }
+            console.log(a + " " + "Is Your Lucky Number")
+        </script>
+    </body>
+</html>

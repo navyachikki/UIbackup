@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+<body>
+    <style>
+        .heading,
+        .footer {
+            border: 2px solid darkred;
+            text-align: center;
+            text-decoration: underline;
+            color: rgb(63, 81, 181);
+            background-color: rgb(230, 233, 17);
+            font-weight: bold;
+            margin: 10px;
+        }
+        .content {
+            border: 2px solid darkred;
+            width: auto;
+            height: 800px;
+            margin: 10px;
+            background-color: rgb(230, 233, 17);
+        }
+        .division1,
+        .division2 {
+            border: 2px solid darkred;
+            width: auto;
+            height: 280px;
+            margin: 10px;
+            background-color: cornsilk;
+        }
+        .division3 {
+            border: 2px solid darkred;
+            width: auto;
+            height: 190px;
+            margin: 10px;
+            background-color: cornsilk;
+        }
+        .divisionHeading1,
+        .divisionHeading2,
+        .divisionHeading3 {
+            border: 2px solid darkred;
+            text-align: center;
+            background-color:rgb(0, 255, 251);
+            color: orangered;
+            width: 120px;
+            height: 20px;
+            margin: 0px;
+            padding: 10px;
+        }
+        li {
+            list-style: none;
+            margin: 5px;
+            padding: 5px;
+        }
+        .division3 label {
+            bottom: 54px;
+            position: relative;
+        }
+    </style>
+    <form action="http://www.combopqr.com" method="POST">
+        <div class="heading">
+            <h3>Student Registration Page</h3>
+        </div>
+        <div class="content">
+           <div class="division1">
+            <div class="divisionHeading1">
+            Personal Details
+            </div>
+             <ul>
+                <li>
+                    <label for="uname">First Name :</label>
+                    <input type="text" maxlength="20" name="userName">
+                    <label for="uname">Middle Name :</label>
+                    <input type="text" maxlength="20" name="userName">
+                    <label for="uname">Last Name :</label>
+                    <input type="text" maxlength="20" name="surName">
+                </li>
+                <li>
+                    <label for="fname">Father's Name :</label>
+                    <input type="text" maxlength="20" name="fathName">
+                </li>
+                <li>
+                    <label for="mname">Mother's Name :</label>
+                    <input type="text" maxlength="20" name="mothName">
+                    <label for="address">Address :</label>
+                    <input type="text" maxlength="100">
+                </li>
+                <li>
+                    <label for="age">Age :</label>
+                    <input type="number" maxlength="2" name="age">
+                    Country Name :
+                    <select name="country" id="country">
+                        <option value="ind">India</option>
+                        <option value="aus">Australia</option>
+                        <option value="amer">America</option>
+                        <option value="Eng">England</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="gender">Gender :</label>
+                    <input type="radio" value="Male" name="gender">Male
+                    <input type="radio" value="Female" name="gender">Female
+                    <input type="radio" value="Prefered not to say" name="gender">Prefered not to say
+                </li>
+                <li>
+                    <label for="mobile">Mobile :</label>
+                    <input type="number" maxlength="10" name="mobilenum">
+                    <label for="E-Mail">E-Mail :</label>
+                    <input type="text" maxlength="30">
+                    @domain :
+                    <select name="domain" id="selection">
+                        <option value="gmail">@gmail.com</option>
+                        <option value="outlook">@outlook.com</option>
+                        <option value="google">@google.com</option>
+                        <option value="yahoo">@yahoo.com</option>
+                    </select>                    
+                </li>
+             </ul>
+           </div>
+        <div class="division2">
+            <div class="divisionHeading2">
+            Education Details
+            </div>
+            <ul>
+                <li>Qulification :
+                    <select name="details" id="education">
+                        <option value="degree">Degree</option>
+                        <option value="btech">B.Tech</option>
+                        <option value="diploma">Diploma</option>
+                        <option value="inter">Intermediate</option>
+                        <option value="ssc">10th</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="institute">Institute (Or) College Name :</label>
+                    <input type="text" name="institute" maxlength="40">
+                </li>
+                <li>
+                    <label for="course">Course</label>
+                    <input type="radio" value="M.Sc" name="course">M.Sc
+                    <input type="radio" value="MCA" name="course">MCA
+                    <input type="radio" value="MBA" name="course">MBA 
+                    <input type="radio" value="M.Com" name="course">M.Com
+                </li>
+                <li>
+                    Medium :
+                    <input type="checkbox" value="lng_tel">Telugu
+                    <input type="checkbox" value="lng_eng">English
+                    <input type="checkbox" value="lng_hin">Hindi
+                </li>
+                <li>
+                    <label for="marks">Marks Obtained :</label>
+                    <input type="number" name="number"> (CGPA)
+                </li>
+                <li>Passout Year :
+                    <select name="year" id="years">
+                        <option value="yr24">2024</option>
+                        <option value="yr23">2023</option>
+                        <option value="yr22">2022</option>
+                        <option value="yr21">2021</option>
+                        <option value="yr20">2020</option>
+                        <option value="yr19">2019</option>
+                        <option value="yr18">2018</option>
+                        <option value="yr17">2017</option>
+                        <option value="yr16">2016</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div class="division3">
+            <div class="divisionHeading3">
+            About-Yourself
+            </div>
+            <ul>
+                <li>Language Known :
+                   <input type="checkbox" value="lng_tel">Telugu
+                   <input type="checkbox" value="lng_eng">English
+                   <input type="checkbox" value="lng_hin">Hindi
+                </li>
+                <li>
+                    <label for="yourself">A Few Words About Yourself :</label>
+                    <textarea name="intro" id="self" cols="60" rows="4" maxlength="200"></textarea>
+                </li>
+            </ul>
+        </div>
+     </div> 
+          <div class="footer">
+              <h3>Registrationform@Copyright2024</h3>
+           </div>
+      </form>
+   </body>
+</html>

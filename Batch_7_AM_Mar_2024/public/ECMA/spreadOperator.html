@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var collegeDetails = ["ABC college", "Hyderabd"];
+            var sdetails = ["Raj", "Male", 20 ];
+            // ["Raj", "Male", 20, ...collegeDetails ];
+
+
+            var completeDetails = [...collegeDetails, ...sdetails]
+
+            // collegeDetails.forEach((value) => {
+            //     sdetails.push(value);
+            // });
+
+
+
+            console.log(completeDetails);
+
+            
+            var a1 = [34, 556, 77];
+            var a2 = [33, 66 ,99];
+
+            var result = [...a1, ...a2];
+
+            var result2 = [a1[1], a2[2]];
+
+
+            var data1 = {
+                name: 'Krish',
+                age: 20
+            };
+            var studentDetails = {
+                ...data1,
+                collegeName: 'ABC',
+                location: 'Hyderabad'
+            };
+
+            console.log(studentDetails);
+
+        </script>
+    </body>
+</html>

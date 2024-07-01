@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var length = parseInt(prompt("eneter the length o an array"));
+        var arr = [];
+        for (var i =0; i< length; i++){
+            arr[i]= parseInt(prompt("enter the value for an array "));
+
+        }
+        console.log(arr);
+        
+        for(var j =0; j<=arr.length; j++){
+            var rem;
+            var revarse=0;
+            var sub = arr[j];
+            while(sub > 0){
+                rem = sub % 10 ;
+                revarse = revarse* 10 + rem;
+                sub = sub/10;
+                sub = parseInt(sub);
+              }
+              console.log(revarse);
+              if(arr[j] == revarse){
+                  console.log(arr[j] + " Is A Palindrome Number");
+              }          
+        }
+                            
+    </script>
+</body>
+</html>

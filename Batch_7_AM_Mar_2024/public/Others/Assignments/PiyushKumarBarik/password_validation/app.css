@@ -1,0 +1,46 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.title {
+    margin: 8px auto;
+    text-align: center;
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    border: 1px solid;
+    width: 1000px;
+    margin: 10px auto;
+    padding: 20px 35px;
+}
+
+ul li {
+
+    margin: 35px;
+}
+
+input {
+    font-size: 17px;
+}
+
+.msg {
+    margin: 20px auto;
+    width: 235px;
+    color: green;
+    display: none;
+}
+
+.error {
+    color: red;
+    display: none;
+}
+
+.passCriteria {
+    position: absolute;
+    top: 148px;
+    left: 700px;
+    display: none;
+}

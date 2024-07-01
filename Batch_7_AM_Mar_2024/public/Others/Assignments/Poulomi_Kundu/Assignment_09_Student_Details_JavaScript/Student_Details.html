@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+</head>
+<body>
+    <script>
+        var sname = prompt( "Enter Student Name:" );
+        var sage = prompt("Enter Student Age:");
+        var sgender = prompt("Enter Student Gender");
+        var sm1 = parseInt(prompt( "Enter Marks in Maths I"));
+        var sm2 = parseInt(prompt( "Enter Marks in Maths II"));
+        var sm3 = parseInt(prompt( "Enter Marks in Science"));
+        var totalMarks = sm1 + sm2 + sm3;
+        var avg =  totalMarks / 3 ;
+
+        console.log("Student Name is: " + sname);
+        console.log("Student Age is: " + sage)
+        console.log("Student Gender is: " + sgender);
+        console.log("Total Marks: " + totalMarks);
+        console.log("Average Marks: " + avg);
+    </script>
+</body>
+</html>

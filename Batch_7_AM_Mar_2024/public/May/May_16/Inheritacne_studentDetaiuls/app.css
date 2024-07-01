@@ -1,0 +1,24 @@
+.marks input {
+    width: 60px;
+}
+
+ul {
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid orange;
+}
+
+li {
+    list-style: none;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+h3 {
+    text-align: center;
+    border: 1px solid;
+    margin: 20px;
+    padding: 20px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calAndDisplayDetails(){
+            var sname=prompt("enter name of student");
+            var sage=prompt("enter the age of student");
+            var sgender=prompt("enter the gender ");
+            var sdept=prompt("enter the dept of student")
+            var basicSal=parseInt(prompt("enter Basic Salary"));
+    
+            var pf=(basicSal *14)/100;
+            var hra =(basicSal* 24)/100;
+            var totalSal=pf+hra+basicSal;
+    
+        console.log("Employee details");
+        console.log("Employee name is " + sname);
+        console.log("Employee Age is " + sage);
+        console.log("Employee gender is " + sgender);
+        console.log("Employee gender is " + sdept);
+        console.log("Employee basicSal is " + basicSal);
+        console.log("pf is " + pf);
+        console.log("hra is " + hra);
+        console.log("totalSal is " + totalSal);
+        }
+        calAndDisplayDetails();
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // 1)write a prog to find out total number of character within given string without using any predefined method.
+    var question1=()=>{
+        let string="This is a web development course";
+        var counter=0,space=0;
+        for(let i=0;i<string.length;i++){
+        if(string[i]==" "){
+            continue;
+        }
+        else{
+            counter++;
+        }
+    }
+    console.log("the total number of character in the string are :"+(counter));
+    }
+    // 2)write prog to find out total number of words within given string.
+    var question2=()=>{
+        let string="This is a web development course";
+        var arr=[];
+        var a=string.split(" ");
+        console.log(a.length);
+    }
+    question2();
+    // 3)write a prog to find out total number of vovels in given string
+
+    var question3=()=>{
+        var string="aeprajwaliou";
+        vovels=0;
+        for(let i=0;i<string.length;i++){
+            if(string[i]=='a' ||string[i]=='e' ||string[i]=='i' ||string[i]=='o' ||string[i]=='u'){
+                vovels+=1;
+            }
+        }
+        console.log("the total vovel in the string: "+string+" is "+vovels);
+    }
+    question3();
+
+    // 4)write program to reverse given string.
+
+    var question4=()=>{
+        let string="prajwal";
+        let ans="";
+        for(let i=string.length-1;i>=0;i--){
+            ans=ans+string[i];
+        }
+        console.log(ans);
+    }
+    question4();
+    // 5)write program to check string is palindrome or not.
+
+    var question5=()=>{
+        let string="prajwal";
+        let ans="";
+        for(let i=string.length-1;i>=0;i--){
+            ans=ans+string[i];
+        }
+        if(string==ans){
+            console.log("Palindrome string");
+        }
+        else{
+            console.log("Not Palindrome string");
+        }
+    }
+    question5();
+
+    </script>
+</body>
+</html>

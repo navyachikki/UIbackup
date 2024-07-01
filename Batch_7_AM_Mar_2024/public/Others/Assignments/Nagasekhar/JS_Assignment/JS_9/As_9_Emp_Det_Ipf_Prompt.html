@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmployeeDetailsByPrompt</title>
+    <style>
+        .Emp {
+            color: rgb(59, 6, 59);
+            font-family: sans-serif;
+            Border: 1px solid Greenyellow;
+            font-size: 19px;
+            font-weight: bold;
+            text-align: center;
+            width: 300px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="Emp">
+        Employee Details By Prompt
+    </div>
+    <script>
+        var eName,eAge,eGender,BasicSal,Avg,Pf,Hra,TotalSal;
+        eName = prompt("Enter Your Name");
+        eAge = prompt("Enter Your Age");
+        eGender = prompt("Enter Your Gender"); 
+        BasicSal =  prompt("Enter Your Basic Salary");
+        BasicSal = parseInt(BasicSal);
+        Pf =  prompt("Enter Your Pf");
+        Pf = parseInt(Pf);
+        Hra =  prompt("Enter Your Hra");
+        Hra = parseInt(Hra);
+        console.log(typeof(BasicSal)); 
+        console.log("BasicSal :" + BasicSal);
+        console.log(typeof(Pf)); 
+        console.log("Pf :" + Pf);
+        console.log(typeof(Hra));
+        console.log("Hra :" + Hra);
+        TotalSal = Pf + Hra + BasicSal ;
+        console.log("TotalSal :" + TotalSal);
+        Avg = TotalSal / 3 ;
+        console.log("Avg :" + Avg);
+
+    </script>
+</body>
+</html>

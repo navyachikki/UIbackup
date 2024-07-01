@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime_Numbers_in_Range</title>
+</head>
+<body>
+    <script>
+        var l = parseInt(prompt("Enter the lower limit: "));
+        var u = parseInt(prompt("Enter the upper limit: ")); 
+
+        console.log("All the Prime Numbers between " + l + " and " + u + " are: ")
+        for (var i = l; i <= u; i++) {
+            var flag = 0;
+            for (var j = 2; j <= i/2; j++) {
+                if (i %  j == 0) {
+                    flag += 1;
+                    break;
+                }
+            }
+            if (flag == 0 && i != 1){
+                console.log(i);
+            }
+        }
+    </script>
+</body>
+</html>

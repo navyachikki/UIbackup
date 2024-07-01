@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var origianlNumber=parseInt(prompt('Enter a number '));
+        var Num = origianlNumber;
+        var reverseNumber = 0;
+        while( Num > 0){
+            var rem = Num % 10 ;
+            reverseNumber = reverseNumber * 10 + rem;
+            Num = Num / 10;
+            Num = parseInt( Num);
+        }
+        if( reverseNumber === origianlNumber){
+            console.log(origianlNumber," Is a palindrome number")
+        }
+        else{
+            console.log(origianlNumber," Is  not a palindrome number")
+        }
+    </script>
+</body>
+</html>

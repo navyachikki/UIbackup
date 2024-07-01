@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="Array.css">
+    </head>
+    <body>
+        <h2>To find out total number of character within a given string without using predefine method</h2>
+        <span class="DisplayS"></span>
+        <script>
+            var  arr = "Hello Everyone";
+            counter = 0;
+            for(var i=0;(arr[i]!= null || arr[i]!= undefined);i++) {
+                counter++;
+                console.log(arr[i]);
+            }
+            console.log(counter);
+            document.querySelector(".DisplayS").innerHTML = "The Total Characters in a given  String : <b>" +arr+"</b> " + " Is <b>" + counter + " </b>"
+        </script>
+    </body>
+</html>

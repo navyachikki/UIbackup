@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Tax Calculater With Data Show On DHTML Page</title>
+        <style>
+            ul {
+                border: 1px solid; width: 500px; margin: 30px auto;
+            }
+            li {
+                list-style: none; border: 1px solid #ccc; margin: 10px; padding: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h3 style = "color:rgb(94, 3, 94) ; background-color:rgb(204, 224, 224);text-align: center;font-size: 18px;border: 2px solid rgb(41, 2, 2);">Tax Calculater With Data Show On DHTML Page</h3>
+
+        <ul>
+            <li>
+                Employee Name : <span id = "spanEmpName"></span>
+            </li>
+            <li>
+                Department Name : <span id = "spanDeptName"></span>
+            </li>
+            <li>
+                Employee Gender : <span id = "spanEmpGender"></span>
+            </li>
+            <li>
+                Employee Age : <span id = "spanEmpAge"></span>
+            </li>
+            <li>
+                Employee Basic : <span id = "spanEmpBasic"></span>
+            </li>
+            <li>
+                Employee PF : <span id = "spanEmpPf"></span>
+            </li>
+            <li>
+                Employee HRA : <span id = "spanEmpHra"></span>
+            </li>
+            <li>
+                Employee Tax : <span id = "spanEmpTax"></span>
+            </li>
+        </ul>
+
+        <script>
+            var empDtls = {
+                empName :"" ,
+                getData () {
+                    empDtls.empName = prompt("Enter Employee Name") ;
+                    this.deptName = prompt("Enter Department Name");
+                    this.empGender = prompt("Enter Gender (Male / Female)");
+                    this.empGender = this.empGender.toLowerCase();
+                    this.empAge = prompt("Enter Age Of Employee");
+                    this.empBasic = prompt("Enter Basic Salary Of Employee");
+                    this.empBasic = parseInt(this.empBasic);
+                    this.calSalary();
+                },
+                calSalary () {
+                    this.pf = (this.empBasic * 14 / 100);
+                    this.hra = (this.empBasic * 24 / 100);
+                    this.totalSal = (this.empBasic + this.pf + this.hra);
+                    this.taxCal();
+                },
+                taxCal () {
+                    if ((this.totalSal >= 200000) && this.empGender == "male")
+                    {
+                        this.taxPer = 15;
+                    } else if ((this.totalSal >= 100000 && this.totalSal < 200000) && this.empGender == "male")
+                    {
+                        this.taxPer = 10;
+                    } else if ((this.totalSal >= 50000 && this.totalSal < 100000) && this.empGender == "male")
+                    {
+                        this.taxPer = 5;
+                    } else if ((this.totalSal < 50000) && this.empGender == "male")
+                    {
+                        this.taxPer = 0;
+                    } else if ((this.totalSal >= 200000) && this.empGender == "female")
+                    {
+                        this.taxPer = 10;
+                    } else if ((this.totalSal >= 100000 && this.totalSal < 200000) && this.empGender == "female")
+                    {
+                        this.taxPer = 5;
+                    } else if ((this.totalSal < 100000) && this.empGender == "female")
+                    {
+                        this.taxPer = 0;
+                    }else
+                    {
+                        //console.log("Invalid Paramiters For Tax Calculation, Wrong Gender Specified");
+                    }
+
+                    this.totalTax =  this.totalSal * this.taxPer / 100; 
+                }
+            };
+            empDtls.displayData = () => {
+                empDtls.getData();
+                document.querySelector("#spanEmpName").innerText = empDtls.empName;                
+                document.querySelector("#spanDeptName").innerText = empDtls.deptName;                
+                document.querySelector("#spanEmpGender").innerText = empDtls.empGender;                
+                document.querySelector("#spanEmpAge").innerText = empDtls.empAge;                
+                document.querySelector("#spanEmpBasic").innerText = empDtls.empBasic;                
+                document.querySelector("#spanEmpPf").innerText = empDtls.pf;                
+                document.querySelector("#spanEmpHra").innerText = empDtls.hra;                
+                document.querySelector("#spanEmpTax").innerText = empDtls.totalTax;                
+                // console.log("Basic = " + empDtls.empBasic + " PF = " + empDtls.pf + " HRA = " + empDtls.hra + " Total Salary = " + empDtls.totalSal + " And Total Tax = " + empDtls.totalTax);
+            }
+            empDtls.displayData();
+
+        </script>   
+    </body>
+</html>

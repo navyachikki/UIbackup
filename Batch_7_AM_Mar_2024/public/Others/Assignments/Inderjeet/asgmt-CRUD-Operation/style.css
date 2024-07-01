@@ -1,0 +1,45 @@
+label {
+    display: block;
+    padding: 5px;   
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+input[type ="text"] {
+    width: 80%;
+}
+.one{
+    border: 2px solid;
+    width: 30%;
+    padding: 10px;
+    background-color: aliceblue;
+}
+button{
+    margin-top: 10px;
+    padding: 5px;
+    background-color: greenyellow;
+}
+thead,th{
+    border: 2px solid;
+}
+tbody,td{
+    border: 2px solid;
+}
+.two{
+    width: 30%;
+    /* border: 2px solid; */
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+}
+th,td {
+    margin: 0px 10px;
+}
+#btn1{
+    margin-right: 5px;
+    cursor: pointer;
+}
+table{
+    border: 2px solid;
+    background-color: blanchedalmond;
+}

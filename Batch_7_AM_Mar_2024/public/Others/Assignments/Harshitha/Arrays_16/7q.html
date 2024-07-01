@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [2, 4, 66, 77, 88, 9];
+
+let highest = -Infinity;
+let secondHighest = -Infinity;
+
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > highest) {
+        secondHighest = highest; // Update secondHighest before updating highest
+        highest = arr[i];
+    } else if (arr[i] > secondHighest && arr[i] !== highest) {
+        secondHighest = arr[i];
+    }
+}
+
+console.log("Highest:", highest);
+console.log("Second Highest:", secondHighest);
+
+    </script>
+</body>
+</html>

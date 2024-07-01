@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Total sum of array values</title>
+  </head>
+  <body>
+    <script>
+      var arr = [];
+      var arrayLength = prompt("Enter length");         //This is STRING
+      arrayLength = parseInt(arrayLength);              //converted to NUMBER
+      for (var i = 0; i < arrayLength; i++) {
+        arr[i] = prompt("Enter values");
+        arr[i] = parseInt(arr[i]);                      //converted to NUMBER
+      }
+      console.log(arr);
+
+      var sum = 0;
+      for (var i = 0; i < arrayLength; i++) {
+        sum = sum + arr[i];
+      }
+      console.log(sum);
+    </script>
+  </body>
+</html>

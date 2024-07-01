@@ -1,0 +1,14 @@
+<script>
+    var size = prompt("Enter the size od the Array :")
+    size = parseInt(size);
+    var arr = [];
+    for(var i = 0; i <= size; i++){
+        arr[i] = prompt("Enter the values till size :");
+        arr[i] = parseInt(arr[i]);
+    }
+    var sum = 0;
+    for(var j = 0; j<arr.length;j++){
+        sum = sum + arr[j];
+    }
+    console.log("The Sum of the array is :" + sum);
+</script>

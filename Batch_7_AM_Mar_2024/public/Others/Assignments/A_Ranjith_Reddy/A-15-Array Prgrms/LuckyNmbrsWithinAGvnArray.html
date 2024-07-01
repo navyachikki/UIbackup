@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Numbers</title>
+</head>
+<body>
+    <script>
+        // Write a program to find out the lucky numbers of all the values within the given array
+
+            var length = prompt("Enter the Length of the Array")
+            length = parseInt(length);
+
+            var arr = [];
+            for(var i = 0; i <= length; i++){
+                arr[i] = prompt("Enter the Values of the Array");
+                arr[i] = parseInt(arr[i]);
+            }
+            for(var i = 0; i < arr.length; i++)
+            {
+                var num = arr[i];
+                var sum = 0;
+                     while(num > 0)
+                    {
+                        var rem = num%10;
+                        sum = sum+rem;
+                        num = num/10;
+                        num = parseInt(num);
+
+                     if(num==0 && sum>9)
+                    {
+                        num = sum;
+                        sum = 0;
+                    }
+                }
+            console.log(arr[i]+" --- "+sum);
+
+             }
+    </script>
+</html>

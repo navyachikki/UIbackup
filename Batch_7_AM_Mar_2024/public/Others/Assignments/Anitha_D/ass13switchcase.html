@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Problem = prompt("ente you problem");
+          switch(Problem){
+            case 'total digits':
+            var startrange = prompt("enter startrange");
+                startrange = parseInt(startrange);
+             var endrange = prompt("enter endrange");
+                endrange = parseInt(endrange);
+                 var count = startrange;
+                 while( count <= endrange){
+                    count++;
+                 }
+                 console.log(count);
+                 break;
+
+         case 'rev number':
+                 var num = prompt("enter number");
+                  num = parseInt(num);
+
+           var temp = num;
+           var rem ;
+           var rev = 0;
+            while( temp > 0 ){
+                 rem = temp % 10;
+                 rev = ( rev*10)+rem;
+                 temp = temp/10; 
+                 temp = parseInt(temp);
+            }
+            console.log("the rev num is"+rev);
+            break;
+
+            case 'palindrome':
+
+            var num = prompt("enter number");
+                num = parseInt(num);
+
+           var temp = num;
+           var rem ;
+           var rev = 0;
+            while( temp > 0){
+                 rem = temp % 10;
+                 rev = ( rev*10)+rem;
+                 temp = temp/10; 
+                 temp = parseInt(temp);
+            }
+           if( num == rev){
+               console.log("ngiven num is palindrome");
+           }else{
+            console.log(" given num is a not palindrome");
+           }
+          
+          }
+    </script>
+</body>
+</html>

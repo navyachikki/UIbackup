@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Floating Data
+        </title>
+        <style type="text/css">
+            body{
+                margin: 0px;
+                padding: 0px;
+                overflow: hidden;
+            }
+            .header{
+                padding: 10px 5px;
+                background: linear-gradient(90deg, #1953e7 7.67%, rgba(4, 222, 222, .79) 109.54%);
+                position: absolute;
+                width: 100%;
+            }
+            h2{
+                text-align: center;
+                text-decoration: underline;
+                font-weight: 600;
+                margin: 10px auto;
+                color: #f1f1f1;
+            }
+            b{
+                text-transform: uppercase;
+                 color: #f9f17a;
+            }
+            .main-box{
+                width: 100%;
+            }
+            .left-box{
+            width: 18%;
+            background: #616060;
+            height: 100vh;
+            float: left;
+            margin-top: 4rem;
+            }
+            .right-box{
+            width: 80%;
+            background-color: #f1f1f1;
+            height: 100vh;
+            float: left;
+            margin-left: 15px;
+            
+            }
+            .right-box ul{
+                margin-top: 4.75rem;
+            }
+            ul{
+                list-style-type: number;
+            }
+            .list{
+                padding: 10px;
+                margin: 5px;
+                color: #fff;
+            }
+            .list a{
+                color: #ffff;
+                font-weight: 600;
+                text-decoration: none;
+                font-size: 18px;
+            }
+            .img-container img{
+                width: 200px;
+                height: 200px;
+                margin-right: 20px;
+                float: left;
+                border: 2px solid gray;
+                border-bottom: none;
+            }
+           .detail-container{
+                float: left;
+                clear: right;
+            }
+            .detail-container, .right-box ul{
+                list-style-type: none;
+            }
+            .mb-10{
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            .detail-container li{
+                margin-bottom: 20px;
+                font-size: 18px;
+            }
+            .border{
+                border-bottom: 2px solid chocolate;
+                clear: both;
+            }
+            .right-box
+            {
+                margin: 5px;
+                padding: 10px;
+                height: 615px;
+                overflow: auto;
+            }
+            a:hover, a:active, a:focus{
+            text-decoration: underline;
+            color: #f9f17a;
+            font-weight: bold;
+            }
+            footer{
+                position: fixed;
+                bottom: 0px;
+                width: 100%;
+                background: darkcyan;
+                padding: 6px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <h2>Morning -7AM- <b>Assignement-3</b></h2>
+        </header>
+       
+        <div class="main-box">
+           <div class="left-box">
+            <ul>
+                <li class="list">
+                    <a href="#srikanth">Srikanth</a>
+                </li>
+                <hr>
+                <li class="list">
+                    <a href="#teena">Teena</a>
+                </li>
+                <hr>
+                <li class="list">
+                    <a href="#naveen">Naveen</a>
+                </li>
+                <hr>
+                <li class="list">
+                    <a href="#prasad">Prasada</a>
+                </li>
+                <hr>
+                <li class="list">
+                    <a href="#prabas">Prabhas</a>
+                </li>
+                <hr>
+            </ul>
+           </div>
+           <div class="right-box">
+            <ul>
+                <li class="mb-10" id="srikanth">
+                    <div class="img-container">
+                        <img src="../images/std3.PNG" alt="" >
+                    </div>
+                    <div class="detail-container">
+                        <ul style= "margin-top: 20px; ">
+                            <li>Name: Srikanth</li>
+                            <li>Gender: Male</li>
+                            <li>Location: Andhara Pradesh</li>
+                            <li>Course: UX designer</li>
+                        </ul>
+                    </div>
+                    <hr class="border">
+                </li>
+     
+                <li class="mb-10" id="teena">
+                    <div class="img-container">
+                        <img src="../images/std4.PNG" alt="" >
+                    </div>
+                    <div class="detail-container">
+                        <ul style= "margin-top: 20px; ">
+                            <li>Name: Teena</li>
+                            <li>Gender: FeMale</li>
+                            <li>Location: Hyderbad</li>
+                            <li>Course: Web Designer</li>
+                        </ul>
+                    </div>
+                    <hr class="border">
+                </li>
+
+                <li class="mb-10" id="naveen">
+                    <div class="img-container">
+                        <img src="../images/std6.PNG" alt="" >
+                    </div>
+                    <div class="detail-container">
+                        <ul style= "margin-top: 20px; ">
+                            <li>Name: Naveen</li>
+                            <li>Gender: Male</li>
+                            <li>Location: Delhi</li>
+                            <li>Course: Java</li>
+                        </ul>
+                    </div>
+                    <hr class="border">
+                </li>
+
+                <li class="mb-10" id="prasad">
+                    <div class="img-container">
+                        <img src="../images/1.jpg" alt="" >
+                    </div>
+                    <div class="detail-container">
+                        <ul style= "margin-top: 20px; ">
+                            <li>Name: Prasad</li>
+                            <li>Gender: Male</li>
+                            <li>Location: UK</li>
+                            <li>Course: .NET</li>
+                        </ul>
+                    </div>
+                    <hr class="border">
+                </li>
+
+                <li class="mb-10" id="prabas">
+                    <div class="img-container">
+                        <img src="../images/2.jpg" alt="" >
+                    </div>
+                    <div class="detail-container">
+                        <ul style= "margin-top: 20px; ">
+                            <li>Name: Prabhas</li>
+                            <li>Gender: Male</li>
+                            <li>Location: USA</li>
+                            <li>Course: AI&Dat Science</li>
+                        </ul>
+                    </div>
+                    <hr class="border">
+                </li>
+               
+            </ul>
+           </div>
+        </div>
+       <footer>
+        <h2>@copy rights 2024</h2>
+       </footer>
+         
+    </body>
+</HTml>

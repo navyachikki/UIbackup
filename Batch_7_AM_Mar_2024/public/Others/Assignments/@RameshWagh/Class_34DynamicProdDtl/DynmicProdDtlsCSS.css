@@ -1,0 +1,45 @@
+.header {
+    text-align: center;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.productDetailsContainer > li {
+    width: 250px;   
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgb(96, 26, 209);
+    list-style: none;
+    float: left;
+}
+
+img {
+    width: 180px;
+    height: 150px;
+}
+
+.singleProduct li {
+    border-bottom: 1px solid rgb(41, 6, 82);
+    list-style: none;
+    margin: 10px;
+    padding: 5px;
+}
+
+.singleProduct {
+    margin: 10px;
+    padding: 10px;
+}
+
+.actualPrice {
+    color: rgb(20, 14, 1);
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-line: line-through;
+}
+
+.discountedPrice {
+    font-weight: bold;
+    color: green;
+    margin-left: 10px;
+}

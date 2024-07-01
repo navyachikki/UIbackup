@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name, Age, Department, salary, PF, HRA, total;
+        function getEmployeeData(){
+         name = prompt("Enter Employee Name :");
+         Age = prompt("Enter Employee Age :");
+         Department = prompt("Enter Employee Department :");
+         salary = parseInt(prompt("Enter salary :"));
+         PF = (salary*14)/100;
+         HRA = (salary*25)/100;
+         getTotalSalary();
+        }
+    
+        function getTotalSalary(){
+         total = salary + PF + HRA;
+         showData();
+        }
+           
+        function showData(){
+        console.log("Employee Name : " +name);
+        console.log("Employee AGE : " +Age);
+        console.log("Employee Deparment : " +Department);
+        console.log("Employee Salary : " +salary);
+        console.log("PF is : " + PF);
+        console.log("HRA IS  : " + HRA);
+        console.log("Total Monthly Salary  : " +total);
+        }
+
+        getEmployeeData();
+    
+        
+    </script>
+</body>
+</html>

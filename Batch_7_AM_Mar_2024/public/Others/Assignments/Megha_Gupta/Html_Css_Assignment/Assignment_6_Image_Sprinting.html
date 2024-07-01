@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image_Spriting</title>
+    <style>
+        .Header,
+        .Footer{
+            border: 2px solid darkred;
+            text-align: center;
+            margin: 10px auto;
+            padding: 5px;
+            background-color: slategrey;
+        }
+        
+        .content{
+            border: 2px solid;
+            margin: 5px ;
+            padding: 5px;
+            height: 800px;
+            background-color:cadetblue;
+        }
+        .LeftBlock{
+            border: 2px solid darkred;
+            width: 250px;
+            margin: 10px;
+            float: left;
+            height: 780px;
+            background-color: cornsilk;
+        }
+        .RightBlock{
+            border: 2px solid brown;
+            width: 1100px;
+            height: 775px;
+            margin: 5px auto;
+            padding: 5px;
+            overflow: auto;
+            float: left;
+            background-color: lightcoral;
+        }
+        .LeftBlock li{
+            border: 1px ;
+            line-height: 40px;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        .studentDetails{
+            border: 1px solid;
+            height: 220px;
+            margin: 5px;
+        }
+        .image{
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+            margin: 10px 10px 0px 10px;
+            background-image: url(image_sprinting.png);
+            float: left;
+        }
+        .subdetails{
+            border: 1px;
+            float: left;
+            margin: 10px;
+            line-height: 40px;
+        }
+        .Neha{
+            background-position: -4px 2px;
+        }
+        .Anushika{
+            background-position: 519px 1430px;
+        }
+        .Rahul{
+            background-position: 275px 1433px;
+        }
+        .Krish{
+            background-position: 279px 734px;
+        }
+        .Prasad{
+            background-position: 746px 694px;
+        }
+        .Teena{
+            background-position: -256px 726px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="Header"> STUDENT DETAILS </div>
+   
+        <div class="content">
+            <div class="LeftBlock">
+                <ol>
+                    <li><a href="#Neha">NEHA</a></li>
+                    
+                    <li><a href="#Anushika">ANUSHIKA</a></li>    
+                   
+                    <li><a href="#Rajesh">RAHUL</a></li>
+                    
+                    <li><a href="#Krish">KRISH</a></li>
+                       
+                    <li><a href="#Prasad">PRASAD</a></li>
+
+                    <li><a href="#Teena">TEENA</a></li> 
+                    
+                </ol>
+            </div>
+            <div class="RightBlock">
+                <div class="studentDetails" id="Neha">
+                    <div class="image Neha"></div>
+                    <div class="subdetails">
+                        <ul>
+                            <li><span>NAME:</span> NEHA</li>
+                            <li><span>AGE:</span> 24</li>
+                            <li><span>GENDER:</span> Female</li>
+                            <li><span>LOCATION:</span> Agra</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="studentDetails" id="Anushika">
+                    <div class="image Anushika"></div>
+                    <div class="subdetails">
+                        <ul>
+                            <li><span>NAME:</span>ANUSHIKA</li>
+                            <li><span>AGE:</span> 22</li>
+                            <li><span>GENDER:</span> Female</li>
+                            <li><span>LOCATION:</span> Chennai</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="studentDetails" id="Rahul">
+                    <div class="image Rahul"></div>
+                    <div class="subdetails">
+                        <ul>
+                            <li><span>NAME:</span> RAHUL</li>
+                            <li><span>AGE:</span> 25</li>
+                            <li><span>GENDER:</span> Male</li>
+                            <li><span>LOCATION:</span> Hyderabad</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="studentDetails" id="Krish">
+                    <div class="image Krish"></div>
+                    <div class="subdetails">
+                        <ul>
+                            <li><span>NAME:</span> KRISH</li>
+                            <li><span>AGE:</span> 21</li>
+                            <li><span>GENDER:</span> Male</li>
+                            <li><span>LOCATION:</span> NewDehli</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="studentDetails" id="Prasad">
+                    <div class="image Prasad"></div>
+                    <div class="subdetails">
+                        <ul>
+                            <li><span>NAME:</span> PRASAD</li>
+                            <li><span>AGE:</span> 23</li>
+                            <li><span>GENDER:</span> Male</li>
+                            <li><span>LOCATION:</span> Bhopal</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="studentDetails" id="Teena">
+                    <div class="image Teena"></div>
+                    <div class="subdetails">
+                        <ul>
+                            <li><span>NAME:</span> TEENA</li>
+                            <li><span>AGE:</span> 20</li>
+                            <li><span>GENDER:</span> Female</li>
+                            <li><span>LOCATION:</span> Gwalior</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+    <div class="Footer">
+        StudentDetails@CoyRights-2024
+    </div>
+</body>
+</html>

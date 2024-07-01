@@ -1,0 +1,24 @@
+new input elements
+
+doctype
+
+    DTD - Document type definition
+    schema of webpage
+
+Appcache :
+
+    BookReading webpage:
+
+        login
+        explore the list of categories 
+        select one category 
+        select the book from list 
+        start reading book  -> next and prev btns 
+
+        if you want physical copy, buy it through payment process 
+
+audio & video tags 
+
+audio
+
+video 

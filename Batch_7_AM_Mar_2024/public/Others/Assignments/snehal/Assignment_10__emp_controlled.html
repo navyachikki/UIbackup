@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controlled Structure</title>
+</head>
+<body>
+    <script>
+        var ename, eage, egender, bassal, tax;
+
+        ename = prompt("Enter Employee Name");
+        eage = prompt("Enter Emp. Age");
+        egender = prompt("Enter Gender");
+        bassal = prompt("Enter Basic Salary");
+        bassal = parseInt(bassal);
+
+        var pf = (14 * bassal / 100);
+        var hra = (24 * bassal / 100);
+        var totalSal = (pf + hra + bassal); 
+
+        console.log("Employee Details");
+        console.log("Name = " + ename);
+        console.log("Age = " + eage);
+        console.log("Gender = " + egender);
+        console.log("Basic Salary = " + bassal);
+        console.log("Provident Fund = " + pf);
+        console.log("House Rent Allowance = " + hra);
+        console.log("Total Salary is " + totalSal);
+
+        if(egender == 'male') {
+            console.log("Gender is Male");
+            if(totalSal >= 200000) {
+                console.log("Tax = " + totalSal * 15 / 100);
+            } else if(totalSal >= 100000) {
+                console.log("Tax = " + totalSal * 10 / 100);
+            } else if(totalSal >= 50000) {
+                console.log("Tax = " + totalSal * 5 / 100);
+            } else {
+                console.log("NO TAX");
+            }
+        }
+        else if(egender == 'female') {
+            console.log("Gender is Female");
+            if(totalSal >=200000) {
+                console.log("Tax = " + totalSal * 10 /100);
+            } else if(totalSal >= 100000) {
+                console.log("Tax = " + totalSal * 5 / 100);
+            } else {
+                console.log("NO TAX");
+            }
+        }
+
+
+
+
+    </script>
+    </script>
+</body>
+</html>

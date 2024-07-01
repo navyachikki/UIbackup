@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        .header, .Contener, .footer
+        {
+            border: 1px solid;
+        }
+        .Block
+        {
+            border: 1px solid;
+            width : 100px;
+            height: 100px;
+            text-align: center;
+            font-weight: bold;
+            color: blue;
+        }
+        .header
+        {
+            padding: 10px;
+            text-align: center;
+        }
+        .Contener
+        {
+            width: 600px;
+            height: 600px;
+            margin: 5px auto;
+            position: relative;
+            background-image: url(https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?cs=srgb&dl=pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-255379.jpg&fm=jpg);
+        }
+        .mainCont
+        {
+            background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg);
+            background-repeat:no-repeat;
+            background-size: 100% 100%;
+        }
+        .footer
+        {
+            padding: 10px;
+            text-align: center;
+        }
+        .Block1
+        {
+            background-color: aqua;
+            top: 0px;
+            position: absolute;
+        }
+        .Block2
+        {
+            background-color: rgb(216, 115, 115);
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        .Block3
+        {
+            background-color: aqua;
+            bottom: 0px ;
+            position: absolute;
+        }
+        .Block4
+        {
+            background-color: aqua;
+            top: 0px ;
+            right: 0px;
+            position: absolute;
+        }
+        .Block5
+        {
+            background-color: aqua;
+            bottom: 0px ;
+            right: 0px;
+            position: absolute;
+        }
+        .midBox
+        {
+            left: 45%;
+            top: 45%;
+            background-color: yellow;
+            position: absolute;
+        }
+        .midBox1
+        {
+            left: 33%;
+            top: 33%;
+            background-color: rgb(241, 241, 185);
+            position: absolute;
+        }
+        .midBox2
+        {
+            left: 58%;
+            top: 33%;
+            background-color: rgb(241, 241, 185);
+            position: absolute;
+        }
+        .midBox3
+        {
+            left: 33%;
+            top: 58%;
+            background-color: rgb(241, 241, 185);
+            position: absolute;
+        }
+        .midBox4
+        {
+            left: 58%;
+            top: 58%;
+            background-color: rgb(241, 241, 185);
+            position: absolute;
+        }
+    </style>
+</head>
+<body >
+    
+    <div Class = "header">Block 1</div>
+    <div class = "mainCont">
+        <div Class = "Contener">
+            <div class="Block Block1"> Block1</div>
+            <div class="Block Block2"> Block2</div>
+            <div class="Block midBox"> MidBox</div>
+            <div class="Block midBox1"> MidBox1</div>
+            <div class="Block midBox2"> MidBox2</div>
+            <div class="Block midBox3"> MidBox3</div>
+            <div class="Block midBox4"> MidBox4</div>
+            <div class="Block Block3"> Block3</div>
+            <div class="Block Block4"> Block4</div>
+            <div class="Block Block5"> Block5</div>
+        </div>
+    </div>
+    <div Class = "footer">copy rights by soft comp solutions @ 2024</div>
+</body>
+</html>

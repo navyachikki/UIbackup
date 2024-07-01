@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrationPage_using_FormTag</title>
+    <style>
+        .header{
+            text-align: center;
+            border: 2px solid;
+            border-radius: 10px 15px;
+            width: 300px;
+            margin: 5px auto;
+            padding: 5px;
+            font-style: italic;
+            font-weight: bold;
+            font-size: large;
+            background-color: antiquewhite;
+            text-decoration: underline;
+        }
+        .content{
+            border: 2px solid;
+            height: 600px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            position: relative;
+        }
+        .personalDetails,
+        .EducationDetails,
+        .aboutYourself{
+            border: 1px solid;
+            height: 250px;
+            margin: 2px;
+            background-color: aliceblue;
+        }
+        .division{
+            border: .8px solid;
+            border-radius: 10px;
+            width: 190px;
+            margin: 2px;
+            padding: 10px;
+            background-color: aquamarine;
+        }
+        .photo{
+            float: right;
+        }
+        .pic{
+            border: 1px solid;
+            width: 150px;
+            height: 150px;
+            background-color: white;
+        }
+        label{
+            display: inline-block;
+            font-weight: bold;
+        }
+        li{
+            margin: 10px;
+        }
+        .addr{
+            display: block;
+        }
+        #addr{
+            display: block;
+        }
+        .button{
+            position: relative;
+            left: 45%;
+        }
+        .footer{
+            text-align: center;
+            border: 2px solid;
+            border-radius: 10px 15px;
+            margin: 5px auto;
+            padding: 5px;
+            background-color: yellowgreen;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">STUDENT REGISTRATION FORM</div>
+    <div class="content">
+        <div class="personalDetails">
+            <div class="division pDetail">PERSONAL-DETAILS</div>
+            <div>
+                <div class="photo">
+                    <div class="pic"></div>
+                    <input type="file">
+                </div>
+                <ul>
+                    <li>
+                        <label for="Name">First Name:</label>
+                        <input type="text" maxlength="10" name="Name" required>
+                        <label for="Name">Middle Name:</label>
+                        <input type="text" maxlength="10" name="Name">
+                        <label for="Name">Last Name:</label>
+                        <input type="text" maxlength="10" name="Name">
+                    </li>
+                    <li>
+                        <label for="F-Name">Father's Name:</label>
+                        <input type="text" maxlength="20" name="F-Name" required>
+                    </li>
+                    <li>
+                        <label for="M-Name">Mother's Name:</label>
+                        <input type="text" maxlength="20" name="M-Name" required>
+                    </li>
+                    <li>
+                        <label for="DOB">Date of Birth:</label>
+                        <input type="date" required>
+                    </li>
+                    <li>
+                        <label> Gender:</label>
+                        <input type="radio" name="gender" value="male" required>Male 
+                        <input type="radio" name="gender" value="female">Female
+                    </li>
+                    <li>
+                        <label>E-Mail:</label>
+                        <input type="text" name="E-Mail" required>
+                        <label>Mobile:</label>
+                        
+                        <input type="text" maxlength="10">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="EducationDetails">
+            <div class="division eDetails">EDUCATIONAL-DETAILS</div>
+            <div>
+                <ul>
+                    
+                    <li>
+                        <label for="quali">Qualification:</label>
+                        <select name="quals" id="">
+                            <option value=""></option>
+                            <option value="intr">INTER</option>
+                            <option value="cbse">12-CBSE</option>
+                            <option value="diplo">DIPLOMA</option>
+                        </select>
+                        <label for="marks">Marks Obtained:</label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label for="course">Course Opted:</label>
+                        <select name="course" id="">
+                            <option value=""></option>
+                            <option value="engg">B.TECH</option>
+                            <option value="deg">DEGREE</option>
+                            <option value="mba">MBA</option>
+                            <option value="ba">ARTS</option>
+                        </select>
+                        <label for="branch">Branch Opted:</label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label for="insti">Previous Institute:</label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label for="addr" class="addr">Address:</label>
+                        <textarea cols="20" rows="3"></textarea>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="aboutYourself">
+            <div class="division about">ABOUT-YOURSELF</div>
+            <div>
+                <ul>
+                    <li>
+                        <label for="lang">Languages Known:</label>
+                        <input type="checkbox" name="lng_eng" id="">English
+                        <input type="checkbox" name="lng_tel" id="">Telugu
+                        <input type="checkbox" name="lng_hin" id="">Hindi
+                        <input type="checkbox" name="lng_urd" id="">Urdu
+                    </li>
+                    <li class="address">
+                        <label id="addr">Premanent Address:</label>
+                        <textarea name="" id="" cols="30" rows="5"></textarea>
+                    </li>
+                </ul>
+            </div>
+            <div class="button">
+                <input type="submit" value="Register">
+                <input type="submit" value="Reset">
+            </div>
+        </div>
+    </div>
+    <div class="footer">STUDENT FORM PAGE @Copyrights 2024</div>
+</body>
+</html>

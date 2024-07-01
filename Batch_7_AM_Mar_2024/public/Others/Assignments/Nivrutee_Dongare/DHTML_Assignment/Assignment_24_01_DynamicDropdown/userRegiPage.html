@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration page using DHTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>User Registration Page</h2>
+    <div class="container">
+
+        <ul>
+            <li>
+                <label for="username">User Name:</label>
+                <input type="text" placeholder="enter user name" id="username">
+            </li>
+            <li>
+                <label for="userage">User Age:</label>
+                <input type="text" id="userage">
+            </li>
+            <li>
+                <label for="cname">Country Name:</label>
+                <select id="coption" name="Country">
+
+                </select>
+            </li>
+            <li>
+                <label for="sname">State Name:</label>
+                <select id="soption" name="State" disabled>
+
+                </select>
+            </li>
+            <li>
+                <label for="dname">District Name:</label>
+                <select id="doption" name="District" disabled>
+
+                </select>
+            </li>
+            <li>
+                <button id="submit" onclick="data()">Register</button>
+            </li>
+        </ul>
+
+    </div>
+    <div class="userdata">
+        <ul>
+            <li>Name :<spam id="user"></spam></li>
+            <li>Age  :<spam id="age"></spam></li>
+            <li>Country Name :<spam id="country"></spam></li>
+            <li>State Name :<spam id="state"></spam></li>
+            <li>District Name :<spam id="district"></spam></li>
+        </ul>
+
+    </div>
+    <div class="footer">
+        &copy;2024 Created By Nivrutee Dongare
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

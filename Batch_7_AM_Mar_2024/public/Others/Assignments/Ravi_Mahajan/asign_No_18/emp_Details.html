@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./app.css">
+        <script src="./externaljs.js"></script>
+    </head>
+    
+    
+    <body>
+        <div class="main">
+            <h2>Emp Sal Details</h2>
+            <ul>
+                <li>
+                     <input type="text" id="Ename" placeholder=" Enter Name of an Emp" >
+                     <div class="nameErr" id="hi">
+                        Name is Required
+                     </div>
+                </li>
+                <li>
+                     <input type="number" id="eAge" placeholder="enter age of an emp">
+                </li>
+                <li>
+                    <input type="text" id="eBasciSal" placeholder="enter Basci Sal of an Emp">
+                </li>
+                <li>
+                    <input type="radio" name="gender"  checked>Male<input type="radio"  name="gender">Female
+                </li>
+                <li>
+                    <select id="eDropDown">
+                        <option value="Select" selected> Select Department</option>
+                        <option value="HR" > HR</option>
+                        <option value="IT" > IT</option>
+                        <option value="Marketing" > Marketing</option>
+                    </select>
+                </li>
+                <li>
+                    <input type="button" value="Get PaySlip" onclick=" getPayslip.getDetails()" >
+                </li>    
+            </ul>
+        </div>
+        <div class="main hidden">
+            <h2>Emp Annual Sal Details</h2>
+            <ul>
+                <li>
+                    Employee Name : <span id="dname"></span>
+                </li>
+                <li>
+                    Employee Age : <span id="dage"></span>
+                </li>
+                <li>
+                    Employee Department : <span id="dempdpt"></span>
+                </li>
+                <li>
+                    Employee Total Salary : <span id="dtotal"></span>
+                </li>
+              </ul> 
+        </div>
+    </body>
+</html>

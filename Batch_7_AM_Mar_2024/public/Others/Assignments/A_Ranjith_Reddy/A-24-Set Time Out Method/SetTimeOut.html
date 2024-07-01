@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Time Out</title>
+</head>
+<body>
+    <script>
+            /* var showThanksMsg = () => {
+                console.log("Thank you for Visiting Uur Webpage!");
+            }
+
+            console.log("Start");
+
+                // setTimeout(showThankyouMsg, 3000);
+                // showThankyouMsg();
+
+                setTimeout( () => {
+                    console.log("Thank you for Visiting Our Webpage!");
+                } ,  4000);
+
+                setTimeout( () => {
+                    console.log("Please Visit Again");
+                } ,  10000);
+ 
+            console.log("End"); */ 
+
+            console.log("Start");
+            var userTimeout = setTimeout(() => {
+                console.log("Thank you for Visiting Our Webpage");
+            }, 5000);
+
+            var userAction = prompt("Would you like to see the message Yes/No");
+            if (userAction == 'No' ) {
+                clearTimeout(userTimeout);
+            }
+    
+            console.log("Stop");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var addvalues = (a = 10, b = 20 , c = 50) => {
+                var result = a + b + c;
+                console.log("the sum is " + result);
+            }
+
+            addvalues(5, 20, 30);
+            addvalues(5, 20);
+            addvalues();
+
+            var getProductDetails = (color = "White", priceRange=5000, quality="superb") => {
+
+            }
+
+
+            getProductDetails("Black", 2000, 'Best');
+            getProductDetails("Red");
+        </script>
+    </body>
+</html>

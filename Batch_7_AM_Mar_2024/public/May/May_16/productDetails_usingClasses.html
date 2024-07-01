@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /*var p1 = {
+                name: 'Laptop',
+                price: 2000,
+                discountPercent: 5,
+                manu: 'Sony',
+                getDiscountPrice() {
+                    this.discountPrice = this.price - (this.price * this.discountPercent) / 100;
+                },
+                displayProductDetails() {
+                    this.getDiscountPrice();
+                    console.log("Product Details");
+                    console.log("Name " + this.name);
+                    console.log("Actual Price " + this.price);
+                    console.log("Price after discount " + this.discountPrice);
+                    console.log("Manufacturer " + this.manu);
+
+                }
+            };
+            p1.displayProductDetails();
+
+
+            var p2 = {
+                name: 'Tv',
+                price: 3455,
+                discountPercent: 6,
+                manu: 'LG',
+                getDiscountPrice() {
+                    this.discountPrice = this.price - (this.price * this.discountPercent) / 100;
+                },
+                displayProductDetails() {
+                    console.log("------------------Product Details ----------");
+                    this.getDiscountPrice();
+                    console.log("Product Details");
+                    console.log("Name " + this.name);
+                    console.log("Actual Price " + this.price);
+                    console.log("Price after discount " + this.discountPrice);
+                    console.log("Manufacturer " + this.manu);
+
+                }
+            };
+            p2.displayProductDetails();
+
+            var p3 = {
+                name: 'Mobile',
+                price: 40000,
+                discountPercent: 11,
+                manu: 'Apple',
+                getDiscountPrice() {
+                    this.discountPrice = this.price - (this.price * this.discountPercent) / 100;
+                },
+                displayProductDetails() {
+                    console.log("------------------Product Details ----------");
+                    this.getDiscountPrice();
+                    console.log("Product Details");
+                    console.log("Name " + this.name);
+                    console.log("Actual Price " + this.price);
+                    console.log("Price after discount " + this.discountPrice);
+                    console.log("Manufacturer " + this.manu);
+
+                }
+            };
+            p3.displayProductDetails();
+            */ 
+
+            class ProductDetails {
+                constructor(obj) {
+                    this.name = obj.name;
+                    this.price = obj.price; 
+                    this.discountPercent = obj.percent;
+                    this.manu = obj.manu;
+                    this.sellerName = "Indian mart";
+                }
+                getDiscountPrice() {
+                    this.discountPrice = this.price - (this.price * this.discountPercent) / 100;
+                }
+                displayProductDetails() {
+                    console.log("------------------Product Details ----------");
+                    this.getDiscountPrice();
+                    console.log("Product Details");
+                    console.log("Name " + this.name);
+                    console.log("Actual Price " + this.price);
+                    console.log("Price after discount " + this.discountPrice);
+                    console.log("Manufacturer " + this.manu);
+
+                }
+            }
+
+            var product1 = {
+                name: "Laptop",
+                price: 2000,
+                percent: 10,
+                manu: 'Sony'
+            }
+
+            var p1 = new ProductDetails(product1);
+            p1.displayProductDetails();
+           /* var p2 = new ProductDetails("Mobile", 30000, 8, "Lg");
+            p2.displayProductDetails();
+            var p3 = new ProductDetails("Tv", 21000, 6, "Samsung");
+            p3.displayProductDetails(); */
+
+            console.log(p1);
+        </script>
+    </body>
+</html>

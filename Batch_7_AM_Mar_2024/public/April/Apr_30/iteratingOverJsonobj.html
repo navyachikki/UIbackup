@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            /*var studentDetails = [
+                "Raj",
+                20,
+                'Male',
+                [33, 44, 55, 66],
+                "Hyderabad",
+                67.9
+            ];
+
+            for (var i = 0; i < studentDetails.length; i++) {
+                console.log(studentDetails[i]);
+            } */
+
+            var studentDetails = {
+                name: 'Raj',
+                age: 20, 
+                gender: 'Male',
+                location:'Hyderabad'
+            }
+
+            console.log(studentDetails.name);
+            console.log(studentDetails['name']);
+
+
+            for (var tempkey in studentDetails) {
+                console.log(tempkey);
+                console.log(studentDetails[tempkey]);
+               
+                
+            } 
+
+            // tempkey = 'name'
+            // studentDetails[tempkey] -> studentDetails['name']
+
+         
+        </script>
+    </body>
+</html>

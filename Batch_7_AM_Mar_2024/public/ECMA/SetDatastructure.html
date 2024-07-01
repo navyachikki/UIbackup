@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var data = [ 34, 5, 66, 77, 989, 77, 66]; // var data =  new Array();
+
+            // Set 
+
+            var s1 = new Set();
+            s1.add(20);
+            s1.add(30);
+            s1.add(40);
+            s1.add(40);
+            s1.add(40);
+            s1.add(60);
+            s1.add(20);
+
+            console.log(s1.size);
+            s1.delete(60);
+            console.log((s1.has(20)));
+
+            // s1.clear()
+
+            console.log(s1);
+
+            // for of 
+
+            for (var temp of s1) {
+                console.log(temp);
+                
+            }
+        </script>
+    </body>
+</html>

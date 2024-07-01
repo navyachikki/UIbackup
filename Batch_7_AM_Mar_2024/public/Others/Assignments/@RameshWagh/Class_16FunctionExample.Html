@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Example</title>
+</head>
+<body>
+    <h2> Session 35 ==> 25 April 2024 </h2>
+    <script>
+
+        
+        //Method 1
+           /* function readData()
+            {
+                var a = prompt("Enter First Value : ");
+                var b = prompt("Enter Second Value : ");
+                a = parseInt(a);
+                b = parseInt(b);
+                calculate(a, b);
+            }
+
+            function calculate(a1, a2) 
+            {
+                console.log("Value Of a = " + a1 + " And Value Of b = " + a2 + " Sum Of Both Number = " + (a1 + a2));
+            }
+            console.log ("Function Run Successfully");
+
+            readData();
+            */
+
+
+        //Method 2
+           /* function readData()
+            {
+                var a = prompt("Enter First Value : ");
+                var b = prompt("Enter Second Value : ");
+                a = parseInt(a);
+                b = parseInt(b);
+                calculate(a, b);
+            }
+
+            var calculate = function (a1, a2)    //Asigning Function To the Veriable   in this Case you can not Declare Function Veriable before Call method
+            {
+                console.log("Value Of a = " + a1 + " And Value Of b = " + a2 + " Sum Of Both Number = " + (a1 + a2));
+            }
+            console.log ("Function Run Successfully");
+
+            readData();
+            */
+
+
+        //Method 3  Using Arrow Functions --> In Acma 6
+            /* var readData = () =>  //Arrow Function Example, function Keyword Replaced with =>
+            {
+                var a = prompt("Enter First Value : ");
+                var b = prompt("Enter Second Value : ");
+                a = parseInt(a);
+                b = parseInt(b);
+                calculate(a, b);
+            }
+
+            var calculate = (a1, a2) =>   //Arrow Function Example, function Keyword Replaced with =>
+            {
+                console.log("Value Of a = " + a1 + " And Value Of b = " + a2 + " Sum Of Both Number = " + (a1 + a2));
+            }
+            console.log ("Function Run Successfully");
+
+            readData();
+            */
+
+
+        //Method 4  Using Arrow Functions --> In Acma 6   ---> Using Return Value
+            var readData = () =>  //Arrow Function Example, function Keyword Replaced with =>
+            {
+                var a = prompt("Enter First Value : ");
+                var b = prompt("Enter Second Value : ");
+                a = parseInt(a);
+                b = parseInt(b);
+                console.log("Sum is = to : " + calculate(a, b));
+            }
+
+            var calculate = (a1, a2) =>   //Arrow Function Example, function Keyword Replaced with =>
+            {
+                var result;
+                result = a1 + a2;
+                return result;
+            }
+            console.log ("Function Run Successfully");
+
+            readData();
+
+    </script>
+</body>
+</html>

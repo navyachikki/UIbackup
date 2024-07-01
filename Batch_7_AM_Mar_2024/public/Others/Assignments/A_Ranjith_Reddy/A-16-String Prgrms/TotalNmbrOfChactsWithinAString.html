@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Number of Characters</title>
+    <style>
+         h2{
+            text-align: center;
+            color: rgb(8, 121, 82);
+            text-decoration: double;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: lighter;
+            }
+    </style>
+</head>
+<body>
+    <h2>To find out total number of characters within a given string without using predefine methoda</h2>
+    <script>
+        // Write a program to find out total number of characters within a given string without using predefined methods
+
+            var a = "Hello World";
+            var count = 0;
+            for(var i = 0; a[i]!= undefined;i++) {
+                console.log(a[i]);
+                count++;
+            }
+            console.log("with space "+ count)
+
+            // without including spaces 
+            var b = "Hello World";
+            var count1 = 0;
+            for(var i = 0; a[i]!= undefined; i++) {
+              
+                if(a[i]!= " ") {
+                    count1++;
+                }
+            }
+            console.log("without space " +count1)
+    </script>
+</body>
+</html>

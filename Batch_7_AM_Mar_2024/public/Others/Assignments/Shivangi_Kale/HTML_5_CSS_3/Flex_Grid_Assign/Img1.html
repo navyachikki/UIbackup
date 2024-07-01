@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container{
+            border: 1px solid;
+            width: 70%;
+            height:500px;
+            margin:20px auto;
+            background-color: cornsilk;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+           
+        }
+        .container div{
+            border: 2px solid;
+            width: 300px;
+            height:200px;
+            margin: 20px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            background-color: chartreuse;
+            gap: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Item1</div>
+        <div class="item2">Item2</div>
+        <div class="item3">Item3</div>
+        <div class="item4">Item4</div>
+        <div class="item5">Item5</div>
+        <div class="item6">Item6</div>
+    </div>
+</body>
+</html>

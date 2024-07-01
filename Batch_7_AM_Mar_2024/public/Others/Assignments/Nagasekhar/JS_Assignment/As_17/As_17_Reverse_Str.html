@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="Array.css">
+    </head>
+    <body>
+        <h2>Reverse of String</h2>
+        <span class="DisplayL"></span>
+        <span class="DisplayS"></span>
+        <script>
+            var arr = prompt("Enter the String Name");
+            var counter = 0;
+            var temp = [];
+            for(var i=0;arr[i]!=undefined;i++) {
+               temp.push(arr[i])
+                counter++;
+            } 
+            console.log(temp);
+            var frwdStr = temp.join("");
+            console.log(frwdStr);
+            document.querySelector(".DisplayS").innerHTML = "Forward String : " + frwdStr;
+
+            /* var array1 = "Everyone";
+            counter = 0;
+            var temp = "";
+            for(var j=0;j<array1.length;j++) {
+
+                temp.push() = console.log(arr[j]);
+                counter++;
+            console.log(temp);
+            console.log(counter);
+            console.log(array1[j]); */
+            counter = 0;
+            var rev = [];
+            for(var h=arr.length-1;arr[h]!=undefined;h--) {
+                counter++
+                rev.push(arr[h]) ; 
+                //console.log(arr[h]);  
+            }
+            console.log(rev);
+            var revStr = rev.join("");
+            console.log(revStr);
+            document.querySelector(".DisplayL").innerHTML = "Reverse String :" + revStr;
+          
+            
+        </script>
+    </body>
+</html>

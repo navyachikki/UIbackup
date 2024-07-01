@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // var data = [45, 67, 89, 90]; // Static Array
+
+            /* var data = [];
+            data[0] = prompt("enter first value");
+            data[0] = parseInt(data[0]);
+
+            data[1] = prompt("enter first value");
+            data[1] = parseInt(data[1]);
+
+            data[2] = prompt("enter first value");
+            data[2] = parseInt(data[2]); */ 
+
+
+            var data = [];
+
+            var n = prompt("enter length");
+            n = parseInt(n);
+
+            for (var i = 0; i <= n; i++) {
+                data[i] = prompt("enter first value");
+                data[i] = parseInt(data[i]);
+            }
+            // data = [3, 4, 56, 90]
+
+            var sum = 0;
+            // finding sum of values in an array
+            for (var i = 0 ; i <= n; i++) {
+                sum = sum + data[i];
+            }
+
+            console.log(data);
+        </script>
+    </body>
+</html>

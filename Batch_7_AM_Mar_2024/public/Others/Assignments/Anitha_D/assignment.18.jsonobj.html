@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        employe ={
+            readempdetails(){
+                this.name = prompt(" name of emp");
+                this.age = parseInt(prompt(" age of emp"));
+                this.gender = prompt(" gender of emp");
+                this.basicsal = parseInt(prompt("basic salary"));
+                this.calculatePf();
+            },
+            calculatePf(){
+                      this.Pf = (this.basicsal*14)/100;
+                      this.hra = (this.basicsal*24)/100;
+                      this.total = (this.Pf + this.hra + this.basicsal);
+                      this.tax();
+            },
+            tax(){
+                 if( this.gender == 'male'){
+                       if( this.basicsal >= 200000){
+                        this.tax = (this.basicsal*15);
+                       }
+                      else if( this.basicsal >= 100000){
+                          this.tax = ( this.basicsal*10)/100;
+                       }
+                       else if( this.basicsal >= 50000){
+                        this.tax = ( this.basicsal*5)/100;
+                       }
+                       else if( this.basicsal <= 50000){
+                        this.tax = 0;
+                       }
+                 }else{
+                    if( this.gender == 'female'){
+                       if( this.basicsal >= 200000){
+                        this.tax = (this.basicsal*10);
+                       }
+                       else if( this.basicsal >= 100000){
+                          this.tax = ( this.basicsal*5)/100;
+                       }
+                       else if( this.basicsal >= 50000){
+                        this.tax = ( this.basicsal*2)/100;
+                       }
+                       else if( this.basicsal <= 50000){
+                        this.tax = 0;
+                       }
+                   }
+              }
+              this.employedetails();  
+          },
+          employedetails(){
+            console.log(" the name of the emp :"+this.name);
+            console.log(" the age of the emp :"+this.age);
+            console.log(" the gender of the emp: "+this.gender);
+            console.log(" the basicsal of the emp :"+this.basicsal);
+            console.log(" the Pf of the emp :"+this.Pf);
+            console.log(" the hra of the emp :"+this.hra);
+            console.log(" the total of the emp :"+this.total);
+            console.log(" the tax of the emp:"+this.tax);
+          }
+            
+        
+        }
+        employe.readempdetails();
+    </script>
+</body>
+</html>

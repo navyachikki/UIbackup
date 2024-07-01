@@ -1,0 +1,20 @@
+<script>
+    var temp;
+    var rev = 0;
+    var r;
+    var num = prompt("Enter a Number to check palindrome or Not :");
+    num = parseInt(num);
+    var temp = num;
+    while( temp > 0){
+        r = temp % 10;
+        rev = (rev * 10) + r;
+        temp = temp / 10;
+        temp = parseInt(temp);
+    }
+    if(num == rev){
+        console.log("This number is palindrome");
+    }
+    else{
+        console.log("Not a Palindrome Number")
+    }
+</script>

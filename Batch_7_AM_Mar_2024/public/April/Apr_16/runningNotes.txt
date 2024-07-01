@@ -1,0 +1,106 @@
+Loopig CS 
+
+	for
+	while 
+	do while 
+
+	for of
+	for in 
+	for each
+
+
+	Syntax of while Looping CS:
+
+
+		while(<condition>) {
+			.. 
+			...
+			....// any js instructions
+		}
+
+		for (initilization; condiiton; inc/dec) {
+
+		}
+
+		---
+
+		realtime example for while and for loop 
+
+		
+
+		var palteoffood = '......';
+		while(palteoffood is not empty) {
+			step of take a spoon, 
+			step lift the food, 
+			step put in mouth,
+			step chew it 
+		}
+
+
+		---------
+		plate should be empty, 
+		when u had 5 spoons of food take some water
+		after every 10 spoons have a small walk
+		tell me how many spoons u took to finish
+
+			for (var spooncount = 1; palteoffood is not empty; spoonCount++) {
+				step of take a spoon, 
+				step lift the food, 
+				step put in mouth,
+				step chew it 
+
+				if (spooncount % 5 == 0) {
+					have some water
+				}
+				if (spooncount % 10 == 0) {
+					take a walk
+				}
+			}
+			spooncount will tell you how many spoons u took to finish
+---------------------------------------------------------------------------
+
+var n = 369  347 45
+
+
+rem = n % 10 -> 
+
+369 % 10 -> 9
+
+347 % 10 -> 7
+
+34 % 10 - > 4
+
+50 % 10 - > 0
+--
+
+n = 234
+n / 10 -> 234 / 10 -> 23.3454 -> 23 
+
+356
+
+---------------
+
+finding sum of individual digits of given number:
+
+	n = 347; 
+
+	rem = n % 10 -> 347 % 10 -> 7
+	n = n / 10 -> 347 / 10 -> 34.23423 -> 34
+
+	rem = n % 10 -> 34 % 10 -> 4 
+	n = n / 10- > 34 / 10 -> 3
+
+	rem = n % 10-> 3 % 10 -> 3
+	n = n / 10 -> 3 / 10 -> 0.3244 -> 0
+
+	var n = 347;
+	while (n > 0) {
+		var rem = n % 10;
+		n = n / 10;
+		n = parseInt(n);
+	}
+
+
+
+
+

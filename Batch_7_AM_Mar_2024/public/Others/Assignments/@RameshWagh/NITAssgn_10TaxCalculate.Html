@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tax Calculater</title>
+        <style>
+            div
+            {
+                border: 1px solid; height: 25px; width: 1100px; margin: 5px; padding: 3px; text-align: center;background-color: beige;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Tax Calculater</h3>     
+        <div> <span id = "FLine"></span> </div>
+        <div> <span id = "SLine"></span> </div>
+        <div> <span id = "TLine"></span> </div>
+        <div> <span id = "FrLine"></span> </div>
+        <div> <span id = "FthLine"></span> </div>
+        <script>
+            var empName = prompt("Enter Employee Name") ;
+            var deptName = prompt("Enter Department Name");
+            var empGender = prompt("Enter Gender (Male / Female)");
+            empGender = empGender.toLowerCase();
+            var empAge = prompt("Enter Age Of Employee");
+            var empBasic = prompt("Enter Basic Salary Of Employee");
+            var PF, HRA, totalSal, totalTax;
+            empBasic = parseInt(empBasic);
+
+            console.log("Employee Name : " + empName + " As Age : " + empAge + "(" + empGender + ")  With Deparment of : " + deptName + " Working on the Basic Salary Of Rs. : " + empBasic );
+            document.querySelector("#FLine").innerHTML = "Employee Name : " + empName + " As Age : " + empAge + "(" + empGender + ")  With Deparment of : " + deptName + " Working on the Basic Salary Of Rs. : " + empBasic;
+
+            PF = (empBasic * 14 / 100);
+            console.log("PF is " + empBasic + " * 14% = " + PF);
+            document.querySelector("#SLine").innerHTML = "PF is " + empBasic + " * 14% = " + PF;
+
+            HRA = (empBasic * 24 / 100);
+            console.log("HRA is " + empBasic + " * 24% = " + HRA);
+            document.querySelector("#TLine").innerHTML = "HRA is " + empBasic + " * 24% = " + HRA;
+
+            totalSal = (empBasic + PF + HRA);
+            console.log("Total Salary Of Employee : " + empName + " is : " + totalSal);
+            document.querySelector("#FrLine").innerHTML = "Total Salary Of Employee : " + empName + " is : " + totalSal;
+
+            if ((totalSal >= 200000) && empGender == "male")
+                {
+                    totalTax =  totalSal * 15 / 100; 
+                } else if ((totalSal >= 100000 && totalSal < 200000) && empGender == "male")
+                {
+                    totalTax =  totalSal * 10 / 100; 
+                } else if ((totalSal >= 50000 && totalSal < 100000) && empGender == "male")
+                {
+                    totalTax =  totalSal * 5 / 100; 
+                } else if ((totalSal < 50000) && empGender == "male")
+                {
+                    totalTax =  0;  
+                } else if ((totalSal >= 200000) && empGender == "female")
+                {
+                    totalTax =  totalSal * 10 / 100; 
+                } else if ((totalSal >= 100000 && totalSal < 200000) && empGender == "female")
+                {
+                    totalTax =  totalSal * 5 / 100; 
+                } else if ((totalSal < 100000) && empGender == "female")
+                {
+                    totalTax = 0; 
+                }else
+                {
+                    console.log("Invalid Paramiters For Tax Calculation, Wrong Gender Specified");
+                }
+            console.log(empName + ", You Have To Pay Tax Amounted Rs. : " + totalTax);
+            document.querySelector("#FthLine").innerHTML = empName + ", You Have To Pay Tax Amounted Rs. : " + totalTax;
+        </script>   
+    </body>
+</html>

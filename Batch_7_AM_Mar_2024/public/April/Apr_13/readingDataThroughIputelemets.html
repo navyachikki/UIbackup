@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <ul>
+            <li>
+                Enter firstvalue:
+                <input type="text" id="fval">
+            </li>
+            <li>
+                enter second value:
+                <input type="text" id="sval">
+            </li>
+            <li>
+                <input type="button" value="Save" onclick="doSum()">
+            </li>
+            <li>
+                The sum is <span></span>
+            </li>
+        </ul>
+        <script>
+            var doSum = () => {
+                var p1 = document.querySelector("#fval").value;
+                var p2 = document.querySelector("#sval").value;
+
+                p1 = parseInt(p1)
+                p2 = parseInt(p2)
+                var result = p1 + p2;
+                document.querySelector("span").innerHTML = result;
+            }
+        </script>
+    </body>
+</html>

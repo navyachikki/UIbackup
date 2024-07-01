@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>
+			Demonstrating Functions - Reusability 
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+				// Function definition
+				function myTask() {
+					console.log("Job1");
+					console.log("Job2");
+				}
+				
+				console.log("Start");
+
+				myTask(); // Function calling
+
+				console.log("A diffrnt job");
+
+				myTask();
+
+				console.log("something else job")
+
+				myTask();
+
+				console.log("Some new job")
+
+				myTask();
+
+
+				console.log("End");
+
+
+				function Test1() {
+					console.log("am from one");
+				}
+
+				function Test1() {
+					console.log("am from Two");
+				}
+
+				Test1();
+		</script>
+	</body>
+</html>

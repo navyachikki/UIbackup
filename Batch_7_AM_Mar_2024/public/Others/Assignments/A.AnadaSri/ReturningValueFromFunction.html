@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functional Demo</title>
+  </head>
+  <body>
+    <h2>Passing the Paremeters with return the Valu of function Demo</h2>
+    <script>
+      var empDetails = () => {
+        var empname = prompt("Enter Employee Name");
+        var salary = parseInt(prompt("Enter Basic Salary"));
+        var hra = (salary * 14) / 100;
+        var pf = (salary * 24) / 100;
+        console.log("Employe name: " + empname);
+        console.log("Employe Salary: " + salary);
+        console.log("Employe Hra :" + hra);
+        console.log("Employe Pf :" + pf);
+        var totalempSalary = totalSalary(salary, hra, pf);
+        console.log("Taotal salary: " + totalempSalary);
+      };
+
+      var totalSalary = (empsalry, emphra, emppf) => {
+        var totalSum = empsalry + emphra + emppf;
+        return totalSum;
+      };
+      // console.log(empDetails);
+      empDetails();
+    </script>
+  </body>
+</html>

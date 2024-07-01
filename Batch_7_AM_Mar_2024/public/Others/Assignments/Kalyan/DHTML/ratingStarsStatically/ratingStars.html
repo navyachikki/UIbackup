@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating Stars</title>
+    <link rel="stylesheet" href="ratingStars.css">
+    <link rel="stylesheet" href="file:///C:/Users/Lenovo/Desktop/studies/uiAssignments/public/JavaScriptAssignments/ratingStarLib/ratingLibrary.css">
+    <script src="file:///C:/Users/Lenovo/Desktop/studies/uiAssignments/public/JavaScriptAssignments/ratingStarLib/ratingStarLib.js"></script>
+</head>
+<body>
+    <div id="productContainer">
+        Product Details
+    </div>
+    
+    <ul >
+      <li>
+         Name: laptop
+      </li>
+        <li>
+            Type:360
+        </li>
+        <li>
+            Model:2345fv
+        </li>
+        <li>
+            Brand:hp
+        </li>
+        <li>
+            Price:<span>
+                50000
+            </span>34240
+        </li>
+        <li>
+            Rating:
+            <div id="Container">
+            
+
+            </div>
+        </li>
+        <li>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnjmxApfVppR39ckWGzEWA3mXJFagoiFnZ7w&usqp=CAU"></img>
+        </li>  
+    </ul>           
+  <script>
+  var star=prompt('enter no of stars')
+  showStars("#Container",star)
+  </script>
+
+</body>
+</html>

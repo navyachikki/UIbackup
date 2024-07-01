@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Registration page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>User Registration page</h2>
+        <div class="userData">
+            <ul>
+                <li>
+                    <input type="text" id="userid" placeholder="Account Id">
+                    <div class="error idError" >
+                        User Id cannot be empty
+                    </div>
+                </li>
+                <li>
+                    <input type="password" id="setpass" placeholder="Set Account Password">
+                    <input type="checkbox"> Show Password
+                </li>
+                <li>
+                    <input type="password" id="repass" placeholder="Re-Enter Password">
+                </li>
+                <li>
+                    <input type="text" id="umail" placeholder="Mail-id">
+                </li>
+                <li>
+                    <input type="button" value="Do Register" onclick="creatUser();">
+                </li>
+            </ul>
+        </div>
+        <div class="msg">
+            User Successfuly registered
+        </div>
+
+        <div class="passValid">
+            <ol>
+                <li id="lengthValidation">
+                    Max and min length of pwd is 8
+                </li>
+                <li id="upperCaseChar">
+                    Password should only start with Uppercase
+                </li>
+                <li id="specialSymValidation">
+                    Password should have min and max one special symbol ^#@&
+                </li>
+                <li>
+                    should have min one numeric
+                </li>
+                <li>
+                    Should not contain space
+                </li>
+            </ol>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

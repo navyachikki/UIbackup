@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Table Formating Using DIV</title>
+        <style>
+            .MainBox
+            {
+                width: 800px;
+                margin: 10px auto;
+            }
+            .HeaderBox, .Contents, .Footer
+            {
+                border: 2px solid ;
+                margin: 10px;
+                padding: 10px;
+            }
+            .HeaderBox
+            {
+                text-align: center;
+                text-decoration: underline;
+                font-weight: bolder;
+                font-size: 15px;
+            }
+            .Contents
+            {
+                height: 500px;
+            }
+            .Footer
+            {
+                text-align: center;
+                font-size: 15px;
+            }
+            .leftBlock, .rightBlock
+            {
+                border: 1px solid;  height:98%; margin: 3px; padding: 1px ; float: left; overflow: auto;
+            }
+            .leftBlock
+            {
+                width: 27%; 
+            }
+            .rightBlock
+            {
+                width: 70%;
+            }
+            .contSubUl > li
+            {
+                border: 1px solid; margin: 1px; height: 130px; list-style: none;
+            }
+            .leftBlocksli
+            {
+                border: 1px solid; height: 25px;  margin: 10px; padding: 3px; list-style-position: inside; text-align: left;
+            }
+            .imgStyle
+            {
+                height: 130px; width: 100px; margin-right: 20px;
+            }
+            .SubDtl
+            {
+                width: 70%; padding: 5px; list-style: none;
+            }
+            .imgStyle, .SubDtl
+            {
+                float: left;
+            }
+            .SubDtl li
+            {
+                list-style: none; padding: 5px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div Class = "MainBox">
+            <div Class = "HeaderBox">Student Information</div>
+            <div Class = "Contents"> 
+                <div class= "leftBlock">
+                    <ol>
+                        <li Class = "leftBlocksli"> <a href="#stud1">Ramesh Wagh</a></li>
+                        <li Class = "leftBlocksli"> <a href="#stud2">Ramesh Sanap</a></li>
+                        <li Class = "leftBlocksli"> <a href="#stud3">Shubham Dubey</a></li>
+                        <li Class = "leftBlocksli"> <a href="#stud4">Rita Powar</a></li>
+                        <li Class = "leftBlocksli"> <a href="#stud5">Devram Kokankar</a> 
+                        </li>
+                    </ol>
+                </div>
+                <Div class= "rightBlock">
+                    <ul class = "contSubUl">
+                        <li id = stud1>
+                            <div>
+                                <img class = "imgStyle" src = "https://cmseducationorg.wordpress.com/wp-content/uploads/2019/05/cms_-_student-8.jpg"  />
+                            </div>
+                            <div Class = "SubDtl"> 
+                                <ul>
+                                    <li>Name : Ramesh Wagh</li>
+                                    <li> Age : 25</li>
+                                    <li> Gender : Male</li>
+                                    <li> Location : Nashik</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id = stud2>
+                            <div>
+                                <img class = "imgStyle" src = "https://www.cmseducation.org/news/session_2021_2022/february/images/8.jpg"  />
+                            </div>
+                            <div Class = "SubDtl"> 
+                                <ul>
+                                    <li>Name : Ramesh Sanap</li>
+                                    <li> Age : 21</li>
+                                    <li> Gender : Male</li>
+                                    <li> Location : Ahmadnagar</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id = stud3>
+                            <div>
+                                <img class = "imgStyle" src = "https://cmseducationorg.wordpress.com/wp-content/uploads/2019/05/cms_-_student-7.jpg"  />
+                            </div>
+                            <div Class = "SubDtl"> 
+                                <ul>
+                                    <li>Name : Shubham Dubey</li>
+                                    <li> Age : 19</li>
+                                    <li> Gender : Male</li>
+                                    <li> Location : Banaras</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id = stud4>
+                            <div>
+                                <img class = "imgStyle" src = "https://thumbs.dreamstime.com/z/passport-photo-young-woman-blonde-neutral-looking-52876050.jpg?w=576"  />
+                            </div>
+                            <div Class = "SubDtl"> 
+                                <ul>
+                                    <li>Name : Rita Powar</li>
+                                    <li> Age : 20</li>
+                                    <li> Gender : FeMale</li>
+                                    <li> Location : Allibag</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id = stud5>
+                            <div>
+                                <img class = "imgStyle" src = "https://i.pinimg.com/736x/a3/7b/e5/a37be5b9709175f1527761157463ec38.jpg"  />
+                            </div>
+                            <div Class = "SubDtl"> 
+                                <ul>
+                                    <li>Name : Devram Kokankar</li>
+                                    <li> Age : 31</li>
+                                    <li> Gender : Male</li>
+                                    <li> Location : Panvel</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </Div>
+
+            </div>
+            <div Class = "Footer"> Copy Rights Of Naresh IT Class @ 2024</div>
+        </div>    
+    </body>
+</html>

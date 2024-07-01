@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            border: 1px solid;
+            text-align: center;
+            padding: 10px;
+            background-color:bisque;
+            margin: 0px 200px;
+        }
+
+        .footer {
+            border: 1px solid;
+            text-align: center;
+            padding: 10px;
+            background-color:aqua;
+            margin: 0px 200px;
+        }
+
+        .boxes {
+            position: relative;
+            margin: 10px 200px;
+            border: 1px solid;
+            /* width: 1120px; */
+            height: 1000px;
+            background-color:aliceblue;
+        }
+
+        .top_left {
+            position: absolute;
+            width: 120px;
+            height: 150px;
+            border: 5px solid;
+            left: 8px;
+            top: 8px;
+            background-color: aqua;
+        }
+
+        .top_left_sub {
+            position: absolute;
+            width: 120px;
+            height: 150px;
+            left: 60px;
+            top: 80px;
+            border: 5px solid;
+            background-color: bisque;
+        }
+
+        .top_right {
+            width: 120px;
+            height: 150px;
+            border: 5px solid;
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            background-color: aqua;
+        }
+
+        .top_right_sub {
+            position: absolute;
+            width: 120px;
+            height: 150px;
+            border: 5px solid;
+            right: 60px;
+            top: 80px;
+            background-color: bisque;
+        }
+
+        .bottom_left {
+            position: absolute;
+            width: 120px;
+            height: 150px;
+            border: 5px solid;
+            bottom: 8px;
+            left: 8px;
+            background-color: aqua;
+        }
+
+        .bottom_left_sub {
+            position: absolute;
+            width: 120px;
+            height: 150px;
+            left: 60px;
+            bottom: 80px;
+            border: 5px solid;
+            background-color: bisque;
+        }
+
+        .bottom_right {
+            position: absolute;
+            width: 120px;
+            height: 150px;
+            border: 5px solid;
+            bottom: 8px;
+            right: 8px;
+            background-color: aqua;
+        }
+
+        .bottom_right_sub {
+            position: absolute;
+            width: 120px;
+            height: 150px;
+            right: 60px;
+            bottom: 80px;
+            border: 5px solid;
+            background-color: bisque;
+        }
+
+        .center {
+            width: 160px;
+            height: 180px;
+            border: 5px solid;
+            position: absolute;
+            right: 45%;
+            top: 40%;
+            background-color: aqua;
+        }
+
+        .center_sub_top_left {
+            position: absolute;
+            width: 120px;
+            height: 150px;
+            right: 110px;
+            bottom: 110px;
+            border: 5px solid;
+            background-color: bisque;
+        }
+
+        .center_sub_top_right {
+            position: absolute;
+            width: 120px;
+            height: 150px;
+            left: 110px;
+            bottom: 110px;
+            border: 5px solid;
+            background-color: bisque;
+        }
+
+        .center_sub_bottom_left {
+            position: absolute;
+            width: 120px;
+            height: 150px;
+            right: 110px;
+            top: 110px;
+            border: 5px solid;
+            background-color: bisque;
+        }
+
+        .center_sub_bottom_right {
+            position: absolute;
+            width: 120px;
+            height: 150px;
+            left: 110px;
+            top: 110px;
+            border: 5px solid;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Blocks
+    </div>
+    <div class="boxes">
+        <div class="top_left">
+            <div class="top_left_sub"></div>
+        </div>
+        <div class="top_right">
+            <div class="top_right_sub"></div>
+        </div>
+        <div class="bottom_left">
+            <div class="bottom_left_sub"></div>
+        </div>
+        <div class="bottom_right">
+            <div class="bottom_right_sub"></div>
+        </div>
+        <div class="center">
+            <div class="center_sub_top_left"></div>
+            <div class="center_sub_top_right"></div>
+            <div class="center_sub_bottom_left"></div>
+            <div class="center_sub_bottom_right"></div>
+        </div>
+    </div>
+    <div class="footer">
+        @Copyright 2024
+    </div>    
+</body>
+</html>

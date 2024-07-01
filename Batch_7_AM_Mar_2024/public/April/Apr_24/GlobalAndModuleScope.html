@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var a = 90; // Global Scope
+            var z; // global
+            function displayInfo() {
+                var b = 10;   // Local/module
+                z = 100;
+                console.log("Value of a is " + a);
+                a++;
+                console.log("value of b is " + b);
+            }
+
+            console.log("Value of a is " + a);
+            a--;
+            console.log("value of a " + a);
+            displayInfo();
+            console.log("value of b is " + b);
+        </script>
+    </body>
+</html>

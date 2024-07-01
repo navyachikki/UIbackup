@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime</title>
+</head>
+<body>
+    <script>
+        var start=prompt("Enter starting range: ");
+        start=parseInt(start);
+        var end=prompt("Enter ending range: ");
+        end=parseInt(end);
+        
+        for(var i=start; i<=end; i++){
+            var counter=0;
+            if(i!=2 || i!=1){
+                for(var j=i-1; j>=2; j--){
+                    if(i%j==0){
+                       counter=1;
+                       break;
+                    }
+                }   
+                if(counter==1){
+                    console.log(i+" is not a prime number");
+                }
+                else{
+                    console.log(i+" is a prime number");
+                }
+            }
+            else{
+                console.log(i+" is a prime number")
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

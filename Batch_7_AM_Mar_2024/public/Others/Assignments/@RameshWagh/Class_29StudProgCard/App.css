@@ -1,0 +1,56 @@
+    h3
+    {
+        text-align: center;
+        border: 2px solid;
+        margin: 10px auto;
+        padding: 10px;
+        width: 620px;
+        background-color:  rgb(178, 233, 215);
+    }
+    ul {
+        width: 600px;
+        border: 2px solid;
+        margin: 10px auto;
+        padding: 20px auto;
+        list-style: none;
+        background-color:  rgb(178, 233, 215);
+    }
+    li {
+        border: 1px solid;
+        margin: 10px ;
+        padding: 10px;
+        background-color:  rgb(231, 231, 211);
+        font-weight: bold;
+        width: 525px;
+    }
+    #marksLi > input[type=text] {
+        width: 20px;
+    }
+
+    span {
+        font-weight: bold;
+        color: rgb(24, 10, 104);
+    }
+    
+    .title {
+        text-align: center;
+        font-size: 16px;
+        color: brown;
+    }
+
+    .progtable {
+        display: none;
+    }
+
+    .error {
+        color: red;
+        font-size: 12px;
+        display: none;
+    }
+
+    .astric {
+        color: red;
+        position: relative;
+        top: -5px;
+        left: -4px;
+    }

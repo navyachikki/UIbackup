@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWITCH CASE </title>
+</head>
+<body>
+    <script>
+        var n = prompt("Enter the number");
+        n = parseInt(n);
+
+        var logic = prompt("ENTER THE OPERATION('Lucky/Palindrome/Reverse/Total Digits') No Spaces");
+        logic = logic.toLowerCase();
+
+        switch(logic){
+            case 'lucky':
+                var rem;
+                var sum = 0;
+                while(n > 0) {
+                    rem = n % 10;
+                    sum = sum + rem;
+                    n = n / 10;
+                    n = parseInt(n);
+                    if (n == 0 && sum > 9) {
+                        console.log(sum + " " + "Is The Total Of Digits For Your Number")
+                        n = sum;
+                        sum = 0;
+                    }
+                }
+                console.log(sum + " " + "Is Your Lucky Number");
+                break;
+            
+            case 'palindrome':
+                var rev = 0;
+                var i = n;
+                while(i>0){
+                    var rem = i % 10;
+                    rev = rev * 10 + rem;
+                    i = parseInt(i/10);
+                }
+                console.log(rev);
+                if(n == rev){
+                    console.log(n + "Is A Palindrome Number");
+                }
+                else{
+                    console.log(n + "Is A Not Palindrome Number");
+                }
+                break;
+
+            case 'reverse':
+                 var rev = 0;
+                while(n>0){
+                    var rem = n % 10;
+                    rev = rev * 10 + rem;
+                    n = n / 10;
+                    n= parseInt(n);
+                }
+
+                console.log(rev);
+                break;
+                
+                case 'totaldigits':
+                var flag = 0;
+                 var i = n;
+
+                 while (i>0)
+                  {
+                     i = parseInt(i/10);
+                     flag++;
+                  }
+
+                console.log("The number of digits in "+ n  +" is: "+ flag);
+                break;
+            
+            default:
+                console.log("please choose properly/check for spaces/spelling mistakes");
+        }
+    </script>
+</body>
+</html>

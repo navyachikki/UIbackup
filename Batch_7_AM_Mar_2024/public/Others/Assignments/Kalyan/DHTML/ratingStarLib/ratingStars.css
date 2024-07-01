@@ -1,0 +1,25 @@
+#productContainer{
+    border:1px solid;
+    padding:10px;
+    margin:10px;
+    text-decoration: underline;
+    text-align: center;
+}
+ul{
+    border:1px solid;
+    list-style: none;
+    width:180px;
+}
+img{
+    height:100px;
+    width:130px
+}
+li{
+    border-bottom: 1px solid orange;
+    margin:5px;
+    padding:5px
+    
+}
+span{
+    text-decoration: line-through red;
+}

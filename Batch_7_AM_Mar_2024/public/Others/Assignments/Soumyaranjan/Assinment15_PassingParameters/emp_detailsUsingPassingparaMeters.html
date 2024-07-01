@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Emp Information</title>
+    </head>
+
+    <body>
+        <h3> employee details with functions using passing parameters and return values </h3>
+
+        <script>
+
+            var empDetails = () => {
+
+                var empName, empAge, empGender, empDepartment, empSalary;
+
+                empName = prompt("Enter Emp Name ");
+                empAge = prompt("Enter Emp Age ");
+                empGender = prompt("Enter Emp Gender ");
+                empDepartment = prompt("Enter Emp Department ");
+
+                empSalary = prompt("Enter Emp Salary ");
+                empSalary = parseInt(empSalary);
+
+                var totalSalary = empBenefits(empSalary);
+                showInformation(empName, empAge, empGender, empDepartment, empSalary, totalSalary);
+
+            }
+
+            var empBenefits = (empSalary) => {
+
+                var prf = (14 * empSalary) / 100;
+                var hra = (24 * empSalary) / 100;
+                var totalSalary = prf + hra + empSalary;
+                return totalSalary;
+            }
+
+            var taxAmount = (empGender, totalSalary) => {
+
+                var tax;
+
+                if (empGender === 'male' || empGender === 'Male') {
+
+                    if (totalSalary >= 200000) {
+                        tax = (15 * totalSalary) / 100;
+                        tax = parseInt(tax);
+                        console.log("Your Total tax amount is " + tax);
+
+                    } else if (totalSalary >= 100000) {
+                        tax = (10 * totalSalary) / 100;
+                        tax = parseInt(tax);
+                        console.log("Your Total Tax amount is " + tax);
+
+                    } else if (totalSalary >= 50000) {
+                        tax = (5 * totalSalary) / 100;
+                        tax = parseInt(tax);
+                        console.log("Your Total Tax amount is " + tax);
+
+                    } else {
+                        console.log("Your Total Tax amount is 0");
+                    }
+                }
+
+                else if (empGender === 'female' || empGender === 'Female') {
+
+                    if (totalSalary >= 200000) {
+                        tax = (10 * totalSalary) / 100;
+                        tax = parseInt(tax);
+                        console.log("Your Total Tax amount is " + tax);
+
+                    } else if (totalSalary >= 100000) {
+                        tax = (5 * totalSalary) / 100;
+                        tax = parseInt(tax);
+                        console.log("Your Total Tax amount is " + tax);
+
+                    } else {
+                        console.log("Your Total Tax amount is 0");
+                    }
+                }
+
+                console.log("Thank You For Responding........");
+
+                return tax;
+
+            }
+
+            var showInformation = (empName, empAge, empGender, empDepartment, empSalary, totalSalary) => {
+
+                console.log("EMPLOYEE DETAILS");
+                console.log("Name = " + empName);
+                console.log("Age = " + empAge);
+                console.log("Gender = " + empGender);
+                console.log("Department = " + empDepartment);
+
+                console.log("BasicSalary = " + empSalary);
+
+                console.log("TotalSalary = " + totalSalary);
+
+                var tax = taxAmount(empGender, totalSalary);
+
+            }
+
+            empDetails();
+        </script>
+
+
+    </body>
+
+</html>   

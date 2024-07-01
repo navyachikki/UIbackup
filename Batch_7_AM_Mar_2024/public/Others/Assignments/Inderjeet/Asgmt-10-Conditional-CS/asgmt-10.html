@@ -1,0 +1,76 @@
+<script>
+    var eName = prompt("enter your name - ");
+    var eGender = prompt("Enter your Gender - ");
+    var salary = prompt("Enter the Salary - ");
+    var totalSalary = salary*12;
+    var tax = 0;
+    if(eGender == "male"){
+        if(totalSalary >= 200000){
+            console.log("Employee Name is = " +eName);
+            console.log("Employee Gender is = " +eGender);
+            console.log("Salary is = " +salary);
+            console.log("Annual Salary is = " +totalSalary)
+            tax = (totalSalary*15)/100;
+            console.log("total tax is : "+tax + " on Annual Salary of : "+totalSalary);
+        }
+        else if(totalSalary >= 100000){
+            console.log("Employee Name is = " +eName);
+            console.log("Employee Gender is = " +eGender);
+            console.log("Salary is = " +salary);
+            console.log("Annual Salary is = " +totalSalary)
+            tax = (totalSalary*10)/100;
+            console.log("total tax is : " + tax + " on Annual Salary of : "+totalSalary);
+
+        }
+        else if(totalSalary >= 50000){
+            console.log("Employee Name is = " +eName);
+            console.log("Employee Gender is = " +eGender);
+            console.log("Salary is = " +salary);
+            console.log("Annual Salary is = " +totalSalary);
+            tax = (totalSalary*5)/100;
+            console.log("total tax is : " + tax + " on Annual Salary of : "+totalSalary);
+        }
+        else{
+            console.log("Employee Name is = " +eName);
+            console.log("Employee Gender is = " +eGender);
+            console.log("Salary is = " +salary);
+            console.log("Annual Salary is = " +totalSalary);
+            console.log("total Tax is : "+ tax + " on Annual Salary of : "+totalSalary);
+        }
+    }
+    else if (eGender == "female") {
+
+        if(totalSalary >= 200000){
+            console.log("Employee Name is = " +eName);
+            console.log("Employee Gender is = " +eGender);
+            console.log("Salary is = " +salary);
+            console.log("Annual Salary is = " +totalSalary)
+            tax = (totalSalary*10)/100;
+            console.log("total tax is : "+tax + " on Annual Salary of : "+totalSalary);
+        }
+        else if(totalSalary >= 100000){
+            console.log("Employee Name is = " +eName);
+            console.log("Employee Gender is = " +eGender);
+            console.log("Salary is = " +salary);
+            console.log("Annual Salary is = " +totalSalary)
+            tax = (totalSalary*5)/100;
+            console.log("total tax is : " + tax + " on Annual Salary of : "+totalSalary);
+
+        }
+        else if(totalSalary >= 50000){
+            console.log("Employee Name is = " +eName);
+            console.log("Employee Gender is = " +eGender);
+            console.log("Salary is = " +salary);
+            console.log("Annual Salary is = " +totalSalary);
+            tax = (totalSalary*2)/100;
+            console.log("total tax is : " + tax + " on Annual Salary of : "+totalSalary);
+        }
+        else{
+            console.log("Employee Name is = " +eName);
+            console.log("Employee Gender is = " +eGender);
+            console.log("Salary is = " +salary);
+            console.log("Annual Salary is = " +totalSalary);
+            console.log("total Tax is : "+ tax + " on Annual Salary of : "+totalSalary);
+        }
+    }
+</script>

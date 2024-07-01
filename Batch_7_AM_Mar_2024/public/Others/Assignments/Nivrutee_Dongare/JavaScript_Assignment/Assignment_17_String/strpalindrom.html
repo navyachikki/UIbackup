@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check given String is palindom or not</title>
+</head>
+<body>
+    <script>
+        let str = "car"
+        let reverse = '';
+        for(let i=str.length-1; i>=0; i--){
+             reverse = reverse + str[i];
+        }
+        if(str == reverse){
+                console.log(str , " is palindrom");
+             }else{
+                console.log(str,"is not palindrom");
+             }
+    </script>
+</body>
+</html>

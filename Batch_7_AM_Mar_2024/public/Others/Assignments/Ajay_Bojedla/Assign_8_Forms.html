@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            background-color:rgba(240, 255, 243, 0.135);
+        }
+        h3 {
+            margin: 10px 100px;
+            border: 1px solid;
+            text-align: center;
+            padding: 10px;
+            background-color:rgba(255, 230, 196, 0.676) ;
+        }
+
+        .personal_details_container, .education_details_container, .about_container {
+            position: relative;
+            margin: 40px 100px;
+            border: 1px solid;
+            background-color:rgba(255, 230, 196, 0.676) ;
+        }
+
+        .footer_buttons_container {
+            position: relative;
+            margin: 0px 100px;
+        }
+
+        .heading_container {
+            position: absolute;
+            width: 200px;
+            height: 15px;
+            text-align: center;
+            left: 20px;
+            top: -20px;
+            border: 1px solid;
+            padding: 10px 0px;
+            background-color: aquamarine;
+        }
+
+        li {
+            list-style: none;
+            margin: 30px 0px;
+        }
+
+        .field_container {
+            display: inline-block;
+        }
+
+        .field_lable {
+            width: 150px;
+            padding: 5px;
+        }
+
+        .field_item {
+            width: 200px;
+        }
+
+        .checkbox_field_item {
+            width: 800px;
+        }
+
+        .personal_detail_field, .education_detail_field, .about_field {
+            display: inline-block;
+            margin: 0px 100px 0px 0px;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            padding: 10px 15px;
+            margin: 0px 30px 0px 0px;
+            background-color:burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h3>Registartion</h3>
+    <form action="http://sample12.com/example/register" method="get">
+        <div class="personal_details_container">
+            <div class="heading_container">
+                Personal Details
+            </div>
+            <ul>
+                <li>
+                    <div class="personal_detail_field">
+                        <div class="field_lable field_container">
+                            <label for="firstName">First Name: </label>
+                        </div>
+                        <div class="field_item field_container">
+                            <input type="text" name="firstName">
+                        </div>
+                    </div>
+                    <div class="personal_detail_field">
+                        <div class="field_lable field_container">
+                            <label for="lastName">Last Name: </label>
+                        </div>
+                        <div class="field_item field_container">
+                            <input type="text" name="lastName">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="personal_detail_field">
+                        <div class="field_lable field_container">
+                            <label for="email">Email: </label>
+                        </div>
+                        <div class="field_item field_container">
+                            <input type="email" name="email">
+                        </div>
+                    </div>
+                    <div class="personal_detail_field">
+                        <div class="field_lable field_container">
+                            <label for="dob">Date of Birth: </label>
+                        </div>
+                        <div class="field_item field_container">
+                            <input type="date" name="dob">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="personal_detail_field">
+                        <div class="field_lable field_container">
+                            <label for="Gender">Gender: </label>
+                        </div>
+                        <div class="field_item field_container">
+                            <input type="radio"  name="gender" value="Male">
+                            <label for="gender">Male</label>
+                            <input type="radio" name="gender" value="Female">
+                            <label for="gender">Female</label>
+                        </div>
+                    </div>
+                    <div class="personal_detail_field">
+                        <div class="field_lable field_container">
+                            <label for="country">Country: </label>
+                        </div>
+                        <div class="field_item field_container">
+                            <select name="country">
+                                <option value="ind">India</option>
+                                <option value="Aust">Australia</option>
+                                <option value="southAfrica">South Africa</option>
+                                <option value="Newzeland">Newzeland</option>
+                                <option value="US">USA</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Engalnd">Engalnd</option>
+                                <option value="Ireland">Ireland</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="education_details_container">
+            <div class="heading_container">
+                Education Details
+            </div>
+            <ul>
+                <li>
+                    <div class="education_detail_field">
+                        <div class="field_lable field_container">
+                            <label for="qualification">Qualification: </label>
+                        </div>
+                        <div class="field_item field_container">
+                            <select name="qualification" id="">
+                                <option value="btech">B.Tech</option>
+                                <option value="be">B.E</option>
+                                <option value="ba">B.A</option>
+                                <option value="mtech">M.Tech</option>
+                                <option value="mca">MCA</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="education_detail_field">
+                        <div class="field_lable field_container">
+                            <label for="language">Language: </label>
+                        </div>
+                        <div class="checkbox_field_item field_container ">
+                           <input type="checkbox" name="English" value="English">
+                           <label for="English">English</label>
+                           <input type="checkbox" name="Hindi" value="Hindi">
+                           <label for="Hindi">Hindi</label>
+                           <input type="checkbox" name="Telugu" value="Telugu">
+                           <label for="Telugu">Telugu</label>
+                           <input type="checkbox" name="Tamil" value="Tamil">
+                           <label for="Tamil">Tamil</label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="education_detail_field">
+                        <div class="field_lable field_container">
+                            <label for="course">Course Opted: </label>
+                        </div>
+                        <div class="checkbox_field_item field_container ">
+                           <input type="radio" name="course" value="UIFullStack">
+                           <label for="course">UI Full Stack Web Development</label>
+                           <input type="radio" name="course" value="aws">
+                           <label for="course">Amazon Web service</label>
+                           <input type="radio" name="course" value="reactUI">
+                           <label for="course">React UI</label>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="about_container">
+            <div class="heading_container">
+                About Your Self
+            </div>
+            <ul>
+                <li>
+                    <div class="about_field">
+                        <div class="field_lable field_container">
+                            <label for="aboutYourSelf">About Your Self: </label>
+                        </div>
+                        <div class="checkbox_field_item field_container">
+                            <textarea name="aboutYourSelf" rows="8" cols="40"></textarea>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_buttons_container">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            color:purple;
+            width:500px;;
+            margin:10px auto;
+            border:1px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Showing the Prime Numbers From the GIven Array</h2>
+    <span class="Display"></span>
+    <script>
+
+       // var arr = [3,4,5,6,7];
+        var arr1 = [];
+        var n = parseInt(prompt("Enter the length of Array"));
+        for(var i = 0; i<n;i++ ) {
+            arr1[i] = prompt("Enter the Value")
+        }
+        console.log(arr1);
+        //console.log(typeof(arr1));
+        
+        var num ;
+        for (var j = 0; j<arr1.length;j++)
+         {		 
+             num = arr1[j];
+            var Flag = false;
+            for(var i=2; i<num; i++){
+			 
+                if(num % i == 0) {
+				 
+                    Flag = true;
+                    break;
+                }
+                else {
+                    Flag = false;
+                }
+            }
+			
+            if(Flag == true)
+            {
+                
+                console.log("the given Num is " + num + " not a prime");              
+            }
+            else if (num == 1 || num == 0)
+            {
+                console.log("the given Num is " + num + " not a prime");  
+            }
+            else{
+                console.log("the given Num is " + num + " Prime Number"); 
+            }
+        }
+
+	  
+    </script>
+</body>
+</html>

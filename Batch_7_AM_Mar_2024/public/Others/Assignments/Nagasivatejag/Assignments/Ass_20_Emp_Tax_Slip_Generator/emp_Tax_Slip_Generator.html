@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Generator </title>
+    <link rel="stylesheet" href="slip.css">
+    <script src="slip.js"></script>.
+    
+</head>
+<body>
+
+    <h3> Employee Pay Slip </h3>
+
+    <ul>
+        <li>
+            Employee Name : <input type="text" placeholder="Enter Your Name" id="eName"> <span class="astric">*</span>
+            <div class="name_ERR errorBlock"> Name is mandatory field </div>
+        </li>
+        <li>
+            Employee Age : <input type="text" placeholder="Enter Your Age" id="eAge"> <span class="astric">*</span>
+            <div class="age_ERR errorBlock"> Age is mandatory field </div>
+        </li>
+        <li>
+            Gender : <input type="radio" value="Male" name="gender" id="eGender" checked> Male
+                     <input type="radio" value="Female" name="gender" id="eGender"> Female
+        </li>
+        <li>
+            Employee Department : <select id="empDept">
+
+                            <option selected> Please Select Department </option>
+                            <option value="IT"> IT </option>
+                            <option value="sales"> Sales </option>
+                            <option value="Manager"> Manager </option>
+                            <option value="team Leader"> Team Leader </option>
+                            <option value="data Analyst"> Data Analyst </option>
+                            
+                         </select>
+                         <span class="astric">*</span>
+                         <div class="class_ERR errorBlock"> Department selection is mandatory </div>
+        </li>
+        <li id="salaryBlock">
+            Total Salary : 
+                         <input type="text" placeholder="Enter total salary" id="empSalary">
+                         <span class="astric">*</span>
+                         <div class="salary_ERR errorBlock"> Total Salary Is Mandatory </div>
+        </li>
+        <li>
+            <input type="button" value="Tax Pay Slip" onclick="empDetails.checkEmpDetails()">
+        </li>
+    </ul>
+    <ul id="slipBlock">
+        <li class="head">
+             Tax Pay Slip
+        </li>
+        <li>
+            Employee Name : <span id="dName"></span>
+        </li>
+        <li>
+            Employee Age : <span id="dAge"></span>
+        </li>
+        <li>
+            Gender : <span id="dGender"></span>
+        </li>
+        <li>
+            Department : <span id="dDepartment"></span>
+        </li>
+        <li>
+            Total Salary : <span id="dTotalSalary"></span>
+        </li>
+        <li>
+            Tax Amount : <span id="dTax"></span>
+        </li>      
+    </ul>
+</body>
+</html>

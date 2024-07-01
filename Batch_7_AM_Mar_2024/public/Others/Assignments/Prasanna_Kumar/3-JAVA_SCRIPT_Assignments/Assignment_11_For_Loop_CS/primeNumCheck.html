@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prime Number Check</title>
+    </head>
+    <body>
+        <script>
+            var a = prompt("enter value");
+                a = parseInt(a);
+
+                var num = 0;
+                for (var i = 2; i < a; i++) {
+                    var b = a % i;    
+                    if (b == 0) {
+                        num++;
+                    }
+                    if (num != 0) {
+                        break;
+                    }
+                }
+                if (num == 0) {
+                    console.log("It is a PRIME number")
+                } else {
+                    console.log("It is Not a PRIME number")
+                }
+        </script>
+    </body>
+</html>

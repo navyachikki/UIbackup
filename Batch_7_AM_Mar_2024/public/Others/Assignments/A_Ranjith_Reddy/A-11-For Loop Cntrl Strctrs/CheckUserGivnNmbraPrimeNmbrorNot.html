@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // To check whether user given number is a prime number or not
+
+            var n = prompt("Enter value for n");
+            n = parseInt(n);
+
+            var tracker = 0;
+            for (var i = 2; i <= n; i++) {
+                var rem = n % 1;
+                // console.log(rem);
+                if(rem == 0) {
+                    tracker++;
+                }
+            }
+            console.log(tracker);
+            if (tracker == 2) {
+                console.log("it is a prime number")
+            }else {
+                console.log("it is not a  prime number")
+            }
+            console.log(tracker);
+
+    </script>
+</body>
+</html>

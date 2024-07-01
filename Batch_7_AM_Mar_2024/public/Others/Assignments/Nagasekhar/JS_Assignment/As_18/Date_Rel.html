@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .Head {
+                Border:1px solid;
+                text-align: center;
+                color:purple;
+                font-family: 'Times New Roman', Times, serif;
+                width:300px;
+                margin:10px auto;
+                padding:10px;
+                font-weight: bold;
+
+            }
+            .Container {
+                width:700px;
+                height:500px;
+                border:1px solid grey;
+            }
+            span {
+                display: inline-block;
+                margin: 10px auto;
+                border: 1px solid;
+                padding: 10px;
+                width: 610px;
+                position: absolute;
+                left: 40px;
+                color:goldenrod;
+                font-weight: bold;
+            }
+            .CurDate {
+                 top: 60px;
+            }
+            .Dob {
+                
+                top: 120px; 
+            }
+            .Year {
+                
+                top: 180px; 
+            }
+            .Month {
+                
+                top: 240px; 
+            }
+            .Date {
+                top: 300px;  
+            }
+            
+
+
+        </style>
+    </head>
+    <body>
+        <div class='Container'>
+            <header class="Head">Date Related Assignemnt:</header>
+           <span class="CurDate"></span>
+           <span class="Dob"></span>
+           <span class="Year"></span>
+           <span class="Month"></span>
+           <span class="Date"></span>
+        </div>
+            <script>
+                var curDate = new Date();
+
+                var sCurDate = "";
+                var MontNames = ['January','February','March','April','May','June','Jult','August','Seprember','Octomber','November','December'];
+                var Days = ['Sunday','Monday','Tuesday','wednesday','Thursday','Friday','Saturday'];
+                var sDate = curDate.getDate(); 
+                var dCDay= curDate.getDay();
+                console.log(sDate);
+                if(sDate != 11 && (sDate % 10 === 1) ) {
+                    sCurDate = sDate + "st";
+                }
+                if(sDate != 12 && (sDate % 10 === 2) ) {
+                    sCurDate = sDate + "nd";
+                }
+                if(sDate != 13 && (sDate % 10 === 3) ) {
+                    sCurDate = sDate + "rd";
+                }
+                else {
+                    sCurDate = sDate + "th"; 
+                }
+                console.log(sCurDate); //6th
+                console.log((sDate % 10 ));
+                var sDay = Days[dCDay];
+                document.querySelector('.CurDate').innerHTML = "Current Date : " + curDate; //
+                document.querySelector('.Dob').innerHTML = "Format 1(Day-MonthName-Date-Year) : " + sDay +'-'+ '' + MontNames[curDate.getMonth()] + "-" + sCurDate + '-' + curDate.getFullYear();
+                document.querySelector('.Year').innerHTML = "Format 2(M,Date,Day,Y) : " + MontNames[curDate.getMonth()] + "-" + sCurDate + '-' + sDay+"-"+curDate.getFullYear();
+                document.querySelector('.Month').innerHTML = "Format 3(M/Date/Y) : " + MontNames[curDate.getMonth()] + "-" + sCurDate +"-"+curDate.getFullYear();
+                document.querySelector('.Date').innerHTML = "Format 4(Day Month Dt time) : " + sDay + " " +  MontNames[curDate.getMonth()] + "-" + sCurDate +"-"+curDate.getHours()+":"+curDate.getMinutes()+":"+curDate.getSeconds();
+
+            </script>
+        
+       
+       
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Values Between Given Range </title>
+</head>
+<body>
+    <script>
+        var startVal = prompt ("provide start value");
+        var startVal = parseInt(startVal);
+
+        var endVal = prompt ("provide end value");
+        var endVal = parseInt(endVal);
+            if (startVal<endVal) {
+            for (i=startVal; i<=endVal; i++) {
+            console.log("Value" + i);
+            }
+        } else if (startVal>endVal) {
+            for (i=startVal; i>=endVal; i--) {
+                console.log("value" + i);
+            }
+        } else if (startVal=endVal) {
+            console.log("value" + startVal);
+        }
+    </script>
+    
+</body>
+</html>

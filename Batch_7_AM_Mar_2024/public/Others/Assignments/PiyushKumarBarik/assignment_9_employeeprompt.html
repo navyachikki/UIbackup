@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMPLOYEE DETAILS AND TOTAL SALARY</title>
+    <style>
+      #heading {
+        border: 2px solid pink;
+        margin: 40px auto;
+        width: 400px;
+        height: 40px;
+        text-align: center;
+        padding: 10px 2px;
+        background-color: beige;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2 id="heading">Enter Employee details below</h2>
+    </div>
+    <script>
+      var eName, eAge, eGender, basicSal, pf, hra, totalSal;
+      eName = prompt("Enter your name");
+      eAge = prompt("Enter Your Age");
+      eGender = prompt("Enter Your Gender");
+      basicSal = prompt("Enter Your Basic Salary");
+      basicSal = parseFloat(basicSal);
+      // console.log(typeof(basicSal));
+      pf = (14 * basicSal) / 100;
+      hra = (24 * basicSal) / 100;
+      totalSal = basicSal + pf + hra;
+
+      console.log("Employee Name is " + eName);
+      console.log("Employee Age is " + eAge);
+      console.log("Gender: " + eGender);
+      console.log("Basic salary is " + basicSal);
+      console.log("PF is " + pf);
+      console.log("hra is " + hra);
+      console.log("Total Salary is " + totalSal);
+    </script>
+  </body>
+</html>

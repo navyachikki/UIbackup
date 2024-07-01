@@ -1,0 +1,25 @@
+<script>
+    var size = prompt("Enter the size od the Array :")
+    size = parseInt(size);
+    var arr = [];
+    for (var i = 0; i <= size; i++) {
+        arr[i] = prompt("Enter the values till size :");
+        arr[i] = parseInt(arr[i]);
+    }
+
+    for (var j = 0; j <= arr.length; j++) {
+        var temp;
+        var rev = 0;
+        var r;
+        var temp = arr[j];
+        while (temp > 0) {
+            r = temp % 10;
+            rev = (rev * 10) + r;
+            temp = temp / 10;
+            temp = parseInt(temp);
+        }
+        if (arr[j] == rev) {
+            console.log(arr[j]);
+        }
+    }
+</script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var array = [];
+    var length = prompt("enter the length of array");
+         length = parseInt(length);
+       for( i = 0; i <= length; i++){
+           array[i] = prompt("enter all values of array");
+           array[i] = parseInt(array[i]);
+       }
+        for( j = 0; j <= array.length; j++){
+            var lucky = array[j];
+            var rem = 0;
+            var sum = 0;
+            while( lucky > 0){
+                rem = lucky % 10;
+                sum = sum + rem;
+                lucky = lucky / 10;
+                lucky = parseInt(lucky);
+              if( lucky == 0 && sum > 9){
+                 lucky = sum;
+                 sum = 0;
+             }
+            }
+            console.log(" the lucky num is "+sum);
+        }
+       
+    </script>
+</body>
+</html>

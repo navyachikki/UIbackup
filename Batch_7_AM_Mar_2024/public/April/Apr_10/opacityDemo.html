@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating opacity property
+        </title>
+        <style>
+            .maskBlock {
+                background-color: yellow;
+                position: absolute;
+                left: 5px;
+                right: 5px;
+                top: 5px;
+                bottom: 5px;
+                z-index: 10;
+                opacity: 0.5;
+            }
+            .block {
+                border: 1px solid;
+                width: 120px;
+                height: 120px;
+                text-align: center;
+            }
+            .block1 {
+                background-color: yellow;
+            }
+            .block2 {
+                position: absolute;
+                left: 150px;
+                top: 100px;
+                background-color: blue;
+            }
+            .block3 {
+                position: absolute;
+                left: 140px;
+                top: 150px;
+                background-color: red;
+                opacity: 0.9;
+            }
+            .block4 {
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="maskBlock"></div>
+        <div class="block block1">Block 1</div>
+        <div class="block block2">Block 2</div>
+        <div class="block block3">Block 3</div>
+        <div class="block block4">Block 4</div>
+
+    </body>
+</html>

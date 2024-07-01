@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Check User given number is prime or not</title>
+    <style>
+        h2{
+            text-align: center;
+            color: blueviolet;
+            text-decoration: double;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>To Check User given number is prime or not</h2>
+    <script>
+        var userVal=prompt("Enter any value :");
+        userVal=parseInt(userVal);
+        var tracker;
+
+        for(var i=2;i<userVal;i++)
+        {
+            if(userVal % i == 0)
+            {
+                tracker = 1;
+            }
+        }
+       var result= (tracker==1) ? console.log("Not Prime Number") : console.log("Prime Number");
+    
+       //var result= (tracker==1) ? false : true;
+        //    console.log(result);
+        
+  
+    </script>     
+</body>
+</html>

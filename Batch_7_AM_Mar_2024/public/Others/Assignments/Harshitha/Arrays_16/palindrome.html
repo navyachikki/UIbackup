@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numbers = prompt("Enter the size of the array:")
+        numbers = parseInt(numbers);
+
+        var arr = [];
+        for (var i=0;i<=size;i++){
+            arr[i]=prompt("enter the size of the array")
+            arr[i]=parseInt(arr[i]);
+        }
+        for(var j=0;j<=arr.length;j++){
+            var temp;
+            var rev =0;
+            var r;
+            var temp=arr[j];
+            while (temp>0){
+                r=temp%10;
+                rev=(rev*10)+r;
+                temp=parseInt(temp/10)
+            }
+            if (arr[j]==rev){
+                console.log(arr[j])
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find largest and smaleest in array</title>
+</head>
+<body>
+    <script>
+        let arr = [22,43,11,23,66, 103 , 2, 77,34,65,7,89];
+        let smallest = arr[0];
+        let largest = arr[0]
+
+        for(let i=0; i<arr.length; i++){
+            for(let j = i+1; j<arr.length; j++){
+                if(smallest > arr[j]){
+                    smallest = arr[j]
+                }
+                if(largest < arr[j]){
+                    largest = arr[j]
+                }
+            }
+        }
+        console.log("Smallest num is", smallest);
+        console.log("largest num is", largest);
+    </script>
+</body>
+</html>

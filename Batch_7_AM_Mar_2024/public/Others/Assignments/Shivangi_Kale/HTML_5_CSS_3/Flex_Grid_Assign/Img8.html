@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid3</title>
+    <style>
+        .container{
+            border: 1px solid;
+            width: 70%;
+            height:550px;
+            margin:20px auto;
+            background-color:#D7BDE2 ;
+            display: grid;
+            grid-template-columns: 210px 210px 210px 210px auto;
+                  
+        }
+
+        .item8{
+            grid-column: 3/6;
+        }
+
+        .item9{
+            grid-column: 1/6;
+        }
+       
+        
+        .container div{
+            border: 2px solid;
+            color: white;    
+          
+            margin: 5px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            background-color: #512E5F ;
+            column-gap: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Item1</div>
+        <div class="item2">Item2</div>
+        <div class="item3">Item3</div>
+        <div class="item4">Item4</div>
+        <div class="item5">Item5</div>
+        <div class="item6">Item6</div>
+        <div class="item7">Item7</div>
+        <div class="item8">Item8</div>
+        <div class="item9">Item9</div>
+    </div>
+    
+</body>
+</html>

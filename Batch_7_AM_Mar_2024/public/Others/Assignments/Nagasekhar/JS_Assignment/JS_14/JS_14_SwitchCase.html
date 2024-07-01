@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwitchCase</title>
+</head>
+<body>
+    <script>
+        operation = prompt("Which operation do you want to Perform");
+        switch (operation) {
+            case 'palindrome' :
+                var sNum = parseInt(prompt("Enter the Num"));
+                var sOrig = sNum ;
+                var res = 0;
+                var sResult = " ";
+               while(sNum > 0) {
+                res = sNum % 10;
+                sResult = sResult + res ;
+                sNum = sNum / 10 ;
+                sNum = parseInt(sNum);
+
+               }
+               if (sResult == sOrig) {
+                console.log("The Given Enter Number " + sOrig + " is A Palindrome Num");
+               }
+               else {
+                console.log("The Given Enter Number " + sOrig + " is Not a Palindrome Num");
+               }
+            break ;
+            case 'prime' :
+                var sNum = parseInt(prompt("Enter the Number"));
+                var res ;
+                var sRem = 0;
+                for (var i = 2; i < sNum ; i++) {
+                        res = sNum % i ; 
+                        if ( res == 0){ 
+                            sRem = sRem + 1 ;
+                        }
+                        if(sRem != 0) {
+                            break;
+                        }
+
+                   }
+                   console.log(sRem)
+            if (sRem == 0) {
+                console.log("its a prime number")
+            } else {
+                console.log("its NOT a prime number")
+            }
+                break;
+            case 'sum' :
+                    var n1 = parseInt(prompt("Enter a Number"));
+                    var n2 = parseInt(prompt("Enter a N2 Number"));
+                    var sum = n1 + n2 ;
+                    console.log("Sum of the given " + n1 + " , " +  n2  + " is : " + sum);
+            break;
+            default :
+            console.log("Please Choose Vallid operation to perform");
+        }
+    </script>
+</body>
+</html>

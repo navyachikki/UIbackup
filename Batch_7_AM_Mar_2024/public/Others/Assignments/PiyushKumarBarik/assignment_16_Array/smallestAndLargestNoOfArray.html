@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smallest and Largest Number of Array</title>
+  </head>
+  <body>
+    <script>
+      var arr = [];
+      arr.length = prompt("Enter array length");
+      arr.length = parseInt(arr.length);
+      for (i = 0; i < arr.length; i++) {
+        arr[i] = prompt("Enter value");
+        arr[i] = parseInt(arr[i]);
+      }
+      console.log(arr);
+
+      var smallest = arr[0];                            // smallest = 0th index
+      for (let i = 1; i < arr.length; i++) {            // start from i= 1st index
+        if (arr[i] < smallest) {                        //LOGIC- if array value < first value
+          smallest = arr[i];                            //assign the array value to first value i.e smaller value assigned to smallest
+        }
+      }
+      console.log(smallest);
+
+      var largest = arr[0];
+      for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > largest) {
+          largest = arr[i];
+        }
+      }
+      console.log(largest);
+    </script>
+  </body>
+</html>

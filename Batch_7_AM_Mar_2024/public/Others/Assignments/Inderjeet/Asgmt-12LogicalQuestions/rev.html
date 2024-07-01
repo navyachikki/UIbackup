@@ -1,0 +1,15 @@
+<script>
+    var temp;
+    var rev = 0;
+    var rem;
+    var num = prompt("Enter a Number to check palindrome or Not :");
+    num = parseInt(num);
+    var temp = num;
+    while (temp > 0) {
+        rem = temp % 10;
+        rev = (rev * 10) + rem;
+        temp = temp / 10;
+        temp = parseInt(temp);
+    }
+    console.log(rev);
+</script>

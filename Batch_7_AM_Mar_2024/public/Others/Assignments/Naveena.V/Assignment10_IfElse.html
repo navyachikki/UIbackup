@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            Employee  Tax details 
+        </title>
+        <script>           
+            var Ename = prompt("Enter Employee name")
+            var EGender = prompt("Enter Emplyee Gender")
+            var E_salary= prompt("Enter employee Salary")
+            E_salary=parseInt(E_salary)
+            var Tax
+            if (EGender == "male") {
+                if(E_salary>=200000) {
+                    Tax=(E_salary*15)/100;
+                    T_salary=E_salary-Tax;
+                    console.log("after 15% of Tax,total salary is" + T_salary)
+                } else if(E_salary>=100000) {
+                    Tax=(E_salary*10)/100;
+                    T_salary=E_salary-Tax;
+                    console.log("after 10% of Tax,total salary is" + T_salary)
+                } else if(E_salary>=50000) {
+                    Tax=(E_salary*5)/100;
+                    T_salary=E_salary-Tax;
+                    console.log("after 5% of Tax,total salary is" + T_salary)
+                } else
+                console.log("0 Taxes")
+
+            }
+            else (EGender == "Female")
+            {
+                if(E_salary>=200000) {
+                    Tax=(E_salary*10)/100;
+                    T_salary=E_salary-Tax;
+                    console.log("after 10% of Tax,total salary is" + T_salary)
+                }
+                else if(E_salary>=100000) {
+                    Tax=(E_salary*5)/100;
+                    T_salary=E_salary-Tax;
+                    console.log("after 5% of Tax,total salary is" + T_salary)
+                }
+                else 
+                console.log("0 Taxes")
+            }
+                
+            
+            
+            
+        </script>
+    </head>
+</html>

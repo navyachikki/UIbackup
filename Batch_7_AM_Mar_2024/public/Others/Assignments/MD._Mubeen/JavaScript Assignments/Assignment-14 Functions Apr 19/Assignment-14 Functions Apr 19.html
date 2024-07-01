@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+    <style>
+        h1, p {
+            text-align: center;
+            margin: 5px;
+            padding: 5px;
+        }
+        p {
+            font-size: 20px;
+            margin-top: 30px;
+        }
+        span {
+            color: blue;
+            font-size: 25px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Using JavaScript Functions</h1>
+        <p>For More Information Please See <span>Console</span> Tab In <span>Inspect Element</span> !</p>
+        <p>View Source Code For Better Understanding</p>
+    </div>
+    <script>
+        var ename, eage, egender, esalary, ehra, epf, etotal;
+
+        function details() {
+            ename = prompt("Enter Your Name : ");
+            eage = prompt("Enter Your Age : ");
+            egender = prompt("Enter Your Gender : ")
+            egen = egender.toLowerCase();
+            esalary = parseInt(prompt ("Enter Your Salary"));
+            ehra = (14 * esalary) / 100;
+            epf = (24 * esalary) / 100;
+            etotal = (esalary + ehra + epf);
+        }
+        function display() {
+            console.log("Employee Details");
+            if (egen == "male") {
+                console.log("Name : " + "Mr. " + ename);
+            } else if (egen == "female") {
+                console.log("Name: " + "Ms. " + ename);
+            }
+            console.log("Age : " + eage);
+            console.log("Gender : " + egender);
+            console.log("Salary : " + esalary);
+            console.log("HRA : " + ehra);
+            console.log("P.F. : " + epf)
+            console.log("Total Salary : " + etotal);
+        }
+        function eligibility() {
+            console.log("Eligibility");
+            if (etotal >=50000) {
+                console.log("You Are Eligible For Loan");
+                alert("Congratulation, Your Total Salary is Greater Than Required, You Are Eligible For Loan.");
+            } else if (etotal <=50000 && etotal >=25000) {
+                console.log("Talk To Manager");
+                alert("You Need To Talk To Manager About Your Loan.");
+            } else if (etotal < 25000){
+                console.log("You Are Not Eligible For Loan");
+                alert("Sorry, You Are Not Eligible For Loan.");
+            }
+        }
+        function main() {
+            details();
+            display();
+            eligibility();
+        }
+
+        main();
+            
+    </script>
+</body>
+</html>

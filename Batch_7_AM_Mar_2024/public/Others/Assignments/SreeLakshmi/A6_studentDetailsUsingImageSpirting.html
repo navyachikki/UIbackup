@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Details using image Spirting</title>
+    <style>
+      .header,
+      .main,
+      .footer {
+        border: 1px solid darkorchid;
+        margin: 10px auto;
+        padding: 10px;
+        width: 700px;
+      }
+      .header {
+        text-align: center;
+        text-decoration: underline;
+        font-weight: bold;
+        color: darkmagenta;
+      }
+      .main {
+        height: 500px;
+      }
+      .footer {
+        text-align: center;
+        font-weight: bold;
+        color: blue;
+      }
+      .mainLeftBox,
+      .mainRightBox {
+        border: 1px solid lightskyblue;
+        height: 450px;
+        margin: 10px;
+        overflow: auto;
+      }
+      .mainLeftBox {
+        width: 28%;
+        float: left;
+        list-style-position: inside;
+      }
+      .mainRightBox {
+        width: 65%;
+        float: right;
+      }
+      .mainLeftBox li {
+        border: 1px solid;
+        margin: 5px;
+        padding: 5px;
+        width: 80px;
+        color: darkmagenta;
+      }
+      .rightBlock {
+        border: 1px solid darkmagenta;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+      }
+      .rightBlock > li {
+        list-style: none;
+      }
+      .imgBlock,
+      .detailsBlock {
+        float: left;
+      }
+      .imgBlock {
+        background-image: url(ImageSpirting.webp);
+        background-size: 250px;
+        width: 100px;
+        height: 100px;
+      }
+
+      .stud1 {
+        background-position: 235px -17px;
+      }
+      .stud2 {
+        background-position: 115px -17px;
+      }
+      .stud3 {
+        background-position: 235px -127px;
+      }
+      .stud4 {
+        background-position: 115px -130px;
+      }
+      .detailsBlock {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">Student Details Using Image Spirting</div>
+    <div class="main">
+      <div class="mainLeftBox">
+        <ol>
+          <li><a href="#student1">Sri</a></li>
+          <li><a href="#student2">Jyo</a></li>
+          <li><a href="#student3">Ann</a></li>
+          <li><a href="#student4">beth</a></li>
+        </ol>
+      </div>
+      <div class="mainRightBox">
+        <div>
+          <ul class="rightBlock">
+            <li id="student1">
+              <div class="imgBlock stud1"></div>
+              <div class="detailsBlock">
+                <ul>
+                  <li>StudName: Sri</li>
+                  <li>Course: UI full Stack</li>
+                  <li>Fees: 18k</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="rightBlock">
+            <li id="student2">
+              <div class="imgBlock stud2"></div>
+              <div class="detailsBlock">
+                <ul>
+                  <li>StudName: Jyo</li>
+                  <li>Course: Data Analyst</li>
+                  <li>Fees: 12k</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="rightBlock">
+            <li id="student3">
+              <div class="imgBlock stud3"></div>
+              <div class="detailsBlock">
+                <ul>
+                  <li>StudName: Ann</li>
+                  <li>Course: Business Analyst</li>
+                  <li>Fees: 10k</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="rightBlock">
+            <li id="student4">
+              <div class="imgBlock stud4"></div>
+              <div class="detailsBlock">
+                <ul>
+                  <li>StudName: Beth</li>
+                  <li>Course: Business Management</li>
+                  <li>Fees: 16k</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <div class="footer">Students@copyright2024</div>
+  </body>
+</html>

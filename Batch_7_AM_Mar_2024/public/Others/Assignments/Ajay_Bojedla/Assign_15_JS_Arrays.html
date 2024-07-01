@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+
+        var program = prompt(
+            "Enter Program number"+
+            "\n(1) Program to read dynamic value in to the array and display them"+
+            "\n(2) Program to find out sum of values inside the given array"+
+            "\n(3) Program to find out only the even numbers within the array"+
+            "\n(4) Program to find out odd number count within the given array"+
+            "\n(5) Program to find out all the prime numbers within the given array"+
+            "\n(6) Program to find out the smallest and largest value from the given array"+
+            "\n(7) Program to find out second largest value from the given array"+
+            "\n(8) Program to find out all the palindrome numbers within the given array"+
+            "\n(9) Program to find lucky number of all the values within the given array"+
+            "\n(10) Program to sort given array to ascending and descending order"
+        )
+
+        var getArrayValues = ()=> {
+            var arrayLength = prompt("Enter number of values")
+            var arrayValues = [];
+            for(var i=0; i<parseInt(arrayLength); i++) {
+                arrayValues[i] = prompt("Enter value")
+            }
+            return arrayValues
+        }
+
+        switch(program) {
+            case "1":
+                var arrayLength = prompt("Enter number of values")
+                var dynamicValues = [];
+                for(var i=0; i<parseInt(arrayLength); i++) {
+                    dynamicValues[i] = prompt("Enter value")
+                }
+                alert(dynamicValues)
+                break;
+            
+            case "2":
+                var arrayValues = getArrayValues()
+                var sum = 0;
+                if(arrayValues.length > 0) {
+                    for (var j=0; j<arrayValues.length; j++) {
+                        sum += parseInt(arrayValues[j])
+                    }
+                }
+                alert("Sum of the values in Array is "+sum)
+                break;
+
+            case "3":
+                var arrayValues = getArrayValues()
+                var evenValues = []
+                if(arrayValues.length > 0) {
+                    for (var j=0; j<arrayValues.length; j++) {
+                        if(parseInt(arrayValues[j])%2 == 0) {
+                            evenValues.push(arrayValues[j])
+                        }
+                    }
+                }
+                if(evenValues.length > 0) {
+                    alert("Even values are: "+evenValues)
+                } else {
+                    alert("No even numbers in the array")
+                }
+                break;
+            
+            case "4":
+                var arrayValues = getArrayValues()
+                var oddValuesCount = 0
+                if(arrayValues.length > 0) {
+                    for (var j=0; j<arrayValues.length; j++) {
+                        if(parseInt(arrayValues[j])%2 != 0) {
+                            oddValuesCount += 1
+                        }
+                    }
+                }
+                alert("Count of odd numbers is: "+oddValuesCount)
+                break;
+                
+            case "5":
+                var arrayValues = getArrayValues()
+                var primeValues = []
+                if(arrayValues.length > 0) {
+                    for (var j=0; j<arrayValues.length; j++) {
+                        let isPrime = true
+                        if (parseInt(arrayValues[j]) == 0 || parseInt(arrayValues[j]) == 1) {
+                            isPrime = false;
+                        } else {
+                            for(var i = 2; i<arrayValues[j]; i++) {
+                                if(parseInt(arrayValues[j])%i == 0) {
+                                    isPrime = false;
+                                    break
+                                } 
+                            }
+                        }
+                        if(isPrime) {
+                            primeValues.push(arrayValues[j])
+                        }
+                    }
+                }
+
+                if(primeValues.length > 0) {
+                    alert("Even values are: "+primeValues)
+                } else {
+                    alert("No even numbers in the array")
+                }
+                break;
+
+            case "6":    
+                var arrayValues = getArrayValues()
+                var smallestNumber = parseInt(arrayValues[0])
+                var largestNumber = parseInt(arrayValues[0])
+
+                for(var i=0; i<arrayValues.length; i++) {
+                    if(parseInt(arrayValues[i]) < smallestNumber) {
+                        smallestNumber = parseInt(arrayValues[i])
+                    }
+                    if(parseInt(arrayValues[i]) > largestNumber) {
+                        largestNumber = parseInt(arrayValues[i])
+                    }
+                }
+
+                alert("Smallest Number: "+smallestNumber+
+                    "\nLargest Number: "+largestNumber
+                )
+                break;
+            
+            case "7":
+                var arrayValues = getArrayValues()
+                for(var j=0; j<arrayValues.length; j++) {
+                    for(var i=j+1; i<arrayValues.length; i++) {
+                        var temp
+                        if(parseInt(arrayValues[j]) < parseInt(arrayValues[i+1])) {
+                            temp = arrayValues[i+1]
+                            arrayValues[i+1] = arrayValues[j]
+                            arrayValues[j] = temp
+                        }
+                    }
+                }
+                alert("Second largest value is: "+arrayValues[1])
+            
+            case "8":
+                var arrayValues = getArrayValues()
+                var palindromValues = []
+                for(var i=0; i<arrayValues.length; i++) {
+                    let n = parseInt(arrayValues[i])
+                    let temp = 0
+                    while(n > 0) {
+                        let a = n%10
+                        temp = (temp*10)+a
+                        n = parseInt(n/10)
+                    }
+                    if(temp == arrayValues[i]) {
+                        palindromValues.push(arrayValues[i])
+                    }
+                }
+                alert("Palindrome values are: "+palindromValues)
+                break;
+            
+            case "9":
+                var arrayValues = getArrayValues()
+                var luckyNumbers = []
+                for(var i=0; i<arrayValues.length; i++) {
+                    let n = parseInt(arrayValues[i])
+                    let temp = 0
+                    do {
+                        while(n > 0) {
+                            let a = n%10
+                            temp += a
+                            n = parseInt(n/10)
+                        }
+                        n = temp
+                    } while(temp > 9)
+                    luckyNumbers.push(temp)
+                }
+                alert("Lucky numbers are: "+luckyNumbers)
+                break;
+            
+            case "10":
+                var arrayValues = getArrayValues()
+                var sortValues = (sortIn) => {
+                    for(var j=0; j<arrayValues.length; j++) {
+                        for(var i=j+1; i<arrayValues.length; i++) {
+                            var temp
+                            if(sortIn == "descending") {
+                                if(parseInt(arrayValues[j]) < parseInt(arrayValues[i])) {
+                                    temp = arrayValues[i]
+                                    arrayValues[i] = arrayValues[j]
+                                    arrayValues[j] = temp
+                                }
+                            } else {
+                                if(parseInt(arrayValues[j]) > parseInt(arrayValues[i])) {
+                                    temp = arrayValues[i]
+                                    arrayValues[i] = arrayValues[j]
+                                    arrayValues[j] = temp
+                                }
+                            }
+                        }
+                    }
+                    return arrayValues
+                }
+                alert("Ascending order is: "+sortValues("ascending")+
+                    "\nDescending Number: "+sortValues("descending"))    
+        }
+    </script>
+</body>
+</html>

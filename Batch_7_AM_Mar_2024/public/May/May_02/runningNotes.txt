@@ -1,0 +1,8 @@
+DHTML:
+
+
+    document.getElementById("container")   -> document.querySelector("#container")
+            .getElementByTagname("div")    -> document.querySelector("div")
+            .getElementByClassname("test") -> document.querySelector(".test")
+
+    document.querySelector();

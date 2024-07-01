@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page With Local Storage</title>
+        <link rel="stylesheet" href="LocalStore.css">
+        <script src="LocalStore.js"></script>
+    </head>
+    <body>
+        <h3> User Login Page</h3>
+        <div class = "themeBlock">
+            Theme Chooser
+             <select name="" id="themeName" onchange="getTheme()">
+                <option value = "red">red</option>
+                <option value = "green">green</option>
+                <option value = "yellow">yellow</option>
+                <option value = "purple">purple</option>
+             </select>
+        </div>
+        <ul>
+            <li>
+                <input type="text" placeholder="Enter User Name" id="userId">
+            </li>
+            <li>
+                <input type="password" placeholder="Enter password" id="userPass">
+            </li>
+            <li>
+                <input type="checkbox" id="checkBoxValue"> Remember My User Id And Password
+            </li>
+            <li>
+                <input type="button" value="Login" onclick="storeloginDtls()">
+            </li>
+        </ul>        
+    </body>
+</html>

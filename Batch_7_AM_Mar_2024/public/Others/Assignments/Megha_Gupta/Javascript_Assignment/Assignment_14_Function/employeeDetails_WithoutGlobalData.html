@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Details </title>
+    </head>
+    <body>
+        <script>
+
+           var readEmpDetails = () => {
+                empname = prompt("enter employee name");
+                empBasicSal = prompt("enter basic sal");
+                empBasicSal = parseInt(empBasicSal);
+                eGender = prompt("Enter Gender");
+                getTotalSal();
+            }
+
+            var getTotalSal = () => {
+                epf = (empBasicSal * 12 ) / 100;
+                ehra = (empBasicSal * 24 ) / 100;
+                etotalSal = empBasicSal + epf + ehra;
+                getTotalTax();
+            }
+
+            var getTotalTax = () => {
+                var taxPercent = 0;
+                if (eGender == 'Male') {
+                    if (etotalSal >= 200000) {
+                        taxPercent = 10;
+                    } else {
+                        taxPercent = 5;
+                    }
+                } else { // Female
+                    if (etotalSal >= 200000) {
+                        taxPercent = 5;
+                    }
+                }
+                etotalTax = (etotalSal * taxPercent) / 100;
+            }
+
+            var displayEmpDetails = () => {
+                readEmpDetails();
+                console.log("Emp Details");
+                console.log("Emp name "  + empname);
+                console.log("Emp basicsal "  + empBasicSal);
+                console.log("Total sal " + etotalSal);
+                console.log("Tax to be paid " + etotalTax);
+            }
+
+            displayEmpDetails();
+        </script>
+    </body>
+</html>

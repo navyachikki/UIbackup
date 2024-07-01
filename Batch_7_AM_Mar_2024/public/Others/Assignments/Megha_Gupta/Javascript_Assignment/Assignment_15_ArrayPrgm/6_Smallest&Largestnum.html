@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display smallest and largest value in array</title>
+</head>
+<body>
+    <script>
+    var arr=[];
+        var n=parseInt(prompt("Enter number of elements :"));
+       
+        for(var i=0;i<n;i++)
+        {
+            arr[i]=prompt("Enter array value : ");
+            var minVal=arr[0];
+            var maxVal=arr[0];
+            
+            if(arr[i]<minVal)
+            {
+                minVal=arr[i];
+            }
+            if(arr[i]>maxVal)
+            {
+                maxVal=arr[i];
+            }            
+        }
+        console.log("Mininum Value in array : "+minVal);
+        console.log("Maximum Value in array : "+maxVal);
+    </script>
+</body>
+</html>

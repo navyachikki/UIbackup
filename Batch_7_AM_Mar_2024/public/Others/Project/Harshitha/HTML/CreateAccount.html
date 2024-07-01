@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account Page</title>
+    <script></script>
+    <link href="../css/createAcc.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div>
+        <form id="login-page">
+            <div class="heading"><h1>Create Account</h1></div>
+            
+            <ul>
+                <li>
+                    <input type="text" placeholder="Full Name" id="uname" class="input" > 
+                </li>
+                <li>
+                    <input type="email" placeholder="Email" id="uemail" class="input" >
+                    <div class="MailErr error">
+                        Mail ID is requried
+                    </div>
+                </li>
+                
+                <li>
+                    <input type="password" placeholder="Enter password" id="passInput" name="pwd">
+                    <ul id="passwordCriteria">
+                        <li id="eightchar">should contain 8 charaters</li>
+                        <li id="lowerCase">contain LowerCase characters</li>
+                        <li id="upperCase"> contain uppercase charaters</li>
+                        <li id="containNumber">contain Number</li>
+                        <li id="specialCharacters">Contain special characters</li>
+                    
+                    </ul>
+                </li>
+                <li>
+                    <input type="password" placeholder="Re-Enter password" id="passInput2" name="pwd2">
+                    <div id="match" >Passwords do not match</div>
+                </li>
+                <button type="submit" id="btnId" >Create Account</button>
+
+                <button onclick="redirectToPage()"  id="newPage">Login In</button>
+
+            </ul>
+            
+        </form>
+    </div> 
+    <script src="../JavaScript/createAcc.js"></script> 
+    <!-- <script src="../JavaScript/Loginpg.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Floating Properties </title>
+        <style>
+            .BlockDgn
+            {
+                height: 100px;
+                width: 100px;
+                margin: 10px ;
+                text-align: center;
+                font-weight: bold;
+                border-style: solid;
+                padding: 2px;
+            }
+           
+            .Block1And13
+            {
+                background-color: red; 
+                
+            }
+            .Block2And10
+            {
+                background-color: yellow; 
+            }
+            .Block3And8
+            {
+                background-color: green;
+            }
+            .Block4And5
+            {
+                background-color: rgb(166, 74, 164);
+            }
+            .Block6And14
+            {
+                background-color:rgb(113, 145, 185);
+            }
+            .Block7And11
+            {
+                background-color: rgb(188, 123, 87);
+            }
+            .Block12
+            {
+                background-color:rgb(78, 78, 78);
+            }
+             
+        </style>
+    </head>
+
+    <body>
+        <div style = "float: left" ; class="BlockDgn Block1And13"> 1 </div>
+        <div style = "float: left" ; class="BlockDgn Block2And10"> 2</div>
+        <div style = "float: right" ; class="BlockDgn Block3And8" > 3</div>
+        <div style = "clear: both ; float: right" ; class="BlockDgn Block4And5"> 4</div>
+        <div style = "clear: both ; float: left" ; class="BlockDgn Block4And5"> 5</div>
+        <div style = "float: left" ; class="BlockDgn Block6And14"> 6</div>
+        <div style = "float: right" ; class="BlockDgn Block7And11"> 7</div>
+        <div style = "clear: both ; float: left" ; class="BlockDgn Block3And8"> 8</div>
+        <div style = "float: right" ; class="BlockDgn Block2And10"> 10</div>
+        <div style = "clear: both ; float: left" ; class="BlockDgn Block7And11"> 11</div>
+        <div style = "float: right" ; class="BlockDgn Block12"> 12</div>
+        <div style = "clear: left ; float: right" ; class="BlockDgn Block1And13"> 13</div>
+        <div style = "float: right" ; class="BlockDgn Block6And14"> 14</div>
+    </body>
+</html>

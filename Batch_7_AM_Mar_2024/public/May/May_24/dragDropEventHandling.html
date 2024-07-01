@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Drag Drop events
+        </title>
+        <style>
+            img {
+                width: 120px;
+                height: 120px;
+            }
+            .container {
+                border: 1px solid;
+                width: 500px;
+                margin: 20px auto;
+                padding: 10px;
+                height: 400px;
+            }
+            .obj {
+                border: 1px solid;
+                padding: 10px;
+                cursor: pointer;
+                width: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="container" ondrop="elementGotDropped(event)" ondragover="elementDragOver(event)">
+
+
+        </div>
+        <img ondragstart="elmentDragStarted(event)" src="https://5.imimg.com/data5/SELLER/Default/2023/5/308536028/MC/WM/XM/67393073/baby-toys-500x500.jpg" id="myproduct1">
+        <img ondragstart="elmentDragStarted(event)" src="https://5.imimg.com/data5/SELLER/Default/2023/5/308536028/MC/WM/XM/67393073/baby-toys-500x500.jpg" id="myproduct2">
+        <img ondragstart="elmentDragStarted(event)" src="https://5.imimg.com/data5/SELLER/Default/2023/5/308536028/MC/WM/XM/67393073/baby-toys-500x500.jpg" id="myproduct3">
+        <img ondragstart="elmentDragStarted(event)" src="https://5.imimg.com/data5/SELLER/Default/2023/5/308536028/MC/WM/XM/67393073/baby-toys-500x500.jpg" id="myproduct4">
+
+        <script>
+            var imgId = '';
+            var elmentDragStarted = (event) => {
+                imgId = event.target.getAttribute("id");
+                imgId = '#' + imgId;
+            }
+
+            var elementGotDropped = (event) => {
+                event.preventDefault();
+                var imageTag  = document.querySelector(imgId);
+                event.target.append(imageTag);
+            }
+
+            var elementDragOver = (event) => {
+                event.preventDefault();
+            }
+
+
+        </script>
+    </body>
+</html>

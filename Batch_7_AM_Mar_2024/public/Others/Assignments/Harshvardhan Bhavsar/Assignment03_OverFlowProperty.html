@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Details using Overflow Property</title>
+            <style> 
+                .footer,
+                .header
+                {
+                    padding: 5px;
+                    width: 85%;
+                    margin-left: 10%;
+                    margin-bottom: 5px;
+                    border: 1px solid;
+                    border-radius: 10px;
+                    text-align: center;
+                    text-decoration: solid;
+                    text-decoration-color: aliceblue;
+                }
+                
+                .middle  
+                { 
+                    padding: 10px;
+                    width:85%;
+                    height:540px;
+                    border: 1px solid;
+                    border-radius: 10px;
+                    margin-left: 10%; 
+                    opacity: 0.9;
+                    margin-bottom: 5px;
+                }
+                
+                .mid1
+                {
+                    padding: 10px;
+                    width: 30%;
+                    height:520px;
+                    border: 1px solid;
+                    border-radius: 10px;
+                    float: left;
+                    color: black;
+                }
+                
+                .mid2
+                {
+                    padding: 10px;
+                    width:65%;
+                    height:520px;
+                    border: 1px solid;   
+                    border-radius: 10px;
+                    float: right; 
+                    overflow: scroll;
+                }
+               
+                .mid2_1,
+                .mid2_2,
+                .mid2_3,
+                .mid2_4,
+                .mid2_5,
+                .mid2_6
+                {
+                    padding: 10px;
+                    width: 95%;
+                    height: 200px;
+                    border: 1px solid;
+                    border-radius: 10px;
+                    margin: 10px;
+                }
+                
+                li
+                {
+                    border: 1px solid;
+                    padding: 15px;
+                    line-height: 20px;
+                    font-weight: bold;
+                    list-style-position: inside;
+                    text-align: center;
+                }
+
+                .mid2_1 li,
+                .mid2_2 li,
+                .mid2_3 li,
+                .mid2_4 li,
+                .mid2_5 li,
+                .mid2_6 li
+                {
+                    border: 0px solid;
+                    padding: 10px;
+                    line-height: 10px;
+                    list-style-type: none;
+                    text-align: center;
+                }
+
+                img
+                {
+                    width: 30%;
+                    height:195px;
+                    float:left;
+                    margin-right: 60px;
+                    border-radius: 10px;
+                    border: 1px solid;
+                }
+            </style>
+    </head>
+<body style="background-image: url(img/bgimage3.jpg);">
+    <div class="header">
+        <h2>Students Details</h2>
+    </div>
+    <div class="middle">
+        <div class="mid1"> 
+                <ol>
+                    <li><a href="#item1">Labhansh</a></li>
+                    <li><a href="#item2">Bhavesh</a></li>
+                    <li><a href="#item3">Swapnil</a></li>
+                    <li><a href="#item4">Rushikesh</a></li>
+                    <li><a href="#item5">Tanmay</a></li>
+                    <li><a href="#item6">Rutwik</a></li>
+                </ol>       
+        </div>
+
+        <div class="mid2">
+            <div class="mid2_1">
+                    <img src="img/Stud_1.jpeg" alt="Student Image">
+                    <ul>
+                        <li id="item1">Name: Labhansh Bhavsar</li>
+                        <li>Age: 24</li>
+                        <li>Gender: Male</li>
+                        <li>Location: Mumbai</li>
+                    </ul>
+            </div>
+
+            <div class="mid2_2">
+                <img src="img/Stud_2.jpg" alt="Student Image">
+                <ul>
+                    <li id="item2">Name: Bhavesh Kukreja</li>
+                    <li>Age: 23</li>
+                    <li>Gender: Male</li>
+                    <li>Location: Jalgaon</li>
+                </ul>
+            </div>
+            
+            <div class="mid2_3">
+                <img src="img/Stud_3.jpg" alt="Student Image">
+                <ul>
+                    <li id="item3">Name: Swapnil Nagpure</li>
+                    <li>Age: 24</li>
+                    <li>Gender: Male</li>
+                    <li>Location: Shendurni</li>
+                </ul>
+            </div>
+
+            <div class="mid2_4">
+                <img src="img/Stud_4.jpeg" alt="Student Image">
+                <ul>
+                    <li id="item4">Name: Rushikesh Devare</li>
+                    <li>Age: 23</li>
+                    <li>Gender: Male</li>
+                    <li>Location: Jalgaon</li>
+                </ul>
+            </div>
+
+            <div class="mid2_5">
+                <img src="img/Stud_5.jpg" alt="Student Image">
+                <ul>
+                    <li id="item5">Name: Tanmay Bhavsar</li>
+                    <li>Age: 17</li>
+                    <li>Gender: Male</li>
+                    <li>Location: Jalgaon</li>>
+                </ul>
+            </div>
+
+            <div class="mid2_6">
+                <img src="img/Stud_6.jpeg" alt="Student Image">
+                <ul>
+                    <li id="item6">Name: Rutwik Bhavsar</li>
+                    <li>Age: 15</li>
+                    <li>Gender: Male</li>
+                    <li>Location: Jalgaon</li>>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>@Copyright 2024</h3>
+    </div>
+
+</body>
+</html>

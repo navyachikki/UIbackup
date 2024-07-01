@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="app.css">
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <h3>
+            User Login page
+        </h3>
+        <div class="themeBlock">
+            Theme Chooser : 
+            <select name="" id="themeName" onchange="getTheme()">
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="purple">Purple</option>
+                <option value="yellow">Yellow</option>
+
+            </select>
+        </div>
+        
+        <ul>
+            <li>
+                <input type="text" placeholder="User Id" id="userId">
+            </li>
+            <li>
+                <input type="password" placeholder="Password" id="acntPwd">
+            </li>
+            <li>
+                <input type="checkbox" id="userOption">
+                Remember my credentials...
+            </li>
+            <li>
+                <input type="button" value="Login" onclick="loginDetails()">
+            </li>
+        </ul>
+    </body>
+</html>

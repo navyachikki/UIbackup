@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Emplyee Details With Tax</title>
+        <style>
+            h1, p {
+                text-align: center;
+                margin: 5px;
+                padding: 5px;
+            }
+            p {
+                font-size: 20px;
+                margin-top: 30px;
+            }
+            span {
+                color: blue;
+                font-size: 25px;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Employee Details With Tax In JavaScript</h1>
+            <p>For More Information Please See <span>Console</span> Tab In <span>Inspect Element</span> !</p>
+            <p>View Source Code For Better Understanding</p>
+        </div>
+        <script>
+            var ename, eage, egender, esalary, epf, ehra, etotalsalary, etax;
+            ename = prompt("Employee Name: ");
+            eage = prompt("Employee Age: ");
+            egen = prompt("Employee Gender: ")
+            egender = egen.toLowerCase();
+            esalary = prompt("Employee Salary: ");
+            esalary = parseInt(esalary);
+            epf = esalary * 0.14;
+            ehra = esalary * 0.24;
+            etotalsalary = esalary + epf + ehra;
+
+            console.log("Employee Name: " + ename);
+            console.log("Employee Age: " + eage);
+            console.log("Employee Gender: " + egen);
+            console.log("Employee Salary: " + etotalsalary);
+
+
+            if (egender == "male" && etotalsalary >= 200000) {
+                etax = etotalsalary * 0.15;
+                console.log("You have to pay TAX of Rs. " + etax)
+            } else if (egender == "male" && etotalsalary >= 100000){
+                    etax = etotalsalary * 0.10;
+                    console.log("You have to pay TAX of Rs. " + etax)
+            } else if (egender == "male" && etotalsalary >= 50000){
+                etax = etotalsalary * 0.05;
+                console.log("You have to pay TAX of Rs. " + etax)
+            }else if (egender == "female" && etotalsalary >= 200000){
+                etax = etotalsalary * 0.10;
+                console.log("You have to pay TAX of Rs. " + etax)
+            } else if (egender == "female" && etotalsalary >= 100000){
+                etax = etotalsalary * 0.05;
+                console.log("You have to pay TAX of Rs. " + etax)
+            } else {
+                console.log("You don't have to pay TAX")
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Details using Overflow Property</title>
+            <style> 
+
+            body{
+                background-color: aliceblue;
+            }
+                .footer,
+                .header
+                {
+                    padding: 5px;
+                    width: 85%;
+                    margin-left: 10%;
+                    margin-bottom: 5px;
+                    border: 1px solid;
+                    border-radius: 10px;
+                    text-align: center;
+                    text-decoration: solid;
+                    text-decoration-color: black;
+                    background-color: grey;
+                }
+                
+                .container  
+                { 
+                    background-color: #80808059;
+                    padding: 10px;
+                    width:85%;
+                    height:540px;
+                    border: 1px solid;
+                    border-radius: 10px;
+                    margin-left: 10%; 
+                    opacity: 0.9;
+                    margin-bottom: 5px;
+                }
+                
+                .content
+                {
+                    
+                    padding: 10px;
+                    width: 30%;
+                    height:520px;
+                    border: 1px solid;
+                    border-radius: 10px;
+                    float: left;
+                    color: black;
+                    
+                }
+                
+                .main_content
+                {
+                    padding: 10px;
+                    width:65%;
+                    height:520px;
+                    border: 1px solid;   
+                    border-radius: 10px;
+                    float: right; 
+                    overflow: scroll;
+                }
+               
+                .Stud1,
+                .Stud2,
+                .Stud3,
+                .Stud4,
+                .Stud5,
+                .Stud6
+                {
+                    padding: 10px;
+                    width: 95%;
+                    height: 200px;
+                    border: 1px solid;
+                    border-radius: 10px;
+                    margin: 10px;
+                }
+                
+                li
+                {
+                    border: 1px solid;
+                    padding: 15px;
+                    line-height: 20px;
+                    font-weight: bold;
+                    list-style-position: inside;
+                    text-align: center;
+                }
+
+                .Stud1 li,
+                .Stud2 li,
+                .Stud3 li,
+                .Stud4 li,
+                .Stud5 li,
+                .Stud6 li
+                {
+                    border: 0px solid;
+                    padding: 10px;
+                    line-height: 10px;
+                    list-style-type: none;
+                    text-align: left;
+                }
+
+                img
+                {
+                    width: 30%;
+                    height:195px;
+                    float:left;
+                    margin-right: 60px;
+                    border-radius: 10px;
+                    border: 2px solid;
+                }
+            </style>
+    </head>
+<body>
+    <div class="header">
+        <h2>Students Details</h2>
+    </div>
+    <div class="container">
+        <div class="content"> 
+                <ol>
+                    <li><a href="#item1">Ankit</a></li>
+                    <li><a href="#item2">Buana</a></li>
+                    <li><a href="#item3">Suman</a></li>
+                    <li><a href="#item4">Priti</a></li>
+                    <li><a href="#item5">Riyansh</a></li>
+                    <li><a href="#item6">Sumit</a></li>
+                </ol>       
+        </div>
+
+        <div class="main_content">
+            <div class="Stud1">
+                    <img src="https://th.bing.com/th?id=OIP.F4clKB5KksYpf3JMheZN5AHaLu&w=198&h=314&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="Student Image">
+                    <ul>
+                        <li id="item1">Name: Ankit Dixit</li>
+                        <li>Age: 24</li>
+                        <li>Gender: Male</li>
+                        <li>Location: Mumbai</li>
+                    </ul>
+            </div>
+
+            <div class="Stud2">
+                <img src="https://abovethelaw.com/uploads/2019/07/GettyImages-888791862-620x414.jpg" alt="Student Image">
+                <ul>
+                    <li id="item2">Name: Buana Kapoor</li>
+                    <li>Age: 23</li>
+                    <li>Gender: Female</li>
+                    <li>Location: Pune</li>
+                </ul>
+            </div>
+            
+            <div class="Stud3">
+                <img src="https://schooltutoring.com/help/wp-content/uploads/sites/2/2014/07/high-res-student-smiling.jpg" alt="Student Image">
+                <ul>
+                    <li id="item3">Name: Suman Pande</li>
+                    <li>Age: 24</li>
+                    <li>Gender: Female</li>
+                    <li>Location: Nagpur</li>
+                </ul>
+            </div>
+
+            <div class="Stud4">
+                <img src="https://kcrconsultants.com/wp-content/uploads/2022/09/Study-in-the-UK-without-IELTS-for-Indian-Students.jpg" alt="Student Image">
+                <ul>
+                    <li id="item4">Name: Priti Deshmukh</li>
+                    <li>Age: 28</li>
+                    <li>Gender: Female</li>
+                    <li>Location: Nagpur</li>
+                </ul>
+            </div>
+
+            <div class="Stud5">
+                <img src="https://th.bing.com/th?id=OIP.XVWGWf3HPYTh1MBfgH2AswHaLH&w=204&h=306&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="Student Image">
+                <ul>
+                    <li id="item5">Name: Riyansh Maddiwar</li>
+                    <li>Age: 26</li>
+                    <li>Gender: Male</li>
+                    <li>Location: Hyderabad</li>
+                </ul>
+            </div>
+
+            <div class="Stud6">
+                <img src="https://th.bing.com/th?id=OIP.qFSm8kXXFuf2sLYYqX2mxAHaLH&w=204&h=306&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="Student Image">
+                <ul>
+                    <li id="item6">Name: Sumit Halder</li>
+                    <li>Age: 27</li>
+                    <li>Gender: Male</li>
+                    <li>Location: Nagpur</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>@Copyright 2024</h3>
+    </div>
+
+</body>
+</html>

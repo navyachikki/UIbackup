@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            Prime in Array
+        </title>
+    </head>
+    <body>
+        <script>
+            var l = prompt("enter the length of array")
+
+            var arr = []
+            var check ;
+            for(var a=0; a<l; a++) {
+                var n = prompt("enter array values")
+                n = parseInt(n);
+                var count = 0;
+                for (var i=2; i<n; i++) {
+                check = n % i;
+                if (check == 0) {
+                    count++;
+                }
+            }
+            if(count==0) {
+                console.log(i + " Is a prime number from array")
+            }
+            }
+            
+        </script>
+    </body>
+</html>

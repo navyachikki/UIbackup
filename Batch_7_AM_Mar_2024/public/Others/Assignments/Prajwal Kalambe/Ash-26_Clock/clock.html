@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating CSS3 transform - rotate
+        </title>
+        <style>
+            .container {
+                border: 1px solid;
+                width: 200px;
+                height: 5px;
+                background-color: yellowgreen;
+                text-align: center;
+                
+            }
+            .circle{
+                height: 400px;
+                width: 400px;
+                border: 10px solid;
+                border-radius: 50%;
+                margin: 2px auto;
+                position: absolute;
+                top: 22%;
+                left: 34%;
+                background-color: rgb(90, 215, 173);
+            }
+            .digit{
+                font-size: 30px;
+                position: absolute;
+            }
+            .dot{
+                height: 20px;
+                width: 20px;
+                background-color: black;
+                border-radius: 50%;
+                position: absolute;
+                left: 46%;
+                top: 44%;
+                margin: 10px auto;
+            }
+            .second,.minute,.hour{
+                position: absolute;
+                border: 2px solid;
+                background-color: black;
+                border-radius: 10px;
+                transform-origin: bottom;
+            }
+            .minute{
+                background-color: aqua;
+                width: 25%;
+                height: 145px;
+                top: -140px;
+                left: 49%;
+            }
+            .hour{
+                background-color: red;
+                width: 27%;
+                height: 122px;
+                top: -118px;
+                left: 32.6%;
+            }
+            .second{
+                width: 4%;
+                height: 723%;
+                top: -667%;
+                left: 28.5%;
+            }
+            #d1{
+                top: 27px;
+                left: 273px;
+            }
+            #d2{
+                top: 92px;
+                left: 345px;
+            }
+            #d3{
+                top: 175px;
+                left: 367px;
+            }
+            #d4{
+                top: 266px;
+                left: 347px;
+            }
+            #d5{
+                top: 329px;
+                left: 281px; 
+            }
+            #d6{
+                top: 353px;
+                left: 184px; 
+            }
+            #d7{
+                top: 320px;
+                left: 94px; 
+            }
+            #d8{
+                top: 250px;
+                left: 36px; 
+            }
+            #d9{
+                top: 169px;
+                left: 20px;
+            }
+            #d10{
+                top: 98px;
+                left: 35px;
+            }
+            #d11{
+                top: 41px;
+                left: 89px;
+            }
+            #d12{           
+                top: 11px;
+                left: 174px; 
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="circle">
+            <div class="dot">
+                <div class="second"></div>
+                <div class="minute"></div>
+                <div class="hour"></div>
+            </div>
+            <!-- <div class="container">Block</div> -->
+            <div id="d1" class="digit">1</div>
+            <div id="d2" class="digit">2</div>
+            <div id="d3" class="digit">3</div>
+            <div id="d4" class="digit">4</div>
+            <div id="d5" class="digit">5</div>
+            <div id="d6" class="digit">6</div>
+            <div id="d7" class="digit">7</div>
+            <div id="d8" class="digit">8</div>
+            <div id="d9" class="digit">9</div>
+            <div id="d10" class="digit">10</div>
+            <div id="d11" class="digit">11</div>
+            <div id="d12" class="digit">12</div>
+        </div>
+
+        <script>
+            
+            setInterval(() => {
+                var date= new Date;
+                Sdeg = date.getSeconds();
+                Mdeg = date.getMinutes();
+                Hdeg = date.getHours();
+                Srot=6*Sdeg;
+                Mrot=6*Mdeg;
+                Hrot=30*Hdeg+ Mdeg/2;
+                document.querySelector(".second").style.transform = `rotate(${Srot}deg)`;
+                document.querySelector(".minute").style.transform = `rotate(${Mrot}deg)`;
+                document.querySelector(".hour").style.transform = `rotate(${Hrot}deg)`;
+
+            },1000);
+           
+        </script>
+
+    </body>
+</html>

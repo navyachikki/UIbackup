@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OTP Generator</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1 class="heading">
+                    O.T.P. Generator
+                </h1>
+            </div>
+            <div class="container">
+                <div class="box num">
+                    <h2 class="numberHeading">For Numbers</h2>
+                    Give OTP Digit Between 1 To 9: <input type="text" name="size" id="nsize" class="size" >
+                    <div class="otpbox" id="numotp"></div>
+                    <input type="button" value="Generate" id="genbutton" onclick="numberOtp()">
+                </div>
+                <div class="box lc">
+                    <h2 class="numberHeading">For Lower Case</h2>
+                    Give OTP Digit Between 1 To 9: <input type="text" name="size" id="lcsize" class="size">
+                    <div class="otpbox" id="lcOtp"></div>
+                    <input type="button" value="Generate" id="genbutton" onclick="lcOtp()">
+                </div>
+                <div class="box uc">
+                    <h2 class="numberHeading">For Upper Case</h2>
+                    Give OTP Digit Between 1 To 9: <input type="text" name="size" id="ucsize" class="size">
+                    <div class="otpbox" id="ucOtp"></div>
+                    <input type="button" value="Generate" id="genbutton" onclick="ucOtp()">
+                </div>
+                <div class="box an">
+                    <h2 class="numberHeading">For Alpha Numeric</h2>
+                    Give OTP Digit Between 1 To 9: <input type="text" name="size" id="ansize" class="size">
+                    <div class="otpbox" id="anOtp"></div>
+                    <input type="button" value="Generate" id="genbutton" onclick="anOtp()">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

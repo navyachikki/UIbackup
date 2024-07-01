@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Second Largest Value From Given Array</title>
+    </head>
+    <body>
+        <script>
+            //Que. is After Declaration Of Array, How to Convert in Numbers..?
+
+            var Range = [10, 25, 3, 42, 5, 61, 7, 18, 49, 11];
+            for (i = 0; i < Range.length; i++) {
+                Range[i] = parseInt(Range[i]);
+            }
+            Range.sort();
+            console.log("After Sorting the Array Range = " + Range);
+           
+
+           //Solutions Found On ChatGPT, But Didn't Understude Function Under Sort..
+           /*
+            var Range = [10, 25, 3, 42, 5, 61, 7, 18, 49, 11];
+            for (var i = 0; i < Range.length; i++) {
+                Range[i] = parseInt(Range[i]);
+            }
+            Range.sort(function(a, b) {
+                return a - b;
+            });
+            console.log("After Sorting the Array Range = " + Range);
+            */
+        </script>
+    </body>
+</html>

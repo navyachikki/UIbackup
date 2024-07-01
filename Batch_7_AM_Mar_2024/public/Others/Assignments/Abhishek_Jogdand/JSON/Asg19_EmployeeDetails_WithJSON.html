@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee details with JSON Object and this operator</title>
+</head>
+<body>
+    <script>let employee={
+        name:"",
+        salary:"",
+        readDetails(){
+            this.name=prompt("enter name");
+            this.salary=parseInt(prompt("enter salary"));
+            this.gender=prompt("enter gender");
+            this.calcPF();
+        },
+        calcPF(){
+            this.pf=this.salary*0.12;
+            this.hra=this.salary*0.24;
+            this.totalSalary=this.salary+this.pf+this.hra;
+            this.calcTax();
+        },
+        calcTax(){
+            if(this.gender=='male'){
+                if(this.totalSalary>=200000){
+                    this.tax=this.totalSalary-(this.totalSalary*0.15);
+                }
+                else if(this.totalSalary>=100000 && this.totalSalary<200000){
+                    this.tax=this.totalSalary-(this.totalSalary*0.10);
+                }
+                else if(this.totalSalary>=50000){
+                    this.tax=this.totalSalary-(this.totalSalary*0.05);
+                }
+                else{
+                    this.tax=0
+                    console.log("You dont need to pay tax");;
+                }
+                
+            }
+            else{
+                if(this.totalSalary>=200000){
+                    this.tax=this.totalSalary-(this.totalSalary*0.10);
+                }
+                else if(this.totalSalary>=100000 && this.totalSalary<200000){
+                    this.tax=this.totalSalary-(this.totalSalary*0.05);
+                }
+                else{
+                    this.tax=0
+                    console.log("You dont need to pay tax");;
+                }
+                
+            }
+            this.displayEmp();
+        },
+        displayEmp(){
+            console.log("the name is :"+this.name);
+            console.log("the gender is :"+this.gender);
+            console.log("the salary is :"+this.salary);
+            console.log("Your PF for the salary is: "+this.pf);
+            console.log("Your HRA for the salary is: "+this.hra);
+            console.log("the total salary is :"+this.totalSalary);
+            console.log("the tax amount is :"+this.tax);
+        }
+
+    }
+    
+    employee.readDetails();
+    </script>
+</body>
+</html>

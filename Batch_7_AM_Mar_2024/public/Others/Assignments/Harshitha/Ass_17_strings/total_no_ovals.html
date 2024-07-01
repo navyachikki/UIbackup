@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total no of oval in given string</title>
+</head>
+<body>
+    <script>
+        function countVowels(str){
+            str=str.toLowerCase();
+            var vowelCount=0;
+            for(var i=0; i<str.length; i++){
+                if (str[i]==='a' || str[i]==='e'|| str[i]==="i" || str[i]==="o"|| str[i]=="u"){
+                    vowelCount++;
+                }
+            
+            }
+            return vowelCount++;
+        }
+        var str="helloworld";
+        console.log("The total no of vowels are", countVowels(str));
+    </script>
+</body>
+</html>

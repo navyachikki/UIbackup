@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="Array.css">
+
+    </head>
+    <body>
+        <h2>Find the vowels Count in the Array</h2>
+        <span class="DisplayS"></span>
+        <script>
+            var arr = prompt("ENter the string Name") //"Hello World Have a good day ahead";
+            var arr1 = arr.toLowerCase();
+            console.log(arr1);
+            counter = 0;
+            for(var i=0;arr1[i]!=undefined;i++) {
+                if((arr1[i] == "a" || arr1[i] == "e"||arr1[i] == "i"||arr1[i] == "o"||arr1[i] == "u")) {
+                    counter++;
+                }
+            }
+            console.log(counter);
+            document.querySelector(".DisplayS").innerHTML = "In a Given String  : <b>" +arr1+"</b> " + " these are the Vowels Count:<b>" + counter + " </b>"
+        </script>
+    </body>
+</html>

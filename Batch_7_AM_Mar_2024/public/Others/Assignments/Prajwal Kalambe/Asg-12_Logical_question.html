@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Q1)Palindrome of a number
+        let num=prompt("enter a number to check :");
+        let temp=num;
+        let rem;
+        let rev=0;
+        while(num!=0){
+            rem=parseInt(num%10);
+            rev=rev*10+rem;
+            num=parseInt(num/10);
+            
+        }
+        if(rev==temp){
+            document.write(temp+" is a plaindrome number.<br>");
+        }
+        else{
+            document.write(temp+" is not a palindrome number.<br>");
+        }
+
+        // Q2) Reverse the given number.
+        let n=prompt("enter a number to to reverse :");
+        let x=n;
+        let remm;
+        let revv=0;
+        while(n!=0){
+            remm=parseInt(n%10);
+            revv=revv*10+remm;
+            n=parseInt(n/10);
+            
+        }
+        document.write("<br>The reverse number of "+x+" is "+revv);
+
+        // Q3) Count the digit of number.
+        let number=prompt("enter a number to check :");
+        let count=0;
+        let prev=number
+        while(number!=0){
+            number=parseInt(number/10);
+            count=count+1;
+            
+        }
+        document.write("<br><br>The number of digit in "+prev+" are "+count);
+    </script>
+    
+</body>
+</html>

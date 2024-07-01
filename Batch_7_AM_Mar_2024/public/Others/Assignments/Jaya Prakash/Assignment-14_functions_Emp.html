@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>example</title>
+    </head>
+    <body>
+        <script>
+
+            var empname, empsal, eGender;
+
+            var epf, ehra, etotalSal, etotalTax;
+
+            function readEmpDetails() {
+                empname = prompt("enter employee name");
+                empsal = prompt("enter basic sal");
+                empsal = parseInt(empsal);
+                eGender = prompt("Enter Gender");
+                getTotalSal();
+            }
+
+            function getTotalSal() {
+                epf = (empsal * 12 ) / 100;
+                ehra = (empsal * 24 ) / 100;
+                etotalSal = empsal + epf + ehra;
+                getTotalTax();
+            }
+
+            function getTotalTax() {
+                var taxPercent = 0;
+                if (eGender == 'Male') {
+                    if (etotalSal >= 200000) {
+                        taxPercent = 15;
+                    } else if(etotalSal >=100000){
+                        taxPercent = 10;
+                    }
+                    else if(etotalSal >=50000){
+                        taxPercent = 5;
+                    }
+                    else{
+                        taxpercent = 0;
+                    }
+                } else {
+                    if (etotalSal >= 200000) {
+                        taxPercent = 10;
+                    }
+                    else if(etotalSal >=100000){
+                        taxPercent = 5;
+                    }
+                    else {
+                        taxPercent = 0;
+                    }
+                }
+                etotalTax = (etotalSal * taxPercent) / 100;
+            }
+
+            function displayEmpDetails() {
+                readEmpDetails();
+                console.log("Emp Details");
+                console.log("Emp name"  + empname);
+                console.log("Total sal " + etotalSal);
+                console.log("Tax to be paid " + etotalTax);
+            }
+
+            displayEmpDetails();
+        </script>
+    </body>
+</html>

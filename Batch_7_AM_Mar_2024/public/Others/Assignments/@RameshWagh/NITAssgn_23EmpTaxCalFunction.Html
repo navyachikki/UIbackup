@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tax Calculater Using Functions</title>
+    </head>
+    <body>
+        <script>
+
+            //getData();      //Called At Bottom Of The Script
+            
+            var getData = () => 
+            {
+                var empName = prompt("Enter Employee Name") ;
+                var deptName = prompt("Enter Department Name");
+                var empGender = prompt("Enter Gender (Male / Female)");
+                empGender = empGender.toLowerCase();
+                var empAge = prompt("Enter Age Of Employee");
+                var empBasic = prompt("Enter Basic Salary Of Employee");
+                empBasic = parseInt(empBasic);
+                console.log("Employee Name : " + empName + " As Age : " + empAge + "(" + empGender + ")  With Deparment of : " + deptName + " Working on the Basic Salary Of Rs. : " + empBasic );
+                calSalary(empBasic,empGender);
+            }
+
+            var calSalary = (passBasic, passGender) =>
+            {
+                console.log("PF is " + passBasic + " * 14% = " +  (passBasic * 14 / 100));
+                console.log("HRA is " + passBasic + " * 24% = " + (passBasic * 24 / 100));
+                console.log("Total Salary Of Employee is : " + (passBasic + (passBasic * 14 / 100) + (passBasic * 24 / 100)));
+                console.log("You Have To Pay Tax Amounted Rs. : " + taxCal((passBasic + (passBasic * 14 / 100) + (passBasic * 24 / 100)) , passGender));
+            }
+
+            var taxCal = (passSalary, passGender) =>
+            {   
+                var totalTax, taxPer;
+                if ((passSalary >= 200000) && passGender == "male")
+                {
+                    taxPer = 15;
+                } else if ((passSalary >= 100000 && passSalary < 200000) && passGender == "male")
+                {
+                    taxPer = 10;
+                } else if ((passSalary >= 50000 && passSalary < 100000) && passGender == "male")
+                {
+                    taxPer = 5;
+                } else if ((passSalary < 50000) && passGender == "male")
+                {
+                    taxPer = 0;
+                } else if ((passSalary >= 200000) && passGender == "female")
+                {
+                    taxPer = 10;
+                } else if ((passSalary >= 100000 && passSalary < 200000) && passGender == "female")
+                {
+                    taxPer = 5;
+                } else if ((passSalary < 100000) && passGender == "female")
+                {
+                    taxPer = 0;
+                }else
+                {
+                    console.log("Invalid Paramiters For Tax Calculation, Wrong Gender Specified");
+                }
+
+                console.log(passGender + " Employees Tax Calculated as per % of : " + taxPer);   
+                totalTax =  passSalary * taxPer / 100; 
+                return totalTax;
+            }
+
+            getData();
+
+        </script>   
+    </body>
+</html>

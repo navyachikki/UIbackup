@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Given Range</title>
+    <style>
+        .Head {
+        width:350px;
+        border:1px solid yellowgreen;
+        margin:5px Auto;
+        font-family: 'Times New Roman';
+        font-weight: bold;
+        }
+     </style>
+
+    
+</head>
+<body>
+    <div class="Head">
+        write a prgrm to display values Between user given range.   
+    </div>
+    <script>
+        var StartNum = prompt("Enter The number you wish to start");
+        StartNum = parseInt(StartNum);
+        console.log(typeof(StartNum));
+        var EndNum = prompt("Enter The number you wish to End");
+        EndNum = parseInt(EndNum);
+        console.log(typeof(EndNum));
+        var result = "";
+        if (StartNum<EndNum) {
+            for(var i=StartNum;i<=EndNum;i++) {
+                result = result + i + " " ;
+            }
+            console.log(result);
+        }
+        else {
+            console.log("StartNum is Always lessthan End num");  
+        }
+            
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="one">
+            <h1>User Registration</h1>
+            <label>Enter your Name:</label>
+            <input type="text" id="txtName">
+            <label>Enter your Age :</label>
+            <input type="text" id="txtAge">
+            <label>Select your Gender:</label>
+            <input type="radio" name="Gender" value="male">:Male <input type="radio" name="Gender" value="female">: Female
+            <label >Select Country</label>
+            <Select id="txtCountry">
+                <option value="Select" selected>Select</option>
+                <option value="India">India</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Dubai">Dubai</option>
+                <option value="Banladesh">Bangladesh</option>
+                <option value="Nepal">Nepal</option>
+            </Select>
+            <label>Enter Mail ID</label>
+            <input type="text" id="txtMail">
+            <div>
+                <button onclick="register()">Register</button>
+            </div>
+        </div>
+        <div class="two">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Country</th>
+                        <th>Mail id</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   <!-- Dynamicaly Generated Content -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>

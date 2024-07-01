@@ -1,0 +1,7 @@
+Canvas and SVG 
+
+    both the tags are used to create graphical objects within the page.. 
+
+
+
+navigator object : 

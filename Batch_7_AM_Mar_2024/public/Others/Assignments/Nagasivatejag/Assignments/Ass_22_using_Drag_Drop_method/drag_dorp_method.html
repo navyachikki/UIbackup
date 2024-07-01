@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Event </title>
+    <script src="method.js"></script>
+</head>
+<style>
+    .container {
+        border: 2px solid darkorange;
+        color: dodgerblue;
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+        width: 400px;
+        height: 400px;
+        display: inline-block;
+    }
+    img {
+        border: 2px solid darkmagenta;
+        width: 140px;
+        height: 140px;
+        margin: 20px;
+        float: left;
+    }
+</style>
+<body>
+    
+    <h3> Drag and Drop Event </h3>
+
+    <div class="container" ondrop="productContainer(event)" ondragover="elementDragOver(event)" containerType="mens">
+        Men's Block
+    </div>
+    <div class="container" ondrop="productContainer(event)" ondragover="elementDragOver(event)" containerType="womens">
+        Women's Block
+    </div>
+    <div class="container" ondrop="productContainer(event)" ondragover="elementDragOver(event)" containerType="kidz">
+        Kidz Block
+    </div>
+    <div class="mensProducts">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRYV-nLw6AWYtpVut5FqActT5qXchX3ycsiQ&s" alt="This server is busy" type="mens">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2022/9/JP/SJ/ED/38630640/casual-shoes-500x500.jpg" alt="This server is busy" type="mens">
+    </div>
+    <div class="womensProducts">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNG0z67hGb6pWL5SEmfFKtI0BUgUg-hfCljg&s" alt="This server is busy" type="womens">
+        <img src="https://i.ebayimg.com/images/g/320AAOSwV99ix4yi/s-l1200.webp" alt="This server is busy" type="womens">
+    </div>
+    <div class="kidzProducts">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw5tWhMD737t_dOCN6l8DUGQUF0vqM78nbpw&s" alt="This server is busy" type="kidz">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4cMIWE15IzMXjb_Q28GV2JqciSPpCHSeKcg&s" alt="This server is busy" type="kidz">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval</title>
+</head>
+<body>
+    <script>
+            var count = 0;
+            console.log("Start");
+            /*setTimeout(() => {
+                count++;
+                console.log("Thank you for Visiting Our Webpage " + count);
+            }, 3000); */
+
+            var myInterval = setInterval(() => {
+                count++;
+                console.log("Thank you for Visiting Our Webpage " + count);
+                if (count == 3) {
+                    clearInterval(myInterval);
+                }
+            }, 2000);
+
+            console.log("Stop");
+    </script>
+</body>
+</html>

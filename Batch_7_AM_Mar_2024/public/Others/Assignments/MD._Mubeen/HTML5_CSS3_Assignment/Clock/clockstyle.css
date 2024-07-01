@@ -1,0 +1,158 @@
+.heading {
+    text-align: center;
+    font-size: 80px;
+}
+.outerdial {
+    border: 10px solid;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    margin: 10px auto;
+    position: relative;
+    margin-bottom: 100px;
+    box-shadow: 0 0 10px black;
+}
+.point {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 240px;
+    left: 240px;
+    z-index: 1;
+}
+.num {
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+}
+.hour1 {
+    top: 40px;
+    right: 130px;
+}
+.hour2 {
+    top: 125px;
+    right: 45px;
+}
+.hour3 {
+    top: 240px;
+    right: 15px;
+}
+.hour4 {
+    top: 345px;
+    right: 45px;
+}
+.hour5 {
+    top: 430px;
+    right: 130px;
+}
+.hour6 {
+    bottom: 10px;
+    left: 240px;
+}
+.hour7 {
+    top: 430px;
+    left: 130px;
+}.hour8 {
+    top: 345px;
+    left: 45px;
+}
+.hour9 {
+    top: 235px;
+    left: 15px;
+}
+.hour10 {
+    top: 125px;
+    left: 45px;
+}
+.hour11 {
+    top: 40px;
+    left: 130px;
+}
+.hour12 {
+    top: 10px;
+    left: 235px;
+}
+.hourBackground {
+    background-color: black;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    border-radius: 50%;
+}
+.minuteHand {
+    width: 10px;
+    height: 200px;
+    background-color: blue;
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    z-index: 3;
+}
+.hourHand {
+    width: 10px;
+    height: 180px;
+    background-color: gold;
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    z-index: 2;
+}
+.secondHand {
+    width: 5px;
+    height: 200px;
+    background-color: green;
+    position: absolute;
+    bottom: 10px;
+    left: 7.5px;
+    z-index: 4;
+}
+.hands {
+    border-radius: 5px;
+    transform-origin: bottom;
+}
+.container {
+    text-align: center;
+    font-size: 140px;
+    border: 1px solid;
+    width: 90%;
+    margin: 5px auto;
+    padding: 20px;
+    font-family: digi, Verdana;
+    background-color: #ccc;
+    border-radius: 20px;
+}
+.extra {
+    font-size: 40px;
+    font-weight: bold;
+}
+#day {
+    display: block;
+    float: left;
+}
+.date {
+    float: right;
+}
+.time {
+    clear: both;
+}
+.digitalClock {
+    border: 10px solid;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px 0;
+    background-color: salmon;
+    
+    box-shadow: 0 0 10px black;
+}
+@font-face {
+    font-family: digi;
+    src: url("./DS-DIGI.TTF");
+}
+
+
+

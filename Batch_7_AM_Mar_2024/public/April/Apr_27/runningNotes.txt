@@ -1,0 +1,24 @@
+Arrays methods:
+
+    length - property
+    push()
+    pop()
+    shift()
+    unshift()
+    join()
+    splice()
+    includes()
+    indexof()
+    reverse()
+    -- ES6
+    map()
+    find()
+    sort()
+    filter()
+
+  
+  Stringmethods:
+    .slice
+    .substr()
+
+    

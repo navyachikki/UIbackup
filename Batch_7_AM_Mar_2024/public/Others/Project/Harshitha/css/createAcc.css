@@ -1,0 +1,82 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    max-width:100%;
+    padding:50px;
+    margin:50px;
+
+}
+
+.heading{
+    text-align: center;
+    color:purple;
+}
+.password-container {
+    display: inline-block;
+   
+}
+#login-page{
+    /* width: 300px; */
+    padding:20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 12px;
+    margin: 20px;
+    border:1px solid;
+
+}
+#btnId{
+    padding:10px;
+    margin-top:10px;
+    background-color: brown;
+    color:whitesmoke;
+    border-radius: 5px;
+    margin-right: 52px;
+    margin-left: 49px;
+}
+input{
+    width: 250px;
+    /* max-width: 600px; */
+    background-color: width;
+    padding:10px;
+    margin:20px;
+    border-radius: 5px;
+}
+ul{
+    list-style-type: none;
+}
+.invalid{
+    color:red;
+}
+.valid{
+    color:green;
+}
+
+
+.MailErr {
+    color: red;
+    display: none;
+}
+
+/* Display email error message in red when invalid */
+input[type="email"].invalid + .MailErr {
+    display: block;
+}
+ 
+#passwordCriteria{
+    display:none;
+}
+#match{
+    display:none;
+}
+
+#newPage{
+    padding:10px;
+    margin-top:10px;
+    background-color: brown;
+    color:whitesmoke;
+    border-radius: 5px;
+    
+}

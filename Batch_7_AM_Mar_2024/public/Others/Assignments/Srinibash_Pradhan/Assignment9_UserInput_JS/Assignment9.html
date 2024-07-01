@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Details</title>
+  </head>
+  <body>
+    <h3>Employee Details</h3>
+
+    <script>
+      var ename, eage, eid, ebs, pf, hra, depart, totalsal;
+
+      ename = prompt("Enter the Employee name: ");
+      eid = prompt("Enter the Id of the Employee: ");
+      eage = prompt("Enter the age: ");
+      depart = prompt("Enter the Department: ");
+      ebs = prompt("Enter the basic salary: ");
+      ebs = parseInt(ebs);
+
+      pf = (14 * ebs) / 100;
+      hra = (24 * ebs) / 100;
+
+      totalsal = ebs+pf+hra;
+
+      console.log("Employee Name " + ename);
+      console.log("Employee ID " + eid);
+      console.log("Employee Age " + eage);
+      console.log("Department " + depart);
+      console.log("Basic Salary " + ebs);
+      console.log("PF " + pf);
+      console.log("HRA " + hra);
+      console.log("Total Salary = " + totalsal);
+    </script>
+  </body>
+</html>

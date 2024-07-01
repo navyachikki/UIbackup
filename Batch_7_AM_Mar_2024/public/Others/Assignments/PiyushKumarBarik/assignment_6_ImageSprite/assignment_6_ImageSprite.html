@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMAGE SPRITE</title>
+    <style>
+      .header {
+        width: 850px;
+        height: 40px;
+        border: 1px solid black;
+        margin: 10px auto;
+        padding-top: 5px;
+        text-align: center;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+
+      .footer {
+        width: 850px;
+        height: 40px;
+        border: 1px solid black;
+        margin: 10px auto;
+        padding-top: 5px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .container {
+        width: 850px;
+        height: 400px;
+        border: 1px solid black;
+        margin: 10px auto;
+        padding-top: 5px;
+        text-align: center;
+        /* font-weight: bold; */
+      }
+
+      .leftBox {
+        width: 20%;
+        height: 95%;
+        margin-left: 10px;
+        border: 1px solid black;
+        float: left;
+      }
+
+      .rightBox {
+        width: 70%;
+        height: 95%;
+        margin-right: 10px;
+        border: 1px solid black;
+        float: right;
+        overflow: scroll;
+      }
+
+      .student1,
+      .student2,
+      .student3,
+      .student4,
+      .student5 {
+        border: 1px solid black;
+        width: 90%;
+        height: 30%;
+        margin: 5px auto;
+      }
+
+      .student1Photo,
+      .student2Photo,
+      .student3Photo,
+      .student4Photo,
+      .student5Photo {
+        border: 1px solid black;
+        width: 30%;
+        height: 90%;
+        margin: 4px 0px 2px 2px;
+        float: left;
+        background-image: url("merged_image2.png");
+        background-repeat: no-repeat;
+      }
+
+      .student1Photo img,
+      .student2Photo img,
+      .student3Photo img,
+      .student4Photo img,
+      .student5Photo img {
+        width: 111px;
+        height: 114px;
+      }
+
+      .student1Photo {
+        background-position: -400px -27px;
+      }
+      .student2Photo {
+        background-position: -265px -27px;
+      }
+
+      .student3Photo {
+        background-position: -127px -27px;
+      }
+      .student4Photo {
+        background-position: -538px -27px;
+      }
+      .student5Photo {
+        background-position: 10px -22px;
+      }
+      .student1Details,
+      .student2Details,
+      .student3Details,
+      .student4Details,
+      .student5Details {
+        float: right;
+        margin: 3px 50px;
+        width: 50%;
+        height: 90%;
+        text-align: left;
+      }
+
+      .leftDetails {
+        border: 1px solid;
+        width: 120px;
+        height: 300px;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: left;
+        list-style: decimal;
+      }
+
+      .leftDetails li {
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">Student Details</div>
+    <div class="container">
+      <div class="leftBox">
+        <ul class="leftDetails">
+          <li>Pikachu</li>
+          <li>Clefairy</li>
+          <li>Charizard</li>
+          <li>Snorlax</li>
+          <li>Chansey</li>
+        </ul>
+      </div>
+      <div class="rightBox">
+        <div class="student1">
+          <div class="student1Photo"></div>
+          <div class="student1Details">
+            <ul style="float: left">
+              <li>Name: Pikachu</li>
+              <li>Age: 10</li>
+              <li>Gender: Male</li>
+              <li>Location: Asgard</li>
+            </ul>
+          </div>
+        </div>
+        <div class="student2">
+          <div class="student2Photo"></div>
+          <div class="student2Details">
+            <ul style="float: left">
+              <li>Name: Clefairy</li>
+              <li>Age: 8</li>
+              <li>Gender: Female</li>
+              <li>Location: Narnia</li>
+            </ul>
+          </div>
+        </div>
+        <div class="student3">
+          <div class="student3Photo"></div>
+          <div class="student3Details">
+            <ul style="float: left">
+              <li>Name: Charizard</li>
+              <li>Age: 16</li>
+              <li>Gender: Male</li>
+              <li>Location: Gotham</li>
+            </ul>
+          </div>
+        </div>
+        <div class="student4">
+          <div class="student4Photo"></div>
+          <div class="student4Details">
+            <ul style="float: left">
+              <li>Name: Snorlax</li>
+              <li>Age: 12</li>
+              <li>Gender: Male</li>
+              <li>Location: Hogwarts</li>
+            </ul>
+          </div>
+        </div>
+        <div class="student5">
+          <div class="student5Photo"></div>
+          <div class="student5Details">
+            <ul style="float: left">
+              <li>Name: Chansey</li>
+              <li>Age: 8</li>
+              <li>Gender: Female</li>
+              <li>Location: Rivendell</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">@CopyRights 2024</div>
+  </body>
+</html>

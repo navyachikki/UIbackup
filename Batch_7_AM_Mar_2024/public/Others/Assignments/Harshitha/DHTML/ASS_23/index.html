@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script src="./app.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <form id="registration-form">
+            <div class="title"> Registration Form</div>
+            <label for ="name">User Name :</label>
+            <input type="text" id="name" name="name" requried>
+
+            <label for="age">Age :</label>
+            <input type="text" id="age" name="age" required>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" onchange="updateStates()">
+                <option value="">Select a country</option>
+                <option value="USA">USA</option>
+                <option value="India">India</option>
+            </select>
+    
+            <label for="state">State:</label>
+            <select id="state" name="state" onchange="updateDistricts()" disabled>
+                <option value="">Select a state</option>
+            </select>
+    
+            <label for="district">District:</label>
+            <select id="district" name="district" disabled>
+                <option value="">Select a district</option>
+            </select>
+ 
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <div class="result-container">
+        <h2>Submitted Information</h2>
+        <p id="result"></p>
+    </div>
+    <option></option>
+</body>
+</html>

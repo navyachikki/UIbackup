@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+           /* var showThanksMsg = () => {
+                console.log("Thanks for visiting our webpage");
+            }
+
+            console.log("Start");
+
+                // setTimeout(showThanksMsg, 5000);
+                // showThanksMsg();
+
+                setTimeout( () => {
+                    console.log("Thanks for visiting our webpage");
+                } ,  5000);
+
+                setTimeout( () => {
+                    console.log("dO VISIT AGAIN");
+                } ,  10000);
+ 
+            console.log("END"); */ 
+
+            console.log("Start");
+            var userTimeout = setTimeout(() => {
+                console.log("thanks for visiting");
+            }, 5000);
+
+            var userAction = prompt("do u want to see thanks msg Y/N");
+            if (userAction == 'N' ) {
+                clearTimeout(userTimeout);
+            }
+            
+            console.log("Stop");
+
+            
+            
+        </script>
+    </body>
+</html>

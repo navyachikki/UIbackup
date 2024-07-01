@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript - Student Details</title>
+        <style>
+            h1, p {
+                text-align: center;
+                margin: 5px;
+                padding: 5px;
+            }
+            p {
+                font-size: 20px;
+                margin-top: 30px;
+            }
+            span {
+                color: blue;
+                font-size: 25px;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Student Details In JavaScript</h1>
+            <p>For More Information Please See <span>Console</span> Tab In <span>Inspect Element</span> !</p>
+            <p>View Source Code For Better Understanding</p>
+        </div>
+        <script>
+            var sname, sage, sgender, phy, chem, math, bio, lang, stotal, savg;
+            var sname = 'Shahrukh Khan';
+            var sage = 24;
+            var sgender = 'Male';
+            var phy = 85;
+            var chem = 90;
+            var math = 95;
+            var bio = 80;
+            var lang = 90;
+            var stotal = phy + chem + math + bio + lang;
+            var savg = stotal / 5;
+
+            console.log("Student Details")
+            console.log("Student Name : " + sname);
+            console.log("Student Age : " + sage);
+            console.log("Gender : " + sgender);
+            console.log("Marks Obtained");
+            console.log("Physics : " + phy + "/100");
+            console.log("Chemistry : " + chem + "/100");
+            console.log("Maths : " + math + "/100");
+            console.log("Biology : " + bio + "/100");
+            console.log("Language : " + lang + "/100");
+            console.log("Total Marks : " + stotal + "/500");
+            console.log("Average Marks : " + savg);
+        </script>
+    </body>
+</html>

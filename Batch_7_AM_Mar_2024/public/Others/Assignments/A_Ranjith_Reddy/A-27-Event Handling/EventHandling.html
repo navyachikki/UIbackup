@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+    <style>
+        h3 {
+            text-align: center;
+            font-weight: bold;
+        }
+        ul {
+            width: 500px; 
+            border: 1px solid; 
+            margin: 10px auto; padding: 12px;
+            background-color: rgb(166, 176, 164);
+            font-size: large;
+            }
+
+            li {
+            width: 450px; 
+            border: 1px solid; 
+            margin: 10px auto; 
+            padding: 10px; 
+            list-style: none;
+            background-color: rgb(159, 185, 176);
+            }
+    </style>
+</head>
+<body>
+    <h3>Calculate Sum of Values</h3>
+    <ul>
+        <li>
+            Enter the First Value: <input type="text" id="fVal">
+        </li>
+        <li>
+            Enter the Second Value: <input type="text" id="sVal">
+        </li>
+        <li>
+            <div>
+                Sum of First Value and Second Value: <span id="Result"></span>
+            </div>
+        </li>
+        <li>
+            <input type="button" value="Click" onclick="calSum();">
+        </li>
+    </ul>
+    <script>
+        var calSum = () => {
+                var a1 = document.querySelector("#fVal").value;
+                a1 = parseInt(a1);
+                var a2 = document.querySelector("#sVal").value;
+                a2 = parseInt(a2);
+                var sum = a1 + a2;
+                document.querySelector("#Result").innerText = sum;
+        }
+    </script>
+</body>
+</html>

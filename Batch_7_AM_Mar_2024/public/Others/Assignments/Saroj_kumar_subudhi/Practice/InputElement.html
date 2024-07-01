@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input_Element</title>
+    <style>
+        h3 {
+            width: 500px;
+            text-align: center;
+            border: 1px solid;
+            margin: auto;
+            padding: 5px;
+            background-color: purple;
+        }
+
+        ul {
+            width: 470px;
+            height: 587px;
+            border: 1px solid;
+            margin: auto;
+            position: relative;
+            top: 5px;
+            background: linear-gradient(to bottom, #3399ff 0%, #ff99cc 100%);
+        }
+
+        li {
+            list-style: none;
+            border: 1px solid;
+            margin: 10px 10px 10px -29px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Input_Element</h3>
+    <ul>
+        <li>
+            <label for="userName">Enter User Name: </label>
+            <input type="text" maxlength="20" name="userName">
+        </li>
+        <li>
+            <label for="accntPwd">Account password: </label>
+            <input type="password" maxlength="8" name="accntPwd">
+        </li>
+        
+        <li>
+            Country name:
+            <select name="Nationality" id="">
+                <option value="Ind">India</option>
+                <option value="Aus">Australia</option>
+                <option value="USA">America</option>
+                <option value="Sri">Srilanka</option>
+            </select>
+        </li>
+        <li>
+            <label for="Gender">Gender </label>
+            <input type="radio" name="Gender">Male
+            <input type="radio"  name="Gender">Female
+        </li>
+        <li>
+            Languages
+            <input type="checkbox" name="userName">English
+            <input type="checkbox" name="userName">Hindi
+            <input type="checkbox" name="userName">Odia
+            <input type="checkbox" name="userName">Telugu
+        </li>
+        <li>
+            <label for="AboutYourSelf"><div>AboutYourSelf</div></label>
+            <textarea name="AboutYourSelf" id="" cols="30" rows="10"></textarea>
+        </li>
+        <li><input type="file"></li>
+        <li>
+            <input type="button" value="Save Details">
+        </li>
+    </ul>
+</body>
+
+</html>

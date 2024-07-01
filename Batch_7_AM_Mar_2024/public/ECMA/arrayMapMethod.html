@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // map()
+
+            var data = [ 2, 4, 5, 6, 78];
+            var temp = [];
+            for (var i = 0 ; i < data.length; i++) {
+                 temp.push(data[i] * 3);
+            }
+
+            console.log(temp);
+
+            temp = data.map((value) => {
+                return value*3;
+            })  
+            console.log(temp);
+        </script>
+
+    </body>
+</html>

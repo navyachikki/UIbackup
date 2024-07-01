@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details using Function</title>
+    <style>
+        h2{
+            text-align: center;
+            color: rgb(208, 19, 19);
+            text-decoration: double;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Employee Details using Function</h2> 
+    <script>
+        var ename,eage,gender,department,basicSalary,pf,hra,total;
+        function readData()
+        {
+            ename=prompt("Enter Employee Name :");
+            eage=parseInt(prompt("Enter Age : "));
+            gender=prompt("Enter Gender : ");
+            department = prompt("Enter Department : ");
+            basicSalary=parseInt(prompt("Enter basic salary : "));
+            calculateSalary(basicSalary);
+        }
+
+        function calculateSalary(basicSalary)
+        {
+            pf=14/100 * basicSalary;
+            hra=24 /100 * basicSalary;
+            total=pf+hra+basicSalary;
+            showData();
+        }
+        function showData()
+        {
+            console.log("--------Employee Deatils----------");
+            console.log("Name : "+ename);
+            console.log("Age : "+eage);
+            console.log("Gender :" +gender);
+            console.log("Department : "+department);
+            console.log("Total Salary : "+total);
+        }
+        readData();
+    </script>      
+</body>
+</html>

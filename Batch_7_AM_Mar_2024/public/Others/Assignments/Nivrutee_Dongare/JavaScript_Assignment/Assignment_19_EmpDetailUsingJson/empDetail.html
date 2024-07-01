@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dtail using json</title>
+</head>
+
+<body>
+    <script>
+        var employeeDetail = {
+            readDetails() {
+                this.name = prompt("Enter Employee name :");
+                this.gender = prompt("Enter gender of employee :");
+                this.age = prompt("Enter age of employee :");
+                this.basicSalary = parseInt(prompt("Enter basic salary od employee"));
+                this.pfAndHra();
+            },
+
+            pfAndHra() {
+                this.pf = this.basicSalary * 0.12;
+                this.hra = this.basicSalary * 0.24;
+                this.totalSalary = this.pf + this.hra + this.basicSalary;
+                this.totalTax();
+            },
+
+            totalTax() {
+                this.taxPer = 0;
+                if (this.gender == "Male") {
+                    if (this.totalSalary >= 200000) {
+                        this.taxPer = 15
+                    }
+                } else {
+                    if (this.totalSalary > 100000) {
+                        this.taxPer = 10
+                    }
+                }
+            },
+
+            totalDetail() {
+                this.readDetails();
+                console.log("Employee Name :", this.name);
+                console.log("Employee gender:", this.gender);
+                console.log("Employee age :", this.age);
+                console.log("Total salary :", this.totalSalary);
+                console.log("Tax percentage :", this.taxPer);
+            }
+        };
+
+        employeeDetail.totalDetail();
+    </script>
+</body>
+
+</html>

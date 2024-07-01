@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays with Heterogeneous Data</title>
+</head>
+<body>
+    <script>
+            var studentData = ["Raj", 24, "Male", [70, 75, 80, 85, 90, 95],0, 0];
+
+            console.log("Student Name : " + studentData[0] + " Age : " + studentData[1] + " - (" + studentData[2] + ")");
+
+            for (i = 0; i < studentData[3].length ; i++)
+            {
+                console.log("You Have Gotten Marks in Subject" + (i+1) + " : " + studentData[3][i]);
+                studentData[4] = studentData[4] +  studentData[3][i];
+            }
+            studentData[5] = studentData[4]  / studentData[3].length;
+            console.log("Total Marks : " + studentData[4]);
+            console.log("Percentage : " + studentData[5]);
+    </script>
+</body>
+</html>

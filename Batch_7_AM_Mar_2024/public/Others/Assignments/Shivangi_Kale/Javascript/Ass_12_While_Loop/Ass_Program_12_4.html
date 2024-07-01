@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To check whether given number is palindrom or not</title>
+    <style>
+        h2{
+            text-align: center;
+            color:rgb(121, 242, 45);
+            text-decoration: double;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h2><i>To check whether given number is palindrome or not</i></h2>
+    <script>
+        var userVal=prompt("Enter any value ");
+        userVal=parseInt(userVal);
+        console.log("Is it Palindrome ? ");
+        var originalVal=userVal;
+        var appendVal='';
+
+        while(userVal>0)
+        {
+            var rem = userVal % 10;
+            //console.log(rem);
+            appendVal+=rem;
+            userVal = userVal / 10;
+            userVal = parseInt(userVal);
+        }
+       
+        appendVal=parseInt(appendVal);
+
+        if(appendVal == originalVal)
+        {
+            console.log(originalVal + " is Palindrome");
+        }
+        else{
+            console.log(originalVal + " is  not Palindrome");
+        }
+
+       
+    </script>    
+</body>
+</html>

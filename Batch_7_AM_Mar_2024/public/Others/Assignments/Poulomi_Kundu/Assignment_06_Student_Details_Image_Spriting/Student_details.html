@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <style>
+        body, a{
+            color: #2C7865;
+            font-size: 20px;
+        }
+
+        .head, .foot{
+            text-align: center;
+            font-weight: 600;
+            font-size: 25px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .content{
+            height: 460px;
+        }
+        .name, .details{
+            border: 1px solid #2C7865;
+            padding: 10px;
+            background-color: white;
+            width: 200px;
+            height: 430px;
+            float: left;
+            margin: 5px;
+        }
+
+        .name li{
+            line-height: 50px;
+        }
+
+        .details{
+            width: 536px;
+            overflow: auto;
+        }
+
+        .phblock{
+            height: 150px;
+            width: 120px;
+            border: 1px solid #2C7865;
+            background-image: url(photo.jpeg);
+            background-size: 571px;
+        }
+
+        #s1 .phblock{
+            background-position: -294px -31px;
+        }
+
+        #s2 .phblock{
+            background-position: -294px -385px;
+        }
+
+        #s3 .phblock{
+            background-position: -436px -385px;
+        }
+
+        #s4 .phblock{
+            background-position: -151px -32px;
+        }
+
+        #s5 .phblock{
+            background-position: -151px -212px;
+        }
+
+        .right{
+            border: 1px solid #2C7865;
+            padding: 10px;
+            background-color: #D9EDBF;
+            width: 485px;
+            height: 165px;
+            margin: 5px;
+        }
+
+        .photo, .student{
+            float: left;
+            margin: 5px;
+        }
+
+        .student{
+            margin-left: 10px;
+            margin-top: 20px;
+        }        
+
+        .block{
+            border: 1px solid #2C7865;
+            padding: 10px;
+            margin: 5px auto;
+            width: 800px;
+            background-color: #D9EDBF;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="block head">Student Details</div>
+    
+    <div class="block content">
+        <div class="name">
+            <ol>
+                <li><a href="#s1">Yannick Adams</a></li>
+                <li><a href="#s2">Dustin Rivest</a></li>
+                <li><a href="#s3">Ada Comeau</a></li>
+                <li><a href="#s4">Trent Griffiths</a></li>
+                <li><a href="#s5">Rosemary Noble</a></li>
+            </ol>
+        </div>
+
+        <div class="details">
+            <div class="right" id="s1">
+                <div class="photo phblock"></div>
+                <div class="student">
+                    <div><strong>Name:</strong> Yannick Adams</div>
+                    <div><strong>Age:</strong> 28</div>
+                    <div><strong>Gender:</strong> Male</div>
+                    <div><strong>Location:</strong> Bangalore</div>
+                </div>
+            </div>
+
+            <div class="right" id="s2">
+                <div class="photo phblock"></div>
+                <div class="student">
+                    <div><strong>Name:</strong> Dustin Rivest</div>
+                    <div><strong>Age:</strong> 26</div>
+                    <div><strong>Gender:</strong> Male</div>
+                    <div><strong>Location:</strong> Kashmir</div>
+                </div>
+            </div>
+
+            <div class="right" id="s3">
+                <div class="photo phblock"></div>
+                <div class="student">
+                    <div><strong>Name:</strong> Ada Comeau</div>
+                    <div><strong>Age:</strong> 22</div>
+                    <div><strong>Gender:</strong> Female</div>
+                    <div><strong>Location:</strong> Mumbai</div>
+                </div>
+            </div>
+
+            <div class="right" id="s4">
+                <div class="photo phblock"></div>
+                <div class="student">
+                    <div><strong>Name:</strong> Trent Griffiths</div>
+                    <div><strong>Age:</strong> 27</div>
+                    <div><strong>Gender:</strong> Male</div>
+                    <div><strong>Location:</strong> Jodhpur</div>
+                </div>
+            </div>
+
+            <div class="right" id="s5">
+                <div class="photo phblock"></div>
+                <div class="student">
+                    <div><strong>Name:</strong> Rosemary Noble</div>
+                    <div><strong>Age:</strong> 25</div>
+                    <div><strong>Gender:</strong> Female</div>
+                    <div><strong>Location:</strong> Kolkata</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="block foot">@copyright 2024</div>
+
+</body>
+</html>

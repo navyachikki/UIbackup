@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOCK</title>
+</head>
+<style>
+    .clock-frame{
+        position: relative;
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        border: 5px blue;
+        left: 35%;
+        top: 80px;
+        box-shadow: 10px 10px 15px green;
+        background-color:  rgb(10,90,90);
+    }
+    .hour12{
+        position: relative;
+        font-size: 30px;
+        left: 45%;
+        top: 5px;
+    }
+    .hour1{
+        position: relative;
+        font-size: 70px;
+        left: 70%;
+        top: -12%;
+    }
+    .hour2{
+        position: relative;
+        font-size: 70px;
+        left: 85%;
+        top: -15%;
+    }
+    .hour3{
+        position: relative;
+        font-size: 30px;
+        left: 94%;
+        top: -4%;
+    }
+    .hour4{
+        position: relative;
+        font-size: 70px;
+        left: 85%;
+        top: -3px;
+    }
+    .hour5{
+        position: relative;
+        font-size: 70px;
+        left: 70%;
+        top: -6%;
+    }
+    .hour6{
+        position: relative;
+        font-size: 30px;
+        left: 48%;
+        top: -10%;
+    }
+    .hour7{
+        position: relative;
+        font-size: 70px;
+        left: 25%;
+        top: -36%;
+    }
+    .hour8{
+        position: relative;
+        font-size: 70px;
+        left: 10%;
+        top: -73%;
+    }
+    .hour9{
+        position: relative;
+        font-size: 30px;
+        left: 3%;
+        top: -98%;
+    }
+    .hour10{
+        position: relative;
+        font-size: 70px;
+        left: 6%;
+        top: -137%;
+    }
+    .hour11{
+        position: relative;
+        font-size: 70px;
+        left: 21%;
+        top: -175%;
+    }
+    .point{
+        position: relative;
+        font-size: 170px;
+        top: -181%;
+        left: 45%;
+
+    }
+    .hour{
+        border: 5px solid red;
+        width: 0px;
+        height: 100px;
+        position: relative;
+        border-radius: 30% ;
+        left: 49%;
+        top: -194%;
+    }
+    .Minute{
+        border: 3px solid;
+        width: 0px;
+        height: 160px;
+        position: relative;
+        border-radius: 30px;
+        left: 50%;
+        top: -222%;
+    }
+    .Second{
+        border: 1px solid blue;
+        width: 0px;
+        height: 130px;
+        position: relative;
+        border-radius: 30px;
+        left: 51%;
+        top: -263%;
+        transform: rotate(0deg);
+    }
+    
+</style>
+<body>
+    <div class="clock-frame">
+        <div class="hour12">12</div>
+        <div class="hour1">.</div>
+        <div class="hour2">.</div>
+        <div class="hour3">3</div>
+        <div class="hour4">.</div>
+        <div class="hour5">.</div>
+        <div class="hour6">6</div>
+        <div class="hour7">.</div>
+        <div class="hour8">.</div>
+        <div class="hour9">9</div>
+        <div class="hour10">.</div>
+        <div class="hour11">.</div>
+        <div class="point">.</div>
+
+        <div class="hour" id="hour"></div>
+        <div class="Minute" id="Minute"></div>
+        <div class="Second" id="Second"></div>
+
+    </div>
+</body>
+   <script>
+
+         var hour = 0;
+         var Minute = 0;
+         var Second = 0;
+          var d = new Date();
+          setInterval (() => {
+            console.log("testing")
+             d = new Date();
+
+             hourrotate= d.getHours() * 30;
+             Minuterotate = d.getMinutes() * 6;
+             Secondrotate = d.getSeconds()* 6;
+
+            console.log(Secondrotate)
+
+             document.getElementById("hour").style.transform = `rotate(${hourrotate}deg)`;
+             document.getElementById("Minute").style.transform = `rotate(${Minuterotate}deg)`;
+             document.querySelector("#Second").style.transform =`rotate(${Secondrotate}deg)`;
+          },1000);
+   </script>
+</html>

@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    background-color: ivory;
+}
+.navbar {
+    background-color: #020322;
+    border: 1px solid;
+    padding: 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    color: white;
+    display: inline-block;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 100px;
+    font-family: memphis;
+    letter-spacing: 5px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 10px;
+}
+a:hover {
+    background-color: white;
+    color: #020322;
+}
+#srch {
+    width: 40%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #e6f0ff;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+#searchicon {
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+}
+#searchbar {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    width: 100%;
+}
+#searchbar:focus {
+    outline: none;
+    border-radius: 3px;
+}
+.links {
+    width: 30%;
+    text-align: right;
+}
+.footer {
+    height: 20px;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    background-color: #020322;
+}
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+@font-face {
+    font-family: memphis;
+    src: url(../FONTS/Memphis\ River.otf);
+}

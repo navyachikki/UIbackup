@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functional Demo</title>
+  </head>
+  <body>
+    <h2>Different Type of Functions Demo</h2>
+    <script>
+            var a = 1; // global Scope
+    // ===================== Type-1 ================================
+
+    function typeOne(){
+      console.log("I am Type One function");
+      console.log("I am Type of function value:", a);
+    
+    }
+      // ===================== Type-2 ================================
+    
+      var typeTwo = function(){
+        typeOne();
+        console.log("I am Type Two function");
+        console.log("I am Type of function value:", a += a++);
+      }
+ 
+      console.log(typeTwo());
+      console.log(typeTwo);
+   // ===================== Type-3 Arrow Functions ================================
+
+   var typeThree = () =>{
+    typeTwo();
+    a = 3;
+    console.log("I am Type Three function");
+    console.log("I am Type of function value:", a = a++);
+
+   }
+   typeThree();
+  //  console.log(typeThree);
+
+    </script>
+  </body>
+</html>
+
+

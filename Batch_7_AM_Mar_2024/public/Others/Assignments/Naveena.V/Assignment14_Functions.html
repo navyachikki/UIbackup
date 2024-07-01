@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Functions
+        </title>
+    </head>
+    <body>
+        <script>
+            var name, age, gender, dep, b_sal, PF, HRA, t_salary;
+            function get_details() {
+                name = prompt("Enter name of the employee")
+                age = prompt("Enter age of employee")
+                gender = prompt("Enter gender of employee")
+                dep = prompt("Enter departmnet of employee")
+                B_sal = prompt("Enter basic salary of employee")
+                B_sal = parseInt(B_sal)
+            }
+            function get_Salary() {
+                PF = (B_sal*14)/100;
+                HRA = (B_sal*24)/100;
+                t_salary = PF + HRA + B_sal;
+            }
+            function display() {
+                get_details();
+                get_Salary();
+                console.log("Name of the employee is" + name)
+                console.log("age of the employee is" + age)
+                console.log("Employee gender is" + gender)
+                console.log("employee dep is" + dep)
+                console.log("Employee total salary is" + t_salary)
+            }
+            display();
+
+        </script>
+    </body>
+</html>

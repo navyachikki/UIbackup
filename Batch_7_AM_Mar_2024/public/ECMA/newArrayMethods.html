@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>new array methods</title>
+    </head>
+    <body>
+        <script>
+            // push, join, pop, shift, 
+            // find, sort, map, filter
+
+            var data = [ 34, 55, 66, 77, 88, 90];
+            var isFound = false;
+            /*for (var i = 0 ; i < data.length; i++) {
+                if (data[i] == 33) {
+                    isFound = true;
+                    break;
+                }
+            }
+
+            if (isFound) {
+                console.log("Value existing");
+            } else {
+                console.log("Value NOT existing");
+            } */
+
+            isFound = data.find((value) => {
+                if (value == 102) {
+                    return;
+                }
+            })
+            console.log(isFound);
+
+            var index = data.findIndex((value) => {
+                if (value == 77) {
+                    return true;
+                }
+            });
+
+            console.log(index);
+
+
+            
+
+
+        </script>
+    </body>
+</html>

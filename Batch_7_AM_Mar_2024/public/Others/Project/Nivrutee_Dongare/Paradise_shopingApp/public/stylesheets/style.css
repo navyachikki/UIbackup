@@ -1,0 +1,22 @@
+.mr-1 {
+  margin-right: 10px;
+}
+.navbar-brand i{
+  margin-left: 90px;
+  font-weight: 700;
+  font-size: larger;
+}
+.main{
+  height: 600px;
+}
+
+.carousel-item {
+  overflow: hidden;
+  height: 50vh; /* Adjust this value to control the visible height */
+}
+
+.carousel-item img {
+  width: 100%;
+  object-fit: cover;
+  transform: translateY(0%);
+}

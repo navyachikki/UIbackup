@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+</head>
+<body>
+
+    <h3> Findout all the prime number within given array </h3>
+
+    <script>
+        var prime = [1, 2, 3, 5, 7, 8, 9, 11, 14];
+
+        var num;
+
+        for (var i = 0; i < prime.length; i++) {
+
+            var temp = 0;
+
+        for (var j = 2; j < i; j++) {
+
+             num = prime[i] % j;
+
+             if (num == 0) {
+
+                temp++;
+             }
+        }
+        if(temp == 0) {
+            console.log("It is a prime number " + prime[i]);
+        }
+        else {
+            console.log("It is not prime number " + prime[i]);
+        }
+       }
+
+        console.log("The count of all prime numbers within given array " + temp);
+    </script>
+
+</body>
+</html>

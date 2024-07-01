@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thursday , May 2nd 2024 hh:mm:ss</title>
+  </head>
+  <body>
+    <script>
+      var dayNames = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      var monthNames = ["January", "February", "March", "April", "May"];
+      currentDate = new Date();
+      // console.log(currentDate);
+      // console.log(currentDate.getMonth());
+      let monthIndex = currentDate.getMonth();
+      showMonth = monthNames[monthIndex];
+      // console.log(showMonth);
+      // console.log(currentDate.getDay());
+      let dayIndex = currentDate.getDay();
+      showDay = dayNames[dayIndex];
+      // console.log(showDay);
+
+      let format2 =
+        showDay +
+        "," +
+        showMonth +
+        " " +
+        currentDate.getDate() +
+        "nd" +
+        " " +
+        currentDate.getFullYear() +
+        " " +
+        currentDate.getHours() +
+        ":" +
+        currentDate.getMinutes() +
+        ":" +
+        currentDate.getSeconds();
+      console.log(format2);
+    </script>
+  </body>
+</html>

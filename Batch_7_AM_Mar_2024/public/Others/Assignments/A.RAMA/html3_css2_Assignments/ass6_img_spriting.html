@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img_Spriting</title>
+    <style>
+        .emp{
+            text-align: center;
+            text-decoration: underline;
+            border: 1px solid rgb(179, 163, 163);
+            padding: 20px;
+            margin: 10px;
+            background-color: rgb(77, 77, 119);
+            font-size: 20PX;
+        }
+        ul{
+            margin: 0px;
+            padding: 0px;
+        }
+        .mainBlock>li{
+            list-style: none;
+            border: 2px solid;
+            padding: 10px;
+            margin: 10px;
+            height: 150px;
+            background-color: cadetblue;
+        }
+        .stdDetails{
+            list-style: none;
+            margin: 10px;
+            width: 400px;
+            float: left;
+        }
+        .imgBlock{
+            height: 130px;
+            width: 130px;
+            margin: 10PX;
+            background-image: url(img_spriting.png);
+            float: left;
+        }
+        .stdDetails li{
+            margin: 10px;
+            list-style: none;
+        }
+        .emp1{
+            background-position: -30px -30px;
+        }
+        .emp2{
+            background-position: -210px -25px;
+        }
+        .emp3{
+            background-position: -396px -20px;
+        }
+        .emp4{
+            background-position: -29PX -230PX;
+        }
+    </style>
+</head>
+<body>
+    <div class="emp">
+        EMPLOYEE DETAILS
+    </div>
+    <ul class="mainBlock">
+        <li>
+            <div class="imgBlock emp1"></div>
+            <div class="stdDetails">
+                <ul>
+                    <li>Employee Name: RAMA</li>
+                    <li>Employee Age: 22</li>
+                    <li>Employee Department: UI DESIGN</li>
+                    <li>Employee Location: HYDERABAD</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="imgBlock emp2"></div>
+            <div class="stdDetails">
+                <ul>
+                    <li>Employee Name: ANJANA</li>
+                    <li>Employee Age: 22</li>
+                    <li>Employee Department: JAVA DEVELOPER</li>
+                    <li>Employee Location: HYDERABAD</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="imgBlock emp3"></div>
+            <div class="stdDetails">
+                <ul>
+                    <li>Employee Name: RASOOL</li>
+                    <li>Employee Age: 20</li>
+                    <li>Employee Department: PYTHON DEVELOPER</li>
+                    <li>Employee Location: BANGOLORE</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="imgBlock emp4"></div>
+            <div class="stdDetails">
+                <ul>
+                    <li>Employee Name: MADURI</li>
+                    <li>Employee Age: 21</li>
+                    <li>Employee Department: SELINIUM</li>
+                    <li>Employee Location: CHENNAI</li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

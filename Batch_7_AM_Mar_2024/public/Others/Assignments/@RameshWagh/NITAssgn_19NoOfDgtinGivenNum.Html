@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Number Of Degit in Given Number</title>
+    </head>
+    <body>
+        <script>
+            var Entrnum = prompt("Enter Number To Check Degits : ");
+            var Entrnum = parseInt(Entrnum);
+            var Count = 0;
+            var n = 0;
+            n = Entrnum;
+            while(n > 0)
+            {
+                Count = Count + 1;
+                n = parseInt(n / 10);
+            }
+            console.log(Count + " No. Of Degit Found in : " + Entrnum);
+        </script>
+    </body>
+</html>

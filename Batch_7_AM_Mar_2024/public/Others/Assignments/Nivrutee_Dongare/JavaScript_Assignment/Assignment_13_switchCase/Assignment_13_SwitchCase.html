@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwitchCase Example</title>
+</head>
+
+<body>
+    <script>
+        let problem = prompt("Tell me which arithmetic operation you want to do");
+
+        switch (problem) {
+            case "add":
+                let a = parseInt(prompt("enter A value"));
+                let b = parseInt(prompt("Enter B value"));
+                let ans = a + b;
+                console.log("Addition of", a, "+", b, " is " + ans);
+                break;
+            case "prime":
+                let num = parseInt(prompt("Enter num to check prime or not"));
+                let count = 0;
+                for (let i = 1; i <= num; i++) {
+                    if (num % i === 0) {
+                        count++;
+                    }
+                }
+                if (count === 2) {
+                    console.log(num + " is prime");
+                } else {
+                    console.log(num + " is not prime");
+                }
+                break;
+            case "reverse":
+                let number = parseInt(prompt("Enter num"));
+                let reverse = 0;
+                for (let i = 0; i <= number; i++) {
+                    while (number > 0) {
+                        let digit = number % 10;
+                        reverse = reverse * 10 + digit;
+                        number = Math.floor(number / 10);
+                    }
+                }
+                console.log("Reverse of given num is", reverse);
+                break;
+
+            default: console.log("invalide input");
+        }
+    </script>
+</body>
+
+</html>

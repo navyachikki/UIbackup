@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid7</title>
+    <style>
+        .container{
+            border: 1px solid;
+            width: 70%;
+            height:400px;
+            margin:20px auto;
+            background-color:white ;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 80px 80px 80px 80px 80px;
+                  
+        }
+        .item1{
+            grid-column: 1/3;
+        }
+        .item7{
+            grid-column: 1/3;
+            grid-row: 3/5;
+        }
+        .item8{
+            grid-column: 3/4;
+        }
+        .item11{
+            grid-column: 1/4;
+        }
+       
+        .container div{
+            border: 2px solid;          
+            margin: 5px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            background-color:#85C1E9;
+            column-gap: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Item1</div>
+        <div class="item2">Item2</div>
+        <div class="item3">Item3</div>
+        <div class="item4">Item4</div>
+        <div class="item5">Item5</div>
+        <div class="item6">Item6</div>
+
+        <div class="item7">Item7</div>
+        <div class="item8">Item8</div>
+        <div class="item9">Item9</div>
+        <div class="item10">Item10</div>
+        <div class="item11">Item11</div>
+        <div class="item12">Item12</div>
+    </div>    
+    
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+</head>
+<style>
+    body{
+        background-color: #fff1cf;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        color: #264653;
+    }
+
+    .block{
+        border: 1px solid #264653;
+        color: #e9c46a;
+        background-color: #264653;
+        border-radius: 10px;
+        text-align: center;
+        width: 300px;
+        margin: 9px auto;
+        padding: 10px;
+    }
+
+    .container{
+        border: 2px dashed #264653;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+        height: 500px;
+        width: 1000px;
+        margin: 9px auto;
+        position: relative;
+    }
+
+    .box{
+        
+        border: 1px solid #264653;
+        border-radius: 10px;
+        height: 90px;
+        width: 100px;
+        padding-top: 10px;
+        position: absolute;
+    }
+
+    .box1{
+        background-color: #2a9d8f;
+        top: 10px;
+        left: 10px;
+        z-index: 1;
+    }
+
+    .box2{
+        background-color: #f4a261;
+        top: 60px;
+        left: 60px;
+        z-index: 2;
+    }
+
+    .box3{
+        background-color: #2a9d8f;
+        top: 10px;
+        right: 10px;
+        z-index: 3;
+    }
+
+    .box4{
+        background-color: #e9c46a;
+        top: 60px;
+        right: 60px;
+        z-index: 4;
+    }
+
+    .box5{
+        background-color: #2a9d8f;
+        bottom: 10px;
+        left: 10px;
+        z-index: 6;
+    }
+
+    .box6{
+        background-color: #e76f51;
+        bottom: 60px;
+        left: 60px;
+        z-index: 5;
+    }
+
+    .box7{
+        background-color: #2a9d8f;
+        bottom: 10px;
+        right: 10px;
+        z-index: 8;
+    }
+
+    .box8{
+        background-color: #f4a261;
+        bottom: 60px;
+        right: 60px;
+        z-index: 7;
+    }
+
+    .box9{
+        background-color: #264653;
+        color: #e9c46a;
+        height: 65px;
+        width: 100px;
+        padding-top: 35px;
+        top: 196px;
+        left: 452px;
+        z-index: 9;
+    }
+
+    .box10{
+        background-color: #f4a261;
+        top: 128px;
+        left: 386px;
+        z-index: 10;
+    }
+
+    .box11{
+        background-color: #e76f51;
+        top: 128px;
+        left: 522px;
+        z-index: 11;
+    }
+
+    .box12{
+        background-color: #e9c46a;
+        top: 262px;
+        left: 386px;
+        z-index: 12;
+    }
+
+    .box13{
+        background-color: #2a9d8f;
+        top: 262px;
+        left: 522px;
+        z-index: 13;
+    }
+
+</style>
+<body>
+    <div class="block">Block Position</div>
+    <div class="container">
+        <div class="box box1">Block 1</div>
+        <div class="box box2">Block 2</div>
+        <div class="box box3">Block 3</div>
+        <div class="box box4">Block 4</div>
+        <div class="box box5">Block 5</div>
+        <div class="box box6">Block 6</div>
+        <div class="box box7">Block 7</div>
+        <div class="box box8">Block 8</div>
+        <div class="box box9">Block 9</div>
+        <div class="box box10">Block 10</div>
+        <div class="box box11">Block 11</div>
+        <div class="box box12">Block 12</div>
+        <div class="box box13">Block 13</div>
+    </div>
+    <div class="block">@copyrights 2024</div>
+</body>
+</html>

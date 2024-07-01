@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Replace All "empDetails." by "this."</title>
+  </head>
+  <body>
+    <script>
+      // Replacing "empDetails" keyword with "this" operator
+      var empDetails = {
+        enterEmployeeDetails() {
+          this.eName = prompt("Enter your name");
+          this.eAge = prompt("Enter Your Age");
+          this.eGender = prompt("Enter Your Gender");
+          this.basicSal = parseInt(prompt("Enter Your Basic Salary"));
+          this.calculateTotalSal();
+        },
+        calculateTotalSal() {
+          this.pf = (14 * this.basicSal) / 100;
+          this.hra = (24 * this.basicSal) / 100;
+          this.totalSal = this.basicSal + this.pf + this.hra;
+          this.showDetails();
+        },
+        showDetails() {
+          console.log("Employee Name is " + this.eName);
+          console.log("Employee Age is " + this.eAge);
+          console.log("Gender: " + this.eGender);
+          console.log("Basic salary is " + this.basicSal);
+          console.log("PF is " + this.pf);
+          console.log("hra is " + this.hra);
+          console.log("Total Salary is " + this.totalSal);
+        },
+        calculateTax() {
+          this.enterEmployeeDetails();
+          if (this.eGender == "male" || this.eGender == "Male") {
+            if (this.totalSal >= 200000) {
+              const tax = (this.totalSal * 15) / 100;
+              console.log("Your taxation amount is " + tax);
+            } else if (this.totalSal >= 100000) {
+              const tax = (this.totalSal * 10) / 100;
+              console.log("Your taxation amount is " + tax);
+            } else if (this.totalSal >= 50000) {
+              const tax = (this.totalSal * 5) / 100;
+              console.log("Your taxation amount is " + tax);
+            } else {
+              console.log("You don't have to pay income tax");
+            }
+          }
+          if (this.eGender == "female" || this.eGender == "Female") {
+            if (this.totalSal >= 200000) {
+              const tax = (this.totalSal * 10) / 100;
+              console.log("Your taxation amount is " + tax);
+            } else if (this.totalSal >= 100000) {
+              const tax = (this.totalSal * 5) / 100;
+              console.log("Your taxation amount is " + tax);
+            } else {
+              console.log("You don't have to pay income tax");
+            }
+          }
+        },
+      };
+      this.calculateTax();
+    </script>
+  </body>
+</html>

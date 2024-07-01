@@ -1,0 +1,69 @@
+Scope of Variables:
+
+    1. Global Scope
+    2. Module Scope 
+    3. Block Scope
+
+    Scope - Specifies the accessablity levels of a variable.
+
+
+    var a = 90; // Global Scope 
+
+    function one() {
+        a++    
+    }
+
+    function two() {
+
+    }
+    ------------------------
+
+
+    Local/module Scope:
+
+        function sample() {
+            var a = 90; // local/module Scope
+
+
+
+            ....
+        }
+
+        a // cannot be accessable
+    -------------
+
+    var a = 90;
+    function sample() {
+        var a = 100;
+        console.log("value of a" + a);
+    }
+    console.log("value of a" + a);'-
+
+    --------------------------
+
+    function sample() {
+        var a = 90;
+        ....
+        ...
+        var b1;
+        ....
+        .. b1 = 45;
+        ....
+        var z = 100;
+        ....
+        ...
+    }
+
+     function sample() {
+        var a, b1, z;
+        a = 90;
+        ....
+        ...
+        
+        ....
+        .. b1 = 45;
+        ....
+        z = 100;
+        ....
+        ...
+    }

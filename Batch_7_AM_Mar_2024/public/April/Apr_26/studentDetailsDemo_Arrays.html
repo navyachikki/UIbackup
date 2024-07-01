@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /*var name = "raj";
+            var age = 20;
+            var gender = 'Male';
+            var marks = [55, 66, 89, 90, 99];
+
+            var total = 0;
+            for (var i = 0 ; i < 5; i++) {
+                total += marks[i];
+            }
+            var avg = total / marks.length;
+
+            var grade;
+            if (avg >= 40) {
+                grade = 'U passed';
+            } else {
+                grade = "U have a surprise";
+            }
+
+            console.log("STudent details");
+            console.log("Name is " + name);
+            console.log("Age is " + age);
+            console.log("Gender is " + gender);
+            console.log("Total is " + total);
+            console.log("Avg is " + avg);
+            console.log("Grade is " + grade); */
+
+            var studentDetails = ["Raj", 20, 'Male', [55, 66, 89, 90, 99], 0, 0, ''];
+           
+
+            
+            for (var i = 0 ; i < studentDetails[3].length; i++) {
+                studentDetails[4] += studentDetails[3][i];
+            }
+            studentDetails[5] = studentDetails[4] / studentDetails[3].length;
+
+            
+            if (studentDetails[5] >= 40) {
+                studentDetails[6] = 'U passed';
+            } else {
+                studentDetails[6] = "U have a surprise";
+            }
+
+            console.log("STudent details");
+            console.log("Name is " + name);
+            console.log("Age is " + age);
+            console.log("Gender is " + gender);
+            console.log("Total is " + total);
+            console.log("Avg is " + avg);
+            console.log("Grade is " + grade);
+
+
+        </script>
+    </body>
+</html>

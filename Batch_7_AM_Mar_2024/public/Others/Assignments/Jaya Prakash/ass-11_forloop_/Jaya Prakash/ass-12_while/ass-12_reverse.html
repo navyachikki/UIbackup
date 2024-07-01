@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse of a number</title>
+</head>
+<body>
+    <script>
+        var number=prompt("Enter the number");
+        number=parseInt(number);
+        var h = number;
+        var reverse=0;
+        var n;
+        reverse = parseInt(reverse);
+        while(number >= 1){
+            n = number %10;
+            reverse = reverse*10 +n;
+            number = number/10;
+            number=parseInt(number);
+        }
+        console.log("The reverse of "+h+" is "+ reverse)
+    </script>
+</body>
+</html>

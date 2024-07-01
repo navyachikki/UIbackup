@@ -1,0 +1,63 @@
+.parent{
+    border:1px solid brown;
+    margin: 10px;
+    padding: 10px;
+    height: 350px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: blue;
+}
+
+.parent ul {
+    list-style: none;
+}
+
+.parent ul li {
+    border:1px black;
+    margin-bottom: 2px; 
+    margin-top: 1px;
+    padding:10px;
+
+}
+
+.parent ul li select{
+    margin-right: 10px;
+}
+
+/* li input[type="radio"]{
+    display : block ;
+} */
+#btn {
+    padding: 10px;
+    width: 90px;
+    border-radius: 10px;
+    border: none;
+    background-color: purple;
+    cursor: pointer;
+}
+.child h3 {
+    text-align: center;
+    color:blue;
+}
+.nameError{
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+.salError{
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+
+.child {
+    border:1px black;
+    text-align: center;
+    color:red;
+    background-color: aqua;
+    list-style: none;
+    /* display:none; */
+}

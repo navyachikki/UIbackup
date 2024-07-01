@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute</title>
+    <style>
+        .Block1,
+        .Block2,
+        .Block3,
+        .Block4,
+        .Block5,
+        .Block6,
+        .Block7,
+        .Block8 {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+        .Block1{
+            position: relative;
+            left: 500px;
+        }
+        .Block11 {
+             margin: 20px;
+        padding: 30px;  
+        margin-top: -3px;
+            border: 1px solid black;
+             width: 900px;
+            height: 77px;
+            position: relative;
+            background-color: teal;
+        }
+
+        .Blolck12 {
+             margin: 20px;
+             margin-left: -35px;
+             margin-right: 1px;
+            padding: 30px;
+            margin-top: 8px;
+            border: 1px solid black;
+            width: 1525px;
+            height: 130px;
+            position: relative;
+            background-color: rgb(78, 4, 4);
+        }
+
+        .Block4 {
+            position: absolute;
+            right: 1-50px;
+            top: 65px;
+            background-color: aqua;
+        }
+
+        .Block7 {
+            position: absolute;
+            right: 149px;
+            top: 523px;
+
+            background-color: blue;
+        }
+
+        .Block2 {
+            position: absolute;
+            right: 49px;
+            top: 23px;
+
+            background-color: rgb(116, 116, 183);
+        }
+
+        .Block5 {
+            position: absolute;
+            right: 442px;
+            top: 20px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">CSS ABSOLUTE </h1>
+    <div class="Block1" style="background-color: blueviolet;">Block 1</div>
+    <div class="Block2">Block 2</div>
+    <div class="Block3" style="background-color: black; color: aliceblue;">Block 3</div>
+    <div class="Block4">Block 4</div>
+    <div class="Blolck12">
+        <div class="Block11">
+            <div class="Block5">Block 5</div>
+        </div>
+    </div>
+
+    <div class="Block6" style="background-color: blueviolet;">Block 6</div>
+    <div class="Block7">Block 7</div>
+    <div class="Block8">Block 8</div>
+</body>
+
+</html>

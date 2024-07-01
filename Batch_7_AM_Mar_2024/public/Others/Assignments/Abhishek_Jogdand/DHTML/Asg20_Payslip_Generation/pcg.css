@@ -1,0 +1,25 @@
+
+ul{
+    border:2px solid;
+    height:500px;
+    width: 600px;
+    align-items: center;
+    background-color: rgb(218, 174, 239);
+    text-align: center;
+    margin: 5px auto;
+}
+ul li{
+    border: 1px solid rgb(68, 234, 236);
+    background-color: rgb(28, 211, 224);
+    width: 481px;
+    height: 39px;
+    margin: 14px;
+    padding: 13px;
+    list-style: none;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(31, 217, 124);
+}

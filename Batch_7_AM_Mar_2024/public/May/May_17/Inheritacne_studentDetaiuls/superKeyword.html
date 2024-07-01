@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            class First {
+                constructor(name, age) {
+                    console.log("frm first class")
+                }
+            }
+
+            class Second extends First {
+                constructor() {
+                    super("raj", 20); // it invokes the constructor of parent class. 
+                    console.log("frm Second class")
+                }
+            }
+
+        
+            var p2 = new Second();
+        </script>
+    </body>
+</html>

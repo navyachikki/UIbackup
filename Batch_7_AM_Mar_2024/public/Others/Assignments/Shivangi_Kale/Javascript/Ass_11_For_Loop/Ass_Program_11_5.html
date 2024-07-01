@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display the values between user given range</title>
+    <style>
+        h2{
+            text-align: center;
+            color: blueviolet;
+            text-decoration: double;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+  <h2>Display the values between user given range</h2>
+  <script>
+    var startVal=prompt("Enter Start Value : ");
+    startVal=parseInt(startVal);
+
+    var endVal=prompt("Enter End Value : ");
+    endVal=parseInt(endVal);
+    
+    console.log("Display number between "+startVal+" to "+endVal);
+    for(var i=startVal;i<=endVal;i++)
+    {
+        console.log(i);
+    }
+   
+
+  </script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // map()
+
+            var data = [ 2, 4, 5, 6, 78];
+            var temp = data.filter((value) => {
+                if (value % 2 == 0) {
+                    return true;
+                }
+            });
+            console.log(temp);
+
+            var empDetails = [
+                {name: 'Raj', gender:'Male'},
+                {name: 'Teena', gender:'Female'},
+                {name: 'Meena', gender:'Female'},
+                {name: 'Prasad', gender:'Male'}
+            ];
+
+            var filterdValues = empDetails.filter((obj) => {
+                if (obj.gender == 'Female') {
+                    return true;
+                }
+            })
+
+            console.log(filterdValues);
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details </title>
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2> Employee Salary Slip</h2>
+    <div class="parent">
+        <ul>
+            <li>
+                <input type="text" id="empName" placeholder="Enter the name">
+                <div class="nameError">
+                    Name is requried field
+                </div>
+            </li>
+            <li>
+                <input type="text" id="empAge" placeholder="Enter the Age">
+                <div class="ageError">
+                    Age is requried field
+                </div>
+            </li>
+            
+                <li>
+                    <label for="gender">select gender:</label>
+                    <input type="radio" name="gender" checked>  Male 
+                    <input type="radio" name="gender">  Female
+                </li>
+                <li>
+                    <input type="text" id="empSalary" placeholder="enter the salary">
+                    <div class="salError">Salary field is required</div>
+                </li>
+                <li>
+                    <label for="Department"> Department</label>
+                    <select id="empDept">
+                        <option value="HR">HR</option>
+                        <option value="IT">IT</option>
+                        <option value="Sales">Sales</option>
+                        <option value="Kpo">Kpo</option>
+                        <option value="NonTech">NonTech</option>
+                        <option value="Marketing">Marketing</option>
+                    </select>
+                </li>
+                <li>
+                    <input type="button" value="Get Slip" onclick="obj.empDetails()"  id="btn">
+                </li>
+        </ul>
+    </div>
+    <div class="child">
+        <h2>Employee Annual Salary</h2>
+          <ul>
+            <li>
+                Employee Name : <span id="dname"></span>
+            </li>
+            <li>
+                Employee Age : <span id="dage"></span>
+            </li>
+            <li>
+                Employee Department : <span id="dempdept"></span>
+            </li>
+            <li>
+                Employee Total Salary : <span id="dtotal"></span>
+            </li>
+          </ul>
+    </div>
+</body>
+</html>

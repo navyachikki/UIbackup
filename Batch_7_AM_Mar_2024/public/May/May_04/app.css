@@ -1,0 +1,52 @@
+h3 {
+    text-align: center;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+}
+ul {
+    width: 500px;
+    border: 2px solid;
+    margin: 10px auto;
+    padding: 20px;
+
+}
+li {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+}
+#marksContainer > input[type = text] {
+    width: 50px;
+}
+
+span {
+    font-weight: bold;
+    color: green;
+}
+
+.title{
+    text-align: center;
+    font-size: 16px;
+    color: aquamarine;
+}
+
+.progressCardBlock {
+    display: none;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 3px;
+    display: none;
+}
+
+.astric {
+    
+    color: red;
+    position: relative;
+    top: -5px;
+    left: -4px;
+}

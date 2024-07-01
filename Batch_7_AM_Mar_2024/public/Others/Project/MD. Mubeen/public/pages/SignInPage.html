@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="../CSS/signInStyle.css">
+<script src="../JS/signin.js"></script>
+<div class="signinbox">
+    <div class="logoimg">
+        <ul class="singInDetails">
+            <li>
+                <div class="heading">
+                    Sign in to Account
+                </div>
+            </li>
+            <li>
+                <div class="othersignin facebook">f</div>
+                <div class="othersignin google">G</div>
+                <div class="othersignin linkedin">in</div>
+            </li>
+            <li>
+                <p>or use your email account.</p>
+            </li>
+            <li>
+                <div class="userId">
+                    <img src="../Images/person.svg" alt="" id="userImage">
+                    <input type="text" name="userId" id="userId" placeholder="Email">
+                </div>
+            </li>
+            <li>
+                <div class="userPassword">
+                    <img src="../Images/lock.svg" alt="" id="passwordImage">
+                    <input type="password" name="userPassword" id="userPassword" placeholder="Password">
+                </div>
+            </li>
+            <li>
+                <div class="showpassword">
+                    <input type="checkbox" name="shwpswd" id="shwpswd" onclick="showPassword(event)"><label for="shwpswd">Show Password</label>
+                </div>
+            </li>
+            <li>
+                <div id="forgotpswd">
+                    <a>Forgot your Password ?</a>
+                </div>
+            </li>
+            <li>
+                <input type="button" value="SIGN IN" id="btn">
+            </li>
+        </ul>
+        <div class="signup">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start your journey with us</p>
+            <button id="signupbtn">SIGN UP</button>
+        </div>
+    </div>
+</div>

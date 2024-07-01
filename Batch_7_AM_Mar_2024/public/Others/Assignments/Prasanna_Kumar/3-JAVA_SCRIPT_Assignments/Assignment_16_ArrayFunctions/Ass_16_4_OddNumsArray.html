@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION-4</title>
+</head>
+<body>
+    <script>
+        var length = prompt("Enter the length of the Array :")
+        length = parseInt(length);
+        var arr = [];
+        for(var i = 0; i <= length; i++){
+            arr[i] = prompt("Enter the values till length :");
+            arr[i] = parseInt(arr[i]);
+        }
+        var count = 0;
+        for ( var j = 0; j <= arr.length; j++){
+            if(arr[j] % 2 != 0){
+                count ++;
+                console.log(arr[j]);
+            }
+        }
+        console.log(count);
+    </script>
+</body>
+</html>

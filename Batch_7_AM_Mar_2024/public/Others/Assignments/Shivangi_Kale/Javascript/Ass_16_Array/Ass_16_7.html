@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display second largest element in array </title>
+    <style>
+        h2{
+            text-align: center;
+            color: rgb(208, 19, 19);
+            text-decoration: double;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Display second largest element in array</h2>
+    <script>
+        var arr=[];
+        var n=parseInt(prompt("Enter number of elements :"));
+       
+        for(var i=0;i<n;i++)
+        {
+            arr[i]=prompt("Enter array value : ");
+        }
+
+       
+        for(var i=0;i<arr.length-1;i++)
+        {
+            for(var j=i+1;j<arr.length;j++)
+            {
+                if(arr[i]<arr[j])
+                {
+                    var temp=arr[j];
+                    arr[j]=arr[i];
+                    arr[i]=temp;
+                }
+            }
+        }
+
+       console.log("Second Largest element in array is "+arr[1]);
+       
+
+    </script>
+    
+</body>
+</html>

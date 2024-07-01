@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Display the Asc & Desc Order of given Array</title>
+        <link rel="stylesheet" href="Array.css">
+    </head>
+    <body>
+        <h2 id="Display">Displaying the Sort Order for a given Array</h2>
+        <span class="DisplayL"></span>
+        <span class="DisplayS"></span>
+        <script>
+            /* var arr = [];
+            var n = parseInt(prompt("Enter the length of n"));
+            for(var i=0;i<n;i++){
+                arr[i] = prompt("Enter the Value ")
+            }
+            console.log(arr);
+            arr.sort();
+            console.log("Sorted Array & Ascending order : " + arr.sort());
+           var r_order =  arr.reverse();
+           console.log(r_order); */
+            
+        var arr=[];
+        var n=parseInt(prompt("Enter number of elements :"));
+       
+        for(var i=0;i<n;i++)
+        {
+            arr[i]=prompt("Enter array value : ");
+        }
+
+       
+        for(var i=0;i<arr.length-1;i++)
+        {
+            for(var j=i+1;j<arr.length;j++)
+            {
+                if(parseInt(arr[i])<parseInt(arr[j]))
+                {
+                    var temp=arr[j];
+                    arr[j]=arr[i];
+                    arr[i]=temp;
+                }
+            }
+        }
+
+        console.log("Descending Order of the given Array : " + arr);
+        document.querySelector(".DisplayL").innerText = "Descending Order :" + arr;
+        arr.reverse();
+        console.log("Ascending Order of the given Array : " + arr);
+        document.querySelector(".DisplayS").innerText = "Ascending Order :" + arr;
+   
+           
+    
+        </script>
+            
+
+        </script>
+    </body>
+</html>

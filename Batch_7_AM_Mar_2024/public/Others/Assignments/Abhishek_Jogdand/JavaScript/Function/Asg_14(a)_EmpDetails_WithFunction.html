@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+
+var empname , empBasicSal,eGender;
+var epf , ehr,etotalSal,etotalTax;
+
+function readEmpDetails(){
+    empname = prompt("enter employee name");
+    empBasicSal = parseInt(empBasicSal)
+    eGender = prompt("Enter Gender")
+}
+
+function getTotalSal(){
+    epf = (empBasicSal*12)/100;
+    ehra = (empBasicSal*12)/100;
+    etotalSal = empBasicSal + epf + ehra;
+
+}
+
+function getTotalTax()
+{
+var taxPercent = 0;
+if(eGender == 'Male'){
+    if(etotalSal >= 200000){
+        taxPercent = 10;
+    }else{
+        taxPercent = 5
+    }
+}else{
+    if(etotalSal >= 200000){
+        taxPercent = 5;
+    }
+}
+etotalTax = (etotalSal * taxPercent)/100;
+
+}
+
+function displayStudentData(){
+    readEmpDetails()
+    console.log("Emp Details");
+    console.log("Emp name"+empname);
+    console.log("total salary"+etotalSal);
+    console.log("total tax "+etotalTax);
+
+}
+getTotalTax()
+
+    </script>
+    
+</body>
+</html>

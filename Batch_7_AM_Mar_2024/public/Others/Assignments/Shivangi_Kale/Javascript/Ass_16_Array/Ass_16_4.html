@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Odd Number count within an array</title>
+    <style>
+        h2{
+            text-align: center;
+            color: rgb(208, 19, 19);
+            text-decoration: double;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Display Odd Number count within an arraya</h2>
+    <script>
+        var arr=[];
+        var count=0;
+        var n=parseInt(prompt("Enter number of elements :"));
+        for(var i=0;i<n;i++)
+        {
+            arr[i]=prompt("Enter array value : ");
+            if(arr[i]%2!=0)
+            {
+                count++;
+            }
+        }
+        console.log("Odd Number count : "+count);
+    </script>
+    
+</body>
+</html>

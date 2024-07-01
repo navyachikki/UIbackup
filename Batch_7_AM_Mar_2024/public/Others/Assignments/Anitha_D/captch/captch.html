@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="captch.js"></script>
+    <style>
+        .capthcaText{
+            width: 200px;
+            height: 100px;
+            border: 1px solid;
+            font-size: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="capthcaText"></div>
+    <button onclick="generateCapthcaText">Generate</button>
+    <script>
+        var possibleStrings = ['U', 'L', 'N'];
+
+
+      var generateCapthcaText = () => {
+        var patternLength = 5;
+        var pattern = '';
+          for(var i = 0; i < patternLength; i++){
+
+            var index = Math.round(Math.random() * (possibleStrings.length - 1));
+            pattern += possibleStrings[index];
+          }
+          console.log(pattern);
+          var patterns = pattern.split('');
+          console.log(patterns);
+
+          var randomCapthca ='';
+           for ( var i = 0; i < patterns.Length; i++){
+            switch(patterns[i]){
+            case 'L': 
+                randomCapthca +=  generateLowerCaseRandomChar();
+                break;
+            case 'U':
+                randomCapthca += generateUpperCaseRandomChar();
+                break;
+            case 'N':
+                randomCapthca += generateRandomNumber();    
+                break;
+            }
+         }
+           
+           console.log(randomCapthca);
+           document.querySelector(".capthcaText").innerHTML = randomCapthca;
+        }
+
+    </script>
+</body>
+</html>

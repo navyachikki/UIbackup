@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Input Deatils</title>
+        <style>
+            h1, p {
+                text-align: center;
+                margin: 5px;
+                padding: 5px;
+            }
+            p {
+                font-size: 20px;
+                margin-top: 30px;
+            }
+            span {
+                color: blue;
+                font-size: 25px;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Employee Details In JavaScript</h1>
+            <p>For More Information Please See <span>Console</span> Tab In <span>Inspect Element</span> !</p>
+            <p>View Source Code For Better Understanding</p>
+        </div>
+        <script>
+            var empname, empage, empgender, empdepartment, empsalary, emphra, emppf;
+            empname = 'Salman Khan';
+            empage = 25;
+            empgender = 'Male';
+            empdepartment = 'Acting';
+            empsalary = 365000;
+            emphra = (14 * empsalary) / 100;
+            emppf = (24 * empsalary) / 100;
+            sum = empsalary + emphra + emppf;
+
+            // Printing Data On Console
+            console.log("Employee Details");
+            console.log("Name : " + empname);
+            console.log("Age : " + empage);
+            console.log("Gender : " + empgender);
+            console.log("Department : " + empdepartment);
+            console.log("Salary Details");
+            console.log("Basic Salary : " + empsalary);
+            console.log("P.F. : " + emppf);
+            console.log("H.R.A. : " + emphra);
+            console.log("Total Salary : " + sum);
+
+        </script>
+    </body>
+</html>

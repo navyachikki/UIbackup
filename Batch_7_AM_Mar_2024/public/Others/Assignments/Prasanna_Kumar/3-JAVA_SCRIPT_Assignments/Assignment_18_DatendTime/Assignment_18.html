@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Example</title>
+</head>
+<body>
+    <script>
+        var monthsName = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+        var daysName = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        var currentDate= new Date();
+         
+
+        var currDate = currentDate.getDate();
+        var currDate=currDate % 10;
+       
+        if(currDate == 1)
+        {
+            currDate=currDate+'st';
+        }
+        else if(currDate == 2)
+        {
+            currDate=currDate+'nd'; 
+        }
+        else if(currDate == 3)
+        {
+            currDate=currDate+'rd'; 
+        }
+        else
+        {
+            currDate=currDate+'th'; 
+        }
+        
+        
+        // Today 
+        console.log("Today is : "+currentDate);
+
+        // Day, Month Date Year
+        var monthIndex =currentDate.getMonth();
+        var daysIndex = currentDate.getDay();
+        console.log(daysName[daysIndex]+', '+monthsName[monthIndex]+' '+currDate+' '+currentDate.getFullYear());
+
+        // Month, Date MOnday ,Year
+        console.log(monthsName[monthIndex]+', '+currDate+' '+daysName[daysIndex]+', '+currentDate.getFullYear());
+
+        //Month/Date/Year        
+        console.log(monthsName[monthIndex]+' / '+currDate +' / '+currentDate.getFullYear());
+
+        // Day Month Year, hh:mm:ss
+        console.log(daysName[daysIndex]+' '+monthsName[monthIndex]+' '+currDate+', '+currentDate.getHours()+':'+currentDate.getMinutes()+':'+currentDate.getSeconds());
+
+
+    </script>
+</body>
+</html>

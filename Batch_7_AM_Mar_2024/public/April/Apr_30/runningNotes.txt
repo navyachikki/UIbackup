@@ -1,0 +1,47 @@
+var marks = [];
+
+for (var i = 0; i < 5; i++) {
+    marks[i] = prompt("enter value");
+}
+
+var studentData = {};
+studentData.marks = [];
+for (var i = 0; i < 5; i++) {
+    studentData.marks[i] = prompt("enter value");
+}
+
+0---------------------
+
+var data = {
+    "name": 'rak',
+    age: 20
+}
+
+
+var temp = 'name';
+
+data.name 
+data.temp - undefined 
+data[temp] -> data['name'] -> Raj
+
+data.name 
+
+data[temp]
+
+
+var bookDetails = {
+    bookname: 'My Dreams',
+    price: 300,
+    author: 'Prasad'
+}
+
+bookDetails.bookname -> 'My Dreams'
+bookDetails['bookname'] -> 'My Dreams'
+var test = 'bookname';
+bookDetails[test] -> bookDetails["bookname"] -> 'My Dreams'
+
+
+for (var temp in bookDetails) {
+     console.log(temp)
+     console.log(bookDetails[temp])
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short</title>
+</head>
+<body>
+    <h3> Short given array to ascending and descending order </h3>
+    <script>
+        var order = [1, 2, 3, 4, 5];
+
+        for(var i = 0; i < order.length; i++) {
+
+            for(var j = 0; j < order.length; j++) {
+
+                if (order[i] > order[j]) {
+
+                    var count = order[j];
+                    order[j] = order[i];
+                    order[i] = count;
+
+                }
+            }
+        }
+
+        console.log("For the given array ascending to descending order " + order);
+
+        var order = [8, 5, 3, 2, 6];
+
+        for(var i = 0; i < order.length; i++) {
+
+            for(var j = 0; j < order.length; j++) {
+
+                if (order[i] < order[j]) {
+
+                    var count = order[j];
+                    order[j] = order[i];
+                    order[i] = count;
+                    
+                }
+            }
+        }
+
+        console.log("For the given array descending to ascending order " + order);
+    </script>
+</body>
+</html>

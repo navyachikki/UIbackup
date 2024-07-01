@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var a = parseInt(prompt("enter the starting avlue "));
+            var b = parseInt(prompt("eneter the value of end range"));
+          
+                for(i=a; i<= b; i++){
+                
+                    var tracker=1;
+                    for(j=2;j<=i/2; j++){
+                        if(i%j==0){
+                            tracker=0;
+                            break;
+                        }
+                        if(tracker==0){
+                            console.log(i);
+                        }
+                    }
+                }
+            
+        </script>
+        
+    </body>
+</html>

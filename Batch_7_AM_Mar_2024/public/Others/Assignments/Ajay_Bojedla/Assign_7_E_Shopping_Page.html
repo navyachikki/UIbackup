@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        .header {
+            height: 60px;
+            background-color: black;
+        }
+        .icon {
+            position: absolute;
+            left: 50px;
+            top: 10px;
+            text-decoration: solid;
+            color: darkorange;
+            font-size: xx-large;
+        }
+
+        .menu_container {
+            position: absolute;
+            left: 200px;
+            height: 60px;
+            width: 800px;
+        }
+
+        .menu_options {
+            display: inline-block;
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            padding-top: 20px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .menu_options:hover {
+            cursor:pointer;
+        }
+
+        .slider_image {
+            height: 250px;
+            margin: 10px 100px;
+            background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/83d70974403181.5c2e97fb1f91b.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%
+        }
+
+        .offer_items_container {
+            position: relative;
+            margin: 10px 50px;
+            height: 450px;
+            overflow: scroll;
+        }
+
+        .offer_item {
+            display: inline-block;
+            margin: 5px 10px 30px 52px;
+            height: 200px;
+            width: 400px;
+        }
+
+        .offer_item:hover {
+            cursor:pointer;
+        }
+
+        .offer1 {
+            background-image: url("https://www.shutterstock.com/shutterstock/photos/1311720941/display_1500/stock-vector-shopping-online-special-offer-summer-super-sale-yellow-background-on-mobile-1311720941.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .offer2 {
+            background-image: url("https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/Home-Centre/HC-Mobile-2-Offer-060917.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .offer3 {
+            background-image: url("https://i.ytimg.com/vi/Y5Kjw2soUfA/maxresdefault.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .offer4 {
+            background-image: url("https://img.global.news.samsung.com/in/wp-content/uploads/2020/10/Master-banner-Horizontal.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .offer5 {
+            background-image: url("https://www.shutterstock.com/image-vector/vector-88-shopping-day-poster-260nw-2012882648.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .offer6 {
+            background-image: url("https://previews.123rf.com/images/elenabsl/elenabsl1603/elenabsl160300019/54060487-grocery-discount-shopping-with-shopping-cart-filled-with-food-and-products-offers-and-sales-concept.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .more_items_container {
+            margin: 0px 100px 20px;
+            height: 200px;
+            overflow-x: scroll;
+        }
+
+        .more_item {
+            display: inline-block;
+            width: 180px;
+            height: 200px;
+            border: 4px solid;
+            margin: 0px 10px 0px 20px;
+            border-color: gray;
+        }
+
+        .more_item:hover {
+            cursor:pointer;
+        }
+
+        .item1 {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url("https://www.appareltech.in/wp-content/uploads/03.jpg");
+        }
+
+        .item2 {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url("https://assets.ajio.com/medias/sys_master/root/20231214/xIDk/657ad736afa4cf41f5cff63e/-473Wx593H-464531848-navy-MODEL.jpg");
+        }
+
+        .item3 {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url("https://www.jiomart.com/images/product/original/rvowvf0akl/eyebogler-teal-tshirts-men-tshirt-tshirt-for-men-tshirt-mens-tshirt-men-s-polo-neck-regular-fit-half-sleeves-colorblocked-t-shirt-product-images-rvowvf0akl-1-202402121853.jpg?im=Resize=(500,630)");
+        }
+
+        .item4 {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url("https://static.cilory.com/624516-thickbox_default/nologo-multicolor-striped-cotton-t-shirt.jpg");
+        }
+
+        .item5 {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url("https://www.triumph-sports.com/wp-content/uploads/2024/04/RunJerChMeStyA07-1.jpg");
+        }
+
+        .item6 {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url("https://m.media-amazon.com/images/I/A1ntnF3PJOL._CLa%7C2140%2C2000%7C71aA-8w7NnL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_DpWeblab_.png");
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="icon">
+            e-com
+        </div>
+        <div class="menu_container">
+            <div class="menu_options">
+                Home                
+            </div>
+            <div class="menu_options">
+                Features                
+            </div>
+            <div class="menu_options">
+                Pricing                
+            </div>
+            <div class="menu_options">
+                FAQs                
+            </div>
+            <div class="menu_options">
+                About                
+            </div>
+        </div>
+    </div>
+    <div class="slider_image"></div>
+    <div class="offer_items_container">
+        <div class="offer_item offer1"></div>
+        <div class="offer_item offer2"></div>
+        <div class="offer_item offer3"></div>
+        <div class="offer_item offer4"></div>
+        <div class="offer_item offer5"></div>
+        <div class="offer_item offer6"></div>
+    </div>
+    <div class="more_items_container">
+        <div class="more_item item1"></div>
+        <div class="more_item item2"></div>
+        <div class="more_item item3"></div>
+        <div class="more_item item4"></div>
+        <div class="more_item item5"></div>
+        <div class="more_item item6"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var n = [34, 45, 67, 12, 23, 102, 22, 444, 55];
+            
+            console.log(n);
+            console.log(n.length);
+            
+            /*n.push(100, 201, 302);
+            console.log(n);
+
+            n.unshift(101);
+            console.log(n);
+
+            n.pop(); // delete one single value from right side of array
+            console.log(n);
+
+            n.shift(); // delete one single value from left side of array
+            console.log(n); */ 
+
+            // n.splice(startindex, howmanyvalues to be deleted, optional values to be inserted)
+
+            /*n.splice(2, 3); // delete 3 values starting from position 2
+            console.log(n);
+
+            n.splice(2, 0, 99, 88); // start at 2nd index, 0 values to be delted, inserting 99, 88 starting from 2nd poisiion
+            console.log(n); */
+
+            console.log(n.join(''));
+
+            var studentData = ["Raj", true, 90, 'Hydeabad'];
+            console.log(studentData.join('-'));
+
+
+            console.log(n.reverse());
+            // find(), map(), filter(), sort() - ES6
+
+            console.log(n.indexOf(444)); // return the index where the provided no is present in the array
+            console.log(n.includes(22));
+            
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of array elements</title>
+    <style>
+        h2{
+            text-align: center;
+            color: rgb(208, 19, 19);
+            text-decoration: double;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Sum of array elements</h2>
+    <script>
+        var arr=[];
+        var sum=0;
+        for(var i=0;i<5;i++)
+        {
+            arr[i]=parseInt(prompt("Enter array elements at index "+i+" : "));
+            sum = sum + arr[i];
+        }
+        console.log("Sum of array elements are : "+sum);
+    </script>
+</body>
+</html>

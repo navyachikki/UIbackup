@@ -1,0 +1,16 @@
+<script>
+    var size = prompt("Enter the size od the Array :")
+    size = parseInt(size);
+    var arr = [];
+    for (var i = 0; i <= size; i++) {
+        arr[i] = prompt("Enter the values till size :");
+        arr[i] = parseInt(arr[i]);
+    }
+    console.log("before sorting array :" + arr)
+    arr.sort();
+    var n = arr.length;
+    console.log("After sorting the array :" + arr)
+    console.log("Smallest Number in array is :" + arr[0])
+    console.log("Largest Number is :" +arr[n-1])
+   
+</script>

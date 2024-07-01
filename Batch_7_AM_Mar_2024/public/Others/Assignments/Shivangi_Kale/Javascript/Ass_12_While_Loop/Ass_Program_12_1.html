@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>To find Total number of digit in an given range</title>
+</head>
+<style>
+    h2{
+        text-align: center;
+        color:rgb(121, 242, 45);
+        text-decoration: double;
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>
+<body>
+    <h2><i>To find Total number of digit in an given range</i></h2>
+    <script>
+
+        var userVal=prompt("Enter any value ");
+        userVal=parseInt(userVal);
+        var count=0;
+
+        while(userVal>0)
+        {
+            var rem=userVal % 10;
+            userVal=userVal/10;
+            userVal=parseInt(userVal);
+            count++;
+        }    
+        console.log("Total number of digit in an given range: "+count);
+
+
+
+    </script>    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Demonstarting sum of even numbers</title>
+	</head>
+	<body>
+		<script>
+			// var total = 0;
+			// for (var i = 1; i <= 100; i++) {
+			// 	if (i % 2 == 0) {
+			// 		total = total + i;
+			// 		// total += i;
+			// 	}
+			// }
+			// console.log(total);
+
+
+			var startRange = prompt("enter start range");
+			startRange = parseInt(startRange);
+			var endRange = prompt("Enter end range");
+			endRange = parseInt(endRange);
+			if (startRange < endRange) {
+				for (var i = startRange; i <= endRange; i++) {
+					console.log(i)
+				}
+			} else {
+				for (var i = startRange; i >= endRange; i--) {
+					console.log(i)
+				}
+			}
+		</script>
+	</body>
+</html>

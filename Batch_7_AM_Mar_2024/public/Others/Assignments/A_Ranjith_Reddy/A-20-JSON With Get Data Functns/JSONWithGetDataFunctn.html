@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON With Get Data Function</title>
+</head>
+<body>
+    <script>
+                var studentDetails = {};
+                studentDetails.totalMarks = 0;
+
+                var getData = () => {
+                studentDetails.name = prompt("Enter the Student Name : ");
+                studentDetails.Age = prompt("Enter the Student Age : ");
+                studentDetails.location = prompt("Enter the Student Location : ");
+                studentDetails.marks = [];
+                for (i = 0; i < 5; i++)
+                {
+                    studentDetails.marks[i] = parseInt(prompt("Enter the Student marks in Subject : " + (i+1)));
+                }
+                CalculateMarksAvg();
+                }
+
+                var CalculateMarksAvg = () => {
+                for (i = 0; i < studentDetails.marks.length; i++)
+                {
+                    studentDetails.totalMarks = studentDetails.totalMarks + studentDetails.marks[i];
+                }
+                console.log("Total Marks = " + studentDetails.totalMarks);
+                studentDetails.marksAvg = studentDetails.totalMarks / studentDetails.marks.length;
+                console.log("Total Average = " + studentDetails.marksAvg);
+                displayData();
+                }
+
+                var displayData = () => {
+                console.log(studentDetails);
+                console.log("Age Of Name = " + studentDetails.name);
+                console.log("Age Of Student = " + studentDetails.Age);
+                console.log("Age Of Location = " + studentDetails.location);
+                console.log("Marks Of Student = " + studentDetails.marks);
+                console.log("Marks in Subject1 = " + studentDetails.marks[0]);
+                }
+                getData();
+    </script>
+</body>
+</html>

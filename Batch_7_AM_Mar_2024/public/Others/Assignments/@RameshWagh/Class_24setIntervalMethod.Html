@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval Method</title>
+</head>
+<body>
+    <script>
+        console.log("Process Stared");
+
+        var processId = 0;
+
+        var timer = setInterval ( () => {
+            console.log("Timer Process is Going On, Process " + (processId+1) + " Complited");
+            processId = processId + 1;
+            if(processId==6)
+            {
+                // clearTimeout(timer);      It's Also Working as per My Observation...
+                clearInterval(timer);
+            }
+        } , 5000);
+
+        console.log("Process Stoped");
+
+    </script>
+</body>
+</html>

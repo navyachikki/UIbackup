@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Analogue & Digital Clock</title>
+        <link rel="stylesheet" href="./clockstyle.css">
+        <script src="./clock.js"></script>
+    </head>
+    <body>
+        <div class="analogueclock">
+            <h1 class="heading">Analogue Clock</h1>
+            <div class="outerdial">
+                <div class="num hour1">1</div>
+                <div class="num hour2">2</div>
+                <div class="num hour3">3</div>
+                <div class="num hour4">4</div>
+                <div class="num hour5">5</div>
+                <div class="num hour6">6</div>
+                <div class="num hour7">7</div>
+                <div class="num hour8">8</div>
+                <div class="num hour9">9</div>
+                <div class="num hour10">10</div>
+                <div class="num hour11">11</div>
+                <div class="num hour12">12</div>
+                <div class="point">
+                    <div class="minuteHand hands" id="minute"></div>
+                    <div class="hourHand hands" id="hour"></div>
+                    <div class="secondHand hands" id="second"></div>
+                </div>
+                <div class="hourBackground"></div>
+            </div>
+        </div>
+        <div class="digitalClock">
+            <h1 class="heading">Digital Clock</h1>
+            <div class="container">
+                <div class="extra">
+                    <span id="day" class="extra"></span>
+                    <div class="date">
+                        <span id="date" class="extra"></span> /
+                        <span id="month" class="extra"></span> /
+                        <span id="year" class="extra"></span>
+                    </div>
+                </div>
+                <div class="time">
+                    <span id="dhour" class="digital"></span> : 
+                    <span id="dminute" class="digital"></span> : 
+                    <span id="dsecond" class="digital"></span>
+                    <!-- <span id="milli" class="digital"></span> -->
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

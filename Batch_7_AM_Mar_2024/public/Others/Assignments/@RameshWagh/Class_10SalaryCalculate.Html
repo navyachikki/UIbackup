@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Salary Calculate</title>
+        <style>
+            div
+            {
+                border: 1px solid; height: 25px; width: 1100px; margin: 5px; padding: 3px; text-align: center;background-color: beige;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Salary Calculates</h3>     
+        <div> <span id = "FLine"></span> </div>
+        <div> <span id = "SLine"></span> </div>
+        <div> <span id = "TLine"></span> </div>
+        <div> <span id = "FrLine"></span> </div>
+        <script>
+            var empName = "Suryakumar Mundra", deptName = "IT Department", empGender = "Male";
+            var empAge = 25, empBasic = 51000;
+            
+            console.log("Employee Name : " + empName + " As Age : " + empAge + "(" + empGender + ")  With Deparment of : " + deptName + " Working on the Basic Salary Of Rs. : " + empBasic );
+            document.querySelector("#FLine").innerHTML = "Employee Name : " + empName + " As Age : " + empAge + "(" + empGender + ")  With Deparment of : " + deptName + " Working on the Basic Salary Of Rs. : " + empBasic;
+
+            console.log("PF is " + empBasic + " * 14% = " + (empBasic * 14 / 100));
+            document.querySelector("#SLine").innerHTML = "PF is " + empBasic + " * 14% = " + (empBasic * 14 / 100);
+
+            console.log("HRA is " + empBasic + " * 24% = " + (empBasic * 24 / 100));
+            document.querySelector("#TLine").innerHTML = "HRA is " + empBasic + " * 24% = " + (empBasic * 24 / 100);
+
+            console.log("Total Salary Of Employee : " + empName + " is : " + (empBasic + (empBasic * 14 / 100) + (empBasic * 24 / 100)));
+            document.querySelector("#FrLine").innerHTML = "Total Salary Of Employee : " + empName + " is : " + (empBasic + (empBasic * 14 / 100) + (empBasic * 24 / 100));
+        </script>   
+    </body>
+</html>

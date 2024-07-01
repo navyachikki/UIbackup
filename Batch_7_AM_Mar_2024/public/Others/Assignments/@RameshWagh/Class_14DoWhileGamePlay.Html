@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Play a Game With Do While</title>
+    </head>
+    <body>
+        <script>
+            var Points = 0;
+            var Counter = 1;
+            var PlayerName = prompt("Wel Come To Play a Game, Enter Your Name : ");
+            do
+            {
+                var Points = prompt(PlayerName + " Enter The Points You achive in : " + Counter + " Round, If Points is More Then 100, Then You Will Win.");
+                var Points = parseInt(Points);
+                if (Points >= 100)
+                {
+                    console.log("Nice, " + PlayerName + ", You Win the " + Counter + " Round With "+ Points + " Points, congratulations, Now Play Again ");
+                } else
+                {
+                    console.log("Ohh No, " + PlayerName + ", You Lose The Game at " + Counter + " Round By " + Points + " Points");
+                }
+                Counter = Counter + 1;
+
+            } while (Points >= 100)
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            JSON 
+        </title>
+    </head>
+    <body>
+        <script>
+            var emp = {
+                readDetails() {                    
+                    this.name = prompt("enter emp name");
+                    this.gender = prompt("enter emp gender");
+                    this.basicSal = parseInt(prompt("enter basic sal"));
+                    emp.gettotalSal();
+                    
+                },
+                gettotalSal() {
+                    this.pf = (this.basicSal * 12)/100;
+                    this.hra =(this.basicSal * 24)/100;
+                    this.totalSal = this.basicSal + this.pf + this.hra;
+            
+                },
+                display() {
+                    this.readDetails();
+                    console.log("name " + this.name);
+                    console.log("gender " + this.gender);
+                    console.log("total salry " + this.totalSal);
+                    
+                    
+                }  
+            };
+            emp.display()
+        </script>
+    </body>
+</html>

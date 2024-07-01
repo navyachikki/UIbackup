@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emp details with json object </title>
+</head>
+<body>
+    <script>
+        var emp={
+            name:"",
+            age:"",
+            salary:"",
+            gender:"",
+            empDetails(){
+               this.name=prompt("enter name");
+               this.age=parseInt(prompt("enter Age")) ;
+               this.salary=parseInt(prompt("enter salary"));
+               this.gender=prompt("enter gender")
+               this.totalSalary();
+            },
+            totalSalary(){
+                this.pf=this.salary*0.12;
+                this.hra=this.salary*0.24;
+                this.totalSalary=this.pf+this.hra+this.salary
+                this.calTax();
+            },
+            calTax(){
+                this.taxPer=0;
+                if(this.gender=="male"){
+                    if(this.totalSalary>=2000000){
+                        this.taxPer=15;
+                    }
+                }else if(this.gender=="female"){
+                    if(this.totalSalary>100000){
+                        this.taxPer=10
+                    }
+                }
+            },
+            getDetails(){
+                this.empDetails();
+                console.log("Emp name:",this.name);
+                console.log("Emp gender:",this.gender);
+                console.log("Emp Salary:",this.salary);
+                console.log("Emp totalSal:",this.totalSalary);
+                console.log("Emp tax percentage:",this.taxPer);
+            }
+        };
+        emp.getDetails();
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array</title>
+        <link rel="stylesheet" href="Array.css">
+        <style>
+            
+            .Display {
+                position: relative;
+                display: inline-block;
+                margin: 10px auto;
+                padding: 42px;
+                color: brown;
+                left: 372px;
+                width: 250px;
+            }
+            .Display_sum {
+                position: relative;
+                display: inline-block;
+                margin: 10px auto;
+                padding: 42px;
+                color: brown;
+                left: 38px;
+                width: 250px;
+                bottpm: 20px;
+                top: 30px; 
+            }
+        </style>
+    </head>
+    <body>
+        <h2 >
+            Dynamic Reading Values From an Array & Displaying in UI
+        </h2>
+        <Span class="Display"></Span>
+        <Span class="Display_sum"></Span>
+        <script>
+            var data = [];
+            var n = parseInt(prompt("Enter the Length"));
+            for(var i = 0; i<=n;i++) {
+                data[i]=parseInt(prompt("Enter the Value of " + i));
+            }
+            sum = 0;
+            for (i=0;i<=n;i++) {
+                sum = sum + data[i];
+            }
+            console.log(data);
+            console.log(sum);
+            document.querySelector(".Display").innerText = "User Entered these Values : " + data;
+            document.querySelector(".Display_sum").innerText = "Sum of User Enter Values : " + sum;
+
+            
+        </script>
+    </body>
+</html>

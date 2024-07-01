@@ -1,0 +1,57 @@
+.title{
+    text-align: center;
+    margin:10px;
+    font-size: 20px;
+    color: blue;
+    font-weight: bold;
+}
+
+ul{
+    border: 1px black solid;
+    width:400px;
+    padding:10px;
+    margin:10px;
+    margin-left: 500px;
+    
+    
+}
+
+ul li {
+    list-style: none;
+    border: 1px solid black;
+    margin:10px;
+    padding:10px;
+}
+
+.msg{
+    text-align: center;
+    color:red;
+    font-size: 50px;
+    display:none;
+}
+
+.pwdValidations li{
+    color:red;
+}
+
+.validated{
+    font-weight:bold;
+    color:brown !important;
+}
+
+.error{
+    color:red;
+    font-size: 15px;
+    display: none;
+}
+
+#btnId{
+    margin:10px;
+    padding:10px;
+    background-color: blue;
+    font-weight: bold;
+    left:400px;
+}
+
+
+

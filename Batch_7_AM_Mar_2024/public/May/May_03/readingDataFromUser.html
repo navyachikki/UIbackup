@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Reading data through input elements
+        </title>
+        <style>
+            ul {
+                width: 500px;
+                border: 2px solid;
+                margin: 10px auto;
+                padding: 20px;
+
+            }
+            li {
+                border: 1px solid #ccc;
+                margin: 10px;
+                padding: 10px;
+                list-style: none;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                Enter first value <input type="text" id="fval">
+            </li>
+            <li>
+                Enter Second value <input type="text" id="sval">
+            </li>
+            <li>
+                <div>
+                    The sum is: <span></span>
+                </div>
+            </li>
+            <li>
+                
+
+                <input type="button" value="Do Sum" onclick="userData.doSum();">
+            </li>
+        </ul>
+       
+        <script>
+            /*var a1 = parseInt(prompt("enter a value 1"));
+            var a2 = parseInt(prompt("enter a value 2"));
+            var result = a1 + a2;
+            document.querySelector("span").innerText = result;*/
+            var userData = {
+                a1: 0,
+                doSum() {
+               
+                    this.a1 = document.querySelector("#fval").value;
+                    this.a1 = parseInt(this.a1);
+                    this.a2 = document.querySelector("#sval").value;
+                    this.a2 = parseInt(this.a2);
+
+                    this.result = this.a1 + this.a2;
+                    document.querySelector("span").innerText = this.result;
+                }
+            }
+        </script>
+    </body>
+</html>

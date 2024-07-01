@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genreate a Payslip</title>
+    <link rel="stylesheet" href="Asg-20_generate_payslip.css">
+    <script src="Asg-20_generate_payslip.js"></script>
+</head>
+<body>
+    <h2>Progress Card Generator</h2>
+    <ul>
+        <li>
+            <label for="">Name :-
+            <input type="text" id="name"></label>
+        </li>
+        <li>
+            <label for="">Age :- 
+            <input type="text" id="age"></label>
+        </li>
+        <li>
+            <label for="">gender :-
+            <input type="Radio" checked name="gender" value="male">male</input>
+            <input type="Radio" name="gender" value="female">Female</input>
+        </label>
+        </li>
+        <li>
+        <select title="Class" id="division">Class :- 
+            <option value="Class-I">Class-I</option>
+            <option value="Class-II">Class-II</option>
+            <option value="Class-II">Class-III</option>
+            <option value="Class-IV">Class-IV</option>
+            <option value="Class-V">Class-V</option>
+        </select>
+        </li>
+        <li>
+            <label for="">Subject Marks :- 
+            <input type="text" id="subject1" size="12px" placeholder="Subject-1">
+            <input type="text" id="subject2" size="12px" placeholder="Subject-2">
+            <input type="text" id="subject3" size="12px" placeholder="Subject-3">
+            
+        </label>
+        </li>
+        <li>
+            <button id ="btn" onclick="viewReport()">Generate Report-Card</button>
+        </li>
+
+    </ul>
+    <ul id="output" style="display: none;">
+        <li>
+            <div>The name of the candidate :-<span id="outname"></span>
+            </div>
+        </li>
+        <li>
+            <div>The Age of the candidate :-<span id="outage"></span>
+            </div>
+        </li>
+        <li>
+            <div>The Gender of the candidate :-<span id="outgender"></span></div>
+        </li>
+        <li>
+            <div>The Class of the candidate :-<span id="outdivision"></span></div>
+        </li>
+        <li>
+            <div>The Average marks of the candidate :-<span id="outmark"></span></div>
+        </li>
+        <li>
+            <div>The Grade of the candidate :-<span id="outgrade"></span></div>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdowns</title>
+    <link rel="stylesheet" type="text/css" href="style.css" /> 
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h3>Registration</h3>
+    <div class="form_container">
+        <div class="fields_block" id="name_block">
+            <div class = "field_lable">
+                <label for="name">Name</label>
+            </div>
+            <div class="input_field" id = "reg_name">
+                <input type="text" name="name">
+            </div>
+        </div>
+        <div class="fields_block" id="age_block">
+            <div class = "field_lable">
+                <label for="age">Age</label>
+            </div>
+            <div class="input_field" id = "reg_age">
+                <input type="text" name="age">
+            </div>
+        </div>
+        <div class="fields_block" id="country_block">
+            <div class = "field_lable">
+                <label for="country">Country</label>
+            </div>
+            <div class="dropdown_field" id = "reg_country">
+                <select id="country_dropdown" name="country" onchange="updateStates()"></select>
+            </div>
+        </div>
+        <div class="fields_block" id="country_block">
+            <div class = "field_lable">
+                <label for="state">State</label>
+            </div>
+            <div class="dropdown_field" id = "reg_state">
+                <select id="state_dropdown" name="state" onchange="updateDistricts()" disabled="true"></select>
+            </div>
+        </div>
+        <div class="fields_block" id="district_block">
+            <div class = "field_lable">
+                <label for="district">District</label>
+            </div>
+            <div class="dropdown_field" id = "reg_district">
+                <select id="district_dropdown" name="district" disabled="true"></select>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

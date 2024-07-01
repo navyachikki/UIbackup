@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var a = 90; // global Scope
+            function sample() {
+                var b = 99; // Module/local scope
+
+                if (true) {
+                    var b1 = 120;
+                }
+
+            }
+
+            if (true) { // block
+                //...
+                var a1 = 100;
+                console.log("a1 " + a1);
+            }
+
+            console.log("a1 " + a1);
+        </script>
+    </body>
+</html>

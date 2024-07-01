@@ -1,0 +1,110 @@
+.clock {
+    border: 10px solid black;
+    background-color: #00d49f;
+    margin: 20px auto;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0px 6px 40px darkblue;
+    border-radius: 60%;
+}
+.center {
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 30px;
+    height: 10px;
+    width: 10px;
+    margin: 0px auto;
+    position: relative;
+    top: 192px;
+    left: 0px;
+}
+.hour {
+    font-size: 30px;
+    font-weight: bolder;
+    position: relative;
+}
+.hour12 {
+    top: -14px;
+    left: 180px;
+}
+.hour1 {
+    top: -20px;
+    left: 280px;
+}
+.hour2 {
+    top: 8px;
+    left: 350px;
+}
+.hour3 {
+    top: 64px;
+    right: -380px;
+}
+.hour4 {
+    top: 126px;
+    left: 354px;
+}
+.hour5 {
+    top: 154px;
+    left: 290px;
+}
+.hour6 {
+    top: 148px;
+    left: 190px;
+}
+.hour7 {
+    top: 90px;
+    left: 100px;
+} 
+.hour8 {
+    top: -12px;
+    left: 34px;
+}
+.hour9 {
+    bottom: 140px;
+    left: 4px;
+}
+.hour10 {
+    bottom: 258px;
+    left: 28px;
+}
+.hour11 {
+    bottom: 362px;
+    left: 90px;
+}
+.hoursHand {
+    border: 2px solid black;
+    background-color: aqua;
+    width: 6px;
+    height: 100px;
+    margin: 2px auto;
+    position: relative;
+    bottom: 334px;
+    left: 0px;
+    z-index: 120;
+}
+.minsHand {
+    border: 2px solid black;
+    background-color: darkmagenta;
+    width: 6px;
+    height: 160px;
+    margin: 2px auto;
+    position: relative;
+    bottom: 498px;
+    left: 0px;
+    z-index: 80;
+}
+.secsHand {
+    border: 1px solid black;
+    background-color: darkorange;
+    width: 2px;
+    height: 174px;
+    margin: 2px auto;
+    position: relative;
+    bottom: 676px;
+    left: 0px;
+    z-index: 140;
+}
+.hours, .mins, .secs {
+    border-radius: 20px;
+    transform-origin: bottom;
+}

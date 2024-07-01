@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Page</title>
+    <style>
+        .body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: black;
+            height: 50px;
+            width: 100%;
+            margin: 5px auto;
+            position: relative;
+
+        }
+
+        .footer {
+            background-color: black;
+            height: 40px;
+            width: 100%;
+            margin: 5px auto;
+            color: white;
+            text-align: center;
+            padding: 4px;
+        }
+
+        .navmenu>h3 {
+            color: orange;
+            padding: 5px;
+            float: left;
+            margin: 8px;
+
+        }
+
+        h3::first-letter {
+            color: white;
+        }
+
+        .navmenu {
+            color: white;
+        }
+
+        .navbar li {
+            display: inline;
+            padding: 18px;
+            margin-left: 20px;
+        }
+
+        .navbar li:hover {
+            color: orange;
+            text-decoration: underline;
+
+        }
+
+        .navbar ul {
+            padding: 20px;
+        }
+
+        .navleft {
+            display: inline;
+            float: right;
+            position: absolute;
+            top: -22px;
+            right: 7px;
+
+        }
+
+        .navleft li {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        button {
+            background-color: orange;
+            border: none;
+            height: 25px;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .container {
+            height: 800px;
+            width: 100%;
+        }
+
+        #mainimg {
+            height: 250px;
+            width: 100%;
+        }
+
+        .box {
+            height: 260px;
+            width: 260px;
+            background-color: white;
+            text-align: center;
+            line-height: 0px;
+            border: 1px solid rgb(218 213 213);
+            border-radius: 5px;
+            float: left;
+            margin: 23px;
+            opacity: 1;
+        }
+
+        .box:hover{
+           opacity: 0.8;
+           cursor: pointer;
+           background-color: rgb(223, 228, 228);
+        }
+
+        .box img {
+            height: 200px;
+            width: 200px;
+        }
+
+        .boxes{
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+
+        <div class="navmenu">
+            <h3>Nmart.com</h3>
+            <ul>
+                <li>Home</li>
+                <li>Feature</li>
+                <li>Pricing</li>
+                <li>FAQ</li>
+                <li>About</li>
+            </ul>
+            <div class="navleft">
+                <ul>
+                    <li><input type="text" placeholder="search...."></li>
+                    <li><button>Search</button></li>
+                    <li><button>Login</button></li>
+                    <li><button>Sing up</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <img src="img1.png" id="mainimg">
+    <div class="container">
+        <div class="boxes">
+            <h2>Best of Electronics</h2>
+            <div class="box">
+                <img src="img2.png" alt="">
+                <p>Top Mirrorless Cameras</p>
+                <h4>Shop Now</h4>
+            </div>
+            <div class="box">
+                <img src="img3.png" alt="">
+                <p>Monitor</p>
+                <h4>From ₹6599</h4>
+            </div>
+            <div class="box">
+                <img src="img4.png" alt="">
+                <p>Printer</p>
+                <h4>From ₹3999</h4>
+            </div>
+            <div class="box">
+                <img src="img5.png" alt="">
+                <p>Projectors</p>
+                <h4>From ₹9999</h4>
+            </div>
+        </div>
+        <div class="boxex">
+            <h2>Beauty,Food,Toys & More</h2>
+            <div class="box">
+                <img src="img6.png" alt="">
+                <p>Soft Toys</p>
+                <h4>Upto 70% Off</h4>
+            </div>
+            <div class="box">
+                <img src="img7.png" alt="">
+                <p>Best Of Action Toy</p>
+                <h4>Upto 80% Off</h4>
+            </div>
+            <div class="box">
+                <img src="img8.png" alt="">
+                <p>Electric Cycle</p>
+                <h4>Upto 50% Off</h4>
+            </div>
+            <div class="box">
+                <img src="img9.png" alt="">
+                <p>Remote Control Toy</p>
+                <h4>Upto 45% Off</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright &copy; Nmart.com All rights reserved.</p>
+    </div>
+
+</body>
+
+</html>

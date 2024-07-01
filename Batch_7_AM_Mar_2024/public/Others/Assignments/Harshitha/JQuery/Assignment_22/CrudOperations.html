@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form id="registration-form">
+        <ul>
+            <li>
+                <label>Name:</label>
+                <input type="text" id="name" placeholder="Enter name">
+            </li>
+            <li>
+                <label>Age:</label>
+                <input type="text" id="age" placeholder="Enter Age"> 
+            </li>
+            <li>
+                <label>Gender:</label>
+                <select id="gender" name="gender" placeholder="gender">
+                    <option value="" disabled selected hidden>Gender</option>
+                    <option value="male" >Male</option>
+                    <option value="female">Female</option>
+                </select> 
+            </li>
+            <li>
+                <label>Country:</label>
+                <input type="text" placeholder="Select " id="selectCountry" list="countryList">
+                <datalist id="countryList">
+                    <option value="USA"></option>
+                    <option value="Canada"></option>
+                    <option value="Australia"></option>
+                    <option value="India"></option>
+                    <option value="china"></option>
+                </datalist>  
+            </li>
+            <li>
+                <label>EmailId:</label>
+                <input type="email" id="mail" placeholder="Enter mail id"><br>
+                
+            </li>
+            <li>
+                <button type="submit">Register</button> 
+            </li>
+        </ul> 
+    </form>
+    <table id="registration-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Country</th>
+                <th>Email</th>
+                <th class="tdaction">Actions</th>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var getDetails = ()=>{
+            var empName = prompt("enmer the name of emp");
+            empName = empName.toLowerCase();
+            var empAge = parseInt(prompt("enter the age of emp"));
+            var empGender = prompt("enmer the Gender of emp");
+            empGender =empGender.toUpperCase();
+            var empBasicSal = parseInt(prompt("enter the basic sal of emp"));
+            var empTotalSal= calculation(empBasicSal);
+            displayDetails(empName,empAge,empGender, empBasicSal, empTotalSal)
+        }
+        var calculation = (empBasicSal)=>{
+            var pf = empBasicSal*0.12;
+            var hra = empBasicSal *0.24;
+            var empTotalSal = empBasicSal +pf +hra;
+            return(empTotalSal);
+
+        }
+        var displayDetails = (empName,empAge,empGender, empBasicSal, empTotalSal) =>{
+                console.log("YOUR DETAILS ARE ");
+                console.log("Employee name is "+ empName);                
+                console.log("Employee age is " + empAge);
+                console.log("Employee gender is  "+ empGender);
+                console.log("Employee basic sallary is  " + empBasicSal);
+                // console.log("Emp get pf " + pf);
+                // console.log("Emp get Hra is  " + hra);
+                console.log("So finally Emp get total sal is  " + empTotalSal);
+                
+        }
+        getDetails();
+
+    </script>
+</body>
+</html>

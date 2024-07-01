@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Odd Numbers count From Dynamic Array</title>
+    </head>
+
+    <body>
+        <script>
+            var values = [];
+            var OddCount = 0;
+            var count = parseInt(prompt("How Much Counts You Want to Store in Araay : "));
+
+            for (i = 0; i < count; i++)
+            {
+                values[i] = parseInt(prompt("Enter Value For Araay" + (i+1) + " : "));
+            }
+
+            for (i = 0; i < values.length; i++)
+            {
+                if ((values[i] % 2) != 0)
+                {
+                    OddCount = OddCount + 1;
+                }
+            }
+            console.log ("Odd Number Counts = " + OddCount);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Between user Given Range</title>
+</head>
+<body>
+    <script>
+        var startVal = prompt("enter startVal");
+        var startVal = parseInt(startVal);
+
+        var endVal = prompt("enter endVal");
+        var endVal = parseInt(endVal);
+
+        for (i=startVal; i<=endVal; i++) {
+         tracker=0;   
+        for (j=2; j<i; j++) {
+            var rem = i % j;
+            if (rem == 0) {
+            tracker++;
+          }
+          if (tracker != 0) {
+            break;
+          }
+        }
+        if (tracker == 0) {
+                console.log("prime number" + i);
+            } else {
+                console.log("no prime number between given range");
+            }   
+        } 
+
+    </script>
+</body>
+</html>

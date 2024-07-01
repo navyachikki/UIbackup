@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWITCH CASE SELECT OPTION</title>
+  </head>
+  <body>
+    <script>
+      var chooseOption = prompt("Reverse/Palindrome/LuckyNumber/PrimeNumber");
+      var num = prompt("Enter the Number");
+      switch (chooseOption) {
+        case "Reverse":
+          var str = "";
+          var reverse = 0;
+          while (num > 0) {
+            var rem = num % 10;
+            num = parseInt(num / 10);
+            str = str.concat(rem);
+          }
+          str = Number(str);
+          console.log(str);
+          break;
+
+        case "Palindrome":
+          var str = "";
+          var num1 = num;
+          var reverse = 0;
+          while (num > 0) {
+            var rem = num % 10;
+            num = parseInt(num / 10);
+            str = str.concat(rem);
+          }
+          str = Number(str);
+          if (num1 == str) {
+            console.log("You got a palindrome boy :) ");
+          } else {
+            console.log("No man! Not a palindrome");
+          }
+          break;
+
+        case "LuckyNumber":
+          var sum = 0;
+          while (num > 0) {
+            rem = num % 10;
+            sum = sum + rem;
+            num = parseInt(num / 10);
+            if (num == 0 && sum > 9) {
+              num = sum;
+              sum = 0;
+            }
+          }
+          console.log(sum);
+          break;
+
+        case "PrimeNumber":
+          num = parseInt(num);
+          let isPrime = true; //assume isPrime = true initially
+          for (i = 2; i <= Math.sqrt(num); i++) {
+            //check upto sqrt of that num
+            if (num % i === 0) {
+              isPrime = false;
+            }
+          }
+          if (isPrime) {
+            //print isPrime outside the forloop
+            console.log("prime");
+          } else {
+            console.log("not prime");
+          }
+          break;
+      }
+    </script>
+  </body>
+</html>

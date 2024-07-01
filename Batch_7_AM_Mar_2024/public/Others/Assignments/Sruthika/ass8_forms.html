@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h2 {
+        height: 30px;
+        width: 1000px;
+        border: 1px solid;
+        text-align: center;
+        margin: 10px auto;
+      }
+      .mainContainer {
+        width: 1000px;
+        height: 800px;
+        border: 1px solid;
+        margin: 10px auto;
+        
+        
+      }
+      .container1 {
+        width: 900px;
+        height: 250px;
+        border: 1px solid;
+        margin: 30px auto;
+        position: relative;
+        margin-left: 20px;
+      }
+      .container2 {
+        width: 900px;
+        height: 200px;
+        border: 1px solid;
+        margin: 30px auto;
+        margin-left: 30px;
+        position: relative;
+      }
+      .details {
+        width: 150px;
+        height: 30px;
+        border: 1px solid;
+        padding-top: 20px;
+        text-align: center;
+        position: absolute;
+        top: -14px;
+        left: 61px;
+        background-color: aquamarine;
+      }
+
+      #address {
+        position: relative;
+        left: 600px;
+      }
+      .address {
+        position: absolute;
+        left: 750px;
+        bottom: 405px;
+      }
+      .firstName {
+        display: inline-block;
+      }
+      .lastName {
+        display: inline-block;
+        margin-top: 10px;
+      }
+      .Age{
+        margin-right: 46px;
+        
+      }
+      .age{
+        margin-top: 10px;
+      }
+      .gender{
+        margin-top: 10px;
+      }
+      .Gender{
+        margin-right: 46px;
+      }
+      .country {
+        position: absolute;
+        left: 647px;
+        top: 121px;
+      }
+      ul {
+        list-style-type: none;
+      }
+      .EduDetails {
+        height: 30px;
+        width: 150px;
+        border: 1px solid;
+        text-align: center;
+        position: absolute;
+        left: 62px;
+        top: -12px;
+        background-color: aquamarine;
+      }
+      .qualification{
+        margin-top: 50px;
+      }
+      .lang{
+        margin-top: 30px;
+      }
+      .course{
+        margin-top: 30px;
+      }
+      .container3 {
+        width: 900px;
+        height: 200px;
+        border: 1px solid;
+        margin: 30px auto;
+        margin-left: 30px;
+        position: relative;
+      }
+      .about{
+        height: 30px;
+        width: 150px;
+        border: 1px solid;
+        text-align: center;
+        position: absolute;
+        left: 62px;
+        top: -13px;
+        background-color: aquamarine;
+      }
+      .words{
+        margin-top: 40px;
+      }
+      .register{
+        position: absolute;
+        left:877px;
+        background-color:gray;
+      }
+      .footer{
+        height: 30px;
+        width: 1000px;
+        border: 1px solid;
+        text-align: center;
+        margin: 10px auto;
+        padding-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Student details</h2>
+    <form action="www.abc.com" method="get">
+      <div class="mainContainer">
+        <div class="container1">
+          <div class="details">Personal details</div>
+          <ul>
+            <li>
+              <label class="address">Address:</label>
+              <textarea id="address" cols="30" rows="5"></textarea>
+            </li>
+            <li>
+              <label class="firstName">First Name:</label> <input type="text" />
+            </li>
+            <li>
+              <label class="lastName">Last Name:</label> <input type="text" />
+              <li class="age"><label class="Age" >Age:</label><input type="text"></li>
+              <li class="gender"><label class="Gender">Gender:</label><input type="radio" name="gender">Male<input type="radio" name="gender">Female</li>
+            </li>
+            <li class="country">
+              <label>Country</label>
+              <select>
+                <option value="Ind">India</option>
+                <option value="Aus">Australia</option>
+                <option value="Usa">America</option>
+                <option value="Uk">England</option>
+                <option value="Ger">Germany</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <div class="container2">
+          <div class="EduDetails">Education Details</div>
+          <ul>
+            <li class="qualification"><label>Qualification</label>
+            <select>
+              <option val="Btech">B.tech</option>
+              <option val="Mtech">M.tech</option>
+              <option val="deg">degree</option>
+            </select></li>
+            <li class="lang">
+              <label>Languages:</label>
+              <input type="checkbox">Telugu
+              <input type="checkbox">English
+              <input type="checkbox">Hindi
+              
+            </li>
+            <li class="course">
+              <label>Course Opted:</label>
+              <input type="radio" name="course">E.C.E
+              <input type="radio" name="course">C.S.E
+              <input type="radio" name="course">E.E.E
+            </li>
+          </ul>
+        </div>
+        <div class="container3">
+          <div class="about">About Yourself</div>
+          <ul>
+            <li class="words">
+              <label>Few words about your self:</label>
+              <textarea cols="30" rows="7"></textarea>
+            </li>
+          </ul>
+
+        </div>
+        <input type="submit" value="Register" class="register">
+      </div>
+      <div class="footer">@copyrights 2024</div>
+    </form>
+  </body>
+</html>

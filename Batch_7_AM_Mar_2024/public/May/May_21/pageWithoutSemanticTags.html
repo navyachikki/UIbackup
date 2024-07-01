@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                background-color: aquamarine;
+            }
+            .tbar, .mbar, .fbar {
+                position: absolute;
+                left: 5px;
+                right: 5px;
+                border: 1px solid green;
+                background-color: #ccc;
+            }
+
+            .tbar {
+                padding: 10px;
+                text-align: center;
+            }
+            .fbar {
+                bottom: 10px;
+                font-size: 10px;
+                padding: 10px;
+                text-align: center;
+            }
+            .mbar {
+                top: 50px;
+                bottom: 50px;
+            }
+            .lbar,
+            .rbar {
+                margin: 10px;
+                padding: 10px;
+                float: left;
+                height: 570px;
+                border: 1px solid red;
+                overflow: auto;
+            }
+            .lbar {
+                width: 25%;
+            }
+            .rbar {
+                width: 65%;
+            }
+            .container {
+                border: 1px solid;
+            }
+            .block {
+                border: 1px solid;
+                height: 150px;
+                margin: 10px;
+                padding: 10px;
+            }
+            empdetails {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="tbar">Online shopping app</header>
+        <main class="mbar">
+            <aside class="lbar">LEFT content</aside>
+            <aside class="rbar">
+                <section class="container">
+                    <article class="block">
+                        <empdetails id="test" name="sample" class="abc" category="testing">
+                            name: raj, age: 20
+                        </empdetails>
+                        <empdetails id="test" name="sample" class="abc" category="testing">
+                            name: raj, age: 20
+                        </empdetails>
+                    </article>
+                    <article class="block">block 1</article>
+                    <article class="block">block 1</article>
+                    <article class="block">block 1</article>
+                </section>
+            </aside>
+        </main>
+        <footer class="fbar">@copyrights 2024</footer>
+    </body>
+</html>

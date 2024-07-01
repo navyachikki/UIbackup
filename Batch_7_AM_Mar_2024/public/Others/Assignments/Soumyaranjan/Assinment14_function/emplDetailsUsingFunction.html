@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee details</title>
+</head>
+<body>
+    <script>
+
+      var ename , eage , edept , esal , pf , hra ,total;
+      function empDetails() {
+        ename = prompt("employee name:");
+        eage = prompt("age:");
+        edept = prompt("employee dept:");
+        esal = parseInt(prompt("employeesal:"));
+        pf = (esal*14)/100;
+        hra = (esal*24)/100;
+        totalSal();
+      }
+
+      function totalSal() {
+        total = esal + pf + hra;
+        getdata();
+      }
+
+      function getdata() {
+        console.log("employee name:"+ ename);
+        console.log("employee age:"+ eage);
+        console.log("employee dept:"+ edept);
+        console.log("employee sal:"+ esal);
+        console.log("employee pf:"+ pf);
+        console.log("employee hra:"+ hra);
+        console.log("employee total:"+ total);
+        
+      }
+      empDetails();
+    </script>
+</body>
+</html>

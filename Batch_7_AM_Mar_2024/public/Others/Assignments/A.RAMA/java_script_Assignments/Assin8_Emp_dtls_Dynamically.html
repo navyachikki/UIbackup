@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline;
+            float: left;
+            position: absolute;
+    }
+    </style>
+</head>
+<body>
+    <h3>To Display Employee Details using Internal JS</h3>
+    <div><h4>Employee total_salary: 41400</h4>
+         </div>
+    <script>
+        var Emp_Name = "RAMA",
+            Emp_Age = 22,
+            Emp_Gender = 'Male',
+            Emp_Dptmt = "IT",
+            Basic_sal = 30000;
+
+        var pf = (Basic_sal*14)/100;
+        var hra = (Basic_sal*24)/100;
+
+        total_salary = Basic_sal+pf+hra;
+
+        console.log("Employee Details:");
+        console.log("Employee Name " + Emp_Name);
+        console.log("Employee Age " + Emp_Age);
+        console.log("Employee Gender " + Emp_Gender);
+        console.log("Employee Department " + Emp_Dptmt);
+        console.log("Employee Salary " + Basic_sal);
+        console.log("Employee total_salary " + total_salary);      
+    </script>
+</body>
+</html>

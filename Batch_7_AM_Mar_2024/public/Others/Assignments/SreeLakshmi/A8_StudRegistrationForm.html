@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+    <style>
+      .header,
+      .main,
+      .footer {
+        border: 1px solid;
+        margin: 10px;
+        padding: 10px;
+      }
+      .header {
+        text-align: center;
+        text-decoration: underline;
+        background-color: plum;
+        font-weight: bold;
+      }
+      .personalDetails,
+      .eduDetails,
+      .abtUrself {
+        border: 1px solid;
+        padding: 10px;
+        background-color: plum;
+      }
+      .main li {
+        list-style: none;
+        margin: 5px;
+        padding: 5px;
+      }
+      .personal,
+      .education,
+      .urself {
+        border: 1px solid;
+        margin: 10px;
+        padding: 10px;
+      }
+      .picture{
+        float: right;
+      }
+      .uploadPic{
+        border: 1px solid;
+        width:100px;
+        height:100px;
+      }
+      .submit:hover{
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <form action:"http://www.test.com/" method:"get">
+        <div class="header">Student Registration Form</div>
+        <div class="main">
+        <div class="personal">
+            <ul>
+            <li>
+                <span class="personalDetails">Personal Details</span><br><br>
+            </li>
+            <div class="picture">
+                <div class="uploadPic"></div>
+                <input type="file" >
+            </div>
+            <div>
+                <li>
+                <label for="firstName">First Name: </label>
+                <input
+                    type="text"
+                    name="firstName"
+                    placeholder="First Name"
+                    required
+                />
+                </li>
+                <li>
+                <label for="lastName">Last Name: </label>
+                <input type="text" name="lastName" placeholder="Last Name" />
+                </li>
+                <li>
+                <label for="dob">Date Of Birth: </label>
+                <input type="date" name="dob" placeholder="mm/dd/yyyy" />
+                </li>
+                <li>
+                <label for="country">Country: </label>
+                <select title="Country" name="country" placeholder="country">
+                    <option></option>
+                    <option>USA</option>
+                    <option>India</option>
+                    <option>Canada</option>
+                    <option>Mexico</option>
+                </select>
+                </li>
+                <li>
+                <label for="address">Address: </label><br />
+                <textarea
+                    name="address"
+                    placeholder="Enter Address"
+                    rows="4"
+                    cols="50"
+                ></textarea>
+                </li>
+                <li><label for="gender">Gender: </label>
+                    <input type="radio" name="gender"> Female
+                    <input type="radio" name="gender"> Male
+                </li>
+                
+                <li>
+                    <label for="mobileNum">Mobile Number: </label>
+                    <input type="number" name="mobileNum">
+                </li>
+                <li>
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email">
+                </li>
+            </ul>
+        </div>
+
+        <div class="education">
+            <ul>
+            <li>
+                <span class="eduDetails">Education Details</span> <br> <br>
+            </li>
+
+            <li>
+                <label for="qualification">Qualification</label>
+                <select title="Qualification" placecholder="qualification">
+                    <option></option>
+                    <option>Phd</option>
+                    <option>PG</option>
+                    <option>UG</option>
+                    <option>Intermediate</option>
+                    <option>10th grade</option>
+                </select>
+                <label for="passout">Pass Out Year: </label>
+                <input type="text" name="passout" placeholder="passout year"></input>
+            </li>
+            <li>
+                <label for="collegeName">College Name: </label>
+                <input type="text" name="collegeName" placeholder="college name">
+            </li>
+            <li>
+                <label for="collegeAdd">College Address: </label>
+                <input type="text" name="collegeAddress" placeholder="college address">
+            </li>
+            </ul>
+        </div>
+
+        <div class="urself">
+            <ul>
+            <li>
+                <span class="abtUrself">About Yourself</span> <br><br>
+            </li>
+            <li>
+                <label for="lang">Language: </label>
+                <input type="checkbox" name="lang"> English
+                <input type="checkbox" name="lang"> Hindi
+                <input type="checkbox" name="lang"> Telugu
+                <input type="checkbox" name="lang"> Others
+                <input type="text" name="others">
+            </li>
+            <li>
+                <label for="resume">Upload Resume: </label>
+                <input type="file" name="resume">
+            </li>
+            <li >
+                <input type="button" name="Submit" value="Submit" class="submit">
+            </li>
+            </ul>
+        </div>
+        </div>
+    </form>
+  </body>
+</html>

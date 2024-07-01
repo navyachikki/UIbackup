@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Read the dynamic values into array and Display </title>
+</head>
+<body>
+    <script>
+
+        var data = [];
+        
+        var n = prompt("Enter the length");
+        var n = parseInt(n);
+
+        for (var i = 0; i < n; i++) {
+            data[i] = prompt("enter the value");
+            data[i] = parseInt(data[i]);
+        }
+
+        console.log( data);
+
+
+    </script>
+</body>
+</html>

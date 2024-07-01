@@ -1,0 +1,46 @@
+h3 {
+    border: 2px solid dodgerblue;
+    background-color: lightgreen;
+    text-align: center;
+    font-weight: bold;
+    width: 600px;
+    margin: 10px auto;
+    padding: 10px;
+}
+ul {
+    border: 2px solid darkorange;
+    width: 600px;
+    margin: 10px auto;
+    padding: 10px;
+}
+li {
+    border: 2px solid lawngreen;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+}
+#slipBlock {
+    display: none;
+}
+.head {
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid dodgerblue;
+    background-color:lightblue;
+}
+span {
+    font-weight: bold;
+    color: rgb(13, 93, 176);
+}
+.errorBlock {
+    color: red;
+    font-size: 14px;
+    margin-top: 3px;
+    display: none;
+}
+.astric {
+    color: red;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}

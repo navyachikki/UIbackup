@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palinidrom or  not</title>
+</head>
+<body>
+    <script>
+        var number=prompt("Enter the number");
+        number=parseInt(number);
+        var h = number;
+        var reverse=0;
+        var n;
+        reverse = parseInt(reverse);
+        while(number >= 1){
+            n = number %10;
+            reverse = reverse*10 +n;
+            number = number/10;
+            number=parseInt(number);
+        }
+        if( h == reverse ){
+            console.log(h+" is a palinidrom number");
+        }
+        else{
+            console.log(h+" is not a palinidrom number");
+        }
+    </script>
+</body>
+</html>

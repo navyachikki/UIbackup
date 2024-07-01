@@ -1,0 +1,48 @@
+.outer{
+    border: 2px solid;
+    width: 500px;
+    height: 480px;
+    margin:5px ;
+    padding: 15px;
+    display: flexbox;
+    background-color: bisque;
+}
+.field{
+    border: 1px solid;
+    width: 450px;
+    height: 30px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(198, 149, 149);
+}
+#country,#state,#district{
+    height: 30px;
+    width: 150px;
+    margin-left: 20px;
+    
+}
+select option:first-of-type{
+    display:none;
+}
+h2{
+    text-align: center;
+}
+.Out{
+    margin: 10px;
+    font-size:larger;
+    font-weight: 700;
+    padding: 10px;
+}
+span{
+    color: rgb(26, 75, 180);
+}
+.outputSlip{
+    border: 1px solid;
+    height: 320px;
+    width: 350px;
+    background-color: rgb(223, 192, 232);
+    display: block;
+    position: absolute;
+    top: 100px;
+    right: 200px;
+}

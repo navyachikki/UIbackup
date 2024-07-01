@@ -1,0 +1,108 @@
+h1 {
+    border: 2px solid;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px auto;
+    padding: 5px;
+    width: 500px;
+    background-color: rgb(255, 137, 46);
+}
+
+ul {
+    border: 2px solid;
+    margin: 10px auto;
+    padding: 10px;
+    /* margin: 27px 148px 15px 131px; */
+    width: 500px;
+    background-color: rgb(187, 193, 187);
+
+}
+
+li {
+    border: 2px solid grey;
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    width: 398px;
+    text-align: center;
+    margin: auto;
+    background-color: rgb(40, 234, 182);
+    margin-bottom: 9px;
+}
+
+
+
+
+#Class {
+    width: 115px;
+}
+
+#subjects,
+#s1,
+#s2,
+#s3,
+#s4 {
+    width: 50px;
+    margin: auto;
+    margin-bottom: 8px;
+}
+
+#s1 {
+    margin-left: 135px;
+}
+
+#btn{
+    
+    text-align: center;
+    margin: 5px;
+}
+
+
+.std{
+    font-weight: bolder;
+    color: rgb(240, 19, 19);
+}
+
+#Title{
+    text-align: center;
+    border: 2px solid;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px auto;
+    padding: 5px;
+    width: 450px;
+    background-color: rgb(0, 255, 4);
+    font-weight: bolder;
+}
+
+#progressDetail{
+    display: none;
+}
+
+.nameErr{
+    color: rgb(236, 0, 0);
+    font-size: 13px;
+    margin-top: 4px;
+    display: none;
+}
+
+.ageErr{
+    color: rgb(236, 0, 0);
+    font-size: 13px;
+    margin-top: 4px;
+    display: none;
+}
+
+.marksErr{
+    color: rgb(236, 0, 0);
+    font-size: 13px;
+    margin-top: 4px;
+    display: none;
+}
+
+.classErr{
+    color: rgb(236, 0, 0);
+    font-size: 13px;
+    margin-top: 4px;
+    display: none;  
+}

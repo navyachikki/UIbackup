@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var program = prompt(
+            "Enter Program number"+
+            "\n(1) Program to find out total number of characters within a given string"+
+            "\n(2) Program to find out total number of words within a given string"+
+            "\n(3) Program to find out total number of ovels within a given string"+
+            "\n(4) Program to reverse the given string"+
+            "\n(5) Program to Check whether a given string is palindrome or not"
+        )
+
+        switch(program) {
+            case "1":
+                var sampleString = prompt("Enter sample string")
+                var stringLength = 0
+                do {
+                    if(sampleString[stringLength] != null) {
+                        stringLength += 1
+                    }
+                } while(sampleString[stringLength] != null)
+                alert("Length of the string: "+stringLength)
+                break
+
+            case "2":
+                var sampleString = prompt("Enter sample string")
+                var stringArray = sampleString.split(" ")
+                alert("Number of words in the given string are: "+stringArray.length)     
+                break
+                
+            case "3":
+                var sampleString = prompt("Enter sample string")
+                var numberOfOvels = 0;
+                var isOvel = (character) => {
+                    let ovels = ['a', 'e', 'i', 'o', 'u']
+                    for (var j=0; j<ovels.length; j++) {
+                        if(ovels[j] == character) {
+                            return true
+                        }
+                    }
+                    return false
+                }
+                for(var i=0; i<sampleString.length; i++) {
+                    if(isOvel(sampleString[i])) {
+                        numberOfOvels += 1
+                    }
+                }    
+                alert ("Number of ovels are: "+numberOfOvels)
+                break
+            
+            case "4":
+                var sampleString = prompt("Enter sample string")
+                var reversedString = ""
+                for(var i=(sampleString.length-1); i>=0; i--) {
+                    reversedString += sampleString[i]
+                }
+                alert ("Reversed string is: "+reversedString)
+                break
+            
+            case "5":
+                var sampleString = prompt("Enter sample string")
+                var reversedString = ""
+                for(var i=(sampleString.length-1); i>=0; i--) {
+                    reversedString += sampleString[i]
+                }
+
+                if(reversedString == sampleString) {
+                    alert ("Given string is Palindrome")
+                } else {
+                    alert ("Given string is not a Palindrome")
+                }
+                break
+        }
+
+    </script>
+
+</body>
+</html>

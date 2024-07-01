@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>to find the total no of digits ingiven no goto the console tab</h3>
+    <script>
+        var n = parseInt(prompt(" enter the value for n for finding the total ni of digits in it "));
+        var digits=0;
+        var rem = 0;
+        while(n> 0){
+            rem = n % 10;
+            n = n /10;
+            n = parseInt(n);
+            if(rem>0){
+                digits++
+            }
+
+        }
+        console.log("total no of digits in the given no is "+ digits);
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shows The Values Between User Given Range</title>
+        <style>
+            h1, p {
+                text-align: center;
+                margin: 5px;
+                padding: 5px;
+            }
+            p {
+                font-size: 20px;
+                margin-top: 30px;
+            }
+            span {
+                color: blue;
+                font-size: 25px;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Shows The Values Between User Given Range - For Loop C.S. - JavaScript</h1>
+            <p>For More Information Please See <span>Console</span> Tab In <span>Inspect Element</span> !</p>
+            <p>View Source Code For Better Understanding</p>
+        </div>
+        <script>
+            console.log("Shows The Values Between User Given Range");
+            var start = parseInt(prompt("Enter The Starting Value : "));
+            var end = parseInt(prompt("Enter The Ending Value : "));
+            console.log("Start")
+            for (var i=start; i<=end; i++) {
+                console.log(i);
+            }
+            console.log("End")
+        </script>
+    </body>
+</html>

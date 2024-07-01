@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reading Data From Dynamic Array</title>
+    </head>
+
+    <body>
+        <script>
+            var values = [];
+            var sumOfValues = 0;
+            var count = parseInt(prompt("How Much Counts You Want to Store in Araay : "));
+            for (i = 0; i < count; i++)
+            {
+                values[i] = parseInt(prompt("Enter Value For Araay" + (i+1) + " : "));
+            }
+
+            for (i = 0; i < values.length; i++)
+            {
+                sumOfValues = sumOfValues + values[i];
+            }
+
+            console.log ("Sum Of Values InSide the Array = " + sumOfValues);
+
+        </script>
+    </body>
+</html>

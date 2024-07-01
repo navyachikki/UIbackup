@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            var count = 0;
+            console.log("Start");
+            /*setTimeout(() => {
+                count++;
+                console.log("thanks for visiting " + count);
+            }, 3000); */
+
+            var myInterval = setInterval(() => {
+                count++;
+                console.log("thanks for visiting " + count);
+                if (count == 5) {
+                    clearInterval(myInterval);
+                }
+            }, 3000);
+
+            
+
+         
+            console.log("Stop");
+
+            
+            
+        </script>
+    </body>
+</html>

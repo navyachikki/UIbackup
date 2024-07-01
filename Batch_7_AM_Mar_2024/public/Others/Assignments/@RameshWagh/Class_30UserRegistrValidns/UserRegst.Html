@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Registration</title>
+        <link rel="stylesheet" href="UserRegst.css">
+        <script src="UserRegst.js"></script>
+
+    </head>
+    <body>
+        <div class = "title"> Wel Come To Online Registration For Naresh IT Classes </div>
+        
+        <ul>
+            <li>
+                <input placeholder="Enter User Id" type = "text" id = "userId" onkeypress = "return validateSpace(event)" maxlength="10">
+                <div class="error IdError">
+                    User Id CanNot Be Empty
+                </div>
+            </li>
+            <li>
+                <input placeholder="Enter Password to Set" type = "password" id = "userPass" onkeypress = "return showPassValidation(event)" onkeyup = " return validateUserPass(event)">
+                <input type="checkbox" onchange = "ChngPassTextType(event)"> Show Password
+            </li>
+            <li>
+                <input placeholder="Enter R-Type Password" type = "text" id = "userRptPass" onkeypress = "return showPassValidation(event)" onkeyup = " return validateUserPass(event)">
+            </li>
+            <li>
+                <input placeholder="Enter E-Mail Address" type = "text" id = "userEMail">
+            </li>
+            <li>
+                <input type = "button" value = "Register" onclick = "registerUser()">
+            </li>
+        </ul>
+        
+        <div class="msg">
+            User Got Registered Successfuly
+        </div>
+
+        <div class = "PassValidDisplay">
+            <ol>
+                <li id = "lenthValidation">
+                    Password Minimum And Maximum Lenth Should be 8
+                </li>
+                <li id = "upperCaseChar">
+                    Password Only Start With Upper case 
+                </li>
+                <li id = "SplSymbolValidation">
+                    Password Should be have Minimum and Maximum 1 Symbol ^#@&
+                </li>
+                <li id = "NumberValidation">
+                    Password Should have Minimun 1 Numeric Value
+                </li>
+                <li id = "SpaceValidation">
+                    Password Should not be contain Space
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>

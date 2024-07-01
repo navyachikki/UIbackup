@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check whether the given string is palindrome or not</title>
+    <style>
+        h2{
+            text-align: center;
+            color: rgb(208, 177, 19);
+            text-decoration: double;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: lighter;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Check whether the given string is palindrome or not</h2>
+    <script>
+
+        var str1="Madam";
+        str=str1.toLowerCase(str1);
+        var start=0,last=str.length-1;
+        var flag=false;
+        while(start<last)
+        {
+             if(str[start]==str[last])
+             {
+                start++;
+                last--;
+                flag=true;
+             }
+             else
+             {
+                flag=false;
+                break;
+             }
+        }
+        if(flag==true)
+        {
+            console.log(str1);
+            console.log("Palindeome String ");
+        }
+        else {
+            console.log(str1);
+            console.log("Not Palindeome String ");
+        }
+    </script>    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            JavaScript Mathematical Operations
+        </title>
+        <style type="text/css">
+            body{
+                margin: 50px 50px;
+                background-color: aliceblue;
+            }
+            .border h1{
+            margin: 10px auto;
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-color: darkgoldenrod;
+        }
+        .mb-5{
+            margin-bottom: 15px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="border">
+            <h1>Demonstrating Mathematical of values Details</h1>
+        </div>
+        <hr>
+        <div class="mb-5">
+            Addtion: <span id="add"></span>
+        </div>
+        <div class="mb-5">
+            Subtraction: <span id="sub"></span>
+        </div>
+        <div class="mb-5">
+            Multipulication: <span id="mup"></span>
+        </div>
+
+        <div class="mb-5">
+            Divsion: <span id="div"></span>
+        </div>
+
+        <div class="mb-5">
+            Percentage: <span id="per"></span>
+        </div>
+        <script>
+
+            var a = 30;
+            var b = 20;
+        
+            var addition = a + b ;
+            var subtraction = a - b ;
+            var multipulication = a * b ;
+            var divsion = a / b ;
+            var percentage = a % b ;
+            document.querySelector("#add").innerHTML = addition;
+            document.querySelector("#sub").innerHTML = subtraction;
+            document.querySelector("#mup").innerHTML = multipulication;
+            document.querySelector("#div").innerHTML = divsion;
+            document.querySelector("#per").innerHTML = percentage;
+            document.write("a value:", a + '<br>');
+            document.write("b value:", b);
+        </script>
+      
+    </body>
+</HTml>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Demonstrating Conditional Structure </title>
+</head>
+<body>
+
+    <script>
+        
+        var name = prompt("enter emp name - ");
+        var age = prompt("enter emp age - ");
+        var gender = prompt("enter emp gender - ");
+        var salary = prompt("enter emp salary - ");
+        var basicSal = parseInt(salary);
+
+        var pf = (14 * basicSal) / 100;
+        var hra = (24 * basicSal) / 100;
+
+        var totalSal = pf + hra + basicSal;
+
+        console.log("Employee Details");
+        console.log("Employee name is " + name);
+        console.log("Employee age is " + age);
+        console.log("Employee gender is " + gender);
+        console.log("Employee basicSal is " + basicSal);
+        console.log("pf is " + pf);
+        console.log("hra is " + hra);
+        console.log("totalSal is " + totalSal);
+        
+        if (gender = "male") {
+            if(totalSal >= 200000) {
+                tax = (15 * totalSal) / 100;
+                totalSal = totalSal-tax;
+            }
+            else if (totalSal >= 100000) { 
+            tax = (10 * totalSal) / 100;
+            totalSal =  totalSal-tax;
+            }
+            else if(totalSal >= 50000) {
+                tax = (5 * totalSal - tax) / 100;
+                totalSal = totalSal-tax;
+            }
+            else {
+                tax = 0;
+            }
+        }
+
+           if (gender == "female") {
+              if (totalSal >= 200000) {;
+              tax = (10 * totalSal) / 100;
+              totalSal = totalSal-tax; 
+           }
+           else if (totalSal >= 50000) {
+              tax = (5 * totalSal) / 100;
+              totalSal = totalSal-tax;
+           }
+          else {
+            tax = 0;
+           }
+        } 
+        console.log("total tax = " + tax);
+        console.log("Salary after tax = " + totalSal);
+
+    </script>
+
+</body>
+</html>

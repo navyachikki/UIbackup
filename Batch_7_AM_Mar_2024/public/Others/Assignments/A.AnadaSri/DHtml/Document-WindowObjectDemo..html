@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Dyanic HtMLS Demo</h2>
+    <div id="container"></div>
+    <div id="container1"></div>
+
+        <script>
+        //   document.getElementById("container").innerText = "<i> Hell Welcome to My world </i>";
+        //  document.getElementById("container1").innerHTML =" <b style='color:green'> Heelo srikanth welcome </b>";
+
+        //  document.querySelector('#container').innerText = "<b style='color:red'> Srikanth Your King </b>";
+          // document.querySelector("#container").append(usingtag);
+
+          var whichTag = prompt("Enter Tage Name");
+          var whichColor = prompt("Enter Color");
+          var msg = prompt("Enter Tage text");
+          var tagid = prompt("Enter tage ID");
+
+          var myElement = document.createElement(whichTag);
+          myElement.style.color = whichColor;
+          myElement.style['font-size'] = "30px";
+          myElement.style.fontWeight = "bold";
+          myElement.innerText = msg;
+          myElement.setAttribute('id', tagid);
+          myElement.setAttribute('class', "Test");
+          document.querySelector("#container1").append(myElement);
+        </script>
+  </body>
+</html>

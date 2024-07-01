@@ -1,0 +1,66 @@
+.parent {
+    margin: 50px auto;
+    border: 2px solid black;
+    width: 40%;
+    padding: 10px;
+    background-color: white;
+}
+h1 {
+    text-align: center;
+}
+.parent ul {
+    list-style: none;
+}
+ul li {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px 0;
+}
+li input[type = text] {
+    padding: 10px;
+    width: 200px;   
+}
+#btn {
+    padding: 10px;
+    width: 90px;
+    border-radius: 10px;
+    border: none;
+    background-color: greenyellow;
+    cursor: pointer;
+}
+h2 {
+    text-align: center;
+    color: crimson;
+}
+.nameError{
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+.ageError{
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+.child {
+    
+    margin: 50px auto;
+    border: 2px solid black;
+    width: 40%;
+    padding: 10px;
+    background-color: white;
+    display: none;
+    
+}
+.child li {
+    list-style: none;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px 0;
+    
+}
+.salError{
+    color: red;
+    display: none;
+    font-size: 12px;
+}

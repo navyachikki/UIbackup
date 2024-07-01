@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+          
+            var empdetails = {
+                name: 'Teena',
+                dep: 'It',
+                dislayempdeails() {
+
+                }
+            }
+           
+            var studentDetails = {
+                readStudentDetails() {
+                    studentDetails.name = prompt("Emnter name");
+                    studentDetails.age = prompt("enter age");
+                    studentDetails.marks = [];
+                    for (var i = 0 ; i < 5; i++) {
+                        studentDetails.marks[i] = parseInt(prompt("enter marks for sub" + i));
+                    }
+                    studentDetails.getTotalAndAvg();
+                },
+                getTotalAndAvg() {
+                    studentDetails.total = 0;
+                    for (var i = 0; i < studentDetails.marks.length; i++) {
+                        studentDetails.total += studentDetails.marks[i];
+                    }
+                    studentDetails.avg = studentDetails.total / studentDetails.marks.length;
+                },
+                displayStudentDetail() {
+                    studentDetails.readStudentDetails();
+                    console.log("STudent name " + studentDetails.name);
+                    console.log("AGe is " + studentDetails.age);
+                    console.log("Total " + studentDetails.total);
+                    console.log("AVg " + studentDetails.avg);
+                }
+            };
+
+           
+          
+            
+            studentDetails.displayStudentDetail();
+
+            console.log(studentDetails);
+
+
+
+        </script>
+    </body>
+</html>

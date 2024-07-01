@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smallest And Largest Value From Given Array</title>
+    </head>
+    <body>
+        <script>
+            
+            var Range = [10, 25, 3, 42, 5, 61, 7, 18, 49, 10];
+            var SmallestVal = Range[0];
+            var LargestVal = 0;
+    
+            for ( j = 0 ; j < Range.length; j++)
+            {
+                for(i = 0; i < Range.length; i++)
+                {
+                    if (LargestVal < Range[j] )
+                    {
+                        LargestVal = Range[j];
+                    }
+
+                    if (SmallestVal > Range[j] )
+                    {
+                        SmallestVal = Range[j];
+                    }
+                }
+            }
+            console.log("In the Specified Array Range Largest Value = " + LargestVal);
+            console.log("In the Specified Array Range Smallest Value = " + SmallestVal);
+        </script>
+    </body>
+</html>

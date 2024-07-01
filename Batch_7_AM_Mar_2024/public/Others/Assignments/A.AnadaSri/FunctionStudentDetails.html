@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functional Demo</title>
+  </head>
+  <body>
+    <h2>Functional Dispaly the Student data</h2>
+    <script>
+      var name, age, gender, avg, m1, m2, m3, total, grade;
+      name = prompt("Enter Name");
+      age = parseInt(prompt("Enter Age"));
+      m1 = parseInt(prompt("Enter M1 Markes"));
+      m2 = parseInt(prompt("Enter M2 Markes"));
+      m3 = parseInt(prompt("Enter M3 Markes"));
+      getDisplayDetails();
+      
+      function getTotalAndAvg() {
+        total = m1 + m2 + m3;
+        avg = total / 3;
+      }
+
+      function getGradeDetails(){
+        getTotalAndAvg();
+        if (avg >= 40) {
+        console.log("Your passed");
+        if (avg > 90) {
+          grade = "You got distinction";
+        } else if (avg >= 60) {
+          grade = " Your Firse class";
+        } else {
+          grade = "Your Second class";
+        }
+      } else {
+        grade = "You failed ! Try to next time beeter luck";
+      }
+
+      }
+
+     function getDisplayDetails(){
+        getGradeDetails();
+      console.log("Student Name:" + name);
+      console.log("Student Age:" + age);
+      console.log("Student Total Marks:" + total);
+      console.log("Student Avg Marks:" + avg);
+      console.log("Student Result Grade : " + grade);
+     }
+    //  getTotalAndAvg();
+   
+    </script>
+  </body>
+</html>

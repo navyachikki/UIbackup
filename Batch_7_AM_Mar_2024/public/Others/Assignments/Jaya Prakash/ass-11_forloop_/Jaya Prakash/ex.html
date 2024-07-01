@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Shopping Website</title>
+<style>
+    /* Basic styling */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+    .container {
+        padding: 20px;
+    }
+    .product {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #555;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Simple Shopping Website</h1>
+</header>
+<div class="container">
+    <div class="product">
+        <h2>Product 1</h2>
+        <p>Description of Product 1</p>
+        <p>Price: $10</p>
+        <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <h2>Product 2</h2>
+        <p>Description of Product 2</p>
+        <p>Price: $15</p>
+        <button onclick="addToCart('Product 2', 15)">Add to Cart</button>
+    </div>
+    <div id="cart"></div>
+</div>
+
+<script>
+    // Function to add items to the cart
+    function addToCart(productName, price) {
+        // Create a new paragraph element
+        var newItem = document.createElement("p");
+        // Set its text content to the product name and price
+        newItem.textContent = productName + " - $" + price;
+        // Append the new paragraph to the cart div
+        document.getElementById("cart").appendChild(newItem);
+    }
+</script>
+</body>
+</html>

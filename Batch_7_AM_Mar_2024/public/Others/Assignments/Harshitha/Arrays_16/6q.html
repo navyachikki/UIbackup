@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       Array=[20,4,6,88,99,10] ;
+
+       let smallest= Array[0];
+       let largest=Array[0];
+
+       for(let i=0;i< Array.length;i++){
+        if(Array[i]<smallest){
+            smallest=Array[i];
+        }
+        if(Array[i]>largest){
+            largest=Array[i]
+        }
+       }
+       console.log('Smallest number:',smallest);
+       console.log('largest number:',largest);
+    </script>
+</body>
+</html>

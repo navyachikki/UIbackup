@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functional Demo</title>
+  </head>
+  <body>
+    <h2>Functional Dispaly the Voter Age - Assignment</h2>
+    <br>
+    <label for="age">Please enter your Age and check your Vote Eligiblety</label>
+    <br>
+    <div style="display: flex; align-items: center;;margin-top: 10px;">
+    
+      <input type="text" name="" value="18" id="age" style="padding:10px ">
+      <button onclick="getVoterData()" style="background-color: cornflowerblue; color: aliceblue; margin-left: 10px; padding: 10px;border: 1px solid blue;font-weight: 600;">Vote Eligeble</button>
+    </div>
+   <p id="demo"></p>
+    <script>
+   
+    function getVoterData(){
+      let voter;
+      let age = Number(document.getElementById("age").value);
+      console.log("age:"+ age);
+      if(isNaN(age))
+      {
+        age = "Age is not number";
+        voter = " Please given the correct input";
+      }
+      else{
+        voter = (age >= 18) ? "Voter Id is Elgible" : "Too Young voter is not Eligelble" ;
+      }
+      document.getElementById("demo").innerHTML = age +" " + voter;
+    }
+ 
+    </script>
+  </body>
+</html>

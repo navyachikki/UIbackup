@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array</title>
+        <link rel="stylesheet" href="Array.css">
+        <style>
+           
+            span {
+                position: relative;
+                display: inline-block;
+                margin: 10px auto;
+                padding: 42px;
+                color: brown;
+                left: 372px;
+                width: 250px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 >
+            Dynamic Reading Values From an Array & Displaying in UI
+        </h2>
+        <Span class="Display"></Span>
+        <script>
+            var data = [];
+            var n = parseInt(prompt("Enter the Length"));
+            for(var i = 0; i<=n;i++) {
+                data[i]=parseInt(prompt("Enter the Value of " + i));
+            }
+            console.log(data);
+            document.querySelector(".Display").innerText = "User Entered these Values : " + data;
+            
+        </script>
+    </body>
+</html>

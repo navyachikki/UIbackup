@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="app.js"></script>
+        <style>
+            .container {
+                border: 1px solid;
+                margin: 20px;
+                padding: 10px;
+                width: 350px;
+                height: 350px;
+                display: inline-block;
+            }
+            img {
+                width: 120px;
+                height: 120px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" ondrop="addProductToContainer(event)" ondragover="elementDragOver(event)" containertype="mens">
+            Mens Container
+        </div>
+        <div class="container"  ondrop="addProductToContainer(event)" ondragover="elementDragOver(event)" containertype="kids">
+            Kids Container
+        </div>
+        <div class="container"  ondrop="addProductToContainer(event)" ondragover="elementDragOver(event)" containertype="girls">
+            Womens Container
+        </div>
+
+        <div class="productBlock">
+            <IMg SRC="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR26ftcfME8V4nLZhO3dbC-r-_Lcv7Pu0HovQ&s" type="mens"></IMg>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWbcl7L0J1HREvEq37DEodtVKX2jMJQGoD_1mgDlbK-Q&s" type="mens" >
+            
+        </div>
+
+        <div class="kidsProducts">
+            <img src="https://baybee.co.in/cdn/shop/files/01_90d0d0c9-a1d9-4aa4-82fc-6b8733a31ed4_500x.jpg?v=1689336703" alt="" type="kids">
+            <img src="https://images.meesho.com/images/products/266091455/qaiqn_512.webp" type="kids">
+        </div>
+
+        <div class="womensContainer">
+            <img src="https://www.mumkins.in/cdn/shop/files/gown-for-girls-gs182717-wine-model-image.jpg?v=1685613422" type="girls">
+            <img src="https://www.jiomart.com/images/product/original/rvmz8k9uws/akira-stylish-woman-and-girls-school-college-bag-10-l-backpack-pink-product-images-rvmz8k9uws-0-202212031802.jpg?im=Resize=(1000,1000)" type="girls">
+        </div>
+    </body>
+</html>

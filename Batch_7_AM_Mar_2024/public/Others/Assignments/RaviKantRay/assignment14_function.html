@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+    var ename, eage, egender, bassal, Pf, Hra, TotalSal, tax;
+
+    function readEmployeeData() {
+        ename = prompt("Enter Employee Name");
+        eage = prompt("Enter Emp. Age");
+        egender = prompt("Enter Gender");
+        bassal = prompt("Enter Basic Salary");
+        bassal = parseInt(bassal);
+    }
+
+    function PfHraTotalSal() {
+        Pf = (14 * bassal / 100);
+        Hra = (24 * bassal / 100);
+        TotalSal = (Pf + Hra + bassal);
+    }
+
+    function EmployeeTotalIncome() {
+        if (egender.toLowerCase() === 'male') {
+            console.log("Gender is Male");
+            if (TotalSal >= 200000) {
+                tax = TotalSal * 15 / 100;
+            } else if (TotalSal >= 100000) {
+                tax = TotalSal * 10 / 100;
+            } else if (TotalSal >= 50000) {
+                tax = TotalSal * 5 / 100;
+            } else {
+                tax = 0;
+            }
+        } else if (egender.toLowerCase() === 'female') {
+            console.log("Gender is Female");
+            if (TotalSal >= 200000) {
+                tax = TotalSal * 10 / 100;
+            } else if (TotalSal >= 100000) {
+                tax = TotalSal * 5 / 100;
+            } else {
+                tax = 0;
+            }
+        }
+    }
+
+    function displayEmployeeDetails() {
+        console.log("Employee Details");
+        console.log("Name = " + ename);
+        console.log("Age = " + eage);
+        console.log("Gender = " + egender);
+        console.log("Basic Salary = " + bassal);
+        console.log("Provident Fund = " + Pf);
+        console.log("House Rent Allowance = " + Hra);
+        console.log("Total Salary is " + TotalSal);
+        console.log("Tax = " + tax);
+    }
+
+    readEmployeeData();
+    PfHraTotalSal();
+    EmployeeTotalIncome();
+    displayEmployeeDetails();
+
+</script>
+
+</body>
+</html>

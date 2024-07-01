@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Total salary and Total Tax base on male and female</title>
+    <style>
+        h2{
+            text-align: center;
+            color:rgb(114, 13, 135);
+            text-decoration: double;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+<h2>Calculate Total salary and Total Tax base on male and female</h2>
+<script>
+    var ename,age,gender,pf,hra,bs,totalSalary,totalTax;
+       
+        ename=prompt("Enter Name ");
+
+        age=prompt("Enter Age ");
+        age=parseInt(age);
+
+        gender=prompt("Enter Gender ");
+
+        bs=prompt("Enter Basic Salary  ");
+        bs=parseInt(bs);
+
+        pf=prompt("Enter PF  ");
+        pf=parseInt(pf);
+
+        hra=prompt("Enter HRA  ");
+        hra=parseInt(hra);
+
+        totalSalary=pf+hra+bs;
+
+        console.log("----Employee Details----");
+        console.log("Name of Employee : "+ename);
+        console.log("Age : "+age);
+        console.log("Gender : "+gender);
+        console.log("Total Salary "+totalSalary);
+         
+        if(gender == 'male' || gender == 'Male' || gender == 'MALE')
+        {
+            if(totalSalary>=200000)
+            {
+                totalTax=(15 * totalSalary)/100;
+                console.log("Total Tax to be paid : "+totalTax);
+            }
+            else if(totalSalary >= 100000)
+            {
+                totalTax=(10 * totalSalary)/100;
+                console.log("Total Tax to be paid : "+totalTax);
+            }
+            else if(totalSalary >= 50000){
+                totalTax=(5 * totalSalary)/100;
+                console.log("Total Tax to be paid : "+totalTax);
+            }
+            else{
+                console.log("No need to pay any tax : ");
+            }
+        } else{
+            if(totalSalary>=200000)
+            {
+                totalTax=(10 * totalSalary)/100;
+                console.log("Total Tax to be paid : "+totalTax);
+            }
+            else if(totalSalary >= 100000)
+            {
+                totalTax=(5 * totalSalary)/100;
+                console.log("Total Tax to be paid : "+totalTax);
+            }
+            else{
+                console.log("No need to pay any tax : ");
+            }
+        }
+
+
+
+</script>
+    
+</body>
+</html>

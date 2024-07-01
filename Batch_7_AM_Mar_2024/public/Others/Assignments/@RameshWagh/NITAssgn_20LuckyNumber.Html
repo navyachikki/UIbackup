@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Finding Lucky Number From Given Number</title>
+    </head>
+    <body>
+        <script>
+            var Entrnum = prompt("Enter Number To Find Lucky Number : ");
+            var numchk = parseInt(Entrnum);
+            var tot = 0;
+            while(numchk > 0)
+            {
+                tot = tot + (numchk % 10);
+                numchk = parseInt(numchk / 10);
+            
+                if (numchk ==0 && tot > 9)
+                {
+                    numchk = tot;
+                    tot = 0;
+                }
+            }
+            console.log(tot);
+        </script>
+    </body>
+</html>

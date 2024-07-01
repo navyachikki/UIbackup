@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            Prome no. within given range
+        </title>
+        <script>
+            var a=prompt("Enter stating number")
+            var b=prompt("Enter end of the range")
+            a=parseInt(a)
+            b=parseInt(b)
+            var check
+            var count=parseInt(count)
+            
+            for(var i=a;i<b;i++)
+            {
+                count=0
+                for(var j=2;j<i;j++)
+                {
+                    check = i % j
+                    if(check==0)
+                    {
+                        count=1
+                    }
+                }
+                if(count == 0)
+                {
+                    console.log(i);
+                }
+            }
+            
+            
+        </script>
+    </head>
+</html>

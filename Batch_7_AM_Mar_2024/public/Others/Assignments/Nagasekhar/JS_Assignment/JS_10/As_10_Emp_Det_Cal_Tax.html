@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+    <style>
+       .Container {
+            color: rgb(59, 6, 59);
+            font-family: 'Times New Roman', Times, serif;
+            Border: 1px solid rgb(14, 169, 143);
+            font-size: 19px;
+            font-weight: bold;
+            text-align: center;
+            width: 300px;
+            margin: 10px auto;
+       }
+    </style>
+</head>
+<body>
+    <div class="Container">
+        Employee Details-Tax
+    </div>
+    <script>
+        var eName,eGender,TotalSal,TaxPaid;
+        eName = prompt("Enter Your Name");
+        eGender = prompt("Enter Your Gender(Male/Female)");
+        TotalSal = prompt("Enter Your TotalSalary");
+        TotalSal = parseInt(TotalSal);
+        console.log("Totalsal : " + TotalSal );
+        console.log(typeof(TotalSal));
+        if(eGender == 'Male' && (eGender != "" || eGender != null)) {
+            if(TotalSal >= 200000) {
+                TaxPaid = (TotalSal * 15)/100
+                //console.log("TaxPaid " + TaxPaid );
+                console.log("EmployeeName : " +eName+" # " +"Gender : " +eGender+" # "+ "TaxPaid : " + TaxPaid );  
+            }
+            else if (TotalSal >= 100000) {
+                TaxPaid = (TotalSal * 10)/100
+                console.log("EmployeeName : " +eName+" # " +"Gender : " +eGender+" # "+ "TaxPaid : " + TaxPaid );   
+            }
+            else if (TotalSal >= 50000) {
+                TaxPaid = (TotalSal * 5)/100
+                //console.log("TaxPaid " + TaxPaid );  
+                console.log("EmployeeName : " +eName+" # " +"Gender : " +eGender+" # "+ "TaxPaid : " + TaxPaid ); 
+            }
+            else {
+                TaxPaid = 0
+                //console.log("TaxPaid " + TaxPaid );
+                console.log("EmployeeName : " +eName+" # " +"Gender : " +eGender+" # "+ "TaxPaid : " + TaxPaid );    
+            }
+        }
+        else if(eGender == 'Female' && (eGender != "" || eGender != null)){
+            if(TotalSal >= 200000) {
+                TaxPaid = (TotalSal * 10)/100
+                //console.log("TaxPaid " + TaxPaid );
+                console.log("EmployeeName : " +eName+" # " +"Gender : " +eGender+" # "+ "TaxPaid : " + TaxPaid );   
+            }
+            else if (TotalSal >= 100000) {
+                TaxPaid = (TotalSal * 5)/100
+                //console.log("TaxPaid " + TaxPaid );
+                console.log("EmployeeName : " +eName+" # " +"Gender : " +eGender+" # "+ "TaxPaid : " + TaxPaid );   
+            }
+            else {
+                TaxPaid = 0
+                //console.log("TaxPaid " + TaxPaid );  
+                console.log("EmployeeName : " +eName+" # " +"Gender : " +eGender+" # "+ "TaxPaid : " + TaxPaid );  
+            }
+        }
+        else {
+            console.log("Gender: Male or Female these are valid,you're enter Gender as " + eGender)
+        }
+    </script>
+</body>
+</html>

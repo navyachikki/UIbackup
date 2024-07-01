@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky</title>
+</head>
+<body>
+    <h3> Find the lucky number of all values within given array </h3>
+    <script>
+        var luck = [16082007];
+        
+        var sum = 0;
+
+        while (luck > 0) {
+
+            rem = luck % 10;
+            sum = sum + rem;
+            luck = luck / 10;
+            luck = parseInt(luck);
+
+        if(luck == 0 && sum > 9) {
+            luck = sum;
+            sum = 0;
+        }
+
+        }
+
+        console.log("The lucky number = " + sum);
+        
+        
+    </script>
+</body>
+</html>

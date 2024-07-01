@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Slip</title>
+    <style>
+        h3 {
+            border: 2px solid;
+            margin: 10px 200px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .pay_details_container {
+            position: relative;
+            border: 2px solid;
+            margin: 40px 200px;
+            height: 250px;
+            padding-top: 40px;
+        }
+
+        .pay_slip_container {
+            position: relative;
+            border: 2px solid;
+            margin: 40px 500px;
+            height: 350px;
+            padding-top: 40px;
+            display: none;
+        }
+
+        .section_title {
+            border: 2px solid;
+            position: absolute;
+            padding: 10px 30px;
+            text-align: center;
+            left: 30px;
+            top: -20px;
+            background-color: white;
+        }
+
+        .fields_block {
+            margin: 25px 40px;
+            display: inline-block;
+        }
+
+        .field_lable {
+            display: inline-block;
+            margin: 0px 10px 0px 10px;
+        }
+
+        .field_lable>label {
+            font-weight: bold;
+        }
+
+        .input_field{
+            display: inline-block;
+            margin: 0px 10px ;
+        }
+
+        .pay_slip_field {
+            margin: 4px 20px;
+            height: 30px;
+        }
+
+        .cta_section {
+            height: 20px;
+            margin: 10px 400px 0px 400px;
+            padding: 10px 50px;
+        }
+
+        .cta {
+            margin-right: 30px;
+        }
+
+        .error {
+            color: red;
+            font-size: smaller;
+            margin-left: 10px;
+        }
+    </style>
+    <script>
+        // Salary Slip Object
+        var SalarySlip = {
+            empName : '',
+            idNumber : '',
+            department : '',
+            designation : '',
+            employeeType : '',
+            basicSalary : '',
+
+            // Read Employee Pay Detais from the field entries
+            readEmployeePayDetails : function() {
+                this.empName = document.querySelector("#emp_full_name>input").value
+                this.idNumber = document.querySelector("#emp_id>input").value
+                this.department = document.querySelector("#emp_dept>input").value
+                this.designation = document.querySelector("#emp_designation>input").value
+                this.employeeType = document.querySelector("#emp_type>input").value
+                this.basicSalary = document.querySelector("#emp_basic_salary>input").value
+            },
+
+            // Calculate PF -> (Basic_salary x 14)/100
+            employeePf : function() {
+                return (this.basicSalary * 14) / 100;
+            },
+
+            // Calculate HRA -> (Basic_salary x 24)/100
+            employeeHRA : function() {
+                return (this.basicSalary * 24) / 100;
+            },
+
+            // Calculate Total Salary -> Basic Salary + PF + HRA
+            employeeTotalSalary : function() {
+                return parseFloat(this.basicSalary)  + this.employeePf() + this.employeeHRA();
+            },
+
+            //Geneate the Payslip on the page
+            generatePaySlip : function() {
+                //Getting employee pay details
+                this.readEmployeePayDetails()
+
+                //Remove Full name filed blank error if already exists
+                var errorExists = document.querySelector("#full_name_block .error")
+                if(errorExists != null) {
+                    errorExists.remove()
+                }
+                //Set Full name filed blank error in case the Full name field is left blank
+                if(this.empName.trim() == '') {
+                    var empNameError = document.createElement("div")
+                    empNameError.setAttribute("class", "error")
+                    empNameError.innerHTML = "Full name is mandatory"
+                    document.querySelector("#full_name_block").append(empNameError)
+                    return
+                }
+                //Remove the Full name value if already exists
+                var elementExists = document.querySelector("#emp_name>span")
+                if(elementExists != null) {
+                    elementExists.remove()
+                }
+                //Appending Full name value element and update the value
+                var empNameValue = document.createElement("span")
+                empNameValue.innerHTML = this.empName.trim()
+                document.querySelector("#emp_name").append(empNameValue)
+
+                //Id Number
+                errorExists = document.querySelector("#id_number_block .error")
+                if(errorExists != null) {
+                    errorExists.remove()
+                }
+                if(this.idNumber.trim() == '') {
+                    var idNumberError = document.createElement("div")
+                    idNumberError.setAttribute("class", "error")
+                    idNumberError.innerHTML = "Id number is mandatory"
+                    document.querySelector("#id_number_block").append(idNumberError)
+                    return
+                }
+                elementExists = document.querySelector("#id_number>span")
+                if(elementExists != null) {
+                    elementExists.remove()
+                }
+                var idNumberValue = document.createElement("span")
+                idNumberValue.innerHTML = this.idNumber.trim()
+                document.querySelector("#id_number").append(idNumberValue)
+
+                //Department
+                elementExists = document.querySelector("#department>span")
+                if(elementExists != null) {
+                    elementExists.remove()
+                }
+                var departmentValue = document.createElement("span")
+                departmentValue.innerHTML = this.department.trim()
+                document.querySelector("#department").append(departmentValue)
+
+                //Designation
+                elementExists = document.querySelector("#designation>span")
+                if(elementExists != null) {
+                    elementExists.remove()
+                }
+                var designationValue = document.createElement("span")
+                designationValue.innerHTML = this.designation.trim()
+                document.querySelector("#designation").append(designationValue)
+
+                //Employee
+                elementExists = document.querySelector("#employee_type>span")
+                if(elementExists != null) {
+                    elementExists.remove()
+                }
+                var employeeTypeValue = document.createElement("span")
+                employeeTypeValue.innerHTML = this.employeeType.trim()
+                document.querySelector("#employee_type").append(employeeTypeValue)
+
+                //Basic Salary
+                errorExists = document.querySelector("#basicSalary_number_block .error")
+                if(errorExists != null) {
+                    errorExists.remove()
+                }
+                if(this.basicSalary.trim() == '') {
+                    var basicSalaryError = document.createElement("div")
+                    basicSalaryError.setAttribute("class", "error")
+                    basicSalaryError.innerHTML = " Basic salary is mandatory"
+                    document.querySelector("#basicSalary_number_block").append(basicSalaryError)
+                    return
+                }
+                elementExists = document.querySelector("#basic_salary>span")
+                if(elementExists != null) {
+                    elementExists.remove()
+                }
+                var basicSalaryValue = document.createElement("span")
+                basicSalaryValue.innerHTML = this.basicSalary.trim()
+                document.querySelector("#basic_salary").append(basicSalaryValue)
+
+                //PF
+                elementExists = document.querySelector("#emp_pf>span")
+                if(elementExists != null) {
+                    elementExists.remove()
+                }
+                var employeePfValue = document.createElement("span")
+                employeePfValue.innerHTML = this.employeePf()
+                document.querySelector("#emp_pf").append(employeePfValue)
+
+                elementExists = document.querySelector("#emp_hra>span")
+                if(elementExists != null) {
+                    elementExists.remove()
+                }
+                var employeeHraValue = document.createElement("span")
+                employeeHraValue.innerHTML = this.employeeHRA()
+                document.querySelector("#emp_hra").append(employeeHraValue)
+
+                //HRA
+                elementExists = document.querySelector("#emp_net_salary>span")
+                if(elementExists != null) {
+                    elementExists.remove()
+                }
+                var employeeTotalSalaryValue = document.createElement("span")
+                employeeTotalSalaryValue.innerHTML = this.employeeTotalSalary()
+                document.querySelector("#emp_net_salary").append(employeeTotalSalaryValue)
+
+                document.querySelector(".pay_slip_container").style.display = "block"
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>Generate Emplyee Payslip</h3>
+    <div class="pay_details_container">
+        <div class="section_title">
+            Employee Pay Details
+        </div>
+        <div class="fields_block" id="full_name_block">
+            <div class = "field_lable">
+                <label for="full_name">Full Name</label>
+            </div>
+            <div class="input_field" id = "emp_full_name">
+                <input type="text" name="full_name">
+            </div>
+        </div>
+        <div class="fields_block" id="id_number_block">
+            <div class = "field_lable">
+                <label for="emp_id">Id No.</label>
+            </div>
+            <div class="input_field" id = "emp_id">
+                <input type="text" name="emp_id">
+            </div>
+        </div>
+        <div class="fields_block">
+            <div class = "field_lable">
+                <label for="emp_dept">Department</label>
+            </div>
+            <div class="input_field" id = "emp_dept">
+                <input type="text" name="emp_dept">
+            </div>
+        </div>
+        <div class="fields_block">
+            <div class = "field_lable">
+                <label for="emp_designation">Designation</label>
+            </div>
+            <div class="input_field" id = "emp_designation">
+                <input type="text" name="emp_designation">
+            </div>
+        </div>
+        <div class="fields_block">
+            <div class = "field_lable">
+                <label for="emp_type">Employee Type</label>
+            </div>
+            <div class="input_field" id = "emp_type">
+                <input type="text" name="emp_type">
+            </div>
+        </div>
+        <div class="fields_block" id="basicSalary_number_block">
+            <div class = "field_lable">
+                <label for="emp_basic_salary">Basic Salary</label>
+            </div>
+            <div class="input_field" id = "emp_basic_salary">
+                <input type="text" name="emp_basic_salary">
+            </div>
+        </div>
+        <div class="cta_section">
+            <button class="cta" onclick="SalarySlip.generatePaySlip()">
+                Generate Payslip
+            </button>
+            <button>
+                Reset
+            </button>
+        </div>
+    </div>
+    <div class="pay_slip_container">
+        <div class="section_title">
+            Pay Slip
+        </div>
+        <div class="pay_slip_field">
+            <div class="field_lable" id="emp_name">
+                <label for="emp_name">Employee Name: </label>
+            </div>
+        </div>
+        <div class="pay_slip_field">
+            <div class="field_lable" id="id_number">
+                <label for="id_number">Id Number: </label>
+            </div>
+        </div>
+        <div class="pay_slip_field">
+            <div class="field_lable" id="department">
+                <label for="department">Department: </label>
+            </div>
+        </div>
+        <div class="pay_slip_field">
+            <div class="field_lable" id="designation">
+                <label for="department">Designation: </label>
+            </div>
+        </div>
+        <div class="pay_slip_field">
+            <div class="field_lable" id="employee_type">
+                <label for="emp_type">Employee Type: </label>
+            </div>
+        </div>
+        <div class="pay_slip_field">
+            <div class="field_lable" id="basic_salary">
+                <label for="emp_type">Basic Salary: </label>
+            </div>
+        </div>
+        <div class="pay_slip_field">
+            <div class="field_lable" id="emp_pf">
+                <label for="emp_pf">PF: </label>
+            </div>
+        </div>
+        <div class="pay_slip_field">
+            <div class="field_lable" id="emp_hra">
+                <label for="emp_hra">HRA: </label>
+            </div>
+        </div>
+        <div class="pay_slip_field">
+            <div class="field_lable" id="emp_net_salary">
+                <label for="net_salary">Net Salary: </label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

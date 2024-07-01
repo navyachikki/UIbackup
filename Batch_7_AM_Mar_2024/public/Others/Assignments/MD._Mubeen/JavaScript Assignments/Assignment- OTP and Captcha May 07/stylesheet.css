@@ -1,0 +1,55 @@
+body {
+    background-color: ivory
+}
+.heading {
+    text-align: center;
+    color: maroon;
+}
+.container {
+    border: 1px solid;
+    border-radius: 10px;
+    width: 50%;
+    margin: 5px auto;
+    padding: 5px;
+    background-color: #efd6ea;
+}
+.box {
+    text-align: center;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 97%;
+    margin: 5px auto;
+    padding: 5px;
+    background-color: pink;
+}
+.numberHeading {
+    text-align: center;
+    color: maroon;
+    margin: 5px;
+    padding: 2px;
+}
+.otpbox {
+    border: 3px solid maroon;
+    border-radius: 10px;
+    width: 50%;
+    height: 40px;
+    margin: 5px auto;
+    background-color: whitesmoke;
+    font-size: 35px;
+}
+#ucOtp {
+    font-size: 30px !important;
+}
+#genbutton {
+    width: 100px;
+    height: 40px;
+    color: maroon;
+    font-size: 18px;
+    margin: 10px;
+}
+.size {
+    width: 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}

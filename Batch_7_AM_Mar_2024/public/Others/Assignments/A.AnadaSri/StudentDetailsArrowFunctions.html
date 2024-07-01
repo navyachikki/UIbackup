@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functional Demo</title>
+  </head>
+  <body>
+    <h2>Student Detail Arrow function Demo</h2>
+    <script>
+      var studentData = () => {
+        name = prompt("Enter Name");
+        age = prompt("Enter Age");
+        m1 = parseInt(prompt("enter sub 1 marks"));
+				m2 = parseInt(prompt("enter sub 2 marks"));
+				m3 = parseInt(prompt("enter sub 3 marks"));
+				m4 = parseInt(prompt("enter sub 4 marks"));
+        avgMarks();
+      };
+
+      var avgMarks = () => {
+         total = m1 + m2 + m3 + m4;
+         avg = total / 4 ;
+         gradeDetails();
+      };
+
+      var gradeDetails = () =>{
+        if(avg > 40){
+          grade ="Your passed";
+          if (avg >= 90) {
+						grade = 'You got distinction';
+					} else if (avg >= 60) {
+						grade = 'You got first class'
+					} else {
+						grade = 'you got second class';
+					}
+        }else{
+          grade = "Your failed next time better luck";
+        }
+      }
+
+      var displayData = () => {
+        studentData();
+        console.log("Student Name:" + name);
+        console.log("Student Age:" + age);
+        console.log("Student Subect1:" + m1);
+        console.log("Student Subect2:" + m2);
+        console.log("Student Subect3:" + m3);
+        console.log("Student Subect4:" + m4);
+        console.log("Student Total Marks:" + total);
+        console.log("Student Avg Percentage:" + avg);
+        console.log("Student Grade :" + grade);
+      };
+
+      displayData();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Page</title>
+    <style>
+          h3 {
+                text-align: center;
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+                background-color: skyblue;
+                width: 550px;
+            
+          }
+          .block1 {
+                border: 1px solid;
+                height: 550px;
+                width: 550px;
+                margin: 10px;
+                padding: 10px;
+                background-color: rgb(157, 198, 139)
+                
+            }
+            .details {
+                text-align: center;
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+                width: 500px;
+                text-align: center;
+                text-decoration: bold;}
+
+            .aboutlabel  {
+                display: block;
+                text-decoration: none;
+           }
+           label {
+                width: 150px;
+                display: inline-block;
+           }
+           ul {
+            font-weight: bold;
+           }
+           li {
+            text-align: center;
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+                width: 500px;
+                text-align: center;
+                list-style-type: none;
+           }
+    </style>
+</head>
+<body>
+    <h3 class="container">Student Registration</h3>
+    <div class="block1">
+        <Ul class="details">
+         Personal Details
+        </Ul>
+        <li>First Name:
+            <input type="name" name="value"><br>
+            Last Name:
+            <input type="name" name="value"><br>
+        <li>Address:
+            <textarea id="" cols="17" rows="2 s s" maxlength="100" name="aboutuser"></textarea> <br>
+        <li><label>Country Name: </label>
+            <select name="userCountry" id="">
+                <option value="Ind">India</option>
+                <option value="US" selected>USA</option>
+                <option value="Aus">Australia</option>
+            </select>
+        </li>
+        </li>
+        <li>
+            Gender:
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female">Female
+        </li>
+        <li>
+            Languages Known:
+                <input type="checkbox" name="lng_eng"> English
+                <input type="checkbox" name="lng_hin"> Hindi
+                <input type="checkbox" name="lng_tel"> Telugu
+        </li>
+        <li>
+            <label id="aboutlabel">About your self: </label>
+            <textarea id="" cols="30" rows="5" maxlength="100" name="aboutuser"></textarea>
+        </li>
+        <li>
+            <input type="submit" value="Save Details">
+            <input type="reset">
+            <input type="submit" value="Submit">
+        </li>
+    </ul>
+</form>
+    </div>
+ 
+
+</body>
+</html>

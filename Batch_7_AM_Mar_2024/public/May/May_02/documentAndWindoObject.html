@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>
+            Demonstrating js document and window object
+        </h3>
+        <div id="container">
+            
+        </div>
+
+        <script>
+            // document.getElementById("container").innerText = "<b>Hello every one how are you doing</b>";
+            // document.getElementById("container").innerHTML = "<b>Hello every one how are you doing</b>" 
+
+
+            // document.querySelector("div").innerText = "<b style='color:blue'>Hello every one how are you doing</b>";
+            
+
+            
+
+            /* var myElement = document.createElement("div");
+            myElement.innerText = 'Hello i got created through JS';
+            myElement.setAttribute("id", "test");
+            myElement.setAttribute("class", "sample");
+            myElement.style.color = "green";
+
+            document.querySelector("#container").append(myElement) */
+
+            var whichTag = prompt("enter tagname");
+            var whichColor = prompt("color name");
+            var whichid = prompt("id");
+            var msg = prompt("enter msg")
+
+            var myElement = document.createElement(whichTag);
+            myElement.innerText = msg;
+            myElement.setAttribute("id", whichid);
+            myElement.setAttribute("class", "sample");
+            myElement.style.color = whichColor;
+
+            document.querySelector("#container").append(myElement)
+            
+        </script>
+    </body>
+</html>

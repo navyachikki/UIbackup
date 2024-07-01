@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dynamic Event Handling</title>
+    </head>
+    <body>
+        <div id = "container"> </div>   
+        <script>
+
+            // var funcShowMsg = () => {
+            //     console.log("Click Happend");
+            //}
+            var spanTag = document.createElement("span");
+            spanTag.innerText = "Click Me";
+
+            //spanTag.addEventListener("click", funcShowMsg);
+            
+                        //or
+            
+            spanTag.addEventListener("click", () => {
+                console.log("Click Happend");
+            });
+            document.querySelector("#container").append(spanTag);
+        </script>     
+    </body>
+</html>

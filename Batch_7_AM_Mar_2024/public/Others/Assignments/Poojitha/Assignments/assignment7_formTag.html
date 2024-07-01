@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        border: 1px solid black;
+        text-align: center;
+        height: 50px;
+        padding: 10px;
+        background-color: lightpink;
+    }
+    .container{
+        border: 2px solid black;
+        height: 1270px;
+        position: relative;
+    }
+    .personalDetailBlock{
+        height: 320px;
+        border: 1px solid black;
+        background-color: pink;
+        margin: 40px 20px;
+        padding: 10px;
+    }
+    .personalDetailDiv{
+        text-align: center;
+        height: 70px;
+        width: 210px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        background-color: antiquewhite;
+        position: relative;
+        left: 30px;
+        top: -46px;
+    }
+    .personalBlock{
+        height: 200px;
+        width: 44%;
+        background-color: pink;
+        border: 1px solid pink;
+        position: relative;
+        left: 30px;
+        top: -25px;
+    }
+    ul{
+        padding: 10px;
+    }
+    li{
+        list-style: none;
+        padding: 5px;
+        font-size: x-large; 
+    }
+    .name{
+        height: 30px;
+        width: 200px;
+        position: relative;
+    
+    }
+    .n1{
+        left: 48px;
+    }
+    .n2{
+        left: 50px;
+    }
+    .n3{
+        left: 115px;
+    }
+    .n4{
+        left: 50px;
+    }
+    .n5{
+        left: 50px;
+    }
+    .n6{
+        left: 50px;
+    }
+    .n7{
+        left: 75px;
+    }
+    .n8{
+        left: 48px;
+    }
+    .n9{
+        left: 50px;
+    }
+    .addressBlock{
+        height: 200px;
+        width: 44%;
+        background-color: pink;
+        border: 1px solid pink;
+        position: relative;
+        left: 660px;
+        top: -226px;
+    }
+    .educationDetailBlock{
+        height: 320px;
+        border: 1px solid black;
+        background-color: pink;
+        margin: 40px 20px;
+        padding: 10px;
+
+    }
+    .educationDetailDiv{
+        text-align: center;
+        height: 70px;
+        width: 210px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        background-color: antiquewhite;
+        position: relative;
+        left: 30px;
+        top: -46px;
+    }
+    .thirdBlock{
+        height: 320px;
+        border: 1px solid black;
+        background-color: pink;
+        margin: 40px 20px;
+        padding: 10px
+    }
+    .abouturself{
+        text-align: center;
+        height: 70px;
+        width: 210px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        background-color: antiquewhite;
+        position: relative;
+        left: 30px;
+        top: -46px;
+    }
+    .reg{
+        float: right;
+        position: relative;
+        right: 50px;
+        height: 50px;
+        background-color: palevioletred;
+        color: white;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+    h3{
+        border: 1px solid black;
+        text-align: center;
+        height: 30px;
+        padding: 10px;
+        background-color: lightpink;  
+    }
+    .personalDetailDiv:hover,
+    .educationDetailDiv:hover,
+    .abouturself:hover,
+    .reg:hover{
+        background-color: lightcyan;
+        color: brown;
+    }
+</style>
+<body>
+    <form action="http://www.pqr.com/info" method="get">
+    <h1>Student Registration Page</h1>
+    <div class="container">
+      <!--personal details-->
+       <div class="personalDetailBlock">
+        <div class="personalDetailDiv"><h2>Personal Details</h2></div>
+        <div class="personalBlock">
+            <ul>
+                <li>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" class="name n1" name="firstName" placeholder="Enter your firstName"/>
+                </li>
+                <li>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" class="name n2" name="lastName" placeholder="Enter your lastName"/>
+                </li>
+                <li>
+                    <label for="age">Age:</label>
+                    <input type="number" class="name n3" name="age" placeholder="Enter your age" maxlength="2"/>
+                </li>
+            </ul>
+        </div>
+        <div class="addressBlock">
+            <ul>
+                <li>
+                    <label for="address">Address:</label>
+                    <input type="text" class="name n4" name="address" placeholder="Enter your address"
+                </li>
+                <li>
+                    <label for="country">Country:</label>
+                    <select class="name n5" name="country" >
+                        <option value="ind">India</option>
+                        <option value="us">USA</option>
+                        <option value="ild">Ireland</option>
+                        <option value="uk">UK</option>
+                        <option value="aus">Australia</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+       </div>
+       <!--Education Details-->
+       <div class="educationDetailBlock">
+        <div class="educationDetailDiv"><h2>Education Details</h2></div>
+        <ul>
+            <li>
+                <label for="qualification">Qualification:</label>
+                <select class="name n6" name="qualification">
+                    <option value="bt">B.Tech</option>
+                    <option value="deg">Degree</option>
+                    <option value="inter">Intermediate</option>
+                    <option value="ssc">SSC</option>
+                </select>
+            </li>
+            <li>
+                <label for="language">Language:</label>
+                <span class="name n7">
+                <input type="checkbox" name="eng">English
+                <input type="checkbox" name="hin">Hindi
+                <input type="checkbox" name="tel">Telugu</span>
+            </li>
+            <li>
+                <label for="CourseOpted">CourseOpted:</label>
+                <span class="name n8">
+                <input type="radio" name="ms">MS
+                <input type="radio" name="mba">MBA
+                <input type="radio" name="mca">MCA
+                <input type="radio" name="m.tech">M.Tech</span>
+            </li>
+        </ul>
+       </div>
+       <!--about yourself-->
+       <div class="thirdBlock">
+        <div class="abouturself"><h2>About Yourself</h2></div>
+        <ul>
+            <li>
+                 <label for="fewWords">Few Words about yourself:</label>
+                 <span class="name n9">
+                 <textarea name="fewWords" placeholder="Enter few words about yourself" cols="100" rows="8"></textarea></span>
+            </li>
+        </ul>
+       </div>
+       <input type="submit" class="reg det" value="Register details">
+    </div>
+    <h3>@copy right 2023</h3>
+    </form>
+</body>
+</html>

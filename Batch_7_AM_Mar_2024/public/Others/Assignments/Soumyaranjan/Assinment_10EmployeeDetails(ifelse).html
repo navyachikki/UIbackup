@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmployeeDetails tax</title>
+</head>
+
+<body>
+    <script>
+        var tax;
+        var gender;
+        var empname = prompt("Enter empname:");
+        var empage = prompt("Enter Age:");
+        var empgender = prompt("Enter gender:");
+        var empdept = prompt("Enter Dept:");
+        var empbasicsal = prompt("Enter basicsal");
+        var empbasicsal = parseInt(empbasicsal);
+        var pf = (empbasicsal * 14) / 100;
+        var hra = (empbasicsal * 24) / 100;
+
+        var emptotalsal = empbasicsal + pf + hra;
+
+        if(gender=="male")
+        {
+            if (emptotalsal >= 200000)
+             {
+                tax = (emptotalsal * 15) / 100;
+                console.log("tax rate is 15%");
+
+            }
+            else if (emptotalsal >= 100000)
+             {
+                tax = (emptotalsal * 10) / 100;
+                console.log("tax rate is 10%");
+            }
+            else if (emptotalsal >= 50000)
+            {
+                tax = (emptotalsal * 5) / 100;
+                console.log("tax rate is 5%");
+            }
+            else {
+                tax = 0;
+            }
+        }
+        else (gender == "female")
+        {
+            if (emptotalsal >= 200000) {
+                tax = (emptotalsal * 10) / 100;
+                console.log("tax rate is 10%");
+            }
+            else if (emptotalsal >= 100000) {
+                tax = (emptotalsal * 5) / 100;
+                console.log("tax rate is 5%");
+            }
+            else {
+                tax = 0;
+            }
+        }
+
+      console.log("empname:");
+      console.log("enter age:" + empage);
+      console.log("enter gender:" + empgender);
+      console.log("enter dept:" + empdept);
+      console.log("enter basicsal:" + empbasicsal);
+      console.log("enter pf:" + pf);
+      console.log("enter hra:" + hra);
+      console.log("total salary:" + emptotalsal);
+      console.log("tax rate:" + tax);
+
+    </script>
+</body>
+
+</html>

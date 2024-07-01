@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var aname, sage, agender, m1, m2, m3;
+    
+        sName = 'Raja';
+        sAge = 25;
+        sGender = 'Male';
+        sDepartment = 'Science';
+        sBasicsalary = 60000;
+        
+    
+        var totalsalary, hra, pf;
+        pf = 13/100 * sBasicsalary;
+        hra = 25/100 * sBasicsalary;
+        totalsalary = hra + sBasicsalary + pf;
+    
+        console.log("Employee Details");
+        console.log("Employee name " + sName);
+        console.log("Employee Age " + sAge);
+        console.log("Employee Gender " + sGender);
+        console.log("Employee Department " + sDepartment); 
+        console.log("pf is " + pf);
+        console.log("hra is " + hra);
+        console.log("totalsalary is " + totalsalary);
+    
+        if (totalsalary >= 60000) {
+            console.log("Your salary is good");
+        }
+       
+        if (totalsalary < 60000) {
+            console.log("Your salary is lower than other employees");
+        }
+        
+    </script>
+</body>
+</html>

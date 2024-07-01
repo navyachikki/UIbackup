@@ -1,0 +1,20 @@
+Static:
+    onclick
+    onfocus
+    onchange
+    ....
+Dynamic even handling
+    addEventListener     
+
+
+Syntax:
+
+    element.addEventListener("type of event", callback method)
+
+    --------------
+    <li onclick="..."></li>
+    
+    var spantag = document.createElement("li");
+
+
+Jquery JS Lib : 

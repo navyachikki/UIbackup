@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functional Demo</title>
+  </head>
+  <body>
+    <h2>Functional Dispaly the Employee data</h2>
+    <script>
+      var empname, empage, empgender, empbasicSal;
+      var  epf, hra, etotalsalary, etotaltax;
+
+      function readEmpData(){
+        empname = prompt("Enter Name");
+        empgender = prompt("Enter Gender");
+        empage = parseInt(prompt("Enter Age"));
+        empbasicSal = parseInt(prompt("Enter Basic Salary"));
+        getTotalSalary();
+      }
+      
+      function getTotalSalary() {
+        hra = (empbasicSal * 18) / 100;
+        epf = (empbasicSal * 12) / 100;
+        etotalsalary = empbasicSal + hra + epf;
+        getTotalTax();
+      }
+
+      function getTotalTax(){
+        var totalpercentage = 0;
+
+        if (empgender == "male") {
+          if(etotalsalary >= 200000){
+            totalpercentage = 10;
+          }else{
+            totalpercentage = 5;
+          }
+      } else {
+        if(etotalsalary >= 200000){
+            totalpercentage = 5;
+          }else{
+            totalpercentage = 1;
+          }
+      }
+      etotaltax = (etotalsalary * totalpercentage) / 100;
+      console.log("Your total percentage", totalpercentage);
+      }
+
+     function getDisplayDetails(){
+      readEmpData();
+      console.log("Employee Name:" + empname);
+      console.log("Employee Age:" + empage);
+      console.log("Employee Gender: " + empgender);
+
+      console.log("Employee Basic salary:" + empbasicSal);
+      console.log("Employee Total Salary:" + etotalsalary);
+      console.log("Your total Tax", etotaltax);
+     }
+     getDisplayDetails();
+   
+    </script>
+  </body>
+</html>

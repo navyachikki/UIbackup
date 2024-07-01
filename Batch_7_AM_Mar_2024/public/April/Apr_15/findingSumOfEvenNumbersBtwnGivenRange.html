@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var startPoint = prompt("enter start range");
+            startPoint = parseInt(startPoint);
+
+            var endPoint = prompt("enter end point");
+            endPoint = parseInt(endPoint);
+            var sum = 0;
+            for (var i = startPoint; i <= endPoint; i++) {
+                if (i % 2 == 0) {
+                    sum = sum + i;
+                }
+            }
+            console.log(sum);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculate Total Number Of Digits</title>
+        <style>
+            h1, p {
+                text-align: center;
+                margin: 5px;
+                padding: 5px;
+            }
+            p {
+                font-size: 20px;
+                margin-top: 30px;
+            }
+            span {
+                color: blue;
+                font-size: 25px;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Calculate Total Number Of Digits - While Loop C.S. - JavaScript</h1>
+            <p>For More Information Please See <span>Console</span> Tab In <span>Inspect Element</span> !</p>
+            <p>View Source Code For Better Understanding</p>
+        </div>
+        <script>
+            var input = parseInt(prompt("Enter Number"));
+            var sum = 0;
+            while (input > 0) {
+                var rem = input % 10;
+                if (rem !== 0 || rem == 0){
+                    var rem = 1;
+                }
+                sum = rem + sum;
+                input = parseInt(input / 10)
+            }
+
+            console.log("Total Number Of Digits : " + sum);
+            alert("Total Number Of Digits : " + sum)
+        </script>
+    </body>
+</html>

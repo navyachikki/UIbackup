@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+
+        var calculateEmployeePf = (basicSalary) => {
+            return (basicSalary * 14) / 100;
+        }
+
+        var calculateEmployeeHra = (basicSalary) => {
+            return (basicSalary * 24) / 100;
+        }
+
+        var calculateEmpTotalSalary = (basicSalary, pf, hra) => {
+            return parseFloat(basicSalary)  + pf + hra;
+        }
+
+        var displayEmployeeDetails = (name, age, gender, department, basicSalary, pf, hra, totalSalary) => {
+            alert(
+                "Employee Name: "+name+
+                "\nEmployee Age: "+age+
+                "\nEmployee Gender: "+gender+
+                "\nEmployee Department: "+department+
+                "\nEmployee Basic Salary: "+basicSalary+
+                "\nEmployee PF: "+pf+
+                "\nEmployee HRA: "+hra+
+                "\nEmployee Total Salary: "+totalSalary
+            )
+        } 
+
+        employeeDetails()
+
+        function employeeDetails() {
+            var empName, empAge, empGender, empDepartment, empBasicSalary, empPf, empHra, empTotalSalary;
+
+            // Read Employee details
+            empName = prompt("Enter employee name");
+            empAge = prompt("Enter employee age");
+            empGender = prompt("Enter employee gender");
+            empDepartment = prompt("Enter employee department");
+            empBasicSalary = prompt("Enter employee Basic Salary");
+
+            //Calculate employee PF
+            empPf = calculateEmployeePf(empBasicSalary)
+
+            //Calculate employee HRA
+            empHra = calculateEmployeeHra(empBasicSalary)
+
+            //Calculate Total Salary
+            empTotalSalary = calculateEmpTotalSalary(empBasicSalary, empPf, empHra)
+
+            //Display details
+            displayEmployeeDetails(empName, empAge, empGender, empDepartment, empBasicSalary, empPf, empHra, empTotalSalary)
+        }
+    </script>
+</body>
+</html>

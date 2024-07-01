@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Map DS
+        </title>
+    </head>
+    <body>
+        <script>
+            var m1 = new Map(); // var m1 = {}, var m1 = new Object()
+            m1.set("uname", "Raj");
+            m1.set("age", 20);
+            m1.set("gender", 'Male');
+
+            console.log(m1);
+
+            m1.delete("uname"); 
+            console.log(m1.size);
+
+            for(var [key, value] of m1) {
+                console.log(key)
+                console.log(value)
+            }
+            // for, while, dowhile, for in, for of, foreach
+        </script> 
+    </body>
+</html>

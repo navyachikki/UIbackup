@@ -1,0 +1,40 @@
+.header {
+    text-align: center;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.productDetailsContainer > li {
+    width: 220px;   
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid goldenrod;
+    list-style: none;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+}
+.singleProduct li {
+    border-bottom: 1px solid orange;
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+}
+.singleProduct {
+    margin: 5px;
+    padding: 5px;
+}
+.actualPrice {
+    color: orange;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-line: line-through;
+}
+
+.discountedPrice {
+    font-weight: bold;
+    color: green;
+}

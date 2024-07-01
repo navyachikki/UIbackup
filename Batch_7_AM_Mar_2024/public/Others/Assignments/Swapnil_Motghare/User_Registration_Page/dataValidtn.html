@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Page</title>
+    <script src="dataValidtn.js"></script>
+    <link rel="stylesheet" href="dataValidtn.css">
+</head>
+
+<body>
+
+    <h1> User Registration Page</h1>
+    <ul class="innercontent">
+        <li>
+            <input type="text" id="accountId" placeholder="Account Id" onkeypress="return validateSpace(event)"
+                maxlength="10">
+            <div class="idErr error">
+                Please enter Id
+            </div>
+        </li>
+
+        <li>
+            <input type="password" class="passwrd" id="setpwd" placeholder="Set Account password" maxlength="8"
+                onkeypress="return validatnList(event)"  onkeyup=" return validateUserPwd(event)">
+
+            <input type="checkbox" onchange="showPwd(event)">Show Password
+            <div class="pwdErr error">
+                Please enter password
+            </div>
+        </li>
+
+        <li>
+            <input type="password" class="passwrd" id="confirmpwd" placeholder="Re Enter Password " maxlength="8" >
+
+            <div class="passErr error">
+                Please confirm password
+            </div>
+        </li>
+
+        <li>
+            <input type="text" id="mailId" placeholder="Mail Id">
+            <div class="mailErr error">
+                Please enter mail Id
+            </div>
+        </li>
+
+        <li>
+            <input type="button" value="REGISTER" id="btn" onclick="registerUser()">
+        </li>
+
+    </ul>
+    <div class="registrationMsg">
+        Registration Successful
+    </div>
+
+    <div class="pwdValidtn">
+        <ol>
+            <li id="pwdLength">
+                Max and min length of password is 8
+            </li>
+            <li id="uppercaseValidator">
+                Password should only start with uppercase
+            </li>
+            <li id="specialSymbolvalidation">
+                password should have minimum and maximum 1 special character ^#@&
+            </li>
+            <li id="numericValidation">
+                password should have minimum one numeric value
+            </li>
+            <li id="spaceValidation" class="PassValidDisplay">
+                accountId should not contain any space
+            </li>
+        </ol>
+    </div>
+
+</body>
+
+</html>

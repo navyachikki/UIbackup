@@ -1,0 +1,33 @@
+for each :
+
+    Syntax:
+
+        <arrayname>.forEach(element => {
+                
+            });
+
+-----------
+
+let var 
+
+const 
+
+    const max = 1000;
+
+------------
+
+... -> REST operator
+... -> spread operator
+
+function (a, b, ...c) {
+
+}
+
+-----------------
+
+ECMA - new set of methods to be applied on array 
+    map 
+    filter
+    find 
+    findindex
+    sort

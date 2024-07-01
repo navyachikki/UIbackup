@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "app.dataval.css">
+  <script src = "app.dataval.js"></script>
+</head>
+<body>
+    <div class="tittle">
+        <h2>User Registration Page</h2>
+    </div>
+    <ul>
+        <li>
+            <input type="text" placeholder="Account id"  id="userId" onkeypress="return validationspace(event)" maxlength="10">
+            <div class=" error idError">
+                User cannot be empty
+            </div>
+        </li>
+        <li>
+           <input type="number" placeholder="setAccountPassword" id="Password" onkeypress="showvalidationlist(event)" maxlength="8" onkeyup="validateuserpwd(event)">
+           <input type="checkbox" onchange="changetexttype(event)">Show password
+        </li>
+        <li>
+            <input type="number" placeholder="reEnterPassword" id="reEnterPassword" onkeypress="showvalidationlist(event)" maxlength="8">
+        </li>
+        <li>
+            <input type="text" placeholder="userMailId" id="Mail" >
+        </li>
+        <li>
+            <input type="button" value="do register" onclick="registeruser()">
+        </li>
+    </ul>
+
+    <div class = "msg">
+          User got successfully Registered
+    </div>
+
+    <div class="pwdvalidationlis">
+        <ol>
+            <li id="lengthValidation">
+                max and min length of password is 8
+            </li>
+
+            <li id="upperCaseChar">
+                 password should always start with Uppercase
+            </li>
+
+            <li id="specialSymbolValidation">
+                password should must have min and max one special symbol ^#@&
+            </li>
+
+            <li id="minOneNumeric">
+                 should have one numeric
+            </li>
+
+            <li id="notContainSpace">
+                should not contain space
+            </li>
+        </ol>
+
+
+    </div>
+</body>
+</html

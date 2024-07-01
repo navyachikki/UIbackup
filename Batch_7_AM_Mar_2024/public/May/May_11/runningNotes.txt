@@ -1,0 +1,43 @@
+Syntax: axios method     
+     
+      axios.get('url')
+        .then(function (response) {
+            // handle success
+            console.log(response);
+        }).catch(function (error) {
+            // handle error
+            console.log(error);
+        }).finally(function () {
+            // always executed
+        });
+
+
+CORS - Cross Orign Resource Sharing .
+
+http://localhost:8082/May_11/ProductDetails_Dynamic/dynamicProductDetails.html
+
+http://localhost:8082/get/productDetails
+
+---
+file:///E:/UI_FullstackTraining/UIClasses/Batch_7_AM_Mar_2024/public/May_11/ProductDetails_Dynamic/dynamicProductDetails.html
+
+http://localhost:8082/get/productDetails
+----------------
+
+http://amazon.com/details 
+
+http://localhost:8082/May_11/ProductDetails_Dynamic/dynamicProductDetails.html
+
+--------------
+
+file:///E:/UI_FullstackTraining/UIClasses/Batch_7_AM_Mar_2024/public/May_10/ajaxCallDemo.html
+
+https://fakestoreapi.com/products/1
+
+--------
+
+abc.com/get/forestinfo
+
+pqr.com/index.html 
+
+abc.com/get/forestinfo

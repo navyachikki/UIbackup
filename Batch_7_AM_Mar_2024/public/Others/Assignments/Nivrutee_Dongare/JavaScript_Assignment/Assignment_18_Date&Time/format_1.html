@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date simple format</title>
+</head>
+<body>
+    <script>
+        // for current date and time
+        let today = new Date();
+        console.log(today);
+
+        let dayName = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+        let monthName = ["jan","feb","march","april","may","june","july","aug","sep","out","nov","dec"];
+
+        let todayDate = new Date("07 May 2024");
+        let dayIndex = todayDate.getDay();
+
+        let day  = dayName[dayIndex];
+        let monthIndex = todayDate.getMonth();
+        let month = monthName[monthIndex];
+
+        let format1 = day + ", " + todayDate.getDate() + "th " + todayDate.getFullYear();
+
+        console.log(format1);
+
+        //
+        let myDate = new Date();
+        let mont = myDate.getDate();
+        let dayy = myDate.getFullYear();
+        console.log(dayy);
+        console.log(mont);
+
+    </script>
+</body>
+</html>

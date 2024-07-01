@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Java script prime numbers </title>
+    </head>
+    <body>
+        <script>
+             var employeeId, employeeName, employeeGender, Department, basicSal, pf, hra, totalSalary, tax;
+              employeeId = prompt("employee_Id :");
+              employeeName = prompt("employee Name :");
+              employeeGender = prompt("employeeGender");
+              Department = prompt("Department");
+              basicSal = prompt ("basicSal");
+              basicSal = parseInt(basicSal);
+              pf = (15 * basicSal) /100
+              hra = (15 * basicSal) /100
+              totalSalary = pf + hra + basicSal;
+              
+             
+
+
+              console.log ("employee Id" + employeeId);
+              console.log ("employee Name " + employeeName);
+              console.log ("employee Gender = " + employeeGender);
+              console.log("Department = " + Department);
+              console.log ("basicSal = " + basicSal);
+              console.log ("pf " + pf);
+              console.log ("hra" + hra);
+              console.log ("totalSalary"  + totalSalary);
+              
+
+              if(employeeGender = 'male') {
+                 console.log("employeeGender");
+                    if (totalSalary > 600000){
+                         tax = totalSalary * 0.20
+                         console.log ( "you have to pay " + tax);
+                    } else if (totalSalary > 300000){
+                        tax = totalSalary * 0.15
+                        console.log("you have to pay " + tax);
+                    } else if (totalSalary > 200000){
+                        tax = totalSalary * 0.10
+                        console.log ("you have to pay " + tax);
+                    }
+                        
+                } 
+                  else {
+                  console.log (" you dont need to pay tax ");
+            
+               } if (employeeGender = 'female') {
+                       console.log ("employeeGender");
+                       if (totalSalary > 500000) {
+                        tax = totalSalary * 0.15
+                          console.log ("you have to pay " + tax);
+                      } else if (totalSalary > 300000){
+                         tax = totalSalary * 0.10
+                            console.log ("you have to pay " + tax);
+                      }
+
+               }
+               else {
+                console.log (" you don't need to pay tax ");
+               }
+
+
+
+</script>
+     </body>
+        </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

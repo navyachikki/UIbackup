@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var collectData = () =>{
+        var name=prompt("the employer name");
+        var age=prompt("the employer age");
+                age=parseInt(age);
+        var gender=prompt("the employer gender");
+        var department=prompt("the employer department");
+        var basicsalary=prompt("the employer basicsalary");
+               basicsalary=parseInt(basicsalary);
+
+               var  pf = ( 14*basicsalary )/ 100;
+               var hra = ( 24*basicsalary )/ 100;
+
+               var total =  pf + hra + basicsalary;
+                showdata( name, age, gender, department, basicsalary, pf, hra, total);
+         }    
+                var showdata = ( name, age, gender, department, basicsalary, pf, hra, total) =>{
+               console.log("the employer details ");
+               console.log("the employer name is" + name);
+               console.log("the employer age is" + age);
+               console.log("the employer gender is" + gender);
+               console.log("the employer department is" + department);
+               console.log("the employer basic salary is" + basicsalary);
+               console.log("the employer pf is" + pf);
+               console.log("the employer hra is" + hra);
+               console.log("the employer total is" + total);
+               }
+               collectData();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var readvalue = [];
+        var length = parseInt(prompt(" enter the lenght of an array "));
+        for(i = 0; i <length; i++){
+            readvalue[i] = parseInt(prompt(" enetr the avlue for ana arrray"));
+
+        }
+        console.log(readvalue);
+        for(j =0 ; j<readvalue.length; j++){
+            if(readvalue[j]% 2 == 0){
+                console.log(readvalue[j]+" this no is even ");
+
+            }else{
+                console.log( readvalue[j]+" this is odd no ");
+            }
+
+        }        
+    </script>
+</body>
+</html>

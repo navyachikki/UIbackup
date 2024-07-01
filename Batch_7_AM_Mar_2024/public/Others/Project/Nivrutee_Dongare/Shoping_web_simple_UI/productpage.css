@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    background-color: rgb(232, 240, 247);
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    padding: 10px;
+
+}
+
+.header h2 {
+    display: inline-block;
+    margin-right: 100px;
+    margin-left: 80px;
+    color: #1877f2;
+
+}
+
+span {
+    margin-right: 30px;
+
+}
+
+.navlist {
+    display: inline;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+span:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+    font-weight: 500;
+}
+.header input {
+    width: 400px;
+    height: 40px;
+    margin-left: 20px;
+    border: 1px solid aliceblue;
+    background-color: aliceblue;
+    border-radius: 5px;
+    text-align: center;
+    font-size: large;
+
+}
+
+.header button {
+    margin: 5px;
+    height: 40px;
+    width: 80px;
+    color: white;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+}
+
+.main {
+    width: 100%;
+    height: 580px;
+}
+
+.left {
+    width: 300px;
+    background-color: white;
+    border: 1px solid aliceblue;
+    height: 560px;
+    margin: 5px;
+    float: left;
+
+}
+
+.right {
+    width: 940px;
+    background-color: white;
+    border: 1px solid aliceblue;
+    height: 560px;
+    margin: 5px;
+    float: left;
+    overflow: auto;
+}
+
+.slider img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.left li {
+    text-align: start;
+    margin: 10px;
+    list-style: none;
+    padding: 10px;
+}
+
+.left li:hover{
+    background-color: aliceblue;
+    font-size: large;
+}
+
+.card{
+    width: 200px;
+    height: 300px;
+    border: 1px solid rgb(225, 230, 235);
+    background-color: white;
+    margin: 10px;
+    text-align: center;
+    float: left;
+}
+
+.card img {
+    height: 180px;
+    width: 180px;
+    margin: 10px;
+}
+
+.card h5 {
+    opacity:0.6;
+}

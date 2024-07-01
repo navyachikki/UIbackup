@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ASSIGNMENT-17-Q5</title>
+    </head>
+    <body>
+        <script>
+            var str = prompt("Enter Your Word");
+            str = str.toLowerCase();
+            var first = 0, last = str.length-1;
+            var palin = false;
+            while(first < last){
+                if(str[first] == str[last]){
+                    first++;
+                    last--;
+                    palin = true;
+                }
+                else{
+                    palin = false;
+                    break;
+                }
+            }
+            if(palin = true){
+                    console.log(str);
+                    console.log("It Is A Palindrome String");
+                }
+                else{
+                    console.log(str);
+                    console.log("It Is A Palindrome String");
+                }
+        </script>
+    </body>
+</html>

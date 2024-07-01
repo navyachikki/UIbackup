@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ename=prompt("the employer name");
+        var eage=prompt("the employer age");
+                eage=parseInt(eage);
+        var egender=prompt("the employer gender");
+        var edepartment=prompt("the employer department");
+        var ebasicsalary=prompt("the employer basicsalary");
+               ebasicsalary=parseInt(ebasicsalary);
+
+           var pf = ( 14 * ebasicsalary )/ 100;
+           var hra = ( 24 * ebasicsalary )/ 100;
+
+               var total =  pf + hra + ebasicsalary;
+               
+               
+               
+               console.log("the employer details ");
+               console.log("the employer name is" + ename);
+               console.log("the employer age is" + eage);
+               console.log("the employer gender is" + egender);
+               console.log("the employer department is" + edepartment);
+               console.log("the employer basic salary is" + ebasicsalary);
+               console.log("the employer pf is" + pf);
+               console.log("the employer hra is" + hra);
+               console.log("the employer total is" + total);
+
+           
+    </script>
+</body>
+</html>

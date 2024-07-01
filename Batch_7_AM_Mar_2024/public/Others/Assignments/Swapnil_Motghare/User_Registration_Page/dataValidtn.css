@@ -1,0 +1,77 @@
+h1 {
+  margin-left: 363px;
+  color: rgb(255, 22, 69);
+}
+
+ul {
+  border: 2px solid black;
+  padding: 20px;
+  margin: 10px auto;
+  width: 500px;
+  margin-left: 262px;
+}
+
+ul li {
+  list-style-type: none;
+  border: 2px solid rgb(161, 49, 8);
+  padding: 20px;
+  margin: 10px auto;
+  width: 450px;
+  background-color: darkseagreen;
+}
+
+/* .innercontent{
+  
+    margin-left: 260px;
+    background-color: rgb(251, 251, 251);
+    margin: 10px auto;
+    padding: 13px;
+} */
+
+#btn {
+  background-color: rgb(195, 133, 253);
+  width: 100px;
+  height: 35px;
+}
+
+.registrationMsg {
+  color: green;
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center;
+  display: none;
+}
+
+.error {
+  color: red;
+  margin-top: 3px;
+  display: none;
+}
+
+.mailErr {
+  color: red;
+  margin-top: 3px;
+  display: none;
+}
+
+.pwdValidtn {
+  border: 0px;
+  position: absolute;
+  top: 120px;
+  left: 818px;
+  border: 1px solid black;
+  width: 394px;
+  color: red;
+}
+
+.validated {
+  font-weight: bold;
+  color: green !important;
+  
+}
+
+.notvalid
+{
+
+  color: red !important;
+}

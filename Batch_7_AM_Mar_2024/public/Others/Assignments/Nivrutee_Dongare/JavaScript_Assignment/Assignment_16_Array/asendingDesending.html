@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort given array in asending order and desending order</title>
+</head>
+<body>
+    <script>
+        let arr = [2,5,2,7,3,1,9,22,44];
+        let ans = " "
+        for(let i=0; i<arr.length; i++){
+            for(let j=i+1; j<arr.length; j++){
+                if(arr[i] > arr[j]){
+                    let temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+            
+        }
+        for(let i=0; i<arr.length; i++){
+            ans = ans + arr[i] + ' ';
+        }
+
+        console.log("Asending order",ans);
+        
+    </script>
+    <script>
+        let arr1 = [33,2,55,32,66,99,2,3,5];
+        let end = ' ';
+
+        for(let i=0; i<arr1.length; i++){
+            for(let j=0; j<arr1.length; j++){
+                if(arr1[i] > arr1[j]){
+                    let temp = arr1[i];
+                    arr1[i] = arr1[j];
+                    arr1[j]  = temp;
+                }
+            }
+        }
+        for(let i=0; i<arr1.length; i++){
+            end = end + arr1[i] + ' ';
+        }
+        console.log("Desending order", end);
+    </script>
+</body>
+</html>

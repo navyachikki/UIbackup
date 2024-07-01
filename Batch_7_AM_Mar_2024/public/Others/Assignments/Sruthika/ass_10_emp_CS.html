@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var ename = prompt("Enter Emp name");
+      var eage = prompt("Enter Emp Age");
+      var gender = prompt("Enter Emp Gender");
+      var basicSal = prompt("Enter the Basic Salary");
+      basicSal = parseInt(basicSal);
+      pf = (basicSal * 14) / 100;
+      hra = (basicSal * 24) / 100;
+      var totalSal = pf + hra + basicSal;
+
+      console.log("Emp Name :" + ename);
+      console.log("Emp Age :" + eage);
+      console.log("Emp Gender :" + gender);
+      console.log("Emp Basic Salary :" + basicSal);
+      console.log("The Total Salary : " + totalSal);
+      var tax;
+      if (gender === "male") {
+        if (totalSal >= 200000) {
+          tax = (totalSal * 15) / 100;
+        } else if (totalSal >= 100000) {
+          tax = (totalSal * 10) / 100;
+        } else if (totalSal >= 50000) {
+          tax = (totalSal * 5) / 100;
+        } else {
+          tax = 0;
+        }
+      } else {
+        if (gender === "female") {
+          if (totalSal >= 200000) {
+            tax = (totalSal * 10) / 100;
+          } else if (totalSal >= 100000) {
+            tax = (totalSal * 5) / 100;
+          } else {
+            tax = 0;
+          }
+        }
+      }
+      console.log("The Tax should be paid is : " + tax);
+    </script>
+  </body>
+</html>

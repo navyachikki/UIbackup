@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var employee = []; // Array to store employee details: [name, age, gender, bassal, Pf, Hra, TotalSal, tax]
+
+function readEmployeeData() {
+    employee[0] = prompt("Enter Employee Name");
+    employee[1] = prompt("Enter Emp. Age");
+    employee[2] = prompt("Enter Gender");
+    employee[3] = prompt("Enter Basic Salary");
+    employee[3] = parseInt(employee[3]);
+}
+
+function getTotalSal() {
+    employee[4] = (14 * employee[3] / 100); // PF
+    employee[5] = (24 * employee[3] / 100); // HRA
+    employee[6] = (employee[4] + employee[5] + employee[3]); // TotalSal
+}
+
+function calculateTax() {
+    if (employee[2].toLowerCase() === 'male') {
+        if (employee[6] >= 200000) {
+            employee[7] = employee[6] * 15 / 100;
+        } else if (employee[6] >= 100000) {
+            employee[7] = employee[6] * 10 / 100;
+        } else if (employee[6] >= 50000) {
+            employee[7] = employee[6] * 5 / 100;
+        } else {
+            employee[7] = 0;
+        }
+    } else if (employee[2].toLowerCase() === 'female') {
+        if (employee[6] >= 200000) {
+            employee[7] = employee[6] * 10 / 100;
+        } else if (employee[6] >= 100000) {
+            employee[7] = employee[6] * 5 / 100;
+        } else {
+            employee[7] = 0;
+        }
+    }
+}
+
+function displayEmployeeDetails() {
+    console.log("Employee Details");
+    console.log("Name = " + employee[0]);
+    console.log("Age = " + employee[1]);
+    console.log("Gender = " + employee[2]);
+    console.log("Basic Salary = " + employee[3]);
+    console.log("Provident Fund = " + employee[4]);
+    console.log("House Rent Allowance = " + employee[5]);
+    console.log("Total Salary is " + employee[6]);
+    console.log("Tax = " + employee[7]);
+}
+
+readEmployeeData();
+getTotalSal();
+calculateTax();
+displayEmployeeDetails();
+
+    </script>
+</body>
+</html>

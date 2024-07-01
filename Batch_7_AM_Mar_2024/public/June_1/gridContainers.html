@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Flex box/containers
+        </title>
+        <style>
+            .container {
+                border: 1px solid;
+                height: 600px;
+                
+                background-color: aquamarine;
+                display: grid;
+                grid-template-columns: 100px 200px auto;
+                grid-template-rows: 50px auto 50px;
+                /* justify-content:center;
+                align-content: center; */
+                /* row-gap: 20px;column-gap: 30px; */
+                gap: 20px 40px;
+                
+            }
+            .container div {
+                border: 1px solid;
+                padding: 10px;
+                background-color: blue;
+                color: #fff;
+                
+                
+            }
+
+            .itemItem {
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+
+            .leftBlock {
+                grid-column: 1/3;
+            }
+            .footer {
+                grid-column: 1/4;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+           <div class="itemItem">Title</div>
+           <div class="leftBlock"> Left</div>
+           <div>Right</div>
+        
+           <div class="footer">Footer</div>
+          
+          
+        </div>
+        
+    </body>
+</html>

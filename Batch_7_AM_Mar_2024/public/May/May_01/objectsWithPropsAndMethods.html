@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var userData = {
+                a1: 90,
+                a2: 99,
+                result: 0,
+                findSum() {
+                    userData.result = userData.a1 + userData.a2;
+                    userData.displayData();
+                },
+                displayData() {
+                    console.log("the sum is " + userData.result);
+                }
+            }
+
+            userData.findSum();
+        </script>
+    </body>
+</html>

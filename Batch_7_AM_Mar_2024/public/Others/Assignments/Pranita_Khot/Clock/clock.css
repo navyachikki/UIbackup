@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clock-frame {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 20px solid #27ccdc;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.Brand-Name {
+    font-size: 25px;
+    font-weight: bolder;
+    color: #011517;
+    position: absolute;
+    top: 90px;
+    left: 42.5%;
+}
+
+.point {
+    width: 20px;
+    height: 20px;
+    background-color: #011517;
+    border-radius: 50%;
+    position: absolute;
+    top: 240px;
+    left: 240px;
+}
+
+.Hour {
+    font-size: 30px;
+    font-weight: bold;
+    color: #011517;
+    position: absolute;
+}
+
+.Hour-1 {
+    top: 40px;
+    right: 130px;
+}
+
+
+.Hour-2 {
+    top: 125px;
+    right: 40px;
+}
+
+.Hour-3 {
+    top: 235px;
+    right: 10px;
+}
+
+.Hour-4 {
+    top: 345px;
+    right: 45px;
+}
+
+.Hour-5 {
+    top: 430px;
+    right: 130px;
+}
+
+.Hour-6 {
+    bottom: 10px;
+    left: 240px;
+}
+
+.Hour-7 {
+    top: 430px;
+    left: 130px;
+}
+
+
+.Hour-8 {
+    top: 345px;
+    left: 45px;
+}
+
+.Hour-9 {
+    top: 235px;
+    left: 10px;
+}
+
+.Hour-10 {
+    top: 125px;
+    left: 45px;
+}
+
+.Hour-11 {
+    top: 40px;
+    left: 130px;
+}
+
+.Hour-12 {
+    top: 10px;
+    left: 235px;
+}
+
+#Hour, #Minute, #Second {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#Hour {
+    width: 3%;
+    height: 29%;
+    top: 21%;
+    left: 48.6%;
+}
+
+#Minute {
+    width: 2%;
+    height: 35%;
+    top: 15%;
+    left: 49%;
+}
+
+#Second {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.5%;
+}

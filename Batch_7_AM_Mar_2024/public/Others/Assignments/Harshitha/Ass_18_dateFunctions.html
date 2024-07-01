@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date functions</title>
+</head>
+<body>
+    <script>
+        var monthsName = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+        var daysName = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        var currentDate=new Date();
+
+        var currDate=currentDate.getDate();
+        var currDate=currDate%10;
+
+        if(currDate ==1){
+            currDate+='st';
+        }
+        if(currDate==2){
+            currDate+='nd';
+        }
+        if(currDate==3){
+            currDate+='rd';
+        }else{
+            currDate+='th';
+        }
+
+        //Todays date extract
+        console.log("today date is:",currDate);
+        //sun may 8th 2024 
+        var monthIndex=currentDate.getMonth();
+        var daysIndex=currentDate.getDay();
+        console.log(daysName[daysIndex]+','+monthsName[monthIndex]+','+currDate+''+currentDate.getFullYear());
+
+        console.log(monthsName[monthIndex]+','+currDate+''+daysName[daysIndex]+','+currentDate.getFullYear());
+    </script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Progress Card Generator</title>
+    <style>
+
+         
+    h3 {
+        text-align: center;
+        border: 1px solid;
+        margin: 10px auto;
+        padding: 10px;
+        width: 670px;
+        background-color:  rgb(207, 233, 191);
+        font-weight: bold;
+    }
+    ul {
+        width: 670px;
+        border: 1px solid;
+        margin: 10px auto;
+        padding: 10px;
+        list-style: none;
+        background-color:  rgb(207, 233, 191);
+    }
+    li {
+        border: 1px solid;
+        margin: 10px auto;
+        padding: 10px;
+        background-color:  rgb(219, 226, 225);
+        font-weight: bold;
+        width: 600px;
+    }
+    #marksLi > input[type=text] {
+        width: 60px;
+    }
+
+    span {
+        font-weight: bold;
+        color: rgb(24, 10, 104);
+    }
+    
+    .title {
+        text-align: center;
+        font-size: 16px;
+        color: rgb(187, 146, 48);
+    }
+
+    .progtable {
+        display: none;
+    }
+
+    .error {
+        color: red;
+        font-size: 12px;
+        display: none;
+    }
+
+    .astric {
+        color: red;
+        position: relative;
+        top: 0px;
+        left: -1px;
+    }
+    </style>
+</head>
+<body>
+    <h3>Student Progress Card Generator</h3>
+    <ul>
+        <li>
+            <input type = "text" placeholder = "Student First Name" id = "studName"> <span class = "astric">*</span>
+            <div class = "nameCompValidation error">
+                First Name is Mandatery 
+            </div>
+        </li>
+
+       <li>
+            <input type = "text" placeholder = "Student Last Name" id = "studName"> <span class = "astric">*</span>
+            <div class = "nameCompValidation error">
+                Second Name is Mandatery 
+            </div>
+        </li>
+        <li>
+            <input type = "text" placeholder = "Student Age" id = "studAge" maxlength="3" onKeyPress="return validateNumber(event)"> <span class = "astric">*</span>
+            <div class = "ageCompValidation error">
+                Age is Mandatery
+            </div>
+        </li>
+        <li>
+            Gender :
+            <input type = "radio" value = "Male" name = "gender" checked> Male
+            <input type = "radio" value = "Female" name = "gender"> Female
+        </li>
+        <li>
+            <select id = "StudClass">
+                <option selected>Select Student Class</option>
+                <option value="Class I"> Class I</option>
+                <option value="Class II"> Class II</option>
+                <option value="Class III"> Class III</option>
+                <option value="Class IV"> Class IV</option>
+                <option value="Class V"> Class V</option>
+            </select>
+        </li>
+        <li id = "marksLi">
+            <input type = "text" placeholder = "Subject 1" id = "m1" maxlength="3" onKeyPress="return validateNumber(event)">
+            <input type = "text" placeholder = "Subject 2" id = "m2" maxlength="3" onKeyPress="return validateNumber(event)">
+            <input type = "text" placeholder = "Subject 3" id = "m3" maxlength="3" onKeyPress="return validateNumber(event)">
+            <input type = "text" placeholder = "Subject 4" id = "m4" maxlength="3" onKeyPress="return validateNumber(event)">
+            <input type = "text" placeholder = "Subject 5" id = "m5" maxlength="3" onKeyPress="return validateNumber(event)"><span class = "astric"></span>
+            <div class = "marksCompValidation error">
+                All 5 Subjects Marks are Mandatery
+            </div>
+        </li> 
+        <li>
+            <input type = "button" value = "Genrate Progress Card" onclick="studentDtls.ReadstudDtls()">
+        </li>
+    </ul>    
+  
+    <ul class = "progtable">
+        <li class = "title">
+            Student Progress Card
+        </li>
+        <li>
+            Student Name: <span id = "dspName"></span>
+        </li>
+        <li>
+            Student Age: <span id = "dspAge"></span>
+        </li>
+        <li>
+            Student Gender: <span id = "dspGender"></span>
+        </li>
+        <li>
+            Student Class: <span id = "dspClass"></span>
+        </li>
+        <li>
+            Student Total Marks: <span id = "dsptotalMarks"></span>
+        </li>
+        <li>
+            Student Total Avrg Marks: <span id = "dspavg"></span>
+        </li>
+        <li>
+            Student Grade: <span id = "dspgrade"></span>
+        </li>
+    </ul>
+    <script>
+        var studentDtls = {
+    ReadstudDtls () {
+        studentDtls.name = document.querySelector("#studName").value;
+        if (studentDtls.name =='' ) {
+            document.querySelector(".nameCompValidation").style.display = 'block';
+            return;
+        } else {
+            document.querySelector(".nameCompValidation").style.display = 'none';
+        }
+
+        studentDtls.age = document.querySelector("#studAge").value;
+        if (studentDtls.age =='') {
+            document.querySelector(".ageCompValidation").style.display = 'block';
+            return;
+        } else {
+            document.querySelector(".ageCompValidation").style.display = 'none';
+        }
+
+        studentDtls.sClass = document.querySelector("#StudClass").value;
+
+        studentDtls.sGender = document.querySelector("input[name=gender]:checked").value;
+        studentDtls.sMarks = [];
+        
+        for (var i=0 ; i < 5; i++)
+            {
+                var Id = "#m" +(i + 1);
+                var m = document.querySelector(Id).value;
+
+                if (m =='') {
+                    document.querySelector(".marksCompValidation").style.display = 'block';
+                    return;
+                } else {
+                    document.querySelector(".marksCompValidation").style.display = 'none';
+                }
+                m = parseInt(m);
+                studentDtls.sMarks.push(m);
+            }
+            console.log("Marks Length = " + this.sMarks.length);
+        this.getTotalAndAvg();  
+    },
+
+    getTotalAndAvg() {
+        studentDtls.totalMarks = 0;
+        for (var i = 0; i < this.sMarks.length; i = i +1) {
+            this.totalMarks = this.totalMarks + this.sMarks[i];
+        }
+        this.avg = this.totalMarks / this.sMarks.length;
+        this.getGrade();
+    },
+
+    getGrade() {
+        this.grade = this.avg >= 40 ? "Congratulation! You are Passed" : "Sorry! You are Failed"
+        console.log(studentDtls);
+        this.displayStudDtl();
+    },
+
+    displayStudDtl() {
+        document.querySelector(".progtable").style.display = 'block';
+        document.querySelector("#dspName").innerText = this.name;
+        document.querySelector("#dspAge").innerText = this.age;
+        document.querySelector("#dspGender").innerText = this.sGender;
+        document.querySelector("#dspClass").innerText = this.sClass;
+        document.querySelector("#dsptotalMarks").innerText = this.totalMarks;
+        document.querySelector("#dspavg").innerText = this.avg;
+        document.querySelector("#dspgrade").innerText = this.grade;
+    },
+
+ };
+
+ validateNumber  = () => {
+    if (event.keyCode >= 48 && event.keyCode <= 57)
+    {
+        return true;
+    }else {
+        return false;
+    }
+}
+    </script>
+</body>
+</html>

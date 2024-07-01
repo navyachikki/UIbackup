@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = prompt("enter the value of n")
+        n=parseInt(n)
+        rev_num=0;
+        let temp=n;
+
+        while(temp>0){
+           let d=temp%10;
+           rev_num=(rev_num *10)+d
+           temp=Math.floor(temp/10)
+
+        }
+        console.log('the reverse of {n} is:'+rev_num)
+
+
+    </script>
+</body>
+</html>

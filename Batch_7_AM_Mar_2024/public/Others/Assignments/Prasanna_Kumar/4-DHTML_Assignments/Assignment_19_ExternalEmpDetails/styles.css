@@ -1,0 +1,41 @@
+.main {
+    margin: 50px auto;
+    border: 2px solid black;
+    width: 40%;
+    padding: 10px;
+    background-color: lightgreen;
+}
+h1 {
+    text-align: center;
+}
+.main ul {
+    list-style: none;
+}
+ul li {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px 0;
+}
+li input[type = text] {
+    padding: 10px;
+    width: 200px;   
+}
+#btn {
+    padding: 10px;
+    width: 90px;
+    border-radius: 10px;
+    border: none;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.display h2 {
+    text-align: center;
+}
+.nameErr{
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+.display {
+    display: none;
+}

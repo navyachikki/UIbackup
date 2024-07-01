@@ -1,0 +1,95 @@
+.outer{
+    border: 2px solid;
+    width: 500px;
+    height: 480px;
+    margin:5px ;
+    padding: 15px;
+    display: flexbox;
+    background-color: bisque;
+}
+.field{
+    border: 1px solid;
+    width: 450px;
+    height: 30px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(198, 149, 149);
+}
+
+form{
+    width: 70vmin;
+    height: 100%;
+    position: absolute;
+    padding:5px 0;
+}
+input[type="text"]{
+    width: 100%;
+    padding: 15px 10px;
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    background-color: #ffffff;
+    font-size: 16px;
+}
+ul{
+    list-style: none;
+}
+.list{
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+}
+.list-items{
+    padding: 10px 5px;
+}
+.list-items:hover{
+    background-color: #dddddd;
+}
+#name {
+    width: 130px;
+    height: 1px;
+    border-radius: 0;
+    margin-left: 10px;
+    
+}
+.search{
+    border: 1px solid;
+    width: 450px;
+    height: 75px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(198, 149, 149);
+}
+.outputSlip{
+    border: 1px solid;
+    height: 300px;
+    width: 350px;
+    background-color: rgb(223, 192, 232);
+    display: block;
+    position: absolute;
+    top: 100px;
+    right: 200px;
+}
+button{
+    height: 60px;
+    width: 150px;
+    font: 700;
+    background-color: blueviolet;
+    border-radius: 5px;
+    position: absolute;
+    left: 350px;
+    margin: 10px;
+    margin-top: 25px;
+}
+h2{
+    text-align: center;
+}
+.Out{
+    margin: 10px;
+    font-size:larger;
+    font-weight: 700;
+    padding: 10px;
+}
+span{
+    color: rgb(26, 75, 180);
+}

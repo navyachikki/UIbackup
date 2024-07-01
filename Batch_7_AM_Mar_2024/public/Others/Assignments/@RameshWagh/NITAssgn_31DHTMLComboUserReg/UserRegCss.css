@@ -1,0 +1,31 @@
+.title {
+    text-align: center;
+    margin: 10px auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: olive;
+}
+
+ul {
+    border: 1px solid;
+    width: 500px ;
+    margin: 20px;
+    padding: 10px;
+    list-style: none;
+    background-color: rgb(223, 188, 99);
+}
+
+li {
+    border: 1px solid;
+    margin: 5px;
+    padding: 10px;
+    background-color:aliceblue;
+}
+
+.error {
+    color: red;
+    position: relative;
+    font-size: 11Px;
+    top: 2px;
+    display: none;
+}

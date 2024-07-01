@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Java Script mathematical Oprations</title>
+        <style>
+            div
+            {
+                border: 1px solid; height: 25px; width: 300px; margin: 5px; padding: 3px; text-align: center;background-color: beige;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Java Script mathematical Oprations</h3>     
+        <div> Sum Of The Value : <span id = "FDsply"></span> </div>
+        <div> Multification Of The Value : <span id = "SDsply"></span> </div>
+        <div> Substraction Of The Value : <span id = "TDsply"></span> </div>
+        <div> Division Of The Value : <span id = "FrDsply"></span> </div>
+        <div> Datatype Of Veriable : <span id = "DTDsply"></span> </div>
+        <script>
+            var a = 200, b = 50;
+            var sumVal, mulVal, subVal, divVal;
+            
+            sumVal = a + b;
+            console.log("Sum of a + b = " + sumVal);
+            document.querySelector("#FDsply").innerHTML = sumVal;
+
+            mulVal = a * b;
+            console.log("Multification of a * b = " + mulVal);
+            document.querySelector("#SDsply").innerHTML = mulVal;
+
+            subVal = a - b;
+            console.log("Substraction of a - b = " + subVal);
+            document.querySelector("#TDsply").innerHTML = subVal;
+
+            divVal = a / b;
+            console.log("Division of a / b = " + divVal);
+            document.querySelector("#FrDsply").innerHTML = divVal;
+
+            console.log("Type Of divVal Datatype : " + typeof(divVal));
+            document.querySelector("#DTDsply").innerHTML = typeof(divVal);
+        </script>   
+    </body>
+</html>

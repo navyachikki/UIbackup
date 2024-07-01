@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <title>
+            Prime number
+        </title>
+        <script>
+            var a=prompt("enter a value")
+            a=parseInt(a)
+            var check
+            var count=0
+            for(var i=2;i<a;i++)
+            {
+                check  = a % i
+                if(check == 0)
+                {
+                    count++
+                }
+                            
+            }  
+            if(count == 0)
+            {
+                console.log("prime" + i)
+            }
+            else
+            {
+                console.log("not primr" + i)
+            }          
+            
+        </script>
+    </head>
+</hmtl>

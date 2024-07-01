@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prime number check</title>
+  </head>
+  <body>
+    <script>
+      var num = prompt("Enter a number");
+      num = parseInt(num);
+      let isPrime = true; //assume isPrime = true initially
+
+      for (i = 2; i <= Math.sqrt(num); i++) {
+        //check upto sqrt of that num
+        if (num % i === 0) {
+          isPrime = false;
+        }
+      }
+
+      if (isPrime) {
+        //print isPrime outside the forloop
+        console.log("prime");
+      } else {
+        console.log("not prime");
+      }
+    </script>
+  </body>
+</html>

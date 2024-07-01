@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Numbers 1-1000</title>
+</head>
+
+<body>
+
+    <script>
+
+        for ( var num = 1; num <= 1000; num++) {
+
+            var sum = 0;
+            var temp = num;
+            var numOfDigits = num.toString().length;
+
+            while (temp > 0) {
+                var digit = temp % 10;
+
+                var power = 1;
+                for ( var i = 0; i < numOfDigits; i++){
+                    power *=digit;
+                }
+
+                sum += power;
+                temp = (temp - digit) / 10;
+            }
+
+            if ( sum === num){
+                console.log(num + " is an Armstrong Number");
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>
+
+  
+

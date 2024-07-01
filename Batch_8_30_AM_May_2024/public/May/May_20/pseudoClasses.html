@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .content {
+                border: 1px solid;
+                width: 120px;
+                height: 120px;
+                text-align: center;
+                cursor: pointer;
+            }
+            .content:hover {
+                background-color: yellow;
+                border: 2px solid;
+                font-weight: bold;
+            }
+            a {
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            a:focus {
+                border: 2px solid red;
+                background-color: yellow;
+                font-size: 20px;
+            }
+            a:active {
+                font-size: 30px;
+                background-color: brown;
+            }
+            div:empty {
+                border: 1px solid;
+                padding: 10px;
+            }
+            span:first-child {
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+            }
+            span:last-child {
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+                background-color: rebeccapurple;
+            }
+            span:nth-child(3) {
+                background-color: yellowgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="http://www.google.com">Google</a>
+
+        <a href="http://www.google.com">Google</a>
+        <a href="http://www.google.com">Google</a>
+        <a href="http://www.google.com">Google</a>
+
+
+        <br><br><br>
+
+        <div  class="content">Content</div>
+        <div>1</div>
+        <div>2</div>
+        <div>Hello</div>
+        <div></div>
+        <div>Test</div>
+        <div>
+            <span>Meena</span>
+            <span>Ravi</span>
+            <span>Teena</span>
+            
+            <span>Krish</span>
+            <span>Suresh</span>
+        </div>
+
+    </body>
+</html>

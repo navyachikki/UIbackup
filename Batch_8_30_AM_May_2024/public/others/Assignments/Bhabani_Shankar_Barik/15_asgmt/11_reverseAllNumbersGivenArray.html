@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Number</title>
+</head>
+<body>
+    <script>
+        /* wap to find the reverse of every value within a given array. */
+
+        let numberArray = [2, 3, 4, 66, 151, 371, 12, 33, 34, 64, 21];
+        console.log(numberArray);
+
+            for (let i = 0; i < numberArray.length; i++) {
+                let n = numberArray[i];
+                n = n.toString();
+                let reverseNum = n.split('').reverse().join('')
+                console.log(numberArray[i] +' Reverse Value is ' + reverseNum);
+            }
+    </script>
+</body>
+</html>

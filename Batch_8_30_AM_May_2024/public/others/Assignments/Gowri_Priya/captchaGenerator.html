@@ -1,0 +1,83 @@
+et<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capcha Generator</title>
+    <script src="captcha.js"></script>
+  </head>
+  <style>
+    body {
+      background-image: url("https://img.freepik.com/free-photo/top-view-skateboards-with-copy-space_23-2148849225.jpg?t=st=1718957179~exp=1718960779~hmac=dc1516b764287236c341a4c6a7a74fa068976efda06448e8731554b0991cedd5&w=1380");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      font-style: italic;
+    }
+    .container {
+      background-color: #b088b1;
+      width: 335px;
+      height: 190px;
+      position: relative;
+      left: 785px;
+      top: 360px;
+      text-align: center;
+      font-style: italic;
+      font-weight: bold;
+    }
+    .box {
+      border: 2px solid black;
+      width: 225px;
+      height: 38px;
+      position: relative;
+      left: 53px;
+      top: 30px;
+    }
+    #button {
+      position: relative;
+      left: -96px;
+      top: 41px;
+      background-color: #db82cd;
+    }
+    #button:hover {
+      color: white;
+      background-color: black;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Captcha Generator</h1>
+      <div class="box"></div>
+      <div class="captchaText"></div>
+      <input
+        type="button"
+        id="button"
+        value="Generate Captcha"
+        onclick="generateCaptcha()"
+      />
+    </div>
+    <script>
+      var generateCaptcha = () => {
+        var captcha = generateCaptchaFormat()
+        document.querySelector(".captchaText").innerHTML = captcha
+      }
+      var generateCaptchaFormat = () => {
+        var captcha = ""
+        var formatCaptcha = ["U", "N", "L"]
+        //console.log(formatCaptcha);
+        for (var i = 0; i < 5; i++) {
+          var randomValue =
+            formatCaptcha[Math.floor(Math.random() * formatCaptcha.length)]
+          if (randomValue == "L") {
+            captcha += getRandomChar("L")
+          } else if (randomValue == "U") {
+            captcha += getRandomChar("U")
+          } else {
+            captcha += getRandomValue()
+          }
+        }
+        return captcha
+      }
+    </script>
+  </body>
+</html>

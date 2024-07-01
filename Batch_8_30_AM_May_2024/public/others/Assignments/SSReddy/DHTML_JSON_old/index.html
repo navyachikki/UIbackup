@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myjson.css">
+    <title>CountryStateCity</title>
+</head>
+<body>
+    <div  class="header">
+        <h1>User Registration Details</h1>
+    </div>
+    <div class="reg">
+        <div>
+            <label > UserName    : </label>
+            <input type="text" placeholder="Enter Your Name" value="" id="uname">
+        </div>
+        <div>
+            <label > Age  : </label>
+            <input type="number" placeholder="Enter Your age" value="" id="uage"> 
+        </div>
+        <div>
+            <label > Gender  : </label>
+            <input type="radio"  value="Male" name="ugen"> Male
+            <input type="radio"  value="female" name="ugen"> female
+        </div>
+
+        <div>
+            <label >Country    :</label>
+            <select  id="country3"   onchange="selstate()"> 
+                <option> select country</option> 
+                        
+            </select>
+        </div>
+        <div>
+            <label >State    :</label>
+            <select id="state" name="State1" onchange="selcity()">  
+                <option   > select state</option>                   
+            </select>
+        </div>
+        <div>
+            <label >city  :</label>
+            <select id="city" name="city1" onchange="regen()">  
+                <option   > select city</option>                   
+            </select>
+        </div>
+        <div>
+            <input type="button" value="Register" id="btn1"  onclick="regibtn()">
+        </div>
+    </div>
+    <div class="dview">
+
+        <div id="dview1">
+
+        </div>
+    </div>
+    <div class="footer"> copyright@ssreddy zpcl</div>
+    <script src="myjs.js"></script>
+   
+</body>
+</html>

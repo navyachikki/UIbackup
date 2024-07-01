@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Opacity property</title>
+    <style>
+        .gameHead {
+            margin: 10px;
+            border: 1px solid black;
+            text-align: center;
+            font-weight: bold;
+            font-size: larger;
+            width: 70%;
+        }
+        .container {
+            display: flex;  /* Aligns children (blocks) in a row */
+            position: relative;
+            width: 230px;  /* Enough width to accommodate both blocks */
+            margin-bottom: 10px;  /* Space between this and other elements */
+        }
+        .block {
+            width: 100%;
+            border: 2px solid;
+            padding: 10px;
+            text-align: center;
+            width: 110px;
+            height: 110px;
+        }
+        .block1 {
+            background-color: yellow;
+            position: relative;
+            left: 10px;
+            top:5px;
+        }
+        .block2 {
+            background-color: red;
+            position: relative;
+            z-index: 5;
+            opacity: 0.8;
+            width: 80px;
+            height: 120px;
+            top: -64px;
+            left: 82px;
+            float: left;
+        }
+        .block3 {
+            left: 1425px;
+            background-color: rgb(78 131 0);
+            position: relative;
+            top: 10px;
+            opacity: 0.8;
+        }
+        .block4 {
+            background-color: red;
+            position: relative;
+            z-index: 5;
+            opacity: 0.8;
+            width: 80px;
+            height: 120px;
+            top: -76px;
+            right: -1480px;
+        }
+        .block5{
+            top: 300px;
+            left: 15px;
+            background-color: rgb(86, 136, 11);
+            position: relative;
+            z-index: 4;
+        } 
+        .block6{
+            background-color: rgb(122, 49, 143);
+            position: relative;
+            z-index: 4;
+            top: 180px;
+            left: 100px;
+            opacity: 0.8;
+            width: 80px;
+        }
+
+        .block7 {
+            float: left;
+            top: 50px;
+            left: 1535px;
+            background-color: rgb(11 140 245);
+            position: relative;
+            z-index: 4;
+            width: 80px;
+
+        }
+        .block8 {
+            background-color: rgb(123, 195, 14);
+            position: relative;
+            z-index: 4;
+            top: 40px;
+            left: 1450px;
+            opacity: 0.8;
+            width: 110px;
+        }
+
+        .block9 {
+            background-color: aqua;
+            position: relative;
+            z-index: 4;
+            top: -400px;
+            left: 665px;
+            opacity: 0.8;
+            width: 250px;
+            height: 200px;
+        }
+        
+        .block10 {
+            background-color: rgb(11, 245, 50);
+            position: relative;
+            z-index: 4;
+            top: -700px;
+            left: 600px;
+            opacity: 0.8;
+        }
+
+        .block11 {
+            background-color: rgb(11, 245, 50);
+            position: relative;
+            z-index: 4;
+            top: -600px;
+            left: 600px;
+            opacity: 0.8;
+        }
+
+        .block12 {
+            background-color: rgb(11, 245, 50);
+            position: relative;
+            z-index: 4;
+            top: -730px;
+            left: 900px;
+            opacity: 0.8;
+        }
+
+        .block13 {
+            background-color: rgb(11, 245, 50);
+            position: relative;
+            z-index: 4;
+            top: -1100px;
+            left: 900px;
+            opacity: 0.8;
+        }
+
+        .divContainer{
+            margin: 10px;
+            border: 2px solid black;
+            height: 740px;
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <div class="gameHead">Block Game</div>
+    <div class="divContainer">
+    <div class="container">
+        <div class="block block1">Block 1</div>
+        <div class="block block3">Block 3</div>
+    </div>
+    <div class="block block2">Block 2</div>
+    <div class="block block4">Block 4</div>
+    <div class="block block5">Block 5</div>
+    <div class="block block6">Block 6</div>
+    <div class="block block7">Block 7</div>
+    <div class="block block8">Block 8</div>
+    <div class="block block9">Block 9</div>
+    <div class="block block10">Block 10</div>
+    <div class="block block11">Block 11</div>
+    <div class="block block12">Block 12</div>
+    <div class="block block13">Block 13</div>
+
+</div>
+</body>
+</html>

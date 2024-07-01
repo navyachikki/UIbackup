@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emp Details Condtional ControlStructures</title>
+</head>
+<body>
+    <h3>Employee Tax Details Using Conditional Structures</h3>
+    <script>
+        var employeeName =prompt("Enter the Employee Name:");
+        var age = prompt("Enter the Age :");
+        age=parseInt(age);
+        var gender = prompt("Enter Gender:");
+        var dep=prompt("Enter Department");
+        var basicSalary=prompt("Enter the Basic Salaray");
+        basicSalary=parseInt(basicSalary);
+
+      // Calculate the pf,hraand totalsal  
+       var pf = (basicSalary * 12) / 100  ;
+       var hra = (basicSalary * 24) / 100 ;
+       var totalSalary = basicSalary + pf + hra;
+        var tax = 0;
+
+        console.log("Employee Details");
+        console.log("Employee Name :" +employeeName);
+        console.log("Department :" +dep);
+        console.log("Age:" +age);
+        console.log("Gender :" +gender);
+        console.log("Basic Salary :" +basicSalary);
+        console.log("Total Salary :" +totalSalary);
+        console.log("PF :" +pf);
+        console.log("HRA :" +hra);
+
+       //Total Tax to be Paid
+       if(gender =='male' || gender == 'Male'){
+        if(totalSalary >= 200000){
+            tax = (totalSalary * 15) / 100;
+            console.log("The Tax paid is:"+tax);
+        } else if(totalSalary >= 150000){
+            tax = (totalSalary * 10) / 100;
+            console.log("The Tax paid is:"+tax);
+        }else if( totalSalary >= 100000){
+            tax=(totalSalary * 5)/100;
+            console.log("The Tax paid is:"+tax);
+        }else{
+            console.log("The Tax paid is:"+tax);
+        }
+       }else if(gender =='female' || gender == 'Female'){
+        if(totalSalary >= 200000){
+            tax = (totalSalary * 10) / 100;
+            console.log("The Tax paid is:"+tax);
+        }else if(totalSalary >= 150000){
+            tax = (totalSalary * 5) / 100;
+            console.log("The Tax paid is:"+tax);
+        }else{
+            console.log("The Tax paid is:"+tax);
+        }
+       }else{
+        console.log("The Tax paid is:"+tax);
+        console.log("Please Select Correct Gender Male or Female ");
+       }
+    </script>
+</body>
+</html>

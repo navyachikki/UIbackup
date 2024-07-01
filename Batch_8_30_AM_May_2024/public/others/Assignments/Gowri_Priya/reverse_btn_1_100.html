@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse of numbers between 1 to 100</title>
+</head>
+
+<body style="background-color:black">
+    <h1 style="text-align:center;color: white">Check on Console</h1>
+    <script>
+        for (num = 1000; num >= 201; num--) {
+            var numstr = num.toString();
+            var reversedstr = parseInt(numstr.split("").reverse().join(""));
+
+            console.log("Original Number: " + num + " Reversed Number:" + reversedstr);
+        }
+
+
+    </script>
+
+</body>
+
+</html>

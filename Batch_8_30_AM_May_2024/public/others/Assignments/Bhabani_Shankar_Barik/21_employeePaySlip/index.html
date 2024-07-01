@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pay Slip </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h3>Employee Pay Slip Generator</h3> 
+        
+        <div class="main">
+            <ul>
+                <li>
+                    <input type="text" id="eName" placeholder="Name of the Employee">
+                </li>
+                <li>
+                    <input type="text" id="eId" placeholder="Employee ID">
+                </li>
+                <li>
+                    <input type="text" id="eDesignation" placeholder="Designation">
+                </li>
+                <li>
+                    <input type="text" id="eDepartment" placeholder="Department">
+                </li>
+                <li>
+                    <input type="date" id="eDOJ" placeholder="Date Of Join">
+                </li>
+                <li class="btn">
+                    <input type="button" value="Get Pay Slip" id="btn-paySlip" onclick="readEmployeeData()">
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="displayPayslip">
+                <li>
+                    Employee Name: <span id="displayEmployeename"></span>
+                </li>
+                <li>
+                    Employee ID: <span id="displayEmployeeID"></span>
+                </li>
+                <li>
+                    Designation: <span id="displayDesignation"></span>
+                </li>
+                <li>
+                    Department: <span id="displayDepartment"></span>
+                </li>
+                <li>
+                    DOJ: <span id="displayDOJ"></span>
+                </li>
+                <li>
+                    UAN: <span id="displayUAN"></span>
+                </li>
+                <li>
+                    PF No: <span id="displayPfNo"></span>
+                </li>
+                <li>
+                    ESI No: <span id="displayESINo"></span>
+                </li>
+                <li>
+                    Bank Name: <span id="displayBankName"></span>
+                </li>
+                <li>
+                    Bank A/C No: <span id="displayBankAccountNo"></span>
+                </li>
+                <li>
+                    Total Working Days: <span id="displayTotalWorkingdays"></span>
+                </li>
+                <li>
+                    Paid Days: <span id="displayPaidDays"></span>
+                </li>
+                <li>
+                    Leaves taken: <span id="displayLeavesTaken"></span>
+                </li>
+                <li>
+                    Basic Salary: <span id="displayBasicSalary"></span>
+                </li>
+                <li>
+                    HRA: <span id="displayHRA"></span>
+                </li>
+                <li>
+                    Conveyance Allowances: <span id="displayConveyanceAllowances"></span>
+                </li>
+                <li>
+                    Medical Allowances: <span id="displayMedicalAllowances"></span>
+                </li>
+                <li>
+                    Other Allowances: <span id="displayOtherAllowances"></span>
+                </li>
+                <li>
+                    Total Earnings: <span id="displayTotalEarnings"></span>
+                </li>
+                <li>
+                    Pf: <span id="displayPf"></span>
+                </li>
+                <li>
+                    Health Insurance: <span id="displayHealthInsurance"></span>
+                </li>
+                <li>
+                    Professional Tax: <span id="displayProfessionalTax"></span>
+                </li>
+                <li>
+                    Total Deductions: <span id="displayTotalDeductions"></span>
+                </li>
+                <li>
+                    Net Salary: <span id="displayNetSalary"></span>
+                </li>
+            </ul>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

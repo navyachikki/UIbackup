@@ -1,0 +1,17 @@
+.starContainer>div {
+    background-image: url('../../00_assets/images/ratingStars.PNG');
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+.starContainer {
+    clear: both;
+    height: 25px;
+}
+.halfstar{
+    background-position: -22px 0;
+}
+.disablestar{
+    background-position: 18px 0;
+}

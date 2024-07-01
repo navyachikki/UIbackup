@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        var timeformat = prompt("enter the number of format of date you want 1)dd/mm/year 2) dd/mm/year 3) dd-mm-year 4) dd mm year 5) day date month, year 6) mm dd year 7) dd mm,hh:min 8) dd mm, hh:min:sec");
+        timeformat.trim
+      var monthIs = [
+        "january",
+        "febrauary",
+        "march",
+        "april",
+        "may",
+        "june",
+        "july",
+        "august",
+        "september",
+        "october",
+        "november",
+        "december",
+      ]
+      var dayIs = [
+        "sunday",
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+      ]
+      var cdate = new Date()
+    //   console.log(cdate.getDate())
+    //   console.log(cdate.getDay())
+    //   console.log(cdate.getFullYear())
+    //   console.log(cdate.getHours())
+    //   console.log(cdate.getMinutes())
+    //   console.log(cdate.getTime())
+    //   console.log(cdate)
+      //   custome date
+    
+
+     
+      // sat 8th june,2024
+      var dayIndex = cdate.getDay()
+      var monthIndex=cdate.getMonth();
+      switch(timeformat){
+        case "1":
+            var customDate1 =
+        cdate.getDate() +
+        "/" +
+        (cdate.getMonth() + 1) +
+        "/" +
+        cdate.getFullYear()
+      console.log(customDate1)
+      break;
+        
+        case "2":
+            var customDate2 =
+        cdate.getMonth() + 1 + "/" + cdate.getDate() + "/" + cdate.getFullYear()
+      console.log(customDate2)
+      break;
+        case "3":
+            var customDate3 =
+        cdate.getDate() +
+        "-" +
+        (cdate.getMonth() + 1) +
+        "-" +
+        cdate.getFullYear()
+      console.log(customDate3)
+      var monthIndex = cdate.getMonth()
+      break;
+        case '4':
+            var customDate4 =
+        cdate.getDate() +
+        "th " +
+        monthIs[monthIndex] +
+        " " +
+        cdate.getFullYear()
+      console.log(customDate4)
+      break;
+        case '5':
+            var customDate5 =
+        dayIs[dayIndex] +
+        " " +
+        cdate.getDate() +
+        "th" +
+        " " +
+        cdate.getFullYear()
+      console.log(customDate5)
+      break;
+    case '6':
+        var customDate6 =
+        monthIs[monthIndex] +
+        " " +
+        cdate.getDate() +
+        "th" +
+        " " +
+        cdate.getFullYear()
+      console.log(customDate6)
+      break;
+    case '7':
+        var customDate7 =
+        cdate.getDate() +
+        "th " +
+        monthIs[monthIndex] +
+        " , " +
+        cdate.getHours() +
+        "h : " +
+        cdate.getMinutes() +
+        "mins"
+      console.log(customDate7)
+      break;
+    case '8':
+        var customDate8 =
+      cdate.getDate() +
+      "th " +
+      monthIs[monthIndex] +
+      " , " +
+      cdate.getHours() +
+      "h : " +
+      cdate.getMinutes() +
+      "mins"+" :"+
+      cdate.getSeconds() +
+      "sec"
+    console.log(customDate8)
+    break;
+    default:
+    console.log("its wrong slection...");
+    }
+    </script>
+    </script>
+  </body>
+</html>

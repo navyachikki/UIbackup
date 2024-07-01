@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+<body>
+    <h3>
+        Employee salary Details in javascript
+    </h3>
+    <Script>
+
+      
+        
+      var Empname = prompt("Enter your name: ");
+      var EmpCompanyName = prompt("Enter your Company Name") ;
+      var Empdepartment = prompt("Enter your Empdepartment: ");
+      var age = prompt("Enter your age: ");
+      age = parseInt(age);
+      var gender = prompt("Enter your gender: ");
+      var basicSalary = prompt("Enter your basic salary: ");
+      basicSalary = parseFloat(basicSalary);
+
+      
+      var pf = (basicSalary * 12)/100; //pf = 14% of total salary      
+      var hra = (basicSalary * 24)/100; // hra = 24% of total salary
+      var totalSalary = pf + hra + basicSalary;
+
+
+      console.log("Employee details ");
+      console.log("Name: " + Empname);
+      console.log("company: " + EmpCompanyName);
+      console.log("Department: " + Empdepartment);
+      console.log("Age:" + age);
+      console.log("Gender: " + gender);
+      console.log("Basic Salary: " + basicSalary);
+      console.log("PF: " + pf);
+      console.log("HRA: " + hra);
+      console.log("Total Salary; " + totalSalary);
+
+
+
+        if(gender == "male"){
+            console.log("Tax calculation of male:");
+            if(totalSalary>=100000){
+                var tax=(totalSalary*15)/100
+                console.log(" Tax is 15%");
+            }
+            else if(totalSalary>=50000){
+                var tax=(totalSalary*10)/100
+                console.log(" Tax is 10%");
+            }    
+            else if( totalSalary >=100000){
+                var tax=(totalSalary*5)/100
+                console.log(" Tax is 5%");
+            }
+            else{
+                console.log("tax is zero");
+            }
+        }
+        else if(gender == "Female");{
+            console.log("Tax calculation of Female:");
+            if(totalSalary>=100000){
+                var tax=(totalSalary*10)/100
+                console.log(" Tax is 10%");
+            }
+            else if(totalSalary>=50000){
+                var tax=(totalSalary*5)/100
+                console.log(" Tax is 5%");
+            } else {
+          console.log("Your Tax % is Zero");
+        }
+      }              
+        
+       
+    </Script>
+    
+</body>
+</html>

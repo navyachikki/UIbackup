@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Salary Tax Percent Calculator</title>
+</head>
+<body>
+    <script>
+        var employeeGender = prompt("Enter Your Gender");
+        var basicSalary = parseInt(prompt("Enter Your Basic Salary :"));
+        var pf = basicSalary * 12 / 100;
+        var hra = basicSalary * 24 / 100;
+        var totalSalary = basicSalary + pf + hra;
+        var taxPercent;
+
+        console.log("Employee Gender: "+employeeGender);
+        console.log("Basic Salary: "+ basicSalary);
+        console.log("PF: "+ pf);
+        console.log("HRA: "+hra);
+        console.log("Total Salary: "+ totalSalary);
+        if(employeeGender=="Male"){
+
+            if(totalSalary>=200000 ){
+                taxPercent= totalSalary* 15/100;
+                console.log("Total Tax cutting: "+ taxPercent);
+            }
+            else if(totalSalary >= 150000){
+                taxPercent= totalSalary* 10/100;
+                console.log("Total Tax cutting: "+ taxPercent);
+            }
+            else if(totalSalary >=100000){
+                taxPercent= totalSalary* 5/100;
+                console.log("Total Tax cutting: "+ taxPercent);
+            }
+            else{
+                console.log("Yoo!, Zero tax deduction");
+            }
+        }
+        else
+        { 
+        if(employeeGender=="Female" && totalSalary>=200000 ){
+            taxPercent= totalSalary* 10/100;
+            console.log("Total Tax cutting: "+ taxPercent);
+        }
+        else if(totalSalary >= 150000){
+            taxPercent= totalSalary* 5/100;
+            console.log("Total Tax cutting: "+ taxPercent);
+        }
+        else{
+            console.log("Yoo!, Zero tax deduction");
+        }
+        }
+
+    </script>
+</body>
+</html>

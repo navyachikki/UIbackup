@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student_Registration_Form</title>
+</head>
+<style>
+    .Container {
+        border: 1px solid;
+        width: 1400px;
+        height: 700px;
+        margin: auto;
+        overflow: auto;
+        background-color: coral;
+
+        padding-top: 3px;
+        color: rgb(93, 42, 165);
+    }
+
+    .Block1,
+    .Block2
+    {
+        border: 1px solid;
+        width: 1380px;
+        height: 250px;
+        margin: 9px;
+        background-color: aqua;
+        overflow: auto;
+    }
+    .Block3 {
+        border: 1px solid;
+        width: 1380px;
+        height: 150px;
+        margin: 9px;
+        background-color: aqua;
+        overflow: auto;
+    }
+
+    .Block4 {
+        text-align: center;
+            border: 2px solid;
+            border-radius: 10px 15px;
+            margin: 5px auto;
+            padding: 5px;
+            background-color: yellowgreen;
+            font-weight: bold;
+            width: 96%;
+    }
+
+    .Head {
+        border: 3px solid yellowgreen;
+        border-radius: 24px 28px;
+        text-align: center;
+        width: 184px;
+        height: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: blueviolet;
+        color: aqua;
+        list-style: none;
+    }
+
+    #Letter {
+        text-align: center;
+    }
+
+    li {
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        outline: none;
+    }
+
+    .photo {
+        border: 1px solid black;
+        width: 150px;
+        height: 100px;
+        position: absolute;
+        left: 83%;
+        list-style: none;
+    }
+
+    #posation {
+        position: absolute;
+        bottom: -25px;
+        right: -90px;
+    }
+
+    #Hob {
+        display: block;
+    }
+
+    #Sign {
+        float: right;
+    }
+</style>
+
+<body>
+    <div class="Container">
+        <div id="Letter">Student_Registration_Form</div>
+        <div class="Block1">
+            <ul>
+                <li class="Head">
+                    PERSIONAL-DETAILS
+                </li>
+                <li class="photo">
+                    <input type="file" id="posation">
+
+                </li>
+                <li>
+                    <label for="Name">First Name:</label>
+                    <input type="text" maxlength="10" name="Name">
+                    <label for="Name">Middle Name:</label>
+                    <input type="text" maxlength="10" name="Name">
+                    <label for="Name">Last Name:</label>
+                    <input type="text" maxlength="10" name="Name">
+                </li>
+                <li>
+                    <label for="Name">Father Name:</label>
+                    <input type="text" maxlength="10" name="Name">
+                </li>
+                <li>
+                    <label for="Name">Mother Name:</label>
+                    <input type="text" maxlength="10" name="Name">
+                </li>
+                <li>
+                    <label for="D-O-B">Date-Of-Birth</label>
+                    <input type="date" name="D-O-B">
+                </li>
+                <li>
+                    <label for="Mail">Email:</label>
+                    <input type="text" maxlength="10" name="Name">
+                    <label for="Name">Phone Numbar:</label>
+                    <input type="number" maxlength="10" name="Name">
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="Block2">
+            <ul>
+                <li class="Head">
+                    EDUCAIONAL-DETAILS
+                </li>
+                <li>
+                    <label for="Qualification">Qualification</label>
+                    <select name="Qualification" id="">
+                        <option value="DEGREE">UG</option>
+                        <option value="DEGREE">PG</option>
+                        <option value="DEGREE">PGD</option>
+                    </select>
+                    <label for="Mark Obtained">Mark Obtained</label>
+                    <input type="text">
+                </li>
+                <li>
+                    <label for="course">Course Opted:</label>
+                    <select name="course" id="">
+                        <option value="">BBA</option>
+                        <option value="deg">BCA</option>
+                        <option value="deg">MCA</option>
+                        <option value="mba">MBA</option>
+                        <option value="ba">M-Tech</option>
+                    </select>
+                    <label for="branch">PassOut Year:</label>
+                    <input type="text">
+                </li>
+                <li>
+                    <label for="cllgName">College Name:</label>
+                    <input type="text">
+                </li>
+                <li>
+                    <label for="Natinalaty">Nationality</label>
+                    <select name="Natinalaty" id="">
+                        <option value="DEGREE">USA</option>
+                        <option value="DEGREE">INDIA</option>
+                        <option value="DEGREE">LONDON</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="addr">Address:</label>
+                    <input type="text">
+                </li>
+
+        </div>
+        <div class="Block3">
+            <ul>
+                <li class="Head">
+                    Craiteriya
+                <li>
+                    <label for="Language">Language</label>
+                    <input type="checkbox" name="Language">English
+                    <input type="checkbox" name="Language">Hindi
+                    <input type="checkbox" name="Language">Teluge
+                    <input type="checkbox" name="Language">Kanad
+                    <input type="checkbox" name="Language">Odia
+                </li>
+                <li>
+
+                    <label for="File">Put Your CV</label>
+                    <input type="file">
+
+                </li>
+                <li>
+                    <label for="h" id="Hob">Hobby</label>
+                    <textarea name="h" id="" cols="20" rows="2"></textarea>
+                </li>
+                <li>
+                    <label for="h" id="Hob">Address</label>
+                    <textarea name="h" id="" cols="20" rows="2"></textarea>
+                </li>
+                <li id="Sign">
+                    <input type="text">
+                    <label id="Signutre" for="sign">Signutre</label>
+                </li>
+
+                <input id="sub" type="submit">
+
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="Block4">STUDENT FORM PAGE @Copyrights 2024</div>
+</div>
+</body>
+
+</html>

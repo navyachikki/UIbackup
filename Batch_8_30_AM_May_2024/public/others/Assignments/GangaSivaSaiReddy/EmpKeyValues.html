@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>EMPLOYEE DETAILS USING KEYS & VALUES</h3>
+    <script>
+        var empDetails = {
+            name : "Sundeep",
+            age : 22,
+            dept : 'IT',
+            basicSal : 250000
+        }
+        empDetails.hra = 15/100 * empDetails.basicSal;
+        empDetails.pf = 20/100 * empDetails.basicSal;
+        empDetails.total = empDetails.hra + empDetails.pf + empDetails.basicSal;
+        if (empDetails.total > 200000) {
+            empDetails.tax = empDetails.total/15;
+        }
+        else{
+            empDetails.tax = "zero"
+        }
+        console.log("Employee Name: " + empDetails.name);
+        console.log("Employee age: " + empDetails.age);
+        console.log("Employee department: " + empDetails.dept);
+        console.log("Employee basic salary: " + empDetails.basicSal);
+        console.log("Employee total salary: " + empDetails.total);
+        console.log("Tax to be paid is " + empDetails.tax);
+    </script>
+</body>
+</html>

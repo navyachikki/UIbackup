@@ -1,0 +1,36 @@
+Adv js 
+
+    OOPS - DONE 
+
+    Exception handling
+
+    Clousers
+    -----------
+
+Complilation and Runtime/execution
+
+
+    user code is been written 
+
+        phase 1 -> compilation - > (check for any syntactical erros )
+        phase 2 -> convertion 
+    
+    Execution:
+
+        take binay/assembly/sytem understandble lang -> execute the ode
+
+
+------------
+
+
+    Error: 
+
+        Compile time erros 
+
+
+        Runtime errors 
+
+    ------------
+
+
+    Exception handling:     

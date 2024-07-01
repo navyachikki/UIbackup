@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <style>
+          ul {
+            border: 1px solid;
+            width: 500px;
+            margin: 10px;
+            padding: 10px;
+          }
+          li {
+            list-style: none;
+            margin: 10px;
+            padding: 10px;
+          }
+        </style>
+    </head>
+    <body>
+        <h3>
+            Reading data from user
+        </h3>
+        <ul>
+            <li>Enter First value <input type="text" id="fval"></li>
+            <li>Enter Second value <input type="text" id="sval"></li>
+            <li>
+                The sum of values is :
+                <span id="resultBlock"></span>
+            </li>
+            <li>
+                <input type="button" value="Find Sum" onclick="readUserInput()">
+            </li>
+        </ul>
+        <script>
+            /*var a1 = prompt("enter a value");
+            var a2 = prompt("enter a value");
+            a1 = parseInt(a1)
+            a2 = parseInt(a2)
+            var result = a1 + a2;
+            // console.log("The sum is " + result);
+            document.querySelector("span").innerText = result; */
+
+            var readUserInput = () => {
+                var userData = {};
+                // var a1 = find the element having id as fval, get the value inside it. 
+                userData.a1 = document.querySelector("#fval").value;
+                userData.a2 = document.querySelector("#sval").value;
+                userData.a1 = parseInt(userData.a1)
+                userData.a2 = parseInt(userData.a2)
+                
+                userData.result = userData.a1 + userData.a2;
+                document.querySelector("#resultBlock").innerHTML = userData.result;
+            
+            }
+
+            /// readUserInput();
+
+
+        </script>
+    </body>
+</html>

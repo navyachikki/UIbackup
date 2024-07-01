@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length of an Array</title>
+</head>
+
+<body>
+    <h1 style="text-align: center">Find out the length of an Array without using Predefined Properties</h1>
+    <script>
+        function ArrayLength(arr) {
+            let count = 0;
+            for (let i in arr) {
+                count++
+            }
+            return count;
+        }
+        let arr = [2, 3, 4, 54, 32, 34, 25, 68, 45, 77];
+        console.log("Length of an Array is:" + " " + ArrayLength(arr));
+    </script>
+</body>
+
+</html>

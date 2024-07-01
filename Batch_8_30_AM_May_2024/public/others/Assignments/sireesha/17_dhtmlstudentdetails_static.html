@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details Using DHTML</title>
+    <style>
+        body {
+            background-color: #ccc;
+        }
+
+        .header,
+        .footer,
+        .mainBlock {
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+            position: absolute;
+            left: 10px;
+            padding: 10px;
+            right: 10px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .mainBlock {
+            top: 50px;
+            bottom: 55px;
+            overflow: auto;
+        }
+
+        .footer {
+            bottom: 10px;
+        }
+
+        .mainStudentDetails>li {
+            list-style: none;
+            border: 1px solid;
+            height: 300px;
+            width: 200px;
+        }
+
+        .pdetails>li {
+            list-style: none;
+            margin: 5px;
+            padding: 5px;
+            background-color: cadetblue;
+        }
+
+        .pdetails {
+            margin: 5px;
+            padding: 5px;
+
+        }
+
+        .pdetails img {
+            width: 120px;
+            height: 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">Student Details</div>
+    <div class="mainBlock">
+        <ul class="mainStudentDetails">
+
+        </ul>
+    </div>
+
+    <div class="footer">@copy rights 2024</div>
+    <script>
+        var mainLi = document.createElement("li");
+        var ulTag = document.createElement("ul");
+        ulTag.setAttribute("class", "pdetails");
+
+        var li1 = document.createElement("li");
+        li1.innerText = 'Student Name :' + " Teena";
+        ulTag.append(li1);
+
+
+        var li2 = document.createElement("li");
+        li2.innerText = 'Class: ' + "second";
+        ulTag.append(li2);
+
+        var li3 = document.createElement("li");
+        li3.innerText = 'Age: ' + 10;
+        ulTag.append(li3);
+
+        var li5 = document.createElement("li");
+        li5.innerText = 'Rank: ' + "3rd";
+        ulTag.append(li5)
+
+        var li4 = document.createElement("li");
+        var img = document.createElement("img");
+        img.setAttribute("src", "https://shollaschoolcollege.edu.bd/front/img/students/5d5f7b2de45b025.JPG");
+        li4.append(img);
+        ulTag.append(li4);
+        mainLi.append(ulTag);
+
+        document.querySelector(".mainStudentDetails").append(mainLi);
+    </script>
+</body>
+
+</html>

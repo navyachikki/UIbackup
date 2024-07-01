@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Armstrong Number</title>
+  </head>
+  <body>
+    <script>
+      /* wap to find out all the armstrong number from an given array. */
+
+      let numbers = [153, 370, 947, 1634, 8208, 9474];
+      console.log(numbers);
+
+      let armstrongNumbers = armstrongNumbersFromArray(numbers);
+
+      function isArmstrongNumber(num) {
+        let numStr = num.toString();
+        let power = numStr.length;
+        let sum = 0;
+
+        for (let digit of numStr) {
+          sum += Math.pow(parseInt(digit), power);
+        }
+
+        return sum === num;
+      }
+
+      function armstrongNumbersFromArray(arr) {
+        let armstrongNumbers = [];
+
+        for (let num of arr) {
+          if (isArmstrongNumber(num)) {
+            armstrongNumbers.push(num);
+          }
+        }
+
+        return armstrongNumbers;
+      }
+
+      
+    //   console.log("Armstrong numbers:", armstrongNumbersFromArray(numbers));
+        console.log("Armstrong numbers:", armstrongNumbers);
+
+    </script>
+  </body>
+</html>

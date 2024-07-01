@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating largest and smallest value
+        </title>
+    </head>
+    <body>
+        <script>
+            var data = [76, 23, 2, 78, 99, 201, 3];
+            var largestValue = smallestValue = data[0];
+
+
+            for (var i = 1; i < data.length; i++) {
+                if (largestValue < data[i]) {
+                    largestValue = data[i];
+                }
+
+                if (smallestValue > data[i]) {
+                    smallestValue = data[i];
+                }
+            }
+            console.log("Largest vlaue is " + largestValue);
+            console.log("Smallest vlaue is " + smallestValue);
+        </script>
+    </body>
+</html>

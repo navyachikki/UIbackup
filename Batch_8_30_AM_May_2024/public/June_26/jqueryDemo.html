@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Jquery Lib
+        </title>
+        <script src="../jquery.js"></script>
+        
+        <style>
+            .message {
+                border: 2px solid orange;
+                text-align: center;
+                margin: 10px;
+            }
+            .highlight {
+                font-size: 20px;
+                background-color: yellow;
+                margin: 10px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body> 
+        <div class="message " id="container">
+            Hello every one , good morning all...
+        </div>
+        <input type="button" value="Highlight" onclick="highlightMsg()">
+        <script>
+            var highlightMsg = () => {
+                // document.querySelector("#container").setAttribute("class", "highlight" );
+                
+                /*var existingClasses = document.querySelector("#container").getAttribute("class");
+                existingClasses = existingClasses + ' highlight';
+                document.querySelector("#container").setAttribute("class", existingClasses ); */
+
+
+
+                $("#container").addClass("highlight");
+
+
+
+             
+            }
+        </script>
+    </body>
+</html>

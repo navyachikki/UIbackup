@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Length of an array</title>
+  </head>
+  <body>
+    <script>
+      /*wap to find out length of an array without using predefined properties.*/
+
+      let array = [1, 2, 3, 4, 5, 6, 8, 9, 10, 11];
+      console.log(array);
+
+      let arrLength = arrayLength(array);
+
+      function arrayLength(arr) {
+        let count = 0;
+        // Iterate over the array and increment the count for each element
+        for (let element of arr) {
+          count++;
+        }
+        return count;
+      }
+
+      console.log("Length of an array:", arrLength); // Output: 10
+    </script>
+  </body>
+</html>

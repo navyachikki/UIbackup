@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h3 style="text-decoration: underline; text-align: center">Date Format</h3>
+    <script>
+      var selectDate = prompt(
+        "Enter the Date format you want (1. 8/05/2024 , 2. 05/8/2024 , 3. 08-05-2024 , 4. 8th June 2024 , 5. Sat 8th June, 2024, 6. June 8th 2024 , 7. 8th June, 09h:23min , 8. 8th June, 09h:23min:3sec)"
+      );
+
+      var months = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "June",
+        "July",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+
+      var day = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+
+      var cdate = new Date();
+
+      var monthIndex = cdate.getMonth();
+      var dayIndex = cdate.getDay();
+      var dateFormat;
+
+      switch (selectDate) {
+        case "1":
+           dateFormat = cdate.getDate() + "/" + cdate.getMonth() + "/" + cdate.getFullYear(); 
+          console.log(dateFormat);
+          break;
+        case "2":
+          dateFormat = cdate.getMonth() + "/" + cdate.getDate() + "/" + cdate.getFullYear();
+          console.log(dateFormat);
+          break;
+        case "3":
+           dateFormat = cdate.getDate() + "-" +  cdate.getMonth() + "-" + cdate.getFullYear();
+          console.log(dateFormat);
+          break;
+        case "4":
+           dateFormat = cdate.getDate() + "th" + months[monthIndex] + cdate.getFullYear();
+          console.log(dateFormat);
+          break;
+        case "5":
+           dateFormat = day[dayIndex] + cdate.getDate() + "th" + months[monthIndex] + "," + cdate.getFullYear();
+          console.log(dateFormat);
+          break;
+        case "6":
+           dateFormat =  months[monthIndex]  + cdate.getDate() + "th" + cdate.getFullYear();
+          console.log(dateFormat);
+          break;
+        case "7":
+           dateFormat = cdate.getDate() + "th" + cdate.getMonth() + "," + cdate.getHours() + "h:" + cdate.getMinutes() + "min";
+          console.log(dateFormat);
+          break;
+        case "8":
+           dateFormat = cdate.getDate() + "th" + cdate.getMonth() + "," + cdate.getHours() +"h:" + cdate.getMinutes() + "min" + cdate.getSeconds() + "sec";
+          console.log(dateFormat);
+          break;
+        default:
+           dateFormat = cdate.getDate() + "/" + cdate.getMonth() +  "/" + cdate.getFullYear();
+          console.log(dateFormat);
+          break;
+      }
+    </script>
+  </body>
+</html>

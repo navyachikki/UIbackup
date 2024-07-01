@@ -1,0 +1,105 @@
+Employee details:
+
+    name, gender, dep, basic sal 
+
+    totalsal 
+
+        basicsal + pf + hra 
+
+    pf -> 14 % of basic sal 
+    hra -> 24% of basic sal 
+
+    var a, b, c;
+
+    var a;
+    var b; 
+    var c;
+
+    var a = 20, b = 30, c = 40;
+
+List of datatypes been supported in JS 
+
+var a = 90; // number
+var avg = 3.5; // number 
+
+var username = 'abc'; // string "abc" 'abc'
+var isFeepaid = true; // boolean true false 
+var userage; // undefined 
+// function 
+null 
+object 
+---------------------
+
+Clanguare
+
+    ---- 
+    ----- 
+    ----- 
+    void main() {
+
+    }
+    --- 
+    ---
+    0----
+
+-----------
+
+java
+
+    
+
+    ---- 
+    ----- 
+    ----- 
+    class test() {
+        public static void main(strig args[]) {
+            ....
+        }
+    }
+    --- 
+    ---
+    0----
+
+---------------------
+
+JS 
+
+    .... 
+    ....
+    ....
+    ......
+---------------------
+
+Typecasting -> the concept of changing the datatype of one variable to other is called typecasting 
+
+
+DynamicTypecasting:
+
+C, C++, JAva 
+    int a = 90;
+    a = 4.5; //Error 
+
+    float avg = 45.7;
+    avg = 'Krish'; //Error 
+
+    ---------
+
+Dynamic Typecasting: 
+
+var userName = 'Krish'; // string
+
+userName = 40;
+--------------------------
+
+Variable Hoisting 
+
+    clanguage: 
+        int a ;
+        float b;
+        char c;
+        string uname;
+        ... 
+        ... 
+        ... 
+        ... 
+        int avg = 33;

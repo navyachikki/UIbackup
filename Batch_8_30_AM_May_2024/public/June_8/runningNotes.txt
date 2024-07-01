@@ -1,0 +1,41 @@
+String methods:
+
+    Memory allocation of a string:
+
+    var a = 90; //number
+    var a = "90" // string 
+    var a = '90'; //string 
+    var name = 'Hello';
+
+
+substr(startindex, length); 5, 11 -> 11
+
+slice(startindex, endinxed); 5 , 11- > 6
+substring
+
+--------
+
+Javascript Date object:
+
+
+    var cdate = new Date();
+
+    .getDate()
+    .getMinuts()
+    .getDay()
+    .getMonth()
+
+--------------------
+
+Assignment:
+
+ Sample date format:
+
+    1. 8/05/2024
+    2. 05/8/2024
+    3. 08-05-2024
+    4. 8th June 2024
+    5. Sat 8th June, 2024
+    6. June 8th 2024
+    7. 8th June, 09h:23min
+    8. 8th June, 09h:23min:3sec

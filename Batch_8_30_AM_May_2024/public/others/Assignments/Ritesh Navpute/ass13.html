@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assginment_10</title>
+</head>
+
+<body>
+    <h3 style="text-align: center;" >EMPLOYEE DETAILS </h3>
+    <script>
+        
+        var EmployeeID, EmployeeName, empGender ,Department, BasicSalery, pf, hra, Totasal,tax;
+        EmployeeID = prompt("Emplyee_Id");
+        EmployeeName = prompt("EmployeeName");
+        empGender = prompt("Gender");
+        Department = prompt("Department");
+        BasicSalery = prompt("BasicSalery");
+        BasicSalery = parseInt(BasicSalery);
+        pf = (14 * BasicSalery) / 100;
+        hra = (24 * BasicSalery) / 100;
+        Totasal = hra + pf + BasicSalery;
+        console.log("Employe ID" + EmployeeID);
+        console.log("Employee Name" + EmployeeName);
+        console.log("Gender" + empGender);
+        console.log("Department" + Department);
+        console.log("Basic salery" + BasicSalery);
+        console.log("PF" + pf);
+        console.log("hra" + hra);
+        console.log("Total Salery" + Totasal);
+        if(empGender=='male'){
+            console.log(empGender);
+            if (Totasal > 200000){
+                tax = Totasal * 0.15;
+                console.log("You have to Pay"+tax)
+            }
+            else if(Totasal>100000){
+                tax=Totasal*0.10;
+                console.log("You Have to Pay"+tax);
+            }
+            else if(Totasal > 50000){
+                tax=Totasal*0.05;
+                console.log("You Have to Pay"+tax);
+            }
+            else{
+                console.log("You Don't need to pay Incometax");
+            }
+        } else { // for female block
+              console.log(empGender);
+                if(Totasal>200000 && Totasal<300000){
+                    tax=Totasal*0.10;
+                    console.log("You have to Pay"+tax)
+                } else if(Totasal>100000 && Totasal<200000){
+                    tax=Totasal*0.05;
+                    console.log("You Have to Pay"+tax);
+                } else {
+                    console.log("You Don't need to pay Incometax");
+                }
+            
+        }
+    </script>
+</body>
+
+</html>

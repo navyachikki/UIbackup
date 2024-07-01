@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var data = [153, 183, 231, 421, 121, 193];
+        for (var i = 0; i < data.length; i++) {
+            n = data[i];
+            var temp = n;
+        
+        var revnum = "";
+        var rem = 0;
+        while (n > 0) {
+            rem = n % 10;
+            n = n/10;
+            n =parseInt(n);
+            revnum=revnum+rem;
+        }
+        if (temp == revnum) {
+                console.log(temp + " Is a palindrome ");
+            }
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaySlip Dynamic</title>
+    <script src="payslip.js"></script>
+    <link rel="stylesheet" href="payslipStyle.css">
+</head>
+
+<body>
+    <div class="payslipHeader">
+        <div class="logo">
+            <img src="images/logo.png">
+        </div>
+        <div class="companyName">
+            <h3>Tata Consultancy Services</h3>
+        </div>
+        <div class="Address">
+            <h5>Gachibowli,Hyderabad</h5>
+        </div>
+        <hr>
+        <div>
+            <h3>PaySlip for the Month Of <span id="d_currentMonth">June</span> <span id="currentYear">2024</span></h3>
+        </div>
+    </div>
+    <div class="payslipContent">
+        <ul>
+            <li>
+                <input type="text" placeholder="Employee Name" id="empName">
+            </li>
+            <li>
+                <input type="text" placeholder="Employee Number" id="empNum">
+            </li>
+
+            <li>
+                <input type="text" placeholder="Employee Department" id="empDep">
+            </li>
+            <li>
+                Gender: <input type="radio" value="Male" name="gender" checked >Male
+                        <input type="radio" value="Female" name="gender">Female
+            </li>
+            <li>
+                <input type="text" placeholder="BasicSalary" id="basicSal">
+            </li>
+            <li>
+                <input type="button" value="GetPaySlip" onclick="readEmpData()" align="center">
+            </li>
+        </ul>
+    </div>
+    <div class="displayPayslip">
+       <!--  <ul>
+            <li>Employee Name:<span id="d_empName"></span></li>
+            <li>Employee Department:<span id="d_empDep"></span></li>
+            <li>BasicSalary:<span id="d_empBasicSal"></span></li>
+            <li>PF:<span id="d_empPf"></span></li>
+            <li>HRA:<span id="d_empHra"></span></li>
+            <li>Total Salary:<span id="d_empTotalSal"></span></li>
+            <li>Tax:<span id="d_empTax"></span></li>
+        </ul> -->
+        <table>
+            <tr>
+                <td>Employee Name:</td> <td><span id="d_empName"></span></td>
+                <td>Employee Number:</td> <td><span id="d_empNum"></span></td> 
+                <td>Employee Department:</td><td><span id="d_empDep"></span></td>
+            </tr>
+            <tr>
+                <td>Bank A/C NO:</td>
+                <td><span id="d_bankNum"></span></td>
+                <td>Bank Name:</td>
+                <td><span id="d_bankName"></span></td>
+                <td>PF Acc Number:</td>
+                <td><span id="d_pfAcNum"></span></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>Nature</th>
+                <th>Earrings</th>
+                <th>Deductions</th>
+            </tr>
+            <tr>
+                <td>BasicSalary </td><td><span id="d_empBasicSal"></span></td><td></td>
+            </tr>
+            <tr>
+                <td>HRA </td><td><span id="d_empHra"></span></td><td>-</td>
+            </tr>
+            <tr>
+                <td>Medical Allowence </td><td><span id="d_medicalAllowence"></span></td> <td>-</td>
+            </tr>
+            <tr>
+                <td>Convency Allowence </td><td><span id="d_convencyAllow"></span></td> <td>-</td>
+            </tr>
+             <tr>
+                <td>Tax:</td><td>-</td>
+                <td><span id="d_empProfTax"></span></td>
+                
+            </tr> 
+            <tr>
+                <td>Provident Fund</td><td>-</td>
+                <td><span id="d_pf"></span></td>
+            </tr>
+            <tr>
+                <td>Total Salary</td>
+                <td><span id="d_empTotalSal"></span></td> <td>-</td>
+            </tr> 
+            <tr>
+                <td>Total Deductions</td><td>-</td>
+                <td><span id="d_totalDeductions"></span></td>
+            </tr> 
+            <tr>
+                <td>Net Pay(Total Salary + Total Deductions)</td>
+                <td colspan="2"><span id="d_netPay"></span></td>
+            </tr>
+        </table>
+    </div>
+    <div class="payslipFooter">
+        @copyright Kavya2024
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+const { format } = require("morgan");
+
+var sample = (a, b) => {
+    var z = 20;
+    a, b
+
+
+    return z;
+}
+
+var result = sample(10, 20);
+z -> error 
+
+result -> 20
+
+----------------
+
+Dynamic Event handling  
+
+    Event Handling: 
+        Static
+            <htmtag eventattribute="method">
+
+            <div onclick="test()"></div>
+
+        dynamic 
+
+            var divTag = document.createElement("div");
+            divTag.addEventListener("click", "callback method");
+
+
+Declaring a variable :
+
+    var varname = value'
+
+
+    var a 10;
+
+    document.querySelector("#abc").value; 
+
+    ---------------------------
+
+JSON.stringify() -> method to convert any json object to string format
+JSON.parse() -> to covert a string object to json object.

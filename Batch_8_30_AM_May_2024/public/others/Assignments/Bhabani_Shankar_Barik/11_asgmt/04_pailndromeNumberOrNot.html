@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 11</title>
+  </head>
+  <body>
+    <script>
+      /* Wap to program to check wheather a given number is pailndrome number or not. */
+
+    
+      let number = parseInt(prompt("Enter a number: "));
+      let originalNumber = number;
+      let reversedNumber = 0;
+
+      while (originalNumber > 0) {
+        const digit = originalNumber % 10;
+        reversedNumber = reversedNumber * 10 + digit;
+        originalNumber = (originalNumber / 10) | 0; // using bitwise OR to simulate Math.floor()
+      }
+
+      if (number === reversedNumber) {
+        console.log(number + " is a palindrome number.");
+      } else {
+        console.log(number + " is not a palindrome number.");
+      }
+    </script>
+  </body>
+</html>

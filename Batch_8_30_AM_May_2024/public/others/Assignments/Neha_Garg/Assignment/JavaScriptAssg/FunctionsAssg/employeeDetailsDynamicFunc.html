@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+<body>
+
+    <h3>
+        Employee Details dynamic using function
+    </h3>
+    <script>
+
+        
+        var empname,empAge,empGender,empDept,empSal,basicSal,totalSal,taxPer,pf,hra; 
+       
+        readEmployeeDetails();
+
+        function readEmployeeDetails(){
+            empname=prompt("Enter employee name:");
+            empAge=prompt("Enter employee age:");
+            empGender=prompt("Enter employee gender:");
+            empDept=prompt("Enter employee Dept.");
+            empSal=prompt("Enter employee salary:");
+            basicSal=parseFloat(empSal);
+            pfandHraCalculation();
+            }
+
+        function  pfandHraCalculation(){
+                pf = (14 * basicSal) / 100;
+                hra = (24 * basicSal) / 100;
+
+                totalSal = basicSal + pf + hra;
+                employeeTaxCalculation();
+                employeeDetailsDisplay();
+            }
+                
+        function employeeDetailsDisplay(){
+                console.log("Employee name:"+empname);
+                console.log("Employee age:"+empAge);
+                console.log("Employee gender:"+empGender);
+                console.log("Employee dept:"+empDept);
+                console.log("Employee salary:"+basicSal);
+                console.log("Employee Total salary:"+totalSal);
+                console.log("Employee Tax Percentage is:"+taxPer);
+
+            }
+
+         function employeeTaxCalculation(){
+               
+                if(empGender.trim().toLowerCase()=="male"){
+                    if(totalSal>=200000){
+                         taxPer=(15*totalSal)/100;
+                    }
+                    else if(totalSal>=100000){
+                        taxPer=(10*totalSal)/100;
+                    }
+                    else{
+                        taxPer=(5*totalSal)/100;
+                    }
+
+                }
+                else if(empGender.trim().toLowerCase()=="female"){
+                    if(totalSal>=200000){
+                        taxPer=(10*totalSal)/100;
+                    }
+                    else if(totalSal>=150000){
+                        taxPer=(5*totalSal)/100;
+                    }
+                    else{
+                        taxPer=0;
+                    }
+                }
+                // else{
+                //     console.log("Wrong gender");
+                // }
+                
+            }
+            
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10</title>
+</head>
+<body>
+    <script>
+        /* Wap to check wheather a given number is prime number or not.  */
+
+        let numberInput = parseInt(prompt("Enter a number: "));
+        let counter = 0;
+
+        for( let i = 2; i < numberInput; i++) {
+            let remainder = numberInput % i;
+            if( remainder == 0) {
+                counter++;
+                break;
+            }
+        }
+        if(counter == 0){
+            console.log((numberInput + " is a prime number."));
+        } else {
+            console.log(numberInput + " is not a prime number.");
+        }
+    </script>
+</body>
+</html>

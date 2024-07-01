@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>
+            Demonstrating DHTML
+        </h3>
+        <div id="container">
+            
+        </div>
+
+        <script>
+
+            var divTag = document.createElement("div");
+            var msg = prompt("give a msg for tag");
+            // divTag.innerText = msg;
+            divTag.innerHTML = msg;
+
+            var customid = prompt("enter id");
+            divTag.setAttribute("id", customid);
+            divTag.setAttribute("class", "test");
+            divTag.style.color = prompt("enter a color")
+            
+
+            document.querySelector("#container").append(divTag);
+
+            
+
+
+        </script>
+    </body>
+</html>

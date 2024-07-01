@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = [34, 56, 78, 12, 8, 9, 2];
+        console.log(a);
+        
+        for( var i = 0;  i < a.length-1; i++){
+            var A = a[i];
+            for(var j = i; j < a.length; j++){
+                B = a[j];
+                if(B > A){
+                    a[i] = B;
+                    a[j] = A;
+                    A = a[i];
+                }
+            }
+        }
+        console.log("The sorted Array in Ascending order is: " + a);
+    </script>
+</body>
+</html>

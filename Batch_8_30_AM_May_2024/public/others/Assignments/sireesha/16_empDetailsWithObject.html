@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var empDetails = {
+            empname: "Krish",
+            empid: 2341,
+            department: "IT",
+            basicsal: 300000,
+            totalsal: 0,
+            pf: 0,
+            hra: 0,
+            taxPercent: 0,
+            gender: "male"
+        }
+        empDetails.pf = (empDetails.basicsal * 10) / 100;
+        empDetails.hra = (empDetails.basicsal * 15) / 100;
+        totalsal = empDetails.basicsal + empDetails.pf + empDetails.hra;
+
+        if (empDetails.gender.toLowerCase() == "male") {
+            
+            if (totalsal >= 200000) {
+                empDetails.taxPercent = 15;
+            }
+            else if (totalsal >= 150000) {
+                empDetails.taxPercent = 10;
+            }
+            else if (totalSal >= 100000) {
+                empDetails.taxPercent = 5;
+            }
+
+        }
+        else {
+
+            if (totalsal >= 200000) {
+                empDetails.taxPercent = 10;
+            }
+            else if (totalsal >= 150000) {
+                empDetails.taxPercent = 5;
+            }
+        }
+        var taxValue = (totalsal * empDetails.taxPercent) / 100;
+        console.log("total tax to be paid " + taxValue);
+
+        console.log("employe details....");
+            console.log("employe name is = " + empDetails.empname);
+            console.log("employe id is = " + empDetails.empid);
+            console.log("employe department is = " + empDetails.department);
+            console.log("employe basic salery is = " + empDetails.basicsal);
+            console.log("employe pf  is = " + empDetails.pf);
+            console.log("employe hra is = " + empDetails.hra);
+            console.log("employe total salery is = " + totalsal);
+
+    </script>
+</body>
+
+</html>

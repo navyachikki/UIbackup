@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Second Largest in Array</h3>
+
+    <script>
+        var a=[23,34,12,67,2,3,9];
+        
+
+
+        for(var i=0;i<a.length-1;i++){
+            for(var j=0;j<a.length-i-1;j++){
+                if(a[j]>a[j+1]){
+                    var temp=a[j];
+                    a[j]=a[j+1];
+                    a[j+1]=temp;
+                }
+            }
+        }
+        for(var i=0;i<a.length;i++){
+            console.log("Sorted Array is:"+a[i]);
+    }
+    console.log("Second Largest element is:"+a[a.length-2]);
+    </script>
+
+    
+</body>
+</html>

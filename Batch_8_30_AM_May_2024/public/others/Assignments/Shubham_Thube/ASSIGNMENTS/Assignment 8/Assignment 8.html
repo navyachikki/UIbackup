@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   .bdy{
+    border: 2px solid black;
+    width: 500px;
+    margin: auto;
+    padding: auto;
+   }
+   h3{
+    text-align: center;
+    color: #cc00cf;
+   }
+   .text{
+    height: 30px;
+    text-align: center;
+    font-weight: normal;
+    padding: 10px;
+    font-family: Garamond, serif;
+    color: #afafaf;
+   }
+</style>
+<body>
+    <div class="bdy">
+    <h3>
+         Employee Details
+    </h3>
+    <ul>
+        <li>
+            Employee Name: <span id="ename"></span>
+        </li>
+        <li>
+            Department: <span id="dept"></span>
+        </li>
+        <li>
+            Gender: <span id="gndr"></span>
+        </li>
+        <li>
+            Basic Salary: <span id="bsal"></span>
+        </li>
+        <li>
+            Total Salary: <span id="tsal"></span>
+        </li>
+    </ul>
+    <script>
+        var employeeName = "Shubham Thube";
+        var departMent = 'IT';
+        var genDer = "Male";
+        var bSal = 30000;
+        var pf = (12/100)*bSal;
+        var hra = (24/100)*bSal;
+        var tSal = bSal + pf + hra;
+        var total = tSal;
+
+        console.log("Employee Detials");
+        console.log("Employee Name Is" + employeeName);
+        console.log("Department" + departMent);
+        console.log("Gender" + genDer);
+        console.log("Basic Salary" + bSal);
+        console.log("Total Salary" + tSal);
+
+        document.querySelector("#ename").innerText = employeeName;
+        document.querySelector("#dept").innerText = departMent;
+        document.querySelector("#gndr").innerText = genDer;
+        document.querySelector("#bsal").innerText = bSal;
+        document.querySelector("#tsal").innerText = tSal;
+
+    </script>
+    </div>
+    <div class="text">All rights reserved @ Shubham_Thube -2024</div>
+</body>
+</html>

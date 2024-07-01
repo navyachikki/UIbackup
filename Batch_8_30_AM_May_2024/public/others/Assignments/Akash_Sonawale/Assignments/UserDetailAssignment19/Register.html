@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <h1>User Details</h1>
+    <div class="main">
+        <ul>
+            <li>
+                <input type="text" placeholder="Enter user name" id="uName">
+            </li>
+            <li>
+                <input type="text" placeholder="Age" id="uAge">
+            </li>
+            <li>
+                <input type="radio" value="male" checked name="gender"> Male
+                <input type="radio" value="female" name="gender"> Female
+            </li>
+            <li>
+                <input type="text" placeholder="Location" id="uLocation">
+            </li>
+            <li>
+                <input type="button" value="Register" onclick="readUserDetail()">
+            </li>
+        </ul>
+    </div>
+    <div>
+        <table id="userTable" border="1" style="display: none;">
+            <thead>
+                <tr>
+                    <th>User Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Location</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="userDetails"></tbody>
+        </table>
+    </div>
+    <footer>@Akash_Sonawale</footer>
+    <script src="register.js"></script>
+</body>
+</html>

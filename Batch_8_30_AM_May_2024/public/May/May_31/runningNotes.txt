@@ -1,0 +1,77 @@
+Control Structures:
+
+    Conditional CS 
+        if 
+            Syntax:
+                if (<condition true/false>) {
+                    ...
+                    ....
+                    ....
+                }
+            eg:
+                a = 90
+                b = 100
+                if (a > b ) {
+                    ... 
+                    ... 
+                    ....
+                }
+        if else 
+            Syntax:
+                if (condition) {
+                    .... 
+                    ....
+                } else {
+                    ....
+                }
+        else if 
+        nested if 
+        nested if else 
+
+
+    Looping CS 
+        for 
+        while 
+        do while 
+        for each 
+        for in 
+        for of 
+
+    Case CS 
+        switch case 
+
+    a = prompt("user value")
+    if (a > 30) {
+
+    }
+
+Assignment:
+    Employee Details:
+    name 
+    age
+    gender
+    dep, basicsal 
+
+    total sal -> 
+
+    What is the total tax to be paid
+
+        male 
+            totalsal >= 200000
+                tax percent is 15% of the total sal  
+            totals sal >= 150000
+                tax percetn is `10 
+            totalsal >= 100000
+                tax percetn is 5
+            otherwise 
+                zero
+        female 
+            totalsal >= 200000
+                tax percent is 10 
+            totals sal >= 150000
+                tax percetn is `5 
+            otherwise 
+                zero
+----------------------------
+
+    diff btwn =, == and === operators

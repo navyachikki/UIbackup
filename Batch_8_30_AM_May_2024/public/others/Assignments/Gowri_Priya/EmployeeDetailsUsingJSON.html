@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details Using JSON</title>
+</head>
+<body>
+    <h1 style="text-align:center">Check on Console</h1>
+    <script>
+
+        var EmployeeDetails={
+            name: prompt("Enter a Employee Name: "),
+            age: parseInt(prompt("Enter a Employee Age: ")),
+            Gender: prompt("Enter a Employee gender: "),
+            dept: prompt("Enter a Employee Department: "),
+            basicsal: parseInt(prompt("Enter a Employee Basicsalary: "))
+
+        };
+        getTotalSal = () => {
+            EmployeeDetails.pf = (12/100)*EmployeeDetails.basicsal;
+            EmployeeDetails.hra = (24/100)*EmployeeDetails.basicsal;
+            EmployeeDetails.totalsal = EmployeeDetails.pf + EmployeeDetails.hra + EmployeeDetails.basicsal;
+            getTaxDetails();
+        };
+        getTaxDetails = () => {
+            if(EmployeeDetails.basicsal > 20000){
+                if(EmployeeDetails.Gender.toLowerCase() == "female"){
+                    EmployeeDetails.tax=(10/100)*EmployeeDetails.basicsal
+                    console.log(EmployeeDetails.tax)
+                }
+                else{
+                    EmployeeDetails.tax=(15/100)*EmployeeDetails.basicsal
+                    console.log(EmployeeDetails.tax)
+                }
+                
+            }
+            else{
+                EmployeeDetails.tax ="Zero"
+                console.log(EmployeeDetails.tax)
+            }
+
+        };
+        getDisplayDetails = () => {
+            getTotalSal();
+            console.log("Employee Name:"+ " " +EmployeeDetails.name)
+            console.log("Employee Age:"+ " " +EmployeeDetails.age)
+            console.log("Employee Gender:"+ " " +EmployeeDetails.Gender)
+            console.log("Employee Dept:"+ " " +EmployeeDetails.dept)
+            console.log("Employee_Basicsal:"+ " " +EmployeeDetails.basicsal)
+            console.log("Employee_TotalSal:"+ " " +EmployeeDetails.totalsal)
+            console.log("EmployeeTax:"+ " " +EmployeeDetails.tax)
+
+        };
+        getDisplayDetails();
+
+        
+        
+        
+    </script>
+    
+</body>
+</html>

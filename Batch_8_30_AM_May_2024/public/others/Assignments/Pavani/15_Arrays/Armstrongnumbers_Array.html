@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = [123, 153, 22, 370, 371, 402];
+        console.log(a);
+
+        for(var i = 0; i < a.length; i++){
+            n = a[i];
+            var rem;
+            var result = 0;
+            var len = n.toString().length;
+
+            while (n > 0) {
+                rem = n % 10;
+                result = result + rem ** len;
+                n = parseInt(n / 10);
+            }
+
+            if (a[i] == result) {
+                console.log("The number is armstrong number: " + a[i]);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     function isPalindrome(number) {
+            const str = number.toString();
+            const reversedStr = str.split('').reverse().join('');
+        return str === reversedStr;
+    }
+
+     function printPalindromes(start, end) {
+        for (let i = start; i <= end; i++) {
+        if (isPalindrome(i)) {
+            console.log(i);
+        }
+    }
+    }
+        printPalindromes(1, 1000);
+
+    </script>
+    
+</body>
+</html>

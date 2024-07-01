@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            String templating...
+        </title>
+    </head>
+    <body>
+        <script>
+            var name = 'Raj';
+            var age = 20;
+            var price = 200;
+            var loc = {
+                locationame: "Hyderabad"
+            };
+
+            // var userMsg = "Name is " + name + ' Age is ' + age + ' Locataion is ' + loc.locationame;
+            var userMsg = `Name is  ${name}  Age is  ${age} Locataion is  ${loc.locationame}, and the price is $${price}`;
+
+            var username = "PRasad";
+            var username = 'PRasad';
+            var username = `PRasad`;
+
+
+            var msg3 = "...."
+
+            console.log(userMsg);
+        </script>
+    </body>
+</html>

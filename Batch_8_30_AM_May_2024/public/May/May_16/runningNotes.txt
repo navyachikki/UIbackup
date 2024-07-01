@@ -1,0 +1,42 @@
+CSS Padding & Margin prop 
+    margin: The gap/space been occupied above the border of the element is called margin space 
+
+    margin: 10px; to apply 10 px of margin for all the four directions 
+
+    margin-top: 10px 
+    margin-left 
+    margin-bottom
+    margin-right 
+
+    margin: 10px 20px; 10px will be for both top and bottom, 20px for left and right 
+
+    margin: 5px 30px 20px 19px; (top, right, bottom, left)
+
+    Padding: The space been occuped below the border and above the text content. 
+
+    CSS Box model:  
+        the concept of calculating the actual dimensions of DOM element on the page, is called css box modeling
+
+        While calculating the actual dimensions, it includes, the border, margin space, padding space, and the given dimentions
+
+
+
+
+        #container {
+            width: 220px;
+            height: 110px
+            border: 3px solid;
+            padding: 5px 11px 12px 15px;
+            margin: 13px 19px;
+        }
+        <div id="container">Cotnent</div>
+
+        Actual width: 
+            259
+            284 
+            269 
+            244
+            281
+            284
+            290
+            

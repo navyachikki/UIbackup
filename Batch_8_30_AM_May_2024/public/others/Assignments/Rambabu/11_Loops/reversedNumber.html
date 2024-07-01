@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var num = prompt('Enter Number');
+        // var numStr = num.toString();
+        // var reversedStr = numStr.split('').reverse('').join('');
+        // var reversedNum = parseInt(reversedStr);
+        // console.log('Original number is: ' + num);
+        // console.log('Reversed number is: ' + reversedNum);
+
+        var n = prompt('Enter number');
+        var revNumber = '';// revNumber=0 we cant get zero values in first place Ex:320=23
+        var rem = 0;
+        while (n > 0) {
+            rem = n % 10;
+            n = n / 10;
+            n = parseInt(n);
+            revNumber = revNumber + rem;
+        }
+        console.log("Reverse Number: " + revNumber)
+    </script>
+</body>
+
+</html>

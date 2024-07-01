@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Generating Captcha Text
+        </title>
+        <script src="Capthca_lib/DynamicCapthcaText.js"></script>
+        <style>
+            .capthcaText {
+                text-align: center;
+                width: 200px;
+                padding: 20px;
+                font-weight: bold;
+                border: 1px solid;
+                margin: 50px;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="capthcaText"></div>
+        <input type="button" value="Generate Captcha" onclick="generateCaptchaText()"> 
+        <script>
+            var generateCaptchaText = () => {
+                var captchaText=""
+
+                for (var i = 1; i <= 5; i++) {
+                    
+
+                    captchaText = captchaText+ getRandomChar() ;
+                }
+
+                 document.querySelector(".capthcaText").innerText = captchaText;
+            }
+        </script>
+    </body>
+</html>

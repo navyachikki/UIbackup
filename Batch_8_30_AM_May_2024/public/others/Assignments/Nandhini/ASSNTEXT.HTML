@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>Document</title>
+    </head>
+    <BODY>
+        <h3> EMPLOYEE DETAILS </h3>
+    </BODY>
+
+    <ul>
+        <li> 
+            employee name is <span id= "ename"> </span> 
+        </li>
+
+        <li>
+            employee dept: <span id="edept"></span>
+        </li>
+
+        <li>
+            gender: <span id="gen"></span>
+        </li>
+
+        <li>
+            basic salary: <span id="bs"></span>
+        </li>
+        <li>PF: <span id="pf"> </span></li>
+        <li>HRA: <span id="hra"> </span></li>    
+       
+
+    </ul>
+
+    <script>
+        
+            var employeename = 'Raj';
+            var employeedepartment = 'mechanical';
+            var gender = "male";
+            var basicsalary = 45000;
+
+            var pf = basicsalary * 12/100;
+            var HRA = basicsalary * 20/100;
+            
+            var  totalsalary = basicsalary + pf + HRA;
+
+           document.getElementById("ename").innerHTML=employeename;
+           document.getElementById("edept").innerHTML=employeedepartment;
+           document.getElementById("gen").innerHTML=gender;
+           document.getElementById("bs").innerHTML=basicsalary;
+           document.getElementById("pf").innerHTML=pf;
+           document.getElementById("hra").innerHTML=HRA;
+
+    </script>
+</html>

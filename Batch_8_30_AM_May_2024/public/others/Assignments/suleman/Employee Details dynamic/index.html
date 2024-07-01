@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee details</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h3>Employee Details</h3>
+    <div class="main">
+      <ul>
+        <li>
+          <input type="text" id="ename" placeholder="Employee Name" />
+        </li>
+        <li>
+          <input type="text" id="eage" placeholder="Age" />
+        </li>
+        <li>
+          <input type="text" id="esalary" placeholder="Basic Salary" />
+        </li>
+        <li>
+          Gender: <input type="radio" value="male" checked name="gender" />Male
+          <input type="radio" value="Female" name="gender" />Female
+        </li>
+        <li>
+          <input
+            type="button"
+            value="Get pay slip"
+            onclick="readEmployeeDetails()"
+          />
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul class="displayBlock">
+        <li>Employee name: <span id="e_name"></span></li>
+        <li>Age: <span id="e_age"></span></li>
+        <li>Gender: <span id="e_gender"></span></li>
+        <li>Gender: <span id="e_basicSal"></span></li>
+        <li>PF: <span id="e_pf"></span></li>
+        <li>HRA: <span id="e_hra"></span></li>
+        <li>Tax Percentage: <span id="e_tax"></span></li>
+        <li>Total salary: <span id="e_totalSalary"></span></li>
+      </ul>
+    </div>
+    <script src="emp.js"></script>
+  </body>
+</html>

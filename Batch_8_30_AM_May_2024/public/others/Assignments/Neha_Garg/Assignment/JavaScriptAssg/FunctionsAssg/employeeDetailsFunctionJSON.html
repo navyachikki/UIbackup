@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+<body>
+
+    <h3>
+        Employee Details dynamic using function arrow
+    </h3>
+    <script>
+
+        var empDetails={};
+
+        var readEmployeeDetails=()=>{
+            
+            empDetails.empName=prompt("Enter employee name:");
+            empDetails.empAge=prompt("Enter employee age:");
+            empDetails.empGender=prompt("Enter employee gender:");
+            empDetails.empDept=prompt("Enter employee Dept.");
+            empDetails.empSal=prompt("Enter employee salary:");
+            var basicSal=parseFloat(empDetails.empSal);
+            pfandHraCalculation(basicSal);
+            employeeDetailsDisplay(empDetails);
+            }
+
+        var  pfandHraCalculation=(basicSal)=>{
+                var pf,hra;
+                pf = (14 * basicSal) / 100;
+                hra = (24 * basicSal) / 100;
+
+                empDetails.totalSal = basicSal + pf + hra;
+                employeeTaxCalculation();
+            
+                
+            }
+                
+        var employeeDetailsDisplay=()=>{
+                console.log("Employee name:"+empDetails.empName);
+                console.log("Employee age:"+empDetails.empAge);
+                console.log("Employee gender:"+empDetails.empGender);
+                console.log("Employee dept:"+empDetails.empGender);
+                //onsole.log("Employee salary:"+basicSal);
+               console.log("Employee Total salary:"+empDetails.totalSal);
+                console.log("Employee Tax Percentage is:"+empDetails.taxPer);
+
+               
+
+            }
+
+         var employeeTaxCalculation=()=>{
+               
+                if(empDetails.empGender.trim().toLowerCase()=="male"){
+                    if(empDetails.totalSal>=200000){
+                         empDetails.taxPer=(15*empDetails.totalSal)/100;
+                    }
+                    else if(empDetails.totalSal>=100000){
+                        empDetails.taxPer=(10*empDetails.totalSal)/100;
+                    }
+                    else{
+                        empDetails.taxPer=(5*empDetails.totalSal)/100;
+                    }
+
+                }
+                else if(empDetails.empGender.trim().toLowerCase()=="female"){
+                    if(empDetails.totalSal>=200000){
+                        empDetails.taxPer=(10*empDetails.totalSal)/100;
+                    }
+                    else if(empDetails.totalSal>=150000){
+                        empDetails.taxPer=(5*empDetails.totalSal)/100;
+                    }
+                    else{
+                        empDetails.taxPer=0;
+                    }
+                }
+                else{
+                    console.log("Wrong gender");
+                }
+    
+                
+            }
+            
+            readEmployeeDetails();
+    </script>
+    
+</body>
+</html>

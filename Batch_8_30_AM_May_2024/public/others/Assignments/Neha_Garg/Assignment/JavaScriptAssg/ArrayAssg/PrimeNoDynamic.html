@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Prime no.</h3>
+
+    <script>
+      var length= parseInt(prompt("Enter Length of Array") );
+      var a=[];
+      for(var i=0;i<length;i++){
+        a[i]=parseInt(prompt("Enter array element at index "+i+" "));
+      }
+
+      for(let k=0;k<length;k++){
+        var isPrime;
+        var num=a[k];
+        for(let j=2;j<num;j++){
+            if(a[k]%j==0){
+                isPrime=false;
+                break;
+            }
+            else{
+                isPrime=true;
+            }
+        }
+        if(isPrime){
+        console.log(a[k]+" is a prime no.")
+        } 
+        else{
+            console.log(a[k]+" is not a prime no.")
+        }
+
+    }
+    
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,83 @@
+body{
+    background-image: url("https://img.freepik.com/free-photo/close-up-bingo-game-elements_23-2149181871.jpg?t=st=1718974964~exp=1718978564~hmac=8b026c1712594dd6b6f9230896bb1a621dfa446f0adfdcd4168b30255136ab25&w=1380");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.box{
+    border: 2px solid;
+    border-radius: 49px;
+    width: 74px;
+    height: 72px;
+    position: relative;
+    left: 908px;
+    top: 32px;
+    background-color: #43e53f;
+    text-align: center;
+    font-size: xxx-large;
+
+}
+h1{
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(253 253 255);
+    font-style: italic;
+}
+.container{
+    border: 3px solid;
+    background-color: rgb(171 70 70);
+    width: 661px;
+    height: 678px;
+    position: absolute;
+    left: 630px;
+    top: 127px;
+    border-radius: 73px;
+}
+.circle{
+    margin: 12px;
+    padding: 8px;
+    height: 27px;
+    width: 26px;
+    cursor: pointer;
+    display: flex;
+    border-image: initial;
+    border-radius: 50%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    float: left;
+    font-size: large;
+    font-weight: bolder;
+    position: relative;
+    top: -16px;
+    left: 2px;
+    
+}
+.circle:hover{
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+    transition: transform .2s;
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5);  */
+    transform: scale(1.5); 
+    background-color: rgb(255, 0, 157);
+    
+}
+#start, #next{
+    border: 2px solid;
+    border-radius: 49px;
+    width: 85px;
+    height: 85px;
+    background-color: #1fd9bd;
+    font-weight: bolder;
+    font-style: italic;
+    position: relative;
+    left: 880px;
+    top: 743px;
+    font-size: medium;
+    
+    
+} 
+#start:hover, #next:hover{
+    background-color: rgb(207, 96, 221);
+    font-size: 160%;
+}

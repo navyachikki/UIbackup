@@ -1,0 +1,80 @@
+/* index.css */
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    font-family: papyrus;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Container styling */
+.main {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main li {
+    margin: 10px 0;
+}
+
+/* Input field styling */
+input[type="text"], input[type="radio"], input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+/* Button styling */
+input[type="button"] {
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #ff1919;
+}
+
+/* Display block styling */
+.displayBlock {
+    display: none;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.displayBlock li {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}

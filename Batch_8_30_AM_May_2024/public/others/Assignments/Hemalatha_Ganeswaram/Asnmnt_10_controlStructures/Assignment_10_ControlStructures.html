@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var empName = prompt("Enter User Name");
+                empAge = prompt("Enter Your Age");
+                gender=prompt("Enter Your Gender");
+                department = prompt("Enter Your Department");
+                basicSalry = prompt("Enter Your BasicSalary");
+                basicSalry = parseInt(basicSalry);
+
+            // var totalSal;
+                var pf = (14/100)* (basicSalry) ;
+                pf = parseInt(pf);
+                var hra = (24/100) * (basicSalry) ;
+                hra = parseInt(hra);
+            
+                totalSal = basicSalry + pf + hra;
+                
+
+                console.log("Employee details");
+                console.log("Employee Name " +empName);
+                console.log("Employee Age "+empAge);
+                console.log("Department "+department);
+                console.log("Basic Salary "+basicSalry);
+                console.log("Gender "+gender);
+                console.log("Total Salary "+totalSal);
+                if(gender=="male"){
+                    console.log("Tax details");
+                    if(totalSal>200000){
+                        console.log("tax percent is 15% of the total sal is " + (15*basicSalry)/100);
+                    }
+                    else if(totalSal>150000){
+                        console.log("tax percent is 10% of the total sal is" + (10*basicSalry)/100); 
+                    }
+                    else if(totalSal>100000){
+                        console.log("tax percent is 5% of the total sal is "  + (5*basicSalry)/100); 
+                    }
+                    else{
+                        console.log("You dont have tax");
+                    }
+                }
+                
+               else{
+                if(gender=="female"){
+                    console.log("Tax details");
+                    if(totalSal>200000){
+                        console.log("tax percent is 10% of the total sal is " + (10*basicSalry)/100);
+                    }
+                    else if(totalSal>150000){
+                        console.log("tax percent is 5% of the total sal is" + (5*basicSalry)/100); 
+                    }
+                    else{
+                        console.log("You dont have tax"); 
+                    }
+                }
+               }
+                
+               
+
+        </script>
+    </body>
+</html>

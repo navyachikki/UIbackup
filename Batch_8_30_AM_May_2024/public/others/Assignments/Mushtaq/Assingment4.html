@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Progress Card Details</title>
+    <style>
+        .title{
+           border: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+            font-size: 20px;
+            background-color:rgb(200, 160, 101);
+            color: #fff;
+           
+        }
+        .tableContainer{
+            width: 100%;
+            /* border: 1px solid; */
+            margin: 0px;
+            padding: 5px;
+        }
+        .table-head tr th{
+            background-color: #06080a;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+            border:1px solid black;
+
+        }
+        .table-body tr td{
+            text-align: center;
+        }
+        .table-body td img{
+            border: 1px solid;
+        }
+        .tableSubContainer{
+            margin: 0px;
+            padding: 5px;
+            text-align: center;
+            width: 100%;
+        }
+        .t-subHead tr th{
+            background-color:#06080a;
+            color: #fff;
+            padding: 7px;
+            
+            text-align: center;
+        }
+        .t-subBody tr td{
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        #student1{
+            background-color:rgb(188, 228, 114);
+        }
+        #student2{
+            background-color:rgb(226, 121, 83);
+            
+        }
+        #student3{
+            background-color:rgb(188, 228, 114);
+        }
+        #student4{
+            background-color: rgb(226, 121, 83);
+        }
+        #student5{
+            background-color:rgb(188, 228, 114);
+        }
+        #student6{
+            background-color: rgb(226, 121, 83);
+        }
+        #student7{
+            background-color:rgba(188, 228, 114);
+        }
+        #student8{
+            background-color:rgb(226, 121, 83) ;
+        }
+        #student9{
+            background-color: rgba(188, 228, 114);
+        }
+        #student10{
+            background-color: rgb(226, 121, 83);
+        }
+        .t-foot tr td{
+            border: 1px solid;
+            background-color: rgb(200, 160, 101);
+            text-align: center;
+        }
+
+       
+        
+      
+      
+    </style>
+</head>
+<body>
+    <h2 class="title">Student Progress Card Details</h2> 
+
+    <table class="tableContainer" cellspacing="10px">
+        <thead class="table-head">
+            <tr>
+                <th>Sl.No</th>
+                <th>Student Name</th>
+                <th>Age</th>
+                <th>Location</th>
+                <th>Picture</th>
+                <th>Progress Card</th>
+            </tr>
+        </thead>
+        <tbody class="table-body">
+            <tr id="student1">
+                <td>1</td>
+                <td>Arham </td>
+                <td>21</td>
+                <td>Parbhani</td>
+                <td>
+                   <img src="/th.jpeg" alt="">
+                </td>
+                <td>
+                    <table class="tableSubContainer" cellspacing="10px" cellpadding="5px">
+                        <thead class="t-subHead">
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Total Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained</th>
+                            </tr>
+                        </thead>
+                        <tbody class="t-subBody">
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>85</td>
+                            </tr>
+                            <tr>
+                                <td>Mathematics</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>79</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>73</td>
+                            </tr>
+                            <tr>
+                                <td>Comp. Sc</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>93</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr id="student2">
+                <td>2</td>
+                <td>Nikita</td>
+                <td>21</td>
+                <td>Aurangabad</td>
+                <td>
+                    <img src="./Screenshot 2024-05-22 105530.png" alt="">
+                </td>
+                <td>
+                    <table class="tableSubContainer" cellspacing="10px" cellpadding="5px">
+                        <thead class="t-subHead">
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Total Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained</th>
+                            </tr>
+                        </thead>
+                        <tbody class="t-subBody">
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>85</td>
+                            </tr>
+                            <tr>
+                                <td>Mathematics</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>96</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>73</td>
+                            </tr>
+                            <tr>
+                                <td>Comp. Sc</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>79</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr id="student3">
+                <td>3</td>
+                <td>Sohel</td>
+                <td>26</td>
+                <td>Hydrabad</td>
+                <td>
+                    <img src="./Screenshot 2024-05-22 105637.png" alt="">
+                </td>
+                <td>
+                    <table class="tableSubContainer" cellspacing="10px" cellpadding="5px">
+                        <thead class="t-subHead">
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Total Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained</th>
+                            </tr>
+                        </thead>
+                        <tbody class="t-subBody">
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>95</td>
+                            </tr>
+                            <tr>
+                                <td>Mathematics</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>85</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>73</td>
+                            </tr>
+                            <tr>
+                                <td>Comp. Sc</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>75</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr id="student4">
+                <td>4</td>
+                <td>Harshada</td>
+                <td>22</td>
+                <td>Pune</td>
+                <td>
+                    <img src="./Screenshot 2024-05-22 105530.png" alt="">
+                </td>
+                <td>
+                    <table class="tableSubContainer" cellspacing="10px" cellpadding="5px">
+                        <thead class="t-subHead">
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Total Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained</th>
+                            </tr>
+                        </thead>
+                        <tbody class="t-subBody">
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>89</td>
+                            </tr>
+                            <tr>
+                                <td>Mathematics</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>95</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>Comp. Sc</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>78</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr id="student5">
+                <td>5</td>
+                <td>Adarsh</td>
+                <td>20</td>
+                <td>Parbhani</td>
+                <td>
+                    <img src=".//th.jpeg" alt="">
+                </td>
+                <td>
+                    <table class="tableSubContainer" cellspacing="10px" cellpadding="5px">
+                        <thead class="t-subHead">
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Total Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained</th>
+                            </tr>
+                        </thead>
+                        <tbody class="t-subBody">
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>85</td>
+                            </tr>
+                            <tr>
+                                <td>Mathematics</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>89</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>73</td>
+                            </tr>
+                            <tr>
+                                <td>Comp. Sc</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>82</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr id="student6">
+                <td>6</td>
+                <td>Faizan</td>
+                <td>20</td>
+                <td>Mumbai</td>
+                <td>
+                    <img src="./Screenshot 2024-05-22 105637.png" alt="">
+                </td>
+                <td>
+                    <table class="tableSubContainer" cellspacing="10px" cellpadding="5px">
+                        <thead class="t-subHead">
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Total Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained</th>
+                            </tr>
+                        </thead>
+                        <tbody class="t-subBody">
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>86</td>
+                            </tr>
+                            <tr>
+                                <td>Mathematics</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>89</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>78</td>
+                            </tr>
+                            <tr>
+                                <td>Comp. Sc</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>88</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr id="student7">
+                <td>7</td>
+                <td>Amin</td>
+                <td>21</td>
+                <td>Bamglore</td>
+                <td>
+                    <img src="./th.jpeg" alt="">
+                </td>
+                <td>
+                    <table class="tableSubContainer" cellspacing="10px" cellpadding="5px">
+                        <thead class="t-subHead">
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Total Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained</th>
+                            </tr>
+                        </thead>
+                        <tbody class="t-subBody">
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>85</td>
+                            </tr>
+                            <tr>
+                                <td>Mathematics</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>71</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>77</td>
+                            </tr>
+                            <tr>
+                                <td>Comp. Sc</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>95</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr id="student8">
+                <td>8</td>
+                <td>Maheen</td>
+                <td>21</td>
+                <td>Nanded</td>
+                <td>
+                    <img src="./Screenshot 2024-05-22 105530.png" alt="">
+                </td>
+                <td>
+                    <table class="tableSubContainer" cellspacing="10px" cellpadding="5px">
+                        <thead class="t-subHead">
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Total Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained</th>
+                            </tr>
+                        </thead>
+                        <tbody class="t-subBody">
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>83</td>
+                            </tr>
+                            <tr>
+                                <td>Mathematics</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>79</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>73</td>
+                            </tr>
+                            <tr>
+                                <td>Comp. Sc</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>99</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr id="student9">
+                <td>9</td>
+                <td>Gayatri</td>
+                <td>21</td>
+                <td>Pune</td>
+                <td>
+                    <img src="./Screenshot 2024-05-22 105530.png" alt="">
+                </td>
+                <td>
+                    <table class="tableSubContainer" cellspacing="10px" cellpadding="5px">
+                        <thead class="t-subHead">
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Total Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained</th>
+                            </tr>
+                        </thead>
+                        <tbody class="t-subBody">
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>95</td>
+                            </tr>
+                            <tr>
+                                <td>Mathematics</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>78</td>
+                            </tr>
+                            <tr>
+                                <td>Comp. Sc</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>89</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr id="student10">
+                <td>10</td>
+                <td>Farhan</td>
+                <td>21</td>
+                <td>Chennai</td>
+                <td>
+                    <img src="./th.jpeg" alt="">
+                </td>
+                <td>
+                    <table class="tableSubContainer" cellspacing="10px" cellpadding="5px">
+                        <thead class="t-subHead">
+                            <tr>
+                                <th>Subjects</th>
+                                <th>Total Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained</th>
+                            </tr>
+                        </thead>
+                        <tbody class="t-subBody">
+                            <tr>
+                                <td>English</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>88</td>
+                            </tr>
+                            <tr>
+                                <td>Mathematics</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>99</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>73</td>
+                            </tr>
+                            <tr>
+                                <td>Comp. Sc</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>96</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                        <tfoot class="t-foot">
+                            <tr>
+                                <td colspan="6">@copyrights 2024.</td>
+                            </tr>
+                        </tfoot>
+    </table>
+               
+        
+
+       
+
+
+</body>
+</html>

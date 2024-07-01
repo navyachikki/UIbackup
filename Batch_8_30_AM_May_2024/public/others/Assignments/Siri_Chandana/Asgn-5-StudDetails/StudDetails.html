@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details without Table using Div</title>
+
+    <style>
+        
+        body{
+            background-color: rgb(189, 243, 237);
+        }
+        .title {
+            /* border: 3px solid plum; */
+            color: black;
+            text-align: center;
+            font-size: xx-large;
+            font-weight: bolder;
+            background-color: lightseagreen;
+            border-radius: 10px;
+        }
+
+        .container {
+            border-radius: 10px;
+            background-color: lightcyan;
+            margin: 10px auto;
+            border: 3px solid lightseagreen;
+            width: 850px;
+            height: 500px;
+            font-size: large;
+            float: right;
+            overflow: scroll;
+        }
+
+        .name {
+            border-radius: 10px;
+            background-color: lightcyan;
+            border: 3px solid lightseagreen;
+            margin: 10px auto;
+            width: 350px;
+            height: 500px;
+            float: left;
+            overflow: scroll;
+            cursor: pointer;
+
+
+        }
+
+        .footer {
+            /* border: 3px solid plum; */
+            border-radius: 10px;
+            margin: 10px auto;
+            background-color: lightseagreen;
+            color: black;
+            font-weight: bolder;
+            font-size: large;
+            text-align: center;
+            float: left;
+            width: 100%;
+
+        }
+
+        .Stud-1,
+        .Stud-2,
+        .Stud-3,
+        .Stud-4,
+        .Stud-5,
+        .Stud-6,
+        .Stud-7,
+        .Stud-8,
+        .Stud-9,
+        .Stud-10 {
+            border-radius: 9px;
+            border: 3px solid lightseagreen;
+            margin: 10px;
+            padding: 10px;
+            height: 100px;
+
+        }
+
+        .Stud-1:hover,
+        .Stud-2:hover,
+        .Stud-3:hover,
+        .Stud-4:hover,
+        .Stud-5:hover,
+        .Stud-6:hover,
+        .Stud-7:hover,
+        .Stud-8:hover,
+        .Stud-9:hover,
+        .Stud-10:hover {
+
+            cursor: pointer;
+            background-color: lightseagreen;
+            border-color: rgba(14, 121, 115, 0.92) ;
+        
+        }
+
+        .image {
+            border-radius: 5px;
+            border: 3px solid lightseagreen;
+            width: 100px;
+            height: 100px;
+            background-image: url(students.png);
+            float: inline-end;
+
+        }
+        .List{
+    
+            font-size: x-large;
+
+        }
+
+        li div{
+             margin: 15px;
+             padding: 15px;
+        }
+
+        
+        li div:hover{
+             font-size: xx-large;
+             background-color: lightseagreen;
+        }
+
+        .Stud-1 .image {
+            background-repeat: no-repeat;
+            background-position: -15px -6px;
+        }
+
+        .Stud-2 .image {
+            background-repeat: no-repeat;
+            background-position: -144px -13px;
+        }
+
+        .Stud-3 .image {
+            background-repeat: no-repeat;
+            background-position: -315px -11px;
+        }
+
+        .Stud-4 .image {
+            background-repeat: no-repeat;
+            background-position:-26px -156px;
+        }
+
+        .Stud-5 .image {
+            background-repeat: no-repeat;
+            background-position:-167px -135px;
+        }
+
+        .Stud-6 .image {
+            background-repeat: no-repeat;
+            background-position:-311px -145px;
+        }
+
+        .Stud-7 .image {
+            background-repeat: no-repeat;
+            background-position:-14px -280px;
+        }
+
+        .Stud-8 .image {
+            background-repeat: no-repeat;
+            background-position:-158px -274px;
+        }
+
+        .Stud-9 .image {
+            background-repeat: no-repeat;
+            background-position:-314px -277px;
+        }
+
+        .Stud-10 .image {
+            background-repeat: no-repeat;
+            background-position:-14px -412px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="title">Student details</div>
+
+    <div class="container">
+
+        <div class="Stud-1">
+            <div class="image"></div>
+            <div>Name:Krishnaveni</div>
+            <div>Age: 16</div>
+            <div>Gender: Female</div>
+            <div>location:BHEL</div>
+            <div>Marks:85</div>
+        </div>
+
+        <div class="Stud-2">
+            <div class="image"></div>
+            <div>Name: Ramya</div>
+            <div>Age: 16</div>
+            <div>Gender: Female</div>
+            <div>location:JNTU</div>
+            <div>Marks:75</div>
+        </div>
+
+        <div class="Stud-3">
+            <div class="image"></div>
+            <div>Name: Chandana</div>
+            <div>Age: 16</div>
+            <div>Gender: Female</div>
+            <div>location:Kothagudam</div>
+            <div>Marks:80</div>
+        </div>
+
+        <div class="Stud-4">
+            <div class="image"></div>
+            <div>Name: Rakesh</div>
+            <div>Age: 16</div>
+            <div>Gender: Male</div>
+            <div>location:KPHP</div>
+            <div>Marks:85</div>
+        </div>
+
+        <div class="Stud-5">
+            <div class="image"></div>
+            <div>Name: Likhitha</div>
+            <div>Age: 16</div>
+            <div>Gender: Female</div>
+            <div>location: Alkapuri</div>
+            <div>Marks:85</div>
+        </div>
+
+        <div class="Stud-6">
+            <div class="image"></div>
+            <div>Name: Raja</div>
+            <div>Age: 18</div>
+            <div>Gender: Male</div>
+            <div>location:Uppal</div>
+            <div>Marks:88</div>
+        </div>
+
+        <div class="Stud-7">
+            <div class="image"></div>
+            <div>Name: Yasahna</div>
+            <div>Age: 16</div>
+            <div>Gender: Female</div>
+            <div>location:Nagole</div>
+            <div>Marks:70</div>
+        </div>
+
+        <div class="Stud-8">
+            <div class="image"></div>
+            <div>Name: Srija</div>
+            <div>Age: 16</div>
+            <div>Gender: Female</div>
+            <div>location:Kondapur</div>
+            <div>Marks:90</div>
+        </div>
+
+        <div class="Stud-9">
+            <div class="image"></div>
+            <div>Name: Nikhi</div>
+            <div>Age: 15</div>
+            <div>Gender: Male</div>
+            <div>location:Secundrabad</div>
+            <div>Marks:87</div>
+        </div>
+
+        <div class="Stud-10">
+            <div class="image"></div>
+            <div>Name: Siri</div>
+            <div>Age: 18</div>
+            <div>Gender: Female</div>
+            <div>location: Hitech City</div>
+            <div>Marks:85</div>
+        </div>
+
+    </div>
+
+    <div class="name">
+        <ol class="List">
+            <li>
+                <div> Krishnaveni</div>
+            </li>
+            <li>
+                <div> Ramya </div>
+            </li>
+            <li>
+                <div> Chandana </div>
+            </li>
+            <li>
+                <div> Rakesh </div>
+            </li>
+            <li>
+                <div> Likhitha </div>
+            </li>
+            <li>
+                <div> Raja </div>
+            </li>
+            <li>
+                <div> Yasahna </div>
+            </li>
+            <li>
+                <div> Srija </div>
+            </li>
+            <li>
+                <div> Nikhil </div>
+            </li>
+            <li>
+                <div> Siri </div>
+            </li>
+            
+
+        </ol>
+    </div>
+    <div class="footer">@CopyRight Siri Chandana</div>
+</body>
+
+</html>

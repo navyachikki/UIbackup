@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 17</title>
+</head>
+<body>
+    <script>
+
+        /* Employee Details using arrow function and json. */
+
+        let employeeDetails = {};
+
+        let readEmployeeDetails = () => {
+            employeeDetails.employeeName = prompt("Enter employee name:") ;
+            employeeDetails.employeeID = parseInt(prompt("Enter employee ID:"));
+            employeeDetails.employeeDepartment = prompt("Enter employee Department:");
+            employeeDetails.basicSalary = parseInt(prompt("Enter basic salary:"));
+           
+            getPfAndHra(employeeDetails.basicSalary);
+        }
+
+        let getPfAndHra = (basicSalary) => {
+            employeeDetails.pf = (basicSalary* 10) / 100;
+            employeeDetails.hra = (basicSalary * 15) / 100;
+            employeeDetails.totalSalary = basicSalary + employeeDetails.pf + employeeDetails.hra;
+
+            displayEmployeeDetails();
+        }
+
+        let displayEmployeeDetails = () => {
+            console.log("Employee details....");
+            console.log("Employee Name: " + employeeDetails.employeeName);
+            console.log("Employee ID is = " +  employeeDetails.employeeID);
+            console.log("Employee Department is = " +  employeeDetails.employeeDepartment);
+            console.log("Employee basic salary is = " +  employeeDetails.basicSalary);
+            console.log("Employee pf  is = " +  employeeDetails.pf);
+            console.log("Employee hra is = " +  employeeDetails.hra);
+            console.log("Employee total salary is = " +  employeeDetails.totalSalary);
+        }
+        
+        readEmployeeDetails();
+    </script>
+</body>
+</html>

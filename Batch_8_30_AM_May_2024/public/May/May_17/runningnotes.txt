@@ -1,0 +1,50 @@
+.abc #pqr p {
+
+}
+
+div .sample #abc {
+
+}
+
+div span {
+
+}
+
+div, span {
+
+}
+
+------------------------
+
+Webserver hosting: 
+
+    To packages for creating node webserver - > express, express-generator 
+
+
+
+    app.listen(8081, () => {
+        console.log("Server is listing at 8081"); 
+    });
+
+0----------------------
+
+file:///E:/UI_FullstackTraining/UIClasses/Batch_8_30_May_2024/May_17/imageSpritingConcept.html
+
+
+
+localhost:8081
+localhost:8081/May_17/imagesAsBackground.html
+
+-------------
+file:///E:/UI_FullstackTraining/UIClasses/WebApplication/public/May_17/imagesAsBackground.html
+
+http://localhost:8081/May_17/imagesAsBackground.html
+
+http://desktop-hmkq40a:8081/May_17/imagesAsBackground.html
+
+http://192.168.100.22:8081/May_17/imagesAsBackground.html
+
+localhost -> ip address || system name 
+
+
+

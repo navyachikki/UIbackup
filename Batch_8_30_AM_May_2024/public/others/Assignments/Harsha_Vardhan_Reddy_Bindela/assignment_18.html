@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      h2 {
+        margin: 5px;
+        border: 2px solid black;
+      }
+    </style>
+    <title>Employee Details using methods</title>
+  </head>
+  <body>
+    <h2>Employee Details Using Arrow Functions/this method</h2>
+    <div></div>
+    <script>
+      var empDetails = {};
+      var getEmpDetails = () => {
+        this.empName = prompt("Enter Your Name: ");
+        this.empGender = prompt("Enter Your Gender: ");
+        this.genderStr = empGender.toLowerCase();
+        this.empAge = parseInt(prompt("Enter Your Age: "));
+        this.basicSalary = parseInt(prompt("Enter Your Basic salary: "));
+        totalSalary();
+      };
+
+      var totalSalary = () => {
+        this.pf = (basicSalary * 12) / 100;
+        this.hra = (basicSalary * 24) / 100;
+        this.totalSal = basicSalary + pf + hra;
+        taxCalculator(totalSal);
+      };
+
+      var taxCalculator = (totalSal) => {
+        if (genderStr === "male") {
+          if (totalSal >= 200000) {
+            this.taxPercent = (totalSal * 15) / 100;
+            // console.log("Total Tax cutting: " + taxPercent);
+          } else if (totalSal >= 150000) {
+            taxPercent = (totalSal * 10) / 100;
+            // console.log("Total Tax cutting: " + taxPercent);
+          } else if (totalSal >= 100000) {
+            taxPercent = (totalSal * 5) / 100;
+            // console.log("Total Tax cutting: " + taxPercent);
+          } else {
+            console.log("Yoo!, Zero tax deduction");
+          }
+        } else {
+          if (genderStr === "female" && totalSal >= 200000) {
+            taxPercent = (totalSal * 10) / 100;
+            // console.log("Total Tax cutting: " + taxPercent);
+          } else if (totalSal >= 150000) {
+            taxPercent = (totalSal * 5) / 100;
+            // console.log("Total Tax cutting: " + taxPercent);
+          } else {
+            console.log("Yoo!, Zero tax deduction");
+          }
+        }
+        displayEmpDetails();
+      };
+
+      var displayEmpDetails = () => {
+        console.log("Employee Name: " + empName);
+        console.log("Employee Age: " + empAge);
+        console.log("Employee Gender: " + empGender);
+        console.log("Employee Basic Salary: " + basicSalary);
+        console.log("Employee PF: " + pf);
+        console.log("Employee HRA: " + hra);
+        console.log("Employee Total Salary: " + totalSal);
+        console.log("Employee Tax Deduction: " + taxPercent);
+      };
+      getEmpDetails();
+    </script>
+  </body>
+</html>

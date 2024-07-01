@@ -1,0 +1,12 @@
+Functions:
+
+
+Scope of a variable
+    teh accessablity level of a variable 
+
+
+mODULE & BLOCK 
+
+WHILE () {
+    VAR A = 90;
+}

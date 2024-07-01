@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpDetailsUsingObject_dynamic_FUNCTIONS </title>
+</head>
+
+<body>
+    <script>
+        // var empName, empAge, gender, department, basicSalary, pf, hra, totalSalary, taxpercent, tax;
+        var empData = {}
+        var empDetails = () => {
+            empData.empName = prompt('Enter Employee Name');
+            empData.empAge = prompt('Enter Employee Age');
+            empData.gender = prompt('Enter Employee Gender(male or female)');
+            empData.department = prompt('Enter Employee Department');
+            empData.basicSalary = parseInt(prompt('Enter Employee Basicsalary'));
+            // basicSalary = parseInt(basicSalary);
+            getTotalSal()
+        }
+
+        var getTotalSal = () => {
+            empData.pf = empData.basicSalary * (12 / 100);
+            empData.hra = empData.basicSalary * (24 / 100);
+            empData.totalSalary = empData.pf + empData.hra + empData.basicSalary;
+            getDisplayDetails();
+        }
+
+        var getDisplayDetails = () => {
+            console.log('Name: ' + empData.empName);
+            console.log('Age: ' + empData.empAge);
+            console.log('Gender: ' + empData.gender);
+            console.log('Department: ' + empData.department);
+            console.log('BasicSalary: ' + empData.basicSalary);
+            console.log('The PF of Employee is: ' + empData.pf);
+            console.log('The HRA of Employee is: ' + empData.hra);
+            console.log('The Totalsalary of Employee is: ' + empData.totalSalary);
+            getTaxPaid();
+        }
+        var getTaxPaid = () => {
+            empData.taxpercent = 0;
+
+            if (empData.gender === 'male') {
+                if (empData.totalSalary >= 200000) {
+                    empData.taxpercent = 15;
+                } else if (empData.totalSalary >= 150000) {
+                    empData.taxpercent = 10;
+                } else if (empData.totalSalary >= 100000) {
+                    empData.taxpercent = 5;
+                }
+            } else {
+                if (empData.totalSalary >= 200000) {
+                    empData.taxpercent = 10;
+                } else if (empData.totalSalary >= 150000) {
+                    empData.taxpercent = 5;
+                }
+            }
+            empData.tax = (empData.totalSalary * empData.taxpercent) / 100;
+            console.log('Total Tax ' + empData.empName + ' Paid: ' + empData.tax)
+        }
+        empDetails();
+
+    </script>
+</body>
+
+</html>

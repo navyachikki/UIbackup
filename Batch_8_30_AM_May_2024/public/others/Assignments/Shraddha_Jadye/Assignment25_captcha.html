@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPTCHA Generator</title>
+    <style> 
+    .box{
+        height: 20px;
+        width: 200px;
+        border: 1px solid black;
+        font-weight: bold;
+        margin:5px;
+        padding:5px;
+        text-align: center;
+    }</style>
+    
+</head>
+<body>
+    <h1>Genrate Captcha Here</h1>
+    
+
+    <div class="box"></div>
+    <button onclick="generateCaptcha()">Generate captcha</button>
+    
+
+    <script>
+        
+        function generateCaptcha() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            let captcha = '';
+            for (let i = 0; i < 6; i++) {
+                captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            console.log(captcha);
+            //  return captcha;
+            document.querySelector(".box").innerText = captcha;
+        }
+
+        
+    </script>
+</body>
+</html>

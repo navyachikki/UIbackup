@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Prime or not</h1>
+</body>
+<script>
+    
+    let inputValue= prompt("enter the value=");
+let isprime=inputValue==1? false:true;  
+
+for(let i=2;i<inputValue;i++){
+  inputValue%i==0? isprime*=false :isprime*=true;
+};
+
+alert(`${inputValue} is ${isprime? 'prime':'not prime'} number`);
+</script>
+</html>

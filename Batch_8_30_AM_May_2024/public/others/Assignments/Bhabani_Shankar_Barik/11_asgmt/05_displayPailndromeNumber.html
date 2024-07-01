@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 11</title>
+  </head>
+  <body>
+    <script>
+      /* Wap to display all the pailndrome number between 1 to 1000. ( 121 ... */
+
+      console.log("Palindrome numbers between 1 and 1000 are:");
+
+      for (let number = 1; number <= 1000; number++) {
+        let originalNumber = number;
+        let reversedNumber = 0;
+
+        let temp = number;
+        while (temp > 0) {
+          const digit = temp % 10;
+          reversedNumber = reversedNumber * 10 + digit;
+          temp = (temp / 10) | 0;
+        }
+
+        if (originalNumber === reversedNumber) {
+          console.log(originalNumber);
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+Exception handling:
+
+    try 
+    catch 
+    throws
+    throw 
+    finally 
+
+    try {
+        .. 
+        .. // set of intructions in which there is a chance of getting a runtime error, has to be paled within the try block.
+    }
+    catch() {
+        // Set of instructions to handle the error been raised
+    }
+    finally {
+
+    }

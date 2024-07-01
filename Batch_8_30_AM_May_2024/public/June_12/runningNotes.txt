@@ -1,0 +1,35 @@
+DHTML
+
+
+    HTML 
+    CSS 
+
+
+    JS 
+
+    ---------
+
+    predefined objects in js 
+
+        window 
+        document 
+
+
+
+Refering a existing dom element within in the page:
+
+    document.getelementById('id')
+
+    document.getElementByClassname("classname")
+
+    document.getelementByTagname("tagname")
+
+    --------------
+
+        document.querySelector("#abc")
+
+        document.querySelector(".abc")
+
+        document.querySelector("abc")
+        
+        

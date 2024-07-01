@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate total salary </title>
+</head>
+<style>
+    .box{
+        border: 2px solid black;
+        width: 50%;
+        height: 50%;
+        margin: auto;
+        padding: auto;
+
+    background-image:url("https://t3.ftcdn.net/jpg/05/28/84/02/360_F_528840255_aAZcVUvMlVuajglgBonbNzlxBORqo68K.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+    
+    h3{text-align: center;
+        color: blue;
+    }
+
+</style>
+<div class=" box">
+    <h3>Employee Salary Details </h3>
+    <div>
+        <ul>
+            <li> Employee Name :<span id ="EmpName" ></span></li>
+            <li> Employee Company name  :<span id ="EmpCompanyName" ></span></li>
+            <li> Employee Department :<span id ="EmpDepatment" ></span></li>
+            <li> Employee Emp Gender :<span id ="EmpGender" ></span></li>
+            <li> Employee Emp Basic Salary :<span id ="EmpBasicSalary" ></span></li>
+            <li> Employee Total Salary :<span id ="TotalSal" ></span></li>
+
+         </ul>
+<body>
+    <Script>
+
+        var EmpName = "Aboli There";
+        var EmpCompanyName = "Capgemini pvt ltd";
+        var EmpDepatment = "Oil and Gass production project";
+        var EmpGender = "Female" ;
+        var age =26;
+        var EmpBasicSalary =500000;
+       
+
+        var TotalSal;
+         
+        var pf = (14*EmpBasicSalary)/100;
+        var hra = (24 *EmpBasicSalary )/100;
+        TotalSal= EmpBasicSalary + pf + hra;  
+
+        console.log("Employee details ");
+        console.log("Employe Name is  " + EmpName );
+        console.log("Employee Company  Name is  " + EmpCompanyName);
+        console.log("Employee Department is  " + EmpDepatment  );
+        console.log("Employee Gender is  " + EmpGender );
+        console.log("Employee Total salary is  " + TotalSal );
+
+        document.querySelector("#EmpName").innerText = EmpName;
+        document.querySelector("#EmpCompanyName").innerText = EmpCompanyName;
+        document.querySelector("#EmpDepatment").innerText = EmpDepatment;
+        document.querySelector("#EmpGender").innerText = EmpGender;
+        document.querySelector("#EmpBasicSalary").innerText = EmpBasicSalary;
+        document.querySelector("#TotalSal").innerText = TotalSal;   
+       
+    </Script>
+     </div>
+    </div>
+</body>
+</html>

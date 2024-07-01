@@ -1,0 +1,90 @@
+n = 342 -> 9
+
+n = 461 -> 11 -> 2
+
+
+n = 999
+
+sum > 9
+
+28374923 -> 
+
+23423
+
+3563
+
+13
+------------------
+
+
+n = 342
+revnumber = revnumber * 10 + rem -> 
+
+
+var revnumber = 0;
+
+    var rem = 342 % 10 -> 2
+
+    n = n / 10- > 342 / 10-> 34 
+    revnumber = 0 * 10 + rem -> 2
+    ------------
+
+    var rem = 34 % 10-> 4 
+    n = n / 10-> 34/ 10-> 3 
+    revnumber = 2 * 10 + rem -> 24
+    ----------
+
+    var rem = 3 %10- > 3
+    n = n / 10-> 0.34534 -> 0
+    revnumber * 10 + rem -> 24 * 10 + 3 -> 240 + 3 - > 243
+-------------------
+
+do while 
+
+    while (condition) {
+        ..
+        .
+
+        .
+        ..
+    }
+
+
+    do {
+        ...
+        ..
+        ..
+        ..
+    } while(condition);
+
+    ----------------------
+
+we are bout to play a game 
+
+var totalCoinsWon = 0;
+
+while (totalCoinsWon >= 100) {
+    start playing game 
+    get the coins 
+}
+console.log("thanks for playing...");
+--------
+
+var totalCoinsWon = 0;
+
+do {
+    start playing game 
+    get the coins 
+} while (totalCoinsWon >= 100);
+console.log("thanks for playing...");
+-------------------------
+
+CS
+
+    Case CS 
+        switch case 
+
+        --------------
+
+Javascript Functions:
+    

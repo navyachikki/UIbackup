@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>setTimeout and setInterval</title>
+    </head>
+    <body>
+        <script>
+          
+
+         
+            console.log("STart")
+            var count = 0;
+                var myinterval = setInterval( () => {
+                    count++;
+                    console.log("Thanks for visiting our page");
+                    console.log("Have a great day");
+                    if (count == 5) {
+                        clearInterval(myinterval);
+                    }
+
+                }, 3000); // callback methods
+
+            console.log("End");
+        </script>
+    </body>
+</html>

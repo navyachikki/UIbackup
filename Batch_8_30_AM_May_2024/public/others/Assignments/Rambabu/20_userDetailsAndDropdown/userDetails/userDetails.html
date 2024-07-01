@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>userDetails</title>
+    <link rel="stylesheet" href="userDetails.css">
+</head>
+
+<body>
+    <div class="title">
+        <h3>userDetails</h3>
+    </div>
+
+    <div class="empDetails">
+
+        <div class="paySlip">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Location</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="d_name"></td>
+                        <td id="d_age"></td>
+                        <td id="d_gender"></td>
+                        <td id="d_location"></td>
+                        <td id="d_actions">
+                            <input type="button" value="Delete">
+                            <input type="button" value="Edit">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="getDetails">
+            <ul>
+                <li>
+                    <input type="text" placeholder="Enter Name" id="empName">
+                </li>
+                <li>
+                    <input type="text" placeholder="Enter Age" id="empAge">
+                </li>
+
+                <li class="gender">
+                    Gender:
+                    <input type="radio" value="Male" checked name="gender"> Male
+                    <input type="radio" value="Female" name="gender"> Female
+                </li>
+                <li>
+                    <select name="userCoutry" id="empLocation">
+                        <option selected>Country</option>
+                        <option value="India">India</option>
+                        <option value="China">China</option>
+                        <option value="Pakisthan">Pakisthan</option>
+                        <option value="USA">USA</option>
+                        <option value="London">London</option>
+                    </select>
+                </li>
+                <li class="btn">
+                    <input type="button" value="Register" id="empPaySlip" onclick="employeeDetails();">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>@Copy rights 2024</p>
+    </div>
+    <script src="userDetails.js"></script>
+</body>
+
+</html>

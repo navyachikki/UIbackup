@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            
+            
+            /*
+            Type - I
+            displayDetails();
+
+
+            function displayDetails() { // Definition
+                console.log("Student details");
+                console.log("info");
+            }
+
+
+            displayDetails(); // Calling 
+            displayDetails();  */ 
+
+            // Type - II
+            /*var name, displayDetails;
+
+            name = 20;
+            // displayDetails(); // Error
+            displayDetails = function() { 
+                console.log("am frm display details");
+            };
+            displayDetails();
+
+            console.log(typeof(displayDetails)); */ 
+
+            // Type - III - Arrow functions
+
+            // var displayDetails = function() { .... }
+            // displayDetails();
+            var displayDetails = () => {
+                console.log("hello every one");
+            }
+
+            displayDetails();
+
+
+            var schoolname = 'Abcschool'; // Global
+            var studentDetails = () => {
+                var name = "raj"; // local
+                var age  = 20; // local
+                let stdclass = '5th class'; // local
+            }
+            studentDetails();
+
+        </script>
+    </body>
+</html>

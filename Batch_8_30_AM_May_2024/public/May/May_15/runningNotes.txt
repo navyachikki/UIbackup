@@ -1,0 +1,17 @@
+Block level and inline :
+
+
+    Block level elements:
+        1. 'div' tag 
+        2. By default the content within the block level elemen,t will automatically come to new line
+        3. The element/content which is following the block level element, also comes to new line. 
+        4. By default the block level element occupies 100% width of its container.
+        5. We can always control the dimentions (through width and height property) of any block level element.
+        6. h1-h6, p , td, li etc 
+
+    Inline elemnts:
+        1. 'span' tag is best example for inline elements 
+        2. Inline elements always tries to render within the same line 
+        3. By default it occupies the width based on the content its holding 
+        4. We cannot control the dimentions of inline elements ever.
+        5. 

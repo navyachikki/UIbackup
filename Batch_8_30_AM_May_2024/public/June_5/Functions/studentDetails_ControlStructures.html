@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>
+            Working with Student Details....Dynamic
+        </h3>
+        
+        <script>
+            function getTotalAndAvg() {
+                total = m1 + m2 + m3;
+                avg = total / 3;
+            }
+             function displayStudentDetails() {
+                readStudentData();
+                console.log("Student Detials");
+                console.log("Student name is " + studentName);
+                console.log("Student Class " + studentClass);
+                console.log("Total is " + total);
+                console.log("Avg is " + avg);    
+                getGrade();
+            }
+            
+            var studentName, studentClass, m1, m2, m3, total, avg;
+
+            function readStudentData() {
+                studentName = prompt("enter student name");
+                studentClass = prompt("enter student class");
+                m1 = prompt("enter sub 1 marks");
+                m1 = parseInt(m1);
+                m2 = prompt("enter sub 2 marks");
+                m2 = parseInt(m2);
+                m3 = prompt("entr sub 3 marks");
+                m3 = parseInt(m3);
+                getTotalAndAvg();
+            }
+            function getGrade() {
+                if (avg >= 40) {
+                    console.log("passed");
+                    if (avg >= 90) {
+                        console.log("you got Distinction");
+                    } else if ( avg >= 60) {
+                        console.log("you got first class");
+                    } else {
+                        console.log("you got second class");
+                    }
+                } else {
+                    console.log("Failed");
+                }
+            }
+
+            displayStudentDetails();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Date Object Methods</h1>
+    <script>
+        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+        var weekdaays = ['Sun', 'Mon', 'Tues', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+        var cdate = new Date();
+        var monthIndex = cdate.getMonth();
+        var Day = cdate.getDay();
+        var enterdate = prompt("Choose option for date format\n 1. mm/dd/yy 2. dd/mm/yyyy to 7");
+
+        if (enterdate == 1) {
+            var custdate1 = cdate.getDate() + '/' + "0" + (cdate.getMonth()) + '/' + cdate.getFullYear();
+            console.log(custdate1);
+        } else if (enterdate == 2) {
+            var custdate2 = "0" + (cdate.getDate() - 3) + '/' + (cdate.getMonth() + 3) + '/' + cdate.getFullYear();
+            console.log(custdate2);
+        } else if (enterdate == 3) {
+            var custdate3 = "0" + (cdate.getDate()) + '-' + "0" + (cdate.getMonth()) + '-' + cdate.getFullYear();
+            console.log(custdate3);
+        } else if (enterdate == 4) {
+            var custdate4 = cdate.getDate() + "th " + months[monthIndex] + ' ' + cdate.getFullYear();
+            console.log(custdate4)
+        }
+        else if (enterdate == 5) {
+            var custdate5 = weekdaays[Day] + ' ' + cdate.getDate() + "th " + months[monthIndex] + ', ' + cdate.getFullYear();
+            console.log(custdate5)
+        } else if (enterdate == 6) {
+            var custdate6 = months[monthIndex] + ' ' + cdate.getDate() + "th " + ' ' + cdate.getFullYear();
+            console.log(custdate6)
+        }else if (enterdate == 7) {
+            var custdate7 =  cdate.getDate() + "th " + months[monthIndex] + ', ' +("0" +cdate.getHours()).slice(-5)+":"+cdate.getMinutes()+"min";
+            console.log(custdate7)
+        }else{
+            alert("Please Enter Valid Number");
+        }
+    </script>
+</body>
+
+</html>

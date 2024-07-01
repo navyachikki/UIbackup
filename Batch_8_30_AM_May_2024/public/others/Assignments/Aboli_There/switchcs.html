@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case controle structure</title>
+</head>
+<body>
+    <!-- <script>
+        var a1= parseInt(prompt("Enter first value"));
+        var a2= parseInt(prompt("Enter the second value"));
+        var result;
+
+        var userAction = prompt("eneter selection add/sub/mul/div ");
+
+        if( userAction == 'add' ){
+            result = a1 +a2;
+        console.log("the sum of " + result);
+        }
+         else if (userAction == 'sub'){
+            result = a1 - a2;
+        console.log("the sub of " + result);
+        }
+        else if(userAction == 'sub'){
+            result = a1 * a2;
+        console.log("the mul  of " + result);
+        }
+        else if (userAction ==' div'){
+            result = a1/a2;
+        console.log("the div of " + result);}
+        else{
+            console.log("Wrong selection....");
+        }
+        
+    </script> -->
+
+
+<script>
+    var a1= parseInt(prompt("Enter first value"));
+    var a2= parseInt(prompt("Enter the second value"));
+    var result;
+
+    var userAction = prompt("eneter selection add/sub/mul/div ");
+   switch(userAction){
+       case 'add':
+           result = a1 +a2;
+           console.log("the sum of " + result);
+       break;
+
+        case 'sub':
+           result = a1 - a2;
+          console.log("the sub of " + result);
+        break;
+
+        case 'mul':
+         result = a1 * a2;
+          console.log("the mul  of " + result);
+         break;
+
+        case 'div':
+          result = a1/a2;
+          console.log("the div of " + result);
+        break;
+
+   }
+     </script>
+</body>
+</html>
+

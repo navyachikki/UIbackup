@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 15</title>
+</head>
+<body>
+    <script>
+        /* WAP to find the sum of all the odd numbers with in Array. */
+
+        let numberArray = [2 , 5 , 6 , 8, 10 , 45, 66, 90, 40 , 34, 54, 67];
+        console.log(numberArray);
+
+        let sum = 0;
+        for ( let i = 0; i < numberArray.length; i++) {
+            if( numberArray[i] % 2 !== 0) {
+                console.log("Odd Number are: ", numberArray[i]);
+                sum += numberArray[i];
+            }
+        }
+        console.log("Sum of odd number is: ", sum);
+
+
+    </script>
+</body>
+</html>

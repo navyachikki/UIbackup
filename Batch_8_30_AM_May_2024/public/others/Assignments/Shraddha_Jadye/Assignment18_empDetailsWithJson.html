@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      var empDetails = {};
+
+      var readEmployeDetails = () => {
+        empDetails.name = prompt("enter employe name");
+        empDetails.id = prompt("enter emp id");
+
+        empDetails.contact ={};
+empDetails.contact.personal =prompt("Enter Personal Contact");
+empDetails.contact.official = prompt("Enter Official contact Number");
+
+        empDetails.dept = prompt("enter emp department");
+        empDetails.basicsal = prompt("enter basic salery");
+        empDetails.basicsal = parseInt(empDetails.basicsal);
+        getPfAndHra();
+      };
+
+      var getPfAndHra = () => {
+        empDetails.pf = (empDetails.basicsal * 10) / 100;
+        empDetails.hra = (empDetails.basicsal * 15) / 100;
+        empDetails.totalsal =
+          empDetails.basicsal + empDetails.pf + empDetails.hra;
+
+        displayEmployeDetails();
+      };
+
+      var displayEmployeDetails = () => {
+        console.log("employe details....");
+        console.log("employe name is = " + empDetails.name);
+        console.log("employe id is = " + empDetails.id);
+        console.log("Employee's personal contact is: "+empDetails.contact.personal);
+        console.log("Employee's official contact is: "+empDetails.contact.official);
+        console.log("employe department is = " + empDetails.dept);
+        console.log("employe basic salery is = " + empDetails.basicsal);
+        console.log("employe pf  is = " + empDetails.pf);
+        console.log("employe hra is = " + empDetails.hra);
+        console.log("employe total salery is = " + empDetails.totalsal);
+      };
+
+      readEmployeDetails();
+    </script>
+  </body>
+</html>

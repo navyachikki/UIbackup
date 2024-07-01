@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonistrating on largest value</title>
+    </head>
+    <body>
+        <h1>LargestNumber in arrays</h1>
+        <script>
+            
+            var data = [12,52,12,45,17,89,56,97,96,143,5236];
+            var largestValue = data[0];
+            for(var i = 1 ; i < data.length; i++){
+                if (largestValue < data[i]) {
+                    largestValue = data[i];
+                }
+
+            }
+            console.log("largest value is "+ largestValue);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July'];
+
+
+
+        var cdate = new Date();
+        console.log(cdate);
+
+
+        console.log(cdate.getMonth());
+        console.log(cdate.getDate());
+        console.log(cdate.getFullYear());
+        console.log(cdate.getHours());
+        console.log(cdate.getMinutes());
+        console.log(cdate.getSeconds());
+        console.log(cdate.getDay());
+
+        var myCustomDate1 = cdate.getDate() + '/' + (cdate.getMonth() + 1) + '/' + cdate.getFullYear();// ddd/mm/yyyy
+        console.log(myCustomDate1);
+
+
+
+        // 8th June 2024
+        var monthIndex = cdate.getMonth();
+        var customDate2 = cdate.getDate() + 'th ' + months[monthIndex] + ' ' + cdate.getFullYear();
+        console.log(customDate2);
+    </script>
+</body>
+
+</html>

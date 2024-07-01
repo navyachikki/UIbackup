@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var g =[17,21,87,95,11]
+        console.log(g);
+        for (var i=0; i<g.length;i++){
+            var counter =0;
+            for(var j=2; j<g.length;j++){
+                var res =g[i]%j;
+                if(res == 0){
+                    counter++;
+                    break;
+
+                }
+            }
+            if(counter == 0){
+                console.log("its prime:" +g[i]);
+            
+            }
+        }
+    </script>
+</body>
+</html>

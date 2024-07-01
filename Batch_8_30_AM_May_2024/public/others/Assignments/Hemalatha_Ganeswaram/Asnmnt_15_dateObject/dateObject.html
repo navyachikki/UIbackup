@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date objects</title>
+</head>
+<style>
+    .title {
+        margin: 30px auto;
+        width: fit-content;
+        padding: 20px;
+    }
+
+    .bg_color {
+        width: fit-content;
+        background: #050505;
+        padding: 30px 50px;
+        color: rgb(142, 129, 129);
+        border-radius: 12px;
+        border: 2px solid rgb(27, 65, 82);
+        margin: 50px auto;
+    }
+</style>
+<body>
+    <h1 class="title">Date objects in different formats</h1>
+    <div class="bg_color">
+        <h1 id="dateFormat"></h1>
+    </div>
+    <script>
+        var selectDateFormat = parseInt(prompt("Select the Below Format:\n 1. 8/05/2024 \n 2. 05/8/2024 \n 3. 8th June 2024  \n 4. Sat 8th June,2024 \n 5. june 8th 2024 \n 6. 08-05-2024 \n 7. 8th June,09h:23min \n 8. 8th June,09h:23min:3sec"));
+        var customDate = new Date;
+        var months =['January', 'Febraury','March','April','May','June','July','August','Septmeber','October','November','December'];
+        var days = ['Sunday','Monday','Tuesday','WedneSday','Thursday','Friday','Saturday'];
+        var cdate =new Date();
+
+        var monthIndex = cdate.getMonth();
+        var daysIndex = cdate.getDay();
+        
+    switch (selectDateFormat){
+        case 1:
+        myCustomDate = cdate.getDate() + '/' + '0' + (cdate.getMonth() + 1) + '/' + cdate.getFullYear();
+        // console.log(myCustomDate1);// 8/05/2024
+        break;
+        case 2:
+        myCustomDate =  '0' + (cdate.getMonth() + 1) + '/' + cdate.getDate()  +'/' + cdate.getFullYear();
+        // console.log(myCustomDate2); // 05/8/2024
+        break;
+        case 3:
+        myCustomDate = cdate.getDate() + 'th ' + months[monthIndex]  + ' ' +  cdate.getFullYear();
+        // console.log(myCustomDate3);// 8th june 2024
+        break;
+        case 4:
+        myCustomDate =days[daysIndex]+ ' ' +  cdate.getDate()  + 'th ' + months[monthIndex]  + ' ' +',' + cdate.getFullYear();
+        // console.log(myCustomDate4); //sat 8th june , 2024
+        break;
+        case 5:
+        myCustomDate =  months[monthIndex]  + ' ' + cdate.getDate()  + 'th ' +' ' + cdate.getFullYear();
+        // console.log(myCustomDate5); // june 8th 2024
+        break;
+        case 6:
+        myCustomDate = cdate.getDate() + '-' + '0' + (cdate.getMonth() + 1) + '-' + cdate.getFullYear();
+        // console.log(myCustomDate6);//08-05-2024
+        break;
+        case 7:
+        myCustomDate = cdate.getDate() + 'th ' + months[monthIndex]  + ' ' + ',' + ' ' + cdate.getHours() + 'h'  +  ':' +cdate.getMinutes() + 'mins';
+        // console.log(myCustomDate7);// 8th june , 09h:23min
+        break;
+        case 8:
+        myCustomDate = cdate.getDate() + 'th ' + months[monthIndex]  + ' ' + ',' + ' ' + cdate.getHours() + 'h'  +  ':' +cdate.getMinutes() + 'mins' + ':' + cdate.getSeconds() + 'sec';
+        // console.log(myCustomDate8); // 8th june , 09h:23min:3sec
+        break;
+        default:
+                myCustomDate = 'please select again...!'
+    };
+    console.log(myCustomDate);
+    document.querySelector('#dateFormat').innerHTML = myCustomDate;
+    </script>
+</body>
+</html>

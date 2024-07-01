@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+
+<body>
+    <h2>
+        Employee Details
+    </h2>
+    <script>
+        var name, gender, age, department, basicSalary, identity1, identity2;
+        identity1 = "male";
+        identity2 = "Female"
+        name = prompt("Enter the name: ");
+        gender = prompt("Enter the gender: ");
+        age = prompt("Enter the age: "); 
+        department = prompt("Enter the department: ");
+        basicSalary = parseInt(prompt("Enter the basic salary: "));
+        totalSalary = parseInt(prompt("Enter the total salary: "));
+
+        console.log(name);
+        console.log(gender);
+        console.log(age);
+        console.log(department);
+        console.log(basicSalary);
+        console.log(totalSalary);
+
+        if (gender === identity1){
+            if (totalSalary >= 100000) {
+          console.log("Tax to be paid is " + (15 / 100) * totalSalary);
+        } else if (totalSalary >= 120000) {
+          console.log("Tax to be paid is " + (10 / 100) * totalSalary);
+        } else if (totalSalary >= 110000) {
+          console.log("Tax to be paid is " + (5 / 100) * totalSalary);
+        } else {
+          console.log("ZERO");
+        }
+      }
+      else {
+        if (totalSalary >= 100000) {
+          console.log("Tax to be paid is " + (10 / 100) * totalSalary);
+        } else if (totalSalary >= 120000) {
+          console.log("Tax to be paid is " + (5 / 100) * totalSalary);
+        } else {
+          console.log("ZERO");
+        }
+      }
+
+    </script>
+
+</body>
+
+</html>

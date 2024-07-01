@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Details</title>
+</head>
+<body>
+  <h2 style="text-align: center;">Employe Details</h2>
+
+  <script>
+    var employeedetails = () => {
+      let name = prompt("Enter your name: ");
+      let age = parseInt(prompt("Enter your age: "));
+      let gender = prompt("Enter your gender: ");
+      let department = prompt("Enter your department: ");
+      let basicSalary = parseFloat(prompt("Enter your basic salary: "));
+      let pf = basicSalary * 0.12; 
+      let hra = basicSalary * 0.24; 
+      let totalSalary = pf + hra + basicSalary;
+
+      display(name, age, gender, department, basicSalary, hra, totalSalary, pf);
+    }
+
+    var display = (name, age, gender, department, basicSalary, hra, totalSalary, pf) => {
+      console.log("Name: " + name);
+      console.log("Age: " + age);
+      console.log("Gender: " + gender);
+      console.log("Department: " + department);
+      console.log("Basic Salary: " + basicSalary);
+      console.log("PF: " + pf);
+      console.log("HRA: " + hra);
+      console.log("Total Salary: " + totalSalary);
+
+      employeesalarycount(name, age, gender, department, basicSalary, hra, totalSalary, pf);
+    }
+
+    var employeesalarycount = (name, age, gender, department, basicSalary, hra, totalSalary, pf) => {
+      if (gender === "male") {
+        console.log("Tax Calculation for male: ");
+        if (totalSalary >= 200000) {
+          let tax = totalSalary * 0.15;
+          console.log("Tax is 15%: " + tax);
+        } else if (totalSalary >= 150000) {
+          let tax = totalSalary * 0.1;
+          console.log("Tax is 10%: " + tax);
+        } else if (totalSalary >= 100000) {
+          let tax = totalSalary * 0.05;
+          console.log("Tax is 5%: " + tax);
+        } else {
+          console.log("Your Tax % is Zero");
+        }
+      } else if (gender === "female") {
+        console.log("Tax Calculation for female:");
+        if (totalSalary >= 200000) {
+          let tax = totalSalary * 0.1;
+          console.log("Tax is 10%: " + tax);
+        } else if (totalSalary >= 150000) {
+          let tax = totalSalary * 0.05;
+          console.log("Tax is 5%: " + tax);
+        } else {
+          console.log("Your Tax % is Zero");
+        }
+      } else {
+        console.log("Please enter a valid gender");
+      }
+    }
+
+    employeedetails();
+  </script>
+</body>
+</html>

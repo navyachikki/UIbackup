@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions</title>
+    <style>
+        .title{
+            BORDER:2PX SOLID grey;
+            margin:10px auto;
+            text-align: center;
+            width:400px;
+            border-radius: 10px;
+        }
+        .container{
+            border:1px solid;
+            height:1000px;
+            position:relative;
+        }
+        .container div{
+            border:1px solid;
+            height:70px;
+            width:70px;
+            margin:20px;
+            padding:40px;
+            border-radius: 10px;
+           
+        }
+        .box1{
+            background-color: rgb(49, 219, 219);
+            float:left;
+            z-index: 1;
+        }
+        .box2{
+            background-color: rgb(132, 219, 44);
+            position:absolute;
+            left:70px;
+            top:60px;
+            float:left;
+            z-index: 2;
+        }
+        .box3{
+            background-color: rgb(219, 56, 56);
+            float:right;
+            z-index: 3;
+        }
+        .box4{
+            background-color: rgb(214, 54, 161);
+            position:absolute;
+            right:70px;
+            top:60px;
+            float:right;
+            z-index:4;
+        
+        }
+        .box5{
+            background-color: rgb(214, 214, 47);
+            clear:both;
+            float:left;
+            position:absolute;
+            top:220px;
+            left:30%;
+            
+           
+        }
+        .box6{
+            background-color:rgb(212, 160, 64);
+            float:left;
+            position:absolute;
+            top:220px;
+            right:30%;
+           
+        }
+        .box7{
+            background-color: rgb(202, 73, 202);
+            position:absolute;
+            top:270px;
+            left:350px;
+            height:140px !important;
+            width:140px !important;
+            z-index:13;
+            
+        }
+        .box8{
+            background-color:rgb(145, 207, 52);
+            position:absolute;
+            top:438px;
+            left:30%;
+        }
+        .box9{
+            background-color: rgb(233, 181, 49);
+            position:absolute;
+            top:438px;
+            right:30%;
+        }
+        .box10{
+            background-color:rgb(230, 108, 108);
+            position:absolute;
+            float:left;
+            bottom: 0;
+            z-index:6;
+        }
+        .box11{
+            background-color:blueviolet;
+            float:right;
+            position:absolute;
+            right:0;
+            bottom:0;
+            z-index:7;
+           
+          
+
+        }
+        .box12{
+            background-color:rgb(214, 79, 102);
+            position:absolute;
+            right:60px;;
+            bottom:70px;;
+            z-index: 8;
+          
+        }
+        .box13{
+            background-color: rgb(68, 173, 214);
+            position:absolute;
+            left:60px;;
+            bottom:70px;;
+            z-index:9;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <h1 class="title">BLOCK GAME</h1>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+        <div class="box9"></div>
+        <div class="box10"></div>
+        <div class="box11"></div>
+        <div class="box12"></div>
+        <div class="box13"></div>
+    </div>
+
+   
+
+
+
+
+</body>
+
+</html>

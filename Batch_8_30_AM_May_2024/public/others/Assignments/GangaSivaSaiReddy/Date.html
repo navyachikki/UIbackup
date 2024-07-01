@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>DATE FORMATTING</h3>
+    <script>
+        var choice = prompt("Choose a format to display the time from 1 t0 8");
+        var month = ["Jan","Feb","Mar","Apr","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+        var day = ["Sun","Mon","Tue","Wed","Thur","Fri","Sat"];
+        var currentdate = new Date();
+        var monthindex = currentdate.getMonth();
+        var dayindex = currentdate.getDay();
+
+        switch(choice){
+        
+        case('1'):
+        var choice1 = currentdate.getDate() + '/' + (currentdate.getMonth() + 1) + '/' + currentdate.getFullYear();
+        console.log(choice1);
+        break;
+        case('2'):
+        var choice2 = (currentdate.getMonth() + 1) + '/' + currentdate.getDate() + '/' + currentdate.getUTCFullYear();
+        console.log(choice2);
+        break;
+        case('3'):
+        var choice3 = currentdate.getDate() + '-' + (currentdate.getMonth() + 1) + '-' + currentdate.getFullYear();
+        console.log(choice3);
+        break;
+        case('4'):
+        var choice4 = currentdate.getDate() +'th '+ month[monthindex] + currentdate.getFullYear();
+        console.log(choice4);
+        break;
+        case('5'):
+        var choice5 = day[dayindex] + ' ' + currentdate.getDate() +'th '+ month[monthindex] + ',' + currentdate.getFullYear();
+        console.log(choice5);
+        break;
+        case('6'):
+        var choice6 = month[monthindex] + ' ' + currentdate.getDate() + 'th ' + currentdate.getFullYear();
+        console.log(choice6);
+        break;
+        case('7'):
+        var choice7 = currentdate.getDate() +'th '+ ' ' + month[monthindex] + ', ' + currentdate.getHours() + ':'+ currentdate.getMinutes()+ 'min';
+        console.log(choice7);
+        break;
+        case('8'):
+        var choice8 = currentdate.getDate() +'th'+ ' ' + month[monthindex] + ', ' + currentdate.getHours() + ':'+ currentdate.getMinutes() + 'min' + ':' + currentdate.getSeconds() + 'sec';
+        console.log(choice8);
+        break;
+        default:
+            console.log("Choose correctly!!!");
+        break;
+
+    }
+    </script>
+</body>
+</html>

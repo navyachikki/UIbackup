@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 11</title>
+</head>
+<body>
+    <script>
+        /* Wap  to find the reverse of a given number. */
+        let n = prompt("Enter a number:");
+        n = parseInt(n);
+        let reversedNumber = 0;
+        let remainder = 0;
+
+        while(n > 0) {
+            remainder = n % 10;
+            n = n / 10;
+            n = parseInt(n);
+            reversedNumber = (reversedNumber * 10) + remainder;
+        }
+        console.log("Reverse is:" + reversedNumber);
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: black; color: white;">
+
+    <h1 id="root1"></h1>
+    <h1 id="root2"></h1>
+    <h1 id="root3"></h1>
+    <h1 id="root4"></h1>
+    <h1 id="root5"></h1>
+    <h1 id="root6"></h1>
+    <h1 id="root7"></h1>
+    <script>
+    //     Employee Details:
+    // name
+    // dep 
+    // gender
+    // basic sal 
+
+    //     Caluclate:
+    //         total sal 
+    //             totalsal = basic sal + pf + hra 
+
+    //         pf is 12 percent of basic sal 
+
+    //         hra is 24 percernt of basic sal 
+        let eName = prompt("Enter your name: ");
+        let eDepartment = prompt("Enter your Department: ");
+        let eGender = prompt("Enter your Gender: ");
+        let eSalary = prompt("Enter your salary: ");
+        eSalary = parseInt(eSalary);
+
+        let pf = (12/100)*eSalary;
+
+        let hra = (24/100)*eSalary;
+
+        let tSalary = eSalary + pf + hra;
+        
+
+        document.getElementById("root1").innerHTML="Name : "+ eName;
+       
+        document.getElementById("root2").innerHTML="Department : "+ eDepartment;
+        
+        document.getElementById("root3").innerHTML="Gender : "+ eGender;
+       
+        document.getElementById("root4").innerHTML="Salary : "+ eSalary;
+
+        document.getElementById("root5").innerHTML="PF : "+ pf;
+
+        document.getElementById("root6").innerHTML="hra : "+ hra;
+
+        document.getElementById("root7").innerHTML="Total Salarry : "+ tSalary;
+
+    </script>
+</body>
+</html>

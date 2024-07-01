@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var empname = prompt("enter employee name");
+            var empgender = prompt("Gender");
+            empgender = empgender.trim();  // removes space before and after the string.
+            empgender = empgender.toLocaleLowerCase();
+            var basicSal = prompt("Enter basic sal");
+            basicSal = parseInt(basicSal);
+            
+            var pf = (basicSal * 12 ) / 100;
+            var hra = (basicSal * 24 ) / 100;
+            var totalSal = pf + hra + basicSal;
+
+            var taxPercent = 0;
+
+            if (empgender == 'male') {
+                if (totalSal >= 100000) {
+                    taxPercent = 15;
+                } else if (totalSal >= 500000) {
+                    taxPercent = 10;
+                } else if (totalSal >= 100000) {
+                    taxPercent = 5;
+                }
+            } else { // female
+                if (totalSal >= 100000) {
+                    taxPercent = 10;
+                } else if (totalSal >= 500000) {
+                    taxPercent = 5;
+                }
+            }
+           
+            
+        </script>
+    </body>
+</html>

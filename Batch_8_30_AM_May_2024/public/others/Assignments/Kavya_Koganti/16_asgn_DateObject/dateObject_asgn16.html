@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Object</title>
+</head>
+<body>
+    <h3>Date Object</h3>
+    <script>
+        var selectFormat=prompt("Please Select the date formart: \n 1.08/05/2024, \n 2.05/08/2024,\n 3 .08-05-2024,\n 4.8th June 2024,\n 5.sat 8th June,2024,\n 6. June 8th 2024,\n 7. 8th June,09h:23min, \n 8. 8th June,09h:23min:3sec");
+        
+        var currentDate= new Date();
+        var currentDate1 = currentDate.getDate();
+        var currentMonth = currentDate.getMonth() +1;
+        var currentYear = currentDate.getFullYear();
+        var months=['January','February','March','April','May','June','July','August','September','October','November','December'];
+        var monthIndex=currentDate.getMonth();
+        var currentDay=['Sun','Mon','Tue','Wed','Thur','Fri','Sat'];
+
+
+        switch(selectFormat){
+            case '1':
+                //08/05/2024
+                console.log('Your Selected The Date Format is:' + currentDate1 +'/'+ currentMonth + '/' +currentYear);
+                break;
+            case '2':
+                //05/08/2024
+                console.log('Your Selected The Date Format is:' + currentMonth +'/'+  currentDate1  + '/' +currentYear);
+                break;
+            case '3':
+                //08-05-2024
+                console.log('Your Selected The Date Format is:' + currentDate1 +'-'+  currentMonth  + '-' +currentYear);
+                break;
+            case '4':
+                //8th June 2024
+                var myCustomDate1 = currentDate1 + 'th '+ months[monthIndex] +' ' + currentDate.getFullYear();
+                console.log("The custom date is:" +myCustomDate1);
+                break;
+            case '5':
+                //sat 8th June,2024
+                var customDate=currentDate.getDay();
+                console.log('Your Selected The Date Format is:' +currentDay[customDate] + ' '+ currentDate1 + 'th '+ months[monthIndex] + ' ' + currentYear);
+                break;
+            case '6':
+                //June 8th 2024
+                console.log('Your Selected The Date Format is:' + months[monthIndex] + ' ' + currentDate1 + 'th ' + currentYear);
+                break;
+            case '7':
+                // 8th June,09h:23min
+                console.log('Your Selected The Date Format is:' + currentDate1 + 'th ' + months[monthIndex] +','+ currentDate.getHours()+'h:'+currentDate.getMinutes()+'mins');
+                break;
+            case '8':
+                //8th June,09h:23min:3sec
+                console.log('Your Selected The Date Format is:' + currentDate1 + 'th ' + months[monthIndex] +','+ currentDate.getHours()+'h:'+currentDate.getMinutes()+'mins:'+currentDate.getSeconds()+'sec');
+                break;
+
+            default:
+            console.log("Its Showing Wrong Date Format...");
+
+        }
+
+
+    </script>
+</body>
+</html>

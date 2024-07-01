@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Structure</title>
+
+    <style>
+        .pCard {
+            border-radius:15px ;
+            margin: 10px auto;
+            padding: 5px;
+            border: 2px solid rgb(209, 188, 188);
+            text-align: center;
+            color:#000;
+            background-color: hsla(145, 74%, 46%, 0.718);
+            font-weight: bolder;
+        }
+        .outerTable{
+            width: 100%;
+            margin: 10px 0px;
+        }
+        .innerTable{
+            width: 70%;
+            margin: 10px auto;
+            
+        }
+        table,td,th{
+                border:1px solid;
+                text-align: center;
+            }
+        tfoot{
+            background-color: hsla(145, 74%, 46%, 0.718);
+            text-align: justify;
+            }
+        td:hover{
+            cursor: pointer;
+            background-color: rgb(212, 228, 246);
+            color: rgb(54, 54, 95);
+        }
+        th:hover{
+            background-color: rgb(33, 173, 228);
+            color: aliceblue;
+            cursor: text;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pCard"><h3>Student Progress Card Data</h3></div>
+
+    <table class="outerTable">
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>S.Name</th>
+                <th>Age</th>
+                <th>Location</th>
+                <th>Picture</th>
+                <th>Progress Card</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Vinay</td>
+                <td>25</td>
+                <td>Karnataka</td>
+                <td><img src="images/s1.png" alt="Student1" width="100px" height="100px"></td>
+                <td>
+                    <table class="innerTable">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Total Marks</th>
+                                <th>Min</th>
+                                <th>Obtained</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>95</td>
+                            </tr>
+
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>75</td>
+                            </tr>
+
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>85</td>
+                            </tr>
+                        </tbody>   
+                    </table>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>2.</td>
+                <td>Kumar</td>
+                <td>25</td>
+                <td>Karnataka</td>
+                <td><img src="images/s1.png" alt="Student1" width="100px" height="100px"></td>
+                <td>
+                    <table class="innerTable">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Total Marks</th>
+                                <th>Min</th>
+                                <th>Obtained</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>95</td>
+                            </tr>
+
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>75</td>
+                            </tr>
+
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>85</td>
+                            </tr>
+                        </tbody>   
+                    </table>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>3.</td>
+                <td>Kumar</td>
+                <td>25</td>
+                <td>Karnataka</td>
+                <td><img src="images/s1.png" alt="Student1" width="100px" height="100px"></td>
+                <td>
+                    <table class="innerTable">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Total Marks</th>
+                                <th>Min</th>
+                                <th>Obtained</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>95</td>
+                            </tr>
+
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>75</td>
+                            </tr>
+
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>85</td>
+                            </tr>
+                        </tbody>   
+                    </table>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>4.</td>
+                <td>Kumar</td>
+                <td>25</td>
+                <td>Karnataka</td>
+                <td><img src="images/s1.png" alt="Student1" width="100px" height="100px"></td>
+                <td>
+                    <table class="innerTable">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Total Marks</th>
+                                <th>Min</th>
+                                <th>Obtained</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>95</td>
+                            </tr>
+
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>75</td>
+                            </tr>
+
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>85</td>
+                            </tr>
+                        </tbody>   
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td>5.</td>
+                <td>Kumar</td>
+                <td>25</td>
+                <td>Karnataka</td>
+                <td><img src="images/s1.png" alt="Student1" width="100px" height="100px"></td>
+                <td>
+                    <table class="innerTable">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Total Marks</th>
+                                <th>Min</th>
+                                <th>Obtained</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>95</td>
+                            </tr>
+
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>75</td>
+                            </tr>
+
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>85</td>
+                            </tr>
+                        </tbody>   
+                    </table>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>6.</td>
+                <td>Kumar</td>
+                <td>25</td>
+                <td>Karnataka</td>
+                <td><img src="images/s1.png" alt="Student1" width="100px" height="100px"></td>
+                <td>
+                    <table class="innerTable">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Total Marks</th>
+                                <th>Min</th>
+                                <th>Obtained</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>95</td>
+                            </tr>
+
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>75</td>
+                            </tr>
+
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>85</td>
+                            </tr>
+                        </tbody>   
+                    </table>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>7.</td>
+                <td>Kumar</td>
+                <td>25</td>
+                <td>Karnataka</td>
+                <td><img src="images/s1.png" alt="Student1" width="100px" height="100px"></td>
+                <td>
+                    <table class="innerTable">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Total Marks</th>
+                                <th>Min</th>
+                                <th>Obtained</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>95</td>
+                            </tr>
+
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>75</td>
+                            </tr>
+
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>85</td>
+                            </tr>
+                        </tbody>   
+                    </table>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>8.</td>
+                <td>Kumar</td>
+                <td>25</td>
+                <td>Karnataka</td>
+                <td><img src="images/s1.png" alt="Student1" width="100px" height="100px"></td>
+                <td>
+                    <table class="innerTable">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Total Marks</th>
+                                <th>Min</th>
+                                <th>Obtained</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>95</td>
+                            </tr>
+
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>75</td>
+                            </tr>
+
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>85</td>
+                            </tr>
+                        </tbody>   
+                    </table>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>9.</td>
+                <td>Kumar</td>
+                <td>25</td>
+                <td>Karnataka</td>
+                <td><img src="images/s1.png" alt="Student1" width="100px" height="100px"></td>
+                <td>
+                    <table class="innerTable">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Total Marks</th>
+                                <th>Min</th>
+                                <th>Obtained</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>95</td>
+                            </tr>
+
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>75</td>
+                            </tr>
+
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>85</td>
+                            </tr>
+                        </tbody>   
+                    </table>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>10.</td>
+                <td>Kumar</td>
+                <td>25</td>
+                <td>Karnataka</td>
+                <td><img src="images/s1.png" alt="Student1" width="100px" height="100px"></td>
+                <td>
+                    <table class="innerTable">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Total Marks</th>
+                                <th>Min</th>
+                                <th>Obtained</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>95</td>
+                            </tr>
+
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>75</td>
+                            </tr>
+
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td>85</td>
+                            </tr>
+                        </tbody>   
+                    </table>
+                </td>
+            </tr>
+
+        </tbody> 
+
+        <tfoot>
+            <tr><h3><td colspan="6" >@copyrights 2024</td></h3></td></tr>
+        </tfoot>
+        
+    </table>
+
+    
+</body>
+</html>

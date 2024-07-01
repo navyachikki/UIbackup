@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Progress Card</title>
+    <style>
+        .header h3 {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: #a5532a;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: underline;
+            font-weight: bold;
+            color: white;
+            font-size: x-large;
+        }
+
+        .container {
+            width: 100%;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid;
+        }
+
+        .container .table {
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .tableHead tr th{
+            background-color: aquamarine;
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 20px;
+        }
+        .tableBody tr td{
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid #a5532a;
+        }
+        .tableBody > tr {
+            background-color: blanchedalmond;
+        }
+        .tableBody tr:nth-child(even){
+            background-color: azure;
+        }
+        /*Progress Card table*/
+        .progressBody{
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+        }
+        .progressBody > tr{
+            background-color: pink;
+        }
+        .progressBody tr:nth-child(even){
+            background-color: rgba(158, 234, 236, 0.615);
+        }
+        /*Student Images*/
+        .imageSprite {
+            width: 150px;
+            height: 50px;
+            background-image: url("./images/imagesprite.png");
+        }
+        .stdImg1{   
+        background-position: -25px -12px;
+        }
+      .stdImg2{
+        background-position: -245px -11px;
+    }
+    .stdImg3{   
+        background-position: -35px -270px;
+        }
+      .stdImg4{
+        background-position: -246px -274px;
+    }
+
+        .footer {
+            border: 1px solid black;
+            background-color: #a5532a;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h3>Student Progress Card Details</h3>
+    </div>
+    <div class="container">
+        <table cellspacing="20px">
+            <thead class="tableHead">
+                <tr>
+                    <th>SI.NO </th>
+                    <th>Student Name </th>
+                    <th>Age </th>
+                    <th>Location </th>
+                    <th>Picture </th>
+                    <th>Progress Card </th>
+
+                </tr>
+            </thead>
+            <tbody class="tableBody">
+                <tr>
+                    <td>1</td>
+                    <td>Kavya K</td>
+                    <td>12</td>
+                    <td>Hyderabad</td>
+                    <td class="imageSprite stdImg3"></td>
+                    <td>
+                        <table cellspacing="10px">
+                            <thead class="tableHead">
+                                <th>Subjects</th>
+                                <th>Total Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained</th>
+                            </thead>
+                            <tbody class="progressBody">
+                                <tr>
+                                    <td>English</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>GA</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>Sciences</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>70</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Tanuja K</td>
+                    <td>12</td>
+                    <td>Hyderabad</td>
+                    <td class="imageSprite stdImg1"></td>
+                    <td>
+                        <table cellspacing="10px">
+                            <thead class="tableHead">
+                                <th>Subjects</th>
+                                <th>Total Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained</th>
+                            </thead>
+                            <tbody class="progressBody">
+                                <tr>
+                                    <td>English</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>GA</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>78</td>
+                                </tr>
+                                <tr>
+                                    <td>Sciences</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>70</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Raj</td>
+                    <td>19</td>
+                    <td>Hyderabad</td>
+                    <td class="imageSprite stdImg2"></td>
+                    <td>
+                        <table cellspacing="10px">
+                            <thead class="tableHead">
+                                <th>Subjects</th>
+                                <th>Total Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained</th>
+                            </thead>
+                            <tbody class="progressBody">
+                                <tr>
+                                    <td>English</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>GA</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>Sciences</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>80</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Bhawagnya</td>
+                    <td>12</td>
+                    <td>Hyderabad</td>
+                    <td class="imageSprite stdImg3"></td>
+                    <td>
+                        <table cellspacing="10px">
+                            <thead class="tableHead">
+                                <th>Subjects</th>
+                                <th>Total Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained</th>
+                            </thead>
+                            <tbody class="progressBody">
+                                <tr>
+                                    <td>English</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>GA</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>Sciences</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>70</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Akhila </td>
+                    <td>12</td>
+                    <td>Hyderabad</td>
+                    <td class="imageSprite stdImg4"></td>
+                    <td>
+                        <table cellspacing="10px">
+                            <thead class="tableHead">
+                                <th>Subjects</th>
+                                <th>Total Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained</th>
+                            </thead>
+                            <tbody class="progressBody">
+                                <tr>
+                                    <td>English</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>95</td>
+                                </tr>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>GA</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>Sciences</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>70</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Kavya K</td>
+                    <td>12</td>
+                    <td>Hyderabad</td>
+                    <td class="imageSprite stdImg3"></td>
+                    <td>
+                        <table cellspacing="10px">
+                            <thead class="tableHead">
+                                <th>Subjects</th>
+                                <th>Total Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained</th>
+                            </thead>
+                            <tbody class="progressBody">
+                                <tr>
+                                    <td>English</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>GA</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>Sciences</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>70</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Chaitu</td>
+                    <td>12</td>
+                    <td>Hyderabad</td>
+                    <td class="imageSprite stdImg2"></td>
+                    <td>
+                        <table cellspacing="10px">
+                            <thead class="tableHead">
+                                <th>Subjects</th>
+                                <th>Total Marks</th>
+                                <th>Min Marks</th>
+                                <th>Obtained</th>
+                            </thead>
+                            <tbody class="progressBody">
+                                <tr>
+                                    <td>English</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>GA</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>Sciences</td>
+                                    <td>100</td>
+                                    <td>35</td>
+                                    <td>70</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+    <div class="footer">
+        @copyrights Kavya 2024
+    </div>
+</body>
+
+</html>

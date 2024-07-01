@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var contactDetails = {
+                name: 'ABC',
+                firstName: 'TEST',
+                country: 'India',
+                age: 20,
+                education: {
+                    qualification: 'MCA',
+                    univ: 'Andhra Univ',
+                    rank: '1'
+                }
+                // address: {
+                //     offiwce: {
+                //         buldingno: '5A',
+                //         address: 'Mindspace',
+                //         state: 'TG'
+                //     },
+                //     personal: {
+                //         dno: '65-1',
+                //         street: 'ABC street'
+                //     }
+                // }
+                
+            }
+
+            for (var temp in contactDetails) {
+                
+                console.log(temp + " -> " + contactDetails[temp]);
+                if (temp == 'education') {
+                    for (var temp2 in contactDetails[temp]) {
+                        console.log(temp2 + " -> " + contactDetails[temp][temp2]);
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

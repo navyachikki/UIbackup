@@ -1,0 +1,11 @@
+Different ways of applying css:
+    .content  {
+        color: green;
+    }
+    #sample {
+        color: green;
+    }
+
+    <tagname style="color:green" class="content" id="sample"> 
+        ..... 
+    </tagname>

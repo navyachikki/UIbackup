@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Largest number in array</h3>
+
+    <script>
+        var length=parseInt(prompt("Enter length of array"));
+        var a=[];
+        for(var i=0;i<length;i++){
+            a[i]=parseInt(prompt("Enter element at index "+i+" "));
+        }
+        for(var k=0;k<length;k++){
+            console.log("Array elements are:"+a[k]);
+        }
+        var largest=a[0];
+        for(var j=1;j<length;j++){
+        if(largest<a[j]){
+            largest=a[j];
+        }
+    }
+    console.log("Largest no. is:"+largest);
+    </script>
+</body>
+</html>

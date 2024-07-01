@@ -1,0 +1,14 @@
+Employee Details:
+    name
+    dep 
+    gender
+    basic sal 
+
+        Caluclate:
+            total sal 
+                totalsal = basic sal + pf + hra 
+
+            pf is 12 percent of basic sal 
+
+            hra is 24 percernt of basic sal 
+            

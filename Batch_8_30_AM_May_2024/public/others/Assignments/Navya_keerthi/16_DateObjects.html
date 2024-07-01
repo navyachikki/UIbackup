@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dates</title>
+</head>
+
+<body>
+    <h3>Date Formats....</h3>
+    <script>
+        var cdate = new Date();
+        var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        var day=['Mon','Tue','Wed','Thu','Fri','Sat'];
+        var a = parseInt(prompt("Enter the date format needed from 1 to 8"));
+        switch (a) {
+            case 1: var customdate1 = cdate.getDate() + '/' + '0' + [cdate.getMonth() + 1] + '/' + cdate.getFullYear();
+                console.log(customdate1);
+                break;
+            case 2: var customdate2 =  '0' + [cdate.getMonth() + 1] + '/'+cdate.getDate() + '/' + +cdate.getFullYear();
+            console.log(customdate3);
+                break;
+            case 3: var customdate3 = '0'+ cdate.getDate() + '-' + '0' + [cdate.getMonth() + 1] + '-' + cdate.getFullYear();
+                console.log(customdate3);
+                break;
+            case 4: var customdate4= cdate.getDate() + 'th'+''+ months[cdate.getMonth()] +''+ cdate.getFullYear();
+            console.log(customdate4);
+                break; 
+            case 5: var customdate5 =  day[cdate.getDay()]+' '+cdate.getDate() + 'th'+' '+ months[cdate.getMonth()] +' '+ ','+cdate.getFullYear();
+            console.log(customdate5);
+                break;
+            case 6: var customdate6= months[cdate.getMonth()] +' '+cdate.getDate() + 'th'+' '+  cdate.getFullYear();
+            console.log(customdate6);
+                break;
+            case 7: var customdate7 =  cdate.getDate() + 'th'+' '+ months[cdate.getMonth()] +','+cdate.getHours()+'h'+':'+cdate.getMinutes()+'min';
+            console.log(customdate7);
+                break;
+            case 8: var customdate8 = cdate.getDate() + 'th'+' '+ months[cdate.getMonth()] +','+cdate.getHours()+'h'+':'+cdate.getMinutes()+'min'+':'+cdate.getSeconds()+'sec';
+                console.log(customdate8);
+                break;
+        }
+
+    </script>
+
+</body>
+
+</html>

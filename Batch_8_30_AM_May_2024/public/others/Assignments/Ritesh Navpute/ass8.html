@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empolyee Details</title>
+    <style>
+        h1{
+            border: 4px solid;
+            border-radius: 30px; 
+            text-align: center;
+            background-color: blanchedalmond;
+            padding: 10px;
+         
+            
+        }
+        .table{ 
+            border: 2px solid;
+            width: 600px;
+            padding: auto;
+            margin: auto;
+            font-size: x-large;
+            border-radius: 30px;
+            
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1>
+        Empolyee Detalis
+    </h1>
+    <hr>
+    <div class="table">
+    <ul>
+        <li>
+            Employee Name : <span id="ename"></span>
+        </li>
+        <li>
+            Department : <span id="dept"></span>
+        </li>
+        <li>
+            Gender : <span id="gndr"></span>
+        </li>
+        <li>
+            Basic Salary : <span id="bsal"></span>
+        </li>
+        <li>
+            Total Salary : <span id="tsal"></span>
+        </li>
+    </ul>
+
+    <script>
+        var employeeName = "Sachin Navpute";
+        var departMent = "Data Management";
+        var genDer = "Male"
+        var bSal = 80000;
+        var pf = (12 / 100) * bSal;
+        var hra = (24 / 100) * bSal;
+        var tSal = bSal - pf - hra;
+        var total = tSal;
+
+        console.log("Employee Detials");
+        console.log("Employee Name Is" + employeeName);
+        console.log("Department" + departMent);
+        console.log("Gender" + genDer);
+        console.log("Basic Salary" + bSal);
+        console.log("Total Salary" + tSal);
+
+        document.querySelector("#ename").innerText = employeeName;
+        document.querySelector("#dept").innerText = departMent;
+        document.querySelector("#gndr").innerText = genDer;
+        document.querySelector("#bsal").innerText = bSal;
+        document.querySelector("#tsal").innerText = tSal;
+
+    </script>
+
+    
+
+  </div>
+ </body>
+</html>

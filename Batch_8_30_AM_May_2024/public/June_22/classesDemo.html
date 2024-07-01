@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+           /* class Sample {
+                displayDetails() {
+                    console.log("am frm displaydtails");
+                }
+                showMsg() {
+                    this.displayDetails(); // this is s1
+                    console.log("am from show msg method");
+                }
+            }
+
+            var s1 = new Sample();
+            s1.showMsg();
+
+            console.log(s1); */
+
+            class StudentDetails {
+                constructor(){
+                    
+                    this.name = "Raj"
+                    this.age  = 20;
+                    this.gender = 'Male';
+                }
+                
+                displayStudentDetails() {
+                    this.getTotalAndAvg();
+                    console.log("name is " + this.name);
+                    console.log("avg is " + this.avg);
+                }
+                getTotalAndAvg() {
+                    this.avg = 20;
+                }
+                getGradeCalculated() {
+                    this.schoolName = 'Abc School';
+                }
+            }
+
+            var s1 = new StudentDetails();
+            console.log(s1);
+
+            var s2 = new StudentDetails();
+            console.log(s2);
+
+            var s3 = new StudentDetails();
+            console.log(s3);
+            
+        </script>
+    </body>
+</html>

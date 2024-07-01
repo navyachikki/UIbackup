@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .title {
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 38px;
+            color: #f65c5c;
+            font-weight: 900;
+            text-align: center;
+            text-decoration: underline;
+            border: 2px solid red;
+        }
+
+        .employeeDetails {
+            border: 1px solid red;
+        }
+
+        .employeeDetails ul li {
+            list-style: none;
+            font-size: 18px;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .employeeDetails ul li span {
+            color: #f65c5c;
+            font-weight: 400;
+        }
+
+        .pick {
+            background-image: url('../assets/images/Employees.png');
+            background-position: 484px 176px;
+            width: 150px;
+            position: absolute;
+            right: 30px;
+            top: 0px;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">Employee Details</div>
+    <div class="employeeDetails">
+        <ul style="position: relative;">
+            <li>Name: <span id="empName"></span></li>
+            <li>Department: <span id="department"></span></li>
+            <li>Gender: <span id="gender"></span></li>
+            <li>Basic Salary: <span id="basicSalary"></span></li>
+            <li>Total Salary: <span id="totalSalary"></span></li>
+            <li>
+                <div class="pick"></div>
+            </li>
+        </ul>
+    </div>
+    <script>
+        var Name, Department, Gender, BasicSalary, TotalSalary, pf, hra;
+        Name = "Rambabu";
+        Department = "UI FullStack";
+        Gender = "Male";
+        BasicSalary = 45000;
+        pf = BasicSalary * (12 / 100);
+        hra = (24 / 100) * BasicSalary;
+        TotalSalary = BasicSalary + pf + hra;
+
+        document.querySelector('#empName').innerHTML = Name;
+        document.querySelector('#department').innerHTML = Department;
+        document.querySelector('#gender').innerHTML = Gender;
+        document.querySelector('#basicSalary').innerHTML = BasicSalary;
+        document.querySelector('#totalSalary').innerHTML = TotalSalary;
+    </script>
+</body>
+
+</html>

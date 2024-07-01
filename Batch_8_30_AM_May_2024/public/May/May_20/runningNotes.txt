@@ -1,0 +1,27 @@
+float: left/right
+    1. 
+
+    clear: left/right/both 
+
+---------------
+
+.parent {
+    clear: right;
+    float: right;
+}
+
+.child {
+    clear: inherit;
+    float: inherit;
+}
+
+<div class="parent">
+    <div class="child"></div>
+</div>
+-----------------------------------------
+
+PseudoClasses & PSeudoElements: 
+
+    :active
+    :hover
+    ...

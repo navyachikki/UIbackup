@@ -1,0 +1,45 @@
+CSS Positions:
+
+
+
+    4 css prop - using which we could move any DOM element to any req position on the page..
+
+        top 
+        bottom
+        left 
+        right 
+
+        The above four prop can only be applied to the dom elements which are falling in z axis
+    
+        in order to apply/consider the above 4 prop the element should be positioned non static
+
+        position: static / relative / absolute / fixed / sticky
+
+
+        position: static; -> Cannot be moved from its default position 
+
+
+        
+
+
+
+Any dom element with position static, allways falls under xy axis 
+
+Any DOM element with position non satic will automatically move from xy to Z axis 
+
+
+position: relative;
+    1. it is capable of considering left, right , top and bottom pop 
+    2. It is automatically moving to z axis 
+    3. It is not loosing its own space in xy axis .
+    4. this will always moves relative to its own original posiion(xy). 
+
+
+posiion: absolute
+    1. it is capable of considering left, right , top and bottom pop 
+    2. It is automatically moving to z axis 
+    3. It will not hold its own original space under xy axis.
+    4. how am i moving ? 
+        1. allways moves based on its parent poision 
+        2. i only depend on the pareNt/ grand parent / grand grand parent etc. whose poisition is non static
+        3. if non of the parent/grand parents have poision as non static, it directly depends on the body tag. 

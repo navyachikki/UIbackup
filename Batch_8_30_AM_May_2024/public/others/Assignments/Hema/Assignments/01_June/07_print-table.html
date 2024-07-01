@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="MT"></h1>
+    <script>
+        // print table take user table number
+        let number = prompt("enter number: ");
+        number = parseInt(number)
+        for(let i=1; i<=20; i++){
+            let result = number*i;
+            console.log(number + "*" + i + "=" + result);
+            document.querySelector('#root').innerText = number + "*" + i + "=" + result
+        }
+
+        
+    </script>
+</body>
+</html>

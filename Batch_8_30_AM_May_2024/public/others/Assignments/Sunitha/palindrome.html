@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Or Not?</title>
+</head>
+
+<body>
+
+    <script>
+
+        var num = prompt("Enter a Number:");
+
+        //Conver the number to a String and check if it is a Palindrome.
+        var str = num.toString();
+        var revStr = str.split('').reverse().join('');
+
+        if (str === revStr) {
+            console.log(num + " is a Palindrome!");
+        } else {
+            console.log(num + " is not a Palindrome!");
+        }
+
+    </script>
+    
+</body>
+</html>
+

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reverse Number Print</title>
+</head>
+<body>
+  <h1>Numbers from 1000 to 201</h1>
+  <div id="number-list"></div>
+
+  <script>
+    const numberList = document.getElementById('number-list');
+    for (let i = 1000; i >= 201; i--) {
+      const numberItem = document.createElement('p');
+      numberItem.textContent = i;
+      numberList.appendChild(numberItem);
+    }
+  </script>
+</body>
+</html>

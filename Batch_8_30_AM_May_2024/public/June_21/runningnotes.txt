@@ -1,0 +1,100 @@
+
+Corejs
+
+DHTML 
+
+Adv JS 
+    OOPS 
+
+
+    Exception handling
+
+    Closures
+
+
+ECMA 
+
+-------
+
+OOPS 
+
+    Objects ->
+
+    Classes
+
+    Inheritance
+
+    Polymorphism - NOT supported
+
+    Data Abstraction -> public, private, protected 
+
+    Data Encapsulation
+
+
+
+
+var a = 90;
+function sample() {
+    var b = 99;
+    function tst(){
+        var b = 100
+    }
+}
+
+
+var count = 900;
+function showValues() {
+    var accountno = 1000;
+}
+
+accountno
+\--------------
+
+multipe objects having same structure and functionlaity.
+
+var s1 = {
+    name: 'Raj',
+    age: 20,
+    gender: 'male',
+    displayDetails() {
+        ...
+    },
+    getTotalAndAvg() {
+
+    }
+}
+
+
+var s2 = {
+    name: 'Teena',
+    age: 21,
+    gender: 'Female',
+    displayDetails() {
+        ...
+    },
+    getTotalAndAvg() {
+        
+    }
+}
+
+var s3 = {
+    name: 'Prasad',
+    age: 21,
+    gender: 'Male',
+    displayDetails() {
+        ...
+    },
+    getTotalAndAvg() {
+        
+    }
+}
+-----------------------
+
+
+class <userdefined classname> {
+
+}
+
+class StudentDetails {
+    
+}

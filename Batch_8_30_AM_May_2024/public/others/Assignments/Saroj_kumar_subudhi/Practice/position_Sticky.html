@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky</title>
+</head>
+<style>
+    .Container{
+        border: 1px solid red;
+        width: 500px;
+        height: 400px;
+        overflow: auto;
+        margin: auto;
+    }
+    .Box{
+        border: 1px solid green;
+        width: 250px;
+        height: 250px;
+        margin: 2px; 
+
+    }
+    #Box1{
+        background-color: blueviolet;
+        position: sticky;
+        left:500px;
+        height: 25px !important;
+        top: 50px;
+        bottom: 50px;
+    }
+</style>
+<body>
+    <div class="Container">
+        <div class="Box"></div>
+        <div class="Box"></div>
+        <div class="Box" id="Box1"></div>
+        <div class="Box"></div>
+        <div class="Box"></div>
+        <div class="Box" id="Box1"></div>
+        <div class="Box"></div>
+        <div class="Box"></div>
+        <div class="Box"></div>
+        <div class="Box"></div>
+        <div class="Box" id="Box1"></div>
+        <div class="Box"></div>
+        <div class="Box"></div>
+        <div class="Box"></div>
+        <div class="Box"></div>
+    </div>
+</body>
+</html>

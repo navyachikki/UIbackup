@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // for (var num = 1; num <= 1000; num++) {
+        //     var numStr = num.toString();
+        //     var sum = 0;
+        //     for (var i = 0; i < numStr.length; i++) {
+        //         sum += Math.pow(parseInt(numStr[i]), numStr.length);
+        //     }
+        //     if (sum === parseInt(num)) {
+        //         console.log(num + ' is an Armstrong Number');
+        //     }
+        // }
+        var result, rem;
+        for (var i = 1; i <= 1000; i++) {
+            n = i;
+            var len = n.toString().length;
+            result = 0;
+            while (n > 0) {
+                rem = n % 10;
+                result += rem ** len;
+                n = n / 10;
+                n = parseInt(n);
+            }
+            if (i == result) {
+                console.log('Its Armstrong Number: ' + i)
+            }
+        }
+    </script>
+</body>
+
+</html>

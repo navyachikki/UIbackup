@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            
+
+            let name = 'Prasad';
+            var a = 90; // Global scope 
+            function displayInfo() { // definition 
+                console.log("inside function");
+                console.log("a value is " + a);
+                var b = 100;
+                console.log("value of b is " + b);
+            }
+
+            displayInfo(); //invoking function 
+
+            console.log("a value is " + a);
+
+            // console.log("value of b is " + b);
+
+            if (true) {
+                var z = 200; // GLOBAL SCope
+                let k = 2000; // block scope
+                console.log("value of z is " + z);
+                console.log("value of k is " + k);
+            }
+            console.log("value of k is " + k);
+
+            for(var i = 0; i < 100; i++) {
+                console.log("i value is " + i);
+            }
+
+            console.log("i value is " + i);
+
+            console.log("value of z is " + z);
+        </script>
+    </body>
+</html>

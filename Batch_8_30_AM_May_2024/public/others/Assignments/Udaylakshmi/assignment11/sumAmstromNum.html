@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sum of Amstrom</title>
+       
+    </head>
+    <body>
+        <script>
+            for (var i = 1; i <= 1000; i++) {
+                var n = i;
+                var enterNum = n;
+                var len = n.toString().length;
+                var sum = 0;
+                while (n > 0) {
+                    var rem = n % 10;
+                    sum += (rem ** len);
+                    n = n / 10;
+                    n = parseInt(n);
+                }
+                if (sum == enterNum) {
+                    console.log('Its a Amstrong ' + sum);
+                } else {
+                }
+            }
+        </script>
+    </body>
+</html>

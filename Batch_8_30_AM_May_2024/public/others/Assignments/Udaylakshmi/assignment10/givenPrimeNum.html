@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Given number Prime or not</title>
+       
+    </head>
+    <body>
+        <div> <span id="total"></span></div>
+        <script>
+           var n = prompt('Enter a number');
+           n= parseInt(n);
+           var counter = 0;
+            for (var i = 2; i < n; i++) {
+                var rem = n % i;
+                if (rem == 0) {
+                    counter++;
+                    break;
+                }
+            }
+            if (counter == 0) {
+                document.querySelector('#total').innerText = 'Its a Prime';
+            } else {
+                document.querySelector('#total').innerText = 'Its not a Prime';
+            }
+        </script>
+    </body>
+</html>

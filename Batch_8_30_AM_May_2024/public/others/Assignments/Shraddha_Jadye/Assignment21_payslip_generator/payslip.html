@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="payslip.css">
+</head>
+<body>
+    <h2>Employee PaySleep Generator</h2>
+    <div class="mainContainer">
+    <ul>
+        <li>
+            <input type="text" placeholder="Employee ID" id="eId">
+       </li>
+        <li>
+            <input type="text" placeholder="Enter Employee name" id="eName">
+        </li>
+        <li>
+            <input type="text" placeholder="Designation" id="desig">
+       </li>
+       <li>
+        <input type="text" placeholder="Enter Basic Salary" id="bSal">
+   </li>
+       <li>
+        Gender :
+        <input type="radio" value="male" checked name="gender">Male
+        <input type="radio" value="female"  name="gender">Female
+       </li>
+       <li>
+        <input type="button" value="Get Pay Slip" onclick="readEmpData()">
+    </li>
+    </ul>
+</div>
+
+<div>
+    <ul class="displayBlock">
+        <li>
+            Employee ID: <span id="d_ID"></span>
+        </li>
+        <li>
+            Name: <span id="d_name"></span>
+        </li>
+        
+        <li>
+            PF: <span id="d_pf"></span>
+        </li>
+        <li>
+            HRA : <span id="d_hra"></span>
+        </li>
+        <li>
+            Total Salary : <span id="d_salary"></span>
+        </li>
+    </ul>
+</div>
+<script src="payslip.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details Static</title>
+</head>
+<body>
+    <div>
+        <h3>Employee Details in console </h3>
+    </div>
+    
+    <script>
+        var employeeName = "Kavya K";
+        var age = 27;
+        var gender = "Female";
+        var dep="IT"
+        var basicSalary= 100000;
+
+        var pf = (basicSalary * 12) / 100;
+        var hra = (basicSalary *24) / 100;
+        var totalSalary = pf + hra + basicSalary;
+
+        console.log("Employee Details.....")
+        console.log("Employee Name:" +employeeName);
+        console.log("Depaartment:" +dep);
+        console.log("Basic Salary:" +basicSalary);
+        console.log("PF:" +pf);
+        console.log("HRA:" +hra);
+        console.log("Total Salary:" +totalSalary);
+
+    </script>
+</body>
+</html>

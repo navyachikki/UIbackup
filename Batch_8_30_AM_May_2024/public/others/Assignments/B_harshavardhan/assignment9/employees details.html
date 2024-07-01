@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        working with employee details
+    </h3>
+    <ul>
+         <li>
+            employeeName is <span id ="ename"></span>
+         </li>
+         <li>
+            Deparment is <span id="edep"></span>
+         </li>
+         <li>
+            gender is <span id ="egender"></span>
+         </li>
+        <Li>
+            total <span id="total"></span>
+        </Li>
+    </ul>
+    <script>
+        var employeeName ='harsha';
+        var employeeDepartment ='developer';
+        var employeeGender ='male';
+        var employeeSalary =10000;
+        var employeePf =1200;
+        var employeeHra =2400;
+
+        var total = employeeSalary +employeePf +employeeHra;
+
+        console.log("Employee Details:");
+        console.log("Employee Name:"+ employeeName);
+        console.log("Employee Department:"+ employeeDepartment);
+        console.log("Employee Gender:"+ employeeGender);
+        console.log("total is:"+ total);s
+
+
+        document.querySelector("#ename").innerText = employeeName;
+        document.querySelector("#edep").innerText = employeeDepartment;
+        document.querySelector("#egender").innerText = employeeGender;
+        document.querySelector("#total").innerText = total;
+
+    </script>
+</body>
+</html>

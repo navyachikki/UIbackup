@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Payslip</title>
+    <link rel="stylesheet" href="employeePayslip.css">
+</head>
+
+<body>
+    <h3>Employee Payslip Card</h3>
+    <div class="main">
+        <ul>
+            <li>
+                <input type="text" placeholder="Enter employee name" id="ename">
+            </li>
+            <li>
+                <input type="number" placeholder="Employee age" id="eage">
+            </li>
+            <li>
+                Gender:
+                <input type="radio" value="Male" checked name="gender"> Male
+                <input type="radio" value="Female" name="gender"> Female
+            </li>
+            <li>
+                <input type="text" placeholder="Basic Salary" id="salary">
+            </li>
+            <li>
+                <input type="button" value="Get Payslip" onclick="readEmployeeData()">
+            </li>
+        </ul>
+    </div>
+    <div>
+        <ul class="displayBlock">
+            <li>
+                Employee name: <span id="d_name"></span>
+            </li>
+            <li>
+                Age: <span id="d_age"></span>
+            </li>
+            <li>
+                Gender: <span id="d_gender"></span>
+            </li>
+            <li>
+                PF: <span id="d_pf"></span>
+            </li>
+            <li>
+                HRA: <span id="d_hra"></span>
+            </li>
+            <li>
+                Tax Percentage: <span id="d_tax"></span>
+            </li>
+        </ul>
+    </div>
+    <script src="employeePayslip.js"></script>
+</body>
+
+</html>

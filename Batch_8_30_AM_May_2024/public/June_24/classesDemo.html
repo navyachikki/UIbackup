@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+          
+
+
+
+            class StudentDetails {
+                
+                constructor(data){
+                    console.log("frm constructor");
+                    this.name = data.name
+                    this.age  = data.age;
+                    this.gender = data.gender;
+                    this.schoolName = "DAV public school"
+                }
+                
+                displayStudentDetails(name) {
+                    this.getTotalAndAvg();
+                    console.log("name is " + this.name);
+                    console.log("avg is " + this.avg);
+                }
+                getTotalAndAvg() {
+                    this.avg = 20;
+                }
+                getGradeCalculated() {
+                    this.schoolName = 'Abc School';
+                }
+            }
+
+            var s1 = new StudentDetails({name: 'Raj',age: 20, gender: 'Male'});
+            
+            console.log(s1);
+
+            var s2 = new StudentDetails({name: 'Teena',age: 20, gender: 'Female'});
+            console.log(s2);
+
+            var s3 = new StudentDetails({name: 'Krish',age: 22, gender: 'Male'});
+            console.log(s3);
+            
+        </script>
+    </body>
+</html>

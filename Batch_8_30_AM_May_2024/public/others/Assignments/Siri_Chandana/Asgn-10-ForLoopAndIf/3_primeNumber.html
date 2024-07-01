@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number or not</title>
+</head>
+<body>
+        <script>
+            var n = prompt("Enter A Value");
+            n = parseInt(n);
+            var count = 1; 
+            for(var i = 2; i <= n/2 ; i++){
+                if(n%i == 0){
+                    count = 0;
+                }
+            }
+            
+            if(count!=0){
+               if (n==1) 
+               {
+                console.log(n + " is neither prime nor composite")
+               }else{
+               console.log(n + " is prime");
+               }
+            }
+             else{
+                console.log( n + " is not a prime")
+            }
+        </script>
+</body>
+</html>

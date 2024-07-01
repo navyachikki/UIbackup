@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white; text-align: center;">
+    <h1 id="demo"></h1>
+    <script>
+        let number = prompt("Choose date formate from below numbers\nSample date format:\n1. 8/05/2024\n2. 05/8/2024\n3. 08-05-2024\n4. 8th June 2024\n5. Sat 8th June, 2024\n6. June 8th 2024\n7. 8th June, 09h:23min\n8. 8th June, 09h:23min:3sec ");
+        number=parseInt(number);
+
+        const weekDay = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        const monthName = ['january', 'february', 'march', 'april', 'may', 'jun', 'july', 'august', 'september', 'october', 'november', 'december']
+            const a = new Date();
+            let day = weekDay[a.getUTCDay()];
+            let month = monthName[a.getUTCMonth()];
+        
+
+        switch(number){
+            case 1:
+                console.log(a.getDate() +'/'+ a.getMonth() + '/' + a.getFullYear());
+                document.getElementById("demo").innerHTML="1. "+ a.getDate() +'/'+ a.getMonth() + '/' + a.getFullYear();
+                break;
+            case 2: 
+                console.log(a.getMonth() +'/'+ a.getDate() + '/' + a.getFullYear());
+                document.getElementById("demo").innerHTML="2. "+a.getMonth() +'/'+ a.getDate() + '/' + a.getFullYear();//2
+                break;
+            case 3: 
+                console.log(a.getMonth() +'/'+ a.getDate() + '/' + a.getFullYear());
+                document.getElementById("demo").innerHTML="3. "+a.getMonth() +'/'+ a.getDate() + '/' + a.getFullYear();//3
+                break;
+            case 4:
+                console.log(a.getDate() +'th' +' '+ month+ ' ' + a.getFullYear());
+                document.getElementById("demo").innerHTML="4. "+a.getDate() +'th' +' '+ month+ ' ' + a.getFullYear();//4
+                break;
+            case 5:
+                console.log( day +' '+ a.getDate() +'th '+ month + ' '+ a.getFullYear());
+                document.getElementById("demo").innerHTML="5. "+day +' '+ a.getDate() +'th '+ month + ' '+ a.getFullYear();//5
+                break;
+            case 6:
+            // Jun 8th 2024
+                console.log(month + " " + a.getDate() +'th '+ a.getFullYear());
+                document.getElementById("demo").innerHTML="6. "+month + " " + a.getDate() +'th '+ a.getFullYear();//6
+                break; 
+            case 7: 
+            // 8th June, 09h:23min
+                console.log(a.getDate()+"th "+ month +", "+ a.getHours()+'h:'+a.getMinutes()+'min');
+                document.getElementById("demo").innerHTML="7. "+a.getDate()+"th "+ month +", "+ a.getHours()+'h:'+a.getMinutes()+'min';//7
+                break;
+            case 8:
+            //8th June, 09h:23min:3sec 
+                console.log(a.getDate() +'th '+ month + ', '+ a.getHours()+'h:'+a.getMinutes()+'min:'+ a.getSeconds()+"sec");
+                document.getElementById("demo").innerHTML="8. "+a.getDate() +'th '+ month + ', '+ a.getHours()+'h:'+a.getMinutes()+'min:'+ a.getSeconds()+"sec";//8   
+                break;
+            default :
+            console.log("Enter correct number");
+            document.getElementById("demo").innerHTML="You Entered Wrong Number!"
+        }
+    </script>
+</body>
+</html>

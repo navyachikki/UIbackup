@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees</title>
+</head>
+<body>
+    <script>
+
+        var name = 'Siri';
+        var dept = 'IT';
+        var gender = 'Female';
+        
+        // console.log(typeof(BasicSal));// type of is used to check variable datatype.
+        var BasicSal = parseInt('30000');// parse int is used for converting string to number.
+
+        var PF = BasicSal * (12/100);
+        var HRA = BasicSal * (24/100) ;
+        var TotalSal = parseInt(BasicSal + PF + HRA); 
+
+        console.log('Employee Name: '+ name);
+        console.log('Employee Dept: '+ dept);
+        console.log('Employee Gender: '+ gender);
+        console.log('Employee basic salary: '+ BasicSal);
+        console.log('Employee TotalSal: '+ TotalSal);
+        console.log(" ");
+
+        name = 'Srija';
+        dept = 'IT';
+        gender = 'Female';
+        BasicSal = parseInt('300000');
+
+        PF = (BasicSal/100) * 12;
+        HRA = (BasicSal/100)* 24 ;
+        TotalSal = parseInt(BasicSal + PF + HRA); 
+
+
+        console.log('Employee Name: '+ name);
+        console.log('Employee Dept: '+ dept);
+        console.log('Employee Gender: '+ gender);
+        console.log('Employee basic salary: '+ BasicSal);
+        console.log('Employee TotalSal: '+ TotalSal);
+        console.log(" ");
+
+
+
+
+
+        
+    </script>
+    
+</body>
+</html>

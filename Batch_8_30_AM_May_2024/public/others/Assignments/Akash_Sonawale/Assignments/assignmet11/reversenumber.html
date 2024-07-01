@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function reverseNumber(num) {
+    
+        let numStr = num.toString();
+    
+        let numArray = numStr.split('');
+    
+        let reversedArray = numArray.reverse();
+    
+        let reversedStr = reversedArray.join('');
+    
+        let reversedNum = parseInt(reversedStr);
+    
+    if (num < 0) {
+        reversedNum = -reversedNum;
+    }
+    
+    return reversedNum;
+    }
+
+
+        let num = prompt("Enter a Num");
+        let reversedNum = reverseNumber(num);
+    alert(`The reverse of ${num} is: ${reversedNum}`);
+
+    </script>
+</body>
+</html>

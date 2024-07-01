@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Details</title>
+       
+    </head>
+    <body>
+        <div>Total Salary : <span id="total"></span></div>
+        <script>
+            var employeeNm='Raj', basicSalary, pf, hra, totalSalary;
+            basicSalary=10000;
+            pf = (12/100)*basicSalary;
+            hra=(24/100)*basicSalary;
+            totalSalary = basicSalary + pf + hra;
+            document.querySelector('#total').innerText = totalSalary;
+            console.log(totalSalary,pf,hra)
+        </script>
+    </body>
+</html>

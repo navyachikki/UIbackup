@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd_numbers_Using Arrays</title>
+</head>
+
+<body>
+    <h1 style="text-align:center">Odd_numbers_Using Arrays, Check on Console</h1>
+    <script>
+        let arr = [23, 45, 46, 56, 78, 98, 31, 53, 56, 76, 66]
+        let odd = [];
+        for (i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 !== 0) {
+                odd.push(arr[i]);
+            }
+        }
+        console.log("Odd numbers in the given array are:"+ " " +odd);
+    </script>
+
+</body>
+
+</html>

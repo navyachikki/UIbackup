@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime_Number_Given_Range</title>
+</head>
+<body style="background-color:black">
+    <h1 style="text-align:center;color: white">Check on Console</h1>
+    <script>
+        var num = parseInt(prompt("Enter a Number"));
+        if(num<=1){
+            console.log("Not Prime Number")
+        }
+        else{
+            counter=true
+            for(var i=99;i>=21;i--){
+                if(num%i==0){
+                    counter=false
+                    break;
+                }
+            }
+            if(counter){
+                console.log("Prime Number");
+            }
+            else{
+                console.log("Not a Prime Number");
+            }
+        }
+    </script>
+    
+</body>
+</html>

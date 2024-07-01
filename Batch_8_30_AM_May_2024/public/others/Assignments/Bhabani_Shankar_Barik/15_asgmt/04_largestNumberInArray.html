@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest number in array</title>
+</head>
+<body>
+    <script>
+        /* wap to find out the largest number within the given array */
+
+        let numberArray = [1, 2, 4, 7, 10 , 34, 23, 45, 11, 65, 23, 15];
+        console.log(numberArray);
+
+        let largestNumber = numberArray[0];
+            for (let i = 0; i <= numberArray.length; i++) {
+               if(largestNumber < numberArray[i]){
+                largestNumber = numberArray[i];
+               }
+            }
+            console.log("Largest number is: ", largestNumber);
+
+    </script>
+</body>
+</html>

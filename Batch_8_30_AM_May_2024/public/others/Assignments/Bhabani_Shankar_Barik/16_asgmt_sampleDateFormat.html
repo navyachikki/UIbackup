@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Date Format</title>
+  </head>
+  <body>
+    <!--
+     Sample date format:
+
+        1. 8/05/2024
+        2. 05/8/2024
+        3. 08-05-2024
+        4. 8th June 2024
+        5. Sat 8th June, 2024
+        6. June 8th 2024
+        7. 8th June, 09h:23min
+        8. 8th June, 09h:23min:3sec
+    -->
+
+    <script>
+      let selectDateFormat = parseInt(prompt(
+        "Please select your date formats: \n 1. 8/05/2024  \n 2. 05/8/2024 \n 3. 08-05-2024 \n 4. 8th June 2024 \n 5. Sat 8th June, 2024 \n 6. June 8th 2024  \n 7. 8th June, 09h:23min \n 8. 8th June, 09h:23min:3sec"
+      )); //Date formats
+
+      let months = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ]; //months
+
+      let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]; //Days
+
+      let cdate = new Date();
+
+      let monthIndex = cdate.getMonth();
+      let dayIndex = cdate.getDay();
+
+      switch (selectDateFormat) {
+        case 1:
+           var userSelectedDateFormat = cdate.getDate() + '/' + (cdate.getMonth() + 1) + '/' + cdate.getFullYear();
+            break;
+        case 2:
+           var userSelectedDateFormat = (cdate.getMonth() + 1) + '/' + cdate.getDate() + '/' + cdate.getFullYear();
+            break;
+        case 3:
+           var userSelectedDateFormat = cdate.getDate() + '-' + (cdate.getMonth() + 1) + '-' + cdate.getFullYear();
+            break;
+        case 4:
+            var userSelectedDateFormat = cdate.getDate() + 'th ' + months[monthIndex] + ' ' + cdate.getFullYear();
+            break;
+        case 5:
+           var userSelectedDateFormat = days[dayIndex] + ' ' + cdate.getDate() + 'th ' + months[monthIndex] + ' ' + cdate.getFullYear();
+            break;
+        case 6:
+           var userSelectedDateFormat = months[monthIndex] + ' ' + cdate.getDate() + 'th ' + cdate.getFullYear();
+            break;
+        case 7:
+           var userSelectedDateFormat = cdate.getDate() + 'th ' + months[monthIndex] + ' ' + cdate.getHours() + 'hr:' + cdate.getMinutes() + 'min';
+            break;
+        case 8:
+            var userSelectedDateFormat = cdate.getDate() + 'th ' + months[monthIndex] + ' ' + cdate.getHours() + 'hr:' + cdate.getMinutes() + 'min:' + cdate.getSeconds() + 'sec';
+            break;
+        default:
+               userSelectedDateFormat = 'Oops! Invalid Format selected. Please Try Again...'
+        }
+
+        console.log(userSelectedDateFormat);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+Different ways we can add css to elements:
+
+    Inline 
+    css classes
+    using id classes 
+    tagname css classes 
+
+Priority order of css :
+
+    Code repository :
+        GIt repo
+        bitbucket
+        perforce
+        ,,, 
+
+Day-1 https://youtu.be/Ue3ffyOCRQI
+Day-2 https://youtu.be/SvWvdQqcDKc
+Day-3 https://youtu.be/ur-7SGQsxb4
+Day-4 https://youtu.be/onhpGbvQjs0
+Day-5 https://youtu.be/D7xPpziC_ew
+Day-6 https://youtu.be/ohfKY0S9XCc
+Day-7 https://youtu.be/mnarGKLTeRM
+Day-8 https://youtu.be/xW8ewzul4jM
+

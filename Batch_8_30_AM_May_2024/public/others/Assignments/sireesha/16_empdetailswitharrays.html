@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> READ EMPLOYE DETAILS ....IN ARRAYS FORMATE</h2>
+    <script>
+        var empDetails = ["Krish",2341,"IT",300000,0,0,0,0,"male"];
+        
+        empDetails[4] = (empDetails[3] * 10 ) / 100;
+        
+        empDetails[5] = (empDetails[3] * 15) / 100;
+        
+        totalsal = empDetails[3] + empDetails[4] + empDetails[5];
+        if (empDetails[8].toLowerCase() == "male") {
+            console.log(empDetails[8]);
+            if (totalsal >= 200000) {
+                empDetails[7] = 15;
+            }
+            else if (totalsal >= 150000) {
+                empDetails[7] = 10;
+            }
+            else if (totalSal >= 100000) {
+                empDetails[7] = 5;
+            }
+           
+        }
+        else {
+            
+            if (totalsal >= 200000) {
+                empDetails[7] = 10;
+            }
+            else if (totalsal >= 150000) {
+                empDetails[7] = 5;
+            }
+        }
+        var taxValue = (totalsal * empDetails[7]) / 100;
+            console.log("total tax to be paid " + taxValue);
+       
+
+        // console.log("employe details....");
+        //     console.log("employe name is = " + empDetails[0]);
+        //     console.log("employe id is = " + empDetails[1]);
+        //     console.log("employe department is = " + empDetails[2]);
+        //     console.log("employe basic salery is = " + empDetails[3]);
+        //     console.log("employe pf  is = " + empDetails[4]);
+        //     console.log("employe hra is = " + empDetails[5]);
+        //     console.log("employe total salery is = " + totalsal);
+
+        // var emploreName, empid, empdep, basicsal, pf, hra, totalsal;
+
+        // function reademployedetails() {
+        //     employeName = prompt("enter employe name");
+        //     empid = prompt("enter emp id");
+        //     empid = parseInt(empid);
+        //     empdep = prompt("enter emp department");
+        //     basicsal = prompt("enter basic salery");
+        //     basicsal = parseInt(basicsal);
+
+        //     getPfAndHra();
+        // }
+
+        // function getPfAndHra() {
+        //     pf = (basicsal * 10) / 100;
+        //     hra = (basicsal * 15) / 100;
+        //     totalsal = basicsal + pf + hra;
+        //     displayemployedetails();
+        // }
+
+        // function displayemployedetails() {
+        //     console.log("employe details....");
+        //     console.log("employe name is = " + employeName);
+        //     console.log("employe id is = " + empid);
+        //     console.log("employe department is = " + empdep);
+        //     console.log("employe basic salery is = " + basicsal);
+        //     console.log("employe pf  is = " + pf);
+        //     console.log("employe hra is = " + hra);
+        //     console.log("employe total salery is = " + totalsal);
+        // }
+
+        // reademployedetails();
+    </script>
+</body>
+
+</html>

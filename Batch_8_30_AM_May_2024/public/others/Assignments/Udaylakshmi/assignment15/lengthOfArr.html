@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length Of Array</title>
+
+</head>
+
+<body>
+    <script>
+        var listArr = [2, 3, 4, 65, 12, 13, 34, 64, 21];
+        var count=0;
+        var length = listArr.map((el,i)=>{
+            count = i+1;
+            return count
+        })
+        console.log('length of Arr is ' + count)
+    </script>
+</body>
+
+</html>

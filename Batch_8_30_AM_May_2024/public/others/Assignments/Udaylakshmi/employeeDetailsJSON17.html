@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details Using JSON and Arrow Functions</title>
+
+</head>
+
+<body>
+    <div>Total tax percent : <span id="total"></span></div>
+    <script>
+        var empDetails = {};
+        var readEmpDetails = () => {
+            empDetails.empNm = prompt('Enter Employee Name');
+            empDetails.empAge = prompt('Enter Employee Age');
+            empDetails.empGender = prompt('Enter Employee gender');
+            empDetails.empDep = prompt('Enter Employee Department');
+            empDetails.basicSalary = prompt('Enter Employee Basic Salary');
+            empDetails.basicSalary = parseInt(empDetails.basicSalary);
+            getTotals(empDetails.empGender, empDetails.basicSalary);
+
+        }
+        var getTotals = (empGender, basicSalary) => {
+            empDetails.pf = (12 / 100) * basicSalary;
+            empDetails.hra = (24 / 100) * basicSalary;
+            empDetails.totalSalary = basicSalary + empDetails.pf + empDetails.hra;
+            empDetails.tax = 0;
+            if (empGender === 'male' || empGender === 'Male') {
+                empDetails.tax = maleTax(empDetails.totalSalary);
+            } else {
+                empDetails.tax = femaleTax(empDetails.totalSalary);
+            }
+            empDetails.taxPercent = (empDetails.tax / 100) * empDetails.totalSalary;
+            document.querySelector('#total').innerText = empDetails.taxPercent;
+        }
+        var maleTax = (totalSalary) => {
+            if (totalSalary >= 200000) {
+                empDetails.tax = 15;
+            } else if (totalSalary >= 150000) {
+                empDetails.tax = 10;
+            } else if (totalSalary >= 100000) {
+                empDetails.tax = 5;
+            } else {
+                empDetails.tax = 0;
+            }
+            return empDetails.tax;
+        }
+        var femaleTax = (totalSalary) => {
+            if (totalSalary >= 200000) {
+                empDetails.tax = 10;
+            } else if (totalSalary >= 150000) {
+                empDetails.tax = 5;
+            } else {
+                empDetails.tax = 0;
+            }
+            return empDetails.tax;
+        }
+        readEmpDetails();
+    </script>
+</body>
+
+</html>

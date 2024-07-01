@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var sDetails = {
+                name: 'Raj',
+                sClass: '2nd',
+                age: 10,
+                "total": 0,
+                marks: [77, 88, 99]
+            }
+            
+            for (var i = 0 ; i < sDetails.marks.length; i++) {
+                sDetails.total  += sDetails.marks[i];
+            }
+            sDetails.avg = sDetails.total / sDetails.marks.length;
+
+            if (sDetails.avg >= 40) {
+                sDetails.grade = 'Passed';
+            } else {
+                sDetails.grade = 'You have a surprise';
+            }
+            console.log(sDetails);
+
+            console.log("Name " + sDetails.name) ;
+            console.log("AGe " + sDetails.age);
+            console.log("Avg " + sDetails.avg);
+            console.log("Grade " + sDetails.grade);  
+        </script>
+    </body>
+</html>

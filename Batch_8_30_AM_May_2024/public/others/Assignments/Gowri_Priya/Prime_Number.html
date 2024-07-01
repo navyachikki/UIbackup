@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_Assignment</title>
+    
+</head>
+<body>
+    <h1 style="text-align:center">Check on Console</h1>
+    <script>
+
+        var num = parseInt(prompt("Enter a Number"));
+        if(num<=1){
+            console.log("Not a Prime Number");
+        }
+        else{
+            var isPrime = true;
+            for(var i=2;i<num;i++){
+                if(num%i===0){
+                    isPrime = false;
+                    break;
+                }
+
+             }
+             if(isPrime){
+            console.log("Prime Number");
+        }
+        else{
+            console.log("Not a Prime Number");
+        }
+
+        
+        }
+        
+        
+
+
+
+    </script>
+</body>
+</html>

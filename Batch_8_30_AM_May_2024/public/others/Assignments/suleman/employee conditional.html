@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var empName = prompt("Enter Employee name")
+      var depart = prompt("Enter Department")
+      var salary = parseInt(prompt("Enter the salary"))
+      var gender = prompt("Enter the gender Male/Female only")
+      gender = gender.toLowerCase()
+      console.log(`Employee details`)
+      console.log(`Employee name is: ${empName}`)
+      console.log(`Employee Department is: ${depart}`)
+      console.log(`Employee salary is: ${salary}`)
+      console.log(`Employee gender is: ${gender}`)
+      if (gender === "male") {
+        if (salary >= 100000 && salary <= 199999) {
+          var tax = salary * 0.15
+          console.log("total tax percent is 15%")
+          console.log("tax is ${tax}")
+        } else if (salary >= 200000 && salary <= 299999) {
+          var tax = salary * 0.1
+          console.log("total tax percent is 10%")
+          console.log("tax is ${tax}")
+        } else {
+          console.log(`Employee is free of tax`)
+        }
+      } else if (gender === "female") {
+        if (salary >= 100000 && salary <= 199999) {
+          console.log("total tax percent is 10%")
+          var tax = salary * 0.1
+          console.log(`tax is ${tax}`)
+        } else if (salary >= 200000 && salary <= 299999) {
+          var tax = salary * 0.05
+          console.log("total tax percent is 5%")
+          console.log(`tax is ${tax}`)
+        } else {
+          console.log(`Employee is free of tax`)
+        }
+      }
+    </script>
+  </body>
+</html>

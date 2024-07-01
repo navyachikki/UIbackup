@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non Static</title>
+</head>
+<style>
+    .Box1,.Box2,.Box3,.Box4,.Box5,.Box6,.Box7{
+        border: 1px solid;
+        background-color: aqua;
+        width: 150px;
+        height: 150px;
+    }
+    .Box2{
+        position: absolute;
+        left: 44%;
+        top: 22%;
+        bottom: 300px;
+    }
+    .grandParent{
+        position: relative;
+        border: 1px solid red;
+        height: 500px;
+    }
+    .parent{
+        border: 1px solid;
+        width: 86%;
+        height: 250px;
+        position: absolute;
+        margin: 100px;
+    }
+    .Box4{
+        position: relative;
+        left: 150px;
+    }
+</style>
+<body>
+    <div class="Box1"></div>
+    <div class="grandParent">
+        <div class="parent">
+    <div class="Box2"></div></div></div>
+    <div class="Box3"></div>
+    <div class="Box4"></div>
+    <div class="Box5"></div>
+    <div class="Box6"></div>
+    <div class="Box7"></div>
+</body>
+</html>

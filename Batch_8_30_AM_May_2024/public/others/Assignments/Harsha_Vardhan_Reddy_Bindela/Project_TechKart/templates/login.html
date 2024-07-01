@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.webp">
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="../controllers/validateLogin.js"></script>
+    <title>Login Page</title>
+  </head>
+  <body>
+    <header>Welcome Back to TechKart</header>
+    <form
+      class="loginForm"
+      id="loginForm"
+      action="productDetails.html"
+      method="POST"
+      onsubmit="return validateLoginForm()"
+    >
+      <label for="username">User name:</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Enter your username"
+      /><br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Enter your password"
+      /><br />
+      <input type="submit" id="login" value="Login" />
+      <a href="../templates/signup.html">Signup</a>
+      <a href="forgotpsw.html">Forgot Password?</a>
+    </form>
+    <footer>Copyright&copy;Harsha Vardhan Reddy Bindela</footer>
+  </body>
+</html>

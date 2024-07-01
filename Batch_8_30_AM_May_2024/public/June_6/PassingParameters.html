@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            
+            var readUserData = () => { // Calling function
+                var a1 = prompt("etner first value"); // 20
+                var a2 = prompt("etner second value"); // 34
+                var a3 = prompt("etner 3rd value");
+                a1 = parseInt(a1);
+                a2 = parseInt(a2);
+                getSumOfValues(a1, a2, a3); // getSumOfValues(20, 34); a1, a2 are parametes, actual parameters
+            }
+
+            var getSumOfValues = (a1, b) => { // Called function, a1, b are arguments,  formal Parameters
+                var result = 0;
+                result = a1 + b;
+                console.log("the sum is " + result);
+            }
+            readUserData();
+
+        </script>
+    </body>
+</html>

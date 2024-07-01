@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Palindrome</h3>
+    <script>
+
+    var a=[1221,451,2662,1111,4554,6668666];
+    var l;
+    console.log("Array elements are:");
+    for(var i=0;i<a.length;i++){
+        console.log(a[i]);
+    }
+    
+    for(var i=0;i<a.length;i++){
+        var num=a[i],rev=0;
+        while(num>0){
+            l=num%10;
+            num=parseInt(num/10);
+            rev=10*rev+l;
+
+        }
+        if(a[i]==rev){
+            console.log(a[i]+" is a palindrome no.");
+        }
+        else{
+            console.log(a[i]+" is not a palindrome no.")
+        }
+    }
+    </script>
+</body>
+</html>

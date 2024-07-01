@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 11</title>
+  </head>
+  <body>
+    <script>
+      /* Wap to find out lucky number of a given number. */
+
+      let number = parseInt(prompt("Enter number:"));
+      let luckyNumber = number;
+
+      while (luckyNumber >= 10) {
+        let temp = luckyNumber;
+        luckyNumber = 0;
+
+        while (temp > 0) {
+          luckyNumber += temp % 10;
+          temp = Math.floor(temp / 10);
+        }
+      }
+
+      console.log("Lucky number:", luckyNumber);
+    </script>
+  </body>
+</html>

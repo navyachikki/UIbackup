@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>Employee Details</title>
+    </head>
+    <body>
+        <h3 style="text-decoration: underline;">
+            Employee Details
+        </h3>
+        <ul>
+            <li>
+                Employee name is: <span id="ename"></span>
+            </li>
+            <li>
+                Department: <span id="eDep"></span>
+            </li>
+            <li>
+                Gender: <span id="gen"></span>
+            </li>
+            <li>
+                Basic Sal: <span id="bSal"></span>
+            </li>
+            <li>
+                Total Sal: <span id="tSal"></span>
+            </li>
+        </ul>
+        <script>
+            var employeetName = 'Monika';
+            var employeeDep = 'IT';
+            var employeeGen = 'Female';
+            var employeeBasicSal = 80000;
+            var pf = (80000*12)/100;
+            var hra = (80000*24)/100;
+            var totalSal = employeeBasicSal+pf+hra;
+
+            document.querySelector("#ename").innerText = employeetName;
+            document.querySelector("#eDep").innerText = employeeDep;
+            document.querySelector("#gen").innerText = employeeGen;
+            document.querySelector("#bSal").innerText = employeeBasicSal;
+            document.querySelector("#tSal").innerText = totalSal;
+
+        </script>
+    </body>
+</html>

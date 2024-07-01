@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+    <style>
+        h1{
+            border:1px solid ;
+            text-align: center;
+            background-color: rgb(169, 189, 231);
+            font-family:  monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee details</h1>
+    <script>
+        var ename = prompt("Enter employee name");
+        var dept=prompt("Enter the department");
+        var gender=prompt("Enter employee gender");
+        var basicsal=parseInt(prompt("Enter basic salary of employee"));
+        var pf=0.12*basicsal;
+        var hra=0.24*basicsal;
+        var totalsal=pf+hra+basicsal;
+        console.log( "Employee name :"+ename);
+        console.log( "Employee department :"+dept);
+        console.log( "Employee gender :"+gender);
+        console.log( "Employee basicsalary:"+basicsal);
+        console.log( "Employee totalsalary:"+totalsal);
+    </script>
+    
+</body>
+</html>

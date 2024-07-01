@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h2 {
+            margin: 5px;
+            border: 2px solid black;
+        }
+    </style>
+    <title>Employee Details</title>
+</head>
+<body>
+<h2>Employee Details Using Arrow Functions/Json object</h2>
+<div></div>
+<script>
+    var empDetails,
+        empName,
+        empAge,
+        empGender,
+        basicSalary,
+        totalSal,
+        taxPercent,
+        pf,
+        hra;
+
+    var getEmpDetails = () => {
+        empDetails = {};
+        empDetails.empName = prompt("Enter Your Name: ");
+        empDetails.empGender = prompt("Enter Your Gender: ");
+        empDetails.empAge = parseInt(prompt("Enter Your Age: "));
+        empDetails.basicSalary = parseInt(prompt("Enter Your Basic salary: "));
+        totalSalary();
+    };
+
+    var totalSalary = () => {
+        empDetails.pf = (empDetails.basicSalary * 12) / 100;
+        empDetails.hra = (empDetails.basicSalary * 24) / 100;
+        empDetails.totalSal = empDetails.basicSalary + empDetails.pf + empDetails.hra;
+        taxCalculator(empDetails.totalSal); // Pass totalSal to taxCalculator
+    };
+
+    var taxCalculator = (totalSal) => { // Accept totalSal as a parameter
+        if (empDetails.empGender === "Male") { // Use empDetails.empGender to access gender
+            if (totalSal >= 200000) {
+                empDetails.taxPercent = (totalSal * 15) / 100;
+                console.log("Total Tax cutting: " + empDetails.taxPercent);
+            } else if (totalSal >= 150000) {
+                empDetails.taxPercent = (totalSal * 10) / 100;
+                console.log("Total Tax cutting: " + empDetails.taxPercent);
+            } else if (totalSal >= 100000) {
+                empDetails.taxPercent = (totalSal * 5) / 100;
+                console.log("Total Tax cutting: " + empDetails.taxPercent);
+            } else {
+                console.log("Yoo!, Zero tax deduction");
+            }
+        } else {
+            if (empDetails.empGender === "Female" && totalSal >= 200000) { // Use empDetails.empGender to access gender
+                empDetails.taxPercent = (totalSal * 10) / 100;
+                console.log("Total Tax cutting: " + empDetails.taxPercent);
+            } else if (totalSal >= 150000) {
+                empDetails.taxPercent = (totalSal * 5) / 100;
+                console.log("Total Tax cutting: " + empDetails.taxPercent);
+            } else {
+                console.log("Yoo!, Zero tax deduction");
+            }
+        }
+        displayEmpDetails();
+    };
+
+    var displayEmpDetails = () => {
+        console.log(empDetails);
+        console.log("Employee Name: " + empDetails.empName);
+        console.log("Employee Age: " + empDetails.empAge);
+        console.log("Employee Gender: " + empDetails.empGender);
+        console.log("Employee Basic Salary: " + empDetails.basicSalary);
+        console.log("Employee PF: " + empDetails.pf);
+        console.log("Employee HRA: " + empDetails.hra);
+        console.log("Employee Total Salary: " + empDetails.totalSal);
+        console.log("Employee Tax Deduction: " + empDetails.taxPercent);
+    };
+    
+
+    getEmpDetails();
+</script>
+</body>
+</html>

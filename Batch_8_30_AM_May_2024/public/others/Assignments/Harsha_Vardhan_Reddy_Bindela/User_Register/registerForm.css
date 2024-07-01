@@ -1,0 +1,40 @@
+.titleContainer{
+    margin: 5px;
+    border: 5px solid black;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(236, 192, 136);
+}
+.formContainer{
+    margin: 2px;
+    border: 2px solid black;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(236, 218, 195);
+    position: relative;
+    left: 450px;
+    /* width: 75px;
+    height: 75px; */
+}
+footer {
+    bottom: 0;
+    border: 2px  solid #000000;
+    text-align: center;
+    background-color: #dbb16d;
+    font-style: italic;
+    padding: 15px;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    size: cover;
+}
+
+#register{
+    background-color: greenyellow;
+    padding: 5px;
+    position: relative;
+    z-index: 800;
+    size: cover;
+}

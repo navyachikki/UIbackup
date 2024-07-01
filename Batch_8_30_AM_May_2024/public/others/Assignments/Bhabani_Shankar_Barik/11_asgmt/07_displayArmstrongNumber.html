@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 11</title>
+  </head>
+  <body>
+    <script>
+      /* Wap to list out all the armstrong number between 1 to 1000. */
+      for (let num = 1; num <= 1000; num++) {
+        let digits = num.toString().split("");
+        let sum = 0;
+
+        for (let i = 0; i < digits.length; i++) {
+          let digit = parseInt(digits[i]);
+          sum += digit ** digits.length;
+        }
+
+        if (sum === num) {
+          console.log(num);
+        }
+      }
+    </script>
+  </body>
+</html>

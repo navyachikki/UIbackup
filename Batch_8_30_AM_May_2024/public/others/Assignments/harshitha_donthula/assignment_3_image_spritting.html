@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asgmnt-Image Spriting</title>
+    <style>
+      .title {
+        border: 2px solid black;
+        padding: 10px;
+        margin: 5px;
+        background-color: #2c2c2c;
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+      }
+   
+      .employeeDetails {
+        border: 1px solid black;
+        padding: 15px;
+        margin: 10px;
+      }
+      .employeeDetails div {
+        margin: 10px;
+      }
+      img {
+        width: 150px;
+      }
+      .imageContainer {
+        width: 150px;
+        height: 150px;
+        border: 1px solid green;
+        background-image: url(image/empsprite.png);
+      }
+      .emp2 {
+        background-position: 180px 15px;
+      }
+      .emp3 {
+        background-position: 326px -150px;
+      }
+      .emp4 {
+        background-position: 174px -135px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">Employee Details</div>
+
+    <div class="employeeDetails">
+      <div class="imageContainer"></div>
+      <div>Name: Shiva</div>
+      <div>Age: 24</div>
+      <div>Gender: Male</div>
+      <div>Location: Hyderbad</div>
+      <div>Designation: Software Engineer</div>
+      <div>Company: ABC</div>
+    </div>
+
+    <div class="employeeDetails">
+      <div class="imageContainer emp2"></div>
+      <div>Name: Harshitha</div>
+      <div>Age: 26</div>
+      <div>Gender: Female</div>
+      <div>Location: Hyderabad</div>
+      <div>Designation: Software Engineer</div>
+      <div>Company: XYZ</div>
+    </div>
+
+    <div class="employeeDetails">
+      <div class="imageContainer emp3"></div>
+      <div>Name: Sahara</div>
+      <div>Age: 25</div>
+      <div>Gender: Female</div>
+      <div>Location: Hyderabad </div>
+      <div>Designation: Software Manager</div>
+      <div>Company: ABC</div>
+    </div>
+
+    <div class="employeeDetails">
+      <div class="imageContainer emp4">
+      </div>
+      <div>Name: Revanth</div>
+      <div>Age: 28</div>
+      <div>Gender: Male</div>
+      <div>Location: Berhampur</div>
+      <div>Designation: Program Manager</div>
+      <div>Company: XYZ/div>
+    </div>
+  </body>
+</html>

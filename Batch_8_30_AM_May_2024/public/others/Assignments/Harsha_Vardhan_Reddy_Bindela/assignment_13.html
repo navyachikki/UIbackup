@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h2{
+            margin: 5px;
+            border: 2px solid black;
+        }
+    </style>
+    <title>Employee Details</title>
+</head>
+<body>
+    <h2>Employee Details Using Arrow Functions</h2>
+    <script>
+        var empName, empAge, empGender, basicSalary, totalSal, taxPercent, pf, hra;
+        var getEmpDetails=() =>
+        {
+            empName=prompt("Enter Your Name: ");
+            empGender=prompt("Enter Your Gender: ");
+            empAge=parseInt(prompt("Enter Your Age: "));
+            basicSalary=parseInt(prompt("Enter Your Basic salary: "));
+            totalSalary();
+        }
+
+        var totalSalary= () =>
+        {
+            pf = basicSalary * 12 / 100;
+            hra = basicSalary * 24 / 100;
+            totalSal = basicSalary + pf + hra;
+            taxCalculator(taxPercent);
+        }
+
+        var taxCalculator = () =>
+        {
+            if(empGender=="Male"){
+                if(totalSal>=200000 ){
+                    taxPercent= totalSal* 15/100;
+                    console.log("Total Tax cutting: "+ taxPercent);
+                }
+                else if(totalSal >= 150000){
+                    taxPercent= totalSal* 10/100;
+                    console.log("Total Tax cutting: "+ taxPercent);
+                }
+                else if(totalSal >=100000){
+                    taxPercent= totalSal* 5/100;
+                    console.log("Total Tax cutting: "+ taxPercent);
+                }
+                else{
+                    console.log("Yoo!, Zero tax deduction");
+                }
+                }
+                else
+                { 
+                if(empGender=="Female" && totalSal>=200000 ){
+                taxPercent= totalSal* 10/100;
+                console.log("Total Tax cutting: "+ taxPercent);
+                }
+                else if(totalSal >= 150000){
+                taxPercent= totalSal* 5/100;
+                console.log("Total Tax cutting: "+ taxPercent);
+                }
+                else{
+                console.log("Yoo!, Zero tax deduction");
+                }
+            }
+            displayEmpDetails();
+        }
+
+        var displayEmpDetails= () =>
+        {
+            document.write("Employee Name: "+empName+"<br>");
+            document.write("Employee Age: "+empAge+"<br>");
+            document.write("Employee Gender: "+ empGender+"<br>");
+            document.write("Employee Basic Salary: "+basicSalary+"<br>");
+            document.write("Employee PF: "+pf+"<br>");
+            document.write("Employee HRA: "+hra+"<br>");
+            document.write("Employee Total Salary: "+ totalSal+"<br>");
+            document.write("Employee Tax Deduction: "+ taxPercent+"<br>");
+        }
+        
+        getEmpDetails();
+    </script>
+</body>
+</html>

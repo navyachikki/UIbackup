@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAP to find out the lucky no of given no</title>
+</head>
+<body>
+    <script>
+        // var n = 342; // lucky no is addition of no 3+4+2=9 9 is lucky no..
+        var n = prompt("Enter a value");
+        var sum =0 ;
+         while ( n > 0 ){
+            var rem =n % 10;
+            var n = parseInt(n)
+            sum += rem;
+            n = n/10;
+            var n = parseInt(n)
+            if( n == 0 && sum > 9){
+             n = sum;
+             sum =0;
+            }
+             // console.log(rem)
+        }
+            //  var  n = sum ;
+            //  var sum =0;
+            //  while ( n > 0 ){
+            //   var rem =n % 10;
+            //   var n = parseInt(n)
+            //   sum += rem;
+            //   n = n/10;
+            //   var n = parseInt(n)
+            // }
+            console.log("the lucky no is " + sum )
+    </script>
+    
+</body>
+</body>
+</html>

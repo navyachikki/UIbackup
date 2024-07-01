@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecondLargest</title>
+</head>
+
+<body>
+    <h1 style="text-align: center">Find out the Second Largest Number in an Array</h1>
+    <script>
+        function FirstandSecondLargest(arr) {
+            if (arr.length < 2) {
+                return null;
+            }
+            let FirstLargest = arr[0];
+            let SecondLargest = arr[0];
+            for (i = 1; i < arr.length; i++) {
+                if (arr[i] > FirstLargest) {
+                    SecondLargest = FirstLargest
+                    FirstLargest = arr[i];
+                }
+                if (arr[i] > SecondLargest) {
+                    SeconLargest = arr[i];
+                }
+            }
+            return { FirstLargest, SecondLargest };
+
+        }
+        let arr = [23, 45, 12, 34, 87, 99, 43, 65, 98];
+        let result = FirstandSecondLargest(arr)
+        console.log("First Largest Number in an Array is:" + " " + result.FirstLargest);
+        console.log("Second Largest Number in an Array is:" + " " + result.SecondLargest);
+    </script>
+</body>
+
+</html>

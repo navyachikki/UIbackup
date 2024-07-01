@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime number</title>
+</head>
+<body>
+    <h3>Prime Number</h3>
+    <script>
+        //var num =7;
+        var num = prompt("Enter a Number");
+        num=parseInt(num);
+        var counter=0;
+        for(var i= 1; i<= num; i++){
+            
+           var rem = num % i; //remindar
+            if(rem == 0){
+                counter++;
+            }
+        }
+        if(counter == 2){
+            console.log("It is Prime Number");
+        }else{
+            console.log("it is not a prime number");
+        }
+        
+    </script>
+</body>
+</html>

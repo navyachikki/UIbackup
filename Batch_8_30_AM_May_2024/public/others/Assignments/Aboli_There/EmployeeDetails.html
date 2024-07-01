@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Details</title>
+  </head>
+  <body>
+    <h3>Employee Details</h3>
+
+    <script>
+      var name = prompt("Enter your name: ");
+      var age = prompt("Enter your age: ");
+      age = parseInt(age);
+      var gender = prompt("Enter your gender: ");
+      var department = prompt("Enter your department: ");
+      var basicSalary = prompt("Enter your basic salary: ");
+      basicSalary = parseFloat(basicSalary);
+      var pf = basicSalary * 0.12; //pf = 12% of total salary      
+      var hra = basicSalary * 0.24; // hra = 24% of total salary
+      var totalSalary = pf + hra + basicSalary;
+      console.log("Name: " + name);
+      console.log("Age: " + age);
+      console.log("Gender: " + gender);
+      console.log("Department: " + department);
+      console.log("Basic Salary: " + basicSalary);
+      console.log("PF: " + pf);
+      console.log("HRA: " + hra);
+      console.log("Total Salary; " + totalSalary);
+
+      if (gender === "male") {
+        console.log("Tax Calculation for male: ");
+        //Tax  calculation for male
+        if (totalSalary >= 200000) {
+          var tax = totalSalary * 0.15;
+          console.log("Tax is 15% " + tax);
+        } else if (totalSalary >= 150000) {
+          var tax = totalSalary * 0.1;
+          console.log("Tax is 10% " + tax);
+        } else if (totalSalary >= 100000) {
+          var tax = totalSalary * 0.05;
+          console.log("Tax is 5% " + tax);
+        } else {
+          console.log("Your Tax % is Zero");
+        }
+      } else if (gender === "female") {
+
+        console.log("Tax calculation for female:")
+        if (totalSalary >= 200000) {
+          var tax = totalSalary * 0.1;
+          console.log("Tax is 10% " + tax);
+        } else if (totalSalary >= 150000) {
+          var tax = totalSalary * 0.05;
+          console.log("Tax is 5% " + tax);
+        } else {
+          console.log("Your Tax % is Zero");
+        }
+      } else {
+        console.log("Please enter  gender");
+      }
+      
+    </script>
+  </body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var empname = prompt("enter employee name");
+            var empgender = prompt("Gender");
+            empgender = empgender.trim();  // removes space before and after the string.
+            /*
+            sadas
+            df
+            asdf
+            as
+            dfas
+            df
+            asd
+            
+            */
+            empgender = empgender.toLocaleLowerCase();
+            var basicSal = prompt("Enter basic sal");
+            basicSal = parseInt(basicSal);
+
+            
+
+            var pf = (basicSal * 12 ) / 100;
+            var hra = (basicSal * 24 ) / 100;
+            var totalSal = pf + hra + basicSal;
+
+            var taxPercent = 0;
+
+            if (empgender == 'male') {
+                if (totalSal >= 100000) {
+                    taxPercent = 15;
+                } else if (totalSal >= 500000) {
+                    taxPercent = 10;
+                } else if (totalSal >= 100000) {
+                    taxPercent = 5;
+                }
+            } else { // female
+                if (totalSal >= 100000) {
+                    taxPercent = 10;
+                } else if (totalSal >= 500000) {
+                    taxPercent = 5;
+                }
+            }
+            var taxValue = (totalSal * taxPercent) / 100;
+            console.log("total tax to be paid " + taxValue);
+        </script>
+    </body>
+</html> -->

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+           
+           
+           var sDetails = {
+            total: 0,
+            avg: '',
+            readStudentData() {
+                this.name = prompt("emnter name");
+                sDetails.age = prompt("etner age")
+                this.marks = [];
+
+                for (let i = 0 ; i < 5; i++) {
+                        sDetails.marks[i] = parseInt(prompt("etner sub mar " + i));
+                        
+                }
+                this.gettotalandAvg();
+            },
+            gettotalandAvg() {
+                sDetails.total = 0;
+                for (var i = 0 ; i < sDetails.marks.length; i++) {
+                    sDetails.total  += sDetails.marks[i];
+                }
+                sDetails.avg = sDetails.total / sDetails.marks.length;
+                this.getGrade();
+            },
+            getGrade() {
+                if (sDetails.avg >= 40) {
+                    sDetails.grade = 'Passed';
+                } else {
+                    sDetails.grade = 'You have a surprise';
+                }
+                console.log(sDetails);
+                this.displayStudentDetails();
+            },
+            displayStudentDetails() {
+                console.log("Name " + sDetails.name) ;
+                console.log("AGe " + sDetails.age);
+                console.log("Avg " + sDetails.avg);
+                console.log("Grade " + sDetails.grade)
+            }
+           };
+           sDetails.readStudentData();
+            
+        </script>
+    </body>
+</html>

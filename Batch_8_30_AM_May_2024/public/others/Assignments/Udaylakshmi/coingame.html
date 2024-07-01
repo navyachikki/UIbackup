@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Game</title>
+    <style>
+        .title {
+            border: 2px solid #000;
+            text-align: center;
+            padding: 10px 0px;
+            background-color: blanchedalmond;
+        }
+
+        #container {
+            border: 1px solid;
+            padding: 8px;
+            margin: 10px;
+            height: 90vh;
+            width: 400px;
+            word-wrap: break-word;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .round {
+            border: 1px solid;
+            width: 16px;
+            padding: 11px 6px 0px;
+            border-radius: 50%;
+            height: 5vh;
+            list-style: none;
+            margin: 0px 4px;
+            text-align: center;
+        }
+        .selectedCoin{
+            background-color: #47bc5c82;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">Coin Game</div>
+    <ul id="container">
+    </ul>
+<input type="button" value="Coin Picker" onclick="coinPicked()">
+    <script>
+
+        for (let i = 1; i <= 90; i++) {
+            var spanTag = document.createElement('li');
+            spanTag.setAttribute('class', 'round');
+            spanTag.setAttribute('id','coin_'+i);
+            spanTag.innerText = i;
+            document.querySelector('#container').append(spanTag)
+        }
+        function coinPicked(){
+            console.log('coin picked')
+        }
+    </script>
+</body>
+
+</html>

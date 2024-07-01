@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Format Selection</title>
+    <style>
+        span {
+            display: flex;
+            padding: 5px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form id="mainForm" name="mainForm">
+            <label>Choose Date Format</label>
+            <span><input type="radio" name="date" value="0" checked>8/6/2024</span>
+            <span><input type="radio" name="date" value="1">8th June 2024</span>
+            <span><input type="radio" name="date" value="2">8th June</span>
+            <span><input type="radio" name="date" value="3">8/6/2024 9:41</span>
+            <span><input type="radio" name="date" value="4">8th June 2024 9hrs 41mins</span>
+            <span><input type="radio" name="date" value="5">8/6/2024 9h:41mins:13sec</span>
+        </form>
+        <span>Selected Date Format: <b id='dateFormat'></b></span>
+    </div>
+    <script>
+        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        var selectedDt = 0;
+        var todayDt = new Date();
+        var formatedDate;
+        var monthIndex = todayDt.getMonth();
+        document.mainForm.onclick = function () {
+            selectedDt = document.querySelector('input[name="date"]:checked').value;
+            switch (selectedDt) {
+                case '0':
+                    formatedDate = todayDt.getDate() + '/' + (todayDt.getMonth() + 1) + '/' + todayDt.getFullYear();
+                    break;
+                case '1':
+                    formatedDate = todayDt.getDate() + 'th ' + months[monthIndex] + ' ' + todayDt.getFullYear();
+                    break;
+                case '2':
+                    formatedDate = todayDt.getDate() + 'th ' + months[monthIndex];
+                    break;
+                case '3':
+                    formatedDate = todayDt.getDate() + '/' + (todayDt.getMonth() + 1) + '/' + todayDt.getFullYear() + ' ' + todayDt.getHours() + ':' + todayDt.getMinutes();
+                    break;
+                case '4':
+                    formatedDate = todayDt.getDate() + 'th ' + months[monthIndex] + ' ' + todayDt.getFullYear() + ' ' + todayDt.getHours() + 'hrs ' + todayDt.getMinutes() + 'mins ';
+                    break;
+                case '5':
+                    formatedDate = todayDt.getDate() + '/' + (todayDt.getMonth() + 1) + '/' + todayDt.getFullYear() + ' ' + todayDt.getHours() + 'h:' + todayDt.getMinutes() + 'mins:' + todayDt.getSeconds() + 'sec';
+                    break;
+                default:
+                    formatedDate = todayDt.getDate() + '/' + (todayDt.getMonth() + 1) + '/' + todayDt.getFullYear();
+                    break;
+            }
+            document.querySelector('#dateFormat').innerText = formatedDate;
+        }
+    </script>
+</body>
+
+</html>

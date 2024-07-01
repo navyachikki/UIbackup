@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee_salary_Calculation</title>
+    <link rel="icon" type="image/jpg" href="images/favicon.jpg">
+</head>
+<style>
+    body{
+        background-color: rgb(25, 83, 64);
+    }
+    h1{
+        margin: 10px;
+    }
+    .content{
+        border: 2px solid rgb(8, 8, 8);
+        background-color: rgb(183, 224, 60);
+        /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+        font-size: larger;
+        width: 500px;
+        height: 253px;
+        margin: 29px;
+        position: relative;
+        left: 695px;
+        top: 316px;
+    }
+    .image{
+        border: 2px solid rgb(5, 1, 1);
+        width: 123px;
+        height: 129px;
+        background-image: url('images/imagespriting.png');
+        float: left;
+        margin-right: 20px;
+        position: relative;
+        left: 15px;
+        top: 13px;
+    }
+    .gowri{
+        background-position: -57px 178px;
+    }
+</style>
+<body>
+    
+    <div class="content">
+        <h1>Employee Details</h1>
+        <div class="image gowri"></div>
+        <ul>
+            <li>
+                Employee Name: <span id="empname"></span>
+            </li>
+            <li>
+                Department: <span id="dept"></span>
+            </li>
+            <li>
+                Gender: <span id="gender"></span>
+            </li>
+            <li>
+                Basic_Salary: <span id="bs"></span>
+            </li>
+            <li>
+                Total_salary: <span id="ts"></span>
+            </li>
+        </ul>
+    </div>
+    <script>
+        var EmployeeName = "Bondapalli Gowri Priya";
+        var Department = "Manager";
+        var Gender = "Female";
+        var basicsalary = 30000;
+        var pf = (12/100)*basicsalary;
+        var hra = (24/100)*basicsalary;
+        var totalsalary = basicsalary + pf + hra;
+        var total = totalsalary;
+
+        console.log("Employee Details"); 
+        console.log("Employee name is" + EmployeeName);
+        console.log("Department" + Department);
+        console.log("Gender" + Gender);
+        console.log("Basic Salary" + basicsalary);
+        console.log("Total Salary" + totalsalary);
+
+        document.querySelector("#empname").innerText = EmployeeName;
+        document.querySelector("#dept").innerText = Department;
+        document.querySelector("#gender").innerText = Gender;
+        document.querySelector("#bs").innerText = basicsalary;
+        document.querySelector("#ts").innerText = totalsalary;
+    
+
+    </script>
+</body>
+</html>

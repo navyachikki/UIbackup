@@ -1,0 +1,63 @@
+Modern UI Fullstack With React - MEARN
+
+    UI FullSTack (85 Classes) + REact (50 Classes)
+
+    1hr:30 min - 6 days wk
+
+
+LIST of TECH:
+    UI / Frontend 
+        HTML 4
+        CSS 2
+        Core/Basic JS (datatypes, process of compilation, error handling, functions, CS, DS ,DHTML)
+        Adv JS (JSON, AJAX, closures, EXception handling, XML, etc )
+        OOPS 
+        DHTML
+        HTML 5
+        CSS 3 
+        Bootstrap 5.*
+        External Lib 
+            Axios 
+            Handle bars - templating 
+            jquery 
+            SASS 
+            LESS CSS 
+
+        ECMA 6 
+
+    Backend 
+        Web server - NODE JS (webservecies, hosting resources, Sessions, Scoket io, Clusters, GET/POST data, connection with DB, Multer, uploading files, enc/dec etc...)
+        Express JS 
+
+    Database
+        MONGO Database with Compass Tool
+
+    Tools:
+        GIT desktop
+        Postman 
+        MongodbCompass 
+        VsCode
+        Browser Debgugging Tool
+
+
+    2 Projects
+
+    Modern - UI 
+        Logical Program solving 
+        GIT hub - Repo 
+        Git potfolio 
+        Resume building
+        DS in JS 
+
+    JS Lib
+
+        React Latest  with js and type script + 2 projects
+
+
+@durgaprasad158 
+
+
+Day-1 https://youtu.be/Ue3ffyOCRQI
+Day-2 https://youtu.be/SvWvdQqcDKc
+Day-3 https://youtu.be/ur-7SGQsxb4
+

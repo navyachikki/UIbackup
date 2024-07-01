@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Page</title>
+    <link rel="stylesheet" href="userRegistrationPage.css">
+</head>
+
+<body>
+    <div class="title">User Registration Page</div>
+    <div class="title userDetails">
+        <ul>
+            <li>
+                <label>User Name</label>
+                <input type="text" id="uname">
+            </li>
+            <li>
+                <label>Age</label>
+                <input type="number" id="uage">
+            </li>
+            <li>
+                <label>Gender:</label>
+                <input type="radio" value="Male" name="gender"> Male
+                <input type="radio" value="Female" name="gender"> Female
+            </li>
+            <li>
+                <label>Country</label>
+                <select id="country" onChange="CountrySelected()">
+                    <option>Select Country</option>
+                </select>
+            </li>
+            <li>
+                <label>State</label>
+                <select id="state" onChange="stateSelected()">
+                    <option>Select State</option>
+                </select>
+            </li>
+            <li>
+                <label>District</label>
+                <select id="district">
+                    <option>Select District</option>
+                </select>
+            </li>
+            <li>
+                <input type="button" value="Register" onclick="readUserData()">
+            </li>
+        </ul>
+    </div>
+    <div class="title">@Copy right 2024</div>
+    <script src="userRegistrationPage.js"></script>
+</body>
+
+</html>

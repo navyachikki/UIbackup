@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(4, 238, 255);
+}
+.header{
+    margin:10px auto;
+    padding-bottom: 30px;
+    background-color:  #80ffd2;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 690px;
+    height: 30px;
+}
+.header h3{
+    text-align: center;
+    color:rgb(0, 0, 0);
+    font-weight: normal;
+    
+}
+.highlight {
+    background-color: yellow;
+}
+.box{
+    margin: 10px auto;
+    padding: 8px;
+    height: 25px;
+    width: 25px;
+    background-color: #f4ffc2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    
+}
+
+.container{
+    border: 1px solid black;
+    margin: 10px auto;
+    padding: 10px;
+    width: 665px;
+    height: 600px;   
+    background-color: rgb(115, 241, 255);
+    border-radius: 10px;
+    overflow: auto;
+}
+.coinCircle{
+    margin: 12px;
+    padding: 8px;
+    height: 25px;
+    width: 25px;
+    background-color: #fbffc6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    float: left;
+    font-size: x-large;
+}
+.footer{
+    border: 1px solid black;
+    margin:10px auto;
+    padding-top: 10px;
+    background-color: #80ffd2;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 690px;
+    height: 30px;
+   
+}

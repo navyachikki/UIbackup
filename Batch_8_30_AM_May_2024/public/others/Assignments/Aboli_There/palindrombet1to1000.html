@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAP to display all the palindrom no between 1 to 1000</title>
+</head>
+
+<body>
+    <script>
+        for(var num = 1 ; num <= 1000; num++){
+            var str= num.toString();
+            var palindromno = str.split('').reverse().join('');
+            if( str ===palindromno ){
+                console.log(num);
+            }
+        }
+    </script>
+</body>
+</html>
+
+

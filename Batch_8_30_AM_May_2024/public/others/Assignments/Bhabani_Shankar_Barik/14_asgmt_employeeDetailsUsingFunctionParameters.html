@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 14</title>
+  </head>
+  <body>
+    <script>
+      /* Employee Details using parameters and return type in arrow function. */
+
+      let readEmployeeDetails = () => {
+        let employeeName = prompt("Enter employe name:"); //Name
+
+        let employeeAge = prompt("Enter employee age:"); //age
+
+        let employeeGender = prompt("Enter employee gender (male or female):"); //gender
+        employeeGender = employeeGender.trim();
+        employeeGender = employeeGender.toLocaleLowerCase();
+
+        let employeeId = prompt("Enter employee ID:"); //id
+        employeeId = parseInt(employeeId);
+
+        let employeeDepartment = prompt("Enter employee department:"); //department
+
+        let basicSalary = prompt("Enter basic salary:"); //salary
+        basicSalary = parseInt(basicSalary);
+
+        let pf = getPf(basicSalary); //PF
+        let hra = getHra(basicSalary); //HRA
+
+        let totalSalary = getTotalSalary(basicSalary, pf, hra); //Gross Salary
+        let haveToPayTax = taxCalculation(employeeGender, totalSalary); //Tax
+
+        displayEmployeeDetails(
+          employeeName,
+          employeeAge,
+          employeeGender,
+          employeeId,
+          employeeDepartment,
+          basicSalary,
+          pf,
+          hra,
+          totalSalary,
+          haveToPayTax
+        );
+      };
+
+      let getPf = (basicSalary) => {
+        let pf = (basicSalary * 10) / 100;
+        return pf;
+      };
+
+      let getHra = (basicSalary) => {
+        let hra = (basicSalary * 15) / 100;
+        return hra;
+      };
+
+      let getTotalSalary = (basicSalary, pf, hra) => {
+        let totalSalary = basicSalary + pf + hra;
+        return totalSalary;
+      };
+
+      let taxCalculation = (employeeGender, totalSalary) => {
+        let tax = 0;
+        if (employeeGender === "male") {
+          // Tax calculation for Male person
+          if (totalSalary >= 200000) {
+            tax = totalSalary * 0.15;
+          } else if (totalSalary >= 150000) {
+            tax = totalSalary * 0.1;
+          } else if (totalSalary >= 100000) {
+            tax = totalSalary * 0.05;
+          } else {
+            tax = 0;
+          }
+          return tax;
+        } else if (employeeGender === "female") {
+          //Tax  calculation for female person
+          if (totalSalary >= 200000) {
+            tax = totalSalary * 0.1;
+          } else if (totalSalary >= 150000) {
+            tax = totalSalary * 0.05;
+          } else {
+            tax = 0;
+          }
+          return tax;
+        }
+        // else {
+        //   console.log("Oops! Something went wrong! Please try again.");
+        // }
+      };
+
+      let displayEmployeeDetails = (
+        employeeName,
+        employeeAge,
+        employeeGender,
+        employeeId,
+        employeeDepartment,
+        basicSalary,
+        pf,
+        hra,
+        totalSalary,
+        haveToPayTax
+      ) => {
+        console.log("Employee details....");
+        console.log("Employee name is = " + employeeName);
+        console.log("Employee age is = " + employeeAge);
+        console.log("Employe gender is = " + employeeGender);
+        console.log("Employee id is = " + employeeId);
+        console.log("Employee department is = " + employeeDepartment);
+        console.log("Employee basic salary is = " + basicSalary);
+        console.log("Employee pf  is = " + pf);
+        console.log("Employee hra is = " + hra);
+        console.log("Employee total salary is = " + totalSalary);
+        console.log(
+          employeeName + " ,you have to pay tax amount i.e- ₹" + haveToPayTax
+        );
+      };
+
+      readEmployeeDetails();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Handling user defined exceptions
+        </title>
+        <script src="../jquery.js"></script>
+        <style>
+            .error {
+                text-align: center;
+                font-size: 11px;
+                color: red;
+                margin: 5px;
+                display: none;
+            }
+            ul {
+                border: 1px solid orange;
+                background-color: #ccc;
+                margin: 20px auto;
+                padding: 30px;
+                width: 300px;
+            }
+            li {
+                list-style: none;
+                border: 1px solid;
+                margin: 20px;
+                padding: 20px;
+            }
+            #msgBlock {
+                color: green;
+                font-weight: bold;
+            }
+        </style>.
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <ul>
+            <li>
+                <input type="text" id="uname" placeholder="Enter Name">
+                <div class="error nameErr">Name is mandate</div>
+            </li>
+            <li>
+                <input type="text" id="uage" placeholder="Student age">
+                <div class="error ageErr">Age should be greated than 21</div>
+            </li>
+            <li>
+                <input type="text" id="umailid" placeholder="Mail id">
+            </li>
+            <li>
+                <input type="button" value="Save Details" onclick="saveDetails()">
+            </li>
+            <li id="msgBlock">
+
+            </li>
+            
+        </ul>
+    </body>
+</html>

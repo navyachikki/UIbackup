@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details </title>
+    <style>
+        .header,
+        .footer {
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            background-color: brown;
+            color: white;
+            font-weight: bold;
+
+        }
+
+        .header h3 {
+            text-decoration: underline;
+            font-size: x-large;
+        }
+
+        .container {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid brown;
+            height: 1000px;
+        }
+
+        .left_container,
+        .right_container {
+            
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid gray;
+            float: left;
+            background-color: bisque;
+        }
+
+        .left_container {
+            width: 300px;
+        }
+
+        .left_container ol li {
+            margin: 10px;
+            padding: 10px;
+            font-weight: bold;
+
+        }
+
+        .right_container {
+            width: 1000px;
+            background-color: pink;
+        }
+        .Std_block{
+            border: 1px solid gray;
+        }
+        .Std_block li {
+            list-style: none;
+        }
+
+        .Std_block div {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /*Student Images*/
+        .imageSprite {
+            height: 100px;
+            width: 130px;
+            background-image: url("imagesprite.png");
+            float: left;
+        }
+
+        .stdImg1 {
+            background-position: -25px -12px;
+        }
+
+        .stdImg2 {
+            background-position: -245px -11px;
+        }
+
+        .stdImg3 {
+            background-position: -35px -270px;
+        }
+
+        .stdImg4 {
+            background-position: -246px -274px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h3>Student Details</h3>
+    </div>
+    <div class="container">
+        <div class="left_container">
+            <ol>
+                <li>Kavya</li>
+                <li>Tanuja</li>
+                <li>Raj</li>
+                <li>Pavani</li>
+                <li>Akhil</li>
+            </ol>
+        </div>
+        <div class="right_container">
+            <ul class="Std_block">
+                <li>
+                    <div class="imageSprite stdImg3"></div>
+                    <div>Name: Kavya</div>
+                    <div>Age: 10</div>
+                    <div>Gender: Female</div>
+                </li>
+            </ul>
+            <ul class="Std_block">
+                <li>
+                    <div class="imageSprite stdImg1"></div>
+                    <div>Name: Tanuja</div>
+                    <div>Age: 20</div>
+                    <div>Gender: Female</div>
+                </li>
+            </ul>
+            <ul class="Std_block">
+                <li>
+                    <div class="imageSprite stdImg2"></div>
+                    <div>Name: Raj</div>
+                    <div>Age: 20</div>
+                    <div>Gender: Male</div>
+                </li>
+            </ul>
+            <ul class="Std_block">
+                <li>
+                    <div class="imageSprite stdImg4"></div>
+                    <div>Name: Pavani</div>
+                    <div>Age: 21</div>
+                    <div>Gender: Female</div>
+                </li>
+            </ul>
+            <ul class="Std_block">
+                <li>
+                    <div class="imageSprite stdImg2"></div>
+                    <div>Name: Akhil</div>
+                    <div>Age: 21</div>
+                    <div>Gender: Male</div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="footer">
+        @copyrights Kavya 2024
+    </div>
+</body>
+
+</html>

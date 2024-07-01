@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WAP to find out reverse no of given no</title>
+  </head>
+  <body>
+        <script>
+        var n = parseInt(prompt("enter a numver"));
+        var temp = n;
+        var Reversenumber = "";
+        var rem = 0;
+        while (n > 0) {
+          rem = n % 10;
+          n = n / 10;
+          n = parseInt(n);
+          Reversenumber = Reversenumber + rem;
+        }
+        console.log("Reverse number number is " + Reversenumber);
+        if (temp == Reversenumber) {
+          console.log("the is Reverse no");
+        } else {
+          console.log("its not Reverse no ");
+      }
+
+
+
+        // var n = 345
+        // var n = parseInt(n);
+        // var reversenumber = 0;
+        // var rem =0;
+        // while( n> 0){
+        //     rem = n%10;
+        //     n= n/10;
+        //     n=parseInt(n);
+        //     reversenumber = (reversenumber  * 10 )+ rem;
+        // }
+        // console.log(" reverse no " + reversenumber);
+        
+
+
+    </script>
+
+    
+
+
+
+
+  </body>
+</html>

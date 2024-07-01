@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Card</title>
+    <link rel="stylesheet" href="progress.css">
+    
+</head>
+<body>
+    <div class="container">
+    <h1>Employee PaySlip Card</h1>
+    <div class="empform">
+        
+        <form>
+            <div class="empname">
+                <label class="lname" for="studname">Employee Name:</label> 
+                <input type="text" id="name" placeholder="Enter a Employee Name">
+            </div>
+
+            <div class="empage">
+                <label class="lage" for="studname">Employee Age:</label> 
+                <input type="number" id="age" placeholder="Enter a Employee Age">
+            </div>
+
+            <div class="emplocation">
+                <label class="lloc" for="studname">Employee Location:</label> 
+                <input type="text" id="loc" placeholder="Enter a Employee Location">
+            </div>
+
+            <div class="empgender">
+                <label class="lgender" for="name">Gender:</label> 
+                  <input type="radio" id="pmale" name="gender" value="Male">
+                  <label for="male">Male</label>
+                  <input type="radio" id="pfemale" name="gender" value="Female">
+                  <label for="female">Female</label>
+            </div>
+            <div class="empbsal">
+                <label class="lsal" for="studname">BasicSal:</label> 
+                <input type="number" id="sal" placeholder="Enter a BasicSal">
+            </div>
+            
+            <input type="button" value="Get Pay Slip" onclick="readStudentData()">
+        </form>
+        
+    </div>
+    </div>
+    <div class="displayBlock">
+        <div class="inner">
+        <div class="final2">Employee Name: <span id="dname"></span></div>
+        <div class="final2">Employee Age: <span id="dage"></span></div>
+        <div class="final2">Employee Gender: <span id="gender"></span></div>
+        <div class="final2">Employee BasicSal: <span id="Bsal"></span></div>
+        <div class="final2">Employee PF: <span id="pf"></span></div>
+        <div class="final2">Employee HRA: <span id="hra"></span></div>
+        <div class="final2">Employee Tax: <span id="tax"></span></div>
+        </div>
+
+    </div>
+    <!-- <div>
+        <ul class="displayBlock">
+            <li class="final">
+                Employee name: <span id="dname"></span>
+            </li>
+            <li class="final">
+                Age: <span id="dage"></span>
+            </li>
+            <li class="final">
+                Location: <span id="dtotal"></span>
+            </li>
+            <li class="final">
+                BasicSal: <span id="davg"></span>
+            </li>
+            <li class="final">
+                PF: <span id="pf"></span>
+            </li>
+            <li class="final">
+                HRA: <span id="hra"></span>
+            </li>
+            <li class="final">
+                Tax Percentage: <span id="tax"></span>
+            </li>
+            
+        </ul> -->
+    </div>
+    <script src="progress.js"></script>
+</body>
+</html>

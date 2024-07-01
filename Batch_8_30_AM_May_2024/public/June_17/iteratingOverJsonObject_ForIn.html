@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Iterating Over JSON Object
+        </title>
+    </head>
+    <body>
+        <script>
+           /* var data = [
+                "Raj", 
+                20, 
+                "Male"
+            ];
+
+            for (let i = 0; i < data.length; i++) {
+                console.log(data[i]);
+            } */
+
+            var userDetails = {
+                name: 'Raj',
+                age: 20,
+                gender: 'Male',
+            }
+
+            for (var temp in userDetails) {
+                //console.log(temp);
+                if (temp == 'gender') {
+                        console.log(userDetails[temp]);
+                }
+
+            }
+
+
+            console.log(userDetails.length);
+
+            var bookdetaails = {
+                name: 'ABC book',
+                price: 2000,
+                publisher: 'testing',
+                location: 'new'
+            }
+
+
+            for (var bookkey in bookdetaails) {
+                console.log(bookdetaails[bookkey]);
+            }
+
+            // console.log("name is " + userDetails.name);
+            // console.log("name is " + userDetails['name']);
+            // console.log(userDetails.address.state);
+            // console.log(userDetails['address']['state']);
+
+        </script>
+    </body>
+</html>

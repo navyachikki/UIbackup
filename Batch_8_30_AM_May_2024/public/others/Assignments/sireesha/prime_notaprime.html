@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n = prompt("etner a value");
+        n = parseInt(n);
+        var counter = 0;
+        for (var i = 2; i < n; i++) {
+            var rem = n % i;
+            if (rem == 0) {
+                counter++;
+                break;
+            }
+        }
+        if (counter == 0) {
+            console.log("Its a prime");
+        } else {
+            console.log("its not prime");
+        }
+        // timecomplexity -> n-2
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+.title{
+    border: 1px solid;
+    padding: 12px;
+    text-align: center;
+    margin: 4px;
+}
+.userDetails{
+text-align: left;
+}
+li{
+    list-style: none;
+    padding: 8px 0px;
+}
+label{
+    width: 100px;
+}
+.dflex{
+    display: flex;
+}
+table,td,th{
+    border:1px solid;
+    text-align: center;
+}
+.wid50{
+    width: 50%;
+}
+#register{
+    display: block;
+}
+#save{
+    display: none;
+}

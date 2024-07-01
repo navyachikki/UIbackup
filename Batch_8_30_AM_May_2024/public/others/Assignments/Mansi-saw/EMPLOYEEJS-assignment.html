@@ -1,0 +1,79 @@
+         <!DOCTYPE html>
+         <html lang="en">
+         <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+         </head>
+         <body>
+            <script>
+                var empname = prompt('enter EMP name');
+                var empage = prompt('enter EMP age');  
+                empage = parseInt(empage);             
+                var empdep = prompt('enter EMP DEP');
+                var gender = prompt('enter gender')
+                var basicsal = prompt('enter basic salary');
+                basicsal=parseInt(basicsal);
+
+                 
+               pf = (12*basicsal)/100
+               hra = (24*basicsal)/100
+                totalsal =  basicsal + pf + hra
+
+                console.log('the emp name: '+ empname)
+                console.log('the emp age: '+ empage)
+                console.log('emp dep: '+ empdep);
+                console.log('gender: '+ gender);
+                console.log('basicsal: '+ basicsal);
+                console.log('pf: '+ pf);
+                console.log('hra: '+ hra);
+                console.log(' total sal: '+ totalsal);
+                
+
+               
+                if(gender=="male") {
+                if(totalsal>=200000)   {                   
+                    var tax= (15*totalsal)/100  ;                 
+                    console.log( 'tax paid is 15%: '+tax)
+                }
+
+                else if(totalsal>=150000)   {                   
+                    var tax= (10*totalsal)/100 ;                  
+                    console.log( 'tax paid is 10%: '+tax)
+                }
+                   
+                else if(totalsal>=100000)   {                   
+                    var tax= (5*totalsal)/100 ;             
+                    console.log( 'tax paid is 5%: '+tax)
+                }
+                   
+                else 
+              if (totalsal<100000) {
+                    var tax = 0;
+                    console.log( 'tax paid is: '+tax)
+                }
+            }
+                  
+            alert('Go to console to see result');
+
+                
+                
+                
+
+
+
+
+
+
+
+
+
+              
+                
+                
+                
+
+            </script>
+            
+         </body>
+         </html>

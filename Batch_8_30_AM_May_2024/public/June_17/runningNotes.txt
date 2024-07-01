@@ -1,0 +1,21 @@
+for in looping
+
+    Syntax:
+
+        for (var tempkey in object) {
+
+        }
+
+        var userDetails = {
+                name: 'Raj',
+                age: 20,
+                gender: 'Male',
+                
+            }
+
+        userDetails.name -> Raj 
+
+        var temp = "name";
+        userDetails.temp -> undefined 
+        userDetails[temp] -> userDetails['name'] -> Raj
+

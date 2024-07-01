@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Numbers from 1000-201! </title>
+</head>
+
+<body>
+
+    <script>
+
+        for ( var num = 1000; num > 201; num--) {
+            var rev = 0;
+            var temp = num;
+
+            while ( temp > 0) {
+                var digit = temp % 10;
+                rev = rev * 10 + digit;
+                temp = (temp - digit) / 10;
+            }
+
+            let revStr = rev.toString();
+            if (revStr.length < 3) {
+            for (let i = revStr.length; i < 3; i++) {
+                revStr = "0" + revStr;
+            }
+            }
+            
+            console.log("Reverse of " + num + " is " + revStr);
+        }
+
+    </script>
+    
+</body>
+</html>
+
+
+    
+
+  
+
+  
+

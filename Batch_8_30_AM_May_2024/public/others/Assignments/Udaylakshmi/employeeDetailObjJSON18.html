@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details Using Single JSON and Arrow Functions</title>
+
+</head>
+
+<body>
+    <div>Total tax percent : <span id="total"></span></div>
+    <script>
+        var empDetails = {
+            readEmpDetails: () => {
+                empDetails.empNm = prompt('Enter Employee Name');
+                empDetails.empAge = prompt('Enter Employee Age');
+                empDetails.empGender = prompt('Enter Employee gender');
+                empDetails.empDep = prompt('Enter Employee Department');
+                empDetails.basicSalary = prompt('Enter Employee Basic Salary');
+                empDetails.basicSalary = parseInt(empDetails.basicSalary);
+                empDetails.getTotals();
+            },
+            getTotals() {
+                this.pf = (12 / 100) * this.basicSalary;
+                this.hra = (24 / 100) * this.basicSalary;
+                this.totalSalary = this.basicSalary + this.pf + this.hra;
+                this.tax = 0;
+                if (this.empGender === 'male' || this.empGender === 'Male') {
+                    this.tax = empDetails.maleTax();
+                } else {
+                    this.tax = empDetails.femaleTax();
+                }
+                this.taxPercent = (this.tax / 100) * this.totalSalary;
+                document.querySelector('#total').innerText = this.taxPercent;
+            },
+            maleTax() {
+                if (this.totalSalary >= 200000) {
+                    this.tax = 15;
+                } else if (this.totalSalary >= 150000) {
+                    this.tax = 10;
+                } else if (this.totalSalary >= 100000) {
+                    this.tax = 5;
+                } else {
+                    this.tax = 0;
+                }
+                return this.tax;
+            },
+            femaleTax() {
+                if (this.totalSalary >= 200000) {
+                    this.tax = 10;
+                } else if (this.totalSalary >= 150000) {
+                    this.tax = 5;
+                } else {
+                    this.tax = 0;
+                }
+                return this.tax;
+            }
+        }
+        empDetails.readEmpDetails();
+    </script>
+</body>
+
+</html>

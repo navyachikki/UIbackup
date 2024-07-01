@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="icon" type="image/jpg" href="images/favicon.jpg">
+</head>
+<style>
+    h1{
+        border: 2px solid;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        background-color: rgb(206, 228, 228);
+        
+    }
+    table{
+        width: 100%;
+        border-spacing: 0px;
+        padding: 2px;
+        text-align: center;
+        border-color: aqua;
+    }
+    .edit{
+        margin: 10px 2px 10px 10px;
+        padding: 10px 10px 10px 0px;
+    }
+
+    img{
+        width: 150px;
+        height: 150px;
+        align-items: center;
+    }
+    table, th, td {
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+    .std{
+        background-color: rgb(137, 223, 223);
+        margin: 20px;
+        padding: 10px;
+        border-color: black;
+    }
+    th, td{
+        text-align: center;
+    }
+    tr:nth-child(even) {
+        background-color: #D6EEEE;
+    }
+    .std tr:hover{
+        background-color: rgb(226, 240, 105);
+    }
+    p{
+        border: 2px solid;
+        margin: 10px;
+        padding: 0px;
+        text-align: center;
+
+    }
+
+</style>
+<body>
+    <h1>Student Progress Card Details</h1>
+    <div class="edit"><table>
+            <tr>
+                <th>S.No</th>
+                <th>Student Name</th>
+                <th>Age</th>
+                <th>Location</th>
+                <th>Picture</th>
+                <th>Progress Card</th>
+            </tr>
+       
+            <tr>
+                <td>1</td>
+                <td>Gowri</td>
+                <td>21</td>
+                <td>Hyderabad</td>
+                <td><img src="images/bitmoji1.jpg" alt="student image"> </td>
+                <td>
+                    <table class="std" style="width: 95%">
+                        <tr>
+                            <th>Subject</th>
+                            <th>Total Marks</th>
+                            <th>Min</th>
+                            <th>Obtained</th>
+                        </tr>
+                        <tr>
+                            <td>Maths</td>
+                            <td>150</td>
+                            <td>75</td>
+                            <td>97</td>
+                        </tr>
+                        <tr>
+                            <td>Science</td>
+                            <td>100</td>
+                            <td>75</td>
+                            <td rowspan="2">90</td>
+                        </tr>
+                        <tr>
+                            <td>Social</td>
+                            <td>100</td>
+                            <td>75</td>
+                            <!-- <td>90</td> -->
+                        </tr>
+                        <tr>
+                            <td>Biology</td>
+                            <td>60</td>
+                            <td>55</td>
+                            <td>56</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>sowjanya</td>
+                <td>20</td>
+                <td>Chennai</td>
+                <td><img src="images/bitmoji2.jpg" alt="student image"> </td>
+                <td>
+                    <table class="std" style="width: 95%">
+                        <tr>
+                            <th>Subject</th>
+                            <th>Total Marks</th>
+                            <th>Min</th>
+                            <th>Obtained</th>
+                        </tr>
+                        <tr>
+                            <td>Maths</td>
+                            <td>150</td>
+                            <td>75</td>
+                            <td rowspan="2">100</td>
+                        </tr>
+                        <tr>
+                            <td>Science</td>
+                            <td>100</td>
+                            <td>75</td>
+                            <!-- <td>100</td> -->
+                        </tr>
+                        <tr>
+                            <td>Social</td>
+                            <td>100</td>
+                            <td>75</td>
+                            <td>98</td>
+                        </tr>
+                        <tr>
+                            <td>Biology</td>
+                            <td>60</td>
+                            <td>55</td>
+                            <td>58</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td>Priya</td>
+                <td>19</td>
+                <td>Bangalore</td>
+                <td><img src="images/bitmoji3.jpg" alt="student image"> </td>
+                <td>
+                    <table class="std" style="width: 95%">
+                        <tr>
+                            <th>Subject</th>
+                            <th>Total Marks</th>
+                            <th>Min</th>
+                            <th>Obtained</th>
+                        </tr>
+                        <tr>
+                            <td>Maths</td>
+                            <td>150</td>
+                            <td>75</td>
+                            <td>82</td>
+                        </tr>
+                        <tr>
+                            <td>Science</td>
+                            <td>100</td>
+                            <td>75</td>
+                            <td>93</td>
+                        </tr>
+                        <tr>
+                            <td>Social</td>
+                            <td>100</td>
+                            <td>75</td>
+                            <td rowspan="2">60</td>
+                        </tr>
+                        <tr>
+                            <td>Biology</td>
+                            <td>60</td>
+                            <td>55</td>
+                            <!-- <td>60</td> -->
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td>Lavanya</td>
+                <td>23</td>
+                <td>Vizag</td>
+                <td><img src="images/bitmoji4.jpg" alt="student image"> </td>
+                <td>
+                    <table class="std" style="width: 95%">
+                        <tr>
+                            <th>Subject</th>
+                            <th>Total Marks</th>
+                            <th>Min</th>
+                            <th>Obtained</th>
+                        </tr>
+                        <tr>
+                            <td>Maths</td>
+                            <td>150</td>
+                            <td>75</td>
+                            <td rowspan="2">80</td>
+                        </tr>
+                        <tr>
+                            <td>Science</td>
+                            <td>100</td>
+                            <td>75</td>
+                            <!-- <td>80</td> -->
+                        </tr>
+                        <tr>
+                            <td>Social</td>
+                            <td>100</td>
+                            <td>75</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Biology</td>
+                            <td>60</td>
+                            <td>55</td>
+                            <td>59</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td>SriPriya</td>
+                <td>21</td>
+                <td>Nagpur</td>
+                <td><img src="images/bitmoji5.jpg" alt="student image"> </td>
+                <td>
+                    <table class="std" style="width: 95%">
+                        <tr>
+                            <th>Subject</th>
+                            <th>Total Marks</th>
+                            <th>Min</th>
+                            <th>Obtained</th>
+                        </tr>
+                        <tr>
+                            <td>Maths</td>
+                            <td>150</td>
+                            <td>75</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Science</td>
+                            <td>100</td>
+                            <td>75</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>Social</td>
+                            <td>100</td>
+                            <td>75</td>
+                            <td>96</td>
+                        </tr>
+                        <tr>
+                            <td>Biology</td>
+                            <td>60</td>
+                            <td>55</td>
+                            <td>56</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                <td>Teena</td>
+                <td>21</td>
+                <td>Chennai</td>
+                <td><img src="images/bitmoji6.jpg" alt="student image"> </td>
+                <td>
+                    <table class="std" style="width: 95%">
+                        <tr>
+                            <th>Subject</th>
+                            <th>Total Marks</th>
+                            <th>Min</th>
+                            <th>Obtained</th>
+                        </tr>
+                        <tr>
+                            <td>Maths</td>
+                            <td>150</td>
+                            <td>75</td>
+                            <td>88</td>
+                        </tr>
+                        <tr>
+                            <td>Science</td>
+                            <td>100</td>
+                            <td>75</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Social</td>
+                            <td>100</td>
+                            <td>75</td>
+                            <td>96</td>
+                        </tr>
+                        <tr>
+                            <td>Biology</td>
+                            <td>60</td>
+                            <td>55</td>
+                            <td>59</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </tr>
+        
+            <tr>
+                <td>7</td>
+                <td>Meena</td>
+                <td>21</td>
+                <td>Bihar</td>
+                <td><img src="images/bitmoji7.jpg" alt="student image"> </td>
+                <td>
+                    <table class="std" style="width: 95%">
+                        <tr>
+                            <th>Subject</th>
+                            <th>Total Marks</th>
+                            <th>Min</th>
+                            <th>Obtained</th>
+                        </tr>
+                        <tr>
+                            <td>Maths</td>
+                            <td>150</td>
+                            <td>75</td>
+                            <td>110</td>
+                        </tr>
+                        <tr>
+                            <td>Science</td>
+                            <td>100</td>
+                            <td>75</td>
+                            <td rowspan="2">99</td>
+                        </tr>
+                        <tr>
+                            <td>Social</td>
+                            <td>100</td>
+                            <td>75</td>
+                            <!-- <td>99</td> -->
+                        </tr>
+                        <tr>
+                            <td>Biology</td>
+                            <td>60</td>
+                            <td>55</td>
+                            <td>60</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </tr>
+        
+            <tr>
+                <td>8</td>
+                <td>Guna</td>
+                <td>21</td>
+                <td>Ooty</td>
+                <td><img src="images/bitmoji8.jpg" alt="student image"> </td>
+                <td>
+                    <table class="std" style="width: 95%">
+                        <tr>
+                            <th>Subject</th>
+                            <th>Total Marks</th>
+                            <th>Min</th>
+                            <th>Obtained</th>
+                        </tr>
+                        <tr>
+                            <td>Maths</td>
+                            <td>150</td>
+                            <td>75</td>
+                            <td rowspan="2">90</td>
+                        </tr>
+                        <tr>
+                            <td>Science</td>
+                            <td>100</td>
+                            <td>75</td>
+                            <!-- <td>90</td> -->
+                        </tr>
+                        <tr>
+                            <td>Social</td>
+                            <td>100</td>
+                            <td>75</td>
+                            <td>96</td>
+                        </tr>
+                        <tr>
+                            <td>Biology</td>
+                            <td>60</td>
+                            <td>55</td>
+                            <td>56</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </tr>
+        
+            <tr>
+                <td>9</td>
+                <td>Gowri</td>
+                <td>21</td>
+                <td>Odissa</td>
+                <td><img src="images/bitmoji9.jpg" alt="student image"> </td>
+                <td>
+                    <table class="std" style="width: 95%">
+                        <tr>
+                            <th>Subject</th>
+                            <th>Total Marks</th>
+                            <th>Min</th>
+                            <th>Obtained</th>
+                        </tr>
+                        <tr>
+                            <td>Maths</td>
+                            <td>150</td>
+                            <td>75</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Science</td>
+                            <td>100</td>
+                            <td>75</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>Social</td>
+                            <td>100</td>
+                            <td>75</td>
+                            <td>96</td>
+                        </tr>
+                        <tr>
+                            <td>Biology</td>
+                            <td>60</td>
+                            <td>55</td>
+                            <td>56</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </tr>
+        
+            <tr>
+                <td>10</td>
+                <td>Gowri</td>
+                <td>21</td>
+                <td>Srinagar</td>
+                <td><img src="images/bitmoji10.jpg" alt="student image"> </td>
+                <td>
+                    <table class="std" style="width: 95%">
+                        <tr>
+                            <th>Subject</th>
+                            <th>Total Marks</th>
+                            <th>Min</th>
+                            <th>Obtained</th>
+                        </tr>
+                        <tr>
+                            <td>Maths</td>
+                            <td>150</td>
+                            <td>75</td>
+                            <td rowspan="2">80</td>
+                        </tr>
+                        <tr>
+                            <td>Science</td>
+                            <td>100</td>
+                            <td>75</td>
+                            <!-- <td>80</td> -->
+                        </tr>
+                        <tr>
+                            <td>Social</td>
+                            <td>100</td>
+                            <td>75</td>
+                            <td>96</td>
+                        </tr>
+                        <tr>
+                            <td>Biology</td>
+                            <td>60</td>
+                            <td>55</td>
+                            <td>56</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </tr>
+        
+        
+    </table></div>
+    <p>@Copy right 2024</p>
+    
+    
+</body>
+</html>

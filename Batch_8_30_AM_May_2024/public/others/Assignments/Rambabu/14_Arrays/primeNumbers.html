@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListOutPrimeNumberArray</title>
+</head>
+
+<body>
+    <script>
+        var data = [1, 3, 8, 99, 21, 88, 77, 44, 23, 29, 64, 92];
+        for (var i = 0; i < data.length; i++) {
+            var counter = 0;
+            var rem = 0;
+            for (var k = 2; k < data[i]; k++) {
+                rem = data[i] % k;
+                if (rem == 0) {
+                    counter++;
+                    break;
+                }
+            }
+            if (counter == 0 && data[i] > 1) {
+                console.log('It is Prime: ' + data[i]);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var a1, a2;
+            var readUserData = () => { // Calling function
+                a1 = prompt("etner first value");
+                a2 = prompt("etner second value");
+                a1 = parseInt(a1); // 10
+                a2 = parseInt(a2); // 20
+                var sum = getSumOfValues(); // sum = 30
+                console.log("the sum is " + sum);
+            }
+
+            var getSumOfValues = () => { // Called function
+                var result = 0;
+                result = a1 + a2;    // 10 + 20
+                return result;     // returnt 30         
+            }
+            readUserData();
+
+        </script>
+    </body>
+</html>

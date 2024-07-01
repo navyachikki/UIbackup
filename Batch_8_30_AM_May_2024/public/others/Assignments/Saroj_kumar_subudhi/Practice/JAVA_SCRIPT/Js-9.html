@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF else</title>
+</head>
+
+<body>
+    <h3 style="text-align: center;">IF else</h3>
+    <script>
+        var Total_Mark, M1, M2, M3, M4, M5,M6, Avg;
+        
+        M1=prompt("Enter The value Of C");
+        M1=parseInt(M1)
+        
+        M2=prompt("Enter The value Of C++");
+        M2=parseInt(M2);
+        
+        M3=prompt("Enter The value Of Java");
+        M3=parseInt(M3)
+        
+        M4=prompt("Enter The value Of Python");
+        M4=parseInt(M4)
+        
+        M5=prompt("Enter The value Of 6");
+        M5=parseInt(M5)
+        
+        // M1 = parseInt(M1(prompt("Enter The Mark Of C")));
+        // M2 = parseInt(M2(prompt("Enter The Mark Of C++")));
+        // M3 = parseInt(M3(prompt("Enter The Mark Of Java")));
+        // M4 = parseInt(M4(prompt("Enter The Mark Of DS")));
+        // M5 = parseInt(M5(prompt("Enter The Mark Of Pythonr")));
+        Total_Mark = M1 + M2 + M3 + M4 + M5;
+        Avg = Total_Mark / 5;
+        var percentage = (Total_Mark / 500) * 100;
+        
+        if (percentage > 30) {
+            console.log("You Are Pass The Exam")
+            console.log("Percentage Is " + percentage + "%");
+             if(percentage > 90)
+            {
+                console.log("Percentage Is " + percentage + "% , Grade 'O'");
+            }
+            else if(percentage > 80)
+            {
+                console.log("Percentage Is " + percentage + "% , Grade 'A'");
+            }
+            else if(percentage > 90)
+            {
+                console.log("Percentage Is " + percentage + "% , Grade 'B'");
+            } else if(percentage > 90)
+            {
+                console.log("Percentage Is " + percentage + "% , Grade 'C'");
+            } else if(percentage > 90)
+            {
+                console.log("Percentage Is " + percentage + "% , Grade 'D'");
+            } else if(percentage > 90)
+            {
+                console.log("Percentage Is " + percentage + "% , Grade 'E'");
+            }
+        }
+        else{
+            console.log("Faill Your Percentage is " +percentage+"%");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+tagsyntax:
+
+    <tagname>
+        content 
+    </tagname>
+
+    <br>
+
+
+    <br/>
+    -----------
+
+HHTML heading tags: 
+    h1, h2, h3 .... h6

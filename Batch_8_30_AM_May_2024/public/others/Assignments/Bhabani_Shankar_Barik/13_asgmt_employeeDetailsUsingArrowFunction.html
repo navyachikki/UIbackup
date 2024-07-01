@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 13</title>
+  </head>
+  <body>
+    <h2>READ EMPLOY DETAILS ....DYNAMICALLY USING ARROW FUNCTION</h2>
+    <script>
+      /* Employee Details using functions. */
+
+      let employeeName,
+        employeeId,
+        employeeDepartment,
+        basicSalary,
+        pf,
+        hra,
+        totalSalary;
+
+      readEmployeeDetails = () => {
+        employeeName = prompt("Enter employe name:");
+        employeeId = prompt("Enter employee ID:");
+        employeeId = parseInt(employeeId);
+        employeeDepartment = prompt("Enter employee department:");
+        basicSalary = prompt("Enter basic salary:");
+        basicSalary = parseInt(basicSalary);
+
+        getPfAndHra();
+      }
+
+      getPfAndHra = () => {
+        pf = (basicSalary * 10) / 100;
+        hra = (basicSalary * 15) / 100;
+        totalSalary = basicSalary + pf + hra;
+
+        displayEmployeeDetails();
+      }
+
+      displayEmployeeDetails = () => {
+        console.log("Employee details....");
+        console.log("Employee name is = " + employeeName);
+        console.log("Employee id is = " + employeeId);
+        console.log("Employee department is = " + employeeDepartment);
+        console.log("Employee basic salery is = " + basicSalary);
+        console.log("Employee pf  is = " + pf);
+        console.log("Employee hra is = " + hra);
+        console.log("Employee total salery is = " + totalSalary);
+      }
+
+      readEmployeeDetails();
+    </script>
+  </body>
+</html>

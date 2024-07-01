@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    var  a=[12,23,1,56,34,39];
+    var largest=a[0],secondLargest=-1;
+    for(var i=1;i<a.length;i++){
+        if(largest<a[i]){
+            
+            secondLargest=largest;
+            largest=a[i];
+
+        }
+        else if(a[i]>secondLargest)
+        secondLargest=a[i]
+    }
+    console.log("Largest:"+largest);
+    console.log("Second Largest:"+secondLargest);
+</script>
+</body>
+</html>

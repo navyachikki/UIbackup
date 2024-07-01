@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+
+            var empDetails = {
+                name: 'Krish',
+                displyaempDetails() {
+                    console.log("name is " + this.name);
+                }
+            }
+           
+            var sDetails = {
+                name: 'Raj',
+                sClass: '2nd',
+                age: 10,
+                "total": 0,
+                marks: [77, 88, 99],
+                getTotalAndAvg() {
+                    for (var i = 0 ; i < this.marks.length; i++) {
+                        this.total  += sDetails.marks[i];
+                    }
+                    sDetails.avg = sDetails.total / this.marks.length;
+                    this.getGrade();
+                },
+                getGrade() {
+                    if (sDetails.avg >= 40) {
+                        this.grade = 'Passed';
+                    } else {
+                        sDetails.grade = 'You have a surprise';
+                    }
+                },
+                displayDetails() {
+                    sDetails.getTotalAndAvg();
+                    console.log("Name " + this.name) ;
+                    console.log("AGe " + sDetails.age);
+                    console.log("Avg " + this.avg);
+                    console.log("Grade " + this.grade);  
+                }
+            }
+            
+            sDetails.displayDetails();
+        </script>
+
+    </body>
+</html>

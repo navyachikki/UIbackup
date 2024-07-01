@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var sDetails = ["raj", 22, 'male' , 0 ,0," ", [50,60,90] ];
+ 
+            console.log(sDetails);
+
+            for( var i = 0 ; i < sDetails[1].length; i++ ) {
+                sDetails[3]  += sDetails[1][i];
+            }
+
+            sDetails[5] = sDetails[4] / sDetails[1].length;
+
+             if (sDetails[5] >= 40) {
+
+                sDetails[6] = "passed" ;
+
+             } else {
+                sDetails[6] = "failed" ;
+             }
+
+             console.log("name" + sDetails[0]);
+             console.log("age" + sDetails[1]);
+             console.log("average" + sDetails[5]);
+             console.log("grade"+ sdetails[6]);
+
+
+        </script>
+    </body>
+</html>

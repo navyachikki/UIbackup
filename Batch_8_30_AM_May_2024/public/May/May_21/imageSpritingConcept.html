@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .title  {
+                text-align: center;
+                border: 1px solid;
+                padding: 20px;
+                margin: 10px;
+                color: green;
+                font-size: 20px;
+            }
+            .employeeDetails {
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+            }
+            .employeeDetails div { /* parent and child */
+                margin: 10px;
+            }
+            img {
+                width: 150px;
+                height: 150px;
+            }
+            .imageContainer {
+                width: 150px;
+                height: 150px;
+                border: 1px solid yellow;
+                background-image: url("../images/empsprite.png");
+            }
+            .emp2 {
+                background-position: 184px 14px;
+            }
+            .emp3 {
+                background-position: -156px 184px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="title">
+            Employee Details
+        </div>
+        <div class="employeeDetails">
+            <div>Name: Raj</div>
+            <div>AGe: 20</div>
+            <div>Department: It</div>
+            <div class="imageContainer">
+                
+            </div>
+        </div>
+        <div class="employeeDetails">
+            <div>Name: Teena</div>
+            <div>AGe: 22</div>
+            <div>Department: HR</div>
+            <div class="imageContainer emp2">
+                
+            </div>
+        </div>
+        <div class="employeeDetails">
+            <div>Name: Krish</div>
+            <div>AGe: 23</div>
+            <div>Department: Manager</div>
+            <div class="imageContainer emp3">
+                
+            </div>
+        </div>
+        <div class="employeeDetails">
+            <div>Name: Meena</div>
+            <div>AGe: 27</div>
+            <div>Department: Tech Manager</div>
+            <div>
+                <img src="images/empsprite.PNG" alt="">
+            </div>
+        </div>
+        
+    </body>
+</html>

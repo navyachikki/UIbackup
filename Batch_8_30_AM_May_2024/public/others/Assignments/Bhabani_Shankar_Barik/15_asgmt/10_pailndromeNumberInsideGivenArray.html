@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pailndrome Numbers</title>
+  </head>
+  <body>
+    <script>
+      /* wap to display all the paildrome numbers from the given array */
+
+      let numbers = [121, 12321, 3443, 1331, 123, 456];
+      console.log(numbers);
+
+      let palindromeNumbers = palindromeNumbersFromArray(numbers);
+
+      function palindromeNumbersFromArray(arr) {
+        let palindromeNumbers = [];
+
+        for (let num of arr) {
+          if (isPalindrome(num)) {
+            palindromeNumbers.push(num);
+          }
+        }
+
+        return palindromeNumbers;
+      }
+
+      function isPalindrome(num) {
+        let numStr = num.toString();
+        let reversedNumStr = numStr.split("").reverse().join("");
+        return numStr === reversedNumStr;
+      }
+
+      console.log("Palindrome numbers:", palindromeNumbers );
+    </script>
+  </body>
+</html>

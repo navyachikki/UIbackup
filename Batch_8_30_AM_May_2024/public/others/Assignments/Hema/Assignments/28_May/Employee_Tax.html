@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border: 2px solid rgb(186, 142, 142) ;
+        font-size: larger;
+        
+    }
+</style>
+<body>
+
+    <div class="container">
+        <p id="root1"></p>
+        <p id="root2"></p>
+        <p id="root3"></p>
+        <p id="root4"></p>
+        <p id="root5"></p>
+        <p id="root6"></p>
+        <p id="root8"></p>
+        <p id="root7"></p>
+    </div>
+
+    <script>
+        let eName = prompt("Enter your name: ");
+        let eDepartment = prompt("Enter your Department: ");
+        let eGender = prompt("Enter your Gender: ");
+        let eSalary = prompt("Enter your salary: ");
+        eSalary = parseInt(eSalary);
+
+        let pf = (12/100)*eSalary;
+
+        let hra = (24/100)*eSalary;
+
+        let tSalary = eSalary + pf + hra;
+
+        if( eGender.toLocaleLowerCase() == "male"){
+            if(tSalary === 500000){
+                var tax = 10
+            } else if(tSalary === 100000) {
+                tax = 5
+            } else {
+                tax = 3
+            }
+        } else{
+            if(tSalary === 200000){
+                tax = 15;
+            } else if (tSalary === 100000){
+                tax = 10
+            } else {
+                tax = 5
+            }
+        }
+        
+
+        document.getElementById("root1").innerHTML="Name : "+ eName;
+       
+        document.getElementById("root2").innerHTML="Department : "+ eDepartment;
+        
+        document.getElementById("root3").innerHTML="Gender : "+ eGender;
+       
+        document.getElementById("root4").innerHTML="Salary : "+ eSalary;
+
+        document.getElementById("root5").innerHTML="PF : "+ pf;
+
+        document.getElementById("root6").innerHTML="Hra : "+ hra;
+
+        document.getElementById("root8").innerHTML="Tax : " + (tax/100)*tSalary;
+
+        document.getElementById("root7").innerHTML="Total Salarry : "+ tSalary;
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.webp">
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="../controllers/validateSignUp.js"></script>
+    <title>SignUp Page</title>
+  </head>
+  <body>
+    <header>Welcome to TechKart</header>
+    <form
+      class="signup"
+      name="signUpForm"
+      action="login.html"
+      method="POST"
+      onsubmit="return validatesignUpForm()"
+    >
+      <label for="username">User name:</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Enter your username"
+        value=""
+      />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Enter your password"
+      />
+      <label for="password">Confirm Password:</label>
+      <input
+        type="password"
+        name="cnfpassword"
+        id="cnfpassword"
+        placeholder="Confirm password"
+      />
+      <label for="mobile">Mobile Number:</label>
+      <input
+        type="text"
+        name="mobile"
+        id="mobile"
+        placeholder="Enter your Mobile No."
+      />
+      <label for="email">Email :</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email"
+      />
+      <input type="submit" id="signup" value="Signup" />
+
+      <a href="login.html">Login</a>
+    </form>
+    <footer>Copyright&copy;Harsha Vardhan Reddy Bindela</footer>
+  </body>
+</html>

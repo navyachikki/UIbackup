@@ -1,0 +1,58 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      h3{
+        text-align: center;
+        font-style: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>DATE SAMPLES</h3>
+    <div> <span class="selectDateFormat"></span></div>
+          <script>
+           var selectDateFormat = parseInt(prompt('select date:\n 1. 8/05/2024 \n 2. 05/8/2024 \n 3. 08-05-2024 \n 4. 8th june ,09h:23min \n 5.sat 8th june, 2024 \n 6. june 8th 2024 \n 7. 8th june,09h:23min \n 8.8th june,09h:23min 45sec   '))
+
+         
+           var cdate = new Date();
+           var dayIndex =cdate.getDay();
+           var monthIndex = cdate.getMonth();
+           var months =['Jan','Feb','mar','apr','may','june','july','aug','sep','oct','nov','dec']
+           var days =['sun','mon','tue','wed','thurs','fri','sat']
+           
+       switch (selectDateFormat){
+          case 1:
+             myCustomDate = cdate.getDate()+'/'+(cdate.getMonth()+1)+'/'+cdate.getFullYear()
+          break;
+          case 2:
+            var myCustomDate =  '0'+ (cdate.getMonth()+1)+'/'+cdate.getDate()+'/'+cdate.getFullYear()
+          break;
+          case 3:
+            var myCustomDate =   cdate.getDate()+'-'+ '0'+(cdate.getMonth()+1)+'-'+cdate.getFullYear()
+           break;
+          case 4:
+            var myCustomDate = days[dayIndex]+' '+cdate.getDate()+'th'+' '+months[monthIndex]+','+cdate.getFullYear()
+          break;
+           case 5:
+            var myCustomDate = cdate.getDate()+'th'+' '+ months[monthIndex]+' '+cdate.getFullYear()
+          break;
+          case 6:
+            var myCustomDate = months[monthIndex]+' '+ cdate.getDate()+'th'+' '+cdate.getFullYear()
+          break;
+          case 7:
+            var myCustomDate = cdate.getDate()+'th'+' '+ months[monthIndex]+' '+ cdate.getHours()+'h'+':'+cdate.getMinutes()+'min'
+           break;
+           case 8:
+            var myCustomDate = cdate.getDate()+'th'+' '+ months[monthIndex]+' '+ cdate.getHours()+'h'+':'+cdate.getMinutes()+'min'+' '+cdate.getSeconds()+'sec'
+           break;
+           default:
+            myCustomDate = 'wrong selrction'
+       }
+       document.querySelector('.selectDateFormat').innerHTML = myCustomDate
+          </script>
+  </body>
+  </html>

@@ -1,0 +1,131 @@
+var n = 5;
+
+
+
+
+n % 2 -> 5 % 2 -> NZ
+
+n % 3 -> 5 %  3-> NZ 
+n % 4 -> 5 % 4 -> NZ 
+
+
+
+var n = 5;
+for (var i = 1; i <= n; i++) {
+    console.log(i);
+}
+-----------------
+
+
+
+96 % 2 -> 0
+    break;
+96 % 3 -> 0
+96 % 4 -> 0
+
+96 % 5 - < nZ 
+
+
+96 % 95 -> NZ
+-----------
+
+n = 5 
+
+5 * 1 = 5
+5 * 2 = 10
+5 * 3 = 15
+
+. 
+5 * 20 = 100
+
+----------------
+
+for (  ;  ; ) {
+    ...
+    ..
+    ... 
+    continue 
+    ... 
+    ... 
+    ...
+}
+
+
+for (var i = 0; i < 10; i++) {
+    person i
+        issue a ticket 
+
+    if (person is already having adhar) {
+        continue;
+    }
+    take steps for aadhar issue 
+}
+
+------------------------------
+
+for (initilization; condition; inc/dec) {
+    ...i 
+    .. 
+    .. 
+
+}
+
+while loop CS 
+
+    
+    while (condition) {
+        .... 
+        .. 
+        .. 
+        ..
+    }
+
+    ---------------------
+
+
+    var plate = '';
+    plate = "fill the food";
+
+    while (plate != empty) {
+        take a spoon 
+        fill the food 
+        lift it 
+        put in mouth, chew it .
+    }
+    console.log("wash ur hands");
+
+-----------
+    var plate = '';
+    plate = "fill the food";
+
+    for (var spooncount = 0; plate != empty; spooncount++) {
+        take a spoon 
+        fill the food 
+        lift it 
+        put in mouth, chew it .
+        if (spooncount == 6) {
+            // hve some water
+        }
+        if (spooncount % 10 == 0) {
+            // have a walk
+        }
+    }
+    console.log("wash ur hands");
+
+------------
+
+
+var plate = '';
+plate = "fill the food";
+var spooncount = 0
+while (plate != empty) {
+    take a spoon 
+    fill the food 
+    lift it 
+    put in mouth, chew it .
+    spooncount++;
+    if (spooncount == 6) {
+        //water
+    }
+}
+console.log("wash ur hands");

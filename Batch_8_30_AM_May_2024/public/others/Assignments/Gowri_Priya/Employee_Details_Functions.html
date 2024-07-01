@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee_salary_Calculation</title>
+    <link rel="icon" type="image/jpg" href="images/favicon.jpg">
+</head>
+
+<body>
+    <h1 style="text-align:center">Check on Console</h1>
+   
+    <script>
+        var EmployeeName, Empid, Empdep, Gender, Basicsal, pf,hra, totalsal;
+
+        function reademployedetails(){
+            EmployeeName = prompt("Enter Employee Name") ;
+            Empid = parseInt(prompt("Enter Emp ID"));
+            Empdep = prompt("Enter Emp department");
+            Gender = prompt("Enter Employee Gender");
+            Basicsal = parseInt(prompt("Enter basic salary"));
+            
+           
+            findPfAndHra();
+        }
+
+        function findPfAndHra(){
+            pf = (Basicsal*10)/ 100;
+            hra = (Basicsal * 15)/ 100;
+            totalsal = Basicsal + pf + hra;
+
+            displayemployeedetails();
+        }
+
+        function displayemployeedetails(){
+            console.log("Employee Details....");
+            console.log("Employee Name is = "+EmployeeName);
+            console.log("Employee ID is = " +Empid);
+            console.log("Employee GEnder is = " +Gender);
+            console.log("Employee Department is = " +Empdep);
+            console.log("Employee Basic salary is = " +Basicsal);
+            console.log("Employee pf  is = " +pf);
+            console.log("Employee hra is = " +hra);
+            console.log("Employee total salary is = " +totalsal);
+        }
+        
+        reademployedetails();
+
+    </script>
+    
+
+    
+</body>
+</html>
+           

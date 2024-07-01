@@ -1,0 +1,67 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <style>
+             div.main{
+                border: 1px solid;
+                margin: 10px auto;
+                padding: 10px;
+               width: 600px;
+               color: blue;
+             
+             }
+
+             ul{
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+                width: 500px;
+               
+             }
+
+             li{
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+               color: brown;
+               border-radius: 20px;
+             }
+
+             .marksContainer input{
+                width: 40px;
+             }
+
+             h3{
+                text-align: center;
+            
+             }
+            </style>
+        </head>
+        <body>
+           <h3> CALCULATION</h3>
+            <div class="main">
+           <ul>
+             <li> ENTER first value   <input type="text"  id="fval">  </li>
+             <li>   ENTER second value  <input type="text"  id="sval"></li>
+             <li>   The sum is :     <span id="resultBlock"></span>   </li>  
+             <li>  <input type="button"  value="Get sum" onclick="readUserData()" > </li>                             
+           </ul>          
+            </div>
+            <script>
+            
+                var readUserData =() => {
+
+               var a1= document.querySelector('#fval').value
+               var a2= document.querySelector('#sval').value
+              a1= parseInt(a1);
+              a2 = parseInt(a2);
+              var result = a1 + a2
+              document.querySelector("#resultBlock").innerHTML = result
+                }
+         
+            </script>       
+        </body>
+        </html>

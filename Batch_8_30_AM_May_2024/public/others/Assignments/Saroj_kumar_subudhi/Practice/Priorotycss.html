@@ -1,0 +1,47 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Demonstrating CSS priority order
+    </title>
+    <style>
+        .content {
+            text-align: right;
+            color: yellow;
+        }
+        .content {
+            text-align: center;
+            font-size: 20px;
+            
+        }
+
+        
+
+        #userMsg {
+            font-size: 30px 
+        }
+        p {
+            background-color: yellow;
+            font-size: 40px ;
+        }
+
+        [abc=pqr] {
+            color: blue;
+        }
+
+        [name=newscontent] {
+            color: aqua;
+            font-size: 50px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <hr>
+<p style="border: 1px solid red;font-size: 15px;" class="content" id="userMsg" name="newscontent" abc="pqr">
+        Hello every one of you
+    </p>
+<hr>
+
+</body></html>

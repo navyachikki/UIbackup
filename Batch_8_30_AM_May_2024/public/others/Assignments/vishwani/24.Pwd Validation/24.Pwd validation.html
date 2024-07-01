@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="app.js"></script>
+        <style>
+            ul {
+                width: 400px;
+                border: 1px solid;
+                margin: 30px 150px;
+                padding: 20px;
+            } 
+            li {
+                list-style: none;
+                border: 1px solid;
+                padding: 10px;
+                margin: 10px;
+                background-color: #ccc;
+            }
+            label {
+                width: 140px;
+                display: inline-block;
+            }
+            .error {
+                color: red;
+                font-size: 11px;
+                display: none;
+            }
+            .pwdHandleList {
+                position: absolute;
+                right: 80px;
+                top: 20%;
+            }
+            .pwdHandleList div {
+                margin: 5px;
+                background-color: yellow;
+                padding: 10px;
+                color: red;
+            }
+
+            .validated {
+                color: green !important;
+                font-weight: bold;
+            }
+            .eyeIcon {
+                position: relative;
+                left: -24px;
+                top: 3px;
+                cursor: pointer;
+            }
+            .slashEye {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+      
+        <ul>
+            <li>
+                <label>User Id </label>
+                <input type="text" id="userId"  onkeypress="return validateUserId(event)" maxlength="10">
+                <div class="error userIdErr" >User Id is mandate field</div>
+            </li>
+            <li>
+                <label>Account Password:</label> 
+                <input  type="password" id="actPwd" maxlength="8" onkeyup="validatePwd(event)">
+                <span onclick="showOrHideIcons('#pwd_openEye', '#pwd_slashEye', '#actPwd')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="openEyeIcon eyeIcon" id="pwd_openEye" >
+                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                        <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+                    </svg>
+                </span>
+                <span onclick="showOrHideIcons('#pwd_slashEye', '#pwd_openEye', '#actPwd')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="slashEye eyeIcon" viewBox="0 0 16 16"  id="pwd_slashEye">
+                        <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z"/>
+                        <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z"/>
+                    </svg>
+                </span>
+            </li>
+            <li>
+                <label>Reenter Password: </label>
+                <input  type="password" id="actReenterPwd" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="openEyeIcon eyeIcon" onclick="showOrHideIcons('#rpwd_openEye', '#rpwd_slashEye', '#actReenterPwd')" id="rpwd_openEye">
+                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="slashEye eyeIcon" viewBox="0 0 16 16" onclick="showOrHideIcons('#rpwd_slashEye', '#rpwd_openEye', '#actReenterPwd')" id="rpwd_slashEye" >
+                    <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z"/>
+                    <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z"/>
+                </svg>
+            </li>
+            <li>
+                <label>Mail Id</label> <input  type="text" id="actMailId" >
+            </li>
+            <li>
+                <input type="button" value="Register" onclick="registerUser()">
+            </li>
+            <li id="rblock">
+
+            </li>
+        </ul>
+        <div class="pwdHandleList">
+            <div id="pwdLenCheck">1. Total Length should be 8 char</div>
+            <div id="firtCharCheck">2. First letter always should start with Uppercase</div>
+            <div id="digitCheck">3. Min one digit and max 2 digits should be there </div>
+            <div id ="checkSpecialChar">4.Should contain one special char ($#&@)</div>
+            <div id="lastCharCheck">5. Should allways ends with a lowercase char</div>
+        </div>
+        <script>
+            
+        </script>
+    </body>
+</html>

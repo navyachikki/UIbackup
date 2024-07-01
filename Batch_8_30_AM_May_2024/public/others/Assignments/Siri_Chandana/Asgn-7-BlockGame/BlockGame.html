@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Game</title>
+    <style>
+
+        .Title{
+            margin: 10px;
+            border: 3px solid rgb(62, 62, 62);
+            background-color: firebrick;
+            color: black;
+            text-align: center;
+            font-weight: bolder;
+            font-size: xx-large;
+            border-radius: 20px;
+        }
+
+        .Container{
+            margin: 10px auto;
+            border: 3px solid rgb(83, 86, 6);
+            border-radius: 10px;
+            height:500px;
+        }
+
+        .Block{
+
+            border: 3px solid gray;
+            border-radius: 10px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .Block-1{
+           background-color: yellowgreen;
+            position: absolute;
+            left:4%;
+            top:15%;
+        
+        }
+
+        .Block-2{
+           
+            position:absolute;
+            left:8%;
+            top:21%;
+            background-color: blueviolet;
+            z-index: 1;
+            opacity: 0.9;
+
+        }
+        
+        .Block-3{
+            position: absolute;
+            right:4%;
+            top:15%;
+            background-color: yellowgreen;
+
+        }
+
+        .Block-4{
+            position: absolute;
+            right:8%;
+            top:21%;
+            background-color: blueviolet;
+            z-index: 1;
+            opacity: 0.9;
+           
+        }
+
+        .Block-5{
+
+            width: 150px;
+            height: 147px;
+            position: absolute;
+            left:42%;
+            top: 40%;
+            z-index: 1;
+            opacity: 0.9;
+            background-color:blueviolet;
+
+           
+        
+        }
+
+        .Block-6{
+
+            position: absolute;
+            left:8%;
+            bottom:14%;
+            background-color: blueviolet;
+            z-index: 1;
+            opacity: 0.9;
+           
+        }
+
+        .Block-7{
+            position: absolute;
+            left:4%;
+            bottom:6%;
+            background-color: yellowgreen;
+           
+            
+        }
+
+        .Block-8{
+            position: absolute;
+            right:8%;
+            bottom:14%;
+            background-color: blueviolet;
+            z-index: 1;
+            opacity: 0.9;
+           
+        }
+
+        .Block-9{
+            position: absolute;
+            right:4%;
+            bottom:6%;
+            background-color: yellowgreen;
+           
+        }
+
+        .Block-10{
+            position: absolute;
+            left:39%;
+            top:33%;
+           background-color: yellowgreen;
+           
+        }
+
+        .Block-11{
+            position: absolute;
+            left:39%;
+            bottom:27%;
+            background-color: yellowgreen;
+           
+            
+        }
+
+        .Block-12{
+            position: absolute;
+            right:43%;
+            top:33%;
+            background-color: yellowgreen;
+           
+        }
+
+        .Block-13{
+            position: absolute;
+            right:43%;
+            bottom:27%;
+            background-color: yellowgreen;
+            
+        }
+
+        .Block-1:hover,
+        .Block-3:hover,
+        .Block-7:hover,
+        .Block-9:hover,
+        .Block-10:hover,
+        .Block-11:hover,
+        .Block-12:hover,
+        .Block-13:hover{
+            cursor: pointer;
+            background-color: darkcyan;
+
+        }
+        .Block-2:hover,
+        .Block-4:hover,
+        .Block-6:hover,
+        .Block-8:hover,
+        .Block-5:hover{
+            cursor:move;
+            background-color: rgb(83, 86, 6);
+        }
+
+        .Title:hover{
+                cursor: not-allowed;
+                background-color: rgb(236, 218, 218);;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="Title">Block Game</div>
+    <div class="Container">
+
+        <div class="Block Block-1"></div>
+        <div class="Block Block-2"></div>
+        <div class="Block Block-3"></div>
+        <div class="Block Block-4"></div>
+        <div class="Block Block-5"></div>
+        <div class="Block Block-6"></div>
+        <div class="Block Block-7"></div>
+        <div class="Block Block-8"></div>
+        <div class="Block Block-9"></div>
+        <div class="Block Block-10"></div>
+        <div class="Block Block-11"></div>
+        <div class="Block Block-12"></div>
+        <div class="Block Block-13"></div>
+        
+    </div>
+    
+</body>
+</html>

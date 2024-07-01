@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>SMALLEST NUMBER IN ARRAY</h3>
+    <script>
+        var data = [12,3,46,4,2,1,9];
+        var len = data.length;
+        var mini = data[0];
+        for(i=0; i<len; i++){
+            if(data[i] < mini){
+                mini = data[i];
+            }
+        }
+        console.log("The smallest number is " + mini);
+    </script>
+</body>
+</html>

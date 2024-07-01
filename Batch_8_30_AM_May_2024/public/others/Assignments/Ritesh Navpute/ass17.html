@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+            let employeedetails=()=>{
+                return{
+                name: "Ritesh",
+                age: 21,
+                gender: "male",
+                location: "Hydrabad",
+                basicSalary: 300000,
+                get pf() {
+                    return this.basicSalary * 0.12;
+                },
+                get hra() {
+                    return this.basicSalary * 0.24;
+                },
+                get totalSalary() {
+                    return this.pf + this.hra + this.basicSalary;
+                },
+                get tax() {
+                    console.log("\n");
+                    console.log("employee tax calculation");
+                    if (this.totalSalary >= 300000) {
+                        return this.totalSalary * 0.15;
+                    } else if (this.totalSalary >= 250000) {
+                        return this.totalSalary * 0.10;
+                    } else if (this.totalSalary >= 200000) {
+                        return this.totalSalary * 0.05;
+                    } else {
+                        return 0;
+                    }
+                }
+            };
+        };
+
+        let printemp = (employee) => {
+            console.log("Name: " + employee.name);
+            console.log("Age: " + employee.age);
+            console.log("Gender: " + employee.gender);
+            console.log("Location: " + employee.location);
+            console.log("Basic Salary: " + employee.basicSalary);
+            console.log("PF: " + employee.pf);
+            console.log("HRA: " + employee.hra);
+            console.log("Total Salary: " + employee.totalSalary);
+            console.log("Tax: " + employee.tax);
+            console.log("Net Salary after Tax: " + (employee.totalSalary - employee.tax));
+        };
+
+        let employee = employeedetails();
+        printemp(employee);
+    </script>
+</body>
+</html>

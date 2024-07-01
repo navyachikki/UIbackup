@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageSprite</title>
+    <style>
+        .header {
+            width: auto;
+            text-align: center;
+            margin: 10px;
+            padding: 20px;
+            background-color: blueviolet;
+            border: 1px solid;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .content {
+            border: 1px solid;
+            background-color: rgb(243, 191, 213);
+            border-radius: 10px;
+            top: 50px;
+            bottom: 55px;
+            overflow: auto;
+        }
+        .empDetails {
+        border: 1px solid black;
+        padding: 15px;
+        margin: 10px;
+      }
+      .empDetails div {
+        margin: 10px;
+      }
+      .imageSprite{
+        width :150px;
+        height:150px;
+        background-image: url("./images/imagesprite.png");
+      }
+      .empImg1{   
+        background-position: -25px -12px;
+        }
+      .empImg2{
+        background-position: -245px -11px;
+    }
+    .empImg3{   
+        background-position: -35px -270px;
+        }
+      .empImg4{
+        background-position: -246px -274px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h3>Employee Details</h3>
+    </div>
+    <div class="content">
+        <div class="empDetails">
+            <div class="imageSprite empImg1"> </div>
+            <div>Name:Kavya</div>
+            <div>Age:27</div>
+            <div>Gender: Female</div>
+            <div>Department: IT</div>
+            <div>Location:Pune </div>
+        </div>
+        <div class="empDetails">
+            <div class="imageSprite empImg2"> </div>
+            <div>Name:Raj</div>
+            <div>Age:27</div>
+            <div>Gender: Male</div>
+            <div>Department: IT</div>
+            <div>Location:Hyderabad </div>
+        </div>
+        <div class="empDetails">
+            <div class="imageSprite empImg3"> </div>
+            <div>Name:Divya</div>
+            <div>Age:27</div>
+            <div>Gender: Female</div>
+            <div>Department: IT</div>
+            <div>Location:Hyderabad </div>
+        </div>
+        <div class="empDetails">
+            <div class="imageSprite empImg4"> </div>
+            <div>Name:Tanuja</div>
+            <div>Age:27</div>
+            <div>Gender: Female</div>
+            <div>Department: IT</div>
+            <div>Location:Bangolore </div>
+        </div>
+        <div class="empDetails">
+            <div class="imageSprite empImg1"> </div>
+            <div>Name:Pavani</div>
+            <div>Age:27</div>
+            <div>Gender: Female</div>
+            <div>Department: IT</div>
+            <div>Location:Hyderabad </div>
+        </div>
+    </div>
+</body>
+
+</html>

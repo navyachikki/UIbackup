@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        h3 {
+            border: 2px solid beige;
+            background-color: blue;
+            text-align: center;
+            font-size: 20px;
+            color: antiquewhite
+        }
+    </style>
+</head>
+
+<body>
+    <h3>
+        Employee Details
+    </h3>
+    <script>
+
+        function getEmployeeDetails() {
+            empname = prompt("enter employee name");
+            Age = prompt("enter employee age")
+            gender = prompt("enter employee gender");
+            gender = gender.trim();
+            gender = gender.toLocaleLowerCase();
+            dept = prompt("enter department");
+            basicsal = parseInt(prompt("enter basic sal of employee "));
+            calculateTotalsalary();
+        }
+
+        var empname, Age, gender, dept, basicsal, pf, hra, totalsal, taxpercent;
+
+        function calculateTotalsalary() {
+            pf = (12 * basicsal) / 100;
+            hra = (24 * basicsal) / 100;
+            totalsal = basicsal + pf + hra;
+        }
+
+
+        function displayEmployeeData() {
+            getEmployeeDetails();
+            console.log('Employee Details');
+            console.log("Employee name  " + empname);
+            console.log("Gender" + gender);
+            console.log("Age" + Age);
+            console.log("Department" + dept);
+            console.log("Basic salary" + basicsal);
+            console.log("pf" + pf);
+            console.log("hra" + hra);
+            console.log("Total salary" + totalsal);
+            getTaxPercent();
+        }
+
+        function getTaxPercent() {
+            if (gender == 'male') {
+                if (totalsal >= 200000) {
+                    taxpercent = (totalsal * 15) / 100;
+                } else if (totalsal >= 150000) {
+                    taxpercent = (totalsal * 10) / 100;
+                } else if (totalsal >= 100000) {
+                    taxpercent = (totalsal * 5) / 100;
+                }
+            } else {
+                if (totalsal >= 200000) {
+                    taxpercent = (totalsal * 10) / 100;
+                } else if (totalsal >= 150000) {
+                    taxpercent = (totalsal * 5) / 100;
+                }
+
+            }
+            console.log("tax to paid: " + taxpercent);
+        }
+
+        displayEmployeeData();
+
+
+    </script>
+
+</body>
+
+</html>
+    

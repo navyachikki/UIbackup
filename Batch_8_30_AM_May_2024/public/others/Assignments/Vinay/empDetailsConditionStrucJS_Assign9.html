@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title> Employee Details Assignment 9</title>
+    
+</head>
+
+<body>
+
+    <h3>
+        Working with Employee Data Conditional Structure using JS.............
+    </h3>
+ <script>
+    var empName =prompt("Eneter the employee Name");
+    var dept = prompt("Enter the Department");
+    var gender = prompt("Enter the Gender");
+    gender=gender.toLowerCase();
+    console.log(gender);
+    var basicSalary = prompt("Enter the basic salary");
+    basicSalary = parseInt(basicSalary);
+
+    var pf = 12/100 *basicSalary;
+    var hra = 24/100 * basicSalary;
+
+    var totalSalary = basicSalary + pf + hra ;
+    
+    console.log("Total salary is " + totalSalary);
+   
+    if(gender=="male"){
+        if(totalSalary >=200000){
+            var tax = (15/100) * totalSalary;
+            console.log("tax parcentage is :"+tax);
+        }
+        else if(totalSalary >=150000){
+            var tax = (10/100) * totalSalary;
+            console.log("tax parcentage is :"+tax);
+        }
+        else if(totalSalary >=100000){
+            var tax = (5/100) * totalSalary;
+            console.log("tax parcentage is :"+tax);
+        }
+        else{
+            var tax = (0/100) * totalSalary;
+            console.log("tax parcentage is :"+tax);
+        }
+    }else if(gender == "female")
+    {
+        if(totalSalary >=200000){
+            var tax = (10/100) * totalSalary;
+            console.log("tax parcentage is :"+tax);
+        }
+        else if(totalSalary >=150000){
+            var tax = (5/100) * totalSalary;
+            console.log("tax parcentage is :"+tax);
+        }
+        else{
+            var tax = (0/100) * totalSalary;
+            console.log("tax parcentage is :"+tax);
+        }
+
+    }
+ </script>
+
+</body>
+
+</html>

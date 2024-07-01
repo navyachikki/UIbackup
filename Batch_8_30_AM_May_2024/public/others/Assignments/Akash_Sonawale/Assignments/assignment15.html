@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let detail = ()=>{
+        let month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        let day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+        let cdate = new Date();
+        let timeformat = '8'; // Assuming a sample time format value
+        
+        let dayIndex = cdate.getDay();
+        let monthIndex = cdate.getMonth();
+        displayformat(cdate,month,day,timeformat,dayIndex,monthIndex);
+        }
+        let displayformat = (cdate,month,day,timeformat,dayIndex,monthIndex)=>{
+        switch (timeformat) {
+            case "1":
+                var customDate1 = cdate.getDate() + "/" + (cdate.getMonth() + 1) + "/" + cdate.getFullYear();
+                console.log(customDate1);
+                break;
+            case "2":
+                var customDate2 = (cdate.getMonth() + 1) + "/" + cdate.getDate() + "/" + cdate.getFullYear();
+                console.log(customDate2);
+                break;
+            case "3":
+                var customDate3 = cdate.getDate() + "-" + (cdate.getMonth() + 1) + "-" + cdate.getFullYear();
+                console.log(customDate3);
+                break;
+            case '4':
+                var customDate4 = cdate.getDate() + "th " + month[monthIndex] + " " + cdate.getFullYear();
+                console.log(customDate4);
+                break;
+            case '5':
+                var customDate5 = day[dayIndex] + " " + cdate.getDate() + "th " + cdate.getFullYear();
+                console.log(customDate5);
+                break;
+            case '6':
+                var customDate6 = month[monthIndex] + " " + cdate.getDate() + "th " + cdate.getFullYear();
+                console.log(customDate6);
+                break;
+            case '7':
+                var customDate7 = cdate.getDate() + "th " + month[monthIndex] + " , " + cdate.getHours() + "h : " + cdate.getMinutes() + "mins";
+                console.log(customDate7);
+                break;
+            case '8':
+                var customDate8 = cdate.getDate() + "th " + month[monthIndex] + " , " + cdate.getHours() + "h : " + cdate.getMinutes() + "mins" + " : " + cdate.getSeconds() + "sec";
+                console.log(customDate8);
+                break;
+            default:
+                console.log("Invalid selection...");
+        }
+      
+    }
+    detail();
+    </script>
+</body>
+</html>

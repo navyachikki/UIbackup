@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 11</title>
+  </head>
+  <body>
+    <script>
+      /* Wap to check wheather a given number is armstrong number or not. */
+      // Prompt the user to input a number
+      let number = parseInt(prompt("Enter a number: "));
+      let numStr = number.toString();
+      let numDigits = numStr.length;
+
+      // Calculate the sum of the cubes of each digit
+      let armstrongSum = 0;
+      for (let i = 0; i < numDigits; i++) {
+        let digit = parseInt(numStr[i]);
+        let cube = digit;
+        for (let j = 1; j < numDigits; j++) {
+          cube *= digit;
+        }
+        armstrongSum += cube;
+      }
+
+      // Check if the sum is equal to the original number
+      if (armstrongSum === number) {
+        console.log(number + " is an Armstrong number.");
+      } else {
+        console.log(number + " is not an Armstrong number.");
+      }
+    </script>
+  </body>
+</html>

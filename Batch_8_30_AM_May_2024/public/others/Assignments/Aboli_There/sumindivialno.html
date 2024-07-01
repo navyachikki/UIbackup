@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAP to find out sum of indivial digit of given no</title>
+</head>
+   <body>
+       <script>
+           var n = prompt("Enter a value");
+           var sum =0;
+            while(n > 0){
+              var rem = n%10;
+              sum+=rem;
+             //  console.log("rem " + rem);
+              n= n / 10;
+              var n=parseInt(n)
+              // console.log("n value is "  +n );
+            }
+
+         console.log("The sum of indivial no is" + sum); 
+    
+        </script>  
+     </body>
+</html>

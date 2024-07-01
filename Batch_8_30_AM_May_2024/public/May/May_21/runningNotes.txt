@@ -1,0 +1,47 @@
+resource path:
+    1. absolute 
+    2. relative 
+
+
+absolute -> file:///E:/UI_FullstackTraining/UIClasses/Batch_8_30_AM_May_2024/public/May_21/images/empsprite.png.
+
+relative -> http://localhost:8081/May_21/images/empsprite.png
+
+
+https://images.inc.com/uploaded_files/image/1920x1080/getty_690028746_284206.jpg
+-------------
+
+table tags :
+
+    table
+    tr 
+    td 
+    thead 
+    th 
+    tfoot 
+    tbody
+
+    basic structure of table container: 
+    
+        table
+            thead   
+                tr
+                    th 
+                    th 
+                    ....
+
+            tbody   
+                tr 
+                    td 
+                    td 
+                    ...
+
+            tfoot 
+                tr 
+                    td 
+                    td 
+                    ...
+
+
+
+rowspan, colspan -> we can merge multiple cells to form a single cell. 

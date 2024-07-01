@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating html input elements
+        </title>
+        <style>
+            h3 {
+                text-align: center;
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+                color: green;
+            }
+            ul {
+                border: 1px solid;
+                width: 500px;
+                margin: 10px auto;
+                background-color: #ccc;
+            }
+            li {
+                list-style: none;
+                margin: 10px;
+                padding: 10px;
+                background-color: #fff;
+            }
+            label {
+                width: 150px;
+                display: inline-block;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <h3>
+            Student registration page
+        </h3>
+        <ul>
+            <li>
+                <label for="userName">Enter User name: </label>
+                <input type="text" name="userName" maxlength="10">
+            </li>
+            <li>
+                <label for="">School Name:</label>
+                <input type="text" value="ABC School" disabled>
+            </li>
+            <li>
+                <label for="userAge">Enter Age : </label>
+                <input type="number" name="userAge" min="10" max="20" value="20">
+            </li>
+            <li>
+                Account Password:
+                <input type="password" maxlength="8">
+            </li>
+            <li>
+                Gender : 
+                <input type="radio" name="gender" checked> Male
+                <input type="radio" name="gender"> Female
+            </li>
+            <li>
+                Course you want to opt for: 
+                <input type="radio" name="course" checked> MCA
+                <input type="radio" name="course"> Btech
+                <input type="radio" name="course"> MBA
+                <input type="radio" name="course"> Mtech
+            </li>
+            <li>
+                Languagues you know: 
+                <input type="checkbox" checked disabled> English
+                <input type="checkbox"> Telugu
+                <input type="checkbox"> Hindi
+                <input type="checkbox"> Urdu
+
+            </li>
+            <li>
+                Country: 
+                <select>
+                    <option value="Ind">India</option>
+                    <option value="Chn">China</option>
+                    <option value="Pak" selected>Pakisthan</option>
+                    <option value="Ind">India</option>
+                    <optgroup>
+                        <option value="">USA</option>
+                        <option value="">London</option>
+                    </optgroup>
+                </select>
+            </li>
+            <li>
+                Tell about urself: 
+                <textarea name="" id="" maxlength="100" cols="10" rows="10"></textarea>
+            </li>
+            <li>
+                <input type="button" value="Save Details">
+            </li>
+        </ul>
+    </body>
+</html>

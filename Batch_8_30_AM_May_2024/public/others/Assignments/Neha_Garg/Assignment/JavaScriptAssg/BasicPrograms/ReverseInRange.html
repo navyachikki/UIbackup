@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Reverse in Range</h3>
+    <script>
+    var rev,l,temp;
+    for (var num=251;num>=201;num--) {
+         rev=0;
+         temp=num;
+        while(temp>0){
+            l=temp%10;
+            temp=parseInt(temp/10);
+            rev=10*rev+l;
+
+        }
+        console.log("Reverse of num is:"+rev);
+
+    }
+    </script>
+</body>
+</html>

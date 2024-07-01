@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Block Game</title>
+        <style>
+            .title{
+                border: 2px solid #000;
+                text-align: center;
+                padding: 10px 0px;
+                background-color: blanchedalmond;
+            }
+            .container{
+                border: 1px solid;
+                padding: 8px;
+                margin: 10px;
+                position: relative;
+                height: 90vh;
+                width: 95%;
+            }
+
+           .topLeft,.topRight, .bottomLeft, .bottomRight{
+                width: 80px;
+                height: 80px;
+                border:1px solid;
+                padding: 10px; 
+                div{
+                    width: 80px;
+                    height: 80px;
+                    padding: 10px; 
+                    position: absolute;
+                    border: 1px solid;
+                }
+           }
+           .bg-yellow{
+            background-color: yellow;
+           }
+           .bg-green{
+            background-color: green;
+           }
+           .bg-red{
+            background-color: red;
+           }
+           .bg-purple{
+            background-color: purple;
+           }
+           .topLeft{
+            div{
+                position: absolute;
+                left: 50px;
+                top:50px;
+                opacity: 0.8;
+            }
+           }
+           .topRight{
+            right: 5px;
+            top: 5px;
+            position: absolute;
+            div{
+                position: absolute;
+                right: 50px;
+                top:50px;
+                opacity: 0.8;
+            }
+           }
+           .bottomLeft{
+             bottom: 5px;
+             position: absolute;
+             div{
+                position: absolute;
+                bottom: 50px;
+                left: 50px;
+                opacity: 0.8;
+             }
+           }
+           .bottomRight{
+            bottom: 5px;
+            right: 5px;
+            position: absolute;
+            div{
+                position: absolute;
+                bottom: 50px;
+                right: 50px;
+                opacity: 0.8;
+             }
+           }
+           .center{
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+            position: relative;
+            border: 1px solid;
+            left: 40%;
+            top: 17%;
+            div{
+                width: 80px;
+                height: 80px;
+                padding: 10px; 
+                position: absolute;
+                border: 1px solid;
+             }
+           }
+           .t-l, .t-r, .b-l, .b-r{
+            position: absolute;
+            opacity: 0.8;
+           }
+           .t-l{
+            bottom: 60%;
+            right: 60%;
+            background-color: brown;
+           }
+           .t-r{
+            bottom: 60%;
+            left: 60%;
+           background-color: orange;
+           }
+           .b-l{
+            top: 60%;
+            right: 60%;
+           }
+           .b-r{
+            top:60%;
+            left: 60%;
+            background-color: gray;
+           }
+        </style>
+    </head>
+    <body>
+    <div class="title">Block Game</div>
+    <div class="container">
+        <div class="topLeft bg-yellow">
+            <div class="bg-red"></div>
+        </div>
+        <div class="topRight bg-green">
+            <div class="bg-red"></div>
+        </div>
+        <div class="bottomLeft bg-green">
+            <div class="bg-purple"></div>
+        </div>
+        <div class="bottomRight bg-purple">
+            <div class="bg-green"></div>
+        </div>
+        <div class="center">
+            <div class="t-l"></div>
+            <div class="t-r"></div>
+            <div class="b-l bg-green"></div>
+            <div class="b-r"></div>
+        </div>
+    </div>
+    </body>
+</html>

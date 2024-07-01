@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee details</title>
+    <style>
+        h1{
+            border:1px solid;
+            text-align: center;
+            margin:10px;
+            padding:15px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>employee details</h1>
+    <script>
+        var ename = prompt("Enter employee name");
+        var eage = prompt("Enter employee age");
+        var egender = prompt("Enter employee gender");
+        var basicsal = parseInt(prompt("Enter basic salary"));
+        var totalsal=0;
+        egender=egender.trim();
+        egender=egender.toLowerCase();
+        if(egender==="male"){
+            totalsal=basicsal+(0.12*basicsal)+(0.14*basicsal);
+        }
+        else{
+            totalsal=basicsal+(0.14*basicsal)+(0.16*basicsal);
+           
+        }
+        console.log("Employee name:"+ename);
+        console.log("Employee age:"+eage);
+        console.log("Employee gender:"+egender)
+        console.log("Employee total salary: "+totalsal)
+    </script>
+
+</body>
+
+</html>

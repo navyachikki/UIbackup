@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Largest & Smallest Number</title>
+       
+    </head>
+    <body>
+        <script>
+            var listArr = [2, 3, 4, 65, 12, 13, 34, 21, 90,1];
+            var larNum = listArr[0];
+            var smNum=listArr[0];
+            for (var i = 1; i < listArr.length; i++) {
+               if(larNum < listArr[i]){
+                larNum = listArr[i];
+               }
+               if(smNum > listArr[i]){
+                smNum = listArr[i];
+               }
+            }
+            console.log(larNum,smNum,'largNum&small')
+        </script>
+    </body>
+</html>

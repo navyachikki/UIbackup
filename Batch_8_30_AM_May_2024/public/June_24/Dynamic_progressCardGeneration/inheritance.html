@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            class SchoolDetails {
+                constructor(a, b) {
+                    this.schoolname = 'ABC ';
+                    this.schoolLoc = 'Hyd';
+                    this.schoolRating = 5.6;
+                }
+                displaySchoolDeatils() {
+                    console.log("School name is " + this.schoolname);
+                    console.log("School Location is " + this.schoolLoc);
+                    console.log("School Rating is " + this.schoolRating);
+
+                }
+            }
+
+            class StudentDetails extends SchoolDetails {
+                constructor(data) {
+                    super(30, 50); // will invoke the parent class constr 
+                    this.name = data.name;
+                    this.age = data.sage;
+                    this.gender = data.gender;
+                }
+                displayStudentDetails() {
+                    console.log("name is " + this.name);
+                    console.log("age is " + this.age);
+                    console.log("gender is " + this.gender);
+                    this.displaySchoolDeatils();
+                    
+                }                
+            }
+            var s1 = new StudentDetails({name: 'Raj', sage: 20, gender: 'Male'});
+            s1.displayStudentDetails();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Panlindrome</title>
+</head>
+<body>
+    <script>
+        var n=parseInt(prompt("Enter a number")), rem,sum =0;
+        var originalNumber=n;
+        var numberOfDigits = n.toString().length;
+        var reverseNumber=0;
+        var isPalindromeRange= () => {
+            while(n>0){
+            rem=n%10;
+            reverseNumber = reverseNumber*10+rem;
+            n= Math.floor(n/10);
+        }
+        return originalNumber == reverseNumber;
+    }
+    </script>
+</body>
+</html>

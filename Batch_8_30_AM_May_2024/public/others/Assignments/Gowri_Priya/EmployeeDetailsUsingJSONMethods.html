@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details Using JSON Methods</title>
+</head>
+
+<body>
+    <h1 style="text-align:center">Check on Console</h1>
+
+    <script>
+        var sDetails = {
+            name: prompt("Enter Employee Name: "),
+            Age: parseInt(prompt("Enter Employee Age: ")),
+            Gender: prompt("Enter Employee Gender: "),
+            Dept: prompt("Enter Employee Department: "),
+            BasicSal: parseInt(prompt("Enter Employee BasicSalary: ")),
+            getTotalSal() {
+
+                this.pf = (12 / 100) * this.BasicSal;
+                this.hra = (24 / 100) * this.BasicSal;
+                this.totalSal = this.pf + this.hra + this.BasicSal;
+                this.getTaxofEmployee();
+            },
+            getTaxofEmployee() {
+                if (this.BasicSal > 20000) {
+                    if (this.Gender.toLowerCase() == "Female") {
+                        this.tax = (10 / 100) * this.BasicSal;
+                        console.log(this.tax);
+                    }
+                    else {
+                        this.tax = (15 / 100) * this.BasicSal;
+                        console.log(this.tax);
+                    }
+                }
+                else {
+                    this.tax = "Zero"
+                    console.log(this.tax);
+                }
+            },
+            getDisplayDetails() {
+                this.getTotalSal()
+                console.log("Employee Name:" + " " + this.name);
+                console.log("Employee Age:" + " " + this.Age);
+                console.log("Employee Gender:" + " " + this.Gender);
+                console.log("Employee Department:" + " " + this.Dept);
+                console.log("Employee BasicSal:" + " " + this.BasicSal);
+                console.log("Employee TotalSal:" + " " + this.totalSal);
+                console.log("Employee Tax:" + " " + this.tax);
+            },
+        }
+
+        sDetails.getDisplayDetails();
+
+    </script>
+
+</body>
+
+</html>

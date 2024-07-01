@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong</title>
+</head>
+
+<body style="background-color:black">
+    <h1 style="text-align:center;color: white">Check on Console</h1>
+    <script>
+        var sum = 0;
+
+        var num = parseInt(prompt("Enter a Number"));
+        var numstr = num.toString();
+
+
+        for (var i = 0; i < numstr.length; i++) {
+            sum += Math.pow(numstr[i], numstr.length);
+        }
+        if (sum == num) {
+            console.log(num + " " +"is an Armstrong Number")
+        }
+        else {
+            console.log(num + " " +"is not an Armstrong Number")
+        }
+    </script>
+
+</body>
+
+</html>

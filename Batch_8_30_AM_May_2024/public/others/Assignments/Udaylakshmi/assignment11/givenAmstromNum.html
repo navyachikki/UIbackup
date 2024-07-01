@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Given Number Amstrom or Not</title>
+       
+    </head>
+    <body>
+        <div> <span id="total"></span></div>
+        <script>
+            var n = prompt('enter number');
+            var enterNum = parseInt(n);
+            var len = n.length;
+            var sum = 0;
+            while (n > 0) {
+                var rem = n % 10;
+                sum += (rem ** len);
+                n = n / 10;
+                n = parseInt(n);
+            }
+            if (sum === enterNum) {
+                document.querySelector('#total').innerText = 'Its a Amstrong';
+            } else {
+                document.querySelector('#total').innerText = 'Its not a Amstrong';
+            }
+        </script>
+    </body>
+</html>

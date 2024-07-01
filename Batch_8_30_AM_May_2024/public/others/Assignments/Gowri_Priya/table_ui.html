@@ -1,0 +1,208 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables_using_div</title>
+<style>
+    body{
+        background-color: rgb(215, 226, 141);
+    }
+    h1 {
+        border: 2px solid black;
+        background-color: rgb(136, 204, 204);
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .content {
+        /*border: 1px solid black;*/
+        background-color: rgb(147, 190, 138);
+        margin: 11px;
+        /*padding: 25px;*/
+        width: 10%;
+        height: 390px;
+        float: left;
+        /*overflow: auto;*/
+    }
+    .content ol{
+        padding-inline-start: 33%;
+    }
+    .content ol li{
+        padding: 16px 0;    
+    }
+    
+
+    .container {
+        /*border: 2px solid rgb(0, 9, 93);*/
+        margin-bottom: 10px;
+        /*padding: 16px;*/
+        width: 1593px;
+        /*position: relative;
+        left: 230px;*/
+        float: right;
+        overflow: auto;
+    }
+
+    .box {
+        border: 2px solid rgb(250, 109, 2);
+        margin-bottom: 10px;
+        padding: 20px;
+        overflow: auto;
+    }
+    .std{
+        margin-bottom: 6px;
+        color: black;
+    }
+    .imagecontainer {
+        border: 2px solid rgb(5, 1, 1);
+        width: 123px;
+        height: 129px;
+        background-image: url('images/imagespriting.png');
+        /*position: relative;
+        top: -70px;*/
+        float: left;
+        margin-right: 20px;
+    }
+    .gowri{
+        background-position: -57px 178px;
+    }
+    .priya{
+        background-position: -263px 178px;
+    }
+    .satya{
+        background-position: -477px 178px;
+    }
+    .divya{
+        background-position: -688px 178px;
+    }
+    .lilly{
+        background-position: -36px -31px;
+    }
+    .naini{
+        background-position: -255px -35px;
+    }
+    .suraj{
+        background-position: -473px -32px;
+    }
+    .pavani{
+        background-position: -688px -31px;
+    }
+    .content,
+    .container{
+        display: inline-block;
+        border: 2px solid rgb(119, 2, 253);
+        padding: 15px;
+    }
+    
+    .footer {
+        border: 1px solid black;
+        background-color: aquamarine;
+        padding: 6px;
+        text-align: center;
+        clear: both;
+    }
+</style><script type="text/javascript">
+    window.hasMobileFirstExtension = true;</script></head>
+
+
+<body>
+    <h1>Student Details</h1>
+    <div class="row">
+        <div class="content">
+            <ol>
+                <li>Gowri</li>
+                <li>Priya</li>
+                <li>Satya</li>
+                <li>Divya</li>
+                <li>lilly</li>
+                <li>Naini</li>
+                <li>Suraj</li>
+                <li>Pavani</li>
+            </ol>
+        </div>
+        <div class="container">
+            
+            <div class="box">
+                <div class="imagecontainer gowri"></div>
+                <div>
+                    <div class="std"><span style="color: rgb(120, 5, 251)">Name:</span>Gowri</div>
+                    <div class="std"><span style="color: rgb(120, 5, 251)">Age:</span>21</div>
+                    <div class="std"><span style="color: rgb(120, 5, 251)">Gender:</span>Female</div>
+                    <div class="std"><span style="color: rgb(120, 5, 251)">Location:</span>Hyderabad</div>
+                </div>
+            </div>
+
+            
+            <div class="box">
+                <div class="imagecontainer priya">
+                </div>
+
+                <div>
+                    <div><span style="color: rgb(120, 5, 251)">Name:</span>Priya</div>
+                    <div><span style="color: rgb(120, 5, 251)">Age:</span>23</div>
+                    <div><span style="color: rgb(120, 5, 251)">Gender:</span>Female</div>
+                    <div><span style="color: rgb(120, 5, 251)">Location:</span>Chennai</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imagecontainer satya"></div> 
+                <div>
+                    <div><span style="color: rgb(120, 5, 251)">Name:</span>Satya</div>
+                    <div><span style="color: rgb(120, 5, 251)">Age:</span>22</div>
+                    <div><span style="color: rgb(120, 5, 251)">Gender:</span>Female</div>
+                    <div><span style="color: rgb(120, 5, 251)">Location:</span>Ooty</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imagecontainer divya"></div> 
+                <div>
+                    <div><span style="color: rgb(120, 5, 251)">Name:</span>Divya</div>
+                    <div><span style="color: rgb(120, 5, 251)">Age:</span>26</div>
+                    <div><span style="color: rgb(120, 5, 251)">Gender:</span>Female</div>
+                    <div><span style="color: rgb(120, 5, 251)">Location:</span>Anaparthi</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imagecontainer lilly"></div> 
+                <div>
+                    <div><span style="color: rgb(120, 5, 251)">Name:</span>Lilly</div>
+                    <div><span style="color: rgb(120, 5, 251)">Age:</span>22</div>
+                    <div><span style="color: rgb(120, 5, 251)">Gender:</span>Female</div>
+                    <div><span style="color: rgb(120, 5, 251)">Location:</span>Bangalore</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imagecontainer naini"></div> 
+                <div>
+                    <div><span style="color: rgb(120, 5, 251)">Name:</span>Naini</div>
+                    <div><span style="color: rgb(120, 5, 251)">Age:</span>21</div>
+                    <div><span style="color: rgb(120, 5, 251)">Gender:</span>Female</div>
+                    <div><span style="color: rgb(120, 5, 251)">Location:</span>Pune</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imagecontainer suraj"></div> 
+                <div>
+                    <div><span style="color: rgb(120, 5, 251)">Name:</span>Suraj</div>
+                    <div><span style="color: rgb(120, 5, 251)">Age:</span>20</div>
+                    <div><span style="color: rgb(120, 5, 251)">Gender:</span>Male</div>
+                    <div><span style="color: rgb(120, 5, 251)">Location:</span>US</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imagecontainer pavani"></div> 
+                <div>
+                    <div><span style="color: rgb(120, 5, 251)">Name:</span>Pavani</div>
+                    <div><span style="color: rgb(120, 5, 251)">Age:</span>28</div>
+                    <div><span style="color: rgb(120, 5, 251)">Gender:</span>Female</div>
+                    <div><span style="color: rgb(120, 5, 251)">Location:</span>Vizag</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="footer">@copy right 2024</div>
+
+
+</body></html>

@@ -1,0 +1,42 @@
+Contact details:
+    first name  -> 1
+    lastname -> 1
+    contactNo: 
+        prsnl
+            multiple
+        office
+            single 
+    address:
+        prsnl
+            stateinfo 
+                name 
+                code 
+            countryname 
+            dno 
+            streenname
+            landmark
+            
+        office
+            country
+                name 
+                code 
+            bulding no. 
+            floor 
+    emailid 
+        prsnl
+            multiple 
+        office
+            1 mail id
+    dob
+        date 
+        month
+    maritalstatus
+
+    gender 
+
+    socialMedia:
+        twitterid 
+        linkedind
+        fbid 
+
+    profile pic:

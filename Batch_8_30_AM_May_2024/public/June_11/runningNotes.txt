@@ -1,0 +1,56 @@
+var ename = 'raj'
+var sname = 'teena'
+var eage = 20
+var sage = 22
+var schoolname = 'abc '
+var companyname = 'IT inds'
+
+var displaystudendetails = () => {
+
+}
+var displayempdetails = () => {
+
+}
+
+var readSdetails = () => {
+
+}
+var readedeails = () => {
+
+}
+
+-------------------------
+var empDetails = {
+    ename: 'Raj',
+    eage: 20,
+    companyname: 'IT inds',
+    displayempdetails() {
+
+    },
+    readedeails() {
+
+    }
+}
+var studentDetails = {
+    sname: 'Teena',
+    sage: 22,
+    schoolname: 'ABC',
+    readSdetails() {
+
+    },
+    displaystudendetails() {
+    }
+}
+
+
+showDetails(name, age, gener, sc, dipsly, );
+
+showDetails(sdetails);
+
+-------------------
+
+javascript 'this' operator/keyword
+
+-0
+
+setTimeout(method, dealy time in ms);

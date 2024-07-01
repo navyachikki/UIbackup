@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Number</title>
+</head>
+
+<body>
+    <h1 style="text-align:center">List out the all Armstrong Numbers in an Array</h1>
+    <script>
+        function ArmstrongNumber(arr) {
+            let sum = 0;
+            let numstr = arr.toString();
+            for (i = 0; i < numstr.length; i++) {
+                sum += Math.pow(numstr[i], numstr.length);
+            }
+            return sum == arr;
+        }
+        let arr = [153, 6545, 370, 9474, 231, 6789];
+        let armstrongnumber = arr.filter(arr => ArmstrongNumber(arr));
+        console.log("List of Armstrong Numbers in an Array are:" + " " + armstrongnumber);
+
+    </script>
+</body>
+
+</html>

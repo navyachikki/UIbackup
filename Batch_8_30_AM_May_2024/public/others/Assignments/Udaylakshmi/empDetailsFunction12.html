@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details with Function</title>
+
+</head>
+
+<body>
+    <div>Total tax percent : <span id="total"></span></div>
+    <script>
+        var empNm, empAge, empGender, empDep, basicSalary, totalSalary, tax, taxPercent;
+        readEmpDetails();
+        function readEmpDetails() {
+            empNm = prompt('Enter Employee Name');
+            empAge = prompt('Enter Employee Age');
+            empGender = prompt('Enter Employee gender');
+            empDep = prompt('Enter Employee Department');
+            basicSalary = prompt('Enter Employee Basic Salary');
+            basicSalary = parseInt(basicSalary);
+            getTotals();
+
+        }
+        function getTotals() {
+            pf = (12 / 100) * basicSalary;
+            hra = (24 / 100) * basicSalary;
+            totalSalary = basicSalary + pf + hra;
+            if (empGender === 'male' || empGender === 'Male') {
+                maleTax();
+            } else {
+                femaleTax();
+            }
+            taxPercent = (tax / 100) * totalSalary;
+            document.querySelector('#total').innerText = taxPercent;
+        }
+        function maleTax() {
+            if (totalSalary >= 200000) {
+                tax = 15;
+            } else if (totalSalary >= 150000) {
+                tax = 10;
+            } else if (totalSalary >= 100000) {
+                tax = 5;
+            } else {
+                tax = 0;
+            }
+        }
+        function femaleTax() {
+            if (totalSalary >= 200000) {
+                tax = 10;
+            } else if (totalSalary >= 150000) {
+                tax = 5;
+            } else {
+                tax = 0;
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

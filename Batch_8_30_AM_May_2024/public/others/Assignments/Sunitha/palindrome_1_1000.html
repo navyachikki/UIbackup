@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plindrome Numbers between 1 - 1000</title>
+</head>
+
+<body>
+
+    <script>
+
+        for ( var num = 1; num <= 1000; num++) {
+            var str = num.toString();
+            var reversedStr = str.split('').reverse().join('');
+
+            if (str === reversedStr) {
+                console.log(num);
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>
+

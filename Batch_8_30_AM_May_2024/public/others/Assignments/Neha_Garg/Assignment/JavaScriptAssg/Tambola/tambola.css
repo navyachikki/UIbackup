@@ -1,0 +1,22 @@
+.block{
+    border:1px solid;
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    margin:5px;
+    float:left;
+    
+    background-color:brown ;
+    font-weight: bold;
+
+}
+.container{
+    border:1px solid;
+    height:640px;
+    width:630px;
+    margin:20px;
+    padding: 10px;
+    background-color: blanchedalmond;
+}

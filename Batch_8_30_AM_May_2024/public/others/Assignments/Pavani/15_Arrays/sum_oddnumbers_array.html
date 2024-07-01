@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var data = [10, 9, 7, 4, 7, 23, 202, 203];
+        console.log(data);
+        var sum = 0;
+
+        for (var i = 0; i < data.length; i++) {
+            if (data[i] % 2 != 0) {
+                console.log("The odd numbers are: " + data[i]);
+                sum = sum + data[i];
+            }
+        }
+        console.log("The sum is: " +sum);
+    </script>
+</body>
+
+</html>

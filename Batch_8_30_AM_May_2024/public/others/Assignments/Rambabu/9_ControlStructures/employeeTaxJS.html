@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var empName = prompt('Enter Employee Name');
+        var empAge = prompt('Enter Employee Age');
+        empAge = parseInt(empAge)
+        var gender = prompt('Enter Employee Gender(male or female)');
+        var department = prompt('Enter Employee Department');
+        var basicSalary = prompt('Enter Employee Basicsalary');
+        basicSalary = parseInt(basicSalary);
+        var pf = basicSalary * (12 / 100);
+        var hra = basicSalary * (24 / 100);
+        var totalSalary = pf + hra + basicSalary;
+
+
+        console.log('Name: ' + empName);
+        console.log('Age: ' + empAge);
+        console.log('Gender: ' + gender);
+        console.log('Department: ' + department);
+        console.log('BasicSalary: ' + basicSalary);
+        console.log('The PF of Employee is: ' + pf);
+        console.log('The HRA of Employee is: ' + hra);
+        console.log('The Totalsalary of Employee is: ' + totalSalary);
+
+        var taxpercent = 0;
+
+        if (gender === 'male') {
+            if (totalSalary >= 200000) {
+                taxpercent = 15;
+            } else if (totalSalary >= 150000) {
+                taxpercent = 10;
+            } else if (totalSalary >= 100000) {
+                taxpercent = 5;
+            }
+        } else {
+            if (totalSalary >= 200000) {
+                taxpercent = 10;
+            } else if (totalSalary >= 150000) {
+                taxpercent = 5;
+            }
+        }
+        var tax = (totalSalary * taxpercent) / 100;
+        console.log('Total Tax ' + empName + ' Paid: ' + tax)
+
+    </script>
+</body>
+
+</html>

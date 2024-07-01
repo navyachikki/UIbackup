@@ -1,0 +1,136 @@
+.title,
+.footer,
+.empDetails {
+    border: 1px solid rgb(93, 93, 181);
+    padding: 10px;
+    margin: 10px;
+    color: rgb(45, 45, 245);
+}
+
+.title>h3,
+.footer>p {
+    margin: 0px auto;
+    width: fit-content;
+}
+
+.empDetails {
+    color: black;
+}
+
+.paySlip {
+    display: none;
+    margin-top: 30px;
+    background: #bde3d8;
+    padding: 30px;
+    border-radius: 18px;
+}
+
+.details {
+    float: right;
+    margin-right: 20%;
+}
+
+.details_1 {
+    margin-left: 20%;
+}
+
+.details_1>div,
+.details>div {
+    margin-bottom: 6px;
+}
+
+.details_1>div>span {
+    padding-left: 10px;
+}
+
+.details>div>b {
+    padding-right: 10px;
+}
+
+.details>div>span,
+.details_1>div>span {
+    color: rgb(45, 45, 245);
+}
+
+/* table{
+    width: 100%;
+    text-align: left;
+    border: 1px solid;
+    margin-top: 30px;
+} */
+table {
+    width: 100%;
+    border-spacing: 0px;
+    margin-top: 30px;
+    padding: 2px;
+}
+
+table,
+th {
+    border-collapse: collapse;
+    border: 2px solid rgb(241, 194, 194);
+    text-align: center;
+    padding: 4px;
+}
+
+td {
+    border-right: 2px solid rgb(241, 194, 194);
+    padding: 6px;
+}
+
+tbody {
+    text-align: center;
+}
+
+.totalEarning {
+    padding-right: 16px;
+    text-align: end;
+}
+
+.getDetails {
+    width: fit-content;
+    margin: 0 auto;
+    background: lightblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.getDetails ul {
+    padding: 0;
+}
+
+.getDetails ul li {
+    list-style: none;
+    padding-bottom: 6px;
+}
+
+.getDetails ul li>input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    width: 250px;
+}
+
+.btn {
+    margin: 0 auto;
+    width: fit-content;
+    padding-bottom: 0px !important;
+}
+
+.btn>input {
+    padding: 0px;
+    color: rgb(73, 190, 233);
+    background-color: #fff;
+    font-weight: 600;
+    width: auto !important;
+}
+.gender{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    margin-bottom: 6px;
+    background: white;
+}
+.gender input{
+    width: auto !important;
+}

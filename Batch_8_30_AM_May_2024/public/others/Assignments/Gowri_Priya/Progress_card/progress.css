@@ -1,0 +1,108 @@
+body{
+    background-image: url("https://img.freepik.com/free-vector/pink-cloud-background_91008-93.jpg?t=st=1718625536~exp=1718629136~hmac=7ffbb32466dc5df6255eb18864609ccab06134e74fd6ab356e4a7d34ae1642e8&w=1380");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 100% 100%;
+}
+.container{
+    margin: 10px;
+    border: 3px solid #eb07bd;
+    /* float: left; */
+    position: relative;
+    left: 650px;
+    width: 590px;
+    height: 430px;
+    text-align: center;
+    border-radius: 46px;
+    background-color: rgb(144 141 197);
+
+}
+.empform{
+    margin: 12px;
+    padding: 8px;
+    border: 2px solid #04edd5;  
+    border-radius: 32px; 
+    background-color: #dba7ce;
+}
+.lname{
+    position: relative;
+    left: -108px;
+}
+.lage{
+    position: relative;
+    left: -113px;
+}
+.lloc{
+    position: relative;
+    left: -101px;
+}
+.lsal{
+    position: relative;
+    left: -134px;
+}
+.lgender{
+    position: relative;
+    left: -143px;
+}
+.lmarks{
+    position: relative;
+    left: -112px;
+}
+.empname, .empage, .empgender, .emplocation, .empbsal{
+    border: 2px solid #833b3b;
+    border-radius: 6px;
+    margin: 10px;
+    padding: 10px;
+}
+#name, #age, #loc, #sal, #male, #female{
+    position: relative;
+    left: -70px;
+    top: -2px;
+    background-color: #8db9df42;
+}
+#button{
+    color: #161515;
+    background-color: #89bbd7;
+    width: 160px;
+}
+.displayBlock{
+    background-color: #df96c9;
+    display: none;
+    margin: 10px;
+    border: 3px solid #075aeb;
+    /* float: left; */
+    position: relative;
+    left: 660px;
+    width: 582px;
+    height: 430px;
+    text-align: center;
+    border-radius: 46px;
+    
+}
+/* #dname{
+    border: 2px solid;
+    position: relative;
+    left: -96px;
+    top: -2px;
+    background-color: #8db9df42;
+
+} */
+ .inner{
+    border: 2px solid;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    top: 10px;
+    border-radius: 45px;
+ }
+
+.final2{
+    border: 2px solid;
+    margin: 10px;
+    padding: 10px;
+}
+/* p{
+    position: relative;
+    left: -186px;
+} */

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>ARMSTRONG NUMBER</h3>
+    <script>
+        var number = prompt("Enter a number: ");
+        var digit = number.length;
+        var org = number;
+        var sum = 0;
+        while (org > 0) {
+            var remainder = org % 10;
+            org = parseInt(org/10);
+            sum = sum + remainder**digit;
+        }
+        if (number == sum) {
+            console.log(number + " is an armstrong number.");
+        }
+        else{
+            console.log(number + " is not an armstrong number.");
+        }
+    </script>
+</body>
+</html>

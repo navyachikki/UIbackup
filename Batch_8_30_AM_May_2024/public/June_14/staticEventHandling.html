@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <div onclick="showmsg();">Click me</div>
+        <div onmouseover="displaydata()">hello ...</div>
+        <select name="" id="" onchange="dropdownclicked()">
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="pink">Pink</option>
+            <option value="Yellow">Yellow</option>
+
+        </select>
+
+        <script>
+
+            var showmsg = () => {
+                alert("hello every one")
+            }
+
+            var displaydata = () => {
+                console.log(event);
+                console.log("hello displayd ata been colled");
+            }
+
+            displaydata();
+
+
+            var dropdownclicked = () => {
+                console.log("dropdown clicked");
+            }
+            
+            
+        </script>
+    </body>
+</html>

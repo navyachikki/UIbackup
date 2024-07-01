@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_8</title>
+    <style>
+        li{
+            list-style: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <table border="1px solid" cellspacing="1px">
+        <thead>
+            <tr>
+                <th colspan="5" style="text-align: center;">
+                    Employee Details
+                </th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Gender</th>
+                <th>Basic Salary</th>
+                <th>Total Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hemalatha</td>
+                <td>B.tech</td>
+                <td>Female</td>
+                <td>15200</td>
+                <td><span></span></td >
+            </tr>
+            <tr>
+                <td>Krish</td>
+                <td>M.tech</td>
+                <td>Male</td>
+                <td>17200</td>
+                <td><span1></span1></td >
+            </tr>
+            <tr>
+                <td>Prasad</td>
+                <td>B.tech</td>
+                <td>Male</td>
+                <td>19600</td>
+                <td><span2></span2></td >
+            </tr>
+            <tr>
+                <td>Meena</td>
+                <td>MBA</td>
+                <td>Female</td>
+                <td>15900</td>
+                <td><span3></span3></td >
+            </tr>
+            <tr>
+                <td>Lallu</td>
+                <td>BSC</td>
+                <td>Male</td>
+                <td>14000</td>
+                <td><span4></span4></td >
+            </tr>
+        </tbody>
+    </table>
+    <!-- <ul>
+        <li>
+            Name: Hemalatha
+        </li>
+        <li>
+            Department: B.tech
+        </li>
+        <li>
+            Gender: Female
+        </li>
+        <li>
+            Basic Salary: 15200
+        </li>
+        <li>
+            Total Salary: <span></span>
+        </li>
+    </ul> -->
+    <script>
+        var basicSalary1 = 15200;
+        var pf1 = 12/100 * 15200;
+        var hra1 = 24/100 * 15200;
+        var totalSalary1 = basicSalary1 + pf1 + hra1;
+        alert("Total Salary of Hemalatha is" + totalSalary1)
+        document.querySelector("span").innerHTML = totalSalary1;
+
+        var basicSalary2 = 17200;
+        var pf2 = 12/100 * 17200;
+        var hra2 = 24/100 * 17200;
+        var totalSalary2 = basicSalary2 + pf2 + hra2;
+        alert("Total Salary of Krish is" + totalSalary2)
+        document.querySelector("span1").innerHTML = totalSalary2;
+
+        var basicSalary3 = 19600;
+        var pf3 = 12/100 * 19600;
+        var hra3 = 24/100 * 19600;
+        var totalSalary3 = basicSalary3 + pf3 + hra3;
+        alert("Total Salary of Prasad is" + totalSalary3)
+        document.querySelector("span2").innerHTML = totalSalary3;
+
+        var basicSalary4 = 15900;
+        var pf4 = 12/100 * 15900;
+        var hra4 = 24/100 * 15900;
+        var totalSalary4 = basicSalary4 + pf4 + hra4;
+        alert("Total Salary of Meena is" + totalSalary4)
+        document.querySelector("span3").innerHTML = totalSalary4;
+
+        var basicSalary5 = 14000;
+        var pf5 = 12/100 * 14000;
+        var hra5 = 24/100 * 14000;
+        var totalSalary5 = basicSalary5 + pf5 + hra5;
+        alert("Total Salary of Lallu is" + totalSalary5)
+        document.querySelector("span4").innerHTML = totalSalary5;
+    </script>
+    
+    
+</body>
+</html>

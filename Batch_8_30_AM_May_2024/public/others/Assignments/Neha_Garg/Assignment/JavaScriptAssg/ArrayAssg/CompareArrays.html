@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        Compare Arrays
+    </h3>
+
+    <script>
+        var a=[12,45,45,78,67,56];
+        var b=[12,45,45,78,67,56];
+        var lenA=a.length;
+        var lenB=b.length;
+        var flag;
+        if(lenA!=lenB){
+            console.log("Arrays are not equal");
+        }
+        else{
+            for(i=0;i<lenA;i++){
+                if(a[i]!=b[i]){
+                    flag=false;
+                    break;
+                }
+                else{
+                    flag=true;
+                }
+            }
+            if(flag){
+            console.log("Two arrays are equal");
+        }
+        else{
+            console.log("Arrays are not equal");
+        }
+        }
+       
+    </script>
+</body>
+</html>

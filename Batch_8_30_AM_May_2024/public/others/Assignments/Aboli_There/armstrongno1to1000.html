@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WAP to display the armstronge value in bet 1 to 1000</title>
+  </head>
+  <body>
+    <script>
+      for (var i = 1; i <= 1000; i++) {
+        var n = i;
+        var temp = n;
+        var len = n.toString().length;
+        n = parseInt(n);
+
+        var result = 0;
+
+        while (n > 0) {
+          var rem = n % 10;
+          result += rem ** len;
+          n = n / 10;
+          n = parseInt(n);
+        }
+        if (temp == result) {
+          console.log("The armstong no is " + temp);
+        }
+      }
+    </script>
+  </body>
+</html>

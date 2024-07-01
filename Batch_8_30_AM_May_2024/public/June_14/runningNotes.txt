@@ -1,0 +1,55 @@
+
+
+Assignment:
+[
+    {
+        name: 'Rak',
+        image: '...',
+        basicsal: ... ,
+        gender: ... 
+        department: ..
+    },
+    {
+        name: 'Rak',
+        image: '...',
+        basicsal: ... ,
+        gender: ... 
+        department: ..
+    }
+]
+
+----------------
+
+Event:
+
+    Event handling: 
+        static way 
+            We can implement static event hanlding through the set of predefined event handling html attributes
+                onclick 
+                onfocus
+                onchange
+                onblur 
+                onkeyup
+                onkeydown
+                onkeypress
+                onmouseover
+                onmousedown
+                 .... 
+                 ... 
+                 ... 
+
+                 <tagname eventAttribute="<method to be called>">
+                    ....
+                 </tagname>
+
+                 <span onchange="sample()" onclick="dojoob()">
+                    ...
+                 </span>
+
+                    
+
+        Dynamic way
+
+            element.addEventListener("type", () => {
+
+            });

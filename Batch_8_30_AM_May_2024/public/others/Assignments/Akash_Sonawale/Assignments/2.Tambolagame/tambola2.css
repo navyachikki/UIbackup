@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c97e7e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.outsidecontainer {
+    background-color: #5a6462;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline solid orange;
+}
+
+#CircleContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.circle {
+    width: calc(10% - 4px); 
+    height: 50px;
+    padding: 10px;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f32121;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.circle:hover {
+    background-color: #352f2f;
+    transform: scale(1.9);
+}
+
+footer {
+    color: #352f2f;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button {
+    text-align: center;
+    display: flex;
+    background-color: rgb(249, 249, 248);
+    color: #000000;
+    height: 20px;
+    width: 83px;
+    position: absolute;
+    right: 40%;
+    bottom: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #f1ffff;
+    transform: scale(1.5);
+    color: rgb(14, 14, 14);
+}
+
+#LuckyNumberDisplay {
+    font-family: 'Papyrus';
+    color: #efff0b;
+}
+
+#LuckyNumberDisplay:hover {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: orange;
+}
+
+.highlight {
+    background-color: yellow !important;
+}

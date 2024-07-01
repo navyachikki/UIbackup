@@ -1,0 +1,14 @@
+ .starContainer {
+    background-image: url("file:///C:/Users/Mansi/OneDrive/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%A0%E0%B8%B2%E0%B8%9E/ratingStars.PNG");
+    width: 20px;
+    height: 20px;
+    float: left;
+ }
+
+ .halfStar{
+    background-position: -22px 0;
+ }
+
+ .disableStar{
+    background-position: -22px 0;
+ }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="empPay.js"></script>
+    <link rel="stylesheet" href="empPay.css">
+</head>
+<body>
+    <h3>Employee Pay Slip</h3>
+    <div class="Container">
+        <ul>
+            <li>
+                <input type="text" placeholder="Enter empName: " id="empName">
+            </li>
+            <li>
+                <input type="text" placeholder="Enter empAge: " id="empAge">
+            </li>
+            <li>
+                Gender:
+                <input type="radio" value="Male" checked name="gender">Male
+                <input type="radio" value="Female" name="gender">Female
+            </li>
+            <li>
+                Department:
+                <input type="text" placeholder="Enter the Dept: " id="empDept">
+            </li>
+            <li>
+                <input type="text" placeholder="Enter the Basic sal: " id="basicsal">
+            </li>
+            <li>
+                <input type="button" value="getPaySlip" onclick="readEmpData();">
+            </li>
+        </ul>
+    </div>
+    <div class="Block">
+        <ul>
+            <li>
+                Employee Name: <span id="E_name"></span>
+            </li>
+            <li>
+                Employee age: <span id="E_age"></span>
+            </li>
+            <li>
+                Employee gender: <span id="E_gender"></span>
+            </li>
+            <li>
+                Employee Department: <span id="E_dept"></span>
+            </li>
+            <li>
+                Employee BasicSalary: <span id="E_basicsal"></span>
+            </li>
+            <li>
+                Employee pf: <span id="E_pf"></span>
+            </li>
+            <li>
+                Employee hra: <span id="E_hra"></span>
+            </li>
+            <li>
+                Employee TotalSalary: <span id="E_totalsal"></span>
+            </li>
+            <li>
+                Employee TaxPercent: <span id="E_tax"></span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

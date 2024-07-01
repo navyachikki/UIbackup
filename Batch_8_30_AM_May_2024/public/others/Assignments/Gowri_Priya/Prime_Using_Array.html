@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime_Number_Using_Array</title>
+</head>
+
+<body>
+    <h1 style="text-align: center">List out the Prime Numbers within an Array</h1>
+    <script>
+        function isPrime(num) {
+            if (num <= 1) {
+                return false;
+            } else {
+                for (i = 2; i <= Math.sqrt(num); i++) {
+                    if (num % i == 0) {
+                        return false;
+                    }
+                } return true;
+            }
+        }
+        let num = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+        let Prime = num.filter(isPrime);
+        console.log("Prime Numbers in an Array are:" + " " + Prime);
+    </script>
+</body>
+
+</html>

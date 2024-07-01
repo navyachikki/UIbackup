@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        .content {
+            border: 1px solid;
+            width: 100px;
+            height: 100px;
+        }
+
+        .content:hover {
+            background-color: yellow;
+            text-align: center;
+            font-size: 25px;
+
+        }
+
+        a {
+            color: green;
+            text-decoration: none
+        }
+
+        a:link {
+            color: rgb(59, 14, 143);
+            text-decoration: none;
+
+        }
+
+        a:visited {
+            color: rgb(216, 202, 10);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: blueviolet;
+            text-decoration: underline;
+        }
+
+        p {
+            border: 1px solid;
+            width: 800px;
+            height: 100px;
+        }
+
+        p:empty {
+            border: 5px dotted red;
+            width: 500px;
+            height: 50px;
+        }
+
+        a:active {
+            background-color: chartreuse;
+        }
+
+        li:first-child {
+            background-color: aqua;
+            border: 1px solid;
+            width: 48px;
+        }
+
+        li:nth-child(2) {
+            background-color: aqua;
+            border: 1px solid;
+            width: 48px;
+        }
+
+        li:nth-last-child(2) {
+            background-color: aqua;
+            border: 1px solid;
+            width: 48px;
+        }
+
+        li:nth-child(odd) {
+            background-color: rgb(157, 12, 126);
+            border: 1px solid;
+            width: 48px;
+        }
+
+        span:first-of-type {
+            border: 1px solid;
+            background-color: blue;
+        }
+
+        h1{
+            color: rgb(255, 0, 0);
+        }
+        .sk:only-child{
+            background-color: gold;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Pseudo Class</h1>
+    <div class="content"> Block 1</div>
+    <a href="https://www.youtube.com/" target="_blank">youtube</a>
+    <a href="https://www.amazon.in/">Amazon</a>
+    <a href="https://www.google.com/" target="_blank">Google</a>
+    <a href="https://www.naukri.com/chatbot?conversation=marketing_registration&app=Naukri&domain=Naukri&context.src_tmp=12124&utm_source=google&utm_medium=cpc&utm_campaign=P.max_Hyd_Nov%2722&gad_source=1&gclid=Cj0KCQjw2a6wBhCVARIsABPeH1u2nIy_ZT1qbEJhGY0CewTr_U_Borq6okH_5Qk5v9oWADkGhM9meUYaAhQEEALw_wcB"
+        target="_blank">Naukri</a>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae eveniet minima quidem eligendi qui illo facilis.
+        Voluptatem totam vel cumque, voluptatibus, ratione impedit ab possimus corrupti, voluptas voluptate suscipit
+        porro?</p>
+    <p></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repudiandae beatae dolore impedit. Sequi tempora
+        ea dignissimos blanditiis amet, possimus eos? Ab dicta iste consectetur, dolores temporibus quidem quia id.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tenetur tempore expedita ipsum dolore voluptate
+        quam rerum suscipit nesciunt repellendus fugit aliquam sint facere, voluptates quidem beatae reprehenderit! Et,
+        inventore.</p>
+    <p></p>
+    <p></p>
+    <ol>
+        <li>Saroj</li>
+        <li>Santanu</li>
+        <li>Piyush</li>
+        <li>saurav</li>
+        <li>kumar</li>
+        <li>Piyush</li>
+        <li>saurav</li>
+        <li>kumar</li>
+        <li>Piyush</li>
+        <li>saurav</li>
+        <li>kumar</li>
+        <li>Piyush</li>
+        <li>saurav</li>
+        <li>kumar</li>
+        <li>Piyush</li>
+        <li>saurav</li>
+        <li>kumar</li>
+        <li>Piyush</li>
+        <li>saurav</li>
+        <li>kumar</li>
+        <li>Piyush</li>
+        <li>saurav</li>
+        <li>kumar</li>
+        <li>Piyush</li>
+        <li>saurav</li>
+        <li>kumar</li>
+        <li>Piyush</li>
+        <li>saurav</li>
+        <li>kumar</li>
+    </ol>
+    <div>
+        <div>lcxzhdsivgrhyuyi</div>
+        <div>lznjsgfjvkhbrshau</div>
+    </div>
+    <span>ITem 1</span>
+    <span>ITem 1</span>
+    <span>ITem 1</span>
+    <span>ITem 1</span>
+    <h1>
+        Saroj kumar subudhi
+    </h1>
+    <div class="sk">
+        <li>Item 1</li>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details arrow functios</title>
+</head>
+<body>
+    <div>
+        <h3>Employee Details dynamically using Arrow functions</h3>
+    </div>
+
+    <script>
+        var employeeName, age, gender, dep, basicSalary, totalSalary, pf, hra, tax = 0;
+
+//Read the data from the user
+ readEmpData = () => {
+    employeeName = prompt("Enter the Employee Name:");
+    age = prompt("Enter the Age :");
+    age = parseInt(age);
+    gender = prompt("Enter Gender:");
+    gender = gender.toLocaleLowerCase();
+    dep = prompt("Enter Department");
+    basicSalary = prompt("Enter the Basic Salaray");
+    basicSalary = parseInt(basicSalary);
+    getTotalSal(); //Calling function
+}
+
+//calculate total Salary
+ getTotalSal = () => { // called function
+    pf = (basicSalary * 12) / 100;
+    hra = (basicSalary * 24) / 100;
+    totalSalary = pf + hra + basicSalary;
+    getTax();
+
+}
+//Calculate TAx
+ getTax = () => {
+    if (gender == 'male') {
+        if (totalSalary >= 200000) {
+            tax = (totalSalary * 15) / 100;
+            console.log("The Tax paid is:" + tax);
+        } else if (totalSalary >= 150000) {
+            tax = (totalSalary * 10) / 100;
+            console.log("The Tax paid is:" + tax);
+        } else if (totalSalary >= 100000) {
+            tax = (totalSalary * 5) / 100;
+            console.log("The Tax paid is:" + tax);
+        } else {
+            console.log("The Tax paid is:" + tax);
+        }
+    } else if (gender == 'female') {
+        if (totalSalary >= 200000) {
+            tax = (totalSalary * 10) / 100;
+            console.log("The Tax paid is:" + tax);
+        } else if (totalSalary >= 150000) {
+            tax = (totalSalary * 5) / 100;
+            console.log("The Tax paid is:" + tax);
+        } else {
+            console.log("The Tax paid is:" + tax);
+        }
+    } else {
+        console.log("The Tax paid is:" + tax);
+        console.log("Please Select Correct Gender Male or Female ");
+    }
+    displayEmpData();
+}
+
+//Display the empDetails in console
+displayEmpData = () => {
+    console.log("Employee Details.....")
+    console.log("Employee Name:" + employeeName);
+    console.log("Depaartment:" + dep);
+    console.log("Basic Salary:" + basicSalary);
+    console.log("PF:" + pf);
+    console.log("HRA:" + hra);
+    console.log("Total Salary:" + totalSalary);
+    console.log("Tax:" + tax);
+}
+readEmpData();
+    </script>
+</body>
+</html>

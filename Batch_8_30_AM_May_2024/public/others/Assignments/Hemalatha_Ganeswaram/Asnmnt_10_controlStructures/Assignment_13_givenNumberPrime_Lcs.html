@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prime Number</title>
+    </head>
+    <body>
+        <script>
+            var n = parseInt(prompt("Enter a Number"))// n = 5
+            var counter = 0 // counter = 0
+            for (var i = 2 ; i < n ; i++) { //  i = 2; 2 < 5 -- true condition  satisfied
+                var rem = n % i // 5 / 2  -- rem = 1
+                if (rem == 0) { // rem =0 condition satisfied
+                counter++ // counter =  counter + 1 => 0+1 = 1
+                break
+                }
+            }
+            if (counter == 0) {// counter = 0
+                console.log(n + " is a prime number")
+            } else {
+                console.log(n + " is  not a prime number")
+            }
+            
+        </script>
+        
+         
+    </body>
+</html>

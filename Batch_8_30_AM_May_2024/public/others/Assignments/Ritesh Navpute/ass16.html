@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UseofJson</title>
+</head>
+<body>
+    <script>
+        let empdetails = () => {
+            let employeedetails = {
+                name: "Ritesh",
+                age: 21,
+                gaender: "Sambhaji Nagar",
+                basciSalary: 3000000,
+                get pf() {
+                    return this.basciSalary * 0.12;
+                },
+                get hra() {
+                    return this. basciSalary * 0.24;
+                },
+                get totalSalary() {
+                    return this.pf + this.hra + this.basciSalary;
+                },
+                get tax() {
+                    console.log("\n");
+                    console.log("employee tax calculation");
+                    if (this. totalSalary >= 3000000) {
+                        return this.totalSalary * 0.15;
+                    } else if (this.totalSalary >= 150000){
+                        return this.totalSalary * 0.10;
+                    } else if (this.totalSalary >= 100000){
+                        return this.totalSalary * 0.05;
+                    } else {
+                        return 0;
+                    }
+                }
+            };
+
+            printemp(employeedetails);
+
+        };
+
+        let printemp = (employee) => {
+            console.log("Name: " + employee.name);
+            console.log("Age: " + employee.age);
+            console.log("Gender: " + employee.gender);
+            console.log("Location: " + employee.location);
+            console.log("Basic Salary: " + employee.basicSalary);
+            console.log("PF: " + employee.pf);
+            console.log("HRA: " + employee.hra);
+            console.log("Total Salary: " + employee.totalSalary);
+            console.log("Tax: " + employee.tax);
+            console.log("Net Salary after Tax: " + (employee.totalSalary - employee.tax));
+        };
+
+        empdetails();
+    </script>
+    
+</body>
+</html>

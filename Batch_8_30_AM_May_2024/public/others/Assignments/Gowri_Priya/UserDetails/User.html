@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <link rel="stylesheet" href="user.css">
+    
+</head>
+<body>
+    <h1>User Details</h1>
+    <div class="float-container">
+    <div class="container">
+        <div>
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="Enter a Name"><br>
+        </div>
+
+        <div>
+            <label for="age">Age:</label>
+            <input id="age" type="number" placeholder="Enter a Age"><br>
+        </div>
+
+        <div>
+            <label for="gender">Gender:</label>
+            <label><input type="radio" value="male" checked name="gender">Male</label>
+            <label><input type="radio" value="female" name="gender">Female</label><br>
+        </div>
+
+        <div>
+            <label for="location">Choose a Location:</label>
+            <select id="location" name="location">
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Bengalore">Bengalore</option>
+                <option value="Pune">Pune</option>
+                <option value="Chennai">Chennai</option>
+            </select>
+        </div>
+
+        <div class="register">
+            <input type="button" id="register" value="Register" onclick="userData()">
+            <input type="button" id="save" value="Save" onclick="saveData()">
+        </div>
+    </div>
+
+
+    <div class="box">
+        <table style="width:100%">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Location</th>
+                <th>Action</th>
+            </tr>
+            <tbody id="tbody">
+
+            </tbody>
+
+        </table>
+    </div>
+    </div>
+    <script src="user.js"></script>
+</body>
+</html>

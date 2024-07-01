@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var readEmpDetails = () => {
+            empname = prompt("Enter employee Name");
+            empage = prompt("Enter employee age");
+            gender = prompt("Enter gender");
+            Department = prompt("Enter Department");
+            basicSal = prompt("Enter salary");
+            totalSal;
+            calPfandHravalues();
+        }
+        var empname, empage, gender, Department, basicSal, totalSal
+        var calPfandHravalues = () => {
+            pf = (14 * basicSal) / 100;
+            console.log("pf amount is " + pf);
+            hra = (24 * basicSal) / 100;
+            console.log("hra amount is " + hra);
+            totalSal = basicSal + pf + hra;
+            // totalSal = Number(basicSal) + Number(pf) + Number(hra);
+            console.log("Total salary is " + totalSal);
+            calculateTax();
+        }
+        var calculateTax = () => {
+            var taxPercent = 0;
+            if (gender.toLowerCase() == "male") {
+                console.log(gender);
+                if (totalSal >= 200000) {
+                    taxPercent = 15;
+                }
+                else if (totalSal >= 150000) {
+                    taxPercent = 10;
+                }
+                else if (totalSal >= 100000) {
+                    taxPercent = 5;
+                }
+
+            }
+            else {
+                console.log(gender);
+                if (totalSal >= 200000) {
+                    taxPercent = 10;
+                }
+                else if (totalSal >= 150000) {
+                    taxPercent = 5;
+                }
+            }
+            var taxValue = (totalSal * taxPercent) / 100;
+            console.log("total tax to be paid " + taxValue);
+        }
+        readEmpDetails();
+    </script>
+</body>
+
+</html>

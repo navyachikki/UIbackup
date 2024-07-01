@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Payslip</title>
+    
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h3>Employee Payslip</h3>
+    <div class="main">
+        <ul>
+            <li>
+                Enter Employee name:<input type="text" placeholder="Employee name" id="eName" >
+            </li>
+            <li>
+                Enter Employee age:<input type="text" placeholder="Employee age" id="eAge" >
+            </li>
+            <li>
+                 Department:
+                 <input type="checkbox" value="IT" name="department" checked>IT
+                 <input type="checkbox" value="Finance" name="department">FINANCE
+                 <input type="checkbox" value="HR" name="department">HR
+                 <input type="checkbox" value="Marketing" name="department">Marketing
+            </li>
+            <li>
+                Gender:
+                <input type="radio" value="Male" name="gender" checked>Male
+                <input type="radio" value="Female" name="gender">Female
+            </li>
+            <li>
+                Enter Employee Salary:<input type="text" placeholder="Employee salary" id="eSalary" >
+            </li>
+            
+            <li>
+                <input type="button" value="Generate Payslip" onclick="readEmployeeData();">
+            </li>
+        
+        </ul>
+    </div>
+    <div class="displayContainer">
+        <ul>
+            <li>Employee name:<span id="e_name">
+
+            </li>
+            <li>Employee Age:<span id="e_age">
+                
+            </li>
+            <li>Employee Gender:<span id="e_gender">
+                
+            </li>
+            <li>Employee Department:<span id="e_dept">
+                
+            </li>
+            <li>Employee Basic Salary:<span id="e_salary">
+                
+            </li>
+            
+            <li> Employee Pf:<span id="e_pf">
+                
+            </li>
+            <li> Employee HRA:<span id="e_hra">
+                
+            </li>
+            <li> Employee Total Salary:<span id="e_total">
+                
+            </li>
+            <li> Employee Tax:<span id="e_tax">
+                
+            </li>
+            
+
+            
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

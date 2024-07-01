@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var data = [25, 71, 79, 153, 241, 189,370,371];
+        var result, rem;
+        for (var i = 0; i < data.length; i++) {
+            n = data[i];
+            var len = n.toString().length;
+            result = 0;
+            while (n > 0) {
+                rem = n % 10;
+                result += rem ** len;
+                n = parseInt(n / 10);
+            }
+            if (data[i] == result) {
+                console.log(data[i] + " is a armstrong number " );
+            }
+        }
+    </script>
+</body>
+
+</html>

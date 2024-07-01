@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpDetails</title>
+</head>
+
+<body>
+    <script>
+        var Name = prompt("Enter you'r name");
+        var Age = prompt("Enter you'r Age");
+        Age = parseInt(Age);
+        var Gender = prompt("Enter you'r Gender ");
+        var Dept = prompt("Enter you'r Depertment ");
+        var Salary = prompt("Enter you'r Basic Salary");
+        Salary = parseInt(Salary);
+        var PF = Salary * (12/100) ;
+        var HRA = Salary * (24/100);
+        var TotalSal = parseInt(TotalSal);
+        TotalSal = Salary + PF + HRA;
+
+        if (Gender.toLowerCase() == 'male') {
+            if (TotalSal >= 200000) {
+                var tax = 0.15;
+            } else if (TotalSal >= 150000) {
+                tax = 0.10;
+            } else if (TotalSal >= 100000) {
+                tax = 0.05;
+            } else {
+                tax = 0;
+            }
+        } else {
+            if (TotalSal >= 200000) {
+                tax = 0.10;
+            } else if (TotalSal >= 150000) {
+                tax = 0.05;
+            } else {
+                tax =0;
+            }
+
+        }
+
+        var TaxRate = tax * 100; 
+    
+        console.log("Name: " + Name);
+        console.log("Age: " + Age);
+        console.log("Gender: " +Gender);
+        console.log("Department: " + Dept);
+        console.log("Salary: " + Salary);
+        console.log("PF: " + PF);
+        console.log("HRA: " + HRA);
+        console.log("Total Sal: " + TotalSal);
+        console.log("Tax to be Paied: " + TaxRate + '%');
+
+
+
+    </script>
+</body>
+
+</html>

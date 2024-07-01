@@ -1,0 +1,36 @@
+.mainBlock {
+  border: 1px solid;
+  margin: 10px;
+  padding: 10px;
+  position: absolute;
+  left: 10px;
+  padding: 10px;
+  right: 10px;
+  background-color:skyblue;
+  overflow: auto
+
+}
+
+
+#container>li{
+  list-style: none;
+  float:left;
+}
+  
+  .employee >ul {
+    background-color: yellow;
+    list-style: none;
+    border: 1px solid;
+    height: 200px;
+    width: 150px;
+    /* float: left; */
+    margin: 10px;
+    padding: 10px;
+    font-style: italic;
+    color: blueviolet
+ ;
+  }
+ .employee img{
+  height: 80px;
+  width: 80px;
+ }

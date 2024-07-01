@@ -1,0 +1,27 @@
+two different ways we could send data to the server
+    1. manually reading and sending data  - JS 
+    2. Automatically through form tag - Form/html
+
+        <form> -> used to read the data Automatically from the input elements under it, and Automatically send the data to the specified server
+                .. 
+                .. . 
+                ...
+                ...
+                .
+        </form>
+
+        form takes 2 mandate attributes:
+            action -> using which we could specify the server url, to which data has to be sent 
+            method
+
+
+            url - > http://abc.com/data 
+            http://google.com/search 
+
+            http://localhost:8081/data/info 
+
+            method -> type of communication -> GET/POST /DELETE/Query etc..
+
+            GET communication -> DAta will be automatically append tothe url, through query parameters 
+
+            POST Communication -> user data will be apended to the request header, which will not be shown on the url, but data will be sent to server.

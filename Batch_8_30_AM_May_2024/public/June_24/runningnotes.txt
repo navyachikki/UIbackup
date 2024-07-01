@@ -1,0 +1,45 @@
+Classes
+Objects
+
+Inhertence 
+
+    extends
+
+
+    Syntax:
+
+        class A {
+
+        }
+
+        class B extends A {
+
+        }
+0---------------
+JAVA:
+class ABC {
+
+}
+Class PQR extends ABC implements interface {
+
+}
+
+interface abc implements PQR, test, sample {
+
+}
+-----------------
+class ONE {
+    a = 90
+    z = 101
+}
+class TWO extends ONE{
+    b = 90
+    a = 100;
+    -> a -> 100
+}
+class Three extends Two {
+    d = 200
+    -> a -> 100 
+    b - > 90
+    z -> 101
+}

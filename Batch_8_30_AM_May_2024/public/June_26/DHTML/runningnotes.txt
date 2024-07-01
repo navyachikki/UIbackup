@@ -1,0 +1,31 @@
+html code:
+
+    the sum of values is <span></span>
+
+JS :
+
+    var a1  = 90;
+    var a2 = 33
+    var result = a1 + a2
+
+    document.querySelector(sopan).innerText = result;
+
+-------------
+
+Angular, react ,viewjs 
+
+bridge btwn html and js  - Data binding 
+
+HTML
+ the sum of values is <span>{{result}}</span>
+
+ JS :
+
+    var a1  = 90;
+    var a2 = 33
+    var result = a1 + a2
+
+---------------------
+
+Templating:
+    

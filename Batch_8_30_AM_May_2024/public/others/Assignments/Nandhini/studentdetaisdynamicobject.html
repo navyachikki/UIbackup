@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+    <script>
+        var sDetails = {}
+            name = prompt ("enter the name"),
+            age = prompt("enter the age"),
+            gender = prompt("enter the age"),
+            marks = [ ];
+
+            for (var i = 0 ; i < 5; i++) {
+                sDetails.marks[i] = parseInt(prompt("etner sub mar " + i));
+                
+           }
+          
+           
+             sDetails.total = 0;
+
+             for(var i = 0; i <= sDetails.marks.length; i++) {
+                sDetails.total  += sDetails.marks[i];
+              }
+            
+            sDetailsavg = sDetails.total + sDetails.marks.length;
+
+            if (sDetails.avg >= 40) {
+                sDetails.grade = 'passed';
+              } else {
+                sDetails.grade = 'failed';
+             }
+
+             console.log(sDetails);
+            
+            console.log("name"+ sDetails.name);
+            console.log("age" + sDetails.age);
+            console.log("avg" + sDetails.avg);
+            console.log("total" + sDetails.total);
+            console.log("grade" + sDetails.grade);
+                
+            
+    </script>
+    </body>
+
+</html>

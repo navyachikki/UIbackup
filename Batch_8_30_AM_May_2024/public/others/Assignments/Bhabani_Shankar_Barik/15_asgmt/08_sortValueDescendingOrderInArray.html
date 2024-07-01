@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descending Order</title>
+  </head>
+  <body>
+    <script>
+      /* wap to sort the value inside an array to de-scending order. */
+
+      const numbers = [12, 45, 32, 78, 21, 56];
+
+      function sortDescending(arr) {
+        return arr.sort((a, b) => b - a);
+      }
+      
+      console.log("Sorted array in descending order:", sortDescending(numbers));
+    </script>
+  </body>
+</html>

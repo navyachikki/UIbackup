@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var empDetails = {
+        readEmpDetails(){
+            this.empname = prompt("Enter empname");
+            this.empid = prompt("Enter empid");
+            this.department = prompt("Enter department");
+            this.basicsal = prompt("Enter Basic Salary");
+            this.gender = prompt("Enter Gender");
+            this.getpfandhra();
+            this.displaydetails();
+        },
+        getpfandhra() {
+            this.totalsal = 0;
+            this.pf = (this.basicsal * 10) / 100;
+            this.hra = (this.basicsal * 15) / 100;
+            totalsal = Number(this.basicsal) + Number(this.pf) + Number(this.hra);
+
+            this.caltaxpercent();
+        },
+        caltaxpercent(){
+            this.taxPercent = 0;
+            if (this.gender.toLowerCase() == "male") {
+                if (totalsal >= 200000) {
+                    this.taxPercent = 15;
+                }
+                else if (totalsal >= 150000) {
+                    this.taxPercent = 10;
+                }
+                else if (totalSal >= 100000) {
+                    this.taxPercent = 5;
+                }
+            }
+            else {
+                if (totalsal >= 200000) {
+                    this.taxPercent = 10;
+                }
+                else if (totalsal >= 150000) {
+                    this.taxPercent = 5;
+                }
+            }
+            var taxValue = (totalsal * this.taxPercent) / 100;
+            console.log("total tax to be paid " + taxValue);
+        },
+        displaydetails(){
+        console.log("employe details....");
+        console.log("employe name is = " + this.empname);
+        console.log("employe id is = " + this.empid);
+        console.log("employe department is = " + this.department);
+        console.log("employe basic salery is = " + this.basicsal);
+        console.log("employe pf  is = " + this.pf);
+        console.log("employe hra is = " + this.hra);
+        console.log("employe total salery is = " + totalsal);
+        }
+    };
+    empDetails.readEmpDetails();
+    </script>
+</body>
+</html>

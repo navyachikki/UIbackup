@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ascending order in array</title>
+  </head>
+  <body>
+    <script>
+      /* wap to sort the value inside an array to ascending order. */
+
+      let numbersArray = [12, 45, 32, 78, 21, 56];
+      let sortedArray = sortAscending(numbersArray);
+
+      function sortAscending(arr) {
+        return arr.sort((a, b) => a - b);
+      }
+
+      console.log("Sorted array in ascending order:", sortedArray);
+    </script>
+  </body>
+</html>

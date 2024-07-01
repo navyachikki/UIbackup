@@ -1,0 +1,53 @@
+div 
+    span    
+        p 
+            div
+            span
+            span 
+
+span:first-child {
+
+}
+
+span:first-of-type {
+
+}
+
+-----------
+
+Orederd list - Ol 
+
+Unordered list - UL 
+
+ul and ol 
+
+    ul 
+        li 
+            div 
+            ....
+        li 
+            .... 
+        li 
+            ....
+    ol 
+        li 
+            ....
+        li 
+            .... 
+        li 
+            ....
+
+        Ol  
+            li 
+-------------
+
+Overflow property 
+
+dispaly none and visitiblity hidden 
+
+display property
+
+
+-------------------
+
+display: none, inline, block, inline-block grid|flex 

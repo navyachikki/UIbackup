@@ -1,0 +1,569 @@
+      ****  :::: Class tracker :::::: Daily topics day to day covered will be present here. ****
+      *******************************************************************************************
+      
+Day 1 Class (2-5-2024): Demo-1    
+
+    Introduction.
+
+--------------------------------------------------------------------------------------------------------
+Day 2  Class (3-5-2024) :Demo-2
+
+    Introduction continued from where we stopped on class 1.
+    Explained what are the topice will go through the course. what is a webpage how it looks.
+    Explained the difference all full stacks i.e(java full stack, .net full stack, UI full Stack,..ect).
+    Explained about difference between frontEnd(client) ,Backend and DB(Server).  
+
+------------------------------------------------------------------------------------------------------
+Day 3 Class (6-5-2024):
+
+    How to download VS Code.
+    what is a tag, HTML full form , Markup Language in HTML.
+    Explained About Basic HTML Format.(head ,body ,title tag).
+    Should be ready with VS Code.
+
+-------------------------------------------------------------------------------------------------------
+Day 4 Class (7-5-2024):
+
+    How to download Github.
+    Break tag <br> or <br/>.
+    <h1> to <h6>. what is difference while using them and not using them.
+    Should Be ready With Github.
+
+-------------------------------------------------------------------------------------------------------
+Day 5 Class (8-5-2024):
+
+    How to download Node JS.
+    <p> Paragraph tag.
+    &nbsp;
+    CSS Introduction.
+    HTML Attributes.
+    predefined Attributes:
+    title attribute. 
+    Style attribute.(Background-color,color,font-size)
+    id attribute.
+    name attribute.
+    CSS inline style.....is known as style attribute.
+    Should be ready with Node JS.
+
+--------------------------------------------------------------------------------------------------------
+Day 6 Class (9-5-2024):
+
+    text-align(left/Right/center).
+    text-decoration.
+    <u> underline tag.
+    limitation in inline or style attribute.
+    notes on CSS.
+    CSS class attribute.
+    Adding CSS class through ID. 
+
+--------------------------------------------------------------------------------------------------------
+Day 7 Class (10-5-2024):
+
+    Different ways of applying CSS.
+    (4 types-- (1->ID,2->Class,3->tagname(h1,p,body,ect),4->Style Attribute(inline) 
+    and also can use attribute names)). 
+    Border
+    Different ways of applying color.
+    1. RGB value.
+    2. hashcode.
+    3.color,background-color,border.
+    Anchor tag----> <a></a> (href,target).
+    Image tag -->(src,alt).
+    DOM structure.
+    Debugging tool/Browser Developer tool/dev.
+    Element.
+
+-----------------------------------------------------------------------------------------------------------
+Day 8 Class(11-5-2024):
+
+    Revised topics.
+
+-----------------------------------------------------------------------------------------------------------
+Day 9 Class(14-5-2024):
+
+    priority for CSS ======>(4 type=>inline, id, class, tagname).
+    What is code Repo.?
+    Gitdesktop Installation.
+    how do we do Collaboration.
+    how to access Invitation sent and get data into our Gitdesktop.
+    how to clone in git.
+    get ready with git.
+
+-------------------------------------------------------------------------------------------------------------------
+Day 10 class(15-5-2024):
+
+    block level and inline in html, 
+    how it is used what is the difference, 
+    how we will identify block level and inline.
+    div tag, span tag.
+    how to clone data from git.
+    assignment-1(student Details).
+
+--------------------------------------------------------------------------------------------------------------------------
+Day 11 class(16-5-2024):
+
+    what is margin, padding. 
+    Box Model.
+    what is the difference and how they are used and where we need to apply padding and margin.
+    Git cloning.
+
+------------------------------------------------------------------------------------------------------------------------------
+Day 12 Class(17-5-2024):
+
+    Background images ====>   
+    background-image: url("https://bd.gaadicdn.com/upload/modellogo/649bc0cf4b3f0.jpg?tr=w-320");
+    background-repeat: no-repeat;
+    background-position: 10px 30px; 
+
+    parent & child: eg. .abc #pqr p{}, div .sample #abc{} , div span{}.
+    webserver hosting: 
+    node js platform, express js. 
+    how to host server?. 
+    what is the difference between server and localhost.
+    how to load node js server.
+
+------------------------------------------------------------------------------------------------------------------
+Day 13 Class(18-5-2024):
+
+    revision.
+
+------------------------------------------------------------------------------------------------------------------
+Day 14 class (20-5-2024):
+
+    live server download 
+    difference between live server and node js server.
+    CSS float properties
+    CSS pseudo classes 
+    CSS pseudo elements
+    Assignment-2(Float properties)
+
+-------------------------------------------------------------------------------------------------------------------
+Day 15 class(21-5-2024):
+
+    Debugging tool network tab.
+    image spriting
+    resource path: absolute and relative.
+    tables tags. 
+    structure of table tag.
+    what is the difference using table tags and div to create a table.
+    Assignment-3(image spriting)
+
+---------------------------------------------------------------------------------------------------------
+Day 16 Class(22-05-2024):
+
+    order list(ol).
+    unorder list(ul).
+    what is the difference using ol/ul and not using them ol/ul in before div tags.
+    what do you mean by overflow property.
+    how to get container in middle of the webpage using margin.
+    display property:
+    display: none,inline,block,block-inline.
+    Visibility.
+    Assignment-4(Student Progress Card Details). use table tag.
+    Assignment-5(Student details). 
+
+----------------------------------------------------------------------------------------------------------
+Day 17 Class(23-5-2024):
+
+    Position with Dimentions.
+    Position Absolute.
+    Position Relative.
+    Position Static.
+
+----------------------------------------------------------------------------------------------------------
+Day 18 Class(24-5-2024):
+
+    Position Fixed.
+    Position Sticky.
+    CSS Opacity Property: z-index css.
+    Html Input Elements:
+    Input type : text,password,radio,number,checkbox,button. (Value,Name,min,max,checked,disabled). 
+    Lable tag.
+    Select tag.
+    Textarea.
+    Option tag.
+    Assignment-6. Give review in Google.
+    Assignment-7. Block Game. 
+
+-----------------------------------------------------------------------------------------------------------
+Day 19 Class(27-5-2024):
+
+    Form Tag.
+    Action Attribute.(url)
+    Method.(Get,Post).
+    Submit Button.
+    How Values can be read.
+
+------------------------------------------------------------------------------------------------------------
+Day 20 Class(28-5-2024):
+
+    What is JavaScipt.
+    predefined Method-alert();, Console.log();
+    Script Tag.
+    Varible/Operations.
+    Assignment-8. Employee Details.
+
+---------------------------------------------------------------------------------------------------------------
+Day 21 Class(30-5-2024):
+
+    Employee Details Assignment Discuss.
+    Type of Method.
+    Data Types Supported in JS.
+    Type Casting.
+    Dynamic TypeCasting. 
+    Variable Hoisting.
+
+-------------------------------------------------------------------------------------------------------------
+Day 22 Class(31-5-2024):
+
+    Prompt Method prompt().
+    Control Structures:
+    Types of Control Structure.
+    Conditional Control Structure:
+    if ,if else,nested if,nested if else.
+    = ,==,=== difference.
+    Debugging Tool : Sources tab and how to keep break point and  watch the output.
+    Assignment-9: 
+    (Employee Details using Condition CS and prompt calculate total salary and tax to be paid
+    by males and females). 
+
+--------------------------------------------------------------------------------------------------------------
+Day 23 Class(1-6-2024):
+
+    Reviewed one Assignment and told mistakes.
+    Explained Assignment-9.
+    Cleared few doubts and topics.
+
+    trim() method.
+    toLowerCase() method.
+    Looping Control Structure: For loop.
+    Difference ways of using for loop.
+    Given few Instant qs on for loop to do in class. 
+
+    Assignment-10: 
+    ---------------
+     1) WAP to display Sum Of Even Numbers from 1 to 100.
+     2) WAP to Sum of Odd numbers between 200 to 99.
+     3) WAP to check given number is Prime Number or Not.
+
+-------------------------------------------------------------------------------------------------------------
+Day 24 Class(3-6-2024):
+
+    Explained Assignment-10 3 QS.
+    Break and continue keywords and there use.
+    Given few Instant qs using loops and condition to do in class.
+
+    Assignment-11 QS:
+    ------------------
+     1) WAP to find Sum of all the Prime Numbers between 1 to 100.
+     2) WAP to check whether Given Number is Palindrome or Not.
+        Eg) 101, 222, 11.
+     3) WAP to display all the the Palindrome numbers between 1 to 1000.
+     4) WAP to check whether given number is amstrong. 
+        Eg) n=153--> 1^3 + 5^3 + 3^3 = 153, n=12 --> 1^2+ 2^2 = 12.   
+     5) WAP to list out all the amstrong numbers between 1 to 1000.
+     6) WAP to Find the reverse of a given number.
+        Eg) 461 --> 164, 23 --> 32.
+     7) WAP to Find the reverse of all the values between 1000 to 201. 
+
+----------------------------------------------------------------------------------------------------------
+Day 25 Class(4-6-2024):
+
+    Explained Assignment-11 Doubt QS.
+    While loop.
+    Do while loop.
+    Switch Case.
+    what are the different while using Switch and if.
+    ExponentionOperater. --> **  
+    
+    Asked to complete other QS in Assignment-11.
+
+-----------------------------------------------------------------------------------------------------------
+Day 26 Class(5-6-2024):
+
+    Explained Assignment-11 few Qs.
+    Introduction to Functions.
+    Student details example using functions.
+    let and const Keywords.
+    what is the difference using var and let. 
+    Scope of a variable:
+     Local and Global Scopes. 
+    MODULE & BLOCK. 
+
+    Assignment-12 Employee Details using functions.
+
+-----------------------------------------------------------------------------------------------------------
+Day 27 Class(6-6-2024):
+
+    Explained Assignment-12 Answer.
+    Different types of functions.(3 types)
+    Disadvantages with using global data.
+    Function Overloding --> we cant do this in JavaScipt.
+    Accessing local data outside of function (3 Types.).
+        1) By passing parameters into function.
+        2) By returing Values from functions.
+    Return Keyword.
+    Calling function and Called function.
+
+    Assignment-13. Employee Details using arrow function.
+
+-----------------------------------------------------------------------------------------------------------
+Day 28 Class(7-6-2024):
+
+    Explained Employee details using Arrow Function Assignment-13.
+
+    Accessing local data outside of function.
+     3) Both parameters and returing values.
+
+    Arrays.
+    Static Array and Dynamic Array syntax.
+    How to declare Array and use.
+    How arrays are used single time instead of using same variable many times. 
+    Types of DataStructures concepts workes in JavaScipt are --> Arrays, Queue, Stack, Map, Set, Json.
+    Student Example using Functions with arrays.
+    predefined Methods and Properties on the Arrays:
+    push(), unshift(), pop(), shift(), splice(), join(), includes(), concat().
+
+    Assignment-14.--> Employee Details using parameters and return type in arrow function.
+    Assignment-15 Qs:
+    -----------------
+        1)  WAP to find the sum of all the odd numbers with in Array.
+        2)  WAP to list out all the prime Numbers with in given Array.
+        3)  WAP to find out largest number with in given Array. 
+        4)  WAP to find out largest and smallest values with in the given Array.
+        5)  WAP to find out 2nd largest number from the given Array.
+        6)  WAP to sort the values inside an Array to Ascending order.  
+        7)  WAP to sort the values inside an Array to Descending order.  
+        8)  WAP to find all the amstrong numbers from the given Array.
+        9)  WAP to display all the Palindrome numbers from the given Array.
+        10) WAP to display the reverse of every value with in the given array.
+        11) WAP to Compare 2 Arrays and tell Equal or not.
+        12) WAP to find out length of an array without using predefined propertie array.length .
+
+--------------------------------------------------------------------------------------------------------
+Day 29 Class(8-6-2024):
+
+    Explained few Assignment 15 Qs.
+
+    Strings.
+    Memory allocation of a string.
+    Predefined Methods and Properties on the String:
+    --> .length(),.toLowerCase(), .toUpperCase(),trim(),CharAt(),CharcodeAt(),includes(),indexOf(),
+         Escape opreator --> \ , replace(), substring(), substr(), , slice(), split(),concat().
+    Date Object:
+        predefined methods:
+            .getDate()
+            .getMinuts()
+            .getDay()
+            .getMonth()
+
+    Assignment-16 Qs: 
+    ------------------
+      Sample date format:
+
+        1. 8/05/2024
+        2. 05/8/2024
+        3. 08-05-2024
+        4. 8th June 2024
+        5. Sat 8th June, 2024
+        6. June 8th 2024
+        7. 8th June, 09h:23min
+        8. 8th June, 09h:23min:3sec
+
+-------------------------------------------------------------------------------------------------------
+Day 30 Class(9-6-2024):
+
+    Revision.
+
+-------------------------------------------------------------------------------------------------------
+Day 31 Class(10-6-2024):
+    
+    JSON Objects.
+    How JSON is differnet from Arrays.
+    What are Disadvantages using Arrays how can we overcome using JSON Objects.
+    Student Details Using JSON.
+    JSON using Arrays.
+    JSON using Arrow Functions.
+
+    Assignment-17 QS: Employee Details Using JSON and Arrow Functions.
+
+-------------------------------------------------------------------------------------------------------
+Day 32 Class(11-6-2024):
+
+    this Keyword/Operator.
+    Student Details with Object.
+    Student Details with Object and method.(Callback and anonymous function)
+    setTimeout.
+    setInterval.
+    clearInterval.
+
+    Assignment-18 QS: Employee Details Using Object(this) and functions. 
+
+-------------------------------------------------------------------------------------------------------
+Day 33 Class(12-6-2024):
+
+    Introduction to DHTML.
+    Predefined Objects : window , document.
+    document Operations/dom Operations:
+         document.querySelector()
+         document.create()
+         document.getElementById()
+         document.getElementByClassname()
+         document.getelementByTagname()
+         .setAttribute()
+         .append()
+         .innerHTML()
+         .innerText()
+    Difference between .innerHTML() and .innerText().
+    Created Static productDetails.
+    How to create Dynamic productDetails using DHTML.
+
+    Should Practice above Dynamic productDetails using DHTML.
+
+-------------------------------------------------------------------------------------------------------
+Day 34 Class(13-6-2024):
+
+    How to use Seperate CSS,JS and HTML.
+    How to give Star Rating. 
+    How to give Star Rating using DHTML Dynamic productDetails.
+
+    Should Practice above Star Rating using Dynamic productDetails.
+
+-------------------------------------------------------------------------------------------------------
+Day 35 Class(14-6-2024):
+
+    what is a event.
+    what are Event Handlers in JavaScipt. why they are used and how to use.
+    Different types of Event Handling.
+    Static Event Handling.
+    How to read data from input given by user and show the details on web.
+    Dynamic Event handling (ProgressCardGeneration).
+
+    Assignments:
+   ---------------
+        Assignment 19 Qs: Coin Picker.
+        Assignment 20 QS: using Dynamic Event Handling create a Employee salary slip.
+
+-------------------------------------------------------------------------------------------------------
+Day 36 Class (17-6-2024):
+
+    Difference between Array and Json storing in memory.
+    How to get the data in array if we don't know values. -> (for loop).
+    for in Looping structure.
+    How to get the data in Json if we don't know keys and values. 
+         userDetails[temp] -> userDetails['name'] -> Raj.
+
+    Given a example of Dynamic Country as doubt was asked in assignment.
+
+    Assignments:
+   --------------
+        Assignment 21 QS: 
+            User Details.-> (register page and using table show data given by the user in register 
+                               page and show action (Delete and Edit)).
+
+        Assignment 22 QS:   
+            User registration page. -> (Dynamic Country Details dropdown where State dropdown will be
+             loaded based on Selected Country and District dropdown will be loaded based on 
+             the Selected State.)   
+  
+-------------------------------------------------------------------------------------------------------
+Day 37 Class (18-6-2024):
+
+    Cleared some doubts.
+    Explained about span creation.
+    Explained dynamic event handling i.e .addeventlistener() using click focus, change, mouseover.
+
+-------------------------------------------------------------------------------------------------------
+Day 38 Class (19-6-2024):
+
+    Random value -> math.random(), math.floor(), math.round(). 
+    Otp generator 
+    Generating random char
+    Captcha generator.
+    Assignment 23: on capthcha. 
+    Assignment 24: on tambola adding button.
+
+--------------------------------------------------------------------------------------------------------
+Day 39 Class (21-6-2024):
+
+    Oops
+    Object and class.
+
+----------------------------------------------------------------------------------------------------------
+Day 40 Class (22-6-2024):
+
+    revision.
+    worked on assignment 21.
+    Assignment 25: What are the other ways of comparing array using Json objects.
+
+---------------------------------------------------------------------------------------------------------
+Day 41 Class (24-6-2024):
+
+    OOPS concepts:
+        constructor().
+        how to use multiple classes.
+        inheritance.
+        types of inheritance.
+        Example for inheritance using Dynamic Progress Card Generation.
+        Extends keyword.
+        super() keyword.
+
+     Data Validation.
+
+--------------------------------------------------------------------------------------------------------
+Day 42 Class(25-6-2024):
+
+    What is data valiadation.
+    Where we use data validation.
+    Example of login page using data Validation.
+
+    Assignment 26 : Complete the remaining data validation in login page with the help of example used 
+                    today.
+
+-------------------------------------------------------------------------------------------------------
+Day 43 Class(26-6-2024):
+    
+    Introduction to JQuery.
+    Why we use it.
+    Why it is popular.
+    What are the drawbacks using it now.
+    One example in jquery.
+    what is templating in jquery how it is used.
+
+--------------------------------------------------------------------------------------------------------
+Day 44 Class(27-6-2024):
+
+    One more example in templating using Mustache js.
+    Exception handling.
+    what is an error.
+    what is runtime and compilation errors.
+    Example on difference between run time Error and Compilition Error. 
+    How Do we handle run time Exception handling.
+
+--------------------------------------------------------------------------------------------------------
+Day 45 Class(28-6-2024):
+
+    Types of Exception handling.
+    Explained keywords.
+    try 
+    catch 
+    finally.
+    Example on string interpolization.
+    Example using try catch finally and also used timeout keyword also.
+
+--------------------------------------------------------------------------------------------------------
+Day 46 Class(29-6-2024):
+
+    Explained few doubts.
+    Explained keywords throw throws in Exception handling.
+    Example using throw throws.
+    Example using if else for validating a form and how it is different from using Exception handling 
+      How do we handle runtime Exception using try catch throw throws with same example.
+    closures Introduction.
+    Syntax of closures using function and arrow function Both. 
+    
+    
+
+
+=======================================================================================================
+Till now we covered 44 Tech Classes and 2 Demo..... .....Total ==> 46 Classes and 26-Assignments.

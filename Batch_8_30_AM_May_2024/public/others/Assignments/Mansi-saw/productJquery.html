@@ -1,0 +1,45 @@
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title></title>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.1/mustache.min.js"></script>
+            <script src="jquery.js"></script>
+            <script src="productJquery.js"></script>
+                
+            <script></script>
+            <style>
+                ul{
+                    border: 1px solid;                   
+                    list-style-type:none;
+                    width: 300px;
+                    background-color: blanchedalmond;
+                    margin: auto;
+                   
+                }
+                li{
+                    padding: 10px;
+                    font-style:initial;
+                    color: darkblue;
+                    font-weight: bold;
+                }
+            </style>
+
+      </head>
+      <body>
+            <div id="receipt" ></div>
+              <ul id="details">
+                <li> Name :- {{name}}</li>
+                <li>Age:-{{age}} </li>
+                <li> Gender:-{{gender}}</li>
+                <li> Qualification:-{{qualification}} </li>
+                <li> course :-{{course}}</li>
+                <li> Paid amount:-{{paid}} </li>
+                <li> Total Amount:-{{total}}</li>
+              </ul>          
+            
+
+
+      </body>
+      </html>

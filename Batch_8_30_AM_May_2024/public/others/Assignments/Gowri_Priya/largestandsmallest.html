@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest and smallest</title>
+</head>
+
+<body>
+    <h1 style="text-align:center">Find out the Largest and Smallest Numbers within an Array</h1>
+    <script>
+        function FindLargestsmallestNumber(arr) {
+            if (arr.length === 0) {
+                return null;
+            }
+            let Largest = arr[0];
+            let smallest = arr[0];
+            for (i = 1; i < arr.length; i++) {
+                if (arr[i] > Largest) {
+                    Largest = arr[i];
+                }
+                if (arr[i] < smallest) {
+                    smallest = arr[i];
+                }
+            }
+            return { Largest, smallest };
+
+        }
+        let arr = [23, 45, 12, 34, 87, 99, 43, 65, 98];
+        let result = FindLargestsmallestNumber(arr)
+        console.log("Largest Number in an Array is:"+ " " + result.Largest);
+        console.log("smallest Number in an Array is:"+ " " + result.smallest);
+    </script>
+
+</body>
+
+</html>

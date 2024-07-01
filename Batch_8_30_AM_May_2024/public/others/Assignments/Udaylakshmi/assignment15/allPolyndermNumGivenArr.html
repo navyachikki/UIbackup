@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Polynderm Numbers</title>
+       
+    </head>
+    <body>
+        <script>
+            var listArr = [2, 3, 4, 66,151, 370, 12, 33, 34, 64,21];
+            for(var i = 0; i < listArr.length; i++){
+            var n=listArr[i];
+            n=n.toString();
+           var reverseNum= n.split('').reverse().join('')
+           if(n == reverseNum){
+            console.log('Its a Polynderm ' + n)
+           }
+        }
+        </script>
+    </body>
+</html>

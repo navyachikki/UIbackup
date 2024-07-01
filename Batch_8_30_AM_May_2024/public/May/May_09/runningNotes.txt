@@ -1,0 +1,50 @@
+text-align: left/right/center 
+
+text-decoration: underline;
+
+<u>adfasdf</u>
+
+
+
+
+    Syntax:
+
+        <tagname style="cssprop1:value;cssprop2:value;">
+            .....
+            ....
+        </tagname>
+    Limitation of using Inline css:
+
+
+CSS Classes: 
+
+    sYNTAX:
+
+        .classname {
+            ... 
+            ....
+            ... props
+        }
+
+        --------
+
+    
+    newsSubHeading
+    news_sub_heading
+
+    news-sub-heading
+
+    .class1 {
+
+    }
+    .class2 {
+
+    }
+
+    <tagname class="class1 class2">...</tagname>
+
+-----------------------------
+
+Adding css classes through ID:
+
+    

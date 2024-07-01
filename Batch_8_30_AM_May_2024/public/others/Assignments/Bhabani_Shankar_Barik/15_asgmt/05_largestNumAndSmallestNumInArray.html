@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Largest Number and smallest number</title>
+  </head>
+  <body>
+    <script>
+      /* wap to find out the largest and smallest value in a given array. */
+      let data = [6, 55, 68, 22, 44, 23 ,89, 22, 55, 92];
+            console.log(data);
+            let largestValue = smallestValue = data[0];
+
+
+            for (let i = 1; i < data.length; i++) {
+                if (largestValue < data[i]) {
+                    largestValue = data[i];
+                }
+
+                if (smallestValue > data[i]) {
+                    smallestValue = data[i];
+                }
+            }
+            console.log("Largest vlaue is " + largestValue);
+            console.log("Smallest vlaue is " + smallestValue);
+    </script>
+  </body>
+</html>

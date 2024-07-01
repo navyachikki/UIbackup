@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var empName=prompt("Enter The Name");
+        var empAge=parseInt(prompt("Enter the age"));
+        var gender=prompt("Enter gender:");
+        var department=prompt("Department Name:");
+        var basicsal=parseInt(prompt("Basic sal"))
+        var pf=(14*basicsal)/100;
+        var hra=(24*basicsal)/100;
+        var totalsal=basicsal+pf+hra;
+        console.log("Employee Name"+empName);
+        console.log("Employee Age"+empAge);
+        console.log("Employee Gender"+gender);
+        console.log("Department Name"+department);
+        console.log("Employee Basicsal"+basicsal);
+        console.log("Employee Sal"+totalsal);
+        var taxToPay;
+        if (gender==="female"){
+            if (totalsal>=200000){
+                taxToPay=(totalsal*10)/100;
+                console.log("Tax amount is"+taxToPay);
+            }
+            else if (totalsal>=150000){
+                taxToPay=(totalsal*5)/100;
+                console.log("Tax amount is"+taxToPay);
+                        }
+            else{
+                console.log("No tax needed to pay");
+            }
+
+        }
+        else if(gender==="male"){
+            if (totalsal>=200000){
+                taxToPay=(totalsal*15)/100;
+                console.log("Tax amount is"+taxToPay);
+            }
+            else if(totalsal>=150000){
+                taxToPay=(totalsal*10)/100;
+                console.log("Tax amount is"+taxToPay);
+            }
+            else if(totalsal>=100000){
+                taxToPay=(totalsal*5)/100;
+                console.log("Tax amount is"+taxToPay);
+            }
+            else{
+                console.log("No tax needed to pay");
+            }
+        }
+        
+    </script>
+</body>
+</html>

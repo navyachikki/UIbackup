@@ -1,0 +1,63 @@
+JSON object
+
+Javascript object notation
+
+    stores data in the form of key and value pairs
+
+        var data = 20;
+
+        var data = []; || var data = new Array();
+
+        var data = {}; || var data = new Object(); -> data is a object/JSON obj
+
+        j
+
+        var data = {
+
+            key : value,
+            key2 : value2,
+            key3 : value3, 
+            ... 
+            .... 
+            .....
+        }
+
+        var userData = {
+            "userName" : "Krish",
+            "age" : 20,
+            "isFeepaid": true,
+            "marks": [34, 55, 55]
+        }
+
+        1. All the keys within the json object is only only string type 
+        2. value of a corresponding key, can be of any datatype, which been supported in js 
+
+------------------------
+
+create a json object for bookdetails
+
+bookname, 
+publisher, authors(mutliple), price, disocount, bookCategory 
+
+
+
+var bookDetails = {
+    "name": 'My Dreams',
+    "publisher": 'Abc Publisher'
+    authors: ["Krish", "RAJ"],
+    price: 3000,
+    discount: '10%',
+    bookCategory: 'Comic'
+}
+\
+0----------------
+
+var data = {
+    name: ''
+};
+
+
+data.name = "prasad"
+data.age = 80
+
+data.loc = 'Hyderabad'

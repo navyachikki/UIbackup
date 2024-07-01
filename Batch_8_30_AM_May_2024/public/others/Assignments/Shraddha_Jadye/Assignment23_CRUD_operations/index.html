@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CRUD operations</title>
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <div class="leftBlock">
+            <ul>
+                <li class="title">
+                    Add new student details
+                </li>
+                <li>
+                    <input type="text" placeholder="Student Name" id="sname">
+                </li>
+                <li>
+                    <input type="text" placeholder="Student age" id="sage">
+                </li>
+                <li>
+                   Gender:
+                   <input type="radio" name="gender" class="gender" value="Male" id="myRadio" checked> Male
+                   <input type="radio" name="gender" class="gender" value="Female" id="myRadio2"> Female
+                </li>
+                <li>
+                    <input type="button" value="Save Details" onclick="saveDetails()">
+                </li>
+            </ul>
+        </div>
+        <div class="rightBlock">
+            <table border="1px solid orange" >
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

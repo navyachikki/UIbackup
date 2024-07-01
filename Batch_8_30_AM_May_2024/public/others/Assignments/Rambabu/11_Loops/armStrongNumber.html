@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var num = prompt('Enter Number');
+        // var numStr = num.toString();
+        // var sum = 0;
+
+        // for (var i = 0; i < numStr.length; i++) {
+        //     sum += Math.pow(parseInt(numStr[i]), numStr.length);
+        // }
+
+        // if (sum == parseInt(num)) { // Use == for comparison and parse num to an integer
+        //     console.log(num + ' is an Armstrong Number');
+        // } else {
+        //     console.log(num + ' is not an Armstrong Number');
+        // }
+
+        var n = prompt('Enter Number');
+        n = n.trim();
+        var len = n.length;
+        n = parseInt(n);
+        var temp = n;
+        var armstrong = 0;
+        while (n > 0) {
+            var rem = n % 10;
+            armstrong += rem ** len;
+            n = n / 10;
+            n = parseInt(n);
+        }
+        if (temp == armstrong) {
+            console.log('Its Armstrong NNumber: ' + temp)
+        } else {
+            console.log('Its Not Armstrong NNumber: ' + temp)
+        }
+
+    </script>
+</body>
+
+</html>

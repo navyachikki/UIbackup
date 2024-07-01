@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee_salary_Calculation</title>
+    <link rel="icon" type="image/jpg" href="images/favicon.jpg">
+</head>
+
+<body style="background-color:aqua">
+    <!-- <h1 style="text-align: center;">Just Click on Inspect and Go to Console</h1> -->
+    <script>
+        alert("Just Click on Inspect and Go to Console then See the Output")
+        if("Female"){
+            var EmployeeName = "Gowri";
+            var Department = "ECE";
+            var Gender = "Female";
+            var Basic_Salary = 200000;
+            var pf = (12/100)*Basic_Salary;
+            var hra = (24/100)*Basic_Salary;
+            var tax = (10/100)*Basic_Salary;
+            var Total_salary = pf + hra - tax;
+            var Total = Total_salary;
+            var otherwise = 0;
+
+            console.log(EmployeeName);
+            console.log(Department);
+            console.log(Gender);
+            console.log("Basic_Salary =" + Basic_Salary);
+            console.log(Total_salary);
+            //console.log(otherwise);
+
+        }
+        if("Male"){
+            var EmployeeName = "Satya";
+            var Department = "Mech";
+            var Gender = "Male";
+            var Basic_Salary = 60000;
+            var pf = (12/100)*Basic_Salary;
+            var hra = (24/100)*Basic_Salary;
+            var tax = (15/100)*Basic_Salary;
+            var Total_salary = pf + hra - tax;
+            var Total = Total_salary;
+            var otherwise = 0;
+
+            console.log(EmployeeName);
+            console.log(Department);
+            console.log(Gender);
+            console.log("Basic_Salary =" + Basic_Salary);
+            console.log(Total_salary);
+            console.log(otherwise);
+        }
+    </script>  
+</body>
+</html> 

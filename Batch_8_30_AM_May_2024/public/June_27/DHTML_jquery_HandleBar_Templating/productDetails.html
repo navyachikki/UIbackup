@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Details</title>
+        <script src="../../handlebars.js"></script>
+        <script src="../../jquery.js"></script>
+        <link rel="stylesheet" href="app.css">
+        <script src="../RatingStarLib/rating.js"></script>
+        <link rel="stylesheet" href="../RatingStarLib/rating.css">
+        <script src="productLoading.js"></script>
+    </head>
+    <body>
+        <div class="header">Product Details</div>
+        <div class="mainBlock">
+            <input type="button" value="Load Details" onclick="onLoadPage()">
+             <ul class="mainProductDetails">
+                
+             </ul>
+        </div>
+        <div class="footer">@copy rights 2024</div>
+        
+
+        <div id="singleProductTemplate" style="display: none;">
+            <li>
+                <ul class="pdetails">
+                    <li>Product Name: {{name}}<span></span></li>
+                    <li>Price: {{price}} </li>
+                    <li>Manufacturer: {{manu}} </li>
+                    <li id="product_{{index}}">
+                    </li>
+                    <li>
+                        <img src="{{image}}">
+                    </li>
+                </ul>
+            </li>
+        </div>
+    </body>
+</html>

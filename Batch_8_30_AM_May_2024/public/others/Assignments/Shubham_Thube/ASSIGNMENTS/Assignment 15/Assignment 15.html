@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Formats Popup</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .popup {
+        display: none;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        text-align: center;
+        z-index: 1000;
+      }
+      .popup h2 {
+        margin-top: 0;
+      }
+      .popup ul {
+        list-style: none;
+        padding: 0;
+      }
+      .popup ul li {
+        margin: 10px auto;
+        padding: 10px auto;
+        text-align: left;
+
+      }
+      .popup-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 999;
+      }
+      .show {
+        display: block;
+      }
+      .btn {
+        display: inline-block;
+        margin: 20px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn" onclick="showPopup()">Date Formats</button>
+
+    <div class="popup-overlay" id="popup-overlay"></div>
+
+    <div class="popup" id="popup">
+      <h2>Date Formats</h2>
+      <ul id="date-list">
+        <!-- Date formats will be populated here -->
+      </ul>
+      <button class="btn" onclick="hidePopup()">Close</button>
+    </div>
+
+    <script>
+      function showPopup() {
+        // Generate the date formats
+        var cdate = new Date();
+        var months = [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
+        ];
+        var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+        var myCustomDate1 =
+          ("0" + cdate.getDate()).slice(-2) +
+          "/" +
+          ("0" + (cdate.getMonth() + 1)).slice(-2) +
+          "/" +
+          cdate.getFullYear();
+        var myCustomDate2 =
+          ("0" + (cdate.getMonth() + 1)).slice(-2) +
+          "/" +
+          ("0" + cdate.getDate()).slice(-2) +
+          "/" +
+          cdate.getFullYear();
+        var myCustomDate3 =
+          ("0" + cdate.getDate()).slice(-2) +
+          "-" +
+          ("0" + (cdate.getMonth() + 1)).slice(-2) +
+          "-" +
+          cdate.getFullYear();
+        var monthIndex = cdate.getMonth();
+        var customDate4 =
+          cdate.getDate() +
+          "th " +
+          months[monthIndex] +
+          " " +
+          cdate.getFullYear();
+        var dayIndex = cdate.getDay();
+        var customDate5 =
+          days[dayIndex] +
+          " " +
+          cdate.getDate() +
+          "th " +
+          months[monthIndex] +
+          ", " +
+          cdate.getFullYear();
+        var myCustomDate6 =
+          months[monthIndex] +
+          " " +
+          cdate.getDate() +
+          "th " +
+          cdate.getFullYear();
+        var myCustomDate7 =
+          cdate.getDate() +
+          "th " +
+          months[monthIndex] +
+          ", " +
+          cdate.getHours() +
+          "h:" +
+          cdate.getMinutes() +
+          "min";
+        var myCustomDate8 =
+          cdate.getDate() +
+          "th " +
+          months[monthIndex] +
+          ", " +
+          cdate.getHours() +
+          "h:" +
+          cdate.getMinutes() +
+          "min:" +
+          cdate.getSeconds() +
+          "sec";
+
+        // Populate the popup with the date formats
+        var dateList = document.getElementById("date-list");
+        dateList.innerHTML = `
+          <li> 1) ${myCustomDate1}</li>
+          <li> 2) ${myCustomDate2}</li>
+          <li> 3) ${myCustomDate3}</li>
+          <li> 4) ${customDate4}</li>
+          <li> 5) ${customDate5}</li>
+          <li> 6) ${myCustomDate6}</li>
+          <li> 7) ${myCustomDate7}</li>
+          <li> 8) ${myCustomDate8}</li>
+        `;
+
+        document.getElementById("popup").classList.add("show");
+        document.getElementById("popup-overlay").classList.add("show");
+      }
+
+      function hidePopup() {
+        document.getElementById("popup").classList.remove("show");
+        document.getElementById("popup-overlay").classList.remove("show");
+      }
+    </script>
+  </body>
+</html>

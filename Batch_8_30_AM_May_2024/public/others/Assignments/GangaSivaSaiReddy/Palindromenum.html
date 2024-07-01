@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>PALINDROME NUMBER</h3>
+    <script>
+
+        var number = parseInt(prompt("Enter a number: "));
+        var org = number;
+        var revnumber = 0;
+        var remainder = 0;
+        while(number > 0){
+            remainder = number % 10;
+            number = number / 10;
+            number = parseInt(number);
+            revnumber = (revnumber*10) + remainder;
+        }
+        console.log(org);
+        console.log(revnumber);
+        if (org == revnumber) {
+            console.log("It is a palindrome number.");
+        } 
+        else{
+            console.log("It is not a palindrome number.");
+        }
+    </script>
+</body>
+</html>

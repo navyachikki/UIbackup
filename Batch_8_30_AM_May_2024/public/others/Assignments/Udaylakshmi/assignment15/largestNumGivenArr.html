@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Largest Number</title>
+       
+    </head>
+    <body>
+        <script>
+            var listArr = [1,2, 3, 4, 65, 12, 13, 34, 21];
+            var larNum = listArr[0];
+            for (var i = 0; i <= listArr.length; i++) {
+               if(larNum < listArr[i]){
+                larNum = listArr[i];
+               }
+            }
+            console.log(larNum,'largNum')
+        </script>
+    </body>
+</html>

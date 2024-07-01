@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Check Reverse of a Number</title>
+    </head>
+    <body>
+        <script>
+            function reverseRange(num){
+                var numStr=num.toString();
+                // console.log(typeof(numStr));
+                var revNum='';
+                for(let i=numStr.length-1;i>=0;i--){
+                    revNum +=numStr[i];
+                }
+            }
+            for (i=1000 ; i <= 201; i--) {
+                console.log("Entering  ")
+                let reversed= reverseRange(i);
+                console.log("originial: "+i+"Reversed: "+reversed);
+            }
+        </script>
+        <script>
+            function reverseRange(num) {
+                var numStr = num.toString();
+                var revNum = '';
+
+                for (let i = numStr.length - 1; i >= 0; i--) {
+                    revNum += numStr[i];
+                }
+                return revNum;
+                }
+            for (let i = 1000; i >= 201; i--) {
+                let reversed = reverseRange(i);
+                console.log("Original: " + i + " -> Reversed: " + reversed);
+            }
+        </script>
+    </body>
+</html>

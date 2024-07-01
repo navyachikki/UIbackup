@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>  READ EMPLOY DETAILS ....DYNAMICALLY</h2>
+    <script>
+        var emploreName, empid, empdep, basicsal, pf,hra, totalsal;
+
+        function reademployedetails(){
+            employeName = prompt("enter employe name") ;
+            empid = prompt("enter emp id");
+            empid = parseInt(empid);
+            empdep = prompt("enter emp department");
+            basicsal = prompt("enter basic salery");
+            basicsal = parseInt(basicsal);
+           
+            getPfAndHra();
+        }
+
+        function getPfAndHra(){
+            pf = (basicsal*10)/ 100;
+            hra = (basicsal * 15)/ 100;
+            totalsal = basicsal + pf + hra;
+
+            displayemployedetails();
+        }
+
+        function displayemployedetails(){
+            console.log("employe details....");
+            console.log("employe name is = "+employeName);
+            console.log("employe id is = " +empid);
+            console.log("employe department is = " +empdep);
+            console.log("employe basic salery is = " +basicsal);
+            console.log("employe pf  is = " +pf);
+            console.log("employe hra is = " +hra);
+            console.log("employe total salery is = " +totalsal);
+        }
+        
+        reademployedetails();
+
+    </script>
+</body>
+</html>

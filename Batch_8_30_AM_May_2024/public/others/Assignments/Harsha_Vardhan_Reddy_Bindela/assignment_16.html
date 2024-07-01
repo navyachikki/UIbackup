@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Formats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            background-color: #e2dada;
+        }
+
+        .output {
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            background-color: #62b776;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .output b {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="output">
+        <b>The date is :</b>
+        <script>
+            var dateTimeformat = parseInt(
+                prompt(
+                    "Enter the Date and Time format to like to use \n 1. dd/mm/year \n 2. mm/dd/yyyy \n 3. dd-mm-year\n 4. dd mm yyyy \n 5. day dd mm, yyyy \n 6. mm dd yyyy \n 7. dd mm, hh:mm \n 8. dd mm, hh:mm:ss"
+                )
+            );
+            var months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July"];
+            var days = ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"];
+
+            var cdate = new Date();
+            var output = document.querySelector('.output');
+            var dateOutput = "";
+
+            switch (dateTimeformat) {
+                case 1:
+                    // 1. dd/mm/year
+                    dateOutput = cdate.getDate() +
+                        "/" +
+                        months[cdate.getMonth()] +
+                        "/" +
+                        cdate.getFullYear();
+                    break;
+                case 2:
+                    // 2. mm/dd/yyyy
+                    dateOutput = months[cdate.getMonth()] +
+                        "/" +
+                        cdate.getDate() +
+                        "/" +
+                        cdate.getFullYear();
+                    break;
+                case 3:
+                    // 3. dd-mm-year
+                    dateOutput = cdate.getDate() +
+                        "-" +
+                        months[cdate.getMonth()] +
+                        "-" +
+                        cdate.getFullYear();
+                    break;
+                case 4:
+                    // 4. dd mm yyyy
+                    dateOutput = cdate.getDate() +
+                        "th " +
+                        months[cdate.getMonth()] +
+                        " " +
+                        cdate.getFullYear();
+                    break;
+                case 5:
+                    // "5. Sat 8th June, 2024"
+                    dateOutput = days[cdate.getDay()] +
+                        " " +
+                        cdate.getDate() +
+                        "th " +
+                        months[cdate.getMonth()] +
+                        " " +
+                        cdate.getFullYear();
+                    break;
+                case 6:
+                    // "6. June 8th 2024"
+                    dateOutput = months[cdate.getMonth()] +
+                        " " +
+                        cdate.getDate() +
+                        "th " +
+                        cdate.getFullYear();
+                    break;
+                case 7:
+                    // "7. 8th June, 09h:23min"
+                    dateOutput = cdate.getDate() +
+                        "th " +
+                        months[cdate.getMonth()] +
+                        " " +
+                        cdate.getHours() +
+                        "hh: " +
+                        cdate.getMinutes() +
+                        "mm ";
+                    break;
+
+                case 8:
+                    // "8. 8th June, 09h:23min:3sec
+                    dateOutput = cdate.getDate() +
+                        "th " +
+                        months[cdate.getMonth()] +
+                        " " +
+                        cdate.getHours() +
+                        "hh:  " +
+                        cdate.getMinutes() +
+                        "mm : " +
+                        cdate.getSeconds() +
+                        "ss ";
+                    break;
+
+                default:
+                    dateOutput = days[cdate.getDay()] +
+                        " " +
+                        cdate.getDate() +
+                        "th " +
+                        months[cdate.getMonth()] +
+                        " " +
+                        cdate.getFullYear() +
+                        " " +
+                        cdate.getHours() +
+                        "hh:  " +
+                        cdate.getMinutes() +
+                        "mm : " +
+                        cdate.getSeconds() +
+                        "ss ";
+            }
+
+            output.innerHTML += "<p>" + dateOutput + "</p>";
+        </script>
+    </div>
+</body>
+</html>

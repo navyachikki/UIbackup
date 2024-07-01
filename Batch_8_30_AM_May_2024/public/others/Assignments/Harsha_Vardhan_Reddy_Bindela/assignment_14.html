@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-14</title>
+  </head>
+  <body>
+    <script>
+      const numArr = [1, 2, 3, 4, 5, 7, 9];
+      console.log("----------------------------------------------");
+      var sumOddNum = (numArr) => {
+        let sum = 0;
+        for (let i = 0; i < numArr.length; i++) {
+          if (numArr[i] % 2 !== 0) {
+            sum += numArr[i];
+          }
+        }
+        return sum;
+      };
+
+      const oddSum = sumOddNum(numArr);
+      console.log("Sum of odd numbers:", oddSum);
+      console.log("----------------------------------------------");
+      var sumEvenNum = (numArr) => {
+        let sum = 0;
+        for (let i = 0; i < numArr.length; i++) {
+          if (numArr[i] % 2 == 0) {
+            sum += numArr[i];
+          }
+        }
+        return sum;
+      };
+      const evenSum = sumEvenNum(numArr);
+      console.log("Sum of odd numbers:", evenSum);
+      console.log("----------------------------------------------");
+
+      function largest(numArr) {
+        let max = numArr[0];
+        for (let i = 1; i < numArr.length; i++) {
+          if (numArr[i] > max) max = numArr[i];
+        }
+
+        return max;
+      }
+      console.log("Largest in given array is: " + largest(numArr));
+      console.log("----------------------------------------------");
+
+      function checkMinMax(numArr) {
+        let max = numArr[0];
+        let min = numArr[0];
+
+        for (let i = 1; i < numArr.length; i++) {
+          if (numArr[i] < min) {
+            min = numArr[i];
+          }
+          if (numArr[i] > max) {
+            max = numArr[i];
+          }
+        }
+
+        return { largest: max, smallest: min };
+      }
+      let result = checkMinMax(numArr);
+
+      console.log("Largest in given array is: " + result.largest);
+      console.log("Smallest in given array is: " + result.smallest);
+
+      console.log("----------------------------------------------");
+      function ascOrder() {
+        let arr = [5, 2, 8, 7, 1];
+        let temp = 0;
+
+        console.log("Elements of original array: ");
+        for (let i = 0; i < arr.length; i++) {
+          console.log(arr[i] + " ");
+        }
+
+        for (i = 0; i < arr.length; i++) {
+          for (j = i + 1; j < arr.length; j++) {
+            if (arr[i] > arr[j]) {
+              temp = arr[i];
+              arr[i] = arr[j];
+              arr[j] = temp;
+            }
+          }
+        }
+
+        console.log("Elements of array sorted in ascending order: ");
+        for (i = 0; i < arr.length; i++) {
+          console.log(arr[i] + " ");
+        }
+      }
+      ascOrder();
+
+      console.log("----------------------------------------------");
+      function desOrder() {
+        let arr = [5, 2, 8, 7, 1];
+        let temp = 0;
+
+        console.log("Elements of original array: ");
+        for (let i = 0; i < arr.length; i++) {
+          console.log(arr[i] + " ");
+        }
+
+        for (i = 0; i < arr.length; i++) {
+          for (j = i + 1; j < arr.length; j++) {
+            if (arr[i] < arr[j]) {
+              temp = arr[i];
+              arr[i] = arr[j];
+              arr[j] = temp;
+            }
+          }
+        }
+
+        console.log("Elements of array sorted in ascending order: ");
+        for (i = 0; i < arr.length; i++) {
+          console.log(arr[i] + " ");
+        }
+      }
+      desOrder();
+
+      console.log("----------------------------------------------");
+      var armstrongArr = () => {
+        var n = [1, 5, 468, 153];
+        for (let i = 0; i < n.length; i++) {
+          var number = n[i];
+          var numberOfDigits = number.toString().length;
+          var sum = 0;
+          var temp = number;
+
+          while (temp > 0) {
+            var digit = temp % 10;
+            sum += Math.pow(digit, numberOfDigits);
+            temp = Math.floor(temp / 10);
+          }
+
+          if (sum === number) {
+            console.log("It is an Armstrong Number: " + number);
+          }
+        }
+      };
+      armstrongArr();
+
+      console.log("-----------------------------------------------");
+      var palindromeArr = () => {
+        var n = [1, 5, 468, 153];
+
+        for (let i = 0; i < n.length; i++) {
+          var number = n[i];
+          var numberOfDigits = number.toString().length;
+          var reverseNumber = 0;
+          var temp = number;
+          while (temp > 0) {
+            rem = temp % 10;
+            reverseNumber = reverseNumber * 10 + rem;
+            temp = Math.floor(temp / 10);
+          }
+          if (number == reverseNumber) {
+            console.log("It is an Palindrome Number: " + number);
+          }
+        }
+      };
+      palindromeArr();
+      console.log("-----------------------------------------------");
+
+      var revArr = () => {
+        var n = [1, 5, 468, 153];
+        for (let i = 0; i < n.length; i++) {
+          var number = n[i].toString();
+          var revNum = "";
+          for (let i = number.length - 1; i >= 0; i--) {
+            revNum += number[i];
+          }
+          console.log("Original number:", number, "Reversed number:", revNum);
+        }
+      };
+      revArr();
+      console.log("-----------------------------------------------");
+      var compareArr = () => {
+        var arr1 = [1, 3, 5, 7];
+        var arr2 = [1, 5, 7, 9];
+        for (i = 0; i < arr1.length; i++) {
+          if (arr1[i] == arr2[i]) {
+            console.log(arr1[i] + " is equal to " + arr2[i]);
+          } else {
+            console.log(arr1[i] + " is not equal to " + arr2[i]);
+          }
+        }
+      };
+      compareArr();
+      console.log("-----------------------------------------------");
+      var findLength = (name) => {
+        let count = 0;
+        for (let element of name) {
+          count++;
+        }
+        return count;
+      };
+      let name = "Harsha";
+      console.log("Length of the strong: " + findLength(name));
+    </script>
+  </body>
+</html>

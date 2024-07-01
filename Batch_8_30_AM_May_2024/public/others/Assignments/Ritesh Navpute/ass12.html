@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Details</title>
+</head>
+<body>
+  <h3>Employee Details</h3>
+
+  <script>
+    var name, age, gender, department, basicSalary, pf, hra, totalSalary;
+
+    function employeedetails() {
+      name = prompt("Enter your name: ");
+      age = parseInt(prompt("Enter your age: "));
+      gender = prompt("Enter your gender: ");
+      department = prompt("Enter your department: ");
+      basicSalary = parseFloat(prompt("Enter your basic salary: "));
+      pf = basicSalary * 0.12; 
+      hra = basicSalary * 0.24; 
+      totalSalary = pf + hra + basicSalary;
+    }
+
+    function display() {
+      console.log("Name: " + name);
+      console.log("Age: " + age);
+      console.log("Gender: " + gender);
+      console.log("Department: " + department);
+      console.log("Basic Salary: " + basicSalary);
+      console.log("PF: " + pf);
+      console.log("HRA: " + hra);
+      console.log("Total Salary: " + totalSalary);
+    }
+
+    function employeesalarycount() {
+      if (gender === "male") {
+        console.log("Tax Calculation for male: ");
+        if (totalSalary >= 200000) {
+          var tax = totalSalary * 0.15;
+          console.log("Tax is 15%: " + tax);
+        } else if (totalSalary >= 150000) {
+          var tax = totalSalary * 0.1;
+          console.log("Tax is 10%: " + tax);
+        } else if (totalSalary >= 100000) {
+          var tax = totalSalary * 0.05;
+          console.log("Tax is 5%: " + tax);
+        } else {
+          console.log("Your Tax % is Zero");
+        }
+      } else if (gender === "female") {
+        console.log("Tax Calculation for female:");
+        if (totalSalary >= 200000) {
+          var tax = totalSalary * 0.1;
+          console.log("Tax is 10%: " + tax);
+        } else if (totalSalary >= 150000) {
+          var tax = totalSalary * 0.05;
+          console.log("Tax is 5%: " + tax);
+        } else {
+          console.log("Your Tax % is Zero");
+        }
+      } else {
+        console.log("Please enter a valid gender");
+      }
+    }
+
+    employeedetails();
+    display();
+    employeesalarycount();
+
+  </script>
+</body>
+</html>

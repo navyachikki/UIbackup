@@ -1,0 +1,143 @@
+/* register.css */
+
+body {
+    font-family: papyrus;
+    background-image: url("https://img.freepik.com/free-vector/blue-shiny-background_1378-145.jpg?w=740&t=st=1718616196~exp=1718616796~hmac=2ca2997462c661e3d5c8a7a2b8ac751eadf3fd319831e7a93c80febf39081034");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #1e1d1e;
+    position: absolute;
+    top: 20px;
+    text-decoration: wavy;
+    
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.main {
+    background: #537a77;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="radio"],
+input[type="button"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    display: inline;
+    width: auto;
+    margin-right: 10px;
+}
+
+input[type="button"] {
+    background-color: #f6ff00;
+    color: rgb(62, 115, 230);
+    border: none;
+    cursor: progress;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #000000;
+}
+
+.displayBlock {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: none;
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.displayBlock li {
+    margin-bottom: 10px;
+}
+
+#d_name, #d_age, #d_gender, #d_location {
+    font-weight: bold;
+}
+footer{
+    color: #1e1d1e;
+}
+
+
+table {
+    width: 10%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: #f2f2f2;
+    position: absolute;
+    top: 1px;
+    right: 18%;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #537a77;
+    color: white;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+tr:hover {
+    background-color: #d1e7e1;
+}
+
+table#userTable {
+    display: none; /* Hidden initially, will be shown by JavaScript */
+}
+
+

@@ -1,0 +1,31 @@
+.title,
+.footer,
+.gameBody {
+    border: 1px solid rgb(93, 93, 181);
+    padding: 10px;
+    margin: 10px;
+    color: rgb(45, 45, 245);
+}
+.title>h3,
+.footer>p {
+    margin: 0px auto;
+    width: fit-content;
+}
+.gameBord{
+    display: ruby-text;
+    margin: 26px;
+}
+.board{
+    background-color: brown;
+    border-radius: 50%;
+    width: 20px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    margin: inherit;
+}
+.board .boxText{
+    margin: 0;
+}

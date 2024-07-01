@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paySlip</title>
+    <link rel="stylesheet" href="paySlip.css">
+</head>
+
+<body>
+    <div class="title">
+        <h3>PaySlip</h3>
+    </div>
+
+    <div class="empDetails">
+        <div class="getDetails">
+            <ul>
+                <li>
+                    <input type="text" placeholder="Enter Name" id="empName">
+                </li>
+
+                <li class="gender">
+                    Gender:
+                    <input type="radio" value="Male" checked name="gender"> Male
+                    <input type="radio" value="Female" name="gender"> Female
+                </li>
+                <li>
+                    <input type="text" placeholder="Enter Designation" id="empDesignation">
+                </li>
+                <li>
+                    <input type="text" placeholder="Enter Department" id="empDepartment">
+                </li>
+                <!-- <li>
+                    <input type="text" placeholder="Enter Joining Date" id="empJoinDate">
+                </li> -->
+                <li>
+                    <input type="date" placeholder="Enter Month Payroll" id="empPayroll">
+                </li>
+                <li>
+                    <input type="text" placeholder="Enter Total Working Days" id="empWorkingDays">
+                </li>
+                <li>
+                    <input type="text" placeholder="Enter Basic Salary" id="empBasicSalary">
+                </li>
+                <li class="btn">
+                    <input type="button" value="Get PaySlip" id="empPaySlip" onclick="employeeDetails();">
+                </li>
+            </ul>
+        </div>
+        <div class="paySlip">
+            <div class="details">
+                <div><b>Date Of Joing:</b><span>2018-06-23</span></div>
+                <div><b>Pay Period:</b><span id="d_date"></span></div>
+                <div><b>Working Days:</b><span id="d_workingDays"></span></div>
+            </div>
+            <div class="details_1">
+                <div><b>Employee Name:</b><span id="d_name"></span></div>
+                <div><b>Gender:</b><span id="d_gender"></span></div>
+                <div><b>Designation:</b><span id="d_designation"></span></div>
+                <div><b>Department:</b><span id="d_department">IT</span></div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Earnings</th>
+                        <th>Amount</th>
+                        <th>Deductions</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Basic Salary</td>
+                        <td id="d_basicSalary"></td>
+                        <td>Provident Fund</td>
+                        <td id="d_pf"></td>
+                    </tr>
+                    <tr>
+                        <td>Incentive Pay</td>
+                        <td id="d_incentivePay"></td>
+                        <td>Profesional Tax</td>
+                        <td id="d_tax"></td>
+                    </tr>
+                    <tr>
+                        <td>House Rent Allowance</td>
+                        <td id="d_hra"></td>
+                        <td>Loss Of Pay</td>
+                        <td id="d_lossOfPay"></td>
+                    </tr>
+                    <tr>
+                        <td>MealAllowance</td>
+                        <td id="d_meals"></td>
+                        <td>Total Deductions</td>
+                        <td id="d_totalDeductions"></td>
+                    </tr>
+                    <tr>
+                        <td class="totalEarning">Total Earnings</td>
+                        <td class="totalEarning" id="d_totalEarnings"></td>
+                        <td class="totalEarning">Net Pay</td>
+                        <td class="totalEarning" id="d_netPay"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>@Copy rights 2024</p>
+    </div>
+    <script src="paySlip.js"></script>
+</body>
+
+</html>

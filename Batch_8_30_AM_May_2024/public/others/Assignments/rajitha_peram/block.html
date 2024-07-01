@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Blocks alignment</title>
+        <style>
+            .block{
+                width: 50px;
+                height: 50px;
+                border: 2px solid red;
+                text-align: center;
+                background-color: black;
+                color: black;
+                margin-bottom: 20px;
+
+            }
+            .block_wrapper span{
+                display:inline-block;
+                vertical-align: top;
+            }
+            .block_top{
+                margin-bottom: 100px;
+            }
+            .block_top_right, .block_bottom_right{
+                margin-left: 200px;
+            }
+            .block_1{
+                background-color: aquamarine;
+            }
+            .block_2{
+                background-color: antiquewhite;
+            }
+            .block_3{
+                background-color: blanchedalmond;
+            }
+            .block_4{
+                background-color: beige;
+            }
+            .block_5{
+                background-color: brown;
+            }
+            .block_6{
+                background-color: azure;
+            }
+            .block_7{
+                background-color: aqua;
+            }
+            .block_8{
+                background-color:purple ;
+            }
+            .block_9{
+                background-color: orange;
+            }
+            .block_10{
+                background-color: blue;
+            }
+
+        </style>
+        
+    </head>
+    <body>
+        <div class="block_wrapper">
+            <h1>Block alignment</h1>
+            <div class="block_parent">
+                <div class="block_top">
+                    <span class="block_top_left">
+                        <span class="block block_1">1</span>
+                        <span class="block block_2">2</span>
+                        <span class="block block_3">3</span>
+                    </span>
+                    <span class="block_top_right">
+                        <div class="block block_4">4</div>
+                        <div class="block block_5">5</div>
+                    </span>
+                </div>
+                <div class="block_bottom">
+                    <span class="block_bottom_left">
+                        <div class="block block_6">6</div>
+                        <span class="block block_7">7</span>
+                        <span class="block block_9">9</span>
+                        <span class="block block_10">10</span>
+                    </span>
+                    <span class="block_bottom_right">
+                        <div class="block block_8">8</div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

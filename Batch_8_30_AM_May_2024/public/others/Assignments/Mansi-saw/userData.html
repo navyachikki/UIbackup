@@ -1,0 +1,98 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <style>
+               .data{
+                border: 1px solid;
+                margin: 10px auto;
+               text-align: center;              
+                width: 500px;             
+                font-size: larger;
+
+               } 
+             .footer{
+                border: 1px solid;
+                margin: 10px auto;
+                width: 500px;             
+                text-align: center;
+
+             }
+             #readUserData{
+                border: 1px solid;
+                width: 500px;
+                height: 350px;
+                margin: 10px auto;
+                padding: 10px;
+               
+             }
+
+             li{
+                margin: 10px auto;
+                padding: 10px;
+                list-style-type:circle;
+                font-weight: bold;
+
+             }
+            </style>
+        </head>
+        <body>
+            <div class="data"> READ USER DATA</div>
+            <div id="readUserData"> 
+               <form action="submitted.html">
+                <ul>
+                    <li> USER NAME: <input type="text"> </li>
+                    <li>  AGE:   <input type="number"></li>                 
+                    <li >  COUNTRY: 
+                    <select id="country" onchange="data()"> 
+                        <option value hidden="select country">select country</option>
+                        <option  value="USA">USA</option>
+                        <option  value="INDIA">INDIA</option >
+                        <option  value="AMERICA">AMERICA</option  >                       
+                    </select>
+                </li> 
+                <li> state 
+                   <select id="state">
+                    <option  disabled ="select state">select state</option >
+                                 
+                   </select>
+                    
+                </li>
+               
+                <li> D.O.B. <input type="date"></li>
+                <li>  GENDER :  <input type="radio" name="gender" checked > male 
+                    <input type="radio" name="gender" checked> female
+                    </li>    
+                    <li> <input type="submit"></li>            
+                </ul>
+            </form>
+            </div>
+            <div class="footer"> copyright@2024 </div>
+
+          <script>
+          function data () {
+            var countryDropdown = document.getElementById('country');
+            var stateDropdown = document.getElementById('state');
+            stateDropdown.innerHTML=''
+            var selectedCountry = countryDropdown.value
+
+            var states = {
+                "USA":['new york','chicago','losAngeles'],
+                "INDIA":['Maharashtra','Hyderabad','Banglore'],
+                "AMERICA":['sydney','melbourne','perth']
+            };
+
+            var stateoptions = states[selectedCountry]
+            for (var i=0 ; i<stateoptions.length;i++){
+           var option = document.createElement('option')
+           option.text= stateoptions[i];
+           stateDropdown.add(option)
+
+            }
+          }
+   
+          </script>  
+        </body>
+        </html>

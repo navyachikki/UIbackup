@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // for (var num = 1; num <= 1000; num++) {
+        //     var numStr = num.toString();
+        //     var isPolindrome = true;
+        //     for (var i = 0; i < numStr.length / 2; i++) {
+        //         if (numStr[i] != numStr[numStr.length - 1 - i]) {
+        //             isPolindrome = false;
+        //             break;
+        //         }
+        //     }
+        //     if (isPolindrome) {
+        //         console.log(num + ' is a Polindrome Number')
+        //     }
+        // }
+
+        for (var i = 1; i <= 1000; i++) {
+            var n = i;
+
+            var temp = n;
+            var revNumber = '';
+            var rem = 0;
+            while (n > 0) {
+                rem = n % 10;
+                n = n / 10;
+                n = parseInt(n);
+                revNumber = revNumber + rem;
+            }
+            if (temp == revNumber) {
+                console.log('It is Polindrome Number ' + revNumber)
+            }
+        }
+    </script>
+</body>
+
+</html>

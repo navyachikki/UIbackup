@@ -1,0 +1,65 @@
+
+body{
+    background-color: rgb(135, 199, 199);
+}
+h1{
+    margin: 38px;
+    border: 2px solid;
+    padding: 10px; 
+    text-align: center;
+    font-weight: 600;
+}
+
+.mainBlock{
+    border: 2px solid;
+    /* padding: 394px; */
+    margin: 38px;
+    margin-top: -28px;
+    position: relative;
+    top: 8px;
+    /* bottom: 55px;  */
+    overflow: auto;
+    font-weight: 600;
+    
+} 
+.footer{
+    border: 2px solid;
+    padding: 1px; 
+    text-align: center;
+    position: relative;
+    bottom: 1px;
+    margin: 38px;
+    
+} 
+
+.StudBlocks > li{
+    list-style: none;
+    border: 2px solid rgb(75, 46, 46);
+    height: 300px;
+    width: 283px;
+    float: left;
+    margin: 26px;
+    /* position: relative;
+    left: -433px;
+    top: -415px;  */
+}
+.empdetails > li{
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    top: 79px;
+    left: 83px;
+}
+.empdetails {
+    margin: -81px;
+    padding: 15px;
+    
+}
+.empdetails img {
+    width: 123px;
+    height: 130px;
+} 
+
+
+

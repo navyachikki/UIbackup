@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Using Array</title>
+</head>
+
+<body>
+    <h1 style="text-align:center">List out all the Palindrome Numbers within an Array</h1>
+    <script>
+        function isPalindrome(num) {
+            let numstr = num.toString();
+            let result = numstr.split("").reverse().join("");
+            return numstr === result;
+        }
+        function filterPalindorme(arr) {
+            return arr.filter(num => isPalindrome(num));
+        }
+        let arr = [121, 153, 222, 313, 432];
+        let Palindrome = filterPalindorme(arr)
+        console.log("Palindrome Numbers in an Array are:" + " " + Palindrome);
+    </script>
+</body>
+
+</html>

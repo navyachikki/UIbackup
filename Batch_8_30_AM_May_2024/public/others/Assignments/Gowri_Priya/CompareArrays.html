@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Two Arrays</title>
+</head>
+
+<body>
+    <h1 style="text-align:center">Comparing two Arrays</h1>
+    <script>
+        function compareArrays(arr1, arr2) {
+            if (arr1.length != arr2.length) {
+                return false;
+            }
+            else {
+                for (i = 0; i < arr1.length; i++) {
+                    if (arr1[i] != arr2[i]) {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+        let arr1 = [1, 2, 3, 4, 5, 6]
+        let arr2 = [1, 2, 3, 4, 5, 6]
+        if (compareArrays(arr1, arr2)) {
+            console.log("Both Arrays are Equal");
+        }
+        else {
+            console.log("Both Arrays are Not Equal");
+        }
+    </script>
+</body>
+
+</html>

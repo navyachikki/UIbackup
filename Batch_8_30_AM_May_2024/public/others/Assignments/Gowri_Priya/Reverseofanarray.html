@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="text-align:center">Find the Reverse of every Value in an Array</h1>
+    <script>
+        function reverseArray(arr) {
+            return arr.map(value => {
+                if (typeof value === "string") {
+                    return value.split("").reverse().join("");
+                }
+                else if (typeof value === "number") {
+                    return Number(value.toString().split("").reverse().join(""));
+                }
+                else {
+                    return value;
+                }
+            });
+        }
+        let arr = [546, "Gowri", 143, "Priya", 876, "Vara"];
+        let ReversedArray = reverseArray(arr);
+        console.log("Reversed Array:" + " " + ReversedArray);
+    </script>
+</body>
+
+</html>

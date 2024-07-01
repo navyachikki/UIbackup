@@ -1,0 +1,33 @@
+Multi line text content holder -> p tag 
+
+HTML Attributes:
+    we could inject multiple extra information for any tag. 
+
+    Predefined attributes:
+        id 
+        name 
+        alt 
+        src
+        title
+        href 
+        class 
+        style -> we can inject one or multiple css prop to single element - inline css
+        etc...
+
+        
+
+    Sytax:
+
+        <tagname attrname="value" attrname2="value" attrname3="...">
+            ...
+        </tagname>
+
+    Syntax for style attribute:
+
+        <tagname style="csspropname:value; csspropname:value; ... ">
+            ...
+        </tagname>.
+
+        <tagname style="color:green; background-color:yellow; ... ">
+            ...
+        </tagname>

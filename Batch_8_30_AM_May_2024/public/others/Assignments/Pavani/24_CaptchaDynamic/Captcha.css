@@ -1,0 +1,8 @@
+.captcha{
+    border: 2px solid;
+    margin: 20px;
+    padding: 20px;
+    width:100px;
+    font-size: 20px;
+    font-weight: bold;
+}

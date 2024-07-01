@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON OBJECT</title>
+</head>
+<body>
+    <h3>Emplyoee Details with Arrays</h3>
+    <script>
+        //var employeeName ='Kavya K', department='Manufacturing',gender="female",basicSalary=50000, totalSalary,pf,hra;
+        var empDetails =['Kavya K', 'IT','Female',150000,0,'','',0];
+        empDetails[2]= empDetails[2].toLocaleLowerCase();
+        empDetails[5] = (empDetails[3] * 12) / 100  ; //pf
+        empDetails[6] = (empDetails[3] * 24) / 100 ; //hra
+        empDetails[4] = empDetails[3] + empDetails[5] + empDetails[6]; //total sal
+
+        console.log("Employee Details");
+        console.log("Employee Name :" +empDetails[0]);
+        console.log("Department :" +empDetails[1]);
+        console.log("Gender :" +empDetails[2]);
+        console.log("Basic Salary :" +empDetails[3]);
+        console.log("Total Salary :" +empDetails[4]);
+        console.log("PF :" +empDetails[5]);
+        console.log("HRA :" +empDetails[6]);
+
+        //tax calculation
+        if(empDetails[2] =='male' ){
+        if(empDetails[4] >= 200000){
+            empDetails[7] = (empDetails[4] * 15) / 100;
+            console.log("The Tax paid is:"+empDetails[7]);
+        } else if(empDetails[4] >= 150000){
+            empDetails[7] = (empDetails[4] * 10) / 100;
+            console.log("The Tax paid is:"+empDetails[7]);
+        }else if( empDetails[4] >= 100000){
+            empDetails[7]=(empDetails[4] * 5)/100;
+            console.log("The Tax paid is:"+empDetails[7]);
+        }else{
+            console.log("The Tax paid is:"+empDetails[7]);
+        }
+       }else if(empDetails[2] =='female'){
+        if(empDetails[4] >= 200000){
+            empDetails[7] = (empDetails[4] * 10) / 100;
+            console.log("The Tax paid is:"+empDetails[7]);
+        }else if(empDetails[4] >= 150000){
+            empDetails[7] = (empDetails[4] * 5) / 100;
+            console.log("The Tax paid is:"+empDetails[7]);
+        }else{
+            console.log("The Tax paid is:"+empDetails[7]);
+        }
+       }else{
+        console.log("The Tax paid is:"+empDetails[7]);
+        console.log("Please Select Correct Gender Male or Female ");
+       }
+
+    </script>
+</body>
+</html>

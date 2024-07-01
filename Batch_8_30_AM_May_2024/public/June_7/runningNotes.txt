@@ -1,0 +1,95 @@
+var something = () => {
+
+}
+
+
+function abc() {
+
+    var a = 90;
+    var displayDetails = () => { // Definition
+        console.log("Student details");
+        console.log("info");
+    }
+}
+
+var abc = function() {
+
+}
+----------------------
+
+Data leekage problems with global data
+
+
+Accessing Local data outside of function:
+    1. By passing parameters
+    2. By returning a value from a function 
+    3. both passing parameters and returing value
+
+
+    Calling Function -> The function which is calling another function witin its body. 
+
+    Called Function -> Function which is getting called by some other functions body
+
+    Parameters - The values which are been passed while calling a function. 
+
+--------------
+
+C lang 
+addValues(2.3, 4, 5);
+
+addValues(20, 30, 4.5);
+
+funtion addValues(int a, int b, float c) {
+    ... 
+    result = a + b + c;
+}
+
+JS 
+
+addValues();
+
+funtion addValues(a, b, c) {
+    ... 
+    result = a + b + c;
+}
+--------------------
+C language :
+function addValues(int a, int b) {
+    // I
+}
+
+function addValues(int a, float b) {
+    // II
+}
+
+function addValues(int a, float b, flaot c) {
+    .. III
+}
+
+addValues(); // Error
+addValues(20, 20); // I
+addValues(2.5, 7); //Error
+addValues(10, 3, 4) // Error
+addValues(10, 20, 30); // Error 
+addValues(10, 5.6, 7.8)  // III
+-----------------------------------
+
+JS  language :
+function addValues(a, b) {
+    // I
+}
+
+function addValues(a, b) {
+    // II
+}
+
+function addValues( a,  b,  c) {
+    .. III
+}
+
+addValues(); // III
+addValues(20, 20); // III
+addValues(2.5, 7); //III
+addValues(10, 3, 4) // III
+addValues(10, 20, 30); // III 
+addValues(10, 5.6, 7.8)  // III

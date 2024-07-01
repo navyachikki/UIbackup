@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding out the Largest Number within an Array</title>
+</head>
+
+<body>
+    <h1 style="text-align: center">Find out the largest Number within an Array</h1>
+    <script>
+        function FindLargestNumber(arr) {
+            if (arr.length === 0) {
+                return null;
+            }
+            let Largest = arr[0];
+            for (i = 1; i <= arr.length; i++) {
+                if (arr[i] > Largest) {
+                    Largest = arr[i];
+                }
+            }
+            return Largest
+        }
+        let arr = [23, 45, 12, 34, 87, 99, 43, 65, 98];
+        console.log("Largest Number in an Array is:" + " " + FindLargestNumber(arr));
+    </script>
+</body>
+
+</html>

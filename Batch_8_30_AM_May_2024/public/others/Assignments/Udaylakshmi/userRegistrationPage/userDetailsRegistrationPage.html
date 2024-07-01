@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details Registration Page</title>
+    <link rel="stylesheet" href="userRegistrationPage.css">
+</head>
+
+<body>
+    <div class="title">User Details</div>
+    <div class="dflex">
+        <div class="title wid50 userDetails">
+            <ul>
+                <li>
+                    <label>User Name</label>
+                    <input type="text" id="uname">
+                </li>
+                <li>
+                    <label>Age</label>
+                    <input type="number" id="uage">
+                </li>
+                <li>
+                    <label>Gender:</label>
+                    <input type="radio" value="Male" name="gender"> Male
+                    <input type="radio" value="Female" name="gender"> Female
+                </li>
+                <li>
+                    <label>Location</label>
+                    <select id="country"></select>
+                </li>
+                <li>
+                    <input type="button" id="register" value="Register" onclick="addUserData()">
+                    <input type="button" id="save" value="Save" onclick="saveData()">
+                </li>
+            </ul>
+        </div>
+        <table class="wid50">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Location</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tabBody">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="userDetailsRegistrationPage.js"></script>
+</body>
+
+</html>

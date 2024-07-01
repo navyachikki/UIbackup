@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+<body>
+    <script>
+        var eName = prompt("Enter Your name");
+        var age = prompt("Enter Age ");
+var age = parseInt(age);
+var gender =prompt ("Enter Your gender");
+var department = prompt("ENter Your epartment Name");
+var basicSal = prompt("Enter Your basic salary");
+
+var basicSal = parseInt (basicSal);
+var pf = (14 * basicSal) / 100;
+                var hra = (24 * basicSal) / 100;
+                var totalSal = basicSal + pf +hra;
+
+                var slab1 = totalSal*15/100;
+                var slab2 = totalSal*10/100;
+                var slab3 = totalSal*5/100;
+
+                console.log("Employee Name :" +eName);
+                console.log("Employee Age :" +age);
+                console.log("Gender :" +gender);
+                console.log("Department Name :" +department);
+                console.log("Basic salary  :" +basicSal);
+                console.log("Total Salary :" +totalSal);
+
+if(gender== 'male'){
+    if (totalSal >=200000){
+        console.log("Tax to be paid is :"+slab1);
+    }
+
+    else if (totalSal >=150000){
+        console.log("Tax to be paid is :"+slab2);
+    }
+    
+
+   else if (totalSal >=100000){
+        console.log("Tax to be paid is :"+slab3);
+    }
+    else {
+        console.log("No need to pay tax")
+    }
+}
+
+if(gender== 'female'){
+    if (totalSal >=200000){
+        console.log("Tax to be paid is :"+slab2);
+    }
+
+    else if (totalSal >=150000){
+        console.log("Tax to be paid is :"+slab3);
+    }
+
+    else {
+        console.log("No need to pay tax")
+    }
+}
+
+
+    </script>
+</body>
+</html>

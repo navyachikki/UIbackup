@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="app.js"></script>
+        <style>
+            ul {
+                width: 400px;
+                border: 1px solid;
+                margin: 30px auto;
+                padding: 20px;
+            }
+            li {
+                list-style: none;
+                border: 1px solid;
+                padding: 10px;
+                margin: 10px;
+                background-color: #ccc;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                Enter first number <input maxlength="3" type="text" id="fval" onkeypress="return validateData(event)">
+            </li>
+            <li>
+                Enter Second number <input maxlength="3" type="text" id="sval" onkeypress="return validateData(event)">
+            </li>
+            <li>
+                <input type="button" value="Get Sum" onclick="getSum()">
+            </li>
+            <li id="rblock">
+
+            </li>
+        </ul>
+        <script>
+            
+        </script>
+    </body>
+</html>

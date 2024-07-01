@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 11</title>
+  </head>
+  <body>
+    <script>
+      /* Wap to find Sum of all the Prime Numbers between 1 to 100. */
+      let sum = 0;
+
+      for (let num = 2; num <= 100; num++) {
+        let isPrime = true;
+
+        // Check if num is prime
+        for (let i = 2; i <= num / 2; i++) {
+          if (num % i === 0) {
+            isPrime = false;
+            break;
+          }
+        }
+
+        // If num is prime, add it to sum
+        if (isPrime) {
+          sum += num;
+        }
+      }
+
+      console.log("Sum of prime numbers between 1 and 100:", sum);
+    </script>
+  </body>
+</html>

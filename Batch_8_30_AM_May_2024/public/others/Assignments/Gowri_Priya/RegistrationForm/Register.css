@@ -1,0 +1,31 @@
+body{
+    background-image: url("https://img.freepik.com/free-photo/red-wooden-christmas-trees-beige-table_23-2147971563.jpg?t=st=1718709973~exp=1718713573~hmac=d19c1fbc667bb8f89c525f8910928be9267f22e4d312c41bdf87818fe14e0ade&w=1380");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+}
+.container{
+    border: 3px solid #934744;
+    width: 420px;
+    height: 370px;
+    position: relative;
+    left: 732px;
+    top: 243px;
+    background-color: #dd6b54;
+}
+h1{
+    text-align: center;
+    font-style: italic;
+}
+#name, #age, #gender, #country, #state, #district, #button{
+    margin: 10px;
+    position: relative;
+    left: 8px;
+}
+.label{
+    position: relative;
+    left: 9px;
+    font-size: larger;
+    font-style: oblique;
+}

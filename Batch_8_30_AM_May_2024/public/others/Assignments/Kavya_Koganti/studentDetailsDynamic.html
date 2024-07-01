@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student detalis with dynamic</title>
+</head>
+<body>
+    <h3>Student Details .........Dynamic</h3>
+    <script>
+        var studentName = prompt("Enter a Strundent Name"); //Reading the data from the user dynamic
+        var studentClass = prompt("Enter a student class");
+        
+        var m1 = prompt("Enter the subject1 marks"); //Reading the data from the user dynamic
+        m1=parseInt(m1);
+        var m2 = prompt("Enter the subject1 marks");
+        m2=parseInt(m2);
+        var m3= prompt("Enter the subject3 marks");
+        m3=parseInt(m3);
+
+        var totalMarks=m1 + m2 + m3;
+        var avg = totalMarks / 3;
+
+        console.log("Student Details with Dynamic");
+        console.log("Student Name:" +studentName);
+        console.log("Student Class:" +studentClass);
+        console.log("Total Marks:" +totalMarks);
+        console.log("Average:" +totalMarks);
+    </script>
+</body>
+</html>

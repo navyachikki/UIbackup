@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <h3>
+            Student Progress Card GEnerator
+        </h3>
+        <div class="main">
+            <ul>
+                <li>
+                    <input type="text" placeholder="Enter Student name" id="sname">
+                </li>
+                <li>
+                     <input type="text" placeholder="Student age" id="sage">
+                </li>
+                <li>
+                    Gender: 
+                    <input type="radio" value="Male" checked name="gender"> Male
+                    <input type="radio" value="Female" name="gender"> Female
+                </li>
+                <li class="marksContainer">
+                    Marks:
+                    <input type="text" id="m1" placeholder="Maths">
+                    <input type="text" id="m2" placeholder="Science">
+                    <input type="text" id="m3" placeholder="Social">
+                    <input type="text" id="m4" placeholder="English">
+                    <input type="text" id="m5" placeholder="Computers">
+                </li>
+                <li>
+                    <input type="button" value="GetProgress Card" onclick="readStudentData()">
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="displayBlock">
+                <li>
+                    Student name: <span id="d_name"></span>
+                </li>
+                <li>
+                    Age: <span id="d_age"></span>
+                </li>
+                <li>
+                    Total: <span id="d_total"></span>
+                </li>
+                <li>
+                    Avg: <span id="d_avg"></span>
+                </li>
+                <li>
+                    Grade <span id="d_grade"></span>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

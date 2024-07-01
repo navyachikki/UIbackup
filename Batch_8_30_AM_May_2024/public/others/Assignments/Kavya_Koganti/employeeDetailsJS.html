@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details </title>
+</head>
+<body>
+    <h3>Employee Details</h3>
+    <script>
+         
+        var employeeName ='Kavya K', department='Manufacturing',gender="female",basicSalary=50000, totalSalary,pf,hra;
+         
+        pf = (basicSalary * 12) / 100  ;
+        hra = (basicSalary * 24) / 100 ;
+        totalSalary = basicSalary + pf + hra;
+
+        console.log("Employee Details");
+        console.log("Employee Name :" +employeeName);
+        console.log("Department :" +department);
+        console.log("Gender :" +gender);
+        console.log("Basic Salary i:" +basicSalary);
+        console.log("Total Salary :" +totalSalary);
+        console.log("PF :" +pf);
+        console.log("HRA :" +hra);
+        
+    </script>
+</body>
+</html>

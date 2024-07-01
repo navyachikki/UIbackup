@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Progress Card</title>
+    <style>
+        body {
+            background: aliceblue;
+            padding: 0px 10px;
+        }
+
+        table {
+            width: 100%;
+            border-spacing: 0px;
+            padding: 2px;
+        }
+
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+            border: 2px solid red;
+        }
+
+        tbody {
+            text-align: center;
+        }
+
+        .footer {
+            font-size: 12px;
+            text-align: center;
+            padding: 6px;
+            border: 2px solid red;
+            margin-top: 10px;
+        }
+
+        .progressCard {
+            padding: 4px;
+        }
+
+        .progressCard tr th,
+        .progressCard tr td,
+        .progressCard {
+            border: 1px solid green;
+        }
+
+        .progressCard tr:nth-child(odd) {
+            background-color: none;
+        }
+
+        .progressCard tr:nth-child(even) {
+            background-color: #f2f2f2 !important;
+        }
+
+        .progressCard tr:hover {
+            background-color: black !important;
+            color: white
+        }
+
+        /* #progress tr:nth-child(even) {
+            background-color: #65b2f9;
+        } */
+
+        .title {
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 38px;
+            color: #f65c5c;
+            font-weight: 900;
+            text-align: center;
+            text-decoration: underline;
+            border: 2px solid red;
+        }
+
+        .studImage {
+            width: 154px;
+            height: 164px;
+            background-image: url('../assets/images/Employees.png');
+        }
+
+        .emp1 {
+            background-position: 4px 178px;
+        }
+
+        .emp3 {
+            background-position: -160px 178px;
+        }
+
+        .emp4 {
+            background-position: -160px 0px;
+        }
+
+        .emp5 {
+            background-position: -486px 178px;
+        }
+
+        .emp6 {
+            background-position: -328px 178px;
+        }
+
+        .emp7 {
+            background-position: -477px 0px;
+        }
+
+        .emp8 {
+            background-position: -322px 0px;
+        }
+
+        .container {
+            height: 412px;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">Students Progress Card Details</div>
+    <div class="container">
+        <table border="2" style="border-color: red;" id="progress">
+            <thead>
+                <!-- <tr>
+                    <td class="title" colspan="6">Students Progress Card Details</td>
+                </tr> -->
+                <tr>
+                    <th>S.NO</th>
+                    <th>Student Name</th>
+                    <th>Age</th>
+                    <th>Location</th>
+                    <th>Picture</th>
+                    <th>Progress Card</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Rambabu</td>
+                    <td>30</td>
+                    <td>Hyderbad</td>
+                    <td class="studImage emp1"></td>
+                    <td style="padding: 0 8px;">
+                        <table class="progressCard">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Total Marks</th>
+                                    <th>Min</th>
+                                    <th>Obtained</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Telugu</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td rowspan="3">90</td>
+                                </tr>
+                                <tr>
+                                    <td>Hindi</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <!-- <td>90</td> -->
+                                </tr>
+                                <tr>
+                                    <td>English</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <!-- <td>90</td> -->
+                                </tr>
+                                <tr>
+                                    <td>Mathematics</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>120</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Science</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>80</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Social</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>100</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Swetha</td>
+                    <td>30</td>
+                    <td>Khammam</td>
+                    <td class="studImage emp2"></td>
+                    <td style="padding: 0 8px;">
+                        <table class="progressCard">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Total Marks</th>
+                                    <th>Min</th>
+                                    <th>Obtained</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Telugu</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>Hindi</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td rowspan="2">110</td>
+                                </tr>
+                                <tr>
+                                    <td>English</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <!-- <td></td> -->
+                                </tr>
+                                <tr>
+                                    <td>Mathematics</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>80</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Science</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Social</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>100</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Raj</td>
+                    <td>32</td>
+                    <td>Nalgonda</td>
+                    <td class="studImage emp3"></td>
+                    <td style="padding: 0 8px;">
+                        <table class="progressCard">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Total Marks</th>
+                                    <th>Min</th>
+                                    <th>Obtained</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Telugu</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>Hindi</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>English</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>120</td>
+                                </tr>
+                                <tr>
+                                    <td>Mathematics</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>115</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Science</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>122</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Social</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>132</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Anusha</td>
+                    <td>30</td>
+                    <td>Ramagundam</td>
+                    <td class="studImage emp4"></td>
+                    <td style="padding: 0 8px;">
+                        <table class="progressCard">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Total Marks</th>
+                                    <th>Min</th>
+                                    <th>Obtained</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Telugu</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>Hindi</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>English</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>Mathematics</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Science</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Social</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Jhon</td>
+                    <td>38</td>
+                    <td>Mumbai</td>
+                    <td class="studImage emp5"></td>
+                    <td style="padding: 0 8px;">
+                        <table class="progressCard">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Total Marks</th>
+                                    <th>Min</th>
+                                    <th>Obtained</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Telugu</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>Hindi</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>English</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>Mathematics</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Science</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Social</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>Sai</td>
+                    <td>28</td>
+                    <td>Delhi</td>
+                    <td class="studImage emp6"></td>
+                    <td style="padding: 0 8px;">
+                        <table class="progressCard">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Total Marks</th>
+                                    <th>Min</th>
+                                    <th>Obtained</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Telugu</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>Hindi</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>English</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>Mathematics</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Science</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Social</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>Joe</td>
+                    <td>36</td>
+                    <td>Goa</td>
+                    <td class="studImage emp7"></td>
+                    <td style="padding: 0 8px;">
+                        <table class="progressCard">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Total Marks</th>
+                                    <th>Min</th>
+                                    <th>Obtained</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Telugu</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>Hindi</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>English</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>Mathematics</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Science</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Social</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>8</td>
+                    <td>Priya</td>
+                    <td>30</td>
+                    <td>Kerala</td>
+                    <td class="studImage emp8"></td>
+                    <td style="padding: 0 8px;">
+                        <table class="progressCard">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Total Marks</th>
+                                    <th>Min</th>
+                                    <th>Obtained</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Telugu</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>Hindi</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td rowspan="2">110</td>
+                                </tr>
+                                <tr>
+                                    <td>English</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <!-- <td></td> -->
+                                </tr>
+                                <tr>
+                                    <td>Mathematics</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>80</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Science</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Social</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>100</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td>Rambabu</td>
+                    <td>30</td>
+                    <td>Hyderbad</td>
+                    <td class="studImage emp1"></td>
+                    <td style="padding: 0 8px;">
+                        <table class="progressCard">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Total Marks</th>
+                                    <th>Min</th>
+                                    <th>Obtained</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Telugu</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td rowspan="3">90</td>
+                                </tr>
+                                <tr>
+                                    <td>Hindi</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <!-- <td>90</td> -->
+                                </tr>
+                                <tr>
+                                    <td>English</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <!-- <td>90</td> -->
+                                </tr>
+                                <tr>
+                                    <td>Mathematics</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>120</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Science</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>80</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Social</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>100</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>10</td>
+                    <td>Swetha</td>
+                    <td>30</td>
+                    <td>Khammam</td>
+                    <td class="studImage emp2"></td>
+                    <td style="padding: 0 8px;">
+                        <table class="progressCard">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Total Marks</th>
+                                    <th>Min</th>
+                                    <th>Obtained</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Telugu</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>Hindi</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td rowspan="2">110</td>
+                                </tr>
+                                <tr>
+                                    <td>English</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <!-- <td></td> -->
+                                </tr>
+                                <tr>
+                                    <td>Mathematics</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>80</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Science</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>90</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Social</td>
+                                    <td>150</td>
+                                    <td>75</td>
+                                    <td>100</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+            <!-- <tfoot>
+                <tr>
+                    <td colspan="6"> @copy rights 2024</td>
+                </tr>
+            </tfoot> -->
+        </table>
+    </div>
+    <div class="footer">@copy rights 2024</div>
+</body>
+
+</html>

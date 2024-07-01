@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Objects</title>
+</head>
+
+<body>
+    <h1 style="text-align:center">Date Objects</h1>
+    <script>
+        var cdate = new Date();
+
+        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July'];
+        var days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
+
+        var myCustomDate1 = '0' + cdate.getDate() + '/' + '0' + (cdate.getMonth()) + '/' + cdate.getFullYear();
+        console.log("1." + " " + myCustomDate1); //08/05/2024
+
+        var myCustomDate2 = '0' + cdate.getMonth() + '/' + '0' + (cdate.getDate()) + '/' + cdate.getFullYear();
+        console.log("2." + " " + myCustomDate2); //05/08/2024
+
+        var myCustomDate3 = '0' + cdate.getDate() + '-' + '0' + (cdate.getMonth()) + '-' + cdate.getFullYear();
+        console.log("3." + " " + myCustomDate3); //08-05-2024
+
+        var monthIndex = cdate.getMonth();
+        var customDate = cdate.getDate() + 'th ' + months[monthIndex] + ' ' + cdate.getFullYear();
+        console.log("4." + " " + customDate); //8th June 2024
+
+        var dayIndex = cdate.getDay();
+        var customDay = days[dayIndex] + ' ' + cdate.getDate() + 'th ' + months[monthIndex] + ' ' + cdate.getFullYear();
+        console.log("5." + " " + customDay); //Sat 8th June 2024
+
+        var myCustomDate4 = months[monthIndex] + ' ' + cdate.getDate() + 'th' + ' ' + cdate.getFullYear();
+        console.log("6." + " " + myCustomDate4); //June 8th 2024
+
+        var myCustomDate5 = cdate.getDate() + 'th' + ' ' + months[monthIndex] + ',' + cdate.getHours() + 'h' + ':' + cdate.getMinutes() + 'min';
+        console.log("7." + " " + myCustomDate5);
+
+        var myCustomDate6 = cdate.getDate() + 'th' + ' ' + months[monthIndex] + ',' + cdate.getHours() + 'h' + ':' + cdate.getMinutes() + 'min' + ':' + cdate.getSeconds() + 'sec';
+        console.log("8." + " " + myCustomDate6);
+
+    </script>
+</body>
+
+</html>

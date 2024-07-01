@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS float Property</title>
+    <h3>Blocks list</h3>
+    <style>
+        h3 {
+            text-align: center;
+            border: 1px solid;
+
+        }
+
+        .container {
+            border: 1px solid;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            padding: 20px;
+            float: left;
+            margin: 10px;
+
+        }
+
+        .one {
+            background-color: blanchedalmond;
+
+        }
+
+        .two {
+            background-color: aqua;
+
+        }
+
+        .three {
+            background-color: palegreen;
+        }
+
+        .four {
+            background-color: rgb(32, 183, 92);
+
+            float: right;
+
+        }
+
+        .five {
+            background-color: yellow;
+            clear: both;
+            float: right;
+        }
+
+        .six {
+            background-color: pink;
+            /* clear: right; */
+        }
+
+        .seven {
+            background-color: plum;
+            /* clear: left; */
+        }
+
+        .eight {
+            background-color: red;
+        }
+
+        .nine {
+            background-color: palevioletred;
+            clear: both;
+
+        }
+
+        .ten {
+            float: right;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="container one">1</div>
+        <div class="container two">2</div>
+        <div class="container three">3</div>
+    </div>
+
+    <div class="container four">4</div>
+    <div class="container five">5</div>
+    <div class="container six">6</div>
+    <div>
+        <div class="container seven">7</div>
+        <div class="container eight">8</div>
+        <div class="container nine">9</div>
+    </div>
+    <div class="container ten">10</div>
+
+
+</body>
+
+</html>

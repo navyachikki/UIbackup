@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <script src="jquery.js"></script>ssssssss
+            <script src="timeout.js"></script>
+        
+        <style>
+
+                h3{
+                    text-align: center;
+                    color: brown;
+                }
+                .task{              
+                  text-align: center;
+                }
+
+                #thxblock{
+                    display: none;
+                    position: absolute;
+                    bottom: 20px;
+                    left: 10px;
+                    color: blue;
+                    text-align: center;
+                }
+            .container{
+                margin: 20px auto;
+                padding: 20px;
+                text-align: center;
+                width: 600px ;
+                border: 1px solid rgb(8, 43, 69);
+                color: brown;
+                font-size:larger;
+
+            }
+
+            </style>
+        </head>
+        <body>
+          <h3> Task assigner page  </h3 >
+            <div class="task">
+                <input type="text" placeholder="ENTER name" id="uname">
+                <input type="button" value="save" onclick="saveDetails ()">
+                <input type="button" value="create container" onclick="createContainer()">
+                <input type="button" value="todays task" onclick="taskForToday()">
+        
+            </div>
+            <div id="mainBlock"> </div>
+            <div id="thxBlock"></div>
+</body>
+</html>
+    

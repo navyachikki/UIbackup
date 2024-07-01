@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Form</title>
+    <link rel="stylesheet" href="registerForm.css" />
+  </head>
+  <body>
+    <div class="titleContainer">User Registeration</div>
+    <table class="formContainer">
+      <form name="registerForm" method="" action="#">
+        <tr>
+          <td><label for="username">User Name: </label></td>
+          <td>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="enter your username"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="age">Age: </label></td>
+          <td>
+            <input
+              type="text"
+              name="age"
+              id="age"
+              placeholder="enter your age"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="gender">Gender: </label></td>
+          <td>
+            <input type="radio" name="gender" id="gender" value="male" /> Male
+            <input type="radio" name="gender" id="gender" value="female" /> Female
+          </td>
+        </tr>
+        <tr>
+          <td><label>Country:</label></td>
+          <td>
+            <select id="countryDropdown" onchange="updateStates()">
+              <option value="">Select</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label>State/Province:</label></td>
+          <td>
+            <select id="stateDropdown" onchange="updateDistricts()">
+              <option value="">Select</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label>District:</label></td>
+          <td>
+            <select id="districtDropdown">
+              <option value="">Select</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="submit"
+              id="register"
+              name="register"
+              value="Register"
+              onclick="return validateRegisterForm()"
+            />
+          </td>
+        </tr>
+      </form>
+    </table>
+    <footer>Copyright &copy; Harsha Vardhan Reddy Bindela</footer>
+    <script src="countries.js"></script>
+    <script src="countryMapping.js"></script>
+    <script src="validateForm.js"></script>
+  </body>
+</html>

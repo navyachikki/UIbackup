@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var displayDetails = (a1, a2, a3, a4) => {
+                console.log("frm display details 1");
+            }
+            var displayDetails = () => {
+                console.log("frm display details 2");
+            }
+            var displayDetails = () => {
+                console.log("frm display details 3");
+            }
+            displayDetails();
+            displayDetails(20, 30);
+            displayDetails(20);
+            displayDetails(20, 30, 11);
+            displayDetails(20, 30, 11, 33);
+            displayDetails(20, 30, 11, 55, 66);
+
+        </script>
+    </body>
+</html>

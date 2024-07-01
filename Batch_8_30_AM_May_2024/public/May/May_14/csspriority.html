@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating css priority order
+        </title>
+        <style>
+            [name=newsDesc] {
+                border: 3px solid pink;
+            }
+            .newsContent {
+                border: 2px solid yellow;
+                font-size: 20px !important;
+               
+            }
+            
+            
+            #content {
+                text-decoration: underline !important;
+                font-size: 40px;
+            }
+            p {
+                background-color: aqua;
+                font-size: 23px;
+            }
+        </style>
+    </head>
+    <body>
+        <p style="font-size: 30px;" class="newsContent" id="content" name="newsDesc">
+            A massive hoarding collapsed in Mumbai's Ghatkopar amid strong winds and dust storm that struck the city early Monday evening, killing fourteen people and injuring at least 76
+        </p>
+    </body>
+</html>

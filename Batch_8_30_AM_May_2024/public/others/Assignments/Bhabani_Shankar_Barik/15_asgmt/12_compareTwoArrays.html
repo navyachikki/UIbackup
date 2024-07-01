@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comapre two arrays</title>
+  </head>
+  <body>
+    <script>
+      /*wap to comapre two arrays */
+
+      let arrayOne = [2, 3, 4, 65, 12, 13, 34, 64, 21];
+      let arrayTwo = [2, 3, 4, 65, 12, 13, 34, 64, 12];
+      let isEqual = false;
+
+        if (arrayOne.length === arrayTwo.length) {
+            isEqual = arrayOne.every((value, index) => value === arrayTwo[index]);
+        }
+        console.log("Compare Arrays " + isEqual);
+    </script>
+  </body>
+</html>

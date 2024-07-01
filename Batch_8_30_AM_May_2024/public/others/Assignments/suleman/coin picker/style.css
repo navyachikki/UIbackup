@@ -1,0 +1,15 @@
+.block {
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: 2.5px;
+  float: left;
+}
+.container {
+  width: 500px;
+  overflow: hidden;
+  margin: 10px auto;
+}

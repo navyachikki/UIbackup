@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Amstrom Numbers</title>
+       
+    </head>
+    <body>
+        <script>
+            var listArr = [2, 3, 4, 65,153, 370, 12, 13, 34, 64,21,153];
+            for (var i = 0; i < listArr.length; i++) {
+                var n = listArr[i];
+                var enterNum = n;
+                var len = n.toString().length;
+                var sum = 0;
+                while (n > 0) {
+                    var rem = n % 10;
+                    sum += (rem ** len);
+                    n = n / 10;
+                    n = parseInt(n);
+                }
+                if (sum == listArr[i]) {
+                    console.log('Its a Amstrong ' + sum);
+                }
+            }
+        </script>
+    </body>
+</html>
